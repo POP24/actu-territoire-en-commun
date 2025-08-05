@@ -4,6 +4,7 @@ import ObjectiveSection from "@/components/ObjectiveSection";
 import PathwaysSection from "@/components/PathwaysSection";
 import FinancingSection from "@/components/FinancingSection";
 import TypologySection from "@/components/TypologySection";
+import ToolsSection from "@/components/ToolsSection";
 import FlowSection from "@/components/FlowSection";
 import NextStepsSection from "@/components/NextStepsSection";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ const Index = () => {
       <PathwaysSection />
       <FinancingSection />
       <TypologySection />
+      <ToolsSection />
       <FlowSection />
       <NextStepsSection />
       <Footer />
