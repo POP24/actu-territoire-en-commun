@@ -1,52 +1,51 @@
+import { Button } from "@/components/ui/button";
+
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="py-20 bg-gradient-hero text-white">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-white rounded-lg"></div>
-              <span className="text-xl font-bold">Les Communes</span>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">
+            REJOINDRE LE MOUVEMENT
+          </h2>
+          
+          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-elegant mb-12">
+            <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+              Les liens invisibles existent déjà. Il ne reste qu'à les activer.
+            </p>
+            
+            <div className="mb-8">
+              <h3 className="text-lg font-semibold mb-6">Adhésion via :</h3>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Button variant="outline-hero" className="bg-white/20 border-white/40 hover:bg-white/30">
+                  Telegram
+                </Button>
+                <Button variant="outline-hero" className="bg-white/20 border-white/40 hover:bg-white/30">
+                  Discord
+                </Button>
+                <Button variant="outline-hero" className="bg-white/20 border-white/40 hover:bg-white/30">
+                  Web
+                </Button>
+              </div>
             </div>
-            <p className="text-primary-foreground/80">
-              Créons ensemble un réseau de territoires autonomes et connectés.
-            </p>
+            
+            <div className="mb-8">
+              <h3 className="text-lg font-semibold mb-4">Contact :</h3>
+              <a href="mailto:reseau@lescommunes.org" className="text-white hover:underline text-lg">
+                reseau@lescommunes.org
+              </a>
+            </div>
+            
+            <Button variant="cta" size="lg" className="text-lg px-12 py-4 bg-white text-primary hover:bg-white/90">
+              Participer à 100€
+            </Button>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-4">Navigation</h4>
-            <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#accueil" className="hover:text-white transition-smooth">Accueil</a></li>
-              <li><a href="#territoire" className="hover:text-white transition-smooth">Territoires</a></li>
-              <li><a href="#financement" className="hover:text-white transition-smooth">Financement</a></li>
-              <li><a href="#contact" className="hover:text-white transition-smooth">Contact</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Actions</h4>
-            <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#" className="hover:text-white transition-smooth">Devenir activateur</a></li>
-              <li><a href="#" className="hover:text-white transition-smooth">Financer le réseau</a></li>
-              <li><a href="#" className="hover:text-white transition-smooth">Rejoindre une commune</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="text-primary-foreground/80 mb-2">
-              reseau@lescommunes.org
-            </p>
-            <p className="text-primary-foreground/80">
-              Un mouvement pour l'avenir des territoires
+          <div className="border-t border-white/20 pt-8 text-white/80">
+            <p className="text-lg">
+              <strong>Le Réseau des Communes</strong> - Tout existe déjà, connectons-le - 2025
             </p>
           </div>
-        </div>
-        
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-primary-foreground/60">
-            © 2024 Les Communes. Tous droits réservés.
-          </p>
         </div>
       </div>
     </footer>
