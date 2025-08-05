@@ -37,7 +37,7 @@ const HeroSection = () => {
             </p>
             
             <Button variant="cta" size="lg" className="text-lg px-12 py-4">
-              Rejoindre la DAO
+              Participer à 100€
             </Button>
           </div>
           

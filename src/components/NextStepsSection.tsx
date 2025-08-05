@@ -51,7 +51,7 @@ const NextStepsSection = () => {
           </div>
           
           <Button variant="cta" size="lg" className="text-lg px-12 py-4">
-            Rejoindre la DAO Maintenant
+            Participer à 100€
           </Button>
         </div>
       </div>
