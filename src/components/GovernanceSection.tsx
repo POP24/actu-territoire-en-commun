@@ -12,8 +12,9 @@ const GovernanceSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              GOUVERNANCE NOUVELLE GÉNÉRATION
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-foreground">GOUVERNANCE NOUVELLE</span>{" "}
+              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">GÉNÉRATION</span>
             </h2>
           </div>
 

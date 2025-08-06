@@ -11,8 +11,9 @@ const FinancingSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-12 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            CROWDFUND TON TERRITOIRE
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-12">
+            <span className="text-foreground">ACTIVE TON</span>{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITOIRE</span>
           </h2>
           
           <div className="text-center mb-12 max-w-4xl mx-auto">
@@ -26,8 +27,9 @@ const FinancingSection = () => {
 
           {/* Mécanisme d'activation */}
           <div className="mb-16">
-            <h3 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              MÉCANISME D'ACTIVATION TERRITORIALE
+            <h3 className="text-4xl font-bold text-center mb-16">
+              <span className="text-foreground">MÉCANISME D'ACTIVATION</span>{" "}
+              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITORIALE</span>
             </h3>
             
             <div className="grid lg:grid-cols-6 gap-6 mb-12">

@@ -3,8 +3,9 @@ const ToolsSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            Outils intégrés
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16">
+            <span className="text-foreground">OUTILS</span>{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">INTÉGRÉS</span>
           </h2>
           
           <div className="text-center mb-16">
