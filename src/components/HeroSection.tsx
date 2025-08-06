@@ -33,7 +33,7 @@ const HeroSection = () => {
               Cet argent finance des activateurs territoriaux qui créent des communes autonomes.
             </p>
             
-            <div className="flex justify-center">
+            <div className="flex justify-start mt-12">
               <Button variant="cta" size="lg" className="text-xl px-16 py-6 font-bold rounded-full">
                 Participer à 100€
               </Button>
@@ -61,7 +61,7 @@ const HeroSection = () => {
               </div>
               
               {/* Main image container */}
-              <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+              <div className="relative w-96 h-96 lg:w-[500px] lg:h-[500px]">
                 <img 
                   src={heroPortrait} 
                   alt="Portrait mystique"
