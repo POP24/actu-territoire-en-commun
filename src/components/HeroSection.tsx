@@ -33,7 +33,7 @@ const HeroSection = () => {
               Cet argent finance des activateurs territoriaux qui créent des communes autonomes.
             </p>
             
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center">
               <Button variant="cta" size="lg" className="text-xl px-16 py-6 font-bold rounded-full">
                 Participer à 100€
               </Button>
