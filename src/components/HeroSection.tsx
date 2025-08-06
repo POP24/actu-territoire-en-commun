@@ -27,7 +27,9 @@ const HeroSection = () => {
             </h2>
             
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed drop-shadow-lg max-w-2xl mx-auto lg:mx-0">
-              Nous fédérons <strong>10 000 pionniers</strong> pour lever <strong>1 million d'euros</strong>.
+              Nous fédérons <strong>10 000 pionniers</strong>
+              <br />
+              pour lever <strong>1 million d'euros</strong>.
               <br className="hidden sm:block" />
               <span className="inline sm:block">Cet argent finance des activateurs territoriaux qui créent des communes autonomes.</span>
             </p>
