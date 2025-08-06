@@ -13,15 +13,11 @@ const GovernanceSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              GOUVERNANCE
+              Gouvernance nouvelle génération
             </h2>
-            <div className="text-center mb-12">
-              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
-                Association nouvelle génération
-              </h3>
-              <div className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30">
-                <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">C'EST SIMPLE :</span>
-              </div>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto text-center mb-8">
+              <div className="text-lg text-foreground">🌍 Au niveau national : fédération de régions, on finance les coordinateurs territoriaux</div>
+              <div className="text-lg text-foreground">🏘️ Au niveau local : chaque territoire = 1 association, 1 membre = 1 voix, décisions locales restent locales</div>
             </div>
           </div>
 
