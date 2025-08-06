@@ -3,8 +3,8 @@ const ToolsSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
-            OUTILS INTÉGRÉS
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            Outils intégrés
           </h2>
           
           <div className="text-center mb-16">
@@ -13,7 +13,7 @@ const ToolsSection = () => {
             </h3>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Communauté */}
             <div className="bg-gradient-card p-8 rounded-2xl shadow-soft border border-border">
               <div className="flex items-center gap-4 mb-6">
