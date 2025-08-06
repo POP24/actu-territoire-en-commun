@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <img src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" alt="Les Communes Logo" className="w-8 h-8 rounded-lg" />
+            <img src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" alt="Les Communes Logo" className="w-16 h-16 rounded-lg" />
             <span className="text-xl font-bold text-foreground">Les Communes</span>
           </div>
           
