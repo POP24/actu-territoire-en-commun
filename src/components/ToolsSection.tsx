@@ -51,18 +51,14 @@ const ToolsSection = () => {
           </div>
 
           {/* Titre principal */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-12 leading-tight max-w-5xl mx-auto">
-            <span className="text-foreground">PROCESSUS D'ACTIVATION TERRITORIALE : DE LA SÉLECTION DU FOCALISATEUR À</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 sm:mb-6">
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">ACTIVE TON</span>{" "}
+            <span className="text-foreground">TERRITOIRE</span>
           </h2>
           
-          <div className="text-center mb-12 sm:mb-16">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
-              <span className="text-foreground">ACTIVE TON</span>
-            </h3>
-            <p className="text-base sm:text-lg text-muted-foreground">
-              Coopérative intégrale transversale, pluridisciplinaire
-            </p>
-          </div>
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium text-center mb-12 sm:mb-16">
+            Du Focalisateur à l'Autonomie Locale
+          </p>
 
           {/* Processus circulaire - Version desktop */}
           <div className="hidden lg:block mb-16">
