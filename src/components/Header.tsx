@@ -28,7 +28,7 @@ const Header = () => {
             <Button variant="ghost" className="hidden md:inline-flex">
               Se connecter
             </Button>
-            <Button variant="hero">
+            <Button variant="hero" className="rounded-full">
               Rejoindre
             </Button>
           </div>

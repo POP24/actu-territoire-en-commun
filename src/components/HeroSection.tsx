@@ -15,26 +15,26 @@ const HeroSection = () => {
           {/* Text Content - Left Side */}
           <div className="text-white space-y-8">
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight drop-shadow-2xl">
               Le Réseau des
               <br />
-              <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-2xl">
                 Communes
               </span>
             </h1>
             
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white/90">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
               Système d'Activation Territoriale
             </h2>
             
-            <p className="text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed drop-shadow-lg">
               Nous fédérons <strong>10 000 pionniers</strong> pour lever <strong>1 million d'euros</strong>.
               <br />
               Cet argent finance des activateurs territoriaux qui créent des communes autonomes.
             </p>
             
             <div className="flex justify-center lg:justify-start">
-              <Button variant="cta" size="lg" className="text-xl px-16 py-6 font-bold">
+              <Button variant="cta" size="lg" className="text-xl px-16 py-6 font-bold rounded-full">
                 Participer à 100€
               </Button>
             </div>
