@@ -14,9 +14,6 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Text Content - Left Side */}
           <div className="text-white space-y-8">
-            <p className="text-lg font-medium text-white/80 tracking-wide uppercase">
-              Un Réseau d'Avenir
-            </p>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
               Le Réseau des
@@ -36,9 +33,11 @@ const HeroSection = () => {
               Cet argent finance des activateurs territoriaux qui créent des communes autonomes.
             </p>
             
-            <Button variant="cta" size="lg" className="text-lg px-12 py-4">
-              Participer à 100€
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button variant="cta" size="lg" className="text-xl px-16 py-6 font-bold">
+                Participer à 100€
+              </Button>
+            </div>
           </div>
           
           {/* Image - Right Side */}
