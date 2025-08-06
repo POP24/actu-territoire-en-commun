@@ -12,7 +12,7 @@ const FinancingSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold text-center mb-12 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            Crowdfund ton territoire
+            CROWDFUND TON TERRITOIRE
           </h2>
           
           <div className="text-center mb-12 max-w-4xl mx-auto">
@@ -24,33 +24,32 @@ const FinancingSection = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-8">
-            {/* Entrées */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-green-500/10 to-green-600/20 border border-green-200/30">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Entrées</h3>
-              <div className="space-y-2 text-foreground">
-                <div>• Adhésions</div>
-                <div>• Séjours</div>
-                <div>• Formations</div>
-                <div>• Boutique</div>
+          {/* Mécanisme d'activation */}
+          <div className="mb-16">
+            <h3 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              MÉCANISME D'ACTIVATION TERRITORIALE
+            </h3>
+            
+            <div className="grid lg:grid-cols-6 gap-6 mb-12">
+              <div className="bg-cyan-500 rounded-full flex flex-col items-center justify-center text-white font-bold text-center p-6 h-24">
+                <div className="text-xs leading-tight">Recruter Focalisateur</div>
+              </div>
+              <div className="bg-red-500 rounded-full flex flex-col items-center justify-center text-white font-bold text-center p-6 h-24">
+                <div className="text-xs leading-tight">Rassembler Groupe</div>
+              </div>
+              <div className="bg-green-500 rounded-full flex flex-col items-center justify-center text-white font-bold text-center p-6 h-24">
+                <div className="text-xs leading-tight">Créer Association</div>
+              </div>
+              <div className="bg-slate-500 rounded-full flex flex-col items-center justify-center text-white font-bold text-center p-6 h-24">
+                <div className="text-xs leading-tight">Lancer Financement</div>
+              </div>
+              <div className="bg-yellow-500 rounded-full flex flex-col items-center justify-center text-white font-bold text-center p-6 h-24">
+                <div className="text-xs leading-tight">Acquérir Lieu</div>
+              </div>
+              <div className="bg-red-600 rounded-full flex flex-col items-center justify-center text-white font-bold text-center p-6 h-24">
+                <div className="text-xs leading-tight">Retour Réseau</div>
               </div>
             </div>
-
-            {/* Sorties */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-500/10 to-blue-600/20 border border-blue-200/30">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Sorties</h3>
-              <div className="space-y-2 text-foreground">
-                <div>• Coordinateur et focalisateur</div>
-                <div>• Réseau local</div>
-                <div>• Cagnotte pour réseau local</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Résultat */}
-          <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-purple-500/10 to-purple-600/20 border border-purple-200/30 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Résultat</h3>
-            <div className="text-lg text-foreground">Activation de plusieurs territoires, ouverture, réveil, coordination</div>
           </div>
         </div>
       </div>

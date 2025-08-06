@@ -16,8 +16,8 @@ const Index = () => {
       <HeroSection />
       <ObjectiveSection />
       <PathwaysSection />
-      <GovernanceSection />
       <FinancingSection />
+      <GovernanceSection />
       <ActivationSection />
       <TypologySection />
       <ToolsSection />
