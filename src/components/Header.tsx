@@ -20,6 +20,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a href="#accueil" className="text-foreground hover:text-primary transition-smooth">Accueil</a>
             <a href="#territoire" className="text-foreground hover:text-primary transition-smooth">Territoires</a>
+            <a href="#gouvernance" className="text-foreground hover:text-primary transition-smooth">Gouvernance</a>
             <a href="#financement" className="text-foreground hover:text-primary transition-smooth">Financement</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-smooth">Contact</a>
           </div>
