@@ -3,15 +3,19 @@ const ToolsSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16">
-            <span className="text-foreground">OUTILS</span>{" "}
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">INTÉGRÉS</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+            <span className="text-foreground">PROCESSUS D'ACTIVATION TERRITORIALE : DE LA SÉLECTION DU FOCALISATEUR À</span>{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">L'AUTONOMIE LOCALE</span>
           </h2>
           
           <div className="text-center mb-16">
-            <h3 className="text-2xl font-semibold text-foreground">
-              Gouverner, investir et se connecter - Tout en un
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              <span className="text-foreground">ACTIVE TON</span>{" "}
+              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITOIRE</span>
             </h3>
+            <p className="text-lg text-foreground">
+              Coopérative intégrale transversale, pluridisciplinaire
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
