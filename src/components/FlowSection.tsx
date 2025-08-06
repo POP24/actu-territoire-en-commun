@@ -10,54 +10,54 @@ const FlowSection = () => {
           <div className="space-y-16">
             {/* Flux financier en 2 colonnes */}
             <div className="grid md:grid-cols-2 gap-8">
-              {/* L'argent du réseau - Gauche */}
+              {/* Réseau général - Gauche */}
               <div className="bg-gradient-card p-8 rounded-xl shadow-soft border border-border">
-                <h3 className="text-2xl font-bold mb-6 text-foreground text-center">L'argent du réseau</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-primary rounded-full"></div>
-                    <span className="text-lg font-semibold">1M€ collecté</span>
+                <h3 className="text-2xl font-bold mb-8 text-foreground text-center">Réseau général</h3>
+                <div className="space-y-6 max-w-sm mx-auto">
+                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 text-center">
+                    <div className="w-4 h-4 bg-primary rounded-full mx-auto mb-2"></div>
+                    <span className="text-lg font-semibold text-primary">1M€ collecté</span>
                   </div>
-                  <div className="text-muted-foreground text-center">↓</div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                    <span className="text-lg font-semibold">50 coordinateurs</span>
+                  <div className="text-muted-foreground text-center text-2xl">↓</div>
+                  <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-4 text-center">
+                    <div className="w-4 h-4 bg-secondary rounded-full mx-auto mb-2"></div>
+                    <span className="text-lg font-semibold text-secondary-foreground">50 coordinateurs</span>
                   </div>
-                  <div className="text-muted-foreground text-center">↓</div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-accent rounded-full"></div>
-                    <span className="text-lg font-semibold">50 associations locales</span>
+                  <div className="text-muted-foreground text-center text-2xl">↓</div>
+                  <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 text-center">
+                    <div className="w-4 h-4 bg-accent rounded-full mx-auto mb-2"></div>
+                    <span className="text-lg font-semibold text-accent-foreground">50 associations locales</span>
                   </div>
-                  <div className="text-muted-foreground text-center">↓</div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-primary rounded-full"></div>
-                    <span className="text-lg font-semibold">50 lieux acquis</span>
+                  <div className="text-muted-foreground text-center text-2xl">↓</div>
+                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 text-center">
+                    <div className="w-4 h-4 bg-primary rounded-full mx-auto mb-2"></div>
+                    <span className="text-lg font-semibold text-primary">50 lieux acquis</span>
                   </div>
                 </div>
               </div>
               
-              {/* L'argent local - Droite */}
+              {/* Réseau local - Droite */}
               <div className="bg-gradient-card p-8 rounded-xl shadow-soft border border-border">
-                <h3 className="text-2xl font-bold mb-6 text-foreground text-center">L'argent local</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                    <span className="text-lg font-semibold">Cagnotte mensuelle</span>
+                <h3 className="text-2xl font-bold mb-8 text-foreground text-center">Réseau local</h3>
+                <div className="space-y-6 max-w-sm mx-auto">
+                  <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-4 text-center">
+                    <div className="w-4 h-4 bg-secondary rounded-full mx-auto mb-2"></div>
+                    <span className="text-lg font-semibold text-secondary-foreground">Cagnotte mensuelle</span>
                   </div>
-                  <div className="text-muted-foreground text-center">↓</div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-accent rounded-full"></div>
-                    <span className="text-lg font-semibold">Acquisition collective</span>
+                  <div className="text-muted-foreground text-center text-2xl">↓</div>
+                  <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 text-center">
+                    <div className="w-4 h-4 bg-accent rounded-full mx-auto mb-2"></div>
+                    <span className="text-lg font-semibold text-accent-foreground">Acquisition collective</span>
                   </div>
-                  <div className="text-muted-foreground text-center">↓</div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-primary rounded-full"></div>
-                    <span className="text-lg font-semibold">Revenus générés</span>
+                  <div className="text-muted-foreground text-center text-2xl">↓</div>
+                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 text-center">
+                    <div className="w-4 h-4 bg-primary rounded-full mx-auto mb-2"></div>
+                    <span className="text-lg font-semibold text-primary">Revenus générés</span>
                   </div>
-                  <div className="text-muted-foreground text-center">↓</div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                    <span className="text-lg font-semibold">Réinvestissement territorial</span>
+                  <div className="text-muted-foreground text-center text-2xl">↓</div>
+                  <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-4 text-center">
+                    <div className="w-4 h-4 bg-secondary rounded-full mx-auto mb-2"></div>
+                    <span className="text-lg font-semibold text-secondary-foreground">Réinvestissement territorial</span>
                   </div>
                 </div>
               </div>
