@@ -1,85 +1,111 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 const FinancingSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="financement" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
-            FINANCER VOTRE TERRITOIRE
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
+            FINANCEMENT
           </h2>
           
           <div className="text-center mb-12">
-            <h3 className="text-2xl font-semibold mb-8 text-foreground">Le modèle est simple :</h3>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Phase 1 */}
-            <div className="bg-gradient-card p-6 rounded-xl shadow-soft border border-border">
-              <div className="bg-primary text-primary-foreground w-8 h-8 rounded-full flex items-center justify-center font-bold mb-4">
-                1
-              </div>
-              <h4 className="text-xl font-bold mb-4 text-foreground">Phase 1 : Constitution</h4>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>L'activateur rassemble 20+ personnes</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Création de l'association locale</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Ouverture de la cagnotte</span>
-                </li>
-              </ul>
-            </div>
+            <h3 className="text-2xl font-semibold text-foreground mb-8">
+              Le circuit simple :
+            </h3>
             
-            {/* Phase 2 */}
-            <div className="bg-gradient-card p-6 rounded-xl shadow-soft border border-border">
-              <div className="bg-secondary text-secondary-foreground w-8 h-8 rounded-full flex items-center justify-center font-bold mb-4">
-                2
+            {/* Flow visualization */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
+              <div className="flex items-center gap-4 bg-green-50 dark:bg-green-900/20 p-4 rounded-xl border border-green-200 dark:border-green-800">
+                <div className="text-3xl">💰</div>
+                <div className="text-lg font-semibold text-green-800 dark:text-green-200">Cagnottes locales</div>
               </div>
-              <h4 className="text-xl font-bold mb-4 text-foreground">Phase 2 : Financement</h4>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Objectif : 50-200k€ selon le projet</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Crowdfunding + obligations locales</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Le réseau abonde jusqu'à 30%</span>
-                </li>
-              </ul>
-            </div>
-            
-            {/* Phase 3 */}
-            <div className="bg-gradient-card p-6 rounded-xl shadow-soft border border-border">
-              <div className="bg-accent text-accent-foreground w-8 h-8 rounded-full flex items-center justify-center font-bold mb-4">
-                3
+              
+              <div className="text-2xl text-muted-foreground hidden md:block">→</div>
+              
+              <div className="flex items-center gap-4 bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl border border-blue-200 dark:border-blue-800">
+                <div className="text-3xl">🏡</div>
+                <div className="text-lg font-semibold text-blue-800 dark:text-blue-200">Achat collectif</div>
               </div>
-              <h4 className="text-xl font-bold mb-4 text-foreground">Phase 3 : Acquisition</h4>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Achat collectif du lieu</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>100% de gouvernance locale</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Connexion au réseau national</span>
-                </li>
-              </ul>
+              
+              <div className="text-2xl text-muted-foreground hidden md:block">→</div>
+              
+              <div className="flex items-center gap-4 bg-purple-50 dark:bg-purple-900/20 p-4 rounded-xl border border-purple-200 dark:border-purple-800">
+                <div className="text-3xl">📈</div>
+                <div className="text-lg font-semibold text-purple-800 dark:text-purple-200">Revenus</div>
+              </div>
+              
+              <div className="text-2xl text-muted-foreground hidden md:block">→</div>
+              
+              <div className="flex items-center gap-4 bg-orange-50 dark:bg-orange-900/20 p-4 rounded-xl border border-orange-200 dark:border-orange-800">
+                <div className="text-3xl">♻️</div>
+                <div className="text-lg font-semibold text-orange-800 dark:text-orange-200">Réinvestissement</div>
+              </div>
             </div>
           </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Entrées */}
+            <Card className="border-2 border-green-200 bg-green-50 dark:bg-green-900/20 dark:border-green-800">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
+                  <span className="text-3xl mr-3">💳</span>
+                  Entrées
+                </h3>
+                <div className="space-y-4 text-foreground">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                    <span>Adhésions</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                    <span>Séjours</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                    <span>Formations</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Sorties */}
+            <Card className="border-2 border-blue-200 bg-blue-50 dark:bg-blue-900/20 dark:border-blue-800">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
+                  <span className="text-3xl mr-3">💸</span>
+                  Sorties
+                </h3>
+                <div className="space-y-4 text-foreground">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                    <span>Coordinateurs</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                    <span>Maintenance</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                    <span>Nouveau territoire</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Résultat */}
+          <Card className="border-2 border-purple-200 bg-purple-50 dark:bg-purple-900/20 dark:border-purple-800">
+            <CardContent className="p-8 text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center justify-center">
+                <span className="text-3xl mr-3">🎯</span>
+                Résultat
+              </h3>
+              <div className="text-xl font-semibold text-purple-800 dark:text-purple-200">
+                Propriété collective des communs
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
