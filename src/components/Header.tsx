@@ -18,11 +18,11 @@ const Header = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#accueil" className="text-foreground hover:text-primary transition-smooth">Accueil</a>
-            <a href="#territoire" className="text-foreground hover:text-primary transition-smooth">Territoires</a>
-            <a href="#gouvernance" className="text-foreground hover:text-primary transition-smooth">Gouvernance</a>
-            <a href="#financement" className="text-foreground hover:text-primary transition-smooth">Financement</a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-smooth">Contact</a>
+            <a href="#accueil" className="text-primary hover:text-primary/80 transition-smooth font-semibold">Accueil</a>
+            <a href="#territoire" className="text-primary hover:text-primary/80 transition-smooth font-semibold">Territoires</a>
+            <a href="#gouvernance" className="text-primary hover:text-primary/80 transition-smooth font-semibold">Gouvernance</a>
+            <a href="#financement" className="text-primary hover:text-primary/80 transition-smooth font-semibold">Financement</a>
+            <a href="#contact" className="text-primary hover:text-primary/80 transition-smooth font-semibold">Contact</a>
           </div>
           
           <div className="flex items-center space-x-4">
