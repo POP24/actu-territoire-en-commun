@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import communityGathering from "/lovable-uploads/0a3e519a-7871-4f9d-9d79-393c652214ee.png";
 import heroPortrait from "/lovable-uploads/53182d9e-f20d-4927-8092-8aefbc7458f6.png";
 
 const HeroSection = () => {
@@ -62,11 +63,19 @@ const HeroSection = () => {
               </div>
               
               {/* Main image container */}
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 xl:w-[500px] xl:h-[500px]">
+              <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] xl:w-[550px] xl:h-[550px]">
+                {/* Default image - Community gathering */}
+                <img 
+                  src={communityGathering} 
+                  alt="Rassemblement communautaire"
+                  className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant relative z-10 transform group-hover:scale-105 transition-smooth group-hover:opacity-0"
+                />
+                
+                {/* Hover image - Portrait mystique */}
                 <img 
                   src={heroPortrait} 
                   alt="Portrait mystique"
-                  className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant relative z-10 transform group-hover:scale-105 transition-smooth"
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant z-10 transform group-hover:scale-105 transition-smooth opacity-0 group-hover:opacity-100"
                 />
                 
                 {/* Cosmic glow overlay */}
