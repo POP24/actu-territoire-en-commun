@@ -6,6 +6,7 @@ import FinancingSection from "@/components/FinancingSection";
 import TypologySection from "@/components/TypologySection";
 import ToolsSection from "@/components/ToolsSection";
 import FlowSection from "@/components/FlowSection";
+import ActivationSection from "@/components/ActivationSection";
 import NextStepsSection from "@/components/NextStepsSection";
 import Footer from "@/components/Footer";
 
@@ -20,6 +21,7 @@ const Index = () => {
       <TypologySection />
       <ToolsSection />
       <FlowSection />
+      <ActivationSection />
       <NextStepsSection />
       <Footer />
     </div>
