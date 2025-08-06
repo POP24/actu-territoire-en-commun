@@ -16,11 +16,9 @@ const Index = () => {
       <HeroSection />
       <ObjectiveSection />
       <PathwaysSection />
-      
-      <GovernanceSection />
-      
-      <TypologySection />
       <ToolsSection />
+      <GovernanceSection />
+      <TypologySection />
       <Footer />
     </div>
   );
