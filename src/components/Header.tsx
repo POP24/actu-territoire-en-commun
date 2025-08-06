@@ -9,7 +9,7 @@ const Header = () => {
             <img src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" alt="Logo" className="w-16 h-16 rounded-lg" />
             <div className="flex flex-col">
               <img src="/lovable-uploads/c46d5cc1-ebb1-4b65-bce3-cb7de3d3223a.png" alt="La Suite du Monde" className="h-8" />
-              <span className="text-sm text-primary font-medium">réseau de communes imaginées</span>
+              <span className="text-sm font-bold bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">COMMUNE IMAGINÉE</span>
             </div>
           </div>
           
