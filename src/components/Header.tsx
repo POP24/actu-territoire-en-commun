@@ -17,12 +17,26 @@ const Header = () => {
             </div>
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#accueil" className="text-foreground hover:text-primary transition-smooth">Accueil</a>
-            <a href="#territoire" className="text-foreground hover:text-primary transition-smooth">Territoires</a>
-            <a href="#gouvernance" className="text-foreground hover:text-primary transition-smooth">Gouvernance</a>
-            <a href="#financement" className="text-foreground hover:text-primary transition-smooth">Financement</a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-smooth">Contact</a>
+          <div className="hidden md:flex items-center space-x-6 text-sm">
+            <div className="flex items-center space-x-1">
+              <span>📍</span>
+              <span className="text-foreground">Les lieux existent</span>
+            </div>
+            <span className="text-muted-foreground">→</span>
+            <div className="flex items-center space-x-1">
+              <span>🤝</span>
+              <span className="text-foreground">Les outils sont prêts</span>
+            </div>
+            <span className="text-muted-foreground">→</span>
+            <div className="flex items-center space-x-1">
+              <span>💡</span>
+              <span className="text-foreground">Les gens sont là</span>
+            </div>
+            <span className="text-muted-foreground">→</span>
+            <div className="flex items-center space-x-1 px-3 py-1 bg-red-100 dark:bg-red-900/20 rounded-full border border-red-300 dark:border-red-700">
+              <span>🌐</span>
+              <span className="text-red-600 dark:text-red-400 font-semibold">Le lien manque</span>
+            </div>
           </div>
           
           <div className="flex items-center space-x-4">
