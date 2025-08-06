@@ -42,18 +42,11 @@ const ToolsSection = () => {
       
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
-          {/* En-tête avec résultat */}
-          <div className="text-center mb-12 sm:mb-16">
-            <div className="bg-purple-200 rounded-2xl p-6 sm:p-8 mb-8 sm:mb-12 inline-block">
-              <h3 className="text-xl sm:text-2xl font-bold text-purple-800 mb-2">Résultat</h3>
-              <p className="text-purple-700 text-sm sm:text-base">Activation de plusieurs territoires, ouverture, réveil, coordination</p>
-            </div>
-          </div>
 
           {/* Titre principal */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 sm:mb-6">
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">ACTIVE TON</span>{" "}
-            <span className="text-foreground">TERRITOIRE</span>
+            <span className="text-foreground">ACTIVE TON</span>{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITOIRE</span>
           </h2>
           
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium text-center mb-12 sm:mb-16">

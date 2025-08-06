@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
             
             <Button variant="cta" size="lg" className="text-lg px-12 py-4 bg-white text-primary hover:bg-white/90">
-              Participer à 100€
+              Adhérer à 100€
             </Button>
           </div>
           
