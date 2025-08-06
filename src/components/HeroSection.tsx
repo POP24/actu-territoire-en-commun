@@ -6,16 +6,15 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-32 sm:w-64 h-32 sm:h-64 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-6 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
           {/* Text Content - Left Side */}
-          <div className="text-white space-y-8">
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight drop-shadow-2xl">
+          <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
               Le Réseau des
               <br />
               <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-2xl">
@@ -23,37 +22,37 @@ const HeroSection = () => {
               </span>
             </h1>
             
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
               Système d'Activation Territoriale
             </h2>
             
-            <p className="text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed drop-shadow-lg">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed drop-shadow-lg max-w-2xl mx-auto lg:mx-0">
               Nous fédérons <strong>10 000 pionniers</strong> pour lever <strong>1 million d'euros</strong>.
-              <br />
-              Cet argent finance des activateurs territoriaux qui créent des communes autonomes.
+              <br className="hidden sm:block" />
+              <span className="inline sm:block">Cet argent finance des activateurs territoriaux qui créent des communes autonomes.</span>
             </p>
             
-            <div className="flex justify-start mt-12">
-              <Button variant="cta" size="lg" className="text-xl px-16 py-6 font-bold rounded-full">
+            <div className="flex justify-center lg:justify-start mt-8 sm:mt-12">
+              <Button variant="cta" size="lg" className="text-lg sm:text-xl px-8 sm:px-16 py-4 sm:py-6 font-bold rounded-full">
                 Participer à 100€
               </Button>
             </div>
           </div>
           
           {/* Image - Right Side */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
             <div className="relative group">
               {/* Cosmic roots border effect */}
-              <div className="absolute -inset-4 bg-gradient-to-t from-green-400 via-blue-500 via-purple-500 to-pink-400 rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-primary rounded-xl sm:rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition-smooth animate-pulse"></div>
               
               {/* Rainbow roots pattern */}
-              <div className="absolute -inset-2 rounded-xl opacity-60">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-400 via-yellow-400 via-green-400 via-blue-400 via-indigo-400 to-purple-400 rounded-xl animate-pulse"></div>
-                <div className="absolute inset-1 bg-gradient-hero rounded-xl"></div>
+              <div className="absolute -inset-1 sm:-inset-2 rounded-lg sm:rounded-xl opacity-60">
+                <div className="absolute inset-0 bg-gradient-primary rounded-lg sm:rounded-xl animate-pulse"></div>
+                <div className="absolute inset-1 bg-gradient-hero rounded-lg sm:rounded-xl"></div>
               </div>
               
               {/* Tree roots decorative elements */}
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-32 h-16 opacity-40">
+              <div className="absolute -top-4 sm:-top-8 left-1/2 transform -translate-x-1/2 w-16 sm:w-32 h-8 sm:h-16 opacity-40">
                 <svg viewBox="0 0 100 50" className="w-full h-full text-white/60">
                   <path d="M50,50 Q30,30 10,10 M50,50 Q50,20 30,5 M50,50 Q70,30 90,10 M50,50 Q50,20 70,5" 
                         stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
@@ -61,20 +60,20 @@ const HeroSection = () => {
               </div>
               
               {/* Main image container */}
-              <div className="relative w-96 h-96 lg:w-[500px] lg:h-[500px]">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 xl:w-[500px] xl:h-[500px]">
                 <img 
                   src={heroPortrait} 
                   alt="Portrait mystique"
-                  className="w-full h-full object-cover rounded-xl shadow-2xl relative z-10 transform group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant relative z-10 transform group-hover:scale-105 transition-smooth"
                 />
                 
                 {/* Cosmic glow overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-transparent via-blue-400/20 to-purple-400/30 rounded-xl z-20 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-transparent via-primary/20 to-secondary/30 rounded-lg sm:rounded-xl z-20 pointer-events-none"></div>
               </div>
               
               {/* Bottom roots */}
-              <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-40 h-12 opacity-30">
-                <svg viewBox="0 0 120 40" className="w-full h-full text-green-400">
+              <div className="absolute -bottom-3 sm:-bottom-6 left-1/2 transform -translate-x-1/2 w-20 sm:w-40 h-6 sm:h-12 opacity-30">
+                <svg viewBox="0 0 120 40" className="w-full h-full text-accent">
                   <path d="M60,0 Q40,20 20,40 M60,0 Q60,25 40,35 M60,0 Q80,20 100,40 M60,0 Q60,25 80,35" 
                         stroke="currentColor" strokeWidth="3" fill="none"/>
                 </svg>

@@ -45,64 +45,67 @@ const ActivationSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-center mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              OUTILS INTÉGRÉS
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4">
+              <span className="text-foreground">PROCESSUS D'ACTIVATION TERRITORIALE : DE LA SÉLECTION DU FOCALISATEUR À</span>{" "}
+              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">L'AUTONOMIE LOCALE</span>
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Processus d'activation territoriale : de la sélection du focalisateur à l'autonomie locale
-            </p>
+            <div className="text-center mb-4">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
+                <span className="text-foreground">ACTIVE TON</span>{" "}
+                <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITOIRE</span>
+              </h3>
+              <p className="text-base sm:text-lg text-foreground">
+                Coopérative intégrale transversale, pluridisciplinaire
+              </p>
+            </div>
           </div>
 
           {/* Processus d'activation */}
-          <div className="mb-20">
-            <h3 className="text-2xl font-bold text-center mb-12 text-foreground">
-              Territory Activation Process
-            </h3>
-            
-            {/* Version Desktop */}
-            <div className="hidden lg:flex items-center justify-between mb-8">
+          <div className="mb-16 sm:mb-20">
+            {/* Version Desktop/Tablet */}
+            <div className="hidden md:flex flex-wrap items-center justify-center gap-6 lg:gap-8 mb-8">
               {processSteps.map((step, index) => (
                 <div key={index} className="flex items-center">
-                  <div className="flex flex-col items-center animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                    <div className={`w-32 h-32 ${step.color} rounded-full flex flex-col items-center justify-center text-white font-bold text-center p-4 hover:scale-105 transition-transform duration-300 shadow-lg`}>
-                      <div className="text-sm leading-tight mb-1">{step.title}</div>
+                  <div className="flex flex-col items-center">
+                    <div className={`w-24 lg:w-32 h-24 lg:h-32 ${step.color} rounded-full flex flex-col items-center justify-center text-white font-bold text-center p-3 lg:p-4 hover:scale-105 transition-smooth shadow-elegant`}>
+                      <div className="text-xs lg:text-sm leading-tight">{step.title}</div>
                     </div>
-                    <div className={`mt-4 text-center ${step.textColor}`}>
-                      <div className="font-semibold text-sm">{step.subtitle}</div>
+                    <div className={`mt-3 lg:mt-4 text-center ${step.textColor}`}>
+                      <div className="font-semibold text-xs lg:text-sm">{step.subtitle}</div>
                       <div className="text-xs">{step.duration}</div>
                     </div>
                   </div>
                   {index < processSteps.length - 1 && (
-                    <div className="mx-4 text-4xl text-muted-foreground">→</div>
+                    <div className="mx-2 lg:mx-4 text-2xl lg:text-4xl text-muted-foreground">→</div>
                   )}
                 </div>
               ))}
             </div>
 
-            {/* Version Mobile */}
-            <div className="lg:hidden space-y-6">
+            {/* Version Mobile/Small Tablet */}
+            <div className="md:hidden space-y-4">
               {processSteps.map((step, index) => (
-                <div key={index} className="flex items-center animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className={`w-20 h-20 ${step.color} rounded-full flex items-center justify-center text-white font-bold text-center p-2 shadow-lg`}>
+                <div key={index} className="flex items-center bg-card p-4 rounded-xl shadow-soft border border-border">
+                  <div className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center text-white font-bold text-center p-2 shadow-soft flex-shrink-0`}>
                     <div className="text-xs leading-tight">{step.title}</div>
                   </div>
                   <div className="ml-4 flex-1">
-                    <div className={`font-semibold ${step.textColor}`}>{step.subtitle}</div>
-                    <div className="text-sm text-muted-foreground">{step.duration}</div>
+                    <div className={`font-semibold text-sm ${step.textColor}`}>{step.subtitle}</div>
+                    <div className="text-xs text-muted-foreground">{step.duration}</div>
                   </div>
                   {index < processSteps.length - 1 && (
-                    <div className="text-2xl text-muted-foreground ml-4">↓</div>
+                    <div className="text-xl text-muted-foreground ml-2">↓</div>
                   )}
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Le Rôle Clé du Focalisateur */}
             <div className="bg-gradient-card p-8 rounded-xl shadow-soft border border-border">
               <h3 className="text-2xl font-bold mb-6 text-foreground">Le Rôle Clé du Focalisateur</h3>
