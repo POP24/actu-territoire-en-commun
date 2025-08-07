@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { TT } from "@/components/TooltipGlossary";
 import communityGathering from "/lovable-uploads/0a3e519a-7871-4f9d-9d79-393c652214ee.png";
 import heroPortrait from "/lovable-uploads/53182d9e-f20d-4927-8092-8aefbc7458f6.png";
-
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
@@ -14,31 +14,41 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
           {/* Text Content - Left Side */}
-          <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
-              Le Réseau des
+          <div className="space-y-6 sm:space-y-8 text-center lg:text-left animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+              🏛️ LE RÉSEAU DES
               <br />
-              <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-2xl">
-                Communes
-              </span>
+              <span className="bg-gradient-to-r from-foreground to-primary/80 bg-clip-text text-transparent">COMMUNES</span>
             </h1>
-            
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
-              Système d'Activation Territoriale
+
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/80">
+              La première <TT term={"DAO" as any}>Organisation Autonome Décentralisée</TT> française pour l'activation territoriale
             </h2>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed drop-shadow-lg max-w-2xl mx-auto lg:mx-0">
-              Nous fédérons <strong>10 000 pionniers</strong>
-              <br />
-              pour lever <strong>1 million d'euros</strong>.
-              <br className="hidden sm:block" />
-              <span className="inline sm:block">Cet argent finance des activateurs territoriaux qui créent des communes autonomes.</span>
-            </p>
-            
-            <div className="flex justify-center lg:justify-start mt-8 sm:mt-12">
-              <Button variant="cta" size="lg" className="text-lg sm:text-xl px-8 sm:px-16 py-4 sm:py-6 font-bold rounded-full">
-                Adhérer à 100€
-              </Button>
+
+            <div className="inline-flex items-center justify-center lg:justify-start gap-2 text-sm px-4 py-2 rounded-full border border-border bg-background/40 backdrop-blur">
+              <span>🎯</span>
+              <span className="font-semibold">NOUS RECHERCHONS 1000 ARCHITECTES</span>
+            </div>
+
+            <div className="grid sm:flex items-center gap-4 sm:gap-6 text-sm sm:text-base">
+              <div className="px-4 py-3 rounded-xl border border-border bg-background/50">
+                <span className="font-bold">127/1000</span> Architectes
+              </div>
+              <div className="px-4 py-3 rounded-xl border border-border bg-background/50">
+                <span className="font-bold">12 700€/100 000€</span>
+              </div>
+              <div className="px-4 py-3 rounded-xl border border-border bg-background/50">
+                <span className="font-bold">2</span> Territoires activés
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <div className="text-foreground/80 font-medium">💡 DEVENEZ ARCHITECTE FONDATEUR</div>
+              <div className="flex justify-center lg:justify-start">
+                <Button size="lg" className="px-8">
+                  CHOISIR MON NIVEAU D'ENGAGEMENT
+                </Button>
+              </div>
             </div>
           </div>
           
