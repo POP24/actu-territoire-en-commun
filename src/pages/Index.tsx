@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ObjectiveSection from "@/components/ObjectiveSection";
@@ -12,6 +13,10 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Réseau des Communes — Activer des communes autonomes"
+        description="10 000 membres pour financer des activateurs locaux. Adhérez dès 100€."
+      />
       <Header />
       <HeroSection />
       <ObjectiveSection />
