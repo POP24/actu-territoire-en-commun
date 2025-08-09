@@ -50,7 +50,10 @@ const HeroSection = () => {
                       <div className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
                         Adhésion Nationale Architecte
                       </div>
-                      <div className="text-sm text-muted-foreground mt-1">
+                      <div className="flex items-center justify-center my-2">
+                        <div className="w-12 h-px bg-primary/30"></div>
+                      </div>
+                      <div className="text-sm text-muted-foreground">
                         Rejoindre le réseau national
                       </div>
                     </Link>
@@ -60,7 +63,10 @@ const HeroSection = () => {
                       <div className="font-semibold text-lg text-foreground group-hover:text-secondary transition-colors">
                         Adhésion Territoriale
                       </div>
-                      <div className="text-sm text-muted-foreground mt-1">
+                      <div className="flex items-center justify-center my-2">
+                        <div className="w-12 h-px bg-secondary/30"></div>
+                      </div>
+                      <div className="text-sm text-muted-foreground">
                         Participer localement
                       </div>
                     </Link>
