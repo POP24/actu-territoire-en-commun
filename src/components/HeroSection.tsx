@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
 import communityGathering from "/lovable-uploads/0a3e519a-7871-4f9d-9d79-393c652214ee.png";
 import heroPortrait from "/lovable-uploads/53182d9e-f20d-4927-8092-8aefbc7458f6.png";
@@ -36,13 +37,22 @@ const HeroSection = () => {
               <span className="inline sm:block">Cet argent finance des activateurs territoriaux qui créent des communes autonomes.</span>
             </p>
             
-            <div className="flex justify-center mt-8 sm:mt-12 gap-4">
-              <Button asChild variant="territorial" size="lg" className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full">
-                <Link to="/investir?niveau=territorial" aria-label="Adhérer niveau territorial">Adhérer (Territorial)</Link>
-              </Button>
-              <Button asChild variant="national" size="lg" className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full">
-                <Link to="/investir?niveau=national" aria-label="Adhérer niveau national">Adhérer (National)</Link>
-              </Button>
+            <div className="flex justify-center mt-8 sm:mt-12">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="territorial" size="lg" className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-2xl">
+                    ADHÉRER
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="center" className="z-50 bg-card border border-border shadow-lg">
+                  <DropdownMenuItem asChild>
+                    <Link to="/investir?niveau=national" aria-label="Adhésion Nationale Architecte">Adhésion Nationale Architecte</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale Dordogne Perigord Vert">Adhésion Territoriale<br/>Dordogne Perigord Vert</Link>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
           

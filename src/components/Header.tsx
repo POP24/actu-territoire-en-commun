@@ -29,14 +29,14 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="territorial" className="rounded-2xl">Adhérer</Button>
+                <Button variant="territorial" className="rounded-2xl">ADHÉRER</Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="z-50 bg-card border border-border shadow-lg">
                 <DropdownMenuItem asChild>
-                  <Link to="/investir?niveau=national" aria-label="Adhésion Nationale Architecte">Adhésion Nationale Architecte</Link>
+                  <Link to="/investir?niveau=national" aria-label="Adhésion Nationale">Adhésion Nationale</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale Dordogne Perigord Vert">Adhésion Territoriale<br/>Dordogne Perigord Vert</Link>
+                  <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale">Adhésion Territoriale</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
