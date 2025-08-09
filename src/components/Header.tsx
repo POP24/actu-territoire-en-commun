@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -26,12 +27,19 @@ const Header = () => {
           </div>
           
           <div className="flex items-center space-x-4">
-            <Button asChild variant="hero" className="rounded-full">
-              <Link to="/investir?niveau=national" aria-label="Adhérer au niveau national">Adhérer (National)</Link>
-            </Button>
-            <Button asChild variant="cta" className="rounded-full">
-              <Link to="/investir?niveau=territorial" aria-label="Adhérer au niveau territorial">Adhérer (Territorial)</Link>
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="hero" className="rounded-full">Adhérer</Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="z-50 bg-popover">
+                <DropdownMenuItem asChild>
+                  <Link to="/investir?niveau=national" aria-label="Adhérer au niveau national">Adhérer (National)</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/investir?niveau=territorial" aria-label="Adhérer au niveau territorial">Adhérer (Territorial)</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </nav>
       </div>

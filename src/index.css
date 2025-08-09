@@ -35,6 +35,8 @@ All colors MUST be HSL.
     --gradient-card: linear-gradient(145deg, hsl(220 15% 98%), hsl(210 25% 95%));
     /* CTA/Button gradient inspired by reference: deep teal -> green-teal */
     --gradient-cta: linear-gradient(135deg, hsl(210 78% 16%), hsl(196 70% 24%));
+    /* National (orange) */
+    --gradient-national: linear-gradient(135deg, hsl(28 92% 55%), hsl(14 92% 50%));
     
     --primary-glow: 185 75% 65%;
     --secondary-glow: 195 85% 70%;

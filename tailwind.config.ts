@@ -63,12 +63,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
-			backgroundImage: {
-				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)',
-				'gradient-cta': 'var(--gradient-cta)',
-			},
+				backgroundImage: {
+					'gradient-primary': 'var(--gradient-primary)',
+					'gradient-hero': 'var(--gradient-hero)',
+					'gradient-card': 'var(--gradient-card)',
+					'gradient-cta': 'var(--gradient-cta)',
+					'gradient-national': 'var(--gradient-national)',
+				},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'soft': 'var(--shadow-soft)',

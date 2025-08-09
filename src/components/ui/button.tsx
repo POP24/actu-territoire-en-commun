@@ -20,6 +20,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-gradient-cta text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-105 font-semibold rounded-full px-8 py-3",
         cta: "bg-gradient-cta text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-105 font-bold rounded-full px-6 py-3",
+        national: "bg-gradient-national text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-105 font-bold rounded-full px-6 py-3",
+        territorial: "bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-105 font-bold rounded-full px-6 py-3",
         "outline-hero": "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
       },
       size: {
