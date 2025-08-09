@@ -29,14 +29,18 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="territorial" className="rounded-2xl">ADHÉRER</Button>
+                <Button variant="territorial" className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">ADHÉRER</Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="z-50 bg-card border border-border shadow-lg">
-                <DropdownMenuItem asChild>
-                  <Link to="/investir?niveau=national" aria-label="Adhésion Nationale">Adhésion Nationale</Link>
+              <DropdownMenuContent align="end" className="z-50 bg-card/95 backdrop-blur-sm border-2 border-primary/20 shadow-xl rounded-xl p-1 min-w-[220px] sm:min-w-[250px] animate-fade-in">
+                <DropdownMenuItem asChild className="rounded-lg p-3 hover:bg-primary/10 transition-all duration-200 cursor-pointer">
+                  <Link to="/investir?niveau=national" aria-label="Adhésion Nationale" className="block text-sm sm:text-base font-medium text-foreground hover:text-primary transition-colors">
+                    Adhésion Nationale Architecte
+                  </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale">Adhésion Territoriale</Link>
+                <DropdownMenuItem asChild className="rounded-lg p-3 hover:bg-secondary/10 transition-all duration-200 cursor-pointer">
+                  <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale" className="block text-sm sm:text-base font-medium text-foreground hover:text-secondary transition-colors">
+                    Adhésion Territoriale
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
