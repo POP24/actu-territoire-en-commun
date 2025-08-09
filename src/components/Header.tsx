@@ -19,11 +19,11 @@ const Header = () => {
             </div>
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
-            <NavLink to="/" className={({isActive}) => `font-semibold ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Accueil</NavLink>
-            <NavLink to="/opportunites" className={({isActive}) => `font-semibold ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Opportunités</NavLink>
-            <NavLink to="/territoires" className={({isActive}) => `font-semibold ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Territoires</NavLink>
-            <NavLink to="/gouvernance" className={({isActive}) => `font-semibold ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Gouvernance</NavLink>
+          <div className="hidden md:flex items-center space-x-12">
+            <NavLink to="/" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Accueil</NavLink>
+            <NavLink to="/opportunites" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Opportunités</NavLink>
+            <NavLink to="/territoires" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Territoires</NavLink>
+            <NavLink to="/gouvernance" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Gouvernance</NavLink>
           </div>
           
           <div className="flex items-center space-x-4">

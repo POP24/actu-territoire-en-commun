@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-smooth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]",
   {
     variants: {
       variant: {
@@ -18,10 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-cta text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-105 font-semibold rounded-full px-8 py-3",
-        cta: "bg-gradient-cta text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-105 font-bold rounded-full px-6 py-3",
-        national: "bg-gradient-national text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-105 font-bold rounded-full px-6 py-3",
-        territorial: "bg-gradient-primary text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-105 font-bold rounded-full px-6 py-3",
+        hero: "bg-gradient-cta text-white font-medium",
+        cta: "bg-gradient-cta text-white font-medium",
+        national: "bg-gradient-national text-white font-medium",
+        territorial: "bg-gradient-territorial text-white font-medium",
         "outline-hero": "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
       },
       size: {

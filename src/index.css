@@ -33,10 +33,17 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(200 95% 45%), hsl(185 75% 65%));
     --gradient-hero: linear-gradient(135deg, hsl(200 95% 45%) 0%, hsl(185 75% 65%) 50%, hsl(220 60% 75%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(220 15% 98%), hsl(210 25% 95%));
-    /* CTA/Button gradient inspired by reference: deep teal -> green-teal */
-    --gradient-cta: linear-gradient(135deg, hsl(210 78% 16%), hsl(196 70% 24%));
-    /* National (orange) */
-    --gradient-national: linear-gradient(135deg, hsl(28 92% 55%), hsl(14 92% 50%));
+    
+    /* Design system gradients - Orange CTA */
+    --gradient-cta: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
+    --gradient-national: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
+    
+    /* Design system gradients - Blue CTA */
+    --gradient-territorial: linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%);
+    
+    /* Brand colors */
+    --orange-brand: #F97316;
+    --orange-dark: #EA580C;
     
     --primary-glow: 185 75% 65%;
     --secondary-glow: 195 85% 70%;
