@@ -38,10 +38,10 @@ const HeroSection = () => {
             
             <div className="flex justify-center mt-8 sm:mt-12 gap-4">
               <Button asChild variant="territorial" size="lg" className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full">
-                <Link to="/investir?niveau=territorial" aria-label="Adhérer niveau territorial">Adhérer (Territorial)</Link>
+                <Link to="/investir?niveau=territorial" aria-label="Adhérer niveau territorial">ADHÉRER (TERRITORIAL)</Link>
               </Button>
               <Button asChild variant="national" size="lg" className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full">
-                <Link to="/investir?niveau=national" aria-label="Adhérer niveau national">Adhérer (National)</Link>
+                <Link to="/investir?niveau=national" aria-label="Adhérer niveau national">ADHÉRER (NATIONAL)</Link>
               </Button>
             </div>
           </div>
