@@ -31,8 +31,7 @@ All colors MUST be HSL.
 
     /* Custom gradients and colors for the communes theme */
     --gradient-primary: linear-gradient(135deg, hsl(200 95% 45%), hsl(185 75% 65%));
-    --gradient-hero: linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%);
-    --gradient-navbar: linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(200 95% 45%) 0%, hsl(185 75% 65%) 50%, hsl(220 60% 75%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(220 15% 98%), hsl(210 25% 95%));
     
     /* Design system gradients - Orange CTA */
