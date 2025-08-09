@@ -48,26 +48,14 @@ const HeroSection = () => {
                   <DropdownMenuItem asChild className="rounded-xl p-4 text-center hover:bg-primary/10 transition-all duration-200 cursor-pointer group">
                     <Link to="/investir?niveau=national" aria-label="Adhésion Nationale Architecte" className="block">
                       <div className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
-                        Adhésion Nationale Architecte
-                      </div>
-                      <div className="flex items-center justify-center my-2">
-                        <div className="w-12 h-px bg-primary/30"></div>
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        Rejoindre le réseau national
+                        Adhésion Nationale Architecte - Rejoindre le réseau national
                       </div>
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild className="rounded-xl p-4 text-center hover:bg-secondary/10 transition-all duration-200 cursor-pointer group">
                     <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale" className="block">
                       <div className="font-semibold text-lg text-foreground group-hover:text-secondary transition-colors">
-                        Adhésion Territoriale
-                      </div>
-                      <div className="flex items-center justify-center my-2">
-                        <div className="w-12 h-px bg-secondary/30"></div>
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        Participer localement
+                        Adhésion Territoriale - Participer localement
                       </div>
                     </Link>
                   </DropdownMenuItem>
