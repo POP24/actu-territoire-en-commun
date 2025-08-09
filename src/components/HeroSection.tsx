@@ -46,16 +46,22 @@ const HeroSection = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="center" className="z-50 bg-card/95 backdrop-blur-sm border-2 border-primary/20 shadow-2xl rounded-2xl p-2 min-w-[280px] animate-scale-in">
                   <DropdownMenuItem asChild className="rounded-xl p-4 text-center hover:bg-primary/10 transition-all duration-200 cursor-pointer group">
-                    <Link to="/investir?niveau=national" aria-label="Adhésion Nationale Architecte" className="block">
+                    <Link to="/investir?niveau=national" aria-label="Adhésion Nationale" className="block">
                       <div className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
-                        Adhésion Nationale Architecte - Rejoindre le réseau national
+                        Adhésion Nationale
+                      </div>
+                      <div className="text-sm text-muted-foreground mt-1">
+                        Pionnier, Architecte, Bienfaiteurs 100€
                       </div>
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild className="rounded-xl p-4 text-center hover:bg-secondary/10 transition-all duration-200 cursor-pointer group">
                     <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale" className="block">
                       <div className="font-semibold text-lg text-foreground group-hover:text-secondary transition-colors">
-                        Adhésion Territoriale - Participer localement
+                        Adhésion Territoriale
+                      </div>
+                      <div className="text-sm text-muted-foreground mt-1">
+                        Usagers, Artisans voisins, 10€ + prix libre
                       </div>
                     </Link>
                   </DropdownMenuItem>
