@@ -39,7 +39,7 @@ All colors MUST be HSL.
     --gradient-national: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
     
     /* Design system gradients - Blue CTA */
-    --gradient-territorial: linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%);
+    --gradient-territorial: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
     
     /* Button colors exact matches from reference */
     --orange-button: #FF8B00;

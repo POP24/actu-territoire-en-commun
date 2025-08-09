@@ -21,7 +21,7 @@ const buttonVariants = cva(
         hero: "bg-gradient-cta text-white font-medium",
         cta: "bg-gradient-cta text-white font-medium",
         national: "text-white font-medium bg-orange-500 hover:bg-orange-600",
-        territorial: "text-white font-medium bg-blue-500 hover:bg-blue-600",
+        territorial: "text-white font-medium bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 hover:from-blue-800 hover:via-blue-700 hover:to-blue-600",
         "outline-hero": "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
       },
       size: {
