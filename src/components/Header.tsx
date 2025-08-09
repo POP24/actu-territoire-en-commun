@@ -27,7 +27,10 @@ const Header = () => {
           
           <div className="flex items-center space-x-4">
             <Button asChild variant="hero" className="rounded-full">
-              <Link to="/investir">Adhérer dès 100€</Link>
+              <Link to="/investir?niveau=national" aria-label="Adhérer au niveau national">Adhérer (National)</Link>
+            </Button>
+            <Button asChild variant="cta" className="rounded-full">
+              <Link to="/investir?niveau=territorial" aria-label="Adhérer au niveau territorial">Adhérer (Territorial)</Link>
             </Button>
           </div>
         </nav>
