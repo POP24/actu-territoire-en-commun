@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-navbar backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
@@ -20,16 +20,16 @@ const Header = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-12">
-            <NavLink to="/" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Accueil</NavLink>
-            <NavLink to="/opportunites" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Opportunités</NavLink>
-            <NavLink to="/territoires" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Territoires</NavLink>
-            <NavLink to="/gouvernance" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-foreground" : "text-foreground/90 hover:text-foreground"}`}>Gouvernance</NavLink>
+            <NavLink to="/" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-white" : "text-white/90 hover:text-white"}`}>Accueil</NavLink>
+            <NavLink to="/opportunites" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-white" : "text-white/90 hover:text-white"}`}>Opportunités</NavLink>
+            <NavLink to="/territoires" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-white" : "text-white/90 hover:text-white"}`}>Territoires</NavLink>
+            <NavLink to="/gouvernance" className={({isActive}) => `font-semibold transition-colors ${isActive ? "text-white" : "text-white/90 hover:text-white"}`}>Gouvernance</NavLink>
           </div>
           
           <div className="flex items-center space-x-4">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="hero" className="rounded-full">Adhérer</Button>
+                <Button variant="cta" size="default">Adhérer</Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="z-50 bg-popover">
                 <DropdownMenuItem asChild>

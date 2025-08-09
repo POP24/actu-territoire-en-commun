@@ -36,11 +36,14 @@ const HeroSection = () => {
               <span className="inline sm:block">Cet argent finance des activateurs territoriaux qui créent des communes autonomes.</span>
             </p>
             
+            {/* Dégradé bleu en dessous du titre */}
+            <div className="w-full h-1 bg-gradient-navbar rounded-full mx-auto lg:mx-0 max-w-md mb-8"></div>
+            
             <div className="flex justify-center mt-8 sm:mt-12 gap-4">
-              <Button asChild variant="territorial" size="lg" className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full">
+              <Button asChild variant="territorial" size="lg" className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 font-bold">
                 <Link to="/investir?niveau=territorial" aria-label="Adhérer niveau territorial">Adhérer (Territorial)</Link>
               </Button>
-              <Button asChild variant="national" size="lg" className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 font-bold rounded-full">
+              <Button asChild variant="national" size="lg" className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 font-bold">
                 <Link to="/investir?niveau=national" aria-label="Adhérer niveau national">Adhérer (National)</Link>
               </Button>
             </div>
