@@ -20,10 +20,10 @@ export default defineConfig(({ mode }) => ({
     },
   },
   define: {
-    global: 'globalThis',
-    'process.env': {},
+    "process.env": {},   // évite ReferenceError côté navigateur
+    global: "globalThis" // compat Node globals
   },
   optimizeDeps: {
-    include: ['thirdweb', 'thirdweb/react', 'thirdweb/wallets', 'thirdweb/chains'],
+    include: ["thirdweb", "thirdweb/react", "thirdweb/wallets", "thirdweb/chains"],
   },
 }));
