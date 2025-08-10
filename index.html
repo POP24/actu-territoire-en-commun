@@ -21,8 +21,7 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-window.addEventListener('mouseover', initLandbot, { once: true });
-window.addEventListener('touchstart', initLandbot, { once: true });
+window.addEventListener('DOMContentLoaded', initLandbot);
 var myLandbot;
 function initLandbot() {
   if (!myLandbot) {
@@ -30,22 +29,24 @@ function initLandbot() {
     s.type = "module"
     s.async = true;
     s.addEventListener('load', function() {
-      myLandbot = new Landbot.Popup({
-        configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
-        launcher: {
-          icon: '/lovable-uploads/a13aa263-fb93-4954-99ed-954d0a5a8ae1.png',
-          backgroundColor: '#FFD580',
-          borderRadius: '50%',
-          width: '60px',
-          height: '60px',
-          position: 'fixed',
-          bottom: '20px',
-          right: '20px',
-          zIndex: 9999,
-          boxShadow: '0 4px 20px rgba(255, 213, 128, 0.4)',
-          border: '2px solid #FF8B00'
-        }
-      });
+      setTimeout(function() {
+        myLandbot = new Landbot.Popup({
+          configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
+          launcher: {
+            icon: '/lovable-uploads/a13aa263-fb93-4954-99ed-954d0a5a8ae1.png',
+            backgroundColor: '#FFD580',
+            borderRadius: '50%',
+            width: '60px',
+            height: '60px',
+            position: 'fixed',
+            bottom: '20px',
+            right: '20px',
+            zIndex: 10000,
+            boxShadow: '0 4px 20px rgba(255, 213, 128, 0.4)',
+            border: '2px solid #FF8B00'
+          }
+        });
+      }, 1000);
     });
     s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
     var x = document.getElementsByTagName('script')[0];
