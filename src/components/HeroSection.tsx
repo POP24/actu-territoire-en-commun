@@ -44,29 +44,67 @@ const HeroSection = () => {
                     ADHÉRER
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="center" className="z-[999] p-0 bg-gradient-national backdrop-blur-md border border-primary/20 shadow-elegant rounded-2xl min-w-[280px] animate-scale-in overflow-hidden">
-                  <div className="p-2 bg-card/95">
-                    <DropdownMenuItem asChild className="rounded-xl p-4 text-center hover:bg-primary/10 transition-all duration-200 cursor-pointer group">
-                      <Link to="/investir?niveau=national" aria-label="Adhésion Nationale" className="block">
-                        <div className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
-                          Adhésion Nationale
-                        </div>
-                        <div className="text-sm text-muted-foreground mt-1">
-                          Pionnier, Architecte, Bienfaiteurs 100€
+                <DropdownMenuContent align="center" className="z-[999] p-0 bg-gradient-dropdown-bg backdrop-blur-xl border-2 border-orange-400/30 shadow-2xl rounded-3xl min-w-[320px] sm:min-w-[360px] animate-scale-in overflow-hidden">
+                  {/* Decorative top border with gradient */}
+                  <div className="h-1 bg-gradient-dropdown-border"></div>
+                  
+                  <div className="p-6 space-y-3">
+                    {/* National Adhesion */}
+                    <DropdownMenuItem asChild className="rounded-2xl p-0 border-0 hover:bg-gradient-item-hover transition-all duration-300 cursor-pointer group overflow-hidden">
+                      <Link to="/investir?niveau=national" aria-label="Adhésion Nationale" className="block p-5 relative text-center">
+                        {/* Subtle glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                        
+                        <div className="relative z-10">
+                          <div className="flex items-center justify-center mb-2">
+                            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center mr-3">
+                              <div className="w-2 h-2 rounded-full bg-white"></div>
+                            </div>
+                            <div className="font-bold text-lg sm:text-xl text-white group-hover:text-orange-100 transition-colors">
+                              Adhésion Nationale
+                            </div>
+                          </div>
+                          <div className="text-sm sm:text-base text-orange-100/90 leading-relaxed">
+                            Pionnier, Architecte, Bienfaiteurs
+                          </div>
+                          <div className="text-lg font-semibold text-white mt-1">
+                            100€
+                          </div>
                         </div>
                       </Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem asChild className="rounded-xl p-4 text-center hover:bg-secondary/10 transition-all duration-200 cursor-pointer group">
-                      <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale" className="block">
-                        <div className="font-semibold text-lg text-foreground group-hover:text-secondary transition-colors">
-                          Adhésion Territoriale
-                        </div>
-                        <div className="text-sm text-muted-foreground mt-1">
-                          Usagers, Artisans voisins, 10€ + prix libre
+                    
+                    {/* Separator */}
+                    <div className="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent mx-2"></div>
+                    
+                    {/* Territorial Adhesion */}
+                    <DropdownMenuItem asChild className="rounded-2xl p-0 border-0 hover:bg-gradient-item-hover transition-all duration-300 cursor-pointer group overflow-hidden">
+                      <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale" className="block p-5 relative text-center">
+                        {/* Subtle glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                        
+                        <div className="relative z-10">
+                          <div className="flex items-center justify-center mb-2">
+                            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center mr-3">
+                              <div className="w-2 h-2 rounded-full bg-white"></div>
+                            </div>
+                            <div className="font-bold text-lg sm:text-xl text-white group-hover:text-orange-100 transition-colors">
+                              Adhésion Territoriale
+                            </div>
+                          </div>
+                          <div className="text-sm sm:text-base text-orange-100/90 leading-relaxed">
+                            Usagers, Artisans voisins
+                          </div>
+                          <div className="text-lg font-semibold text-white mt-1">
+                            10€ + prix libre
+                          </div>
                         </div>
                       </Link>
                     </DropdownMenuItem>
                   </div>
+                  
+                  {/* Decorative bottom border with gradient */}
+                  <div className="h-1 bg-gradient-dropdown-border"></div>
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>

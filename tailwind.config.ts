@@ -69,6 +69,10 @@ export default {
 					'gradient-card': 'var(--gradient-card)',
 					'gradient-cta': 'var(--gradient-cta)',
 					'gradient-national': 'var(--gradient-national)',
+					'gradient-territorial': 'var(--gradient-territorial)',
+					'gradient-dropdown-bg': 'var(--gradient-dropdown-bg)',
+					'gradient-dropdown-border': 'var(--gradient-dropdown-border)',
+					'gradient-item-hover': 'var(--gradient-item-hover)',
 				},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
