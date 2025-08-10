@@ -31,27 +31,29 @@ const Header = () => {
               <DropdownMenuTrigger asChild>
                 <Button variant="territorial" className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">ADHÉRER</Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="z-[999] bg-gradient-to-b from-primary/10 via-card to-card backdrop-blur-md border border-primary/20 shadow-elegant rounded-2xl p-2 min-w-[280px] animate-scale-in">
-                <DropdownMenuItem asChild className="rounded-xl p-4 hover:bg-primary/10 transition-all duration-200 cursor-pointer group">
-                  <Link to="/investir?niveau=national" aria-label="Adhésion Nationale" className="block">
-                    <div className="font-semibold text-base sm:text-lg text-foreground group-hover:text-primary transition-colors">
-                      Adhésion Nationale
-                    </div>
-                    <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-                      Pionnier, Architecte, Bienfaiteurs 100€
-                    </div>
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild className="rounded-xl p-4 hover:bg-secondary/10 transition-all duration-200 cursor-pointer group">
-                  <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale" className="block">
-                    <div className="font-semibold text-base sm:text-lg text-foreground group-hover:text-secondary transition-colors">
-                      Adhésion Territoriale
-                    </div>
-                    <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-                      Usagers, Artisans voisins, 10€ + prix libre
-                    </div>
-                  </Link>
-                </DropdownMenuItem>
+              <DropdownMenuContent align="end" className="z-[999] p-0 bg-gradient-national backdrop-blur-md border border-primary/20 shadow-elegant rounded-2xl min-w-[280px] animate-scale-in overflow-hidden">
+                <div className="p-2 bg-card/95">
+                  <DropdownMenuItem asChild className="rounded-xl p-4 hover:bg-primary/10 transition-all duration-200 cursor-pointer group">
+                    <Link to="/investir?niveau=national" aria-label="Adhésion Nationale" className="block">
+                      <div className="font-semibold text-base sm:text-lg text-foreground group-hover:text-primary transition-colors">
+                        Adhésion Nationale
+                      </div>
+                      <div className="text-xs sm:text-sm text-muted-foreground mt-1">
+                        Pionnier, Architecte, Bienfaiteurs 100€
+                      </div>
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild className="rounded-xl p-4 hover:bg-secondary/10 transition-all duration-200 cursor-pointer group">
+                    <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale" className="block">
+                      <div className="font-semibold text-base sm:text-lg text-foreground group-hover:text-secondary transition-colors">
+                        Adhésion Territoriale
+                      </div>
+                      <div className="text-xs sm:text-sm text-muted-foreground mt-1">
+                        Usagers, Artisans voisins, 10€ + prix libre
+                      </div>
+                    </Link>
+                  </DropdownMenuItem>
+                </div>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
