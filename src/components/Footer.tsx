@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { ThirdwebConnect } from "@/components/ThirdwebConnect";
 
 const Footer = () => {
   return (
@@ -17,15 +17,15 @@ const Footer = () => {
             <div className="mb-8">
               <h3 className="text-lg font-semibold mb-6">Adhésion via :</h3>
               <div className="flex flex-wrap justify-center gap-4">
-                <Button variant="outline-hero" className="bg-white/20 border-white/40 hover:bg-white/30">
+                <span className="bg-white/20 border border-white/40 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
                   Telegram
-                </Button>
-                <Button variant="outline-hero" className="bg-white/20 border-white/40 hover:bg-white/30">
+                </span>
+                <span className="bg-white/20 border border-white/40 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
                   Discord
-                </Button>
-                <Button variant="outline-hero" className="bg-white/20 border-white/40 hover:bg-white/30">
+                </span>
+                <span className="bg-white/20 border border-white/40 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
                   Web
-                </Button>
+                </span>
               </div>
             </div>
             
@@ -36,9 +36,10 @@ const Footer = () => {
               </a>
             </div>
             
-            <Button variant="cta" size="lg" className="text-lg px-12 py-4 bg-white text-primary hover:bg-white/90">
-              Adhérer à 100€
-            </Button>
+            <ThirdwebConnect 
+              label="Adhérer à 100€"
+              className="text-lg px-12 py-4"
+            />
           </div>
           
           <div className="border-t border-white/20 pt-8 text-white/80">

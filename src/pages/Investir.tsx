@@ -1,7 +1,7 @@
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
+import { ThirdwebConnect } from "@/components/ThirdwebConnect";
 import { Slider } from "@/components/ui/slider";
 import { useState } from "react";
 
@@ -41,7 +41,7 @@ export default function Investir() {
               <p className="text-3xl font-bold">{amount[0].toLocaleString()}€</p>
               <p className="text-sm text-muted-foreground">Contribution estimée</p>
             </div>
-            <Button variant="cta" size="lg">Adhérer maintenant</Button>
+            <ThirdwebConnect label="Adhérer maintenant" />
           </div>
           <p className="mt-3 text-xs text-muted-foreground">Le capital est à risque. Ceci n’est pas un conseil financier.</p>
         </section>

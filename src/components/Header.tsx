@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { ThirdwebConnect } from "@/components/ThirdwebConnect";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -27,47 +26,7 @@ const Header = () => {
           </div>
           
           <div className="flex items-center space-x-4">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="territorial" className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">ADHÉRER</Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="z-[999] bg-white border border-gray-200 shadow-lg rounded-xl p-0 min-w-[280px] animate-scale-in overflow-hidden">
-                <DropdownMenuItem asChild className="p-0 border-0 cursor-pointer bg-orange-50/80 hover:bg-orange-100/80 transition-all duration-200">
-                  <Link to="/investir?niveau=national" aria-label="Adhésion Nationale" className="block p-4">
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <div className="font-semibold text-sm text-orange-600">
-                          Adhésion Nationale
-                        </div>
-                        <div className="text-xs text-orange-500 mt-1">
-                          Pionnier, Architecte, Bienfaiteurs
-                        </div>
-                      </div>
-                      <div className="text-sm font-bold text-orange-600 ml-3">
-                        100€
-                      </div>
-                    </div>
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild className="p-0 border-0 cursor-pointer bg-blue-50/80 hover:bg-blue-100/80 transition-all duration-200">
-                  <Link to="/investir?niveau=territorial" aria-label="Adhésion Territoriale" className="block p-4">
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <div className="font-semibold text-sm text-blue-600">
-                          Adhésion Territoriale
-                        </div>
-                        <div className="text-xs text-blue-500 mt-1">
-                          Usagers, Artisans voisins
-                        </div>
-                      </div>
-                      <div className="text-sm font-bold text-blue-600 ml-3">
-                        10€ + prix libre
-                      </div>
-                    </div>
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <ThirdwebConnect className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300" />
           </div>
         </nav>
       </div>
