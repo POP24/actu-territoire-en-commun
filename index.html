@@ -21,81 +21,24 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-// Landbot: chargement immédiat avec retry automatique
-(function() {
-  let retryCount = 0;
-  const maxRetries = 3;
-  
-  function initLandbot() {
-    console.log('Tentative d\'initialisation Landbot #' + (retryCount + 1));
-    
-    const script = document.createElement('script');
-    script.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-    script.async = true;
-    
-    script.onload = function() {
-      try {
-        // Style CSS pour forcer la visibilité
-        const style = document.createElement('style');
-        style.textContent = `
-          .LandbotPopup, .LivechatLauncher, .landbot-popup {
-            z-index: 999999 !important;
-            position: fixed !important;
-          }
-          .landbot-popup-launcher {
-            bottom: 20px !important;
-            right: 20px !important;
-          }
-        `;
-        document.head.appendChild(style);
-
-        // Initialisation Landbot
-        if (window.Landbot) {
-          window.__landbot = new window.Landbot.Popup({
-            configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
-            launcher: {
-              icon: '/lovable-uploads/a13aa263-fb93-4954-99ed-954d0a5a8ae1.png',
-              backgroundColor: '#FFD580',
-              borderRadius: '50%',
-              width: '60px',
-              height: '60px'
-            }
-          });
-          console.log('✅ Landbot initialisé avec succès');
-        } else {
-          throw new Error('window.Landbot non disponible');
-        }
-      } catch (e) {
-        console.error('❌ Erreur initialisation Landbot:', e);
-        retryIfNeeded();
-      }
-    };
-    
-    script.onerror = function() {
-      console.error('❌ Échec du chargement du script Landbot');
-      retryIfNeeded();
-    };
-    
-    document.body.appendChild(script);
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      myLandbot = new Landbot.Popup({
+        configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
   }
-  
-  function retryIfNeeded() {
-    retryCount++;
-    if (retryCount < maxRetries) {
-      console.log('🔄 Retry Landbot dans 1 seconde...');
-      setTimeout(initLandbot, 1000);
-    } else {
-      console.error('❌ Landbot: Échec définitif après ' + maxRetries + ' tentatives');
-    }
-  }
-  
-  // Démarrage immédiat dès que le DOM est prêt
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initLandbot);
-  } else {
-    initLandbot();
-  }
-})();
+}
 </script>
   </body>
 </html>
