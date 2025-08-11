@@ -21,16 +21,19 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-// Optimisation Landbot - chargement asynchrone après l'app
-window.addEventListener('load', function() {
+// Landbot: charge rapide et fiable
+window.addEventListener('DOMContentLoaded', function() {
   const script = document.createElement('script');
-  script.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
-  script.type = 'module';
-  script.async = true;
-  
+  script.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+  script.defer = true;
   script.onload = function() {
     try {
-      new window.Landbot.Popup({
+      // Ajout d'un style minimal pour s'assurer que le lanceur est visible au-dessus de tout
+      const style = document.createElement('style');
+      style.textContent = '.LandbotPopup,.LivechatLauncher{z-index:999999 !important}';
+      document.head.appendChild(style);
+
+      window.Landbot && (window.__landbot = new window.Landbot.Popup({
         configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
         launcher: {
           icon: '/lovable-uploads/a13aa263-fb93-4954-99ed-954d0a5a8ae1.png',
@@ -39,13 +42,15 @@ window.addEventListener('load', function() {
           width: '60px',
           height: '60px'
         }
-      });
+      }));
     } catch (e) {
-      console.error('Landbot error:', e);
+      console.error('Landbot init error:', e);
     }
   };
-  
-  document.head.appendChild(script);
+  script.onerror = function() {
+    console.error('Landbot script failed to load');
+  };
+  document.body.appendChild(script);
 });
 </script>
   </body>
