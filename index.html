@@ -21,6 +21,23 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
+// CSS pour forcer la visibilité du launcher Landbot
+const style = document.createElement('style');
+style.textContent = `
+  .LandbotPopup, .LivechatLauncher, .landbot-popup, 
+  .landbot-popup-launcher, .Landbot__Popup, 
+  [class*="landbot"], [id*="landbot"] {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+  }
+`;
+document.head.appendChild(style);
+
 window.addEventListener('mouseover', initLandbot, { once: true });
 window.addEventListener('touchstart', initLandbot, { once: true });
 var myLandbot;
