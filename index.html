@@ -32,6 +32,13 @@ function initLandbot() {
     s.addEventListener('load', function() {
       myLandbot = new Landbot.Popup({
         configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
+        launcher: {
+          icon: '/lovable-uploads/f0fe5cb6-791a-46fe-be0a-b5337c559fe0.png',
+          backgroundColor: '#D97706',
+          borderRadius: '50%',
+          width: '60px',
+          height: '60px'
+        }
       });
     });
     s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
