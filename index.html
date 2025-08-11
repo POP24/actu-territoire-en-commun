@@ -21,96 +21,32 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-// Debugging: Ajout de styles CSS pour forcer la visibilité
-const style = document.createElement('style');
-style.textContent = `
-  .LandbotPopup, [class*="Landbot"] {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    z-index: 999999 !important;
-    pointer-events: auto !important;
-  }
-  
-  .landbot-launcher {
-    position: fixed !important;
-    bottom: 20px !important;
-    right: 20px !important;
-    width: 60px !important;
-    height: 60px !important;
-    background-color: #FFD580 !important;
-    border-radius: 50% !important;
-    border: 2px solid #FF8B00 !important;
-    box-shadow: 0 4px 20px rgba(255, 213, 128, 0.4) !important;
-    display: block !important;
-    z-index: 999999 !important;
-    cursor: pointer !important;
-  }
-`;
-document.head.appendChild(style);
-
-// Fonction simplifiée d'initialisation
-function initLandbot() {
-  console.log('Initializing Landbot...');
-  
-  // Nettoyer les instances précédentes
-  const existingLandbot = document.querySelector('[class*="Landbot"]');
-  if (existingLandbot) {
-    existingLandbot.remove();
-  }
-  
+// Optimisation Landbot - chargement asynchrone après l'app
+window.addEventListener('load', function() {
   const script = document.createElement('script');
   script.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
   script.type = 'module';
   script.async = true;
   
   script.onload = function() {
-    console.log('Landbot script loaded');
-    setTimeout(function() {
-      try {
-        if (window.Landbot) {
-          const landbot = new window.Landbot.Popup({
-            configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
-            launcher: {
-              icon: '/lovable-uploads/a13aa263-fb93-4954-99ed-954d0a5a8ae1.png',
-              backgroundColor: '#FFD580',
-              borderRadius: '50%',
-              width: '60px',
-              height: '60px',
-              position: 'fixed',
-              bottom: '20px', 
-              right: '20px',
-              zIndex: 999999,
-              boxShadow: '0 4px 20px rgba(255, 213, 128, 0.4)',
-              border: '2px solid #FF8B00',
-              className: 'landbot-launcher'
-            }
-          });
-          console.log('Landbot created successfully:', landbot);
-        } else {
-          console.error('Landbot object not available');
+    try {
+      new window.Landbot.Popup({
+        configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
+        launcher: {
+          icon: '/lovable-uploads/a13aa263-fb93-4954-99ed-954d0a5a8ae1.png',
+          backgroundColor: '#FFD580',
+          borderRadius: '50%',
+          width: '60px',
+          height: '60px'
         }
-      } catch (error) {
-        console.error('Error creating Landbot:', error);
-      }
-    }, 1000);
-  };
-  
-  script.onerror = function() {
-    console.error('Failed to load Landbot script');
+      });
+    } catch (e) {
+      console.error('Landbot error:', e);
+    }
   };
   
   document.head.appendChild(script);
-}
-
-// Initialisation avec multiple fallbacks
-document.addEventListener('DOMContentLoaded', initLandbot);
-window.addEventListener('load', function() {
-  setTimeout(initLandbot, 1000);
 });
-
-// Fallback final après 3 secondes
-setTimeout(initLandbot, 3000);
 </script>
   </body>
 </html>
