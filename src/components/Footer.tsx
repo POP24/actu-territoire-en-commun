@@ -1,4 +1,4 @@
-import { ThirdwebConnect } from "@/components/ThirdwebConnect";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
@@ -36,10 +36,12 @@ const Footer = () => {
               </a>
             </div>
             
-            <ThirdwebConnect 
-              label="Adhérer à 100€"
-              className="text-lg px-12 py-4"
-            />
+            <Button 
+              size="lg"
+              className="text-lg px-12 py-4 bg-white text-primary hover:bg-white/90"
+            >
+              Adhérer à 100€
+            </Button>
           </div>
           
           <div className="border-t border-white/20 pt-8 text-white/80">

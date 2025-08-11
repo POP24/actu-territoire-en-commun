@@ -1,4 +1,4 @@
-import { ThirdwebConnect } from "@/components/ThirdwebConnect";
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import communityGathering from "/lovable-uploads/0a3e519a-7871-4f9d-9d79-393c652214ee.png";
 import heroPortrait from "/lovable-uploads/53182d9e-f20d-4927-8092-8aefbc7458f6.png";
@@ -37,10 +37,12 @@ const HeroSection = () => {
             </p>
             
             <div className="flex justify-center mt-8 sm:mt-12">
-              <ThirdwebConnect 
-                size="wide"
+              <Button 
+                size="lg"
                 className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
-              />
+              >
+                ADHÉRER
+              </Button>
             </div>
           </div>
           

@@ -23,7 +23,4 @@ export default defineConfig(({ mode }) => ({
     global: 'globalThis',
     'process.env': {},
   },
-  optimizeDeps: {
-    include: ['thirdweb', 'thirdweb/react', 'thirdweb/wallets', 'thirdweb/chains'],
-  },
 }));

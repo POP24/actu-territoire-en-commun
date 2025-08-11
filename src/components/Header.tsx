@@ -1,4 +1,4 @@
-import { ThirdwebConnect } from "@/components/ThirdwebConnect";
+import { Button } from "@/components/ui/button";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -26,7 +26,9 @@ const Header = () => {
           </div>
           
           <div className="flex items-center space-x-4">
-            <ThirdwebConnect className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300" />
+            <Button className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+              ADHÉRER
+            </Button>
           </div>
         </nav>
       </div>
