@@ -21,37 +21,81 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-// Landbot: charge rapide et fiable
-window.addEventListener('DOMContentLoaded', function() {
-  const script = document.createElement('script');
-  script.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-  script.defer = true;
-  script.onload = function() {
-    try {
-      // Ajout d'un style minimal pour s'assurer que le lanceur est visible au-dessus de tout
-      const style = document.createElement('style');
-      style.textContent = '.LandbotPopup,.LivechatLauncher{z-index:999999 !important}';
-      document.head.appendChild(style);
+// Landbot: chargement immédiat avec retry automatique
+(function() {
+  let retryCount = 0;
+  const maxRetries = 3;
+  
+  function initLandbot() {
+    console.log('Tentative d\'initialisation Landbot #' + (retryCount + 1));
+    
+    const script = document.createElement('script');
+    script.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+    script.async = true;
+    
+    script.onload = function() {
+      try {
+        // Style CSS pour forcer la visibilité
+        const style = document.createElement('style');
+        style.textContent = `
+          .LandbotPopup, .LivechatLauncher, .landbot-popup {
+            z-index: 999999 !important;
+            position: fixed !important;
+          }
+          .landbot-popup-launcher {
+            bottom: 20px !important;
+            right: 20px !important;
+          }
+        `;
+        document.head.appendChild(style);
 
-      window.Landbot && (window.__landbot = new window.Landbot.Popup({
-        configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
-        launcher: {
-          icon: '/lovable-uploads/a13aa263-fb93-4954-99ed-954d0a5a8ae1.png',
-          backgroundColor: '#FFD580',
-          borderRadius: '50%',
-          width: '60px',
-          height: '60px'
+        // Initialisation Landbot
+        if (window.Landbot) {
+          window.__landbot = new window.Landbot.Popup({
+            configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
+            launcher: {
+              icon: '/lovable-uploads/a13aa263-fb93-4954-99ed-954d0a5a8ae1.png',
+              backgroundColor: '#FFD580',
+              borderRadius: '50%',
+              width: '60px',
+              height: '60px'
+            }
+          });
+          console.log('✅ Landbot initialisé avec succès');
+        } else {
+          throw new Error('window.Landbot non disponible');
         }
-      }));
-    } catch (e) {
-      console.error('Landbot init error:', e);
+      } catch (e) {
+        console.error('❌ Erreur initialisation Landbot:', e);
+        retryIfNeeded();
+      }
+    };
+    
+    script.onerror = function() {
+      console.error('❌ Échec du chargement du script Landbot');
+      retryIfNeeded();
+    };
+    
+    document.body.appendChild(script);
+  }
+  
+  function retryIfNeeded() {
+    retryCount++;
+    if (retryCount < maxRetries) {
+      console.log('🔄 Retry Landbot dans 1 seconde...');
+      setTimeout(initLandbot, 1000);
+    } else {
+      console.error('❌ Landbot: Échec définitif après ' + maxRetries + ' tentatives');
     }
-  };
-  script.onerror = function() {
-    console.error('Landbot script failed to load');
-  };
-  document.body.appendChild(script);
-});
+  }
+  
+  // Démarrage immédiat dès que le DOM est prêt
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLandbot);
+  } else {
+    initLandbot();
+  }
+})();
 </script>
   </body>
 </html>
