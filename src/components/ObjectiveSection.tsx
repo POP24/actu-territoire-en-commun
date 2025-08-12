@@ -12,52 +12,47 @@ const ObjectiveSection = () => {
           </h2>
           
           <div className="text-center mb-16">
-            <h3 className="text-3xl md:text-4xl font-bold mb-12 text-foreground">
-              Tout est déjà là. Il suffit de connecter.
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
-              {/* Les lieux existent */}
-              <div className="group p-6 rounded-xl bg-gradient-to-br from-green-500/10 to-emerald-600/20 border border-green-200/30 hover:scale-105 transition-all duration-300">
-                <div className="text-center">
-                  <div className="text-4xl mb-3">📍</div>
-                  <h4 className="text-lg font-bold text-green-800 dark:text-green-200 mb-2">Les lieux existent</h4>
-                  <p className="text-sm text-green-700 dark:text-green-300">Territoires prêts</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* LE CONSTAT */}
+              <div className="group p-8 rounded-2xl bg-gradient-to-br from-red-500/10 to-orange-500/20 border-2 border-red-400/30 hover:scale-105 transition-all duration-300">
+                <div className="text-center space-y-6">
+                  <div className="text-5xl mb-4">📍</div>
+                  <h3 className="text-2xl font-bold text-red-700 dark:text-red-300 mb-4">LE CONSTAT</h3>
+                  <div className="space-y-3 text-lg text-red-600 dark:text-red-400">
+                    <p className="font-semibold">36,000 communes en France.</p>
+                    <p className="font-semibold">10,000 lieux alternatifs.</p>
+                    <p className="font-semibold">2 millions de personnes prêtes.</p>
+                    <p className="text-xl font-bold text-red-700 dark:text-red-300 mt-4">Mais rien ne les relie.</p>
+                  </div>
                 </div>
               </div>
-              
-              {/* Les outils sont prêts */}
-              <div className="group p-6 rounded-xl bg-gradient-to-br from-blue-500/10 to-cyan-600/20 border border-blue-200/30 hover:scale-105 transition-all duration-300">
-                <div className="text-center">
-                  <div className="text-4xl mb-3">🤝</div>
-                  <h4 className="text-lg font-bold text-blue-800 dark:text-blue-200 mb-2">Les outils sont prêts</h4>
-                  <p className="text-sm text-blue-700 dark:text-blue-300">Gouvernance, cagnottes</p>
+
+              {/* LA SOLUTION */}
+              <div className="group p-8 rounded-2xl bg-gradient-to-br from-blue-500/10 to-cyan-500/20 border-2 border-blue-400/30 hover:scale-105 transition-all duration-300">
+                <div className="text-center space-y-6">
+                  <div className="text-5xl mb-4">🔗</div>
+                  <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-300 mb-4">LA SOLUTION</h3>
+                  <div className="space-y-3 text-lg text-blue-600 dark:text-blue-400">
+                    <p className="font-semibold">Une caisse commune.</p>
+                    <p className="font-semibold">Des activateurs de terrain.</p>
+                    <p className="font-semibold">Un réseau d'entraide.</p>
+                    <p className="text-xl font-bold text-blue-700 dark:text-blue-300 mt-4">La force du collectif.</p>
+                  </div>
                 </div>
               </div>
-              
-              {/* Les gens sont là */}
-              <div className="group p-6 rounded-xl bg-gradient-to-br from-purple-500/10 to-violet-600/20 border border-purple-200/30 hover:scale-105 transition-all duration-300">
-                <div className="text-center">
-                  <div className="text-4xl mb-3">💡</div>
-                  <h4 className="text-lg font-bold text-purple-800 dark:text-purple-200 mb-2">Les gens sont là</h4>
-                  <p className="text-sm text-purple-700 dark:text-purple-300">Réseaux actifs</p>
+
+              {/* L'ACTION */}
+              <div className="group p-8 rounded-2xl bg-gradient-to-br from-green-500/10 to-emerald-500/20 border-2 border-green-400/30 hover:scale-105 transition-all duration-300 animate-pulse">
+                <div className="text-center space-y-6">
+                  <div className="text-5xl mb-4">🎯</div>
+                  <h3 className="text-2xl font-bold text-green-700 dark:text-green-300 mb-4">L'ACTION</h3>
+                  <div className="space-y-3 text-lg text-green-600 dark:text-green-400">
+                    <p className="font-semibold">Vous mettez 100€.</p>
+                    <p className="font-semibold">On finance des tisseurs de liens.</p>
+                    <p className="font-semibold">Les territoires s'activent.</p>
+                    <p className="text-xl font-bold text-green-700 dark:text-green-300 mt-4">La France se reconnecte.</p>
+                  </div>
                 </div>
-              </div>
-              
-              {/* Le lien manque */}
-              <div className="group p-6 rounded-xl bg-gradient-to-br from-red-500/20 to-orange-600/30 border-2 border-red-400/50 hover:scale-105 transition-all duration-300 animate-pulse">
-                <div className="text-center">
-                  <div className="text-4xl mb-3">🌐</div>
-                  <h4 className="text-lg font-bold text-red-700 dark:text-red-300 mb-2">Le lien manque</h4>
-                  <p className="text-sm text-red-600 dark:text-red-400">C'est ça qu'on résout !</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="relative rounded-2xl bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 p-8 border border-primary/20 backdrop-blur-sm">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl"></div>
-              <div className="relative text-2xl font-bold text-foreground">
-                C'est exactement ce qu'on construit.
               </div>
             </div>
           </div>
