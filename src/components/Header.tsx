@@ -26,6 +26,13 @@ const Header = () => {
           </div>
           
           <div className="flex items-center space-x-4">
+            <Button 
+              asChild 
+              variant="outline"
+              className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
+            >
+              <Link to="/vision">VISION</Link>
+            </Button>
             <Button className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
               ADHÉRER
             </Button>
