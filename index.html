@@ -42,12 +42,17 @@ window.addEventListener('mouseover', initLandbot, { once: true });
 window.addEventListener('touchstart', initLandbot, { once: true });
 var myLandbot;
 function initLandbot() {
-  if (!myLandbot) {
-    var s = document.createElement('script');
-    s.type = "module"
-    s.async = true;
-    s.addEventListener('load', function() {
-      myLandbot = new Landbot.Popup({
+  if (myLandbot) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.onload = function () {
+    try {
+      var LandbotRef = (window).Landbot || (typeof Landbot !== 'undefined' ? Landbot : null);
+      if (!LandbotRef) {
+        console.error('[Landbot] Global not available after script load');
+        return;
+      }
+      myLandbot = new LandbotRef.Popup({
         configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
         launcher: {
           icon: '/lovable-uploads/f0fe5cb6-791a-46fe-be0a-b5337c559fe0.png',
@@ -57,11 +62,15 @@ function initLandbot() {
           height: '60px'
         }
       });
-    });
-    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  }
+      console.log('[Landbot] Initialized');
+    } catch (e) {
+      console.error('[Landbot] init error', e);
+    }
+  };
+  s.onerror = function (e) { console.error('[Landbot] script load error', e); };
+  s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+  var x = document.getElementsByTagName('script')[0];
+  x.parentNode.insertBefore(s, x);
 }
 </script>
   </body>
