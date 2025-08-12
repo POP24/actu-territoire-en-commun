@@ -74,7 +74,12 @@ const TypologySection = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {biensTypes.map((bien, index) => (
-              <div key={index} className="bg-gradient-card rounded-2xl shadow-soft border border-border overflow-hidden group transform-gpu hover:shadow-elegant hover:-translate-y-2 hover:scale-105 transition-transform duration-500 cursor-pointer">
+              <div
+                key={index}
+                className="bg-gradient-card rounded-2xl shadow-soft border border-border overflow-hidden group transform-gpu hover:shadow-elegant hover:-translate-y-2 hover:scale-105 hover:border-primary ring-1 ring-transparent hover:ring-primary/40 transition-transform duration-500 cursor-pointer"
+                onMouseEnter={() => console.log('[Typology] hover enter', bien.title)}
+                onMouseLeave={() => console.log('[Typology] hover leave', bien.title)}
+              >
                 <div className="relative h-40 overflow-hidden">
                   <img 
                     src={bien.image} 

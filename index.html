@@ -62,7 +62,17 @@ function initLandbot() {
           height: '60px'
         }
       });
-      console.log('[Landbot] Initialized');
+      window.myLandbot = myLandbot;
+      console.log('[Landbot] Initialized', myLandbot);
+      try {
+        setTimeout(function(){
+          if (window.myLandbot && !window.myLandbot.__openedOnce) {
+            window.myLandbot.open();
+            window.myLandbot.__openedOnce = true;
+            console.log('[Landbot] Auto-opened');
+          }
+        }, 800);
+      } catch(e) { console.error('[Landbot] auto-open error', e); }
     } catch (e) {
       console.error('[Landbot] init error', e);
     }
