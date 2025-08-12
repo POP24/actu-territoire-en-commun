@@ -37,7 +37,8 @@ const Vision = () => {
       {/* Vision Content */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto space-y-16">
+            {/* Vision Principale */}
             <div className="bg-white/5 backdrop-blur-sm border border-border rounded-3xl p-12 shadow-elegant">
               <blockquote className="text-2xl md:text-3xl leading-relaxed text-center space-y-8">
                 <p className="text-foreground/90">
@@ -56,6 +57,59 @@ const Vision = () => {
                   Pas demain. Maintenant."
                 </p>
               </blockquote>
+            </div>
+
+            {/* Vision Millénaire */}
+            <div className="bg-gradient-to-br from-orange-500/10 to-yellow-500/10 backdrop-blur-sm border border-orange-500/20 rounded-3xl p-12 shadow-elegant">
+              <div className="text-center mb-12">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+                  🌈 UNE VISION MILLÉNAIRE, UNE ACTION IMMÉDIATE
+                </h2>
+              </div>
+
+              <div className="space-y-8 text-lg md:text-xl leading-relaxed">
+                <div className="text-center space-y-4">
+                  <p className="text-foreground/90">
+                    Depuis des siècles, les peuples racines nous enseignent :
+                  </p>
+                  <blockquote className="text-xl md:text-2xl italic text-orange-600 font-medium">
+                    "Quand la Terre sera malade, toutes les nations se rassembleront<br />
+                    pour créer un nouveau monde." - Prophétie des Rainbow Warriors
+                  </blockquote>
+                  <p className="text-foreground/80 mt-6">
+                    Cette vision n'appartient à aucune religion, aucun dogme.<br />
+                    C'est le simple bon sens de ceux qui observent la nature.
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-12 mt-16">
+                  {/* Ce que disent les anciens */}
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                    <h3 className="text-2xl font-bold mb-6 text-orange-500">
+                      CE QUE DISENT LES ANCIENS :
+                    </h3>
+                    <ul className="space-y-4 text-foreground/90">
+                      <li>• <strong>Les Lakotas :</strong> "Mitakuye Oyasin" - Nous sommes tous reliés</li>
+                      <li>• <strong>Les Aborigènes :</strong> Le temps du rêve où tout se reconnecte</li>
+                      <li>• <strong>Les peuples d'Europe :</strong> Les commons, les biens communs du village</li>
+                      <li>• <strong>Les anciens de partout :</strong> L'heure du tissage arrive</li>
+                    </ul>
+                  </div>
+
+                  {/* Notre traduction moderne */}
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                    <h3 className="text-2xl font-bold mb-6 text-orange-500">
+                      NOTRE TRADUCTION MODERNE :
+                    </h3>
+                    <ul className="space-y-4 text-foreground/90">
+                      <li>→ Créer des ponts entre les îlots isolés</li>
+                      <li>→ Relier ce qui est déjà là mais dispersé</li>
+                      <li>→ Fédérer sans uniformiser</li>
+                      <li>→ Agir localement, penser en réseau</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
