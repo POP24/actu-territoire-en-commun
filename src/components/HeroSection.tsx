@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { Slider } from "@/components/ui/slider";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import communityGathering from "/lovable-uploads/0a3e519a-7871-4f9d-9d79-393c652214ee.png";
 import heroPortrait from "/lovable-uploads/53182d9e-f20d-4927-8092-8aefbc7458f6.png";
 
 const HeroSection = () => {
+  const [sliderValue, setSliderValue] = useState([50]);
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       {/* Background decorative elements */}
@@ -17,24 +21,63 @@ const HeroSection = () => {
           {/* Text Content - Left Side */}
           <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
-              Le Réseau des
+              LE RÉSEAU DES
               <br />
               <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-2xl">
-                Communes
+                COMMUNES
               </span>
             </h1>
             
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
-              Système d'Activation Territoriale
+              Achat Collectif & Activation Territoriale
             </h2>
             
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed drop-shadow-lg max-w-2xl mx-auto lg:mx-0">
-              Nous fédérons <strong>10 000 pionniers</strong>
-              <br />
-              pour lever <strong>1 million d'euros</strong>.
-              <br className="hidden sm:block" />
-              <span className="inline sm:block">Cet argent finance des activateurs territoriaux qui créent des communes autonomes.</span>
-            </p>
+            {/* Mathematical formula */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 max-w-2xl mx-auto lg:mx-0">
+              <div className="text-center lg:text-left text-white font-bold text-lg sm:text-xl md:text-2xl">
+                <span className="text-accent">10 000 PIONNIERS</span>
+                <span className="mx-2">×</span>
+                <span className="text-secondary">100€</span>
+                <span className="mx-2">=</span>
+                <span className="text-primary">1 MILLION</span>
+                <span className="mx-2">=</span>
+                <span className="text-white">50 LIEUX ACTIVÉS</span>
+              </div>
+            </div>
+
+            {/* Interactive Slider */}
+            <div className="space-y-4 max-w-2xl mx-auto lg:mx-0">
+              <div className="text-white/80 text-sm font-medium text-center lg:text-left">
+                SLIDER INTERACTIF
+              </div>
+              
+              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                <div className="flex justify-between items-center mb-4">
+                  <div className="text-left">
+                    <div className="text-white font-bold text-sm">← FÉDÉRER</div>
+                    <div className="text-white/70 text-xs">Réseau National</div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-white font-bold text-sm">ACQUÉRIR →</div>
+                    <div className="text-white/70 text-xs">Propriété Collective</div>
+                  </div>
+                </div>
+                
+                <Slider
+                  value={sliderValue}
+                  onValueChange={setSliderValue}
+                  max={100}
+                  step={1}
+                  className="w-full"
+                />
+                
+                <div className="mt-3 text-center">
+                  <div className="text-white/60 text-xs">
+                    {sliderValue[0] < 30 ? "Focus Réseau" : sliderValue[0] > 70 ? "Focus Acquisition" : "Équilibre"}
+                  </div>
+                </div>
+              </div>
+            </div>
             
             <div className="flex justify-center mt-8 sm:mt-12">
               <Button 
