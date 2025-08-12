@@ -38,8 +38,8 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-window.addEventListener('mouseover', initLandbot, { once: true });
-window.addEventListener('touchstart', initLandbot, { once: true });
+document.addEventListener('DOMContentLoaded', initLandbot);
+window.addEventListener('load', initLandbot);
 var myLandbot;
 function initLandbot() {
   if (myLandbot) return;
