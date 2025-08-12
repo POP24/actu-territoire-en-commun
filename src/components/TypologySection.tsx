@@ -76,29 +76,37 @@ const TypologySection = () => {
             {biensTypes.map((bien, index) => (
               <div
                 key={index}
-                className="bg-gradient-card rounded-2xl shadow-soft border border-border overflow-hidden group transform-gpu hover:shadow-elegant hover:-translate-y-2 hover:scale-105 hover:border-primary ring-1 ring-transparent hover:ring-primary/40 transition-all duration-500 cursor-pointer will-change-transform"
+                className="relative bg-gradient-card rounded-2xl shadow-soft border border-border overflow-hidden group cursor-pointer transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-primary/60 hover:ring-4 hover:ring-primary/30 hover:rotate-1"
                 style={{
-                  transformOrigin: 'center center',
+                  transformStyle: 'preserve-3d',
                   backfaceVisibility: 'hidden',
-                  WebkitBackfaceVisibility: 'hidden'
+                  willChange: 'transform, box-shadow, border-color'
                 }}
-                onMouseEnter={() => console.log('[Typology] hover enter', bien.title)}
-                onMouseLeave={() => console.log('[Typology] hover leave', bien.title)}
+                onMouseEnter={(e) => {
+                  console.log('[Typology] HOVER ENTER:', bien.title);
+                  e.currentTarget.style.transform = 'translateY(-16px) scale(1.02) rotate(1deg)';
+                  e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(59, 130, 246, 0.4), 0 0 0 4px rgba(59, 130, 246, 0.3)';
+                }}
+                onMouseLeave={(e) => {
+                  console.log('[Typology] HOVER LEAVE:', bien.title);
+                  e.currentTarget.style.transform = 'translateY(0) scale(1) rotate(0deg)';
+                  e.currentTarget.style.boxShadow = '0 4px 20px -4px hsl(200 50% 50% / 0.2)';
+                }}
               >
                 <div className="relative h-40 overflow-hidden">
                   <img 
                     src={bien.image} 
                     alt={bien.title}
-                    className="w-full h-full object-cover transform-gpu group-hover:scale-110 transition-transform duration-500 ease-out"
+                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-125 group-hover:brightness-110 group-hover:contrast-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute top-4 left-4 text-3xl bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:from-primary/60 group-hover:to-transparent transition-all duration-700"></div>
+                  <div className="absolute top-4 left-4 text-3xl bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-primary/30 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700">
                     {bien.emoji}
                   </div>
                 </div>
-                <div className="p-6 text-center">
-                  <h4 className="text-lg font-bold text-foreground mb-3">{bien.title}</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{bien.description}</p>
+                <div className="p-6 text-center group-hover:bg-gradient-to-br group-hover:from-primary/5 group-hover:to-accent/5 transition-all duration-700">
+                  <h4 className="text-lg font-bold text-foreground mb-3 group-hover:text-primary group-hover:scale-105 transition-all duration-500">{bien.title}</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed group-hover:text-foreground/80 transition-all duration-500">{bien.description}</p>
                 </div>
               </div>
             ))}
