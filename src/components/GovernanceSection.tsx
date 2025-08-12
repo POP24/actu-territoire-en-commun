@@ -77,54 +77,6 @@ const GovernanceSection = () => {
               <div className="text-lg text-foreground">Juste de la COOPÉRATION</div>
             </div>
           </div>
-
-          {/* FAQ */}
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-foreground mb-2">❓ VOS QUESTIONS DIRECTES</h3>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="p-4 rounded-xl bg-card border border-border">
-                  <div className="font-bold text-foreground mb-2">"C'est légal ?"</div>
-                  <div className="text-sm text-muted-foreground">→ 100% légal. Association loi 1901 + défiscalisation.</div>
-                </div>
-                
-                <div className="p-4 rounded-xl bg-card border border-border">
-                  <div className="font-bold text-foreground mb-2">"C'est une secte ?"</div>
-                  <div className="text-sm text-muted-foreground">→ Non. Zéro gourou, zéro doctrine. Juste de l'entraide.</div>
-                </div>
-                
-                <div className="p-4 rounded-xl bg-card border border-border">
-                  <div className="font-bold text-foreground mb-2">"Mon village peut participer ?"</div>
-                  <div className="text-sm text-muted-foreground">→ Oui ! On cherche justement des territoires motivés.</div>
-                </div>
-                
-                <div className="p-4 rounded-xl bg-card border border-border">
-                  <div className="font-bold text-foreground mb-2">"C'est politique ?"</div>
-                  <div className="text-sm text-muted-foreground">→ Apartisan. On travaille avec tous les maires motivés.</div>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="p-4 rounded-xl bg-card border border-border">
-                  <div className="font-bold text-foreground mb-2">"Je récupère quoi pour 100€ adhésion nationale ?"</div>
-                  <div className="text-sm text-muted-foreground">→ Droit de vote + 10 nuits/an dans le réseau + impact réel.</div>
-                </div>
-                
-                <div className="p-4 rounded-xl bg-card border border-border">
-                  <div className="font-bold text-foreground mb-2">"Ça commence quand ?"</div>
-                  <div className="text-sm text-muted-foreground">→ Maintenant.</div>
-                </div>
-                
-                <div className="p-4 rounded-xl bg-card border border-border">
-                  <div className="font-bold text-foreground mb-2">"Et si ça marche pas ?"</div>
-                  <div className="text-sm text-muted-foreground">→ Remboursement 30 jours. Mais ça marche déjà.</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
