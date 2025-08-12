@@ -26,7 +26,8 @@ const style = document.createElement('style');
 style.textContent = `
   .LandbotPopup, .LivechatLauncher, .landbot-popup, 
   .landbot-popup-launcher, .Landbot__Popup, 
-  [class*="landbot"], [id*="landbot"] {
+  [class*="landbot"], [id*="landbot"], 
+  .landbot-launcher, .landbot-container {
     z-index: 999999 !important;
     position: fixed !important;
     bottom: 20px !important;
@@ -34,6 +35,11 @@ style.textContent = `
     opacity: 1 !important;
     visibility: visible !important;
     display: block !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
   }
 `;
 document.head.appendChild(style);
@@ -55,7 +61,7 @@ function initLandbot() {
       myLandbot = new LandbotRef.Popup({
         configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
         launcher: {
-          icon: '/src/assets/landbot-logo.png',
+          icon: '/landbot-logo.png',
           backgroundColor: '#D97706',
           borderRadius: '50%',
           width: '60px',
