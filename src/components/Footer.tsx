@@ -44,10 +44,41 @@ const Footer = () => {
             </Button>
           </div>
           
-          <div className="border-t border-white/20 pt-8 text-white/80">
-            <p className="text-lg">
-              <strong>Le Réseau des Communes</strong> - Tout existe déjà, connectons-le - 2025
-            </p>
+          {/* Message inspirant */}
+          <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/20 mb-8">
+            <div className="space-y-4 text-lg md:text-xl leading-relaxed font-light italic">
+              <p>"Nous ne sommes pas en train de créer un nouveau monde.</p>
+              <p>Nous relions celui qui émerge déjà partout.</p>
+              <br />
+              <p>Quand les fils seront tissés,</p>
+              <p>quand les communes seront reliées,</p>
+              <p>quand les caisses seront communes,</p>
+              <p>alors la France des territoires vivants sera née.</p>
+              <br />
+              <p className="font-bold text-xl md:text-2xl not-italic">Pas demain. Maintenant."</p>
+            </div>
+          </div>
+          
+          {/* Séparateur décoratif */}
+          <div className="flex items-center justify-center mb-8">
+            <div className="border-t border-white/30 flex-1 max-w-md"></div>
+            <div className="px-4 text-white/60">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+            <div className="border-t border-white/30 flex-1 max-w-md"></div>
+          </div>
+          
+          {/* Footer final */}
+          <div className="text-center space-y-3">
+            <h3 className="text-2xl font-bold">LE RÉSEAU DES COMMUNES</h3>
+            <p className="text-lg font-medium">Fédération de Communes libres pour l'autonomie territoriale</p>
+            <a href="mailto:communelibre@lasuitedumonde.com" className="text-white hover:underline text-lg">
+              communelibre@lasuitedumonde.com
+            </a>
+            <p className="text-lg">2025</p>
+          </div>
+          
+          {/* Séparateur final */}
+          <div className="flex items-center justify-center mt-8">
+            <div className="text-white/40">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
           </div>
         </div>
       </div>
