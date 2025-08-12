@@ -18,62 +18,112 @@ const GovernanceSection = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12 text-center">
-            {/* Niveau National */}
-            <div className="p-4 rounded-xl bg-gradient-to-br from-blue-500/10 to-blue-600/20 border border-blue-200/30">
-              <div className="text-center">
-                <div className="text-2xl mb-2">🌍</div>
-                <h3 className="text-lg font-bold text-foreground mb-1">Niveau National</h3>
-                <p className="text-xs text-foreground">Fédération de régions</p>
+          {/* Organisation Horizontale */}
+          <div className="mb-16">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-foreground mb-2">🏛️ ORGANISATION HORIZONTALE</h3>
+            </div>
+            
+            {/* Réseau National */}
+            <div className="text-center mb-8">
+              <div className="inline-block p-6 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30 max-w-sm">
+                <h4 className="text-xl font-bold text-foreground mb-2">RÉSEAU NATIONAL</h4>
+                <div className="space-y-1 text-foreground">
+                  <div className="font-semibold">Caisse Commune</div>
+                  <div className="text-2xl font-bold">1,000,000€</div>
+                  <div className="text-sm">Tous votent</div>
+                </div>
               </div>
             </div>
 
-            {/* Niveau Local */}
-            <div className="p-4 rounded-xl bg-gradient-to-br from-green-500/10 to-green-600/20 border border-green-200/30">
-              <div className="text-center">
-                <div className="text-2xl mb-2">🏘️</div>
-                <h3 className="text-lg font-bold text-foreground mb-1">Niveau Local</h3>
-                <p className="text-xs text-foreground">1 territoire = 1 association</p>
+            {/* Flèche et distribution */}
+            <div className="text-center mb-8">
+              <div className="text-foreground font-semibold">↓</div>
+              <div className="text-foreground">Distribution équitable</div>
+              <div className="text-foreground font-semibold">↓</div>
+            </div>
+
+            {/* Communes */}
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+              <div className="text-center p-4 rounded-xl bg-gradient-to-br from-green-500/10 to-green-600/20 border border-green-200/30">
+                <h4 className="font-bold text-foreground mb-2">COMMUNE A</h4>
+                <div className="text-sm text-foreground space-y-1">
+                  <div>Autonome</div>
+                  <div>↓</div>
+                  <div>Décide locale</div>
+                </div>
+              </div>
+              <div className="text-center p-4 rounded-xl bg-gradient-to-br from-green-500/10 to-green-600/20 border border-green-200/30">
+                <h4 className="font-bold text-foreground mb-2">COMMUNE B</h4>
+                <div className="text-sm text-foreground space-y-1">
+                  <div>Autonome</div>
+                  <div>↓</div>
+                  <div>Décide locale</div>
+                </div>
+              </div>
+              <div className="text-center p-4 rounded-xl bg-gradient-to-br from-green-500/10 to-green-600/20 border border-green-200/30">
+                <h4 className="font-bold text-foreground mb-2">COMMUNE C</h4>
+                <div className="text-sm text-foreground space-y-1">
+                  <div>Autonome</div>
+                  <div>↓</div>
+                  <div>Décide locale</div>
+                </div>
               </div>
             </div>
 
-            {/* Comment ça marche */}
-            <div className="p-4 rounded-xl bg-gradient-to-br from-purple-500/10 to-purple-600/20 border border-purple-200/30">
-              <div className="text-center">
-                <div className="text-2xl mb-2">🔧</div>
-                <h3 className="text-lg font-bold text-foreground mb-1">Comment ça marche</h3>
-                <p className="text-xs text-foreground">Pass numérique = accès</p>
-              </div>
+            {/* Principe */}
+            <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 border border-accent/30 max-w-md mx-auto">
+              <div className="text-xl font-bold text-foreground mb-2">PAS DE HIÉRARCHIE</div>
+              <div className="text-lg text-foreground">Juste de la COOPÉRATION</div>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-8">
-            {/* Entrées */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-green-500/10 to-green-600/20 border border-green-200/30">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Entrées</h3>
-              <div className="space-y-2 text-foreground">
-                <div>• Adhésions</div>
-                <div>• Séjours</div>
-                <div>• Formations</div>
-                <div>• Boutique</div>
+          {/* FAQ */}
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-foreground mb-2">❓ VOS QUESTIONS DIRECTES</h3>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="p-4 rounded-xl bg-card border border-border">
+                  <div className="font-bold text-foreground mb-2">"C'est légal ?"</div>
+                  <div className="text-sm text-muted-foreground">→ 100% légal. Association loi 1901 + défiscalisation.</div>
+                </div>
+                
+                <div className="p-4 rounded-xl bg-card border border-border">
+                  <div className="font-bold text-foreground mb-2">"C'est une secte ?"</div>
+                  <div className="text-sm text-muted-foreground">→ Non. Zéro gourou, zéro doctrine. Juste de l'entraide.</div>
+                </div>
+                
+                <div className="p-4 rounded-xl bg-card border border-border">
+                  <div className="font-bold text-foreground mb-2">"Mon village peut participer ?"</div>
+                  <div className="text-sm text-muted-foreground">→ Oui ! On cherche justement des territoires motivés.</div>
+                </div>
+                
+                <div className="p-4 rounded-xl bg-card border border-border">
+                  <div className="font-bold text-foreground mb-2">"C'est politique ?"</div>
+                  <div className="text-sm text-muted-foreground">→ Apartisan. On travaille avec tous les maires motivés.</div>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="p-4 rounded-xl bg-card border border-border">
+                  <div className="font-bold text-foreground mb-2">"Je récupère quoi pour 100€ adhésion nationale ?"</div>
+                  <div className="text-sm text-muted-foreground">→ Droit de vote + 10 nuits/an dans le réseau + impact réel.</div>
+                </div>
+                
+                <div className="p-4 rounded-xl bg-card border border-border">
+                  <div className="font-bold text-foreground mb-2">"Ça commence quand ?"</div>
+                  <div className="text-sm text-muted-foreground">→ Maintenant.</div>
+                </div>
+                
+                <div className="p-4 rounded-xl bg-card border border-border">
+                  <div className="font-bold text-foreground mb-2">"Et si ça marche pas ?"</div>
+                  <div className="text-sm text-muted-foreground">→ Remboursement 30 jours. Mais ça marche déjà.</div>
+                </div>
               </div>
             </div>
-
-            {/* Sorties */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-500/10 to-blue-600/20 border border-blue-200/30">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Sorties</h3>
-              <div className="space-y-2 text-foreground">
-                <div>• Coordinateur et focalisateur</div>
-                <div>• Réseau local</div>
-                <div>• Cagnotte pour réseau local</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Résultat */}
-          <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-purple-500/10 to-purple-600/20 border border-purple-200/30 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Résultat</h3>
-            <div className="text-lg text-foreground">Activation de plusieurs territoires, ouverture, réveil, coordination</div>
           </div>
         </div>
       </div>
