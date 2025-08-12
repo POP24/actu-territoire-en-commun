@@ -74,13 +74,13 @@ const TypologySection = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {biensTypes.map((bien, index) => (
-              <div key={index} className="bg-gradient-card rounded-2xl shadow-soft border border-border overflow-hidden group hover:shadow-elegant transition-all duration-300">
-                <div className="relative h-40 overflow-hidden">
-                  <img 
-                    src={bien.image} 
-                    alt={bien.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+            <div key={index} className="bg-gradient-card rounded-2xl shadow-soft border border-border overflow-hidden group hover:shadow-elegant hover:-translate-y-2 transition-all duration-500 cursor-pointer">
+              <div className="relative h-40 overflow-hidden">
+                <img 
+                  src={bien.image} 
+                  alt={bien.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
+                />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute top-4 left-4 text-3xl bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center">
                     {bien.emoji}
