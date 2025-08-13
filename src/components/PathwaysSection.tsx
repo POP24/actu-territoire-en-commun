@@ -14,11 +14,11 @@ const PathwaysSection = () => {
             {/* Chemin 1 */}
             <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-400 cursor-pointer">
               <div className="flex flex-col items-center text-center mb-8">
-                <div className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                  Chemin 1 : Rejoindre la Méta
+                <div className="bg-green-400 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                  Entrée 1 · Fédération nationale
                 </div>
-                <div className="text-4xl font-bold text-green-500 mb-2">100€</div>
-                <div className="text-green-600 font-semibold mb-4">Adhésion Focalisateur</div>
+                <div className="text-4xl font-bold text-green-400 mb-2">100€</div>
+                <div className="text-green-600 font-semibold mb-4">Adhésion Architecte</div>
                 <h3 className="text-xl font-bold text-foreground">Communauté Nationale</h3>
                 <p className="text-muted-foreground italic">Coordination globale</p>
               </div>
@@ -27,45 +27,20 @@ const PathwaysSection = () => {
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xl">👑</span>
-                    <h4 className="text-lg font-semibold text-foreground">Adhésion Fondatrice</h4>
+                    <h4 className="text-lg font-semibold text-foreground">Adhésion fondatrice</h4>
                   </div>
                   <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
+                      <span className="text-green-400 mt-1">✓</span>
                       <span>Participez à la trésorerie collective</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
-                      <span>Accédez à toutes les opportunités du réseau</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
+                      <span className="text-green-400 mt-1">✓</span>
                       <span>Votez l'attribution des budgets territoriaux</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
-                      <span>Rejoignez les cercles thématiques Discord/Telegram</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🎁</span>
-                    <h4 className="text-lg font-semibold text-foreground">Avantages Exclusifs</h4>
-                  </div>
-                  <ul className="space-y-2 text-foreground text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
-                      <span>Accès prioritaire aux séjours dans tous les territoires</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
-                      <span>Vote pour allouer les budgets aux futurs projets</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
-                      <span>Formation aux outils de gouvernance partagée</span>
+                      <span className="text-green-400 mt-1">✓</span>
+                      <span>Accédez à toutes les opportunités du réseau</span>
                     </li>
                   </ul>
                 </div>
@@ -73,27 +48,27 @@ const PathwaysSection = () => {
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xl">🔗</span>
-                    <h4 className="text-lg font-semibold text-foreground">Connecter & Développer</h4>
+                    <h4 className="text-lg font-semibold text-foreground">Connexion réseau</h4>
                   </div>
                   <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
-                      <span>Invitez des membres via votre ID de parrainage</span>
+                      <span className="text-green-400 mt-1">✓</span>
+                      <span>Rejoignez les cercles thématiques (Discord)</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
-                      <span>Gagnez des points selon votre contribution</span>
+                      <span className="text-green-400 mt-1">✓</span>
+                      <span>Formations aux outils de gouvernance partagée</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-green-500 mt-1">✓</span>
-                      <span>Recevez des airdrops pour votre engagement</span>
+                      <span className="text-green-400 mt-1">✓</span>
+                      <span>Accès prioritaire aux séjours et rencontres du réseau</span>
                     </li>
                   </ul>
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-xl">
-                Devenir Focalisateur
+              <Button className="w-full mt-8 bg-green-400 hover:bg-green-500 text-white font-bold py-3 rounded-xl">
+                Adhérer (100€)
               </Button>
             </div>
             
@@ -101,171 +76,107 @@ const PathwaysSection = () => {
             <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
               <div className="flex flex-col items-center text-center mb-8">
                 <div className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                  Chemin 2 : Activer son Territoire
+                  Entrée 2 · Association locale
                 </div>
-                <div className="text-4xl font-bold text-blue-500 mb-2">Prix libre</div>
-                <div className="text-blue-600 font-semibold mb-4">Membre du Réseau</div>
-                <h3 className="text-xl font-bold text-foreground">Action Territoriale</h3>
-                <p className="text-muted-foreground italic">Engagement local</p>
+                <div className="text-4xl font-bold text-blue-500 mb-2">10€ + prix libre</div>
+                <div className="text-blue-600 font-semibold mb-4">Adhésion Locale</div>
+                <h3 className="text-xl font-bold text-foreground">Gouvernance du lieu</h3>
+                <p className="text-muted-foreground italic">Engagement sur votre territoire</p>
               </div>
               
               <div className="space-y-6">
                 <div>
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🗺️</span>
-                    <h4 className="text-lg font-semibold text-foreground">Cartographier Votre Territoire</h4>
+                    <span className="text-xl">🗳️</span>
+                    <h4 className="text-lg font-semibold text-foreground">Vos droits de membre</h4>
                   </div>
                   <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Formation "Activation Territoriale" (3 jours)</span>
+                      <span>Voter les grandes décisions du territoire / du lieu</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Kit de démarrage (outils, docs, méthodes)</span>
+                      <span>Proposer et rejoindre des projets (calendrier d'activités)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Accompagnement pendant 6 mois</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Connexion directe aux autres focalisateurs</span>
+                      <span>Créer des événements et animer la vie locale</span>
                     </li>
                   </ul>
                 </div>
                 
                 <div>
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">⚡</span>
-                    <h4 className="text-lg font-semibold text-foreground">Lancer Votre Collège Local</h4>
+                    <span className="text-xl">🏠</span>
+                    <h4 className="text-lg font-semibold text-foreground">Concrètement</h4>
                   </div>
                   <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Droit de vote sur les orientations</span>
+                      <span>Trésor collectif local (budget participatif)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Accès à tous les territoires activés</span>
+                      <span>Occuper les lieux (tarifs membres, crédits d'usage)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Crédits d'usage (séjours, formations)</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🏡</span>
-                    <h4 className="text-lg font-semibold text-foreground">Acquérir des Espaces Collectifs</h4>
-                  </div>
-                  <ul className="space-y-2 text-foreground text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Participation aux décisions d'investissement</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Discord et outils collaboratifs</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Accès aux financements collectifs</span>
+                      <span>Accès prioritaire aux espaces et activités</span>
                     </li>
                   </ul>
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-xl">
-                Rejoindre le Réseau
-              </Button>
+              <div className="space-y-3 mt-8">
+                <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-xl">
+                  Adhérer à l'association locale
+                </Button>
+                <Button variant="outline" className="w-full border-blue-500 text-blue-500 hover:bg-blue-50 font-bold py-3 rounded-xl">
+                  Voir la boutique
+                </Button>
+              </div>
             </div>
             
             {/* Chemin 3 */}
             <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer">
               <div className="flex flex-col items-center text-center mb-8">
                 <div className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                  Chemin 3 : Créer un Écolieu
+                  Entrée 3 · Investissement
                 </div>
-                <div className="text-4xl font-bold text-orange-500 mb-2">500€</div>
-                <div className="text-orange-600 font-semibold mb-4">Adhésion Créateur</div>
-                <h3 className="text-xl font-bold text-foreground">Développement Territorial</h3>
-                <p className="text-muted-foreground italic">Innovation locale</p>
+                <div className="text-4xl font-bold text-orange-500 mb-2">Investir dans les lieux</div>
+                <h3 className="text-xl font-bold text-foreground">Achat collectif de campings & espaces communs</h3>
               </div>
               
               <div className="space-y-6">
                 <div>
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🏗️</span>
-                    <h4 className="text-lg font-semibold text-foreground">Créer & Développer</h4>
+                    <span className="text-xl">🏢</span>
+                    <h4 className="text-lg font-semibold text-foreground">Ce que vous trouverez</h4>
                   </div>
                   <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-orange-500 mt-1">✓</span>
-                      <span>Formation complète "Écolieu" (7 jours)</span>
+                      <span>Opérations en cours et lieux cibles</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-orange-500 mt-1">✓</span>
-                      <span>Accompagnement architectural et juridique</span>
+                      <span>Obligations adossées à l'actif et crédits d'usage</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-orange-500 mt-1">✓</span>
-                      <span>Financement participatif jusqu'à 50k€</span>
+                      <span>Dossiers d'investissement & FAQ risques/garanties</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-orange-500 mt-1">✓</span>
-                      <span>Réseau d'artisans et partenaires</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🌱</span>
-                    <h4 className="text-lg font-semibold text-foreground">Gouvernance Innovante</h4>
-                  </div>
-                  <ul className="space-y-2 text-foreground text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-orange-500 mt-1">✓</span>
-                      <span>Statut privilégié dans les décisions réseau</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-orange-500 mt-1">✓</span>
-                      <span>Mentorat d'autres créateurs d'écolieux</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-orange-500 mt-1">✓</span>
-                      <span>Participation aux instances de gouvernance</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🚀</span>
-                    <h4 className="text-lg font-semibold text-foreground">Impact & Rayonnement</h4>
-                  </div>
-                  <ul className="space-y-2 text-foreground text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-orange-500 mt-1">✓</span>
-                      <span>Visibilité nationale de votre projet</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-orange-500 mt-1">✓</span>
-                      <span>Accès aux subventions et investissements</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-orange-500 mt-1">✓</span>
-                      <span>Retour sur investissement territorial</span>
+                      <span>Modalités, calendrier et gouvernance des projets</span>
                     </li>
                   </ul>
                 </div>
               </div>
               
               <Button className="w-full mt-8 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl">
-                Lancer mon Écolieu
+                Accéder au site investissement
               </Button>
             </div>
           </div>
