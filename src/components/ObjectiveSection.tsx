@@ -96,9 +96,18 @@ const ObjectiveSection = () => {
             </div>
             
             {/* Vague bleue décorative */}
-            <div className="w-full -mb-1">
-              <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16">
-                <path d="M0 60L60 67.5C120 75 240 90 360 82.5C480 75 600 45 720 37.5C840 30 960 45 1080 52.5C1200 60 1320 60 1380 60L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V60Z" fill="hsl(var(--primary) / 0.1)"/>
+            <div className="w-full -mb-1 overflow-hidden">
+              <svg viewBox="0 0 2000 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-24 scale-x-110">
+                <defs>
+                  <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="hsl(var(--primary) / 0.2)" />
+                    <stop offset="25%" stopColor="hsl(var(--secondary) / 0.15)" />
+                    <stop offset="50%" stopColor="hsl(var(--accent) / 0.2)" />
+                    <stop offset="75%" stopColor="hsl(var(--primary) / 0.15)" />
+                    <stop offset="100%" stopColor="hsl(var(--secondary) / 0.2)" />
+                  </linearGradient>
+                </defs>
+                <path d="M0 80L80 90C160 100 320 120 480 110C640 100 800 60 960 50C1120 40 1280 60 1440 70C1600 80 1760 80 1840 80L2000 80V160H1840C1760 160 1600 160 1440 160C1280 160 1120 160 960 160C800 160 640 160 480 160C320 160 160 160 80 160H0V80Z" fill="url(#waveGradient)"/>
               </svg>
             </div>
           </div>
