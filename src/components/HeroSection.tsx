@@ -30,6 +30,34 @@ const HeroSection = () => {
             <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto space-y-6 text-center">
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Card 1 - COMMUNE VIVANTE */}
+                <div className="group relative bg-gradient-to-br from-blue-400/20 to-blue-800/20 backdrop-blur-lg rounded-2xl p-8 border border-blue-300/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:from-blue-300/25 hover:to-blue-700/25">
+                  {/* Decorative glow effect */}
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    {/* Icon */}
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl mb-4 flex items-center justify-center shadow-lg">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                    
+                    {/* Prix */}
+                    <div className="text-blue-200 text-2xl font-bold mb-2">10€ + prix libre</div>
+                    
+                    <h3 className="text-white font-bold mb-4 text-xl leading-tight bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent whitespace-nowrap">
+                      ADHÉSION LOCALE
+                    </h3>
+                    <p className="text-white/90 text-lg leading-relaxed font-medium">
+                      Habitants unis, projets réalisés
+                    </p>
+                    
+                    {/* Subtle accent line */}
+                    <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-blue-400/60 to-transparent"></div>
+                  </div>
+                </div>
+                
+                {/* Card 2 - RÉSEAU PUISSANT */}
                 <div className="group relative bg-gradient-to-br from-emerald-400/20 to-green-800/20 backdrop-blur-lg rounded-2xl p-8 border border-emerald-300/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:from-emerald-300/25 hover:to-green-700/25">
                   {/* Decorative glow effect */}
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-400 via-green-500 to-emerald-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
@@ -38,36 +66,14 @@ const HeroSection = () => {
                     {/* Icon */}
                     <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-green-600 rounded-xl mb-4 flex items-center justify-center shadow-lg">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    
-                    <h3 className="text-white font-bold mb-4 text-xl leading-tight bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent whitespace-nowrap">
-                      ADHÉSION LOCALE
-                    </h3>
-                    <p className="text-white/90 text-lg leading-relaxed font-medium">
-                      Habitants unis, projets réalisés
-                    </p>
-                    
-                    {/* Subtle accent line */}
-                    <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent"></div>
-                  </div>
-                </div>
-                
-                {/* Card 2 - RÉSEAU PUISSANT */}
-                <div className="group relative bg-gradient-to-br from-orange-400/20 to-red-800/20 backdrop-blur-lg rounded-2xl p-8 border border-orange-300/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:from-orange-300/25 hover:to-red-700/25">
-                  {/* Decorative glow effect */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-400 via-red-500 to-orange-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
-                  
-                  <div className="relative z-10">
-                    {/* Icon */}
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-600 rounded-xl mb-4 flex items-center justify-center shadow-lg">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5-5-9-5-9-9s4-4 9-9" />
                       </svg>
                     </div>
                     
-                    <h3 className="text-white font-bold mb-4 text-xl leading-tight bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent whitespace-nowrap">
+                    {/* Prix */}
+                    <div className="text-emerald-200 text-2xl font-bold mb-2">100€</div>
+                    
+                    <h3 className="text-white font-bold mb-4 text-xl leading-tight bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent whitespace-nowrap">
                       ADHÉSION ARCHITECTE
                     </h3>
                     <p className="text-white/90 text-lg leading-relaxed font-medium">
@@ -75,7 +81,7 @@ const HeroSection = () => {
                     </p>
                     
                     {/* Subtle accent line */}
-                    <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-orange-400/60 to-transparent"></div>
+                    <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent"></div>
                   </div>
                 </div>
               </div>
