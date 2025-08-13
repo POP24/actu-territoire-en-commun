@@ -95,11 +95,28 @@ const ObjectiveSection = () => {
               </div>
             </div>
             
-            {/* Vague bleue décorative */}
-            <div className="w-full -mb-1">
-              <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16">
-                <path d="M0 60L60 67.5C120 75 240 90 360 82.5C480 75 600 45 720 37.5C840 30 960 45 1080 52.5C1200 60 1320 60 1380 60L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V60Z" fill="hsl(var(--primary) / 0.1)"/>
+            {/* Vague décorative améliorée - style header */}
+            <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden">
+              {/* Vague principale avec dégradé complexe */}
+              <svg viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-32 md:h-40 lg:h-48">
+                <defs>
+                  <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="hsl(var(--primary) / 0.15)" />
+                    <stop offset="50%" stopColor="hsl(var(--primary) / 0.25)" />
+                    <stop offset="100%" stopColor="hsl(var(--primary) / 0.1)" />
+                  </linearGradient>
+                </defs>
+                <path d="M0 200L48 185C96 170 192 140 288 125C384 110 480 110 576 120C672 130 768 150 864 155C960 160 1056 150 1152 140C1248 130 1344 120 1392 115L1440 110V200H1392C1344 200 1248 200 1152 200C1056 200 960 200 864 200C768 200 672 200 576 200C480 200 384 200 288 200C192 200 96 200 48 200H0V200Z" fill="url(#waveGradient)"/>
               </svg>
+              
+              {/* Vague secondaire pour plus de profondeur */}
+              <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0 w-full h-20 md:h-24 lg:h-28 opacity-60">
+                <path d="M0 100L60 90C120 80 240 60 360 55C480 50 600 60 720 65C840 70 960 70 1080 65C1200 60 1320 50 1380 45L1440 40V100H1380C1320 100 1200 100 1080 100C960 100 840 100 720 100C600 100 480 100 360 100C240 100 120 100 60 100H0V100Z" fill="hsl(var(--primary) / 0.08)"/>
+              </svg>
+              
+              {/* Effets de lueur subtils */}
+              <div className="absolute bottom-0 left-1/4 w-96 h-32 bg-gradient-to-t from-primary/10 to-transparent blur-2xl opacity-50"></div>
+              <div className="absolute bottom-0 right-1/4 w-96 h-32 bg-gradient-to-t from-primary/10 to-transparent blur-2xl opacity-50"></div>
             </div>
           </div>
         </div>
