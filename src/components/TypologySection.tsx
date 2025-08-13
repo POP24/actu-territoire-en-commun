@@ -60,23 +60,23 @@ const TypologySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-6">
+    <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 sm:mb-16">
             <span className="text-foreground">TYPOLOGIE DES</span>{" "}
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">BIENS</span>
           </h2>
           
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-semibold mb-8 text-foreground">Ce qu'on active :</h3>
+          <div className="text-center mb-8 sm:mb-12">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-foreground">Ce qu'on active :</h3>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {biensTypes.map((bien, index) => (
               <div
                 key={index}
-                className="relative bg-gradient-card rounded-2xl shadow-soft border border-border overflow-hidden group cursor-pointer transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-primary/60 hover:ring-4 hover:ring-primary/30 hover:rotate-1"
+                className="relative bg-gradient-card rounded-2xl shadow-soft border border-border overflow-hidden group cursor-pointer transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-[1.02] hover:border-primary/60 hover:ring-4 hover:ring-primary/30 hover:rotate-1"
                 style={{
                   transformStyle: 'preserve-3d',
                   backfaceVisibility: 'hidden',
@@ -93,20 +93,20 @@ const TypologySection = () => {
                   e.currentTarget.style.boxShadow = '0 4px 20px -4px hsl(200 50% 50% / 0.2)';
                 }}
               >
-                <div className="relative h-40 overflow-hidden">
+                <div className="relative h-32 sm:h-40 overflow-hidden">
                   <img 
                     src={bien.image} 
                     alt={bien.title}
                     className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-125 group-hover:brightness-110 group-hover:contrast-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:from-primary/60 group-hover:to-transparent transition-all duration-700"></div>
-                  <div className="absolute top-4 left-4 text-3xl bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-primary/30 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700">
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 text-2xl sm:text-3xl bg-white/20 backdrop-blur-sm rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center group-hover:bg-primary/30 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700">
                     {bien.emoji}
                   </div>
                 </div>
-                <div className="p-6 text-center group-hover:bg-gradient-to-br group-hover:from-primary/5 group-hover:to-accent/5 transition-all duration-700">
-                  <h4 className="text-lg font-bold text-foreground mb-3 group-hover:text-primary group-hover:scale-105 transition-all duration-500">{bien.title}</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed group-hover:text-foreground/80 transition-all duration-500">{bien.description}</p>
+                <div className="p-4 sm:p-6 text-center group-hover:bg-gradient-to-br group-hover:from-primary/5 group-hover:to-accent/5 transition-all duration-700">
+                  <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 group-hover:text-primary group-hover:scale-105 transition-all duration-500">{bien.title}</h4>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed group-hover:text-foreground/80 transition-all duration-500">{bien.description}</p>
                 </div>
               </div>
             ))}
