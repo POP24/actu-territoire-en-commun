@@ -12,120 +12,77 @@ const ObjectiveSection = () => {
           </h2>
           
           <div className="text-center mb-16">
-            <div className="grid grid-cols-1 xl:grid-cols-5 gap-8 items-center justify-items-center max-w-8xl mx-auto">
-              {/* Rangée 1: 3 premiers cercles */}
-              <div className="xl:col-span-5 grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center w-full mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center max-w-6xl mx-auto mb-8">
               
-              {/* LES LIEUX EXISTENT - Cercle futuriste nature */}
-              <div className="group relative flex justify-center">
-                {/* Feuilles flottantes autour du cercle */}
-                <div className="absolute top-10 -left-8 text-2xl animate-pulse delay-1000 group-hover:animate-bounce">🍃</div>
-                <div className="absolute top-16 -right-6 text-xl animate-bounce delay-500 group-hover:animate-pulse">🌿</div>
-                <div className="absolute -bottom-4 left-8 text-lg animate-pulse delay-700 group-hover:animate-bounce">🌱</div>
-                <div className="absolute bottom-12 -right-10 text-2xl animate-bounce delay-300 group-hover:animate-pulse">🍀</div>
-                
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-green-500/20 via-emerald-500/30 to-teal-500/20 blur-xl animate-pulse"></div>
-                <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-green-50/90 via-emerald-100/80 to-teal-100/70 dark:from-green-900/40 dark:via-emerald-900/50 dark:to-teal-900/60 border-4 border-green-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-green-500/40">
-                  <div className="absolute top-4 right-4 w-3 h-3 rounded-full bg-green-500 animate-ping"></div>
-                  <div className="absolute bottom-6 left-6 w-2 h-2 rounded-full bg-emerald-400 animate-bounce delay-300"></div>
-                  <div className="text-5xl mb-3">📍</div>
-                  <h3 className="text-lg font-bold text-green-800 dark:text-green-300 mb-2 tracking-wide">LES LIEUX EXISTENT</h3>
-                  <p className="text-xs font-semibold text-green-700 dark:text-green-400 mb-3">Territoires prêts</p>
-                  <div className="space-y-1 text-center text-xs">
-                    <p className="font-medium text-green-700 dark:text-green-400">+1600 écolieux recensés</p>
-                    <p className="font-medium text-green-700 dark:text-green-400">Milliers de tiers-lieux</p>
-                    <p className="font-medium text-green-700 dark:text-green-400">Associations dynamiques</p>
-                    <p className="font-medium text-green-700 dark:text-green-400">Entreprises engagées</p>
-                    <div className="w-12 h-px bg-gradient-to-r from-transparent via-green-500 to-transparent my-2"></div>
-                    <p className="text-xs font-black text-green-900 dark:text-green-200">Tout est déjà là</p>
+              {/* LES LIEUX EXISTENT */}
+              <div className="flex justify-center">
+                <div className="w-72 h-72 bg-card border-2 border-green-600 flex flex-col items-center justify-center p-6 transition-all duration-300 hover:border-green-400">
+                  <div className="text-4xl mb-3">⚡</div>
+                  <h3 className="text-lg font-bold text-green-700 dark:text-green-300 mb-2 tracking-wide">LES LIEUX EXISTENT</h3>
+                  <p className="text-sm font-semibold text-green-600 dark:text-green-400 mb-3">Territoires prêts</p>
+                  <div className="space-y-1 text-center text-sm">
+                    <p className="text-green-600 dark:text-green-400">+1600 écolieux recensés</p>
+                    <p className="text-green-600 dark:text-green-400">Milliers de tiers-lieux</p>
+                    <p className="text-green-600 dark:text-green-400">Associations dynamiques</p>
+                    <p className="text-green-600 dark:text-green-400">Entreprises engagées</p>
+                    <div className="w-16 h-px bg-green-500 my-2 mx-auto"></div>
+                    <p className="text-sm font-black text-green-700 dark:text-green-200">Tout est déjà là</p>
                   </div>
                 </div>
               </div>
 
-              {/* LES OUTILS SONT PRÊTS - Cercle futuriste nature */}
-              <div className="group relative flex justify-center">
-                {/* Nuages cotonneux autour du cercle */}
-                <div className="absolute top-8 -left-12 text-3xl animate-pulse delay-800 group-hover:animate-bounce opacity-70">☁️</div>
-                <div className="absolute top-20 -right-8 text-2xl animate-bounce delay-1200 group-hover:animate-pulse opacity-60">☁️</div>
-                <div className="absolute -bottom-6 left-12 text-xl animate-pulse delay-400 group-hover:animate-bounce opacity-80">☁️</div>
-                <div className="absolute bottom-16 -right-12 text-2xl animate-bounce delay-900 group-hover:animate-pulse opacity-70">☁️</div>
-                
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/20 via-cyan-500/30 to-indigo-500/20 blur-xl animate-pulse delay-150"></div>
-                <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-blue-50/90 via-cyan-100/80 to-indigo-100/70 dark:from-blue-900/40 dark:via-cyan-900/50 dark:to-indigo-900/60 border-4 border-blue-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-blue-500/40">
-                  <div className="absolute top-6 left-4 w-3 h-3 rounded-full bg-blue-500 animate-ping delay-100"></div>
-                  <div className="absolute bottom-4 right-4 w-2 h-2 rounded-full bg-cyan-400 animate-bounce delay-500"></div>
-                  <div className="text-5xl mb-3">🤝</div>
-                  <h3 className="text-lg font-bold text-blue-800 dark:text-blue-300 mb-2 tracking-wide">OUTILS PRÊTS</h3>
-                  <p className="text-xs font-semibold text-blue-700 dark:text-blue-400 mb-3">Gouvernance, cagnottes</p>
-                  <div className="space-y-1 text-center text-xs">
-                    <p className="font-medium text-blue-700 dark:text-blue-400">Gouvernance partagée</p>
-                    <p className="font-medium text-blue-700 dark:text-blue-400">Financement participatif</p>
-                    <p className="font-medium text-blue-700 dark:text-blue-400">Outils collaboratifs</p>
-                    <p className="font-medium text-blue-700 dark:text-blue-400">Méthodes démocratisées</p>
-                    <div className="w-12 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent my-2"></div>
-                    <p className="text-xs font-black text-blue-900 dark:text-blue-200">Boîte à outils prête</p>
+              {/* LES OUTILS SONT PRÊTS */}
+              <div className="flex justify-center">
+                <div className="w-72 h-72 bg-card border-2 border-blue-600 flex flex-col items-center justify-center p-6 transition-all duration-300 hover:border-blue-400">
+                  <div className="text-4xl mb-3">⚙️</div>
+                  <h3 className="text-lg font-bold text-blue-700 dark:text-blue-300 mb-2 tracking-wide">OUTILS PRÊTS</h3>
+                  <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-3">Gouvernance, cagnottes</p>
+                  <div className="space-y-1 text-center text-sm">
+                    <p className="text-blue-600 dark:text-blue-400">Gouvernance partagée</p>
+                    <p className="text-blue-600 dark:text-blue-400">Financement participatif</p>
+                    <p className="text-blue-600 dark:text-blue-400">Outils collaboratifs</p>
+                    <p className="text-blue-600 dark:text-blue-400">Méthodes démocratisées</p>
+                    <div className="w-16 h-px bg-blue-500 my-2 mx-auto"></div>
+                    <p className="text-sm font-black text-blue-700 dark:text-blue-200">Boîte à outils prête</p>
                   </div>
                 </div>
               </div>
 
-              {/* LES GENS SONT LÀ - Cercle futuriste nature */}
-              <div className="group relative flex justify-center">
-                {/* Étoiles scintillantes autour du cercle */}
-                <div className="absolute top-6 -left-10 text-2xl animate-pulse delay-600 group-hover:animate-bounce">⭐</div>
-                <div className="absolute top-14 -right-8 text-xl animate-bounce delay-1000 group-hover:animate-pulse">✨</div>
-                <div className="absolute -bottom-2 left-6 text-lg animate-pulse delay-800 group-hover:animate-bounce">🌟</div>
-                <div className="absolute bottom-10 -right-12 text-2xl animate-bounce delay-400 group-hover:animate-pulse">💫</div>
-                <div className="absolute top-32 -left-6 text-sm animate-pulse delay-1200 group-hover:animate-bounce">✨</div>
-                
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500/20 via-violet-500/30 to-pink-500/20 blur-xl animate-pulse delay-300"></div>
-                <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-purple-50/90 via-violet-100/80 to-pink-100/70 dark:from-purple-900/40 dark:via-violet-900/50 dark:to-pink-900/60 border-4 border-purple-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-purple-500/40">
-                  <div className="absolute top-8 left-8 w-4 h-4 rounded-full bg-purple-500 animate-ping"></div>
-                  <div className="absolute bottom-8 right-8 w-3 h-3 rounded-full bg-violet-400 animate-bounce delay-700"></div>
-                  <div className="text-5xl mb-3">💡</div>
-                  <h3 className="text-lg font-bold text-purple-800 dark:text-purple-300 mb-2 tracking-wide">LES GENS SONT LÀ</h3>
-                  <p className="text-xs font-semibold text-purple-700 dark:text-purple-400 mb-3">Réseaux actifs</p>
-                  <div className="space-y-1 text-center text-xs">
-                    <p className="font-medium text-purple-700 dark:text-purple-400">Chantiers participatifs</p>
-                    <p className="font-medium text-purple-700 dark:text-purple-400">Marches-composition</p>
-                    <p className="font-medium text-purple-700 dark:text-purple-400">Défense des territoires</p>
-                    <p className="font-medium text-purple-700 dark:text-purple-400">Milliers de personnes</p>
-                    <div className="w-12 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent my-2"></div>
-                    <p className="text-xs font-black text-purple-900 dark:text-purple-200">Mais restent isolées</p>
+              {/* LES GENS SONT LÀ */}
+              <div className="flex justify-center">
+                <div className="w-72 h-72 bg-card border-2 border-purple-600 flex flex-col items-center justify-center p-6 transition-all duration-300 hover:border-purple-400">
+                  <div className="text-4xl mb-3">✊</div>
+                  <h3 className="text-lg font-bold text-purple-700 dark:text-purple-300 mb-2 tracking-wide">LES GENS SONT LÀ</h3>
+                  <p className="text-sm font-semibold text-purple-600 dark:text-purple-400 mb-3">Réseaux actifs</p>
+                  <div className="space-y-1 text-center text-sm">
+                    <p className="text-purple-600 dark:text-purple-400">Chantiers participatifs</p>
+                    <p className="text-purple-600 dark:text-purple-400">Marches-composition</p>
+                    <p className="text-purple-600 dark:text-purple-400">Défense des territoires</p>
+                    <p className="text-purple-600 dark:text-purple-400">Milliers de personnes</p>
+                    <div className="w-16 h-px bg-purple-500 my-2 mx-auto"></div>
+                    <p className="text-sm font-black text-purple-700 dark:text-purple-200">Mais restent isolées</p>
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
 
-              {/* Flèches de connexion entre les rangées */}
-              <div className="xl:col-span-5 flex flex-col items-center my-8">
-                <div className="text-4xl animate-bounce text-orange-500">⬇</div>
-                <div className="w-2 h-16 bg-gradient-to-b from-orange-400 to-red-400 rounded-full animate-pulse"></div>
-                <div className="text-4xl animate-bounce text-red-500">⬇</div>
-              </div>
-
-              {/* Rangée 2: cercle final centré */}
-              <div className="xl:col-span-5 flex justify-center">
-              {/* LE LIEN MANQUE - Cercle futuriste nature avec animation spéciale */}
-              <div className="group relative">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-orange-500/30 via-red-500/40 to-amber-500/30 blur-xl animate-pulse delay-500"></div>
-                <div className="absolute inset-2 rounded-full bg-gradient-to-br from-orange-400/20 via-red-400/30 to-amber-400/20 blur-lg animate-ping"></div>
-                <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-orange-50/90 via-red-100/80 to-amber-100/70 dark:from-orange-900/40 dark:via-red-900/50 dark:to-amber-900/60 border-4 border-orange-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-orange-500/40 animate-pulse">
-                  <div className="absolute top-4 left-4 w-4 h-4 rounded-full bg-orange-500 animate-ping"></div>
-                  <div className="absolute bottom-4 right-4 w-3 h-3 rounded-full bg-red-400 animate-bounce delay-1000"></div>
-                  <div className="absolute top-8 right-8 w-2 h-2 rounded-full bg-amber-400 animate-pulse delay-1500"></div>
-                  <div className="text-5xl mb-3">🌐</div>
-                  <h3 className="text-lg font-bold text-orange-800 dark:text-orange-300 mb-2 tracking-wide">LE LIEN MANQUE</h3>
-                  <p className="text-xs font-semibold text-orange-700 dark:text-orange-400 mb-3">C'est ça qu'on résout !</p>
-                  <div className="space-y-1 text-center text-xs">
-                    <p className="font-medium text-orange-700 dark:text-orange-400">Énergies fragmentées</p>
-                    <p className="font-medium text-orange-700 dark:text-orange-400">Projets isolés</p>
-                    <p className="font-medium text-orange-700 dark:text-orange-400">Manque de moyens</p>
-                    <div className="w-12 h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent my-2"></div>
-                    <p className="text-xs font-black text-orange-900 dark:text-orange-200">Trésorerie commune</p>
-                    <p className="text-xs font-black text-orange-900 dark:text-orange-200">+ Activateurs locaux</p>
+            {/* LE LIEN MANQUE - Rectangle en dessous */}
+            <div className="flex justify-center">
+              <div className="w-full max-w-4xl h-32 bg-card border-2 border-red-600 flex flex-col items-center justify-center p-6 transition-all duration-300 hover:border-red-400">
+                <div className="flex items-center space-x-4">
+                  <div className="text-3xl">🔗</div>
+                  <div className="text-center">
+                    <h3 className="text-xl font-bold text-red-700 dark:text-red-300 mb-1">LE LIEN MANQUE</h3>
+                    <p className="text-sm text-red-600 dark:text-red-400">C'est ça qu'on résout !</p>
+                  </div>
+                  <div className="text-center text-sm space-x-4">
+                    <span className="text-red-600 dark:text-red-400">Énergies fragmentées</span>
+                    <span className="text-red-600 dark:text-red-400">•</span>
+                    <span className="text-red-600 dark:text-red-400">Projets isolés</span>
+                    <span className="text-red-600 dark:text-red-400">•</span>
+                    <span className="font-black text-red-700 dark:text-red-200">Trésorerie commune + Activateurs locaux</span>
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
