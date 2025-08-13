@@ -28,7 +28,7 @@ const HeroSection = () => {
               Système d'Activation Territoriale
             </h2>
             
-            <div className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-3 sm:space-y-4">
+            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-3 sm:space-y-4">
               <div className="space-y-3 sm:space-y-4">
                 <p className="flex items-start">
                   <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
