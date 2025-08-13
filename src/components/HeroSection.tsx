@@ -32,19 +32,19 @@ const HeroSection = () => {
               <div className="space-y-3 sm:space-y-4">
                 <p className="flex items-start">
                   <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="font-bold text-white drop-shadow-2xl">Construire des communautés locales autonomes et résilientes</span>
+                  <span className="text-white drop-shadow-2xl">Construire des communautés locales autonomes et résilientes</span>
                 </p>
                 <p className="flex items-start">
                   <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="font-bold text-white drop-shadow-2xl">Permettre l'action collective et le partage équitable des ressources</span>
+                  <span className="text-white drop-shadow-2xl">Permettre l'action collective et le partage équitable des ressources</span>
                 </p>
                 <p className="flex items-start">
                   <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="font-bold text-white drop-shadow-2xl">Co-investir dans un trésor commun stratégique</span>
+                  <span className="text-white drop-shadow-2xl">Co-investir dans un trésor commun stratégique</span>
                 </p>
                 <p className="flex items-start">
                   <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="font-bold text-white drop-shadow-2xl">Rejoindre les <strong className="text-blue-500">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
+                  <span className="text-white drop-shadow-2xl">Rejoindre les <strong className="text-blue-500">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
                 </p>
               </div>
             </div>
