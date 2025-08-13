@@ -75,7 +75,7 @@ const ObjectiveSection = () => {
                 <p className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-medium">
                   Lieux, Cagnottes, Votes.
                 </p>
-                <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-2xl mx-auto font-bold">
+                <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-2xl mx-auto">
                   On relie ce qui existe déjà pour faire basculer les territoires en autonomie.
                 </p>
                 
