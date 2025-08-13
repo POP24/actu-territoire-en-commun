@@ -10,12 +10,12 @@ const PathwaysSection = () => {
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">CHEMIN</span>
           </h2>
           
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {/* Chemin 1 */}
             <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-400 cursor-pointer">
               <div className="flex flex-col items-center text-center mb-8">
                 <div className="bg-green-400 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                  Entrée 1 · Fédération nationale
+                  Chemin 1 · Fédération nationale
                 </div>
                 <div className="text-4xl font-bold text-green-400 mb-2">100€</div>
                 <div className="text-green-600 font-semibold mb-4">Adhésion Architecte</div>
@@ -76,7 +76,7 @@ const PathwaysSection = () => {
             <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
               <div className="flex flex-col items-center text-center mb-8">
                 <div className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                  Entrée 2 · Association locale
+                  Chemin 2 · Association locale
                 </div>
                 <div className="text-4xl font-bold text-blue-500 mb-2">10€ + prix libre</div>
                 <div className="text-blue-600 font-semibold mb-4">Adhésion Locale</div>
@@ -142,10 +142,11 @@ const PathwaysSection = () => {
             <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer">
               <div className="flex flex-col items-center text-center mb-8">
                 <div className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                  Entrée 3 · Investissement
+                  Chemin 3 · Investissement Immobilier
                 </div>
-                <div className="text-4xl font-bold text-orange-500 mb-2">Investir dans les lieux</div>
-                <h3 className="text-xl font-bold text-foreground">Achat collectif de campings & espaces communs</h3>
+                <div className="text-4xl font-bold text-orange-500 mb-2">Obligation & Credit d'Usage</div>
+                <h3 className="text-xl font-bold text-foreground">Achat collectif de Communs</h3>
+                <p className="text-muted-foreground italic">et de services</p>
               </div>
               
               <div className="space-y-6">
