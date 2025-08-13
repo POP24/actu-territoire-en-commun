@@ -21,60 +21,60 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <NavLink 
               to="/" 
-              className={({isActive}) => `font-bold transition-colors duration-300 ${
+              className={({isActive}) => `nav-link text-base font-medium ${
                 isActive 
                   ? "text-foreground" 
-                  : "text-foreground/70 hover:text-foreground"
+                  : ""
               }`}
             >
               Accueil
             </NavLink>
             <NavLink 
               to="/territoires" 
-              className={({isActive}) => `font-bold transition-colors duration-300 ${
+              className={({isActive}) => `nav-link text-base font-medium ${
                 isActive 
                   ? "text-foreground" 
-                  : "text-foreground/70 hover:text-foreground"
+                  : ""
               }`}
             >
               Territoires
             </NavLink>
             <NavLink 
               to="/gouvernance" 
-              className={({isActive}) => `font-bold transition-colors duration-300 ${
+              className={({isActive}) => `nav-link text-base font-medium ${
                 isActive 
                   ? "text-foreground" 
-                  : "text-foreground/70 hover:text-foreground"
+                  : ""
               }`}
             >
               Gouvernance
             </NavLink>
             <NavLink 
               to="/woofing" 
-              className={({isActive}) => `font-bold transition-colors duration-300 ${
+              className={({isActive}) => `nav-link text-base font-medium ${
                 isActive 
                   ? "text-foreground" 
-                  : "text-foreground/70 hover:text-foreground"
+                  : ""
               }`}
             >
               Woofing
             </NavLink>
             <NavLink 
               to="/boutique" 
-              className={({isActive}) => `font-bold transition-colors duration-300 ${
+              className={({isActive}) => `nav-link text-base font-medium ${
                 isActive 
                   ? "text-foreground" 
-                  : "text-foreground/70 hover:text-foreground"
+                  : ""
               }`}
             >
               Boutique
             </NavLink>
             <NavLink 
               to="/faq" 
-              className={({isActive}) => `font-bold transition-colors duration-300 ${
+              className={({isActive}) => `nav-link text-base font-medium ${
                 isActive 
                   ? "text-foreground" 
-                  : "text-foreground/70 hover:text-foreground"
+                  : ""
               }`}
             >
               FAQ
@@ -92,7 +92,7 @@ const Header = () => {
             >
               Vision
             </NavLink>
-            <Button className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-blue-500 hover:bg-blue-600 text-white">
+            <Button className="btn-primary rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
               ADHÉRER
             </Button>
           </div>
