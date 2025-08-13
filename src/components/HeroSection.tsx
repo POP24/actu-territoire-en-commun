@@ -27,15 +27,33 @@ const HeroSection = () => {
               Système d'Activation Territoriale
             </h2>
             
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-4">
-              <p className="text-white drop-shadow-2xl">
-                Nous fédérons <strong className="drop-shadow-lg">10 000 pionniers</strong><br />
-                pour lever <strong className="drop-shadow-lg">1 million d'euros</strong>
-              </p>
-              <p className="text-white/90 drop-shadow-xl">
-                Cet argent finance des activateurs territoriaux qui créent<br />
-                des communes autonomes.
-              </p>
+            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-6">
+              <div className="space-y-4">
+                <div>
+                  <p className="text-white drop-shadow-2xl font-semibold">
+                    - Une association locale pour chaque lieu
+                  </p>
+                  <p className="text-white/90 drop-shadow-xl ml-4 text-sm sm:text-base">
+                    Décidez ensemble des projets, des usages et de la vie quotidienne.
+                  </p>
+                </div>
+                
+                <div>
+                  <p className="text-white drop-shadow-2xl font-semibold">
+                    - Une fédération nationale pour passer à l'échelle
+                  </p>
+                  <p className="text-white/90 drop-shadow-xl ml-4 text-sm sm:text-base">
+                    Mutualisons nos moyens pour activer des territoires et créer l'autonomie locale.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="pt-4">
+                <p className="text-white drop-shadow-2xl">
+                  Nous fédérons <strong className="drop-shadow-lg">10 000 pionniers</strong><br />
+                  pour lever <strong className="drop-shadow-lg">1 million d'euros</strong>
+                </p>
+              </div>
             </div>
             
             <div className="flex justify-center mt-8 sm:mt-12">
