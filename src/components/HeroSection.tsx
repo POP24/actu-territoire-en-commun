@@ -19,48 +19,42 @@ const HeroSection = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
               Le Réseau des{" "}
               <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-2xl">
-                Communes Libres
+                Communes
               </span>
             </h1>
             
-            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-white/90 drop-shadow-lg">
-              GOUVERNANCE LOCALE, TRÉSORERIE COMMUNE
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
+              Système d'Activation Territoriale
             </h2>
             
-            <div className="text-center lg:text-left mb-8">
-              <p className="text-base sm:text-lg md:text-xl text-white drop-shadow-lg">
-                Nous recherchons <span className="font-bold">10 000 pionniers × 100 € = 1 000 000 € → 50 territoires activés</span>
-              </p>
+            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-3 sm:space-y-4">
+              <div className="space-y-3 sm:space-y-4">
+                <p className="flex items-start">
+                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
+                  <span className="text-white drop-shadow-2xl">Construire des communautés locales autonomes et résilientes</span>
+                </p>
+                <p className="flex items-start">
+                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
+                  <span className="text-white drop-shadow-2xl">Permettre l'action collective et le partage équitable des ressources</span>
+                </p>
+                <p className="flex items-start">
+                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
+                  <span className="text-white drop-shadow-2xl">Co-investir dans un trésor commun stratégique</span>
+                </p>
+                <p className="flex items-start">
+                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
+                  <span className="text-white drop-shadow-2xl">Rejoindre les <strong className="text-blue-500">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
+                </p>
+              </div>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 mb-8 border border-white/20">
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 drop-shadow-lg">
-                C'est quoi "activer" ?
-              </h3>
-              <p className="text-sm sm:text-base text-white/90 drop-shadow-lg">
-                <span className="font-semibold">Parcourir</span> • <span className="font-semibold">Recenser</span> • <span className="font-semibold">Fédérer</span> • <span className="font-semibold">Outiller</span> • <span className="font-semibold">Financer</span> un territoire
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8 sm:mt-12">
+            <div className="flex justify-center mt-8 sm:mt-12">
               <Button 
                 size="lg"
-                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-green-500 hover:bg-green-600"
+                className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                Adhésion nationale - 100€
+                ADHÉRER
               </Button>
-              <Button 
-                size="lg"
-                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-blue-500 hover:bg-blue-600 text-white"
-              >
-                Adhésion locale - 10€ + prix libre
-              </Button>
-            </div>
-            
-            <div className="text-xs sm:text-sm text-center lg:text-left mt-4">
-              <p className="text-white/80">
-                <span className="font-semibold">Gouvernance du lieu</span>
-              </p>
             </div>
           </div>
           
