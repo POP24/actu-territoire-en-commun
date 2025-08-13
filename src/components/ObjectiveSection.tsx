@@ -12,11 +12,11 @@ const ObjectiveSection = () => {
           </h2>
           
           <div className="text-center mb-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center max-w-6xl mx-auto mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center max-w-6xl mx-auto mb-8">
               
               {/* LES LIEUX EXISTENT */}
               <div className="flex justify-center">
-                <div className="w-72 h-72 bg-card border-2 border-green-600 flex flex-col items-center justify-center p-6 transition-all duration-300 hover:border-green-400">
+                <div className="w-72 h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
                   <div className="text-4xl mb-3">⚡</div>
                   <h3 className="text-lg font-bold text-green-700 dark:text-green-300 mb-2 tracking-wide">LES LIEUX EXISTENT</h3>
                   <p className="text-sm font-semibold text-green-600 dark:text-green-400 mb-3">Territoires prêts</p>
@@ -33,7 +33,7 @@ const ObjectiveSection = () => {
 
               {/* LES OUTILS SONT PRÊTS */}
               <div className="flex justify-center">
-                <div className="w-72 h-72 bg-card border-2 border-blue-600 flex flex-col items-center justify-center p-6 transition-all duration-300 hover:border-blue-400">
+                <div className="w-72 h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-blue-400/60 hover:ring-4 hover:ring-blue-400/30 cursor-pointer">
                   <div className="text-4xl mb-3">⚙️</div>
                   <h3 className="text-lg font-bold text-blue-700 dark:text-blue-300 mb-2 tracking-wide">OUTILS PRÊTS</h3>
                   <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-3">Gouvernance, cagnottes</p>
@@ -50,7 +50,7 @@ const ObjectiveSection = () => {
 
               {/* LES GENS SONT LÀ */}
               <div className="flex justify-center">
-                <div className="w-72 h-72 bg-card border-2 border-purple-600 flex flex-col items-center justify-center p-6 transition-all duration-300 hover:border-purple-400">
+                <div className="w-72 h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-purple-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-purple-400/60 hover:ring-4 hover:ring-purple-400/30 cursor-pointer">
                   <div className="text-4xl mb-3">✊</div>
                   <h3 className="text-lg font-bold text-purple-700 dark:text-purple-300 mb-2 tracking-wide">LES GENS SONT LÀ</h3>
                   <p className="text-sm font-semibold text-purple-600 dark:text-purple-400 mb-3">Réseaux actifs</p>
@@ -68,7 +68,7 @@ const ObjectiveSection = () => {
 
             {/* LE LIEN MANQUE - Rectangle en dessous */}
             <div className="flex justify-center">
-              <div className="w-full max-w-4xl h-32 bg-card border-2 border-red-600 flex flex-col items-center justify-center p-6 transition-all duration-300 hover:border-red-400">
+              <div className="w-full max-w-4xl h-32 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-red-500/40 hover:-translate-y-2 hover:scale-[1.01] hover:border-red-400/60 hover:ring-4 hover:ring-red-400/30 cursor-pointer">
                 <div className="flex items-center space-x-4">
                   <div className="text-3xl">🔗</div>
                   <div className="text-center">
