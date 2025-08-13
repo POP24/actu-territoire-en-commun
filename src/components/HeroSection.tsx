@@ -27,25 +27,15 @@ const HeroSection = () => {
               Système d'Activation Territoriale
             </h2>
             
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-3 sm:space-y-4">
-              <div className="space-y-3 sm:space-y-4">
-                <p className="flex items-start">
-                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="text-white drop-shadow-2xl">Construire des communautés locales autonomes et résilientes</span>
-                </p>
-                <p className="flex items-start">
-                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="text-white drop-shadow-2xl">Permettre l'action collective et le partage équitable des ressources</span>
-                </p>
-                <p className="flex items-start">
-                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="text-white drop-shadow-2xl">Co-investir dans un trésor commun stratégique</span>
-                </p>
-                <p className="flex items-start">
-                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="text-white drop-shadow-2xl">Rejoindre les <strong className="text-blue-500">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
-                </p>
-              </div>
+            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-4">
+              <p className="text-white drop-shadow-2xl">
+                Nous fédérons <strong>10 000 pionniers</strong><br />
+                pour lever <strong>1 million d'euros</strong>
+              </p>
+              <p className="text-white drop-shadow-2xl">
+                Cet argent finance des activateurs territoriaux qui créent<br />
+                des communes autonomes.
+              </p>
             </div>
             
             <div className="flex justify-center mt-8 sm:mt-12">
