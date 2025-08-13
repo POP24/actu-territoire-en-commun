@@ -110,13 +110,13 @@ const HeroSection = () => {
                 <div className="absolute inset-1 bg-gradient-hero rounded-lg sm:rounded-xl"></div>
               </div>
               
-              {/* Tree roots decorative elements */}
-              <div className="absolute -top-4 sm:-top-8 left-1/2 transform -translate-x-1/2 w-16 sm:w-32 h-8 sm:h-16 opacity-40">
-                <svg viewBox="0 0 100 50" className="w-full h-full text-white/60">
-                  <path d="M50,50 Q30,30 10,10 M50,50 Q50,20 30,5 M50,50 Q70,30 90,10 M50,50 Q50,20 70,5" 
-                        stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
-                </svg>
-              </div>
+               {/* Tree roots decorative elements */}
+               <div className="absolute -top-16 sm:-top-32 left-1/2 transform -translate-x-1/2 w-64 sm:w-128 h-32 sm:h-64 opacity-40">
+                 <svg viewBox="0 0 100 50" className="w-full h-full text-white/60">
+                   <path d="M50,50 Q30,30 10,10 M50,50 Q50,20 30,5 M50,50 Q70,30 90,10 M50,50 Q50,20 70,5" 
+                         stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
+                 </svg>
+               </div>
               
               {/* Main image container */}
               <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] xl:w-[550px] xl:h-[550px]">
@@ -137,13 +137,13 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-primary/20 to-secondary/30 rounded-lg sm:rounded-xl z-20 pointer-events-none"></div>
               </div>
               
-              {/* Bottom roots */}
-              <div className="absolute -bottom-3 sm:-bottom-6 left-1/2 transform -translate-x-1/2 w-20 sm:w-40 h-6 sm:h-12 opacity-30">
-                <svg viewBox="0 0 120 40" className="w-full h-full text-accent">
-                  <path d="M60,0 Q40,20 20,40 M60,0 Q60,25 40,35 M60,0 Q80,20 100,40 M60,0 Q60,25 80,35" 
-                        stroke="currentColor" strokeWidth="3" fill="none"/>
-                </svg>
-              </div>
+               {/* Bottom roots */}
+               <div className="absolute -bottom-12 sm:-bottom-24 left-1/2 transform -translate-x-1/2 w-80 sm:w-160 h-24 sm:h-48 opacity-30">
+                 <svg viewBox="0 0 120 40" className="w-full h-full text-accent">
+                   <path d="M60,0 Q40,20 20,40 M60,0 Q60,25 40,35 M60,0 Q80,20 100,40 M60,0 Q60,25 80,35" 
+                         stroke="currentColor" strokeWidth="3" fill="none"/>
+                 </svg>
+               </div>
             </div>
           </div>
         </div>
