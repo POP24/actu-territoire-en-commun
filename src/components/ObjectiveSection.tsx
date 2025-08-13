@@ -66,22 +66,31 @@ const ObjectiveSection = () => {
               </div>
             </div>
 
-            {/* LE LIEN MANQUE - Rectangle en dessous */}
+            {/* RELIONS-NOUS Section */}
             <div className="flex justify-center">
-              <div className="w-full max-w-4xl h-32 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-red-500/40 hover:-translate-y-2 hover:scale-[1.01] hover:border-red-400/60 hover:ring-4 hover:ring-red-400/30 cursor-pointer">
-                <div className="flex items-center space-x-4">
-                  <div className="text-3xl">🔗</div>
-                  <div className="text-center">
-                    <h3 className="text-xl font-bold text-red-700 dark:text-red-300 mb-1">LE LIEN MANQUE</h3>
-                    <p className="text-sm text-red-600 dark:text-red-400">C'est ça qu'on résout !</p>
-                  </div>
-                  <div className="text-center text-sm space-x-4">
-                    <span className="text-red-600 dark:text-red-400">Énergies fragmentées</span>
-                    <span className="text-red-600 dark:text-red-400">•</span>
-                    <span className="text-red-600 dark:text-red-400">Projets isolés</span>
-                    <span className="text-red-600 dark:text-red-400">•</span>
-                    <span className="font-black text-red-700 dark:text-red-200">Trésorerie commune + Activateurs locaux</span>
-                  </div>
+              <div className="text-center space-y-6 p-8">
+                <h3 className="text-3xl font-bold text-foreground">
+                  🔗 RELIONS - NOUS.
+                </h3>
+                <p className="text-lg text-muted-foreground">
+                  Lieux, Cagnottes, Votes.
+                </p>
+                <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+                  On relie ce qui existe déjà pour faire basculer les territoires en autonomie.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                    ADHÉRER
+                  </button>
+                  <a 
+                    href="https://test24.lasuitedumonde.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                  >
+                    INVESTIR LOCALEMENT
+                  </a>
                 </div>
               </div>
             </div>
