@@ -49,8 +49,8 @@ All colors MUST be HSL.
     --blue-button: #4A90E2;
     
     /* Brand colors */
-    --orange-brand: #F97316;
-    --orange-dark: #EA580C;
+    --orange-brand: 25 95% 53%;
+    --orange-dark: 24 95% 48%;
     
     --primary-glow: 185 75% 65%;
     --secondary-glow: 195 85% 70%;
