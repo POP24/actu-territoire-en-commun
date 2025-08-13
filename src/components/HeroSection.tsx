@@ -13,9 +13,9 @@ const HeroSection = () => {
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-16 items-center max-w-7xl mx-auto">
           {/* Text Content - Left Side */}
-          <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left">
+          <div className="lg:col-span-3 text-white space-y-6 sm:space-y-8 text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
               Le Réseau des
               <br />
@@ -60,7 +60,7 @@ const HeroSection = () => {
           </div>
           
           {/* Image - Right Side */}
-          <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
+          <div className="lg:col-span-2 flex justify-center lg:justify-end mt-8 lg:mt-0">
             <div className="relative group">
               {/* Cosmic roots border effect */}
               <div className="absolute -inset-2 sm:-inset-4 bg-gradient-primary rounded-xl sm:rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition-smooth animate-pulse"></div>
