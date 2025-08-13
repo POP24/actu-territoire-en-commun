@@ -29,10 +29,10 @@ const HeroSection = () => {
             
             <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-4">
               <p className="text-white drop-shadow-2xl">
-                Nous fédérons <strong>10 000 pionniers</strong><br />
-                pour lever <strong>1 million d'euros</strong>
+                Nous fédérons <strong className="text-blue-300 drop-shadow-lg">10 000 pionniers</strong><br />
+                pour lever <strong className="text-green-300 drop-shadow-lg">1 million d'euros</strong>
               </p>
-              <p className="text-white drop-shadow-2xl">
+              <p className="text-white/90 drop-shadow-xl">
                 Cet argent finance des activateurs territoriaux qui créent<br />
                 des communes autonomes.
               </p>
@@ -41,7 +41,7 @@ const HeroSection = () => {
             <div className="flex justify-center mt-8 sm:mt-12">
               <Button 
                 size="lg"
-                className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 drop-shadow-xl hover:scale-105"
               >
                 ADHÉRER
               </Button>
