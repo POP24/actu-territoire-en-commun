@@ -43,7 +43,7 @@ const HeroSection = () => {
                     </div>
                     
                     <h3 className="text-white font-bold mb-4 text-2xl leading-tight bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
-                      COMMUNE VIVANTE
+                      ADHÉSION LOCALE
                     </h3>
                     <p className="text-white/90 text-lg leading-relaxed font-medium">
                       Habitants unis, projets réalisés
@@ -68,7 +68,7 @@ const HeroSection = () => {
                     </div>
                     
                     <h3 className="text-white font-bold mb-4 text-2xl leading-tight bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">
-                      RÉSEAU PUISSANT
+                      ADHÉSION ARCHITECTE
                     </h3>
                     <p className="text-white/90 text-lg leading-relaxed font-medium">
                       Territoires connectés, impact démultiplié
