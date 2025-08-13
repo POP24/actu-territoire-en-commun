@@ -59,6 +59,9 @@ const Header = () => {
             >
               FAQ
             </NavLink>
+          </div>
+          
+          <div className="flex items-center space-x-6">
             <NavLink 
               to="/vision" 
               className={({isActive}) => `font-medium transition-colors duration-300 ${
@@ -69,11 +72,8 @@ const Header = () => {
             >
               Vision
             </NavLink>
-          </div>
-          
-          <div className="flex items-center space-x-4">
-            <Button className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-orange-500 hover:bg-orange-600 text-white">
-              PARTICIPER
+            <Button className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-blue-500 hover:bg-blue-600 text-white">
+              ADHÉRER
             </Button>
           </div>
         </nav>
