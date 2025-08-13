@@ -21,7 +21,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <NavLink 
               to="/" 
-              className={({isActive}) => `font-medium transition-colors duration-300 ${
+              className={({isActive}) => `font-bold transition-colors duration-300 ${
                 isActive 
                   ? "text-foreground" 
                   : "text-foreground/70 hover:text-foreground"
@@ -31,7 +31,7 @@ const Header = () => {
             </NavLink>
             <NavLink 
               to="/territoires" 
-              className={({isActive}) => `font-medium transition-colors duration-300 ${
+              className={({isActive}) => `font-bold transition-colors duration-300 ${
                 isActive 
                   ? "text-foreground" 
                   : "text-foreground/70 hover:text-foreground"
@@ -41,7 +41,7 @@ const Header = () => {
             </NavLink>
             <NavLink 
               to="/gouvernance" 
-              className={({isActive}) => `font-medium transition-colors duration-300 ${
+              className={({isActive}) => `font-bold transition-colors duration-300 ${
                 isActive 
                   ? "text-foreground" 
                   : "text-foreground/70 hover:text-foreground"
@@ -51,7 +51,7 @@ const Header = () => {
             </NavLink>
             <NavLink 
               to="/woofing" 
-              className={({isActive}) => `font-medium transition-colors duration-300 ${
+              className={({isActive}) => `font-bold transition-colors duration-300 ${
                 isActive 
                   ? "text-foreground" 
                   : "text-foreground/70 hover:text-foreground"
@@ -61,7 +61,7 @@ const Header = () => {
             </NavLink>
             <NavLink 
               to="/boutique" 
-              className={({isActive}) => `font-medium transition-colors duration-300 ${
+              className={({isActive}) => `font-bold transition-colors duration-300 ${
                 isActive 
                   ? "text-foreground" 
                   : "text-foreground/70 hover:text-foreground"
@@ -71,7 +71,7 @@ const Header = () => {
             </NavLink>
             <NavLink 
               to="/faq" 
-              className={({isActive}) => `font-medium transition-colors duration-300 ${
+              className={({isActive}) => `font-bold transition-colors duration-300 ${
                 isActive 
                   ? "text-foreground" 
                   : "text-foreground/70 hover:text-foreground"
