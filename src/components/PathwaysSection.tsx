@@ -12,7 +12,7 @@ const PathwaysSection = () => {
           
           <div className="grid lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {/* Chemin 1 */}
-            <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-400 cursor-pointer">
+            <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-400 cursor-pointer flex flex-col">
               <div className="flex flex-col items-center text-center mb-8">
                 <div className="bg-green-400 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
                   Chemin 1 · Fédération nationale
@@ -23,7 +23,7 @@ const PathwaysSection = () => {
                 <p className="text-muted-foreground italic">Coordination globale</p>
               </div>
               
-              <div className="space-y-6">
+              <div className="space-y-6 flex-1">
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xl">👑</span>
@@ -73,7 +73,7 @@ const PathwaysSection = () => {
             </div>
             
             {/* Chemin 2 */}
-            <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
+            <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer flex flex-col">
               <div className="flex flex-col items-center text-center mb-8">
                 <div className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
                   Chemin 2 · Association locale
@@ -84,7 +84,7 @@ const PathwaysSection = () => {
                 <p className="text-muted-foreground italic">Engagement sur votre territoire</p>
               </div>
               
-              <div className="space-y-6">
+              <div className="space-y-6 flex-1">
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xl">🗳️</span>
@@ -128,18 +128,13 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <div className="space-y-3 mt-8">
-                <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-xl">
-                  Adhérer à l'association locale
-                </Button>
-                <Button variant="outline" className="w-full border-blue-500 text-blue-500 hover:bg-blue-50 font-bold py-3 rounded-xl">
-                  Voir la boutique
-                </Button>
-              </div>
+              <Button className="w-full mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-xl">
+                Adhérer à l'association locale
+              </Button>
             </div>
             
             {/* Chemin 3 */}
-            <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer">
+            <div className="bg-gradient-card p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer flex flex-col">
               <div className="flex flex-col items-center text-center mb-8">
                 <div className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
                   Chemin 3 · Investissement Immobilier
@@ -149,7 +144,7 @@ const PathwaysSection = () => {
                 <p className="text-muted-foreground italic">et de services</p>
               </div>
               
-              <div className="space-y-6">
+              <div className="space-y-6 flex-1">
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xl">🏢</span>
