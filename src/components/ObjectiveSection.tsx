@@ -67,15 +67,15 @@ const ObjectiveSection = () => {
             </div>
 
             {/* RELIONS-NOUS Section */}
-            <div className="flex justify-center">
-              <div className="text-center space-y-6 p-8">
-                <h3 className="text-3xl font-bold text-foreground">
-                  🔗 RELIONS - NOUS.
+            <div className="flex justify-center py-16">
+              <div className="text-center space-y-6 max-w-4xl mx-auto px-6">
+                <h3 className="text-4xl font-bold text-foreground">
+                  RELIONS - NOUS.
                 </h3>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-xl text-muted-foreground font-medium">
                   Lieux, Cagnottes, Votes.
                 </p>
-                <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   On relie ce qui existe déjà pour faire basculer les territoires en autonomie.
                 </p>
                 
@@ -93,6 +93,13 @@ const ObjectiveSection = () => {
                   </a>
                 </div>
               </div>
+            </div>
+            
+            {/* Vague bleue décorative */}
+            <div className="relative">
+              <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16">
+                <path d="M0 60L60 67.5C120 75 240 90 360 82.5C480 75 600 45 720 37.5C840 30 960 45 1080 52.5C1200 60 1320 60 1380 60L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V60Z" fill="hsl(var(--primary) / 0.1)"/>
+              </svg>
             </div>
           </div>
         </div>
