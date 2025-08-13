@@ -42,7 +42,7 @@ const HeroSection = () => {
                       </svg>
                     </div>
                     
-                    <h3 className="text-white font-bold mb-4 text-2xl leading-tight bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
+                    <h3 className="text-white font-bold mb-4 text-xl leading-tight bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent whitespace-nowrap">
                       ADHÉSION LOCALE
                     </h3>
                     <p className="text-white/90 text-lg leading-relaxed font-medium">
