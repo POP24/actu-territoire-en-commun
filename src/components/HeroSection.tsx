@@ -5,116 +5,91 @@ import heroPortrait from "/lovable-uploads/53182d9e-f20d-4927-8092-8aefbc7458f6.
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-32 sm:w-64 h-32 sm:h-64 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-3xl"></div>
+    <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
+      {/* Floating background elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-white rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
       </div>
       
-      <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
-          {/* Text Content - Left Side */}
-          <div className="text-white space-y-6 sm:space-y-8 text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
+      <div className="container mx-auto px-4 py-20 relative z-10">
+        {/* Hero Image - Top */}
+        <div className="flex justify-center mb-16">
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-gradient-primary rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-smooth"></div>
+            <div className="relative w-80 h-80 sm:w-96 sm:h-96">
+              <img 
+                src={communityGathering} 
+                alt="Rassemblement communautaire"
+                className="w-full h-full object-cover rounded-2xl shadow-elegant relative z-10 group-hover:scale-105 transition-smooth"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-secondary/20 rounded-2xl z-20"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Content - Center */}
+        <div className="text-center text-white space-y-12 max-w-5xl mx-auto">
+          <div className="space-y-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               Le Réseau des{" "}
-              <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-2xl">
+              <span className="bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent">
                 Communes
               </span>
             </h1>
             
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90">
               Système d'Activation Territoriale
             </h2>
-            
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto space-y-6 text-center">
-              <div className="grid md:grid-cols-2 gap-6">
-                {/* Card 1 - Association locale */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-lg">
-                  <h3 className="text-white font-bold mb-3 text-lg">
-                    Une association locale pour chaque lieu
-                  </h3>
-                  <p className="text-white/90 text-sm sm:text-base">
-                    Décidez ensemble des projets, des usages et de la vie quotidienne.
-                  </p>
+          </div>
+
+          {/* Key Concepts - Flowing layout */}
+          <div className="space-y-8">
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 shadow-2xl">
+              <h3 className="text-2xl font-bold mb-4 text-center">Notre Vision</h3>
+              <div className="grid md:grid-cols-2 gap-8 text-left">
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-lg mb-2">Association locale pour chaque lieu</h4>
+                      <p className="text-white/80">Décidez ensemble des projets, des usages et de la vie quotidienne.</p>
+                    </div>
+                  </div>
                 </div>
-                
-                {/* Card 2 - Fédération nationale */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-lg">
-                  <h3 className="text-white font-bold mb-3 text-lg">
-                    Une fédération nationale pour passer à l'échelle
-                  </h3>
-                  <p className="text-white/90 text-sm sm:text-base">
-                    Mutualisons nos moyens pour activer des territoires et créer l'autonomie locale.
-                  </p>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-lg mb-2">Fédération nationale pour passer à l'échelle</h4>
+                      <p className="text-white/80">Mutualisons nos moyens pour activer des territoires et créer l'autonomie locale.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="pt-6">
-                <p className="text-white drop-shadow-2xl text-xl">
-                  Nous fédérons <strong className="drop-shadow-lg">10 000 pionniers</strong><br />
-                  pour lever <strong className="drop-shadow-lg">1 million d'euros</strong>
-                </p>
               </div>
             </div>
-            
-            <div className="flex justify-center mt-8 sm:mt-12">
-              <Button 
-                size="lg"
-                className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 drop-shadow-xl hover:scale-105"
-              >
-                ADHÉRER
-              </Button>
+
+            {/* Impact Statement */}
+            <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <p className="text-2xl sm:text-3xl font-bold">
+                <span className="text-white/90">Nous fédérons </span>
+                <span className="text-white">10 000 pionniers</span>
+                <br />
+                <span className="text-white/90">pour lever </span>
+                <span className="text-white">1 million d'euros</span>
+              </p>
             </div>
           </div>
-          
-          {/* Image - Right Side */}
-          <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
-            <div className="relative group">
-              {/* Cosmic roots border effect */}
-              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-primary rounded-xl sm:rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition-smooth animate-pulse"></div>
-              
-              {/* Rainbow roots pattern */}
-              <div className="absolute -inset-1 sm:-inset-2 rounded-lg sm:rounded-xl opacity-60">
-                <div className="absolute inset-0 bg-gradient-primary rounded-lg sm:rounded-xl animate-pulse"></div>
-                <div className="absolute inset-1 bg-gradient-hero rounded-lg sm:rounded-xl"></div>
-              </div>
-              
-              {/* Tree roots decorative elements */}
-              <div className="absolute -top-4 sm:-top-8 left-1/2 transform -translate-x-1/2 w-16 sm:w-32 h-8 sm:h-16 opacity-40">
-                <svg viewBox="0 0 100 50" className="w-full h-full text-white/60">
-                  <path d="M50,50 Q30,30 10,10 M50,50 Q50,20 30,5 M50,50 Q70,30 90,10 M50,50 Q50,20 70,5" 
-                        stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
-                </svg>
-              </div>
-              
-              {/* Main image container */}
-              <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] xl:w-[550px] xl:h-[550px]">
-                {/* Default image - Community gathering */}
-                <img 
-                  src={communityGathering} 
-                  alt="Rassemblement communautaire"
-                  className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant relative z-10 transform group-hover:scale-105 transition-smooth group-hover:opacity-0"
-                />
-                
-                {/* Hover image - Portrait mystique */}
-                <img 
-                  src={heroPortrait} 
-                  alt="Portrait mystique"
-                  className="absolute inset-0 w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant z-10 transform group-hover:scale-105 transition-smooth opacity-0 group-hover:opacity-100"
-                />
-                
-                <div className="absolute inset-0 bg-gradient-to-t from-transparent via-primary/20 to-secondary/30 rounded-lg sm:rounded-xl z-20 pointer-events-none"></div>
-              </div>
-              
-              {/* Bottom roots */}
-              <div className="absolute -bottom-3 sm:-bottom-6 left-1/2 transform -translate-x-1/2 w-20 sm:w-40 h-6 sm:h-12 opacity-30">
-                <svg viewBox="0 0 120 40" className="w-full h-full text-accent">
-                  <path d="M60,0 Q40,20 20,40 M60,0 Q60,25 40,35 M60,0 Q80,20 100,40 M60,0 Q60,25 80,35" 
-                        stroke="currentColor" strokeWidth="3" fill="none"/>
-                </svg>
-              </div>
-            </div>
+
+          {/* CTA */}
+          <div className="pt-8">
+            <Button 
+              size="lg"
+              className="text-xl px-16 py-6 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-110 bg-white text-primary hover:bg-white/90"
+            >
+              ADHÉRER
+            </Button>
           </div>
         </div>
       </div>
