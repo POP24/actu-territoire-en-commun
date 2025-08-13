@@ -69,8 +69,8 @@ const ObjectiveSection = () => {
             {/* RELIONS-NOUS Section */}
             <div className="flex justify-center py-16">
               <div className="text-center space-y-6 max-w-4xl mx-auto px-6">
-                <h3 className="text-4xl font-bold text-foreground">
-                  RELIONS - NOUS.
+                <h3 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground">
+                  <span className="bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 bg-clip-text text-transparent">RELIONS</span> - NOUS.
                 </h3>
                 <p className="text-xl text-muted-foreground font-medium">
                   Lieux, Cagnottes, Votes.
