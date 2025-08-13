@@ -28,24 +28,24 @@ const HeroSection = () => {
               Système d'Activation Territoriale
             </h2>
             
-            <div className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed drop-shadow-lg max-w-2xl mx-auto lg:mx-0 space-y-3 sm:space-y-4">
-              <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
+            <div className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-3 sm:space-y-4">
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-2xl">
                 <div className="space-y-3 sm:space-y-4">
-                  <p className="flex items-start text-white">
-                    <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0">✓</span>
+                  <p className="flex items-start text-gray-800">
+                    <span className="text-green-600 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0">✓</span>
                     <span className="font-semibold">Construire des communautés locales autonomes et résilientes</span>
                   </p>
-                  <p className="flex items-start text-white">
-                    <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0">✓</span>
+                  <p className="flex items-start text-gray-800">
+                    <span className="text-green-600 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0">✓</span>
                     <span className="font-semibold">Permettre l'action collective et le partage équitable des ressources</span>
                   </p>
-                  <p className="flex items-start text-white">
-                    <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0">✓</span>
+                  <p className="flex items-start text-gray-800">
+                    <span className="text-green-600 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0">✓</span>
                     <span className="font-semibold">Co-investir dans un trésor commun stratégique</span>
                   </p>
-                  <p className="flex items-start text-white">
-                    <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0">✓</span>
-                    <span className="font-semibold">Rejoindre les <strong className="text-blue-200">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
+                  <p className="flex items-start text-gray-800">
+                    <span className="text-green-600 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0">✓</span>
+                    <span className="font-semibold">Rejoindre les <strong className="text-blue-700">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
                   </p>
                 </div>
               </div>
