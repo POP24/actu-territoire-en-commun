@@ -32,7 +32,7 @@ const HeroSection = () => {
                 {/* Card 1 - Association locale */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-lg">
                   <h3 className="text-white font-bold mb-3 text-lg">
-                    - Une association locale pour chaque lieu
+                    Une association locale pour chaque lieu
                   </h3>
                   <p className="text-white/90 text-sm sm:text-base">
                     Décidez ensemble des projets, des usages et de la vie quotidienne.
@@ -42,7 +42,7 @@ const HeroSection = () => {
                 {/* Card 2 - Fédération nationale */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-lg">
                   <h3 className="text-white font-bold mb-3 text-lg">
-                    - Une fédération nationale pour passer à l'échelle
+                    Une fédération nationale pour passer à l'échelle
                   </h3>
                   <p className="text-white/90 text-sm sm:text-base">
                     Mutualisons nos moyens pour activer des territoires et créer l'autonomie locale.
