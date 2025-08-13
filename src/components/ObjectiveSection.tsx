@@ -19,7 +19,7 @@ const ObjectiveSection = () => {
                 <div className="w-72 h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
                   <div className="text-4xl mb-3">⚡</div>
                   <h3 className="text-lg font-bold text-green-700 dark:text-green-300 mb-2 tracking-wide">LES LIEUX EXISTENT</h3>
-                  <p className="text-sm font-semibold text-green-600 dark:text-green-400 mb-3">Territoires prêts</p>
+                  <p className="text-sm font-semibold text-green-600 dark:text-green-400 mb-3">Les territoires sont prêts</p>
                   <div className="space-y-1 text-center text-sm">
                     <p className="text-green-600 dark:text-green-400">+1600 écolieux recensés</p>
                     <p className="text-green-600 dark:text-green-400">Milliers de tiers-lieux</p>
