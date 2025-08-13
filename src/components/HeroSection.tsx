@@ -23,7 +23,7 @@ const HeroSection = () => {
               </span>
             </h1>
             
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-white/90 drop-shadow-lg">
               GOUVERNANCE LOCALE, TRÉSORERIE COMMUNE
             </h2>
             
@@ -50,18 +50,14 @@ const HeroSection = () => {
                 Adhésion nationale - 100€
               </Button>
               <Button 
-                variant="outline"
                 size="lg"
-                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-blue-500 hover:bg-blue-600 text-white"
               >
                 Adhésion locale - 10€ + prix libre
               </Button>
             </div>
             
-            <div className="text-xs sm:text-sm text-center lg:text-left mt-4 space-y-1">
-              <p className="text-white/80">
-                <span className="font-semibold">Vote sur les budgets</span>
-              </p>
+            <div className="text-xs sm:text-sm text-center lg:text-left mt-4">
               <p className="text-white/80">
                 <span className="font-semibold">Gouvernance du lieu</span>
               </p>
