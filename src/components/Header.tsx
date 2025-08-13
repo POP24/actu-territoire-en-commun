@@ -27,17 +27,7 @@ const Header = () => {
                   : "text-foreground/70 hover:text-foreground"
               }`}
             >
-              Le Projet
-            </NavLink>
-            <NavLink 
-              to="/opportunites" 
-              className={({isActive}) => `font-medium transition-colors duration-300 ${
-                isActive 
-                  ? "text-foreground" 
-                  : "text-foreground/70 hover:text-foreground"
-              }`}
-            >
-              Comment ça fonctionne
+              Accueil
             </NavLink>
             <NavLink 
               to="/territoires" 
@@ -47,10 +37,40 @@ const Header = () => {
                   : "text-foreground/70 hover:text-foreground"
               }`}
             >
-              Qui sommes-nous
+              Territoires
             </NavLink>
             <NavLink 
               to="/gouvernance" 
+              className={({isActive}) => `font-medium transition-colors duration-300 ${
+                isActive 
+                  ? "text-foreground" 
+                  : "text-foreground/70 hover:text-foreground"
+              }`}
+            >
+              Gouvernance
+            </NavLink>
+            <NavLink 
+              to="/woofing" 
+              className={({isActive}) => `font-medium transition-colors duration-300 ${
+                isActive 
+                  ? "text-foreground" 
+                  : "text-foreground/70 hover:text-foreground"
+              }`}
+            >
+              Woofing
+            </NavLink>
+            <NavLink 
+              to="/boutique" 
+              className={({isActive}) => `font-medium transition-colors duration-300 ${
+                isActive 
+                  ? "text-foreground" 
+                  : "text-foreground/70 hover:text-foreground"
+              }`}
+            >
+              Boutique
+            </NavLink>
+            <NavLink 
+              to="/faq" 
               className={({isActive}) => `font-medium transition-colors duration-300 ${
                 isActive 
                   ? "text-foreground" 
