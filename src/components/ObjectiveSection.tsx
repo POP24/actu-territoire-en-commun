@@ -96,7 +96,7 @@ const ObjectiveSection = () => {
             </div>
             
             {/* Vague bleue décorative */}
-            <div className="relative">
+            <div className="w-full -mb-1">
               <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16">
                 <path d="M0 60L60 67.5C120 75 240 90 360 82.5C480 75 600 45 720 37.5C840 30 960 45 1080 52.5C1200 60 1320 60 1380 60L1440 60V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V60Z" fill="hsl(var(--primary) / 0.1)"/>
               </svg>

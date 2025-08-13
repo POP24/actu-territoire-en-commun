@@ -29,8 +29,8 @@ const HeroSection = () => {
             
             <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-4">
               <p className="text-white drop-shadow-2xl">
-                Nous fédérons <strong className="text-blue-500 drop-shadow-lg">10 000 pionniers</strong><br />
-                pour lever <strong className="text-green-500 drop-shadow-lg">1 million d'euros</strong>
+                Nous fédérons <strong className="drop-shadow-lg">10 000 pionniers</strong><br />
+                pour lever <strong className="drop-shadow-lg">1 million d'euros</strong>
               </p>
               <p className="text-white/90 drop-shadow-xl">
                 Cet argent finance des activateurs territoriaux qui créent<br />
