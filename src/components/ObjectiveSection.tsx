@@ -12,9 +12,12 @@ const ObjectiveSection = () => {
           </h2>
           
           <div className="text-center mb-16">
-            <div className="flex flex-wrap items-center justify-center gap-8 max-w-8xl mx-auto">
+            <div className="grid grid-cols-1 xl:grid-cols-5 gap-8 items-center justify-items-center max-w-8xl mx-auto">
+              {/* Rangée 1: 3 premiers cercles */}
+              <div className="xl:col-span-5 grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center w-full mb-8">
+              
               {/* LES LIEUX EXISTENT - Cercle futuriste nature */}
-              <div className="group relative">
+              <div className="group relative flex justify-center">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-green-500/20 via-emerald-500/30 to-teal-500/20 blur-xl animate-pulse"></div>
                 <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-green-50/90 via-emerald-100/80 to-teal-100/70 dark:from-green-900/40 dark:via-emerald-900/50 dark:to-teal-900/60 border-4 border-green-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-green-500/40">
                   <div className="absolute top-4 right-4 w-3 h-3 rounded-full bg-green-500 animate-ping"></div>
@@ -33,14 +36,8 @@ const ObjectiveSection = () => {
                 </div>
               </div>
 
-              {/* FLÈCHE DE CONNEXION */}
-              <div className="hidden lg:block">
-                <div className="w-12 h-1 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 rounded-full animate-pulse"></div>
-                <div className="text-xl text-center mt-1">→</div>
-              </div>
-
               {/* LES OUTILS SONT PRÊTS - Cercle futuriste nature */}
-              <div className="group relative">
+              <div className="group relative flex justify-center">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/20 via-cyan-500/30 to-indigo-500/20 blur-xl animate-pulse delay-150"></div>
                 <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-blue-50/90 via-cyan-100/80 to-indigo-100/70 dark:from-blue-900/40 dark:via-cyan-900/50 dark:to-indigo-900/60 border-4 border-blue-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-blue-500/40">
                   <div className="absolute top-6 left-4 w-3 h-3 rounded-full bg-blue-500 animate-ping delay-100"></div>
@@ -59,14 +56,8 @@ const ObjectiveSection = () => {
                 </div>
               </div>
 
-              {/* FLÈCHE DE CONNEXION */}
-              <div className="hidden lg:block">
-                <div className="w-12 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-orange-400 rounded-full animate-pulse delay-300"></div>
-                <div className="text-xl text-center mt-1">→</div>
-              </div>
-
               {/* LES GENS SONT LÀ - Cercle futuriste nature */}
-              <div className="group relative">
+              <div className="group relative flex justify-center">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500/20 via-violet-500/30 to-pink-500/20 blur-xl animate-pulse delay-300"></div>
                 <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-purple-50/90 via-violet-100/80 to-pink-100/70 dark:from-purple-900/40 dark:via-violet-900/50 dark:to-pink-900/60 border-4 border-purple-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-purple-500/40">
                   <div className="absolute top-8 left-8 w-4 h-4 rounded-full bg-purple-500 animate-ping"></div>
@@ -84,13 +75,17 @@ const ObjectiveSection = () => {
                   </div>
                 </div>
               </div>
-
-              {/* FLÈCHE DE CONNEXION SPÉCIALE */}
-              <div className="hidden lg:block">
-                <div className="w-12 h-1 bg-gradient-to-r from-purple-400 via-orange-400 to-red-400 rounded-full animate-pulse delay-500"></div>
-                <div className="text-xl text-center mt-1 animate-bounce">⚡</div>
               </div>
 
+              {/* Flèches de connexion entre les rangées */}
+              <div className="xl:col-span-5 flex flex-col items-center my-8">
+                <div className="text-4xl animate-bounce text-orange-500">⬇</div>
+                <div className="w-2 h-16 bg-gradient-to-b from-orange-400 to-red-400 rounded-full animate-pulse"></div>
+                <div className="text-4xl animate-bounce text-red-500">⬇</div>
+              </div>
+
+              {/* Rangée 2: cercle final centré */}
+              <div className="xl:col-span-5 flex justify-center">
               {/* LE LIEN MANQUE - Cercle futuriste nature avec animation spéciale */}
               <div className="group relative">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-orange-500/30 via-red-500/40 to-amber-500/30 blur-xl animate-pulse delay-500"></div>
@@ -111,6 +106,7 @@ const ObjectiveSection = () => {
                     <p className="text-xs font-black text-orange-900 dark:text-orange-200">+ Activateurs locaux</p>
                   </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
