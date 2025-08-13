@@ -44,7 +44,7 @@ const HeroSection = () => {
                 </p>
                 <p className="flex items-start">
                   <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="font-bold text-white drop-shadow-2xl">Rejoindre les <strong className="text-blue-200">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
+                  <span className="font-bold text-white drop-shadow-2xl">Rejoindre les <strong className="text-blue-500">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
                 </p>
               </div>
             </div>
