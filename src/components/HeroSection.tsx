@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
           {/* Text Content - Left Side */}
-          <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left">
+          <div className="text-white space-y-6 sm:space-y-8 text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
               Le Réseau des{" "}
               <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-2xl">
@@ -27,13 +27,13 @@ const HeroSection = () => {
               Système d'Activation Territoriale
             </h2>
             
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-6">
+            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto space-y-6 text-center">
               <div className="space-y-4">
                 <div>
                   <p className="text-white drop-shadow-2xl font-semibold">
                     - Une association locale pour chaque lieu
                   </p>
-                  <p className="text-white/90 drop-shadow-xl ml-4 text-sm sm:text-base">
+                  <p className="text-white/90 drop-shadow-xl text-sm sm:text-base">
                     Décidez ensemble des projets, des usages et de la vie quotidienne.
                   </p>
                 </div>
@@ -42,7 +42,7 @@ const HeroSection = () => {
                   <p className="text-white drop-shadow-2xl font-semibold">
                     - Une fédération nationale pour passer à l'échelle
                   </p>
-                  <p className="text-white/90 drop-shadow-xl ml-4 text-sm sm:text-base">
+                  <p className="text-white/90 drop-shadow-xl text-sm sm:text-base">
                     Mutualisons nos moyens pour activer des territoires et créer l'autonomie locale.
                   </p>
                 </div>
