@@ -137,13 +137,12 @@ All colors MUST be HSL.
 
 @layer components {
   .nav-link {
-    @apply relative text-muted-foreground hover:text-orange-brand py-2 transition-colors duration-300 
+    @apply relative text-muted-foreground hover:text-primary py-2 transition-colors duration-300 
            after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 
-           after:bg-orange-brand after:transition-all hover:after:w-full;
+           after:bg-primary after:transition-all hover:after:w-full;
   }
   
   .btn-primary {
-    @apply font-medium text-sm sm:text-base text-white;
-    background: var(--gradient-cta);
+    @apply font-medium text-sm sm:text-base text-white bg-primary hover:bg-primary/90;
   }
 }
