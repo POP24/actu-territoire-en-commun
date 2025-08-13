@@ -18,6 +18,12 @@ const ObjectiveSection = () => {
               
               {/* LES LIEUX EXISTENT - Cercle futuriste nature */}
               <div className="group relative flex justify-center">
+                {/* Feuilles flottantes autour du cercle */}
+                <div className="absolute top-10 -left-8 text-2xl animate-pulse delay-1000 group-hover:animate-bounce">🍃</div>
+                <div className="absolute top-16 -right-6 text-xl animate-bounce delay-500 group-hover:animate-pulse">🌿</div>
+                <div className="absolute -bottom-4 left-8 text-lg animate-pulse delay-700 group-hover:animate-bounce">🌱</div>
+                <div className="absolute bottom-12 -right-10 text-2xl animate-bounce delay-300 group-hover:animate-pulse">🍀</div>
+                
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-green-500/20 via-emerald-500/30 to-teal-500/20 blur-xl animate-pulse"></div>
                 <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-green-50/90 via-emerald-100/80 to-teal-100/70 dark:from-green-900/40 dark:via-emerald-900/50 dark:to-teal-900/60 border-4 border-green-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-green-500/40">
                   <div className="absolute top-4 right-4 w-3 h-3 rounded-full bg-green-500 animate-ping"></div>
@@ -38,6 +44,12 @@ const ObjectiveSection = () => {
 
               {/* LES OUTILS SONT PRÊTS - Cercle futuriste nature */}
               <div className="group relative flex justify-center">
+                {/* Nuages cotonneux autour du cercle */}
+                <div className="absolute top-8 -left-12 text-3xl animate-pulse delay-800 group-hover:animate-bounce opacity-70">☁️</div>
+                <div className="absolute top-20 -right-8 text-2xl animate-bounce delay-1200 group-hover:animate-pulse opacity-60">☁️</div>
+                <div className="absolute -bottom-6 left-12 text-xl animate-pulse delay-400 group-hover:animate-bounce opacity-80">☁️</div>
+                <div className="absolute bottom-16 -right-12 text-2xl animate-bounce delay-900 group-hover:animate-pulse opacity-70">☁️</div>
+                
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/20 via-cyan-500/30 to-indigo-500/20 blur-xl animate-pulse delay-150"></div>
                 <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-blue-50/90 via-cyan-100/80 to-indigo-100/70 dark:from-blue-900/40 dark:via-cyan-900/50 dark:to-indigo-900/60 border-4 border-blue-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-blue-500/40">
                   <div className="absolute top-6 left-4 w-3 h-3 rounded-full bg-blue-500 animate-ping delay-100"></div>
@@ -58,6 +70,13 @@ const ObjectiveSection = () => {
 
               {/* LES GENS SONT LÀ - Cercle futuriste nature */}
               <div className="group relative flex justify-center">
+                {/* Étoiles scintillantes autour du cercle */}
+                <div className="absolute top-6 -left-10 text-2xl animate-pulse delay-600 group-hover:animate-bounce">⭐</div>
+                <div className="absolute top-14 -right-8 text-xl animate-bounce delay-1000 group-hover:animate-pulse">✨</div>
+                <div className="absolute -bottom-2 left-6 text-lg animate-pulse delay-800 group-hover:animate-bounce">🌟</div>
+                <div className="absolute bottom-10 -right-12 text-2xl animate-bounce delay-400 group-hover:animate-pulse">💫</div>
+                <div className="absolute top-32 -left-6 text-sm animate-pulse delay-1200 group-hover:animate-bounce">✨</div>
+                
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500/20 via-violet-500/30 to-pink-500/20 blur-xl animate-pulse delay-300"></div>
                 <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-purple-50/90 via-violet-100/80 to-pink-100/70 dark:from-purple-900/40 dark:via-violet-900/50 dark:to-pink-900/60 border-4 border-purple-400/50 backdrop-blur-md group-hover:scale-110 transition-all duration-500 flex flex-col items-center justify-center p-6 group-hover:shadow-2xl group-hover:shadow-purple-500/40">
                   <div className="absolute top-8 left-8 w-4 h-4 rounded-full bg-purple-500 animate-ping"></div>
