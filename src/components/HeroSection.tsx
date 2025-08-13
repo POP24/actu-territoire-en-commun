@@ -19,32 +19,17 @@ const HeroSection = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
               Le Réseau des{" "}
               <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-2xl">
-                Communes
+                Communes Libres
               </span>
             </h1>
             
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
-              Le réseau des Communes Libres
+              GOUVERNANCE LOCALE, TRÉSORERIE COMMUNE
             </h2>
-            
-            <div className="text-center lg:text-left mt-6 mb-8">
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-blue-200 drop-shadow-lg">
-                GOUVERNANCE LOCALE, TRÉSORERIE COMMUNE
-              </p>
-            </div>
             
             <div className="text-center lg:text-left mb-8">
               <p className="text-base sm:text-lg md:text-xl text-white drop-shadow-lg">
-                <span className="font-bold text-green-400">10 000 pionniers</span> × 
-                <span className="font-bold text-blue-400"> 100 €</span> → 
-                <span className="font-bold text-yellow-400"> 1 000 000 €</span> → 
-                <span className="font-bold text-orange-400"> 50 territoires activés</span>
-              </p>
-            </div>
-            
-            <div className="text-center lg:text-left mb-8">
-              <p className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-lg">
-                <span className="font-semibold">Recenser</span> • <span className="font-semibold">Fédérer</span> • <span className="font-semibold">Outiller</span> • <span className="font-semibold">Financer</span> • <span className="font-semibold">Activer</span>
+                Nous recherchons <span className="font-bold">10 000 pionniers × 100 € = 1 000 000 € → 50 territoires activés</span>
               </p>
             </div>
             
@@ -62,23 +47,23 @@ const HeroSection = () => {
                 size="lg"
                 className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-green-500 hover:bg-green-600"
               >
-                Adhésion nationale — 100 €
+                Adhésion nationale - 100€
               </Button>
               <Button 
                 variant="outline"
                 size="lg"
-                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white/30 text-white hover:bg-white/20"
+                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
               >
-                Adhésion locale — 10 € + prix libre
+                Adhésion locale - 10€ + prix libre
               </Button>
             </div>
             
             <div className="text-xs sm:text-sm text-center lg:text-left mt-4 space-y-1">
               <p className="text-white/80">
-                <span className="font-semibold">Adhésion nationale :</span> Vote sur les budgets + accès réseau
+                <span className="font-semibold">Vote sur les budgets</span>
               </p>
               <p className="text-white/80">
-                <span className="font-semibold">Adhésion locale :</span> Gouvernance du lieu, projets, droits membres
+                <span className="font-semibold">Gouvernance du lieu</span>
               </p>
             </div>
           </div>
