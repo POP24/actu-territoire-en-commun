@@ -18,66 +18,62 @@ const Header = () => {
             </div>
           </div>
           
-          <div className="hidden md:flex items-center">
-            <nav className="flex items-center bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-md rounded-full px-8 py-3 border border-white/20 shadow-lg">
-              <div className="flex items-center space-x-8">
-                <NavLink 
-                  to="/" 
-                  className={({isActive}) => `relative font-bold text-sm uppercase tracking-wide transition-all duration-300 ${
-                    isActive 
-                      ? "text-orange-500 after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-0.5 after:bg-orange-500 after:rounded-full" 
-                      : "text-foreground/80 hover:text-orange-500 hover:scale-105"
-                  }`}
-                >
-                  Accueil
-                </NavLink>
-                <div className="w-px h-6 bg-white/20"></div>
-                <NavLink 
-                  to="/opportunites" 
-                  className={({isActive}) => `relative font-bold text-sm uppercase tracking-wide transition-all duration-300 ${
-                    isActive 
-                      ? "text-orange-500 after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-0.5 after:bg-orange-500 after:rounded-full" 
-                      : "text-foreground/80 hover:text-orange-500 hover:scale-105"
-                  }`}
-                >
-                  Opportunités
-                </NavLink>
-                <div className="w-px h-6 bg-white/20"></div>
-                <NavLink 
-                  to="/territoires" 
-                  className={({isActive}) => `relative font-bold text-sm uppercase tracking-wide transition-all duration-300 ${
-                    isActive 
-                      ? "text-orange-500 after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-0.5 after:bg-orange-500 after:rounded-full" 
-                      : "text-foreground/80 hover:text-orange-500 hover:scale-105"
-                  }`}
-                >
-                  Territoires
-                </NavLink>
-                <div className="w-px h-6 bg-white/20"></div>
-                <NavLink 
-                  to="/gouvernance" 
-                  className={({isActive}) => `relative font-bold text-sm uppercase tracking-wide transition-all duration-300 ${
-                    isActive 
-                      ? "text-orange-500 after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-0.5 after:bg-orange-500 after:rounded-full" 
-                      : "text-foreground/80 hover:text-orange-500 hover:scale-105"
-                  }`}
-                >
-                  Gouvernance
-                </NavLink>
-              </div>
-            </nav>
+          <div className="hidden md:flex items-center space-x-8">
+            <NavLink 
+              to="/" 
+              className={({isActive}) => `font-medium transition-colors duration-300 ${
+                isActive 
+                  ? "text-foreground" 
+                  : "text-foreground/70 hover:text-foreground"
+              }`}
+            >
+              Le Projet
+            </NavLink>
+            <NavLink 
+              to="/opportunites" 
+              className={({isActive}) => `font-medium transition-colors duration-300 ${
+                isActive 
+                  ? "text-foreground" 
+                  : "text-foreground/70 hover:text-foreground"
+              }`}
+            >
+              Comment ça fonctionne
+            </NavLink>
+            <NavLink 
+              to="/territoires" 
+              className={({isActive}) => `font-medium transition-colors duration-300 ${
+                isActive 
+                  ? "text-foreground" 
+                  : "text-foreground/70 hover:text-foreground"
+              }`}
+            >
+              Qui sommes-nous
+            </NavLink>
+            <NavLink 
+              to="/gouvernance" 
+              className={({isActive}) => `font-medium transition-colors duration-300 ${
+                isActive 
+                  ? "text-foreground" 
+                  : "text-foreground/70 hover:text-foreground"
+              }`}
+            >
+              FAQ
+            </NavLink>
+            <NavLink 
+              to="/vision" 
+              className={({isActive}) => `font-medium transition-colors duration-300 ${
+                isActive 
+                  ? "text-orange-500" 
+                  : "text-orange-500 hover:text-orange-600"
+              }`}
+            >
+              Vision
+            </NavLink>
           </div>
           
           <div className="flex items-center space-x-4">
-            <Button 
-              asChild 
-              variant="outline"
-              className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
-            >
-              <Link to="/vision">VISION</Link>
-            </Button>
-            <Button className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
-              ADHÉRER
+            <Button className="rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 bg-orange-500 hover:bg-orange-600 text-white">
+              PARTICIPER
             </Button>
           </div>
         </nav>
