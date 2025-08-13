@@ -113,158 +113,63 @@ const HeroSection = () => {
                {/* MEGA FIRE EFFECT - Multiple layers of filaments */}
                
                {/* TOP FIRE - Layer 1 */}
-               <div className="absolute -top-32 sm:-top-64 left-1/2 transform -translate-x-1/2 w-128 sm:w-256 h-64 sm:h-128 opacity-60">
+               <div className="absolute -top-20 sm:-top-32 left-1/2 transform -translate-x-1/2 w-64 sm:w-128 h-32 sm:h-64 opacity-20">
                  <svg viewBox="0 0 100 50" className="w-full h-full text-orange-400">
-                   <path d="M50,50 Q30,30 10,10 M50,50 Q50,20 30,5 M50,50 Q70,30 90,10 M50,50 Q50,20 70,5 M50,50 Q20,35 5,15 M50,50 Q80,35 95,15 M50,50 Q40,25 20,8 M50,50 Q60,25 80,8" 
-                         stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
+                   <path d="M50,50 Q30,30 10,10 M50,50 Q50,20 30,5 M50,50 Q70,30 90,10 M50,50 Q50,20 70,5" 
+                         stroke="currentColor" strokeWidth="1" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
 
                {/* TOP FIRE - Layer 2 */}
-               <div className="absolute -top-28 sm:-top-56 left-1/2 transform -translate-x-1/2 w-112 sm:w-224 h-56 sm:h-112 opacity-50">
+               <div className="absolute -top-16 sm:-top-24 left-1/2 transform -translate-x-1/2 w-48 sm:w-80 h-24 sm:h-40 opacity-15">
                  <svg viewBox="0 0 100 50" className="w-full h-full text-red-500">
-                   <path d="M50,50 Q35,35 15,15 M50,50 Q45,25 25,10 M50,50 Q65,35 85,15 M50,50 Q55,25 75,10 M50,50 Q25,40 10,20 M50,50 Q75,40 90,20" 
-                         stroke="currentColor" strokeWidth="1.8" fill="none" className="animate-pulse" style={{animationDelay: '0.2s'}}/>
+                   <path d="M50,50 Q35,35 15,15 M50,50 Q65,35 85,15" 
+                         stroke="currentColor" strokeWidth="0.8" fill="none" className="animate-pulse" style={{animationDelay: '0.2s'}}/>
                  </svg>
                </div>
 
-               {/* TOP FIRE - Layer 3 */}
-               <div className="absolute -top-24 sm:-top-48 left-1/2 transform -translate-x-1/2 w-96 sm:w-192 h-48 sm:h-96 opacity-40">
-                 <svg viewBox="0 0 100 50" className="w-full h-full text-yellow-500">
-                   <path d="M50,50 Q42,42 25,25 M50,50 Q38,30 18,12 M50,50 Q62,42 75,25 M50,50 Q68,30 82,12 M50,50 Q32,45 12,25 M50,50 Q78,45 88,25" 
-                         stroke="currentColor" strokeWidth="1.5" fill="none" className="animate-pulse" style={{animationDelay: '0.4s'}}/>
-                 </svg>
-               </div>
-
-               {/* LEFT FIRE - Multiple layers */}
-               <div className="absolute -left-24 sm:-left-48 top-1/2 transform -translate-y-1/2 w-48 sm:w-96 h-96 sm:h-192 opacity-50">
+               {/* LEFT FIRE - Reduced */}
+               <div className="absolute -left-12 sm:-left-20 top-1/2 transform -translate-y-1/2 w-24 sm:w-40 h-48 sm:h-80 opacity-15">
                  <svg viewBox="0 0 50 100" className="w-full h-full text-orange-500">
-                   <path d="M0,50 Q20,30 40,10 M0,50 Q25,50 45,30 M0,50 Q20,70 40,90 M0,50 Q15,35 35,20 M0,50 Q15,65 35,80 M0,50 Q30,25 45,5 M0,50 Q30,75 45,95" 
-                         stroke="currentColor" strokeWidth="2.2" fill="none" className="animate-pulse"/>
+                   <path d="M0,50 Q20,30 40,10 M0,50 Q20,70 40,90" 
+                         stroke="currentColor" strokeWidth="0.8" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
 
-               <div className="absolute -left-20 sm:-left-40 top-1/2 transform -translate-y-1/2 w-40 sm:w-80 h-80 sm:h-160 opacity-45">
-                 <svg viewBox="0 0 50 100" className="w-full h-full text-red-400">
-                   <path d="M0,50 Q18,32 36,14 M0,50 Q22,48 42,28 M0,50 Q18,68 36,86 M0,50 Q12,38 32,24 M0,50 Q12,62 32,76 M0,50 Q28,22 43,8 M0,50 Q28,78 43,92" 
-                         stroke="currentColor" strokeWidth="1.9" fill="none" className="animate-pulse" style={{animationDelay: '0.3s'}}/>
-                 </svg>
-               </div>
-
-               <div className="absolute -left-16 sm:-left-32 top-1/2 transform -translate-y-1/2 w-32 sm:w-64 h-64 sm:h-128 opacity-40">
-                 <svg viewBox="0 0 50 100" className="w-full h-full text-yellow-400">
-                   <path d="M0,50 Q16,34 32,18 M0,50 Q20,46 38,26 M0,50 Q16,66 32,82 M0,50 Q10,40 30,28 M0,50 Q10,60 30,72" 
-                         stroke="currentColor" strokeWidth="1.6" fill="none" className="animate-pulse" style={{animationDelay: '0.6s'}}/>
-                 </svg>
-               </div>
-
-               {/* RIGHT FIRE - Multiple layers */}
-               <div className="absolute -right-24 sm:-right-48 top-1/2 transform -translate-y-1/2 w-48 sm:w-96 h-96 sm:h-192 opacity-50">
+               {/* RIGHT FIRE - Reduced */}
+               <div className="absolute -right-12 sm:-right-20 top-1/2 transform -translate-y-1/2 w-24 sm:w-40 h-48 sm:h-80 opacity-15">
                  <svg viewBox="0 0 50 100" className="w-full h-full text-orange-600">
-                   <path d="M50,50 Q30,30 10,10 M50,50 Q25,50 5,30 M50,50 Q30,70 10,90 M50,50 Q35,35 15,20 M50,50 Q35,65 15,80 M50,50 Q20,25 5,5 M50,50 Q20,75 5,95" 
-                         stroke="currentColor" strokeWidth="2.2" fill="none" className="animate-pulse"/>
+                   <path d="M50,50 Q30,30 10,10 M50,50 Q30,70 10,90" 
+                         stroke="currentColor" strokeWidth="0.8" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
 
-               <div className="absolute -right-20 sm:-right-40 top-1/2 transform -translate-y-1/2 w-40 sm:w-80 h-80 sm:h-160 opacity-45">
-                 <svg viewBox="0 0 50 100" className="w-full h-full text-red-600">
-                   <path d="M50,50 Q32,32 14,14 M50,50 Q28,48 8,28 M50,50 Q32,68 14,86 M50,50 Q38,38 18,24 M50,50 Q38,62 18,76 M50,50 Q22,22 7,8 M50,50 Q22,78 7,92" 
-                         stroke="currentColor" strokeWidth="1.9" fill="none" className="animate-pulse" style={{animationDelay: '0.1s'}}/>
-                 </svg>
-               </div>
-
-               <div className="absolute -right-16 sm:-right-32 top-1/2 transform -translate-y-1/2 w-32 sm:w-64 h-64 sm:h-128 opacity-40">
-                 <svg viewBox="0 0 50 100" className="w-full h-full text-yellow-600">
-                   <path d="M50,50 Q34,34 18,18 M50,50 Q30,46 12,26 M50,50 Q34,66 18,82 M50,50 Q40,40 20,28 M50,50 Q40,60 20,72" 
-                         stroke="currentColor" strokeWidth="1.6" fill="none" className="animate-pulse" style={{animationDelay: '0.5s'}}/>
-                 </svg>
-               </div>
-
-               {/* DIAGONAL FIRE - TOP LEFT Multiple layers */}
-               <div className="absolute -top-20 -left-20 sm:-top-40 sm:-left-40 w-40 sm:w-80 h-40 sm:h-80 opacity-45">
+               {/* DIAGONAL FIRE - Simplified */}
+               <div className="absolute -top-8 -left-8 sm:-top-12 sm:-left-12 w-16 sm:w-24 h-16 sm:h-24 opacity-12">
                  <svg viewBox="0 0 50 50" className="w-full h-full text-orange-400">
-                   <path d="M0,50 Q15,35 30,20 Q35,15 50,0 M0,50 Q20,40 40,30 M0,50 Q10,25 25,10 M0,50 Q25,30 45,15 M0,50 Q12,38 28,22" 
-                         stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
+                   <path d="M0,50 Q25,25 50,0" 
+                         stroke="currentColor" strokeWidth="0.6" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
 
-               <div className="absolute -top-16 -left-16 sm:-top-32 sm:-left-32 w-32 sm:w-64 h-32 sm:h-64 opacity-40">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-red-400">
-                   <path d="M0,50 Q18,38 32,24 Q38,18 50,5 M0,50 Q22,42 42,32 M0,50 Q12,28 28,12 M0,50 Q28,32 48,18" 
-                         stroke="currentColor" strokeWidth="1.7" fill="none" className="animate-pulse" style={{animationDelay: '0.2s'}}/>
-                 </svg>
-               </div>
-
-               <div className="absolute -top-12 -left-12 sm:-top-24 sm:-left-24 w-24 sm:w-48 h-24 sm:h-48 opacity-35">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-yellow-400">
-                   <path d="M0,50 Q20,40 35,25 Q40,20 50,8 M0,50 Q25,45 45,35 M0,50 Q15,30 30,15" 
-                         stroke="currentColor" strokeWidth="1.4" fill="none" className="animate-pulse" style={{animationDelay: '0.4s'}}/>
-                 </svg>
-               </div>
-
-               {/* DIAGONAL FIRE - TOP RIGHT Multiple layers */}
-               <div className="absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-40 sm:w-80 h-40 sm:h-80 opacity-45">
+               <div className="absolute -top-8 -right-8 sm:-top-12 sm:-right-12 w-16 sm:w-24 h-16 sm:h-24 opacity-12">
                  <svg viewBox="0 0 50 50" className="w-full h-full text-orange-500">
-                   <path d="M50,50 Q35,35 20,20 Q15,15 0,0 M50,50 Q30,40 10,30 M50,50 Q40,25 25,10 M50,50 Q25,30 5,15 M50,50 Q38,38 22,22" 
-                         stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
+                   <path d="M50,50 Q25,25 0,0" 
+                         stroke="currentColor" strokeWidth="0.6" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
 
-               <div className="absolute -top-16 -right-16 sm:-top-32 sm:-right-32 w-32 sm:w-64 h-32 sm:h-64 opacity-40">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-red-500">
-                   <path d="M50,50 Q32,38 18,24 Q12,18 0,5 M50,50 Q28,42 8,32 M50,50 Q38,28 22,12 M50,50 Q22,32 2,18" 
-                         stroke="currentColor" strokeWidth="1.7" fill="none" className="animate-pulse" style={{animationDelay: '0.3s'}}/>
-                 </svg>
-               </div>
-
-               <div className="absolute -top-12 -right-12 sm:-top-24 sm:-right-24 w-24 sm:w-48 h-24 sm:h-48 opacity-35">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-yellow-500">
-                   <path d="M50,50 Q30,40 15,25 Q10,20 0,8 M50,50 Q25,45 5,35 M50,50 Q35,30 20,15" 
-                         stroke="currentColor" strokeWidth="1.4" fill="none" className="animate-pulse" style={{animationDelay: '0.1s'}}/>
-                 </svg>
-               </div>
-
-               {/* DIAGONAL FIRE - BOTTOM LEFT Multiple layers */}
-               <div className="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-40 sm:w-80 h-40 sm:h-80 opacity-45">
+               <div className="absolute -bottom-8 -left-8 sm:-bottom-12 sm:-left-12 w-16 sm:w-24 h-16 sm:h-24 opacity-12">
                  <svg viewBox="0 0 50 50" className="w-full h-full text-orange-600">
-                   <path d="M0,0 Q15,15 30,30 Q35,35 50,50 M0,0 Q20,10 40,20 M0,0 Q10,25 25,40 M0,0 Q25,20 45,35 M0,0 Q12,12 28,28" 
-                         stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
+                   <path d="M0,0 Q25,25 50,50" 
+                         stroke="currentColor" strokeWidth="0.6" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
 
-               <div className="absolute -bottom-16 -left-16 sm:-bottom-32 sm:-left-32 w-32 sm:w-64 h-32 sm:h-64 opacity-40">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-red-600">
-                   <path d="M0,0 Q18,12 32,26 Q38,32 50,45 M0,0 Q22,8 42,18 M0,0 Q12,22 28,38 M0,0 Q28,18 48,32" 
-                         stroke="currentColor" strokeWidth="1.7" fill="none" className="animate-pulse" style={{animationDelay: '0.4s'}}/>
-                 </svg>
-               </div>
-
-               <div className="absolute -bottom-12 -left-12 sm:-bottom-24 sm:-left-24 w-24 sm:w-48 h-24 sm:h-48 opacity-35">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-yellow-600">
-                   <path d="M0,0 Q20,10 35,25 Q40,30 50,42 M0,0 Q25,5 45,15 M0,0 Q15,20 30,35" 
-                         stroke="currentColor" strokeWidth="1.4" fill="none" className="animate-pulse" style={{animationDelay: '0.6s'}}/>
-                 </svg>
-               </div>
-
-               {/* DIAGONAL FIRE - BOTTOM RIGHT Multiple layers */}
-               <div className="absolute -bottom-20 -right-20 sm:-bottom-40 sm:-right-40 w-40 sm:w-80 h-40 sm:h-80 opacity-45">
+               <div className="absolute -bottom-8 -right-8 sm:-bottom-12 sm:-right-12 w-16 sm:w-24 h-16 sm:h-24 opacity-12">
                  <svg viewBox="0 0 50 50" className="w-full h-full text-orange-700">
-                   <path d="M50,0 Q35,15 20,30 Q15,35 0,50 M50,0 Q30,10 10,20 M50,0 Q40,25 25,40 M50,0 Q25,20 5,35 M50,0 Q38,12 22,28" 
-                         stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
-
-               <div className="absolute -bottom-16 -right-16 sm:-bottom-32 sm:-right-32 w-32 sm:w-64 h-32 sm:h-64 opacity-40">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-red-700">
-                   <path d="M50,0 Q32,12 18,26 Q12,32 0,45 M50,0 Q28,8 8,18 M50,0 Q38,22 22,38 M50,0 Q22,18 2,32" 
-                         stroke="currentColor" strokeWidth="1.7" fill="none" className="animate-pulse" style={{animationDelay: '0.5s'}}/>
-                 </svg>
-               </div>
-
-               <div className="absolute -bottom-12 -right-12 sm:-bottom-24 sm:-right-24 w-24 sm:w-48 h-24 sm:h-48 opacity-35">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-yellow-700">
-                   <path d="M50,0 Q30,10 15,25 Q10,30 0,42 M50,0 Q25,5 5,15 M50,0 Q35,20 20,35" 
-                         stroke="currentColor" strokeWidth="1.4" fill="none" className="animate-pulse" style={{animationDelay: '0.2s'}}/>
+                   <path d="M50,0 Q25,25 0,50" 
+                         stroke="currentColor" strokeWidth="0.6" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
                
@@ -287,25 +192,11 @@ const HeroSection = () => {
                  <div className="absolute inset-0 bg-gradient-to-t from-transparent via-primary/20 to-secondary/30 rounded-lg sm:rounded-xl z-20 pointer-events-none"></div>
                </div>
                
-               {/* BOTTOM FIRE - Multiple massive layers */}
-               <div className="absolute -bottom-32 sm:-bottom-64 left-1/2 transform -translate-x-1/2 w-160 sm:w-320 h-64 sm:h-128 opacity-50">
+               {/* BOTTOM FIRE - Reduced */}
+               <div className="absolute -bottom-16 sm:-bottom-24 left-1/2 transform -translate-x-1/2 w-64 sm:w-96 h-24 sm:h-32 opacity-15">
                  <svg viewBox="0 0 120 40" className="w-full h-full text-orange-500">
-                   <path d="M60,0 Q40,20 20,40 M60,0 Q60,25 40,35 M60,0 Q80,20 100,40 M60,0 Q60,25 80,35 M60,0 Q25,15 5,35 M60,0 Q95,15 115,35 M60,0 Q30,12 10,32 M60,0 Q90,12 110,32" 
-                         stroke="currentColor" strokeWidth="2.5" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
-
-               <div className="absolute -bottom-28 sm:-bottom-56 left-1/2 transform -translate-x-1/2 w-144 sm:w-288 h-56 sm:h-112 opacity-45">
-                 <svg viewBox="0 0 120 40" className="w-full h-full text-red-500">
-                   <path d="M60,0 Q38,18 18,38 M60,0 Q58,22 38,32 M60,0 Q82,18 102,38 M60,0 Q62,22 82,32 M60,0 Q22,12 2,32 M60,0 Q98,12 118,32" 
-                         stroke="currentColor" strokeWidth="2.2" fill="none" className="animate-pulse" style={{animationDelay: '0.3s'}}/>
-                 </svg>
-               </div>
-
-               <div className="absolute -bottom-24 sm:-bottom-48 left-1/2 transform -translate-x-1/2 w-128 sm:w-256 h-48 sm:h-96 opacity-40">
-                 <svg viewBox="0 0 120 40" className="w-full h-full text-yellow-500">
-                   <path d="M60,0 Q42,22 22,42 M60,0 Q55,28 35,38 M60,0 Q78,22 98,42 M60,0 Q65,28 85,38 M60,0 Q28,18 8,38 M60,0 Q92,18 112,38" 
-                         stroke="currentColor" strokeWidth="1.8" fill="none" className="animate-pulse" style={{animationDelay: '0.6s'}}/>
+                   <path d="M60,0 Q40,20 20,40 M60,0 Q80,20 100,40" 
+                         stroke="currentColor" strokeWidth="0.8" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
             </div>
