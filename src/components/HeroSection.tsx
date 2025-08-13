@@ -27,29 +27,31 @@ const HeroSection = () => {
               Système d'Activation Territoriale
             </h2>
             
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto space-y-6 text-center">
-              <div className="space-y-4">
-                <div>
-                  <p className="text-white drop-shadow-2xl font-semibold">
+            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto space-y-6 text-center">
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Card 1 - Association locale */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-lg">
+                  <h3 className="text-white font-bold mb-3 text-lg">
                     - Une association locale pour chaque lieu
-                  </p>
-                  <p className="text-white/90 drop-shadow-xl text-sm sm:text-base">
+                  </h3>
+                  <p className="text-white/90 text-sm sm:text-base">
                     Décidez ensemble des projets, des usages et de la vie quotidienne.
                   </p>
                 </div>
                 
-                <div>
-                  <p className="text-white drop-shadow-2xl font-semibold">
+                {/* Card 2 - Fédération nationale */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-lg">
+                  <h3 className="text-white font-bold mb-3 text-lg">
                     - Une fédération nationale pour passer à l'échelle
-                  </p>
-                  <p className="text-white/90 drop-shadow-xl text-sm sm:text-base">
+                  </h3>
+                  <p className="text-white/90 text-sm sm:text-base">
                     Mutualisons nos moyens pour activer des territoires et créer l'autonomie locale.
                   </p>
                 </div>
               </div>
               
-              <div className="pt-4">
-                <p className="text-white drop-shadow-2xl">
+              <div className="pt-6">
+                <p className="text-white drop-shadow-2xl text-xl">
                   Nous fédérons <strong className="drop-shadow-lg">10 000 pionniers</strong><br />
                   pour lever <strong className="drop-shadow-lg">1 million d'euros</strong>
                 </p>
