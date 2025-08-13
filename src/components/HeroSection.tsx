@@ -13,9 +13,9 @@ const HeroSection = () => {
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-16 items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
           {/* Text Content - Left Side */}
-          <div className="lg:col-span-3 text-white space-y-6 sm:space-y-8 text-center lg:text-left">
+          <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
               Le Réseau des
               <br />
@@ -28,22 +28,22 @@ const HeroSection = () => {
               Système d'Activation Territoriale
             </h2>
             
-            <div className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-4xl mx-auto lg:mx-0 space-y-3 sm:space-y-4">
+            <div className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-3 sm:space-y-4">
               <div className="space-y-3 sm:space-y-4">
                 <p className="flex items-start">
-                  <span className="text-green-400 mr-1 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
+                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
                   <span className="text-white drop-shadow-2xl">Construire des communautés locales autonomes et résilientes</span>
                 </p>
                 <p className="flex items-start">
-                  <span className="text-green-400 mr-1 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
+                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
                   <span className="text-white drop-shadow-2xl">Permettre l'action collective et le partage équitable des ressources</span>
                 </p>
                 <p className="flex items-start">
-                  <span className="text-green-400 mr-1 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
+                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
                   <span className="text-white drop-shadow-2xl">Co-investir dans un trésor commun stratégique</span>
                 </p>
                 <p className="flex items-start">
-                  <span className="text-green-400 mr-1 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
+                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
                   <span className="text-white drop-shadow-2xl">Rejoindre les <strong className="text-blue-500">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
                 </p>
               </div>
@@ -60,7 +60,7 @@ const HeroSection = () => {
           </div>
           
           {/* Image - Right Side */}
-          <div className="lg:col-span-2 flex justify-center lg:justify-end mt-8 lg:mt-0">
+          <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
             <div className="relative group">
               {/* Cosmic roots border effect */}
               <div className="absolute -inset-2 sm:-inset-4 bg-gradient-primary rounded-xl sm:rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition-smooth animate-pulse"></div>
