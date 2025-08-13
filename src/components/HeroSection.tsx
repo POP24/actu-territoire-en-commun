@@ -24,37 +24,62 @@ const HeroSection = () => {
             </h1>
             
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
-              Système d'Activation Territoriale
+              Le réseau des Communes Libres
             </h2>
             
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 space-y-3 sm:space-y-4">
-              <div className="space-y-3 sm:space-y-4">
-                <p className="flex items-start">
-                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="text-white drop-shadow-2xl">Construire des communautés locales autonomes et résilientes</span>
-                </p>
-                <p className="flex items-start">
-                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="text-white drop-shadow-2xl">Permettre l'action collective et le partage équitable des ressources</span>
-                </p>
-                <p className="flex items-start">
-                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="text-white drop-shadow-2xl">Co-investir dans un trésor commun stratégique</span>
-                </p>
-                <p className="flex items-start">
-                  <span className="text-green-400 mr-4 text-2xl sm:text-3xl font-bold mt-1 flex-shrink-0 drop-shadow-lg">✓</span>
-                  <span className="text-white drop-shadow-2xl">Rejoindre les <strong className="text-blue-500">10 000 pionniers</strong> qui façonnent les bioregions de demain</span>
-                </p>
-              </div>
+            <div className="text-center lg:text-left mt-6 mb-8">
+              <p className="text-lg sm:text-xl md:text-2xl font-bold text-blue-200 drop-shadow-lg">
+                GOUVERNANCE LOCALE, TRÉSORERIE COMMUNE
+              </p>
             </div>
             
-            <div className="flex justify-center mt-8 sm:mt-12">
+            <div className="text-center lg:text-left mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-white drop-shadow-lg">
+                <span className="font-bold text-green-400">10 000 pionniers</span> × 
+                <span className="font-bold text-blue-400"> 100 €</span> → 
+                <span className="font-bold text-yellow-400"> 1 000 000 €</span> → 
+                <span className="font-bold text-orange-400"> 50 territoires activés</span>
+              </p>
+            </div>
+            
+            <div className="text-center lg:text-left mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 drop-shadow-lg">
+                <span className="font-semibold">Recenser</span> • <span className="font-semibold">Fédérer</span> • <span className="font-semibold">Outiller</span> • <span className="font-semibold">Financer</span> • <span className="font-semibold">Activer</span>
+              </p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 mb-8 border border-white/20">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 drop-shadow-lg">
+                C'est quoi "activer" ?
+              </h3>
+              <p className="text-sm sm:text-base text-white/90 drop-shadow-lg">
+                <span className="font-semibold">Parcourir</span> • <span className="font-semibold">Recenser</span> • <span className="font-semibold">Fédérer</span> • <span className="font-semibold">Outiller</span> • <span className="font-semibold">Financer</span> un territoire
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8 sm:mt-12">
               <Button 
                 size="lg"
-                className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-green-500 hover:bg-green-600"
               >
-                ADHÉRER
+                Adhésion nationale — 100 €
               </Button>
+              <Button 
+                variant="outline"
+                size="lg"
+                className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white/30 text-white hover:bg-white/20"
+              >
+                Adhésion locale — 10 € + prix libre
+              </Button>
+            </div>
+            
+            <div className="text-xs sm:text-sm text-center lg:text-left mt-4 space-y-1">
+              <p className="text-white/80">
+                <span className="font-semibold">Adhésion nationale :</span> Vote sur les budgets + accès réseau
+              </p>
+              <p className="text-white/80">
+                <span className="font-semibold">Adhésion locale :</span> Gouvernance du lieu, projets, droits membres
+              </p>
             </div>
           </div>
           
