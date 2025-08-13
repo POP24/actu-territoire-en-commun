@@ -83,7 +83,8 @@ const HeroSection = () => {
               <div className="pt-6">
                 <p className="text-white drop-shadow-2xl text-xl">
                   Nous fédérons <strong className="drop-shadow-lg">10 000 pionniers</strong><br />
-                  pour lever <strong className="drop-shadow-lg">1 million d'euros</strong>
+                  pour lever <strong className="drop-shadow-lg">1 million d'euros</strong><br />
+                  et activer <strong className="drop-shadow-lg">20 territoires</strong>
                 </p>
               </div>
             </div>
