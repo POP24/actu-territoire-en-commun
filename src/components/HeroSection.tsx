@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
           {/* Text Content - Left Side */}
-          <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left">
+          <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left bg-black/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-2xl border border-white/10">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
               Le Réseau des
               <br />
