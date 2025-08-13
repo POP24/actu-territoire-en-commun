@@ -110,38 +110,86 @@ const HeroSection = () => {
                 <div className="absolute inset-1 bg-gradient-hero rounded-lg sm:rounded-xl"></div>
               </div>
               
-               {/* Tree roots decorative elements */}
-               <div className="absolute -top-16 sm:-top-32 left-1/2 transform -translate-x-1/2 w-64 sm:w-128 h-32 sm:h-64 opacity-40">
-                 <svg viewBox="0 0 100 50" className="w-full h-full text-white/60">
-                   <path d="M50,50 Q30,30 10,10 M50,50 Q50,20 30,5 M50,50 Q70,30 90,10 M50,50 Q50,20 70,5" 
+               {/* Tree roots decorative elements - TOP */}
+               <div className="absolute -top-24 sm:-top-48 left-1/2 transform -translate-x-1/2 w-96 sm:w-192 h-48 sm:h-96 opacity-50">
+                 <svg viewBox="0 0 100 50" className="w-full h-full text-white/70">
+                   <path d="M50,50 Q30,30 10,10 M50,50 Q50,20 30,5 M50,50 Q70,30 90,10 M50,50 Q50,20 70,5 M50,50 Q20,35 5,15 M50,50 Q80,35 95,15" 
+                         stroke="currentColor" strokeWidth="1.5" fill="none" className="animate-pulse"/>
+                 </svg>
+               </div>
+
+               {/* LEFT side filaments */}
+               <div className="absolute -left-16 sm:-left-32 top-1/2 transform -translate-y-1/2 w-32 sm:w-64 h-64 sm:h-128 opacity-40">
+                 <svg viewBox="0 0 50 100" className="w-full h-full text-blue-300/60">
+                   <path d="M0,50 Q20,30 40,10 M0,50 Q25,50 45,30 M0,50 Q20,70 40,90 M0,50 Q15,35 35,20 M0,50 Q15,65 35,80" 
                          stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
-              
-              {/* Main image container */}
-              <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] xl:w-[550px] xl:h-[550px]">
-                {/* Default image - Community gathering */}
-                <img 
-                  src={communityGathering} 
-                  alt="Rassemblement communautaire"
-                  className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant relative z-10 transform group-hover:scale-105 transition-smooth group-hover:opacity-0"
-                />
-                
-                {/* Hover image - Portrait mystique */}
-                <img 
-                  src={heroPortrait} 
-                  alt="Portrait mystique"
-                  className="absolute inset-0 w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant z-10 transform group-hover:scale-105 transition-smooth opacity-0 group-hover:opacity-100"
-                />
-                
-                <div className="absolute inset-0 bg-gradient-to-t from-transparent via-primary/20 to-secondary/30 rounded-lg sm:rounded-xl z-20 pointer-events-none"></div>
-              </div>
-              
-               {/* Bottom roots */}
-               <div className="absolute -bottom-12 sm:-bottom-24 left-1/2 transform -translate-x-1/2 w-80 sm:w-160 h-24 sm:h-48 opacity-30">
+
+               {/* RIGHT side filaments */}
+               <div className="absolute -right-16 sm:-right-32 top-1/2 transform -translate-y-1/2 w-32 sm:w-64 h-64 sm:h-128 opacity-40">
+                 <svg viewBox="0 0 50 100" className="w-full h-full text-purple-300/60">
+                   <path d="M50,50 Q30,30 10,10 M50,50 Q25,50 5,30 M50,50 Q30,70 10,90 M50,50 Q35,35 15,20 M50,50 Q35,65 15,80" 
+                         stroke="currentColor" strokeWidth="2" fill="none" className="animate-pulse"/>
+                 </svg>
+               </div>
+
+               {/* DIAGONAL filaments - TOP LEFT */}
+               <div className="absolute -top-12 -left-12 sm:-top-24 sm:-left-24 w-24 sm:w-48 h-24 sm:h-48 opacity-30">
+                 <svg viewBox="0 0 50 50" className="w-full h-full text-yellow-300/50">
+                   <path d="M0,50 Q15,35 30,20 Q35,15 50,0 M0,50 Q20,40 40,30 M0,50 Q10,25 25,10" 
+                         stroke="currentColor" strokeWidth="1.5" fill="none" className="animate-pulse"/>
+                 </svg>
+               </div>
+
+               {/* DIAGONAL filaments - TOP RIGHT */}
+               <div className="absolute -top-12 -right-12 sm:-top-24 sm:-right-24 w-24 sm:w-48 h-24 sm:h-48 opacity-30">
+                 <svg viewBox="0 0 50 50" className="w-full h-full text-green-300/50">
+                   <path d="M50,50 Q35,35 20,20 Q15,15 0,0 M50,50 Q30,40 10,30 M50,50 Q40,25 25,10" 
+                         stroke="currentColor" strokeWidth="1.5" fill="none" className="animate-pulse"/>
+                 </svg>
+               </div>
+
+               {/* DIAGONAL filaments - BOTTOM LEFT */}
+               <div className="absolute -bottom-12 -left-12 sm:-bottom-24 sm:-left-24 w-24 sm:w-48 h-24 sm:h-48 opacity-30">
+                 <svg viewBox="0 0 50 50" className="w-full h-full text-pink-300/50">
+                   <path d="M0,0 Q15,15 30,30 Q35,35 50,50 M0,0 Q20,10 40,20 M0,0 Q10,25 25,40" 
+                         stroke="currentColor" strokeWidth="1.5" fill="none" className="animate-pulse"/>
+                 </svg>
+               </div>
+
+               {/* DIAGONAL filaments - BOTTOM RIGHT */}
+               <div className="absolute -bottom-12 -right-12 sm:-bottom-24 sm:-right-24 w-24 sm:w-48 h-24 sm:h-48 opacity-30">
+                 <svg viewBox="0 0 50 50" className="w-full h-full text-cyan-300/50">
+                   <path d="M50,0 Q35,15 20,30 Q15,35 0,50 M50,0 Q30,10 10,20 M50,0 Q40,25 25,40" 
+                         stroke="currentColor" strokeWidth="1.5" fill="none" className="animate-pulse"/>
+                 </svg>
+               </div>
+               
+               {/* Main image container */}
+               <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] xl:w-[550px] xl:h-[550px]">
+                 {/* Default image - Community gathering */}
+                 <img 
+                   src={communityGathering} 
+                   alt="Rassemblement communautaire"
+                   className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant relative z-10 transform group-hover:scale-105 transition-smooth group-hover:opacity-0"
+                 />
+                 
+                 {/* Hover image - Portrait mystique */}
+                 <img 
+                   src={heroPortrait} 
+                   alt="Portrait mystique"
+                   className="absolute inset-0 w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant z-10 transform group-hover:scale-105 transition-smooth opacity-0 group-hover:opacity-100"
+                 />
+                 
+                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-primary/20 to-secondary/30 rounded-lg sm:rounded-xl z-20 pointer-events-none"></div>
+               </div>
+               
+               {/* Bottom roots - ENHANCED */}
+               <div className="absolute -bottom-18 sm:-bottom-36 left-1/2 transform -translate-x-1/2 w-120 sm:w-240 h-36 sm:h-72 opacity-40">
                  <svg viewBox="0 0 120 40" className="w-full h-full text-accent">
-                   <path d="M60,0 Q40,20 20,40 M60,0 Q60,25 40,35 M60,0 Q80,20 100,40 M60,0 Q60,25 80,35" 
-                         stroke="currentColor" strokeWidth="3" fill="none"/>
+                   <path d="M60,0 Q40,20 20,40 M60,0 Q60,25 40,35 M60,0 Q80,20 100,40 M60,0 Q60,25 80,35 M60,0 Q25,15 5,35 M60,0 Q95,15 115,35" 
+                         stroke="currentColor" strokeWidth="2.5" fill="none" className="animate-pulse"/>
                  </svg>
                </div>
             </div>
