@@ -27,7 +27,7 @@ const HeroSection = () => {
           alt="Arrière-plan communautaire" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-800/85 to-blue-900/90"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
