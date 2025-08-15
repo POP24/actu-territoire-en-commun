@@ -17,27 +17,27 @@ All colors MUST be HSL.
     --popover: 220 15% 98%;
     --popover-foreground: 215 25% 15%;
 
-    --primary: 200 95% 45%;
+    --primary: 220 85% 50%;
     --primary-foreground: 220 15% 98%;
 
-    --secondary: 195 85% 55%;
+    --secondary: 220 75% 55%;
     --secondary-foreground: 220 15% 98%;
 
     --muted: 210 25% 88%;
     --muted-foreground: 215 15% 45%;
 
-    --accent: 185 75% 65%;
+    --accent: 220 65% 60%;
     --accent-foreground: 215 25% 15%;
 
-    /* Custom gradients and colors for the communes theme */
-    --gradient-primary: linear-gradient(135deg, hsl(200 95% 45%), hsl(185 75% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(200 95% 45%) 0%, hsl(185 75% 65%) 50%, hsl(220 60% 75%) 100%);
+    /* Custom gradients and colors for the communes theme - homogenized blue */
+    --gradient-primary: linear-gradient(135deg, hsl(220 85% 50%), hsl(220 75% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 85% 50%) 0%, hsl(220 75% 55%) 50%, hsl(220 65% 60%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(220 15% 98%), hsl(210 25% 95%));
     
     /* Design system gradients - Orange CTA */
     --gradient-cta: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
     --gradient-national: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
-    --gradient-territorial: linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%);
+    --gradient-territorial: linear-gradient(135deg, hsl(220 85% 50%) 0%, hsl(220 75% 55%) 50%, hsl(220 65% 60%) 100%);
     
     /* Enhanced dropdown gradients */
     --gradient-dropdown-bg: linear-gradient(145deg, rgba(254, 92, 2, 0.95) 0%, rgba(255, 140, 0, 0.9) 50%, rgba(255, 165, 0, 0.85) 100%);
@@ -52,11 +52,11 @@ All colors MUST be HSL.
     --orange-brand: 25 95% 53%;
     --orange-dark: 24 95% 48%;
     
-    --primary-glow: 185 75% 65%;
-    --secondary-glow: 195 85% 70%;
+    --primary-glow: 220 75% 65%;
+    --secondary-glow: 220 65% 70%;
     
-    --shadow-elegant: 0 10px 30px -10px hsl(200 95% 45% / 0.3);
-    --shadow-soft: 0 4px 20px -4px hsl(200 50% 50% / 0.2);
+    --shadow-elegant: 0 10px 30px -10px hsl(220 85% 50% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(220 75% 55% / 0.2);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
