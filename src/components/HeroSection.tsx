@@ -1,223 +1,233 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { ChevronRight, Network, Users, Globe, Zap, Shield, Star } from "lucide-react";
 import communityGathering from "/lovable-uploads/0a3e519a-7871-4f9d-9d79-393c652214ee.png";
 import heroPortrait from "/lovable-uploads/53182d9e-f20d-4927-8092-8aefbc7458f6.png";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
-      {/* Background decorative elements */}
+      {/* Futuristic Grid Background */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-32 sm:w-64 h-32 sm:h-64 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:50px_50px] animate-pulse"></div>
+        <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-128 h-128 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-emerald-500/15 to-teal-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+      </div>
+      
+      {/* Floating Particles */}
+      <div className="absolute inset-0 overflow-hidden">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-white/40 rounded-full animate-pulse"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${2 + Math.random() * 2}s`
+            }}
+          />
+        ))}
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
-          {/* Text Content - Left Side */}
-          <div className="text-white space-y-6 sm:space-y-8 text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight drop-shadow-2xl">
-              Le Réseau des{" "}
-              <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-2xl">
-                Communes
-              </span>
-            </h1>
+        <div className="max-w-7xl mx-auto">
+          {/* Centered Ultra-Modern Layout */}
+          <div className="text-center space-y-12 mb-16">
+            {/* Main Title with Holographic Effect */}
+            <div className="relative">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight mb-6">
+                <span className="bg-gradient-to-r from-white via-blue-200 to-cyan-300 bg-clip-text text-transparent drop-shadow-2xl block">
+                  RÉSEAU
+                </span>
+                <span className="bg-gradient-to-r from-cyan-300 via-purple-300 to-pink-300 bg-clip-text text-transparent drop-shadow-2xl">
+                  COMMUNES
+                </span>
+              </h1>
+              
+              {/* Holographic Lines */}
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-full max-w-4xl h-1 bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent"></div>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-full max-w-2xl h-1 bg-gradient-to-r from-transparent via-purple-400/60 to-transparent"></div>
+            </div>
             
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 drop-shadow-lg">
-              Système d'Activation Territoriale
-            </h2>
+            {/* Subtitle with Glitch Effect */}
+            <div className="relative">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white/90 drop-shadow-lg mb-8 tracking-wider">
+                SYSTÈME D'ACTIVATION TERRITORIALE
+              </h2>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent h-full w-full animate-pulse"></div>
+            </div>
             
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto space-y-6 text-center">
-              <div className="grid md:grid-cols-2 gap-6">
-                {/* Card 1 - COMMUNE VIVANTE */}
-                <div className="group relative bg-gradient-to-br from-blue-400/20 to-blue-800/20 backdrop-blur-lg rounded-2xl p-8 border border-blue-300/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:from-blue-300/25 hover:to-blue-700/25">
-                  {/* Decorative glow effect */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
-                  
-                  <div className="relative z-10">
-                    {/* Icon */}
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl mb-4 flex items-center justify-center shadow-lg">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    
-                    {/* Prix */}
-                    <div className="text-blue-200 text-2xl font-bold mb-2">10€ + prix libre</div>
-                    
-                    <h3 className="text-white font-bold mb-4 text-xl leading-tight bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent whitespace-nowrap">
-                      ADHÉSION LOCALE
-                    </h3>
-                    <p className="text-white/90 text-lg leading-relaxed font-medium">
-                      Habitants unis, projets réalisés
-                    </p>
-                    
-                    {/* Subtle accent line */}
-                    <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-blue-400/60 to-transparent"></div>
+            {/* Stats with Futuristic Cards */}
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+              <div className="group relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl blur opacity-40 group-hover:opacity-75 transition-all duration-500"></div>
+                <div className="relative bg-black/40 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:border-white/40 transition-all duration-500">
+                  <div className="flex items-center justify-center mb-4">
+                    <Users className="w-12 h-12 text-cyan-400" />
                   </div>
-                </div>
-                
-                {/* Card 2 - RÉSEAU PUISSANT */}
-                <div className="group relative bg-gradient-to-br from-emerald-400/20 to-green-800/20 backdrop-blur-lg rounded-2xl p-8 border border-emerald-300/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:from-emerald-300/25 hover:to-green-700/25">
-                  {/* Decorative glow effect */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-400 via-green-500 to-emerald-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
-                  
-                  <div className="relative z-10">
-                    {/* Icon */}
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-green-600 rounded-xl mb-4 flex items-center justify-center shadow-lg">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5-5-9-5-9-9s4-4 9-9" />
-                      </svg>
-                    </div>
-                    
-                    {/* Prix */}
-                    <div className="text-emerald-200 text-2xl font-bold mb-2">100€</div>
-                    
-                    <h3 className="text-white font-bold mb-4 text-xl leading-tight bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent whitespace-nowrap">
-                      ADHÉSION ARCHITECTE
-                    </h3>
-                    <p className="text-white/90 text-lg leading-relaxed font-medium">
-                      Territoires connectés, impact démultiplié
-                    </p>
-                    
-                    {/* Subtle accent line */}
-                    <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent"></div>
-                  </div>
+                  <div className="text-4xl font-black text-white mb-2">10K</div>
+                  <div className="text-cyan-300 font-semibold">PIONNIERS</div>
                 </div>
               </div>
               
-              <div className="pt-6">
-                <p className="text-white drop-shadow-2xl text-xl">
-                  Nous fédérons <strong className="drop-shadow-lg">10 000 pionniers</strong><br />
-                  pour lever <strong className="drop-shadow-lg">1 million d'euros</strong><br />
-                  et activer <strong className="drop-shadow-lg">20 territoires</strong>
-                </p>
+              <div className="group relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur opacity-40 group-hover:opacity-75 transition-all duration-500"></div>
+                <div className="relative bg-black/40 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:border-white/40 transition-all duration-500">
+                  <div className="flex items-center justify-center mb-4">
+                    <Zap className="w-12 h-12 text-purple-400" />
+                  </div>
+                  <div className="text-4xl font-black text-white mb-2">1M€</div>
+                  <div className="text-purple-300 font-semibold">FONDS</div>
+                </div>
               </div>
-            </div>
-            
-            <div className="flex justify-center mt-8 sm:mt-12">
-              <Button 
-                size="lg"
-                className="text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 drop-shadow-xl hover:scale-105"
-              >
-                ADHÉRER
-              </Button>
+              
+              <div className="group relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl blur opacity-40 group-hover:opacity-75 transition-all duration-500"></div>
+                <div className="relative bg-black/40 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:border-white/40 transition-all duration-500">
+                  <div className="flex items-center justify-center mb-4">
+                    <Globe className="w-12 h-12 text-emerald-400" />
+                  </div>
+                  <div className="text-4xl font-black text-white mb-2">20</div>
+                  <div className="text-emerald-300 font-semibold">TERRITOIRES</div>
+                </div>
+              </div>
             </div>
           </div>
           
-          {/* Image - Right Side */}
-          <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
-            <div className="relative group">
-              {/* Cosmic roots border effect */}
-              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-primary rounded-xl sm:rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition-smooth animate-pulse"></div>
-              
-              {/* Rainbow roots pattern */}
-              <div className="absolute -inset-1 sm:-inset-2 rounded-lg sm:rounded-xl opacity-60">
-                <div className="absolute inset-0 bg-gradient-primary rounded-lg sm:rounded-xl animate-pulse"></div>
-                <div className="absolute inset-1 bg-gradient-hero rounded-lg sm:rounded-xl"></div>
+          {/* Revolutionary Membership Cards */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            {/* DAO Cards */}
+            <div className="grid gap-8">
+              {/* Local Card */}
+              <div className="group relative overflow-hidden">
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-800 rounded-3xl blur-lg opacity-50 group-hover:opacity-100 transition-all duration-700 animate-pulse"></div>
+                <div className="relative bg-black/50 backdrop-blur-2xl rounded-3xl p-10 border-2 border-cyan-500/30 hover:border-cyan-400/60 transition-all duration-500 group-hover:scale-105">
+                  {/* Holographic Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-blue-500/10 rounded-3xl"></div>
+                  
+                  <div className="relative z-10 flex items-start space-x-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                        <Network className="w-10 h-10 text-white" />
+                      </div>
+                    </div>
+                    
+                    <div className="flex-grow">
+                      <div className="flex items-center space-x-4 mb-4">
+                        <div className="text-3xl font-black text-cyan-400">10€</div>
+                        <div className="text-lg text-cyan-300/80">+ prix libre</div>
+                      </div>
+                      
+                      <h3 className="text-2xl font-black text-white mb-3 bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent">
+                        ADHÉSION LOCALE
+                      </h3>
+                      
+                      <p className="text-white/80 text-lg font-medium leading-relaxed">
+                        Habitants unis, projets réalisés
+                      </p>
+                      
+                      {/* Tech Details */}
+                      <div className="flex items-center space-x-4 mt-4 text-cyan-300/60 text-sm">
+                        <Shield className="w-4 h-4" />
+                        <span>Gouvernance Locale</span>
+                        <Star className="w-4 h-4" />
+                        <span>Impact Direct</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Animated Border */}
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-500/0 via-cyan-500/40 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                </div>
               </div>
               
-               {/* MEGA FIRE EFFECT - Multiple layers of filaments */}
-               
-               {/* TOP FIRE - Layer 1 */}
-               <div className="absolute -top-24 sm:-top-40 left-1/2 transform -translate-x-1/2 w-80 sm:w-160 h-40 sm:h-80 opacity-30">
-                 <svg viewBox="0 0 100 50" className="w-full h-full text-orange-400">
-                   <path d="M50,50 Q30,30 10,10 M50,50 Q50,20 30,5 M50,50 Q70,30 90,10 M50,50 Q50,20 70,5 M50,50 Q20,35 5,15 M50,50 Q80,35 95,15" 
-                         stroke="currentColor" strokeWidth="1.2" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
-
-               {/* TOP FIRE - Layer 2 */}
-               <div className="absolute -top-18 sm:-top-28 left-1/2 transform -translate-x-1/2 w-60 sm:w-100 h-30 sm:h-50 opacity-25">
-                 <svg viewBox="0 0 100 50" className="w-full h-full text-red-500">
-                   <path d="M50,50 Q35,35 15,15 M50,50 Q65,35 85,15 M50,50 Q25,40 10,20 M50,50 Q75,40 90,20" 
-                         stroke="currentColor" strokeWidth="1" fill="none" className="animate-pulse" style={{animationDelay: '0.2s'}}/>
-                 </svg>
-               </div>
-
-               {/* LEFT FIRE - Enhanced */}
-               <div className="absolute -left-16 sm:-left-28 top-1/2 transform -translate-y-1/2 w-32 sm:w-56 h-64 sm:h-112 opacity-25">
-                 <svg viewBox="0 0 50 100" className="w-full h-full text-orange-500">
-                   <path d="M0,50 Q20,30 40,10 M0,50 Q20,70 40,90 M0,50 Q15,35 35,20 M0,50 Q15,65 35,80" 
-                         stroke="currentColor" strokeWidth="1" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
-
-               {/* RIGHT FIRE - Enhanced */}
-               <div className="absolute -right-16 sm:-right-28 top-1/2 transform -translate-y-1/2 w-32 sm:w-56 h-64 sm:h-112 opacity-25">
-                 <svg viewBox="0 0 50 100" className="w-full h-full text-orange-600">
-                   <path d="M50,50 Q30,30 10,10 M50,50 Q30,70 10,90 M50,50 Q35,35 15,20 M50,50 Q35,65 15,80" 
-                         stroke="currentColor" strokeWidth="1" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
-
-               {/* DIAGONAL FIRE - Enhanced */}
-               <div className="absolute -top-10 -left-10 sm:-top-16 sm:-left-16 w-20 sm:w-32 h-20 sm:h-32 opacity-18">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-orange-400">
-                   <path d="M0,50 Q25,25 50,0 M0,50 Q15,35 30,20" 
-                         stroke="currentColor" strokeWidth="0.8" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
-
-               <div className="absolute -top-10 -right-10 sm:-top-16 sm:-right-16 w-20 sm:w-32 h-20 sm:h-32 opacity-18">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-orange-500">
-                   <path d="M50,50 Q25,25 0,0 M50,50 Q35,35 20,20" 
-                         stroke="currentColor" strokeWidth="0.8" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
-
-               <div className="absolute -bottom-10 -left-10 sm:-bottom-16 sm:-left-16 w-20 sm:w-32 h-20 sm:h-32 opacity-18">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-orange-600">
-                   <path d="M0,0 Q25,25 50,50 M0,0 Q15,15 30,30" 
-                         stroke="currentColor" strokeWidth="0.8" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
-
-               <div className="absolute -bottom-10 -right-10 sm:-bottom-16 sm:-right-16 w-20 sm:w-32 h-20 sm:h-32 opacity-18">
-                 <svg viewBox="0 0 50 50" className="w-full h-full text-orange-700">
-                   <path d="M50,0 Q25,25 0,50 M50,0 Q35,15 20,30" 
-                         stroke="currentColor" strokeWidth="0.8" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
-
-               {/* LUCIOLES - Éclairs blancs animés */}
-               <div className="absolute -top-20 -left-20 w-2 h-2 bg-white rounded-full opacity-80 animate-pulse" style={{animationDelay: '0s', animationDuration: '1.5s'}}></div>
-               <div className="absolute -top-10 left-10 w-1.5 h-1.5 bg-white rounded-full opacity-60 animate-pulse" style={{animationDelay: '0.3s', animationDuration: '2s'}}></div>
-               <div className="absolute top-5 -left-15 w-1 h-1 bg-white rounded-full opacity-70 animate-pulse" style={{animationDelay: '0.8s', animationDuration: '1.2s'}}></div>
-               <div className="absolute -top-15 right-8 w-1.5 h-1.5 bg-white rounded-full opacity-50 animate-pulse" style={{animationDelay: '1.2s', animationDuration: '1.8s'}}></div>
-               <div className="absolute top-0 -right-12 w-2 h-2 bg-white rounded-full opacity-75 animate-pulse" style={{animationDelay: '0.5s', animationDuration: '1.4s'}}></div>
-               <div className="absolute top-20 -right-18 w-1 h-1 bg-white rounded-full opacity-65 animate-pulse" style={{animationDelay: '1.5s', animationDuration: '2.2s'}}></div>
-               <div className="absolute bottom-10 -left-18 w-1.5 h-1.5 bg-white rounded-full opacity-55 animate-pulse" style={{animationDelay: '0.7s', animationDuration: '1.6s'}}></div>
-               <div className="absolute -bottom-15 left-12 w-1 h-1 bg-white rounded-full opacity-70 animate-pulse" style={{animationDelay: '1.8s', animationDuration: '1.3s'}}></div>
-               <div className="absolute bottom-5 right-5 w-2 h-2 bg-white rounded-full opacity-60 animate-pulse" style={{animationDelay: '0.9s', animationDuration: '2.1s'}}></div>
-               <div className="absolute -bottom-8 -right-15 w-1.5 h-1.5 bg-white rounded-full opacity-80 animate-pulse" style={{animationDelay: '1.1s', animationDuration: '1.7s'}}></div>
-               
-               {/* Main image container */}
-               <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] xl:w-[550px] xl:h-[550px]">
-                 {/* Default image - Community gathering */}
-                 <img 
-                   src={communityGathering} 
-                   alt="Rassemblement communautaire"
-                   className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant relative z-10 transform group-hover:scale-105 transition-smooth group-hover:opacity-0"
-                 />
-                 
-                 {/* Hover image - Portrait mystique */}
-                 <img 
-                   src={heroPortrait} 
-                   alt="Portrait mystique"
-                   className="absolute inset-0 w-full h-full object-cover rounded-lg sm:rounded-xl shadow-elegant z-10 transform group-hover:scale-105 transition-smooth opacity-0 group-hover:opacity-100"
-                 />
-                 
-                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-primary/20 to-secondary/30 rounded-lg sm:rounded-xl z-20 pointer-events-none"></div>
-               </div>
-               
-               {/* BOTTOM FIRE - Enhanced */}
-               <div className="absolute -bottom-20 sm:-bottom-32 left-1/2 transform -translate-x-1/2 w-80 sm:w-128 h-32 sm:h-48 opacity-25">
-                 <svg viewBox="0 0 120 40" className="w-full h-full text-orange-500">
-                   <path d="M60,0 Q40,20 20,40 M60,0 Q80,20 100,40 M60,0 Q25,15 5,35 M60,0 Q95,15 115,35" 
-                         stroke="currentColor" strokeWidth="1" fill="none" className="animate-pulse"/>
-                 </svg>
-               </div>
+              {/* Architect Card */}
+              <div className="group relative overflow-hidden">
+                <div className="absolute -inset-2 bg-gradient-to-r from-emerald-600 via-teal-600 to-green-800 rounded-3xl blur-lg opacity-50 group-hover:opacity-100 transition-all duration-700 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                <div className="relative bg-black/50 backdrop-blur-2xl rounded-3xl p-10 border-2 border-emerald-500/30 hover:border-emerald-400/60 transition-all duration-500 group-hover:scale-105">
+                  {/* Holographic Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-transparent to-teal-500/10 rounded-3xl"></div>
+                  
+                  <div className="relative z-10 flex items-start space-x-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 bg-gradient-to-br from-emerald-400 to-green-600 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                        <Globe className="w-10 h-10 text-white" />
+                      </div>
+                    </div>
+                    
+                    <div className="flex-grow">
+                      <div className="text-3xl font-black text-emerald-400 mb-4">100€</div>
+                      
+                      <h3 className="text-2xl font-black text-white mb-3 bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent">
+                        ADHÉSION ARCHITECTE
+                      </h3>
+                      
+                      <p className="text-white/80 text-lg font-medium leading-relaxed">
+                        Territoires connectés, impact démultiplié
+                      </p>
+                      
+                      {/* Tech Details */}
+                      <div className="flex items-center space-x-4 mt-4 text-emerald-300/60 text-sm">
+                        <Network className="w-4 h-4" />
+                        <span>Réseau Global</span>
+                        <Star className="w-4 h-4" />
+                        <span>Scaling Effect</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Animated Border */}
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-emerald-500/0 via-emerald-500/40 to-emerald-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Futuristic Image Section */}
+            <div className="relative group">
+              {/* Holographic Frame */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-all duration-700 animate-pulse"></div>
+              
+              <div className="relative bg-black/20 backdrop-blur-xl rounded-3xl p-4 border border-white/30 hover:border-white/50 transition-all duration-500">
+                {/* Main image container */}
+                <div className="relative w-full h-96 lg:h-[450px] xl:h-[550px] overflow-hidden rounded-2xl">
+                  {/* Default image - Community gathering */}
+                  <img 
+                    src={communityGathering} 
+                    alt="Rassemblement communautaire"
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700 group-hover:opacity-0"
+                  />
+                  
+                  {/* Hover image - Portrait mystique */}
+                  <img 
+                    src={heroPortrait} 
+                    alt="Portrait mystique"
+                    className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700 opacity-0 group-hover:opacity-100"
+                  />
+                  
+                  {/* Holographic Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10 pointer-events-none"></div>
+                  
+                  {/* Scan Lines Effect */}
+                  <div className="absolute inset-0 bg-[linear-gradient(transparent_98%,rgba(0,255,255,0.3)_100%)] bg-[length:100%_4px] opacity-20 animate-pulse"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Revolutionary CTA */}
+          <div className="text-center">
+            <div className="group relative inline-block">
+              <div className="absolute -inset-2 bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 rounded-3xl blur-lg opacity-60 group-hover:opacity-100 transition-all duration-500 animate-pulse"></div>
+              <Button 
+                size="lg"
+                className="relative text-xl px-16 py-8 rounded-3xl bg-black/50 backdrop-blur-xl border-2 border-white/30 hover:border-white/60 text-white font-black tracking-wider hover:scale-105 transition-all duration-500 shadow-2xl"
+              >
+                <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                  ADHÉRER AU RÉSEAU
+                </span>
+                <ChevronRight className="w-6 h-6 ml-2 text-cyan-400" />
+              </Button>
             </div>
           </div>
         </div>
