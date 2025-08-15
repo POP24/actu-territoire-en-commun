@@ -27,7 +27,7 @@ const HeroSection = () => {
           alt="Arrière-plan communautaire" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-800/85 to-blue-900/90"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
@@ -121,7 +121,7 @@ const HeroSection = () => {
                         <h3 className="text-lg font-black text-gray-900 mb-2">HABITANT LOCAL</h3>
                         <div className="text-3xl font-black text-blue-600 mb-1">10€</div>
                         <div className="text-sm text-gray-600 mb-4">Prix libre (min 10€)</div>
-                        <Button variant="territorial" className="w-full font-bold py-3 rounded-xl">
+                        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl">
                           ADHÉRER
                         </Button>
                       </div>
@@ -131,7 +131,7 @@ const HeroSection = () => {
                         <h3 className="text-lg font-black text-gray-900 mb-2">ARCHITECTE RÉSEAU</h3>
                         <div className="text-3xl font-black text-orange-600 mb-1">100€</div>
                         <div className="text-sm text-gray-600 mb-4">100€ unique</div>
-                        <Button variant="national" className="w-full font-bold py-3 rounded-xl">
+                        <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl">
                           ADHÉRER
                         </Button>
                       </div>
@@ -161,9 +161,8 @@ const HeroSection = () => {
           {/* Bottom CTA */}
           <div className="text-center">
             <Button 
-              variant="territorial"
               size="lg" 
-              className="font-bold text-xl px-12 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
             >
               REJOINDRE LE RÉSEAU COMMUNES
               <ChevronRight className="w-6 h-6 ml-2" />
