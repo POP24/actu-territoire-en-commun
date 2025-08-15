@@ -141,25 +141,16 @@ const HeroSection = () => {
 
                 {/* Trésor Commun Section */}
                 <div className="mt-6">
-                  <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 rounded-xl p-6 border border-orange-400/30 backdrop-blur-sm">
-                    <h4 className="text-xl font-black text-gray-900 mb-4 text-center flex items-center justify-center gap-2">
-                      <DollarSign className="w-6 h-6 text-orange-600" />
-                      TRÉSOR COMMUN
-                      <DollarSign className="w-6 h-6 text-orange-600" />
-                    </h4>
-                    <div className="bg-white/90 rounded-lg p-5 shadow-lg">
-                      <div className="flex justify-between items-center mb-3">
-                        <span className="text-sm font-bold text-gray-700">Progression</span>
-                        <span className="text-lg font-black text-orange-600 animate-pulse">{treasureProgress}%</span>
-                      </div>
-                      <div className="relative">
-                        <Progress value={treasureProgress} className="h-4 mb-3 bg-gradient-to-r from-orange-200 to-yellow-200" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse opacity-20"></div>
-                      </div>
-                      <div className="flex justify-between text-sm font-medium">
-                        <span className="text-orange-700 font-bold">💰 650 000€ collectés</span>
-                        <span className="text-gray-700 font-bold">🎯 Objectif: 1M€</span>
-                      </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 text-center">TRÉSOR COMMUN</h4>
+                  <div className="bg-gray-100 rounded-lg p-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-sm font-medium text-gray-600">Progression</span>
+                      <span className="text-sm font-bold text-gray-900">{treasureProgress}%</span>
+                    </div>
+                    <Progress value={treasureProgress} className="h-3 mb-2" />
+                    <div className="flex justify-between text-xs text-gray-500">
+                      <span>650 000€ collectés</span>
+                      <span>Objectif: 1M€</span>
                     </div>
                   </div>
                 </div>
