@@ -9,14 +9,14 @@ import masImage from "@/assets/mas-domaine.jpg";
 
 const TypologySection = () => {
   const autresTypes = [
-    { emoji: "🌾", title: "Fermes Régénératives" },
-    { emoji: "🏛️", title: "Tiers-lieux" },
-    { emoji: "🏭", title: "Ateliers de Production" },
-    { emoji: "🌲", title: "Forêts Communes" },
-    { emoji: "🏰", title: "Patrimoines Culturels" },
-    { emoji: "💧", title: "Moulins & Ressources" },
-    { emoji: "🏘️", title: "Habitats Partagés" },
-    { emoji: "🎪", title: "Espaces Événementiels" }
+    { emoji: "🌾", title: "Fermes Régénératives", image: fermeImage },
+    { emoji: "🏛️", title: "Tiers-lieux", image: tierslieuxImage },
+    { emoji: "🏭", title: "Ateliers de Production", image: atelierImage },
+    { emoji: "🌲", title: "Forêts Communes", image: foretImage },
+    { emoji: "🏰", title: "Patrimoines Culturels", image: patrimoineImage },
+    { emoji: "💧", title: "Moulins & Ressources", image: moulinImage },
+    { emoji: "🏘️", title: "Habitats Partagés", image: masImage },
+    { emoji: "🎪", title: "Espaces Événementiels", image: campingImage }
   ];
 
   return (
@@ -25,7 +25,7 @@ const TypologySection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Titre principal */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 sm:mb-16">
-            <span className="text-foreground">🏘️ CE QU'ON</span>{" "}
+            <span className="text-foreground">CE QU'ON</span>{" "}
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">ACTIVE</span>
           </h2>
           
@@ -96,10 +96,22 @@ const TypologySection = () => {
               {autresTypes.map((type, index) => (
                 <div 
                   key={index}
-                  className="bg-gradient-card rounded-lg p-4 text-center border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-md"
+                  className="bg-gradient-card rounded-lg overflow-hidden border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-md group"
                 >
-                  <div className="text-2xl mb-2">{type.emoji}</div>
-                  <div className="text-sm font-medium text-foreground">{type.title}</div>
+                  <div className="relative h-24 overflow-hidden">
+                    <img 
+                      src={type.image} 
+                      alt={type.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div className="absolute top-2 right-2 text-lg bg-white/20 backdrop-blur-sm rounded-full w-8 h-8 flex items-center justify-center">
+                      {type.emoji}
+                    </div>
+                  </div>
+                  <div className="p-3 text-center">
+                    <div className="text-sm font-medium text-foreground">{type.title}</div>
+                  </div>
                 </div>
               ))}
             </div>
