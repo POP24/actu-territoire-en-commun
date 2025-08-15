@@ -30,56 +30,49 @@ const TypologySection = () => {
           </h2>
           
           {/* Section Focus - Campings Collectifs */}
-          <div className="mb-16">
-            <div className="text-center border-t-2 border-b-2 border-primary/30 py-8 mb-8">
-              <div className="flex items-center justify-center gap-4 mb-4">
-                <span className="text-4xl">🏕️</span>
-                <h3 className="text-2xl sm:text-3xl font-bold text-foreground">CAMPINGS COLLECTIFS</h3>
-                <span className="text-2xl">⭐</span>
-                <span className="text-xl font-semibold text-primary">FOCUS ACTUEL</span>
-                <span className="text-2xl">⭐</span>
+          <div className="mb-12">
+            <div className="text-center border-t-2 border-b-2 border-primary/30 py-6 mb-6">
+              <div className="flex items-center justify-center gap-4 mb-2">
+                <span className="text-3xl">🏕️</span>
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground">CAMPINGS COLLECTIFS</h3>
+                <span className="text-lg">⭐</span>
+                <span className="text-sm font-semibold text-primary">FOCUS ACTUEL</span>
+                <span className="text-lg">⭐</span>
+              </div>
+              <div className="text-center mt-2">
+                <span className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                  🔥 CAMPAGNE EN COURS
+                </span>
               </div>
             </div>
             
-            <div className="bg-gradient-card rounded-2xl p-8 border border-primary/20 shadow-soft">
-              <div className="relative h-64 sm:h-80 mb-6 rounded-xl overflow-hidden">
-                <img 
-                  src={campingImage} 
-                  alt="Campings Collectifs"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-6 left-6 text-white">
-                  <h4 className="text-2xl font-bold mb-2">Lieux d'accueil et d'éducation populaire</h4>
+            <div className="bg-gradient-card rounded-xl p-6 border border-primary/20 shadow-soft">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                <div className="bg-primary/10 rounded-lg p-3 text-center">
+                  <div className="text-xl font-bold text-primary">3</div>
+                  <div className="text-xs text-muted-foreground">en acquisition</div>
+                </div>
+                <div className="bg-secondary/10 rounded-lg p-3 text-center">
+                  <div className="text-xl font-bold text-secondary">12</div>
+                  <div className="text-xs text-muted-foreground">identifiés</div>
+                </div>
+                <div className="bg-accent/10 rounded-lg p-3 text-center">
+                  <div className="text-xl font-bold text-accent">✓</div>
+                  <div className="text-xs text-muted-foreground">Rentabilité prouvée</div>
                 </div>
               </div>
               
-              <div className="text-center mb-8">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
-                  <div className="bg-primary/10 rounded-lg p-4">
-                    <div className="text-2xl font-bold text-primary">3</div>
-                    <div className="text-sm text-muted-foreground">en acquisition</div>
-                  </div>
-                  <div className="bg-secondary/10 rounded-lg p-4">
-                    <div className="text-2xl font-bold text-secondary">12</div>
-                    <div className="text-sm text-muted-foreground">identifiés</div>
-                  </div>
-                  <div className="bg-accent/10 rounded-lg p-4">
-                    <div className="text-2xl font-bold text-accent">✓</div>
-                    <div className="text-sm text-muted-foreground">Rentabilité prouvée</div>
-                  </div>
-                </div>
-                
+              <div className="text-center">
                 <a 
                   href="https://lasuitedumonde.com/campings" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full font-bold text-sm hover:shadow-lg hover:scale-105 transition-all duration-300"
                 >
-                  🔥 VOIR NOS CAMPINGS EN COURS D'ACQUISITION
+                  🔥 VOIR NOS CAMPINGS EN COURS
                 </a>
                 
-                <div className="text-sm text-muted-foreground mt-4">
+                <div className="text-xs text-muted-foreground mt-2">
                   → lasuitedumonde.com/campings
                 </div>
               </div>
