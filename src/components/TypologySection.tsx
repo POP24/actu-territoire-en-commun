@@ -8,108 +8,107 @@ import moulinImage from "@/assets/moulin-lac.jpg";
 import masImage from "@/assets/mas-domaine.jpg";
 
 const TypologySection = () => {
-  const biensTypes = [
-    {
-      emoji: "🏕️",
-      title: "Campings Collectifs",
-      description: "Lieux d'accueil et d'éducation populaire",
-      image: campingImage
-    },
-    {
-      emoji: "🌾",
-      title: "Fermes Collectives", 
-      description: "Agriculture régénérative et circuits courts",
-      image: fermeImage
-    },
-    {
-      emoji: "🏛️",
-      title: "Tiers-lieux & Espaces de Coworking",
-      description: "Innovation territoriale et télétravail",
-      image: tierslieuxImage
-    },
-    {
-      emoji: "🏭",
-      title: "Espaces de Production",
-      description: "Ateliers partagés et manufacture relocalisée", 
-      image: atelierImage
-    },
-    {
-      emoji: "🌲",
-      title: "Forêts",
-      description: "Gestion forestière collective et ressources naturelles",
-      image: foretImage
-    },
-    {
-      emoji: "🏰",
-      title: "Patrimoines Culturels",
-      description: "Lieux d'art, de formation et de transmission",
-      image: patrimoineImage
-    },
-    {
-      emoji: "💧",
-      title: "Lacs & Moulins",
-      description: "Autonomie énergétique et accès aux ressources",
-      image: moulinImage
-    },
-    {
-      emoji: "🏘️",
-      title: "Mas & Domaines",
-      description: "Habitats collectifs et expérimentation sociale",
-      image: masImage
-    }
+  const autresTypes = [
+    { emoji: "🌾", title: "Fermes Régénératives" },
+    { emoji: "🏛️", title: "Tiers-lieux" },
+    { emoji: "🏭", title: "Ateliers de Production" },
+    { emoji: "🌲", title: "Forêts Communes" },
+    { emoji: "🏰", title: "Patrimoines Culturels" },
+    { emoji: "💧", title: "Moulins & Ressources" },
+    { emoji: "🏘️", title: "Habitats Partagés" },
+    { emoji: "🎪", title: "Espaces Événementiels" }
   ];
 
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
+          {/* Titre principal */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 sm:mb-16">
-            <span className="text-foreground">TYPOLOGIE DES</span>{" "}
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">BIENS</span>
+            <span className="text-foreground">🏘️ CE QU'ON</span>{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">ACTIVE</span>
           </h2>
           
-          <div className="text-center mb-8 sm:mb-12">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-foreground">Ce qu'on active :</h3>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {biensTypes.map((bien, index) => (
-              <div
-                key={index}
-                className="relative bg-gradient-card rounded-2xl shadow-soft border border-border overflow-hidden group cursor-pointer transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-2 sm:hover:-translate-y-4 hover:scale-[1.02] hover:border-primary/60 hover:ring-4 hover:ring-primary/30 hover:rotate-1"
-                style={{
-                  transformStyle: 'preserve-3d',
-                  backfaceVisibility: 'hidden',
-                  willChange: 'transform, box-shadow, border-color'
-                }}
-                onMouseEnter={(e) => {
-                  console.log('[Typology] HOVER ENTER:', bien.title);
-                  e.currentTarget.style.transform = 'translateY(-16px) scale(1.02) rotate(1deg)';
-                  e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(59, 130, 246, 0.4), 0 0 0 4px rgba(59, 130, 246, 0.3)';
-                }}
-                onMouseLeave={(e) => {
-                  console.log('[Typology] HOVER LEAVE:', bien.title);
-                  e.currentTarget.style.transform = 'translateY(0) scale(1) rotate(0deg)';
-                  e.currentTarget.style.boxShadow = '0 4px 20px -4px hsl(200 50% 50% / 0.2)';
-                }}
-              >
-                <div className="relative h-32 sm:h-40 overflow-hidden">
-                  <img 
-                    src={bien.image} 
-                    alt={bien.title}
-                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-125 group-hover:brightness-110 group-hover:contrast-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:from-primary/60 group-hover:to-transparent transition-all duration-700"></div>
-                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 text-2xl sm:text-3xl bg-white/20 backdrop-blur-sm rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center group-hover:bg-primary/30 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700">
-                    {bien.emoji}
-                  </div>
-                </div>
-                <div className="p-4 sm:p-6 text-center group-hover:bg-gradient-to-br group-hover:from-primary/5 group-hover:to-accent/5 transition-all duration-700">
-                  <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 group-hover:text-primary group-hover:scale-105 transition-all duration-500">{bien.title}</h4>
-                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed group-hover:text-foreground/80 transition-all duration-500">{bien.description}</p>
+          {/* Section Focus - Campings Collectifs */}
+          <div className="mb-16">
+            <div className="text-center border-t-2 border-b-2 border-primary/30 py-8 mb-8">
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <span className="text-4xl">🏕️</span>
+                <h3 className="text-2xl sm:text-3xl font-bold text-foreground">CAMPINGS COLLECTIFS</h3>
+                <span className="text-2xl">⭐</span>
+                <span className="text-xl font-semibold text-primary">FOCUS ACTUEL</span>
+                <span className="text-2xl">⭐</span>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-card rounded-2xl p-8 border border-primary/20 shadow-soft">
+              <div className="relative h-64 sm:h-80 mb-6 rounded-xl overflow-hidden">
+                <img 
+                  src={campingImage} 
+                  alt="Campings Collectifs"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <h4 className="text-2xl font-bold mb-2">Lieux d'accueil et d'éducation populaire</h4>
                 </div>
               </div>
-            ))}
+              
+              <div className="text-center mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+                  <div className="bg-primary/10 rounded-lg p-4">
+                    <div className="text-2xl font-bold text-primary">3</div>
+                    <div className="text-sm text-muted-foreground">en acquisition</div>
+                  </div>
+                  <div className="bg-secondary/10 rounded-lg p-4">
+                    <div className="text-2xl font-bold text-secondary">12</div>
+                    <div className="text-sm text-muted-foreground">identifiés</div>
+                  </div>
+                  <div className="bg-accent/10 rounded-lg p-4">
+                    <div className="text-2xl font-bold text-accent">✓</div>
+                    <div className="text-sm text-muted-foreground">Rentabilité prouvée</div>
+                  </div>
+                </div>
+                
+                <a 
+                  href="https://lasuitedumonde.com/campings" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
+                >
+                  🔥 VOIR NOS CAMPINGS EN COURS D'ACQUISITION
+                </a>
+                
+                <div className="text-sm text-muted-foreground mt-4">
+                  → lasuitedumonde.com/campings
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Section Autres développements */}
+          <div className="border-t-2 border-primary/30 pt-12">
+            <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
+              AUSSI EN DÉVELOPPEMENT :
+            </h3>
+            
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+              {autresTypes.map((type, index) => (
+                <div 
+                  key={index}
+                  className="bg-gradient-card rounded-lg p-4 text-center border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-md"
+                >
+                  <div className="text-2xl mb-2">{type.emoji}</div>
+                  <div className="text-sm font-medium text-foreground">{type.title}</div>
+                </div>
+              ))}
+            </div>
+            
+            <div className="text-center">
+              <button className="bg-gradient-to-r from-accent to-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+                PROPOSER UN LIEU
+              </button>
+            </div>
           </div>
         </div>
       </div>
