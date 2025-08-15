@@ -8,8 +8,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 15% 95%;
-    --foreground: 215 25% 15%;
+    --background: 220 20% 92%;
+    --foreground: 215 25% 12%;
 
     --card: 220 15% 98%;
     --card-foreground: 215 25% 15%;
@@ -17,16 +17,16 @@ All colors MUST be HSL.
     --popover: 220 15% 98%;
     --popover-foreground: 215 25% 15%;
 
-    --primary: 200 95% 45%;
+    --primary: 220 70% 35%;
     --primary-foreground: 220 15% 98%;
 
-    --secondary: 195 85% 55%;
+    --secondary: 220 60% 25%;
     --secondary-foreground: 220 15% 98%;
 
-    --muted: 210 25% 88%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 220 15% 85%;
+    --muted-foreground: 220 15% 40%;
 
-    --accent: 185 75% 65%;
+    --accent: 220 50% 30%;
     --accent-foreground: 215 25% 15%;
 
     /* Custom gradients and colors for the communes theme */
