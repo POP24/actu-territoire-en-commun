@@ -27,7 +27,7 @@ const HeroSection = () => {
           alt="Arrière-plan communautaire" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-800/85 to-blue-900/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/85 to-black/90"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
@@ -36,9 +36,9 @@ const HeroSection = () => {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
-              RÉSEAU DES <span className="text-blue-300">COMMUNES</span>
+              RÉSEAU DES <span className="text-primary">COMMUNES</span>
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-100 mb-12">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-glow mb-12">
               SYSTÈME D'ORGANISATION LOCAL
             </h2>
             
@@ -48,7 +48,7 @@ const HeroSection = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
                 <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-sm mb-1">LIEUX COMMUNS</div>
-                  <div className="text-3xl font-black text-blue-300">1000+</div>
+                  <div className="text-3xl font-black text-primary">1000+</div>
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-sm mb-1">TRÉSOR COLLECTIF</div>
@@ -56,7 +56,7 @@ const HeroSection = () => {
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-sm mb-1">GOUVERNANCE</div>
-                  <div className="text-lg font-bold text-blue-300">LOCALE/GLOBAL</div>
+                  <div className="text-lg font-bold text-primary">LOCALE/GLOBAL</div>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ const HeroSection = () => {
             
             {/* Left: Interactive Real Map */}
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-blue-200/20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-white/20">
                 <h3 className="text-white font-bold text-lg mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
                 
                 {/* Real France Map - Full country view */}
@@ -119,9 +119,9 @@ const HeroSection = () => {
                       {/* Habitant Local */}
                       <div className="text-center">
                         <h3 className="text-lg font-black text-gray-900 mb-2">HABITANT LOCAL</h3>
-                        <div className="text-3xl font-black text-blue-600 mb-1">10€</div>
+                        <div className="text-3xl font-black text-primary mb-1">10€</div>
                         <div className="text-sm text-gray-600 mb-4">Prix libre (min 10€)</div>
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl">
+                        <Button className="w-full bg-gradient-territorial text-white font-bold py-3 rounded-xl hover:opacity-90">
                           ADHÉRER
                         </Button>
                       </div>
@@ -131,7 +131,7 @@ const HeroSection = () => {
                         <h3 className="text-lg font-black text-gray-900 mb-2">ARCHITECTE RÉSEAU</h3>
                         <div className="text-3xl font-black text-orange-600 mb-1">100€</div>
                         <div className="text-sm text-gray-600 mb-4">100€ unique</div>
-                        <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl">
+                        <Button className="w-full bg-gradient-national text-white font-bold py-3 rounded-xl hover:opacity-90">
                           ADHÉRER
                         </Button>
                       </div>
@@ -162,12 +162,12 @@ const HeroSection = () => {
           <div className="text-center">
             <Button 
               size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="bg-gradient-territorial text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-90"
             >
               REJOINDRE LE RÉSEAU COMMUNES
               <ChevronRight className="w-6 h-6 ml-2" />
             </Button>
-            <p className="text-blue-100 mt-4 text-lg">
+            <p className="text-primary-glow mt-4 text-lg">
               Ensemble, créons les communes de demain
             </p>
           </div>

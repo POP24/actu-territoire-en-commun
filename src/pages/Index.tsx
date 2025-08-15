@@ -7,6 +7,7 @@ import PathwaysSection from "@/components/PathwaysSection";
 import GovernanceSection from "@/components/GovernanceSection";
 import FinancingSection from "@/components/FinancingSection";
 import TypologySection from "@/components/TypologySection";
+import CampagneSection from "@/components/CampagneSection";
 
 
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ const Index = () => {
       />
       <Header />
       <HeroSection />
+      <CampagneSection />
       <ObjectiveSection />
       <PathwaysSection />
       <GovernanceSection />
