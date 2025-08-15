@@ -36,9 +36,9 @@ const HeroSection = () => {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
-              RÉSEAU DES <span className="text-primary">COMMUNES</span>
+              RÉSEAU DES <span className="text-blue-300">COMMUNES</span>
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-12">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-100 mb-12">
               SYSTÈME D'ORGANISATION LOCAL
             </h2>
             
@@ -48,7 +48,7 @@ const HeroSection = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
                 <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-sm mb-1">LIEUX COMMUNS</div>
-                  <div className="text-3xl font-black text-primary">1000+</div>
+                  <div className="text-3xl font-black text-blue-300">1000+</div>
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-sm mb-1">TRÉSOR COLLECTIF</div>
@@ -56,7 +56,7 @@ const HeroSection = () => {
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-sm mb-1">GOUVERNANCE</div>
-                  <div className="text-lg font-bold text-primary">LOCALE/GLOBAL</div>
+                  <div className="text-lg font-bold text-blue-300">LOCALE/GLOBAL</div>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ const HeroSection = () => {
             
             {/* Left: Interactive Real Map */}
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-blue-200/20">
                 <h3 className="text-white font-bold text-lg mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
                 
                 {/* Real France Map - Full country view */}
@@ -119,9 +119,9 @@ const HeroSection = () => {
                       {/* Habitant Local */}
                       <div className="text-center">
                         <h3 className="text-lg font-black text-gray-900 mb-2">HABITANT LOCAL</h3>
-                        <div className="text-3xl font-black text-primary mb-1">10€</div>
+                        <div className="text-3xl font-black text-blue-600 mb-1">10€</div>
                         <div className="text-sm text-gray-600 mb-4">Prix libre (min 10€)</div>
-                        <Button className="w-full bg-gradient-territorial text-white font-bold py-3 rounded-xl hover:opacity-90">
+                        <Button variant="territorial" className="w-full font-bold py-3 rounded-xl">
                           ADHÉRER
                         </Button>
                       </div>
@@ -131,7 +131,7 @@ const HeroSection = () => {
                         <h3 className="text-lg font-black text-gray-900 mb-2">ARCHITECTE RÉSEAU</h3>
                         <div className="text-3xl font-black text-orange-600 mb-1">100€</div>
                         <div className="text-sm text-gray-600 mb-4">100€ unique</div>
-                        <Button className="w-full bg-gradient-national text-white font-bold py-3 rounded-xl hover:opacity-90">
+                        <Button variant="national" className="w-full font-bold py-3 rounded-xl">
                           ADHÉRER
                         </Button>
                       </div>
@@ -161,13 +161,14 @@ const HeroSection = () => {
           {/* Bottom CTA */}
           <div className="text-center">
             <Button 
+              variant="territorial"
               size="lg" 
-              className="bg-gradient-territorial text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-90"
+              className="font-bold text-xl px-12 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
             >
               REJOINDRE LE RÉSEAU COMMUNES
               <ChevronRight className="w-6 h-6 ml-2" />
             </Button>
-            <p className="text-white mt-4 text-lg font-medium">
+            <p className="text-blue-100 mt-4 text-lg">
               Ensemble, créons les communes de demain
             </p>
           </div>
