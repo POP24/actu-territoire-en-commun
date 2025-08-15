@@ -30,7 +30,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-800/85 to-blue-900/90"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-20 sm:py-24">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
         <div className="max-w-7xl mx-auto">
           
           {/* Header Section */}
@@ -42,25 +42,21 @@ const HeroSection = () => {
               SYSTÈME D'ORGANISATION LOCAL
             </h2>
             
-            {/* Top Stats - 2 levels */}
-            <div className="max-w-4xl mx-auto">
-              {/* First Level */}
-              <div className="flex flex-wrap justify-center items-center gap-6 mb-4">
-                <div className="bg-white/15 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
-                  <span className="text-2xl sm:text-3xl font-black text-blue-300">(1000)</span>
-                  <span className="text-white font-bold text-lg ml-2">LIEUX COMMUNS</span>
+            {/* Top Stats - 2 levels improved */}
+            <div className="max-w-5xl mx-auto">
+              {/* First Level - Main Categories */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+                <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
+                  <div className="text-white font-bold text-sm mb-1">LIEUX COMMUNS</div>
+                  <div className="text-3xl font-black text-blue-300">1000+</div>
                 </div>
-                <div className="bg-white/15 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
-                  <span className="text-2xl sm:text-3xl font-black text-orange-400">(1M€)</span>
-                  <span className="text-white font-bold text-lg ml-2">TRÉSOR COMMUN</span>
+                <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
+                  <div className="text-white font-bold text-sm mb-1">TRÉSOR COLLECTIF</div>
+                  <div className="text-3xl font-black text-orange-400">1M€</div>
                 </div>
-              </div>
-              
-              {/* Second Level */}
-              <div className="flex justify-center">
-                <div className="bg-white/10 backdrop-blur-sm px-8 py-2 rounded-lg border border-white/10">
-                  <span className="text-white font-medium">CO-GOUVERNANCE</span>
-                  <span className="text-blue-300 font-bold ml-2">(par niveau)</span>
+                <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
+                  <div className="text-white font-bold text-sm mb-1">GOUVERNANCE</div>
+                  <div className="text-lg font-bold text-blue-300">LOCALE/GLOBAL</div>
                 </div>
               </div>
             </div>
@@ -74,23 +70,23 @@ const HeroSection = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-blue-200/20">
                 <h3 className="text-white font-bold text-lg mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
                 
-                {/* Real France Map with OpenStreetMap style */}
+                {/* Real France Map - Full country view */}
                 <div className="relative w-full h-80 bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=1.6845703125000002%2C46.042735653492995%2C2.4169921875000004%2C46.40756136677045&amp;layer=mapnik&amp;marker=46.2276%2C2.0508"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5%2C41.3%2C9.7%2C51.2&amp;layer=mapnik"
                     className="w-full h-full border-0 opacity-80"
-                    title="Carte de la Dordogne"
+                    title="Carte de France"
                   ></iframe>
                   
                   {/* Overlay with animated points */}
                   <div className="absolute inset-0 pointer-events-none">
-                    {/* Points lumineux animés */}
+                    {/* Points lumineux sur la France */}
                     {[
-                      { top: '45%', left: '30%', delay: 0 },
-                      { top: '55%', left: '45%', delay: 500 },
-                      { top: '40%', left: '60%', delay: 1000 },
-                      { top: '50%', left: '35%', delay: 1500 },
-                      { top: '60%', left: '55%', delay: 2000 }
+                      { top: '65%', left: '25%', delay: 0 },    // Sud-Ouest (Dordogne)
+                      { top: '45%', left: '35%', delay: 500 },  // Centre
+                      { top: '30%', left: '45%', delay: 1000 }, // Nord-Est
+                      { top: '70%', left: '60%', delay: 1500 }, // Sud-Est
+                      { top: '25%', left: '25%', delay: 2000 }  // Nord-Ouest
                     ].map((point, index) => (
                       <div
                         key={index}
@@ -107,7 +103,7 @@ const HeroSection = () => {
                   </div>
                   
                   <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm">
-                    <span className="text-orange-400">●</span> Dordogne - 5 projets actifs
+                    <span className="text-orange-400">●</span> France - 5 territoires pionniers
                   </div>
                 </div>
               </div>
