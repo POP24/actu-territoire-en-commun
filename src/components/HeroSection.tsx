@@ -38,7 +38,7 @@ const HeroSection = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
               RÉSEAU DES <span className="text-primary">COMMUNES</span>
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-glow mb-12">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-12">
               SYSTÈME D'ORGANISATION LOCAL
             </h2>
             
@@ -167,7 +167,7 @@ const HeroSection = () => {
               REJOINDRE LE RÉSEAU COMMUNES
               <ChevronRight className="w-6 h-6 ml-2" />
             </Button>
-            <p className="text-primary-glow mt-4 text-lg">
+            <p className="text-white mt-4 text-lg font-medium">
               Ensemble, créons les communes de demain
             </p>
           </div>
