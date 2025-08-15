@@ -7,7 +7,7 @@ const Logo = () => {
         <img 
           src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" 
           alt="Logo" 
-          className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg shadow-sm" 
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg shadow-sm" 
         />
       </Link>
       <div className="flex flex-col">

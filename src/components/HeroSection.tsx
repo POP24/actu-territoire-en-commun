@@ -30,85 +30,83 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-800/85 to-blue-900/90"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-12 sm:py-16">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-20 sm:py-24">
         <div className="max-w-7xl mx-auto">
           
           {/* Header Section */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-4 leading-tight">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
               RÉSEAU DES <span className="text-blue-300">COMMUNES</span>
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-100 mb-8">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-100 mb-12">
               SYSTÈME D'ORGANISATION LOCAL
             </h2>
             
-            {/* Top Stats */}
-            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 text-white font-bold text-sm sm:text-base mb-12">
-              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <span className="text-blue-300">(1000)</span> LIEUX COMMUNS
-              </span>
-              <span className="hidden sm:inline text-blue-300">━</span>
-              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                CO-GOUVERNANCE <span className="text-blue-300">(par niveau)</span>
-              </span>
-              <span className="hidden sm:inline text-blue-300">━</span>
-              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <span className="text-orange-400">(1M€)</span> TRÉSOR COMMUN
-              </span>
+            {/* Top Stats - 2 levels */}
+            <div className="max-w-4xl mx-auto">
+              {/* First Level */}
+              <div className="flex flex-wrap justify-center items-center gap-6 mb-4">
+                <div className="bg-white/15 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
+                  <span className="text-2xl sm:text-3xl font-black text-blue-300">(1000)</span>
+                  <span className="text-white font-bold text-lg ml-2">LIEUX COMMUNS</span>
+                </div>
+                <div className="bg-white/15 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
+                  <span className="text-2xl sm:text-3xl font-black text-orange-400">(1M€)</span>
+                  <span className="text-white font-bold text-lg ml-2">TRÉSOR COMMUN</span>
+                </div>
+              </div>
+              
+              {/* Second Level */}
+              <div className="flex justify-center">
+                <div className="bg-white/10 backdrop-blur-sm px-8 py-2 rounded-lg border border-white/10">
+                  <span className="text-white font-medium">CO-GOUVERNANCE</span>
+                  <span className="text-blue-300 font-bold ml-2">(par niveau)</span>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
             
-            {/* Left: Interactive France Map */}
+            {/* Left: Interactive Real Map */}
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-blue-200/20">
                 <h3 className="text-white font-bold text-lg mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
                 
-                {/* Simple France SVG Map */}
-                <div className="relative w-full h-80 bg-blue-900/30 rounded-2xl flex items-center justify-center overflow-hidden">
-                  <svg viewBox="0 0 400 400" className="w-full h-full">
-                    {/* Simplified France outline */}
-                    <path
-                      d="M80 120 L90 80 L120 70 L160 75 L190 80 L220 85 L250 90 L280 100 L300 120 L310 140 L315 160 L310 180 L300 200 L290 220 L280 240 L270 260 L250 280 L220 290 L190 295 L160 290 L130 285 L100 270 L85 250 L75 220 L70 190 L75 160 L80 120 Z"
-                      fill="rgba(59, 130, 246, 0.3)"
-                      stroke="rgba(147, 197, 253, 0.8)"
-                      strokeWidth="2"
-                      className="transition-all duration-300 hover:fill-blue-400/40"
-                    />
-                    
-                    {/* Points lumineux en Dordogne (Sud-Ouest) */}
-                    {[
-                      { x: 140, y: 220, delay: 0 },
-                      { x: 160, y: 235, delay: 500 },
-                      { x: 180, y: 210, delay: 1000 },
-                      { x: 155, y: 200, delay: 1500 },
-                      { x: 170, y: 245, delay: 2000 }
-                    ].map((point, index) => (
-                      <circle
-                        key={index}
-                        cx={point.x}
-                        cy={point.y}
-                        r="4"
-                        fill="#f97316"
-                        className={`transition-all duration-1000 ${
-                          animatedPoints.includes(index + 1) 
-                            ? 'opacity-100 animate-pulse' 
-                            : 'opacity-0'
-                        }`}
-                      >
-                        <animate
-                          attributeName="r"
-                          values="4;8;4"
-                          dur="2s"
-                          repeatCount="indefinite"
-                        />
-                      </circle>
-                    ))}
-                  </svg>
+                {/* Real France Map with OpenStreetMap style */}
+                <div className="relative w-full h-80 bg-gray-900 rounded-2xl overflow-hidden">
+                  <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=1.6845703125000002%2C46.042735653492995%2C2.4169921875000004%2C46.40756136677045&amp;layer=mapnik&amp;marker=46.2276%2C2.0508"
+                    className="w-full h-full border-0 opacity-80"
+                    title="Carte de la Dordogne"
+                  ></iframe>
                   
-                  <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-sm">
+                  {/* Overlay with animated points */}
+                  <div className="absolute inset-0 pointer-events-none">
+                    {/* Points lumineux animés */}
+                    {[
+                      { top: '45%', left: '30%', delay: 0 },
+                      { top: '55%', left: '45%', delay: 500 },
+                      { top: '40%', left: '60%', delay: 1000 },
+                      { top: '50%', left: '35%', delay: 1500 },
+                      { top: '60%', left: '55%', delay: 2000 }
+                    ].map((point, index) => (
+                      <div
+                        key={index}
+                        className={`absolute w-3 h-3 bg-orange-500 rounded-full shadow-lg transition-all duration-1000 ${
+                          animatedPoints.includes(index + 1) 
+                            ? 'opacity-100 animate-pulse scale-100' 
+                            : 'opacity-0 scale-50'
+                        }`}
+                        style={{ top: point.top, left: point.left }}
+                      >
+                        <div className="absolute inset-0 bg-orange-400 rounded-full animate-ping"></div>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm">
                     <span className="text-orange-400">●</span> Dordogne - 5 projets actifs
                   </div>
                 </div>
