@@ -8,31 +8,31 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 8% 8%;
-    --foreground: 210 20% 85%;
+    --background: 220 20% 92%;
+    --foreground: 215 25% 12%;
 
-    --card: 220 10% 12%;
-    --card-foreground: 210 15% 80%;
+    --card: 220 15% 98%;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 220 12% 10%;
-    --popover-foreground: 210 15% 85%;
+    --popover: 220 15% 98%;
+    --popover-foreground: 215 25% 15%;
 
     --primary: 220 70% 35%;
     --primary-foreground: 220 15% 98%;
 
-    --secondary: 220 15% 18%;
-    --secondary-foreground: 210 15% 85%;
+    --secondary: 220 60% 25%;
+    --secondary-foreground: 220 15% 98%;
 
-    --muted: 220 10% 15%;
-    --muted-foreground: 220 8% 55%;
+    --muted: 220 15% 85%;
+    --muted-foreground: 220 15% 40%;
 
-    --accent: 220 12% 22%;
-    --accent-foreground: 210 15% 85%;
+    --accent: 220 50% 30%;
+    --accent-foreground: 215 25% 15%;
 
     /* Custom gradients and colors for the communes theme */
     --gradient-primary: linear-gradient(135deg, hsl(200 95% 45%), hsl(185 75% 65%));
     --gradient-hero: linear-gradient(135deg, hsl(200 95% 45%) 0%, hsl(185 75% 65%) 50%, hsl(220 60% 75%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 10% 12%), hsl(220 8% 15%));
+    --gradient-card: linear-gradient(145deg, hsl(220 15% 98%), hsl(210 25% 95%));
     
     /* Design system gradients - Orange CTA */
     --gradient-cta: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
@@ -63,9 +63,9 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 8% 25%;
-    --input: 220 10% 18%;
-    --ring: 220 70% 35%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
 
