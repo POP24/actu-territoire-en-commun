@@ -139,8 +139,13 @@ const HeroSection = () => {
                   </div>
                 </div>
 
+                {/* Objectif Banner */}
+                <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center py-2 px-4 rounded-t-lg font-bold text-sm tracking-wider">
+                  OBJECTIF
+                </div>
+                
                 {/* Trésor Commun Section */}
-                <div className="mt-6">
+                <div className="bg-gray-100 rounded-b-lg rounded-t-none p-4">
                   <h4 className="text-lg font-bold text-gray-900 mb-3 text-center">TRÉSOR COMMUN</h4>
                   <div className="bg-gray-100 rounded-lg p-4">
                     <div className="flex justify-between items-center mb-2">
