@@ -69,15 +69,17 @@ const ObjectiveSection = () => {
             {/* RELIONS-NOUS Section */}
             <div className="flex justify-center py-12 sm:py-16">
               <div className="text-center space-y-4 sm:space-y-6 max-w-4xl mx-auto px-4 sm:px-6">
-                <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
                   <span className="bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 bg-clip-text text-transparent">RELIONS</span> - NOUS.
                 </h3>
-                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-medium">
-                  Lieux, Cagnottes, Votes.
-                </p>
-                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-2xl mx-auto">
-                  On relie ce qui existe déjà pour faire basculer les territoires en autonomie.
-                </p>
+                <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-6 sm:p-8 max-w-2xl mx-auto">
+                  <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-medium mb-4">
+                    Lieux, Cagnottes, Votes.
+                  </p>
+                  <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground">
+                    On relie ce qui existe déjà pour faire basculer les territoires en autonomie.
+                  </p>
+                </div>
                 
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-6 sm:mt-8">
                   <button className="w-full sm:w-auto bg-blue-700 hover:bg-blue-800 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base">
@@ -94,9 +96,6 @@ const ObjectiveSection = () => {
                 </div>
               </div>
             </div>
-            
-            {/* Entracte bleu */}
-            <div className="w-full h-16 sm:h-20 bg-primary/10 mt-8 sm:mt-12"></div>
           </div>
         </div>
       </div>
