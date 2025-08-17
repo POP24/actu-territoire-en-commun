@@ -1,11 +1,18 @@
+import { useNavigate } from "react-router-dom";
+
 const Logo = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const navigate = useNavigate();
+  
+  const goToHome = () => {
+    navigate("/");
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
   };
 
   return (
     <div className="flex items-center space-x-4">
-      <button onClick={scrollToTop} className="transition-transform hover:scale-105">
+      <button onClick={goToHome} className="transition-transform hover:scale-105">
         <img 
           src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" 
           alt="Logo" 
@@ -13,7 +20,7 @@ const Logo = () => {
         />
       </button>
       <div className="flex flex-col">
-        <button onClick={scrollToTop} className="transition-transform hover:scale-105">
+        <button onClick={goToHome} className="transition-transform hover:scale-105">
           <img 
             src="/lovable-uploads/c46d5cc1-ebb1-4b65-bce3-cb7de3d3223a.png" 
             alt="La Suite du Monde" 
