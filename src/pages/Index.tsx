@@ -23,10 +23,10 @@ const Index = () => {
       <Header />
       <HeroSection />
       <ObjectiveSection />
-      <FinancingSection />
+      <LaunchpadSection />
       <PathwaysSection />
       <GovernanceSection />
-      <LaunchpadSection />
+      <FinancingSection />
       <MaillageTerritorialSection />
       <TypologySection />
       <FAQSection />
