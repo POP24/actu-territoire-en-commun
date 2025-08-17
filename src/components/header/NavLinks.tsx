@@ -62,7 +62,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
             to={item.to}
             onClick={onLinkClick}
             className={({ isActive }) => `${baseClasses} ${hoverClasses} ${
-              isActive 
+              isActive && item.to !== "/" 
                 ? "text-foreground border-b-2 border-blue-700" 
                 : "text-muted-foreground hover:text-foreground"
             }`}
