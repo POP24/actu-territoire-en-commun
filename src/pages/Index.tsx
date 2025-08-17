@@ -24,10 +24,10 @@ const Index = () => {
       <HeroSection />
       <ObjectiveSection />
       <LaunchpadSection />
+      <MaillageTerritorialSection />
       <PathwaysSection />
       <GovernanceSection />
       <FinancingSection />
-      <MaillageTerritorialSection />
       <TypologySection />
       <FAQSection />
       <Footer />
