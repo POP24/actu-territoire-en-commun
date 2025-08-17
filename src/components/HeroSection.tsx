@@ -92,7 +92,7 @@ const HeroSection = () => {
                   ></iframe>
                   
                   <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm">
-                    <span className="text-orange-400">●</span> Dordogne - Territoire pionnier
+                    <span className="text-orange-400">📍</span> Dordogne - Territoire pionnier
                   </div>
                 </div>
               </div>
