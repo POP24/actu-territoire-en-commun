@@ -114,7 +114,7 @@ const TypologySection = () => {
             </div>
             
             <div className="text-center">
-              <button className="bg-gradient-to-r from-accent to-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+              <button className="bg-gradient-to-r from-accent to-secondary text-white px-4 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
                 PROPOSER UN LIEU
               </button>
             </div>
