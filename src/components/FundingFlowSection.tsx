@@ -1,17 +1,30 @@
 const FundingFlowSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-cyan-400 via-blue-500 to-blue-600">
-      <div className="container mx-auto px-6">
+    <section className="py-20 relative overflow-hidden">
+      {/* Modern Tech Background */}
+      <div className="absolute inset-0 z-0">
+        {/* Base black background */}
+        <div className="absolute inset-0 bg-black"></div>
+        
+        {/* Gradient overlays inspired by the reference */}
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-600/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-tl from-cyan-400/10 via-transparent to-transparent"></div>
+        
+        {/* Additional tech glow effects */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              FLUX DE <span className="text-cyan-200">FINANCEMENT</span>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-white">FLUX DE</span>{" "}
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">FINANCEMENT</span>
             </h2>
-            <p className="text-xl text-cyan-100 mb-4">
-              Votre adhésion construit le trésor commun.
-            </p>
-            <p className="text-lg text-cyan-200">
+            <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
+              Votre adhésion construit le trésor commun.<br />
               Investir, réinvestir, libérer des terres ensemble.
             </p>
           </div>

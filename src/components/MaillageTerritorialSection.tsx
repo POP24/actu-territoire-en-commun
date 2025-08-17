@@ -54,7 +54,7 @@ const MaillageTerritorialSection = () => {
       emoji: "💧",
       subtitle: "Eau + Loisirs",
       badge: "RESSOURCE",
-      metric: "Eau pure",
+      metric: "Préservation des écosystèmes",
       image: "/lovable-uploads/26270418-4447-4d0d-89c3-3b28ff3cfc50.png", 
       type: "RESSOURCES"
     },
