@@ -105,8 +105,8 @@ const HeroSection = () => {
                 <div className="text-center mb-6">
                   <div className="border-b-2 border-gray-200 pb-4 mb-6">
                     <div className="grid grid-cols-2 gap-8">
-                      {/* Habitant Local */}
-                      <div className="text-center">
+                      {/* Usager Local */}
+                      <div className="text-center hover-scale cursor-pointer">
                         <h3 className="text-lg font-black text-gray-900 mb-2">USAGER LOCAL</h3>
                         <div className="text-3xl font-black text-blue-700 mb-1">10€</div>
                         <div className="text-sm text-gray-600 mb-4">Prix libre (min 10€)</div>
@@ -116,7 +116,7 @@ const HeroSection = () => {
                       </div>
                       
                       {/* Architecte Réseau */}
-                      <div className="text-center border-l-2 border-gray-200 pl-8">
+                      <div className="text-center border-l-2 border-gray-200 pl-8 hover-scale cursor-pointer">
                         <h3 className="text-lg font-black text-gray-900 mb-2">ARCHITECTE RÉSEAU</h3>
                         <div className="text-3xl font-black text-orange-600 mb-1">100€</div>
                         <div className="text-sm text-gray-600 mb-4">100€ unique</div>
