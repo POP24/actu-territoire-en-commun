@@ -69,12 +69,12 @@ const LaunchpadSection = () => {
                   </div>
                   
                   <button className="w-full bg-gradient-to-r from-primary to-secondary text-white py-3 rounded-lg font-semibold">
-                    Invest Now
+                    INVESTIR
                   </button>
                 </div>
                 
-                <p className="text-gray-300 text-sm">Crowdfund real-world assets like farms and shared spaces.</p>
-                <p className="text-gray-400 text-xs">Empower collective ownership with sustainable returns.</p>
+                <p className="text-gray-300 text-sm">Achetons les terres de notre émancipation</p>
+                <p className="text-gray-400 text-xs">Propriété collective avec rendements durables.</p>
               </div>
             </div>
 
@@ -89,7 +89,7 @@ const LaunchpadSection = () => {
                 {/* Mock interface for Membership */}
                 <div className="bg-gray-900 rounded-xl p-4 mb-4 border border-cyan-500/30">
                   <div className="flex justify-between items-center mb-4">
-                    <h4 className="font-semibold text-white">🌐 NFT MEMBERSHIP</h4>
+                    <h4 className="font-semibold text-white">🌐 ADHÉSION ASSOCIATIVE</h4>
                     <div className="text-xs text-cyan-400">⚡ ACTIVE</div>
                   </div>
                   
@@ -108,24 +108,18 @@ const LaunchpadSection = () => {
                     </div>
                   </div>
                   
-                  <div className="flex justify-between items-center mb-4">
-                    <div>
-                      <div className="text-2xl font-bold text-cyan-400">67%</div>
-                      <div className="text-xs text-gray-400">MINTED</div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-sm font-semibold text-white">1,247 / 10,000</div>
-                      <div className="text-xs text-gray-400">Members</div>
-                    </div>
+                  <div className="text-right mb-4">
+                    <div className="text-sm font-semibold text-white">1,247 / 10,000</div>
+                    <div className="text-xs text-gray-400">Members</div>
                   </div>
                   
                   <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 rounded-lg font-semibold">
-                    Join Network
+                    ADHÉRER
                   </button>
                 </div>
                 
-                <p className="text-gray-300 text-sm">Onboard pioneers with tokenized memberships.</p>
-                <p className="text-gray-400 text-xs">Unlock governance, perks, and collective resilience.</p>
+                <p className="text-gray-300 text-sm">Participez aux décisions de votre territoire</p>
+                <p className="text-gray-400 text-xs">Gouvernance, avantages et résilience collective.</p>
               </div>
             </div>
           </div>
