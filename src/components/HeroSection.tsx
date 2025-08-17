@@ -27,7 +27,7 @@ const HeroSection = () => {
           alt="Méga feu dramatique" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/60 to-black/90"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
