@@ -145,4 +145,8 @@ All colors MUST be HSL.
   .btn-primary {
     @apply font-medium text-sm sm:text-base text-white bg-primary hover:bg-primary/90;
   }
+  
+  .hover-scale {
+    @apply transition-transform duration-200 ease-out hover:scale-105;
+  }
 }
