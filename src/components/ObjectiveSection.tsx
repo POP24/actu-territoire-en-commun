@@ -3,19 +3,19 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const ObjectiveSection = () => {
   return (
-    <section className="py-4 sm:py-6 bg-background">
+    <section className="pt-16 sm:pt-20 pb-4 sm:pb-6 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in">
             <span className="text-foreground">L'HEURE</span>{" "}
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">EST VENUE</span>
           </h2>
           
-          <div className="text-center mb-12 sm:mb-16">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-center justify-items-center max-w-6xl mx-auto mb-6 sm:mb-8">
               
               {/* LES LIEUX EXISTENT */}
-              <div className="flex justify-center">
+              <div className="flex justify-center animate-scale-in">
                 <div className="w-64 h-64 sm:w-72 sm:h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
                   <div className="text-3xl sm:text-4xl mb-3">⚡</div>
                   <h3 className="text-base sm:text-lg font-bold text-green-700 dark:text-green-300 mb-2 tracking-wide text-center">LES LIEUX EXISTENT</h3>
@@ -32,7 +32,7 @@ const ObjectiveSection = () => {
               </div>
 
               {/* LES OUTILS SONT PRÊTS */}
-              <div className="flex justify-center">
+              <div className="flex justify-center animate-scale-in">
                 <div className="w-64 h-64 sm:w-72 sm:h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-blue-400/60 hover:ring-4 hover:ring-blue-400/30 cursor-pointer">
                   <div className="text-3xl sm:text-4xl mb-3">⚙️</div>
                   <h3 className="text-base sm:text-lg font-bold text-blue-700 dark:text-blue-300 mb-2 tracking-wide text-center">OUTILS PRÊTS</h3>
@@ -49,7 +49,7 @@ const ObjectiveSection = () => {
               </div>
 
               {/* LES GENS SONT LÀ */}
-              <div className="flex justify-center">
+              <div className="flex justify-center animate-scale-in">
                 <div className="w-64 h-64 sm:w-72 sm:h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-purple-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-purple-400/60 hover:ring-4 hover:ring-purple-400/30 cursor-pointer">
                   <div className="text-3xl sm:text-4xl mb-3">✊</div>
                   <h3 className="text-base sm:text-lg font-bold text-purple-700 dark:text-purple-300 mb-2 tracking-wide text-center">LES GENS SONT LÀ</h3>
@@ -67,7 +67,7 @@ const ObjectiveSection = () => {
             </div>
 
             {/* RELIONS-NOUS Section */}
-            <div className="flex justify-center py-4 sm:py-6">
+            <div className="flex justify-center py-4 sm:py-6 animate-fade-in">
               <div className="text-center space-y-4 sm:space-y-6 max-w-4xl mx-auto px-4 sm:px-6">
                 <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
                   <span className="bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 bg-clip-text text-transparent">RELIONS</span> - NOUS.
