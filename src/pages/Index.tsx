@@ -7,6 +7,7 @@ import PathwaysSection from "@/components/PathwaysSection";
 import GovernanceSection from "@/components/GovernanceSection";
 import FinancingSection from "@/components/FinancingSection";
 import LaunchpadSection from "@/components/LaunchpadSection";
+import MaillageTerritorialSection from "@/components/MaillageTerritorialSection";
 import TypologySection from "@/components/TypologySection";
 
 
@@ -25,6 +26,7 @@ const Index = () => {
       <PathwaysSection />
       <GovernanceSection />
       <LaunchpadSection />
+      <MaillageTerritorialSection />
       <TypologySection />
       <FAQSection />
       <Footer />
