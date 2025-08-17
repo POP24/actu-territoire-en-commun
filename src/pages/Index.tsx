@@ -1,4 +1,5 @@
 import FAQSection from "@/components/FAQSection";
+import FundingFlowSection from "@/components/FundingFlowSection";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
@@ -29,6 +30,7 @@ const Index = () => {
       <PathwaysSection />
       <GovernanceSection />
       <OutilsSection />
+      <FundingFlowSection />
       <FAQSection />
       <Footer />
     </div>
