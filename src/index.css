@@ -8,55 +8,64 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 20% 92%;
-    --foreground: 215 25% 12%;
-
-    --card: 220 15% 98%;
-    --card-foreground: 215 25% 15%;
-
-    --popover: 220 15% 98%;
-    --popover-foreground: 215 25% 15%;
-
-    --primary: 220 70% 35%;
-    --primary-foreground: 220 15% 98%;
-
-    --secondary: 220 60% 25%;
-    --secondary-foreground: 220 15% 98%;
-
-    --muted: 220 15% 85%;
-    --muted-foreground: 220 15% 40%;
-
-    --accent: 220 50% 30%;
-    --accent-foreground: 215 25% 15%;
-
-    /* Custom gradients and colors for the communes theme */
-    --gradient-primary: linear-gradient(135deg, hsl(200 95% 45%), hsl(185 75% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(200 95% 45%) 0%, hsl(185 75% 65%) 50%, hsl(220 60% 75%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 15% 98%), hsl(210 25% 95%));
+    /* Nouvelle palette terre et nature */
+    --fond-principal: 103 11% 10%;  /* Vert très sombre #1a1f1a */
+    --fond-carte: 40 33% 96%;       /* Crème clair #f5f3f0 */
+    --accent-terre: 25 95% 31%;     /* Terre de sienne #8B4513 */
+    --accent-vivant: 120 56% 35%;   /* Vert forêt #228B22 */
+    --accent-feu: 15 100% 60%;      /* Orange feu de camp #FF6B35 */
+    --texte-principal: 120 15% 20%; /* Vert foncé sur clair #2c3e2c */
     
-    /* Design system gradients - Orange CTA */
-    --gradient-cta: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
-    --gradient-national: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
-    --gradient-territorial: linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%);
+    --background: var(--fond-carte);
+    --foreground: var(--texte-principal);
+
+    --card: var(--fond-carte);
+    --card-foreground: var(--texte-principal);
+
+    --popover: var(--fond-carte);
+    --popover-foreground: var(--texte-principal);
+
+    --primary: var(--accent-vivant);
+    --primary-foreground: var(--fond-carte);
+
+    --secondary: var(--accent-terre);
+    --secondary-foreground: var(--fond-carte);
+
+    --muted: 40 20% 90%;
+    --muted-foreground: 120 10% 45%;
+
+    --accent: var(--accent-feu);
+    --accent-foreground: var(--fond-carte);
+
+    /* Gradients nature */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--accent-vivant)), hsl(var(--accent-terre)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--fond-principal)) 0%, hsl(103 15% 15%) 50%, hsl(103 20% 20%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--fond-carte)), hsl(40 25% 92%));
+    
+    /* Design system gradients - Terre et nature */
+    --gradient-cta: linear-gradient(135deg, hsl(var(--accent-feu)) 0%, hsl(20 100% 55%) 50%, hsl(25 100% 50%) 100%);
+    --gradient-national: linear-gradient(135deg, hsl(var(--accent-terre)) 0%, hsl(30 95% 35%) 50%, hsl(35 95% 40%) 100%);
+    --gradient-territorial: linear-gradient(135deg, hsl(var(--accent-vivant)) 0%, hsl(125 60% 40%) 50%, hsl(130 65% 45%) 100%);
     
     /* Enhanced dropdown gradients */
-    --gradient-dropdown-bg: linear-gradient(145deg, rgba(254, 92, 2, 0.95) 0%, rgba(255, 140, 0, 0.9) 50%, rgba(255, 165, 0, 0.85) 100%);
-    --gradient-dropdown-border: linear-gradient(135deg, #FE5C02, #FF8C00, #FFA500);
+    --gradient-dropdown-bg: linear-gradient(145deg, hsl(var(--accent-feu) / 0.95) 0%, hsl(20 100% 55% / 0.9) 50%, hsl(25 100% 50% / 0.85) 100%);
+    --gradient-dropdown-border: linear-gradient(135deg, hsl(var(--accent-feu)), hsl(20 100% 55%), hsl(25 100% 50%));
     --gradient-item-hover: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
     
-    /* Button colors exact matches from reference */
-    --orange-button: #FF8B00;
-    --blue-button: #4A90E2;
+    /* Button colors harmonisés */
+    --orange-button: hsl(var(--accent-feu));
+    --blue-button: hsl(var(--accent-vivant));
     
     /* Brand colors */
-    --orange-brand: 25 95% 53%;
-    --orange-dark: 24 95% 48%;
+    --orange-brand: var(--accent-feu);
+    --orange-dark: 20 100% 55%;
     
-    --primary-glow: 185 75% 65%;
-    --secondary-glow: 195 85% 70%;
+    --primary-glow: 125 60% 40%;
+    --secondary-glow: 30 95% 40%;
     
-    --shadow-elegant: 0 10px 30px -10px hsl(200 95% 45% / 0.3);
-    --shadow-soft: 0 4px 20px -4px hsl(200 50% 50% / 0.2);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--accent-vivant) / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--accent-terre) / 0.2);
+    --shadow-terre: 0 8px 25px -8px hsl(var(--accent-terre) / 0.4);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -126,12 +135,18 @@ All colors MUST be HSL.
 }
 
 @layer base {
+  @import '@fontsource/playfair-display/400.css';
+  @import '@fontsource/playfair-display/700.css';
+  @import '@fontsource/source-sans-pro/300.css';
+  @import '@fontsource/source-sans-pro/400.css';
+  @import '@fontsource/source-sans-pro/600.css';
+
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
 }
 
