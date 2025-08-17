@@ -43,7 +43,7 @@ const HeroSection = () => {
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-28 sm:py-32">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-36 sm:py-40">
         <div className="max-w-7xl mx-auto">
           
           {/* Header Section */}
@@ -107,7 +107,7 @@ const HeroSection = () => {
                     <div className="grid grid-cols-2 gap-8">
                       {/* Habitant Local */}
                       <div className="text-center">
-                        <h3 className="text-lg font-black text-gray-900 mb-2">HABITANT LOCAL</h3>
+                        <h3 className="text-lg font-black text-gray-900 mb-2">USAGER LOCAL</h3>
                         <div className="text-3xl font-black text-blue-700 mb-1">10€</div>
                         <div className="text-sm text-gray-600 mb-4">Prix libre (min 10€)</div>
                         <Button className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">
