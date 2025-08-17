@@ -15,10 +15,10 @@ export default function Opportunites() {
       />
       <Header />
       <main className="container mx-auto px-6 pt-28 pb-16">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8">Les Campings à Rejoindre</h1>
-        <p className="text-muted-foreground max-w-2xl">Dossiers en étude, potentiels de reprise ou co‑exploitation. Filtrez par région, taille et budget.</p>
+        <h1 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-8">Les Campings à Rejoindre</h1>
+        <p className="text-sm sm:text-base text-muted-foreground max-w-2xl">Dossiers en étude, potentiels de reprise ou co‑exploitation. Filtrez par région, taille et budget.</p>
 
-        <section className="grid md:grid-cols-3 gap-6 mt-10">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 mt-6 sm:mt-10">
           {[{img: campingCollectif, title: "Camping forêt vivante", region: "Dordogne", budget: "350–500 k€", isActive: true},
             {img: moulinLac, title: "Moulin au bord du lac", region: "Lot", budget: "500–800 k€", isActive: false},
             {img: masDomaine, title: "Mas & domaine agricole", region: "Alpes", budget: "700–900 k€", isActive: false}].map((card) => (
@@ -31,7 +31,7 @@ export default function Opportunites() {
               }`}
             >
               <div className="relative">
-                <img src={card.img} alt={`${card.title} — ${card.region}`} className="w-full h-44 object-cover" loading="lazy" />
+                <img src={card.img} alt={`${card.title} — ${card.region}`} className="w-full h-32 sm:h-44 object-cover" loading="lazy" />
                 {card.isActive && (
                   <div className="absolute top-3 right-3 bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-semibold animate-pulse">
                     EN COURS
@@ -45,12 +45,12 @@ export default function Opportunites() {
                   </div>
                 )}
               </div>
-              <div className="p-5">
-                <h3 className="font-semibold text-lg">{card.title}</h3>
-                <p className="text-sm text-muted-foreground">{card.region} • Budget: {card.budget}</p>
-                <div className="mt-4 flex gap-2">
-                  <Button variant="secondary">Voir le dossier</Button>
-                  <Button variant={card.isActive ? "default" : "cta"}>
+              <div className="p-3 sm:p-5">
+                <h3 className="font-semibold text-sm sm:text-lg">{card.title}</h3>
+                <p className="text-xs sm:text-sm text-muted-foreground">{card.region} • Budget: {card.budget}</p>
+                <div className="mt-3 sm:mt-4 flex flex-col sm:flex-row gap-2">
+                  <Button variant="secondary" size="sm" className="text-xs sm:text-sm">Voir le dossier</Button>
+                  <Button variant={card.isActive ? "default" : "cta"} size="sm" className="text-xs sm:text-sm">
                     {card.isActive ? "Rejoindre le projet" : "Voter cette étape"}
                   </Button>
                 </div>
@@ -59,10 +59,10 @@ export default function Opportunites() {
           ))}
         </section>
 
-        <section className="mt-12 bg-card p-6 rounded-xl shadow-soft">
-          <h2 className="text-2xl font-semibold mb-2">Proposer un camping</h2>
-          <p className="text-muted-foreground mb-4">Vous connaissez un site à potentiel ? Partagez les infos clés et nous reviendrons vers vous.</p>
-          <Button variant="hero">Soumettre un site</Button>
+        <section className="mt-8 sm:mt-12 bg-card p-4 sm:p-6 rounded-lg sm:rounded-xl shadow-soft">
+          <h2 className="text-lg sm:text-2xl font-semibold mb-2">Proposer un camping</h2>
+          <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">Vous connaissez un site à potentiel ? Partagez les infos clés et nous reviendrons vers vous.</p>
+          <Button variant="hero" size="sm" className="text-sm sm:text-base">Soumettre un site</Button>
         </section>
       </main>
       <Footer />
