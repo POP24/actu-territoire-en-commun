@@ -19,171 +19,160 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-card to-muted/30">
-      {/* Background Pattern Subtil */}
-      <div className="absolute inset-0 z-0 opacity-5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_hsl(var(--accent-terre))_1px,_transparent_0)] bg-[size:24px_24px]"></div>
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Background with Mega Fire */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={megaFireBackground} 
+          alt="Méga feu dramatique" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/95"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
         <div className="max-w-7xl mx-auto">
           
-          {/* Hero Section avec titre en overlay */}
-          <div className="relative mb-8">
-            {/* Titre principal en overlay */}
-            <div className="text-center mb-8">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-foreground mb-4 leading-tight font-serif">
-                RÉSEAU DES <span className="text-primary">COMMUNES</span>
-              </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
-                Système d'organisation locale pour des territoires autonomes et vivants
-              </p>
-            </div>
-
-            {/* Stats animées en haut */}
-            <div className="max-w-4xl mx-auto mb-12">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div className="bg-card/80 backdrop-blur-sm px-6 py-6 rounded-xl border border-muted shadow-soft text-center hover:shadow-elegant transition-all duration-300">
-                  <div className="text-4xl mb-2">🌱</div>
-                  <div className="text-3xl font-bold text-primary mb-1" data-counter="1000">1000+</div>
-                  <div className="text-sm font-medium text-muted-foreground">hectares libérés</div>
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+              RÉSEAU DES <span className="text-white/90">COMMUNES</span>
+            </h1>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white/80 mb-12">
+              SYSTÈME D'ORGANISATION LOCAL
+            </h2>
+            
+            {/* Top Stats - 2 levels improved */}
+            <div className="max-w-5xl mx-auto">
+              {/* First Level - Main Categories */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+                <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
+                  <div className="text-white font-bold text-sm mb-1">LIEUX COMMUNS</div>
+                  <div className="text-3xl font-black text-white">1000+</div>
                 </div>
-                <div className="bg-card/80 backdrop-blur-sm px-6 py-6 rounded-xl border border-muted shadow-soft text-center hover:shadow-elegant transition-all duration-300">
-                  <div className="text-4xl mb-2">🏛️</div>
-                  <div className="text-3xl font-bold text-accent mb-1">1M€</div>
-                  <div className="text-sm font-medium text-muted-foreground">trésor collectif</div>
+                <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
+                  <div className="text-white font-bold text-sm mb-1">TRÉSOR COLLECTIF</div>
+                  <div className="text-3xl font-black text-orange-400">1M€</div>
                 </div>
-                <div className="bg-card/80 backdrop-blur-sm px-6 py-6 rounded-xl border border-muted shadow-soft text-center hover:shadow-elegant transition-all duration-300">
-                  <div className="text-4xl mb-2">🤝</div>
-                  <div className="text-lg font-bold text-secondary">LOCALE</div>
-                  <div className="text-sm font-medium text-muted-foreground">gouvernance</div>
+                <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
+                  <div className="text-white font-bold text-sm mb-1">GOUVERNANCE</div>
+                  <div className="text-lg font-bold text-white">LOCALE/GLOBAL</div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Section carte + adhésion */}
-          <div className="grid lg:grid-cols-3 gap-8 items-start">
+          {/* Main Content */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
             
-            {/* Carte interactive agrandie (2/3 de l'espace) */}
-            <div className="lg:col-span-2">
-              <div className="bg-card rounded-3xl p-6 shadow-terre border border-muted/50">
-                <h3 className="text-foreground font-bold text-xl mb-6 text-center">
-                  Réseau en construction
-                  <span className="block text-sm font-normal text-muted-foreground mt-1">5 territoires pionniers</span>
-                </h3>
+            {/* Left: Interactive Real Map */}
+            <div className="relative">
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-white/20">
+                <h3 className="text-white font-bold text-lg mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
                 
-                {/* Carte France agrandie */}
-                <div className="relative w-full h-96 lg:h-[500px] bg-muted/20 rounded-2xl overflow-hidden border border-muted/30">
+                {/* Real France Map - Full country view */}
+                <div className="relative w-full h-80 bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
                     src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5%2C41.3%2C9.7%2C51.2&amp;layer=mapnik"
-                    className="w-full h-full border-0"
-                    title="Carte de France - Réseau des Communes"
+                    className="w-full h-full border-0 opacity-80"
+                    title="Carte de France"
                   ></iframe>
                   
-                  {/* Points animés sur la carte */}
+                  {/* Overlay with animated points */}
                   <div className="absolute inset-0 pointer-events-none">
+                    {/* Points lumineux sur la France */}
                     {[
-                      { top: '65%', left: '25%', name: 'Dordogne' },
-                      { top: '45%', left: '35%', name: 'Centre' },
-                      { top: '30%', left: '45%', name: 'Nord-Est' },
-                      { top: '70%', left: '60%', name: 'Sud-Est' },
-                      { top: '25%', left: '25%', name: 'Nord-Ouest' }
+                      { top: '65%', left: '25%', delay: 0 },    // Sud-Ouest (Dordogne)
+                      { top: '45%', left: '35%', delay: 500 },  // Centre
+                      { top: '30%', left: '45%', delay: 1000 }, // Nord-Est
+                      { top: '70%', left: '60%', delay: 1500 }, // Sud-Est
+                      { top: '25%', left: '25%', delay: 2000 }  // Nord-Ouest
                     ].map((point, index) => (
                       <div
                         key={index}
-                        className={`absolute transition-all duration-1000 ${
+                        className={`absolute w-3 h-3 bg-orange-500 rounded-full shadow-lg transition-all duration-1000 ${
                           animatedPoints.includes(index + 1) 
-                            ? 'opacity-100 scale-100' 
+                            ? 'opacity-100 animate-pulse scale-100' 
                             : 'opacity-0 scale-50'
                         }`}
                         style={{ top: point.top, left: point.left }}
-                        title={point.name}
                       >
-                        <div className="relative">
-                          <div className="w-4 h-4 bg-accent rounded-full shadow-lg animate-pulse"></div>
-                          <div className="absolute inset-0 w-4 h-4 bg-accent/50 rounded-full animate-ping"></div>
-                        </div>
+                        <div className="absolute inset-0 bg-orange-400 rounded-full animate-ping"></div>
                       </div>
                     ))}
                   </div>
                   
-                  <div className="absolute bottom-4 left-4 bg-card/90 backdrop-blur-sm text-foreground px-4 py-2 rounded-lg text-sm border border-muted/50">
-                    <span className="text-accent font-bold">●</span> Territoires actifs
+                  <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm">
+                    <span className="text-orange-400">●</span> France - 5 territoires pionniers
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Section adhésion repensée (1/3) */}
+            {/* Right: Membership Cards Side by Side */}
             <div className="space-y-6">
-              {/* Habitant Local */}
-              <div className="bg-card rounded-2xl p-6 shadow-soft border border-muted/50 hover:shadow-elegant transition-all duration-300">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🏠</span>
+              {/* Cards Container */}
+              <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20">
+                <div className="text-center mb-6">
+                  <div className="border-b-2 border-gray-200 pb-4 mb-6">
+                    <div className="grid grid-cols-2 gap-8">
+                      {/* Habitant Local */}
+                      <div className="text-center">
+                        <h3 className="text-lg font-black text-gray-900 mb-2">HABITANT LOCAL</h3>
+                        <div className="text-3xl font-black text-blue-700 mb-1">10€</div>
+                        <div className="text-sm text-gray-600 mb-4">Prix libre (min 10€)</div>
+                        <Button className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">
+                          ADHÉRER
+                        </Button>
+                      </div>
+                      
+                      {/* Architecte Réseau */}
+                      <div className="text-center border-l-2 border-gray-200 pl-8">
+                        <h3 className="text-lg font-black text-gray-900 mb-2">ARCHITECTE RÉSEAU</h3>
+                        <div className="text-3xl font-black text-orange-600 mb-1">100€</div>
+                        <div className="text-sm text-gray-600 mb-4">100€ unique</div>
+                        <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl">
+                          ADHÉRER
+                        </Button>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">HABITANT LOCAL</h3>
-                  <div className="text-3xl font-black text-primary mb-2">10€</div>
-                  <p className="text-sm text-muted-foreground mb-4">Prix libre (minimum)</p>
-                  <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
-                    Pour vivre et participer à la vie de votre commune
-                  </p>
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all">
-                    REJOINDRE MA COMMUNE
-                  </Button>
                 </div>
-              </div>
-              
-              {/* Architecte Réseau */}
-              <div className="bg-card rounded-2xl p-6 shadow-soft border border-muted/50 hover:shadow-elegant transition-all duration-300">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🔧</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">ARCHITECTE RÉSEAU</h3>
-                  <div className="text-3xl font-black text-secondary mb-2">100€</div>
-                  <p className="text-sm text-muted-foreground mb-4">Contribution unique</p>
-                  <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
-                    Pour bâtir et connecter les communes entre elles
-                  </p>
-                  <Button className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all">
-                    CONSTRUIRE LE RÉSEAU
-                  </Button>
-                </div>
-              </div>
 
-              {/* Trésor Commun */}
-              <div className="bg-gradient-to-br from-accent/5 to-accent/10 rounded-2xl p-6 border border-accent/20">
-                <h4 className="text-lg font-bold text-foreground mb-4 text-center">Trésor Commun</h4>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center text-sm">
-                    <span className="font-medium text-muted-foreground">Progression</span>
-                    <span className="font-bold text-foreground">{treasureProgress}%</span>
+                {/* Objectif Banner */}
+                <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center py-2 px-4 rounded-t-lg font-bold text-sm tracking-wider">
+                  OBJECTIF
+                </div>
+                
+                {/* Trésor Commun Section */}
+                <div className="bg-gray-100 rounded-b-lg rounded-t-none p-4">
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 text-center">TRÉSOR COMMUN</h4>
+                  <div className="bg-gray-100 rounded-lg p-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-sm font-medium text-gray-600">Progression</span>
+                      <span className="text-sm font-bold text-gray-900">{treasureProgress}%</span>
+                    </div>
+                    <Progress value={treasureProgress} className="h-3 mb-2" />
+                    <div className="flex justify-between text-xs text-gray-500">
+                      <span>650 000€ collectés</span>
+                      <span>Objectif: 1M€</span>
+                    </div>
                   </div>
-                  <Progress value={treasureProgress} className="h-3" />
-                  <div className="flex justify-between text-xs text-muted-foreground">
-                    <span>650 000€</span>
-                    <span>1M€</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground text-center mt-4 leading-relaxed">
-                    Pour financer les activateurs locaux et les projets communs
-                  </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* CTA principal */}
-          <div className="text-center mt-16">
+          {/* Bottom CTA */}
+          <div className="text-center">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl px-12 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="bg-blue-700 hover:bg-blue-800 text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
             >
-              REJOINDRE LE MOUVEMENT
+              ADHÉRER
               <ChevronRight className="w-6 h-6 ml-2" />
             </Button>
-            <p className="text-muted-foreground mt-4 text-lg font-light">
+            <p className="text-white/80 mt-4 text-lg">
               Ensemble, créons les communes de demain
             </p>
           </div>

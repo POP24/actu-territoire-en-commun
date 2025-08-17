@@ -18,10 +18,6 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				serif: ['Playfair Display', 'serif'],
-				sans: ['Source Sans Pro', 'sans-serif'],
-			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -83,7 +79,6 @@ export default {
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'soft': 'var(--shadow-soft)',
-				'terre': 'var(--shadow-terre)',
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',
