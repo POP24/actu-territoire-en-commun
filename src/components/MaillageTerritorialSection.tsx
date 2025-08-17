@@ -117,11 +117,6 @@ const MaillageTerritorialSection = () => {
                       alt={category.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    
-                    {/* Overlay with emoji only */}
-                    <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                      <div className="text-4xl md:text-5xl">{category.emoji}</div>
-                    </div>
 
                     {/* Badge */}
                     <div className="absolute top-2 left-2">
@@ -136,9 +131,10 @@ const MaillageTerritorialSection = () => {
                   </div>
 
                   {/* Title and info below image */}
-                  <div className="p-3">
-                    <h4 className="font-bold text-white text-xs md:text-sm text-center mb-1">{category.title}</h4>
-                    <p className="text-gray-400 text-xs text-center">{category.subtitle}</p>
+                  <div className="p-3 text-center">
+                    <div className="text-3xl md:text-4xl mb-2">{category.emoji}</div>
+                    <h4 className="font-bold text-white text-xs md:text-sm mb-1">{category.title}</h4>
+                    <p className="text-gray-400 text-xs">{category.subtitle}</p>
                   </div>
 
                   {/* Hover Info Panel */}
