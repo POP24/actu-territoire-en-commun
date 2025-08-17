@@ -69,7 +69,11 @@ const HeroSection = () => {
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-xs sm:text-sm mb-1">GOUVERNANCE</div>
-                  <div className="text-sm sm:text-base md:text-lg font-bold text-white">LOCALE/GLOBAL</div>
+                  <div className="text-sm sm:text-base md:text-lg font-bold text-white">
+                    <span className="block sm:inline">LOCALE</span>
+                    <span className="hidden sm:inline">/</span>
+                    <span className="block sm:inline">GLOBAL</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,13 +87,13 @@ const HeroSection = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 sm:p-6 border border-white/20">
                 <h3 className="text-white font-bold text-base sm:text-lg mb-3 sm:mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
                 
-                {/* Real France Map - Fixed for mobile */}
+                {/* Real France Map - Fixed for mobile with scroll passthrough */}
                 <div className="relative w-full h-64 sm:h-80 md:h-[26rem] bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
                     src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5%2C42.0%2C8.5%2C51.2&amp;layer=mapnik&amp;marker=45.1834%2C0.7167"
-                    className="w-full h-full border-0 opacity-80 pointer-events-none"
+                    className="w-full h-full border-0 opacity-80 pointer-events-none sm:pointer-events-auto"
                     title="Carte de France avec marqueur Dordogne"
-                    style={{ pointerEvents: 'none' }}
+                    style={{ pointerEvents: window.innerWidth < 640 ? 'none' : 'auto' }}
                   ></iframe>
                   
                   <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm">
@@ -133,7 +137,7 @@ const HeroSection = () => {
                 <div className="bg-white rounded-xl p-3 sm:p-4 md:p-6 border border-gray-200">
                   <div className="text-center mb-3 sm:mb-4">
                     <div className="bg-gradient-orange-gold text-white inline-block py-1 sm:py-2 px-3 sm:px-6 rounded-lg font-bold text-xs sm:text-sm tracking-wider mb-2 sm:mb-3 shadow-lg" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.5)'}}>
-                      OBJECTIF · TRÉSOR COMMUN
+                      TRÉSOR COMMUN
                     </div>
                   </div>
                   
