@@ -6,12 +6,11 @@ interface NavLinksProps {
 }
 
 const navItems = [
-  { to: "/", label: "Accueil" },
-  { to: "/territoires", label: "Territoires" },
-  { to: "/gouvernance", label: "Gouvernance" },
-  { to: "/woofing", label: "Woofing" },
-  { to: "/boutique", label: "Boutique" },
-  { to: "/faq", label: "FAQ" }
+  { to: "/", label: "ACCUEIL" },
+  { to: "#financement", label: "TERRITOIRE" },
+  { to: "#gouvernance", label: "GOUVERNANCE" },
+  { to: "https://boutique.lasuitedumonde.com", label: "BOUTIQUE", external: true },
+  { to: "#faq", label: "FAQ" }
 ];
 
 const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
@@ -19,22 +18,55 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
     ? "block py-3 text-base font-medium transition-colors"
     : "text-sm xl:text-base font-medium transition-colors";
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    onLinkClick?.();
+  };
+
+  const handleClick = (item: any) => {
+    if (item.external) {
+      window.open(item.to, '_blank');
+      onLinkClick?.();
+    } else if (item.to.startsWith('#')) {
+      scrollToSection(item.to.replace('#', ''));
+    } else {
+      onLinkClick?.();
+    }
+  };
+
   return (
     <>
-      {navItems.map((item) => (
-        <NavLink
-          key={item.to}
-          to={item.to}
-          onClick={onLinkClick}
-          className={({ isActive }) => `${baseClasses} ${
-            isActive 
-              ? "text-foreground border-b-2 border-blue-700" 
-              : "text-muted-foreground hover:text-foreground"
-          }`}
-        >
-          {item.label}
-        </NavLink>
-      ))}
+      {navItems.map((item) => {
+        if (item.external || item.to.startsWith('#')) {
+          return (
+            <button
+              key={item.to}
+              onClick={() => handleClick(item)}
+              className={`${baseClasses} text-muted-foreground hover:text-foreground`}
+            >
+              {item.label}
+            </button>
+          );
+        }
+        
+        return (
+          <NavLink
+            key={item.to}
+            to={item.to}
+            onClick={onLinkClick}
+            className={({ isActive }) => `${baseClasses} ${
+              isActive 
+                ? "text-foreground border-b-2 border-blue-700" 
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            {item.label}
+          </NavLink>
+        );
+      })}
     </>
   );
 };

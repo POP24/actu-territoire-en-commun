@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const FAQSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-background via-muted/30 to-background">
+    <section id="faq" className="py-20 bg-gradient-to-b from-background via-muted/30 to-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
