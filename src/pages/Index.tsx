@@ -27,7 +27,6 @@ const Index = () => {
       <MaillageTerritorialSection />
       <PathwaysSection />
       <GovernanceSection />
-      <FinancingSection />
       <TypologySection />
       <FAQSection />
       <Footer />
