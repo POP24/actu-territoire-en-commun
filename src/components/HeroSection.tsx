@@ -118,9 +118,9 @@ const HeroSection = () => {
                       {/* Architecte Réseau */}
                       <div className="text-center border-l-2 border-gray-200 pl-8 hover-scale cursor-pointer">
                         <h3 className="text-lg font-black text-gray-900 mb-2">ARCHITECTE RÉSEAU</h3>
-                        <div className="text-3xl font-black text-orange-600 mb-1">100€</div>
+                        <div className="text-3xl font-black text-green-brand mb-1">100€</div>
                         <div className="text-sm text-gray-600 mb-4">100€ unique</div>
-                        <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl">
+                        <Button className="w-full bg-green-brand hover:bg-green-dark text-white font-bold py-3 rounded-xl">
                           ADHÉRER
                         </Button>
                       </div>

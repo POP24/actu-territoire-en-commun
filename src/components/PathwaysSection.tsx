@@ -12,13 +12,13 @@ const PathwaysSection = () => {
           
           <div className="grid lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
             {/* Chemin 1 */}
-            <div className="bg-gradient-card p-6 sm:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-400 cursor-pointer flex flex-col">
+            <div className="bg-gradient-card p-6 sm:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-brand cursor-pointer flex flex-col">
               <div className="flex flex-col items-center text-center mb-8">
-                <div className="bg-green-400 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                <div className="bg-green-brand text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
                   Chemin 1 · Fédération nationale
                 </div>
-                  <div className="text-3xl sm:text-4xl font-bold text-green-400 mb-2">100€</div>
-                  <div className="text-green-600 font-semibold mb-4">Adhésion Architecte</div>
+                  <div className="text-3xl sm:text-4xl font-bold text-green-brand mb-2">100€</div>
+                  <div className="text-green-brand font-semibold mb-4">Adhésion Architecte</div>
                   <h3 className="text-lg sm:text-xl font-bold text-foreground">Communauté Nationale</h3>
                   <p className="text-muted-foreground italic">Coordination globale</p>
                 </div>
@@ -31,15 +31,15 @@ const PathwaysSection = () => {
                   </div>
                   <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
-                      <span className="text-green-400 mt-1">✓</span>
+                      <span className="text-green-brand mt-1">✓</span>
                       <span>Participez à la trésorerie collective</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-green-400 mt-1">✓</span>
+                      <span className="text-green-brand mt-1">✓</span>
                       <span>Votez l'attribution des budgets territoriaux</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-green-400 mt-1">✓</span>
+                      <span className="text-green-brand mt-1">✓</span>
                       <span>Accédez à toutes les opportunités du réseau</span>
                     </li>
                   </ul>
@@ -52,15 +52,15 @@ const PathwaysSection = () => {
                   </div>
                   <ul className="space-y-2 text-foreground text-sm">
                     <li className="flex items-start gap-2">
-                      <span className="text-green-400 mt-1">✓</span>
+                      <span className="text-green-brand mt-1">✓</span>
                       <span>Rejoignez les cercles thématiques (Discord)</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-green-400 mt-1">✓</span>
+                      <span className="text-green-brand mt-1">✓</span>
                       <span>Formations aux outils de gouvernance partagée</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-green-400 mt-1">✓</span>
+                      <span className="text-green-brand mt-1">✓</span>
                       <span>Accès prioritaire aux séjours et rencontres du réseau</span>
                     </li>
                   </ul>
