@@ -13,10 +13,10 @@ const LaunchpadSection = () => {
           {/* Main Title */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              CROWDFUND <span className="text-cyan-400">YOUR BIOREGION</span>
+              FINANCEZ VOTRE <span className="text-cyan-400">TERRITOIRE</span>
             </h2>
-            <p className="text-gray-300 text-lg mb-2">Turn Ideas Into Action.</p>
-            <p className="text-gray-400">Finance projects that matter, together.</p>
+            <p className="text-gray-300 text-lg mb-2">Transformez les idées en actions.</p>
+            <p className="text-gray-400">Financez les projets qui comptent, ensemble.</p>
           </div>
 
           {/* Two Launchpads */}
@@ -24,41 +24,47 @@ const LaunchpadSection = () => {
             {/* Real-Estate Launchpad */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Real-Estate <span className="text-cyan-400">Launchpad</span>
+                Immobilier <span className="text-cyan-400">Partagé</span>
               </h3>
-              <p className="text-gray-300 mb-6">Fractionalize. Finance. Build.</p>
+              <p className="text-gray-300 mb-6">Mutualisez. Financez. Construire.</p>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                 {/* Mock interface for Real Estate */}
                 <div className="bg-white rounded-xl p-4 mb-4">
                   <div className="flex justify-between items-center mb-4">
-                    <h4 className="font-semibold text-gray-800">Primary Market</h4>
-                    <div className="text-sm text-gray-500">🏠 REAL ESTATE</div>
+                    <h4 className="font-semibold text-gray-800">🏕 CAMPINGS EN COMMUN - DORDOGNE</h4>
+                    <div className="text-sm text-gray-500">🏠 IMMOBILIER</div>
                   </div>
                   
                   <div className="grid grid-cols-3 gap-4 mb-4">
                     <div>
-                      <div className="bg-gray-100 h-20 rounded-lg mb-2"></div>
-                      <div className="text-xs text-gray-600">Property Details</div>
+                      <div className="h-20 rounded-lg mb-2 overflow-hidden">
+                        <img src="/lovable-uploads/963b287f-eb27-42eb-b638-6ff50e70d2d7.png" alt="Camping tentes" className="w-full h-full object-cover" />
+                      </div>
+                      <div className="text-xs text-gray-600">Premier palier</div>
                     </div>
                     <div>
-                      <div className="bg-gradient-to-r from-cyan-400 to-blue-500 h-20 rounded-lg mb-2"></div>
-                      <div className="text-xs text-gray-600">Virtual Tour</div>
+                      <div className="h-20 rounded-lg mb-2 overflow-hidden">
+                        <img src="/lovable-uploads/314ad510-583c-4e94-89f0-d64f6902556a.png" alt="Pavillon camping" className="w-full h-full object-cover" />
+                      </div>
+                      <div className="text-xs text-gray-600">Deuxième palier</div>
                     </div>
                     <div>
-                      <div className="bg-gray-100 h-20 rounded-lg mb-2"></div>
-                      <div className="text-xs text-gray-600">Investment Info</div>
+                      <div className="h-20 rounded-lg mb-2 overflow-hidden">
+                        <img src="/lovable-uploads/82f7ffbd-1b63-4fb1-9b63-bba4d88b098e.png" alt="Vue aérienne camping" className="w-full h-full object-cover" />
+                      </div>
+                      <div className="text-xs text-gray-600">Troisième palier</div>
                     </div>
                   </div>
                   
                   <div className="flex justify-between items-center mb-4">
                     <div>
-                      <div className="text-2xl font-bold text-primary">67%</div>
-                      <div className="text-xs text-gray-500">SUBSCRIBED</div>
+                      <div className="text-2xl font-bold text-primary">35%</div>
+                      <div className="text-xs text-gray-500">FINANCÉ</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-sm font-semibold">€850,000 / €1,200,000</div>
-                      <div className="text-xs text-gray-500">Target Amount</div>
+                      <div className="text-sm font-semibold">€850,000 / €2,650,000</div>
+                      <div className="text-xs text-gray-500">Objectif</div>
                     </div>
                   </div>
                   
