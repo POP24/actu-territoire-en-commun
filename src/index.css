@@ -51,6 +51,8 @@ All colors MUST be HSL.
     /* Brand colors */
     --orange-brand: 25 95% 53%;
     --orange-dark: 24 95% 48%;
+    --green-brand: 120 60% 35%;
+    --green-dark: 120 65% 30%;
     
     --primary-glow: 185 75% 65%;
     --secondary-glow: 195 85% 70%;

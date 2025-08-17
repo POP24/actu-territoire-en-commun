@@ -63,7 +63,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				'orange-brand': 'hsl(var(--orange-brand))',
-				'orange-dark': 'hsl(var(--orange-dark))'
+				'orange-dark': 'hsl(var(--orange-dark))',
+				'green-brand': 'hsl(var(--green-brand))',
+				'green-dark': 'hsl(var(--green-dark))'
 			},
 				backgroundImage: {
 					'gradient-primary': 'var(--gradient-primary)',

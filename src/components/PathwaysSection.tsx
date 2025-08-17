@@ -67,7 +67,7 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">
+              <Button className="w-full mt-8 bg-green-brand hover:bg-green-dark text-white font-bold py-3 rounded-xl">
                 Adhérer (100€)
               </Button>
             </div>
