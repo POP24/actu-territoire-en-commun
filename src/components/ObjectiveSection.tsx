@@ -67,16 +67,16 @@ const ObjectiveSection = () => {
             </div>
 
             {/* RELIONS-NOUS Section */}
-            <div className="flex justify-center py-12 sm:py-16">
+            <div className="flex justify-center py-8 sm:py-12">
               <div className="text-center space-y-4 sm:space-y-6 max-w-4xl mx-auto px-4 sm:px-6">
                 <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
                   <span className="bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 bg-clip-text text-transparent">RELIONS</span> - NOUS.
                 </h3>
                 <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-6 sm:p-8 max-w-2xl mx-auto">
-                  <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-medium mb-4">
+                  <p className="text-lg sm:text-xl font-semibold text-foreground mb-4">
                     Lieux, Cagnottes, Votes.
                   </p>
-                  <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground">
+                  <p className="text-base sm:text-lg text-muted-foreground">
                     On relie ce qui existe déjà pour faire basculer les territoires en autonomie.
                   </p>
                 </div>
