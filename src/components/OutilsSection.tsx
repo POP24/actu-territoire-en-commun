@@ -124,22 +124,6 @@ const OutilsSection = () => {
               </ul>
             </div>
           </div>
-
-          {/* Call to Action */}
-          <div className="text-center animate-fade-in">
-            <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-8 max-w-2xl mx-auto">
-              <p className="text-lg text-muted-foreground mb-6">
-                "Pas besoin d'être geek pour participer. C'est simple comme un groupe WhatsApp, 
-                transparent comme une AG de village, efficace comme une cagnotte Leetchi.
-              </p>
-              <p className="text-lg font-semibold text-foreground mb-8">
-                Mais en mieux, et en commun."
-              </p>
-              <button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 shadow-lg">
-                DÉCOUVRIR LA PLATEFORME
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>
