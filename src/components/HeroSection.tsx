@@ -19,7 +19,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-[80vh] overflow-hidden">
       {/* Modern Tech Background */}
       <div className="absolute inset-0 z-0">
         {/* Base black background */}
@@ -43,7 +43,7 @@ const HeroSection = () => {
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto">
           
           {/* Header Section */}
