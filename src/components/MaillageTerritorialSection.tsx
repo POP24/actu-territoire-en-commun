@@ -170,41 +170,11 @@ const MaillageTerritorialSection = () => {
             })}
           </div>
 
-          {/* System Flow Diagram */}
-          <div className="text-center mb-8">
-            <h3 className="text-xl font-bold text-white mb-6">ÉCOSYSTÈME TERRITORIAL</h3>
-            <div className="max-w-3xl mx-auto bg-white/5 rounded-2xl p-6 border border-white/10">
-              <div className="text-sm text-gray-300 space-y-3">
-                <div className="flex items-center justify-center space-x-4 flex-wrap gap-2">
-                  <span className="text-cyan-400">🏕 Campings (€)</span>
-                  <span className="text-gray-500">→</span>
-                  <span className="text-green-400">Finance</span>
-                  <span className="text-gray-500">→</span>
-                  <span className="text-white">🌾 Fermes + 🏭 Manufactures</span>
-                </div>
-                <div className="text-center text-gray-500">↓</div>
-                <div className="flex items-center justify-center space-x-4 flex-wrap gap-2">
-                  <span className="text-white">🏘 Tiers-lieux</span>
-                  <span className="text-gray-500">←→</span>
-                  <span className="text-blue-400">🌲🏰💧⚙️ Ressources communes</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Bottom explanation */}
           <div className="text-center">
             <div className="max-w-4xl mx-auto space-y-4">
               <p className="text-gray-300 text-lg italic">
                 "Notre stratégie : acquérir des biens complémentaires qui s'auto-renforcent."
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                <div className="text-cyan-400">Les CAMPINGS financent l'ensemble</div>
-                <div className="text-green-400">Les FERMES nourrissent les communes</div>
-                <div className="text-blue-400">Les RESSOURCES sécurisent l'avenir</div>
-              </div>
-              <p className="text-white font-semibold">
-                <span className="text-cyan-400">Ensemble, ils forment un territoire résilient.</span>
               </p>
             </div>
           </div>
