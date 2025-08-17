@@ -13,7 +13,7 @@ const LaunchpadSection = () => {
           {/* Main Title */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              FINANCEZ VOTRE <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITOIRE</span>
+              FINANCEZ VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">TERRITOIRE</span>
             </h2>
             <p className="text-gray-300 text-lg mb-2">Transformez les idées en actions.</p>
             <p className="text-gray-400">Financez les projets qui comptent, ensemble.</p>
@@ -81,7 +81,7 @@ const LaunchpadSection = () => {
             {/* Membership Launchpad */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Trésorerie <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Commune</span>
+                Trésorerie <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Commune</span>
               </h3>
               <p className="text-gray-300 mb-6">Rejoignez. Votez. Décidez.</p>
               
@@ -90,7 +90,7 @@ const LaunchpadSection = () => {
                 <div className="bg-gray-900 rounded-xl p-4 mb-4 border border-cyan-500/30">
                   <div className="flex justify-between items-center mb-4">
                     <h4 className="font-semibold text-white">🌐 ADHÉSION ASSOCIATIVE</h4>
-                    <div className="text-xs text-cyan-400">⚡ GOUVERNANCE</div>
+                    <div className="text-xs bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">⚡ GOUVERNANCE</div>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-4 mb-4">
@@ -110,7 +110,7 @@ const LaunchpadSection = () => {
                   
                   <div className="flex justify-between items-center mb-4">
                     <div>
-                      <div className="text-2xl font-bold text-cyan-400">13%</div>
+                      <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">13%</div>
                       <div className="text-xs text-gray-400">MINTED</div>
                     </div>
                     <div className="text-right">
