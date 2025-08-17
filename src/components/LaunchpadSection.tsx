@@ -28,7 +28,7 @@ const LaunchpadSection = () => {
               </h3>
               <p className="text-gray-300 mb-6">Mutualisez. Financez. Construire.</p>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 h-fit">
                 {/* Mock interface for Real Estate */}
                 <div className="bg-white rounded-xl p-4 mb-4">
                   <div className="flex justify-between items-center mb-4">
@@ -38,19 +38,19 @@ const LaunchpadSection = () => {
                   
                   <div className="grid grid-cols-3 gap-4 mb-4">
                     <div>
-                      <div className="h-20 rounded-lg mb-2 overflow-hidden">
+                      <div className="h-24 rounded-lg mb-2 overflow-hidden">
                         <img src="/lovable-uploads/963b287f-eb27-42eb-b638-6ff50e70d2d7.png" alt="Camping tentes" className="w-full h-full object-cover" />
                       </div>
                       <div className="text-xs text-gray-600">Premier palier</div>
                     </div>
                     <div>
-                      <div className="h-20 rounded-lg mb-2 overflow-hidden">
+                      <div className="h-24 rounded-lg mb-2 overflow-hidden">
                         <img src="/lovable-uploads/314ad510-583c-4e94-89f0-d64f6902556a.png" alt="Pavillon camping" className="w-full h-full object-cover" />
                       </div>
                       <div className="text-xs text-gray-600">Deuxième palier</div>
                     </div>
                     <div>
-                      <div className="h-20 rounded-lg mb-2 overflow-hidden">
+                      <div className="h-24 rounded-lg mb-2 overflow-hidden">
                         <img src="/lovable-uploads/82f7ffbd-1b63-4fb1-9b63-bba4d88b098e.png" alt="Vue aérienne camping" className="w-full h-full object-cover" />
                       </div>
                       <div className="text-xs text-gray-600">Troisième palier</div>
@@ -85,18 +85,18 @@ const LaunchpadSection = () => {
               </h3>
               <p className="text-gray-300 mb-6">Rejoignez. Votez. Décidez.</p>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 h-fit">
                 {/* Mock interface for Membership */}
                 <div className="bg-gray-900 rounded-xl p-4 mb-4 border border-cyan-500/30">
                   <div className="flex justify-between items-center mb-4">
                     <h4 className="font-semibold text-white">🌐 ADHÉSION ASSOCIATIVE</h4>
-                    <div className="text-xs text-cyan-400">⚡ ACTIVE</div>
+                    <div className="text-xs text-cyan-400">⚡ GOUVERNANCE</div>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-4 mb-4">
                     <div>
                       <div className="bg-gradient-to-br from-purple-600 to-cyan-500 h-24 rounded-lg mb-2 flex items-center justify-center">
-                        <div className="text-white font-bold">⭐ USAGER</div>
+                        <div className="text-white font-bold">⭐ USAGER LOCAL</div>
                       </div>
                       <div className="text-xs text-gray-400">Prix libre (min 10€)</div>
                     </div>
