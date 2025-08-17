@@ -52,7 +52,7 @@ const GovernanceSection = () => {
             </div>
 
             {/* Communes */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-3xl mx-auto mb-6 sm:mb-8">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 max-w-3xl mx-auto mb-6 sm:mb-8">
               <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20">
                 <h4 className="font-bold text-white mb-2 text-sm sm:text-base">COMMUNE A</h4>
                 <div className="text-xs sm:text-sm text-white space-y-1">
