@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { ChevronRight, Users, Globe, DollarSign, MapPin, Heart } from "lucide-react";
-import genetteLogo from "/lovable-uploads/1c5a52dd-ce56-4b56-9b0f-ab5bf69435dc.png";
+import campfireImage from "/lovable-uploads/55c4be87-7be8-49ad-af5e-7083f66ebb09.png";
 import { useState, useEffect } from "react";
 
 const HeroSection = () => {
@@ -20,16 +20,14 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Background with Single Large Genette */}
+      {/* Background Image with Campfire */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full flex items-center justify-center">
-          <img 
-            src={genetteLogo} 
-            alt="Genette logo" 
-            className="w-96 h-96 opacity-10 object-contain"
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/98 via-gray-900/95 to-black/98"></div>
+        <img 
+          src={campfireImage} 
+          alt="Feu de camp communautaire" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-gray-900/90 to-black/95"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
