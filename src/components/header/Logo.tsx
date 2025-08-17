@@ -11,12 +11,12 @@ const Logo = () => {
   };
 
   return (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center space-x-2 sm:space-x-4">
       <button onClick={goToHome} className="transition-transform hover:scale-105">
         <img 
           src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" 
           alt="Logo" 
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg shadow-sm" 
+          className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg shadow-sm" 
         />
       </button>
       <div className="flex flex-col">
@@ -24,10 +24,10 @@ const Logo = () => {
           <img 
             src="/lovable-uploads/c46d5cc1-ebb1-4b65-bce3-cb7de3d3223a.png" 
             alt="La Suite du Monde" 
-            className="h-6 sm:h-9" 
+            className="h-4 sm:h-6 md:h-9" 
           />
         </button>
-        <span className="text-sm sm:text-base font-bold text-blue-700 tracking-wider">
+        <span className="text-xs sm:text-sm md:text-base font-bold text-blue-700 tracking-wider">
           COMMUNE IMAGINÉE
         </span>
       </div>
