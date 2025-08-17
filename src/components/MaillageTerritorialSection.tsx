@@ -90,8 +90,8 @@ const MaillageTerritorialSection = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-cyan-500/10 to-transparent rounded-full"></div>
         
-        {/* Light effect overlay */}
-        <div className="absolute inset-0">
+        {/* Light effect overlay - positioned bottom right */}
+        <div className="absolute bottom-0 right-0 w-1/2 h-1/2">
           <img 
             src="/lovable-uploads/5f0f71d0-d521-44d1-b966-be3358bf8879.png" 
             alt="Effet lumineux" 
