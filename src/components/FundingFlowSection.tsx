@@ -18,12 +18,12 @@ const FundingFlowSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
               <span className="text-white">FLUX DE</span>{" "}
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">FINANCEMENT</span>
             </h2>
-            <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-cyan-100 max-w-3xl mx-auto">
               Votre adhésion construit le trésor commun.<br />
               Investir, réinvestir, libérer des terres ensemble.
             </p>
@@ -32,65 +32,65 @@ const FundingFlowSection = () => {
           {/* How it works section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {/* Left side - How it works */}
-            <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-cyan-400/20">
-              <h3 className="text-2xl font-bold text-cyan-300 mb-8 text-center">
+            <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-cyan-400/20">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-300 mb-4 sm:mb-6 md:mb-8 text-center">
                 COMMENT ÇA MARCHE ?
               </h3>
               
-              <div className="space-y-6">
-                <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-2">1️⃣ Les adhésions alimentent le trésor commun</div>
-                  <div className="text-cyan-100 text-sm">10€ habitants + 100€ architectes = force collective</div>
+              <div className="space-y-3 sm:space-y-4 md:space-y-6">
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 md:p-6 border border-cyan-500/30">
+                  <div className="text-cyan-300 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">1️⃣ Les adhésions alimentent le trésor commun</div>
+                  <div className="text-cyan-100 text-xs sm:text-sm">10€ habitants + 100€ architectes = force collective</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-2">2️⃣ Chaque territoire active 2 FOCALISATEURS</div>
-                  <ul className="text-cyan-100 text-sm space-y-1">
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 md:p-6 border border-cyan-500/30">
+                  <div className="text-cyan-300 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">2️⃣ Chaque territoire active 2 FOCALISATEURS</div>
+                  <ul className="text-cyan-100 text-xs sm:text-sm space-y-1">
                     <li>• Connaisseurs du terrain local</li>
                     <li>• Rémunérés par le trésor commun</li>
                     <li>• Fédèrent et animent la commune</li>
                   </ul>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-2">3️⃣ On acquiert des biens stratégiques</div>
-                  <div className="text-cyan-100 text-sm">Campings, fermes, forêts, moulins...</div>
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 md:p-6 border border-cyan-500/30">
+                  <div className="text-cyan-300 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">3️⃣ On acquiert des biens stratégiques</div>
+                  <div className="text-cyan-100 text-xs sm:text-sm">Campings, fermes, forêts, moulins...</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-2">4️⃣ Les revenus retournent au collectif</div>
-                  <div className="text-cyan-100 text-sm">Location, production, événements → réinvestissement</div>
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 md:p-6 border border-cyan-500/30">
+                  <div className="text-cyan-300 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">4️⃣ Les revenus retournent au collectif</div>
+                  <div className="text-cyan-100 text-xs sm:text-sm">Location, production, événements → réinvestissement</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-2">5️⃣ Les biens deviennent communs</div>
-                  <div className="text-cyan-100 text-sm">Progressivement, tout passe en propriété collective</div>
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 md:p-6 border border-cyan-500/30">
+                  <div className="text-cyan-300 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">5️⃣ Les biens deviennent communs</div>
+                  <div className="text-cyan-100 text-xs sm:text-sm">Progressivement, tout passe en propriété collective</div>
                 </div>
               </div>
             </div>
 
             {/* Right side - Visual representation */}
-            <div className="flex flex-col justify-center space-y-8">
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-cyan-400/20 text-center">
-                <div className="text-6xl mb-4">💰</div>
-                <h4 className="text-xl font-bold text-cyan-300 mb-4">Trésor Commun</h4>
-                <p className="text-cyan-100">
+            <div className="flex flex-col justify-center space-y-4 sm:space-y-6 md:space-y-8">
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-cyan-400/20 text-center">
+                <div className="text-3xl sm:text-4xl md:text-6xl mb-2 sm:mb-3 md:mb-4">💰</div>
+                <h4 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-2 sm:mb-3 md:mb-4">Trésor Commun</h4>
+                <p className="text-cyan-100 text-xs sm:text-sm md:text-base">
                   Les adhésions se transforment en patrimoine collectif
                 </p>
               </div>
 
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-cyan-400/20 text-center">
-                <div className="text-6xl mb-4">🏡</div>
-                <h4 className="text-xl font-bold text-cyan-300 mb-4">Biens Stratégiques</h4>
-                <p className="text-cyan-100">
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-cyan-400/20 text-center">
+                <div className="text-3xl sm:text-4xl md:text-6xl mb-2 sm:mb-3 md:mb-4">🏡</div>
+                <h4 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-2 sm:mb-3 md:mb-4">Biens Stratégiques</h4>
+                <p className="text-cyan-100 text-xs sm:text-sm md:text-base">
                   Acquisition progressive de lieux d'exception
                 </p>
               </div>
 
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-cyan-400/20 text-center">
-                <div className="text-6xl mb-4">🌱</div>
-                <h4 className="text-xl font-bold text-cyan-300 mb-4">Croissance</h4>
-                <p className="text-cyan-100">
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-cyan-400/20 text-center">
+                <div className="text-3xl sm:text-4xl md:text-6xl mb-2 sm:mb-3 md:mb-4">🌱</div>
+                <h4 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-2 sm:mb-3 md:mb-4">Croissance</h4>
+                <p className="text-cyan-100 text-xs sm:text-sm md:text-base">
                   Réinvestissement permanent pour l'expansion
                 </p>
               </div>

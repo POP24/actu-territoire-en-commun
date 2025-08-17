@@ -36,7 +36,7 @@ const LaunchpadSection = () => {
                     <div className="text-sm text-gray-500">🏠 IMMOBILIER</div>
                   </div>
                   
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-4">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 mb-4">
                     <div className="hover-scale cursor-pointer">
                       <div className="h-24 rounded-lg mb-2 overflow-hidden">
                         <img src="/lovable-uploads/963b287f-eb27-42eb-b638-6ff50e70d2d7.png" alt="Camping tentes" className="w-full h-full object-cover" />

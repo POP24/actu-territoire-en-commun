@@ -17,21 +17,21 @@ const Footer = () => {
         <div className="py-16 sm:py-20">
           {/* Header Section */}
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">
               Réseau des Communes
             </h2>
-            <p className="text-lg sm:text-xl text-background/80 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-background/80 max-w-2xl mx-auto leading-relaxed">
               Construire ensemble un réseau de communes autonomes pour expérimenter, 
               se rencontrer, gouverner.
             </p>
           </div>
 
           {/* Links Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 mb-8 sm:mb-12">
             
             {/* Projet */}
             <div>
-              <h3 className="text-xl font-bold mb-6">Projet</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 md:mb-6">Projet</h3>
               <ul className="space-y-3">
                 <li>
                   <a href="/vision" className="text-background/80 hover:text-background transition-colors">
@@ -58,7 +58,7 @@ const Footer = () => {
 
             {/* Communauté */}
             <div>
-              <h3 className="text-xl font-bold mb-6">Communauté</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 md:mb-6">Communauté</h3>
               <ul className="space-y-3">
                 <li>
                   <a href="/equipe" className="text-background/80 hover:text-background transition-colors">
@@ -86,7 +86,7 @@ const Footer = () => {
 
             {/* Participer */}
             <div>
-              <h3 className="text-xl font-bold mb-6">Participer</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 md:mb-6">Participer</h3>
               <ul className="space-y-3">
                 <li>
                   <a href="/opportunites" className="text-background/80 hover:text-background transition-colors">
@@ -113,7 +113,7 @@ const Footer = () => {
 
             {/* Réseaux sociaux */}
             <div>
-              <h3 className="text-xl font-bold mb-6">Réseaux sociaux</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 md:mb-6">Réseaux sociaux</h3>
               <div className="space-y-3">
                 <a 
                   href="https://facebook.com" 

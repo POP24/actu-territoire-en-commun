@@ -43,11 +43,11 @@ const HeroSection = () => {
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-36 sm:py-40">
+      <div className="relative z-10 container mx-auto px-3 sm:px-4 md:px-6 py-20 sm:py-24 md:py-28 lg:py-32">
         <div className="max-w-7xl mx-auto">
           
           {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight">
               RÉSEAU DES <span className="text-white/90">COMMUNES</span>
             </h1>
