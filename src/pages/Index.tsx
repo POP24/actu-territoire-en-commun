@@ -23,12 +23,10 @@ const Index = () => {
       <Header />
       <HeroSection />
       <ObjectiveSection />
-      <MaillageTerritorialSection />
       <FinancingSection />
+      <MaillageTerritorialSection />
       <PathwaysSection />
       <GovernanceSection />
-      <LaunchpadSection />
-      <TypologySection />
       <FAQSection />
       <Footer />
     </div>
