@@ -67,7 +67,7 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl">
+              <Button className="w-full mt-8 bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">
                 Adhérer (100€)
               </Button>
             </div>
@@ -128,7 +128,7 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl">
+              <Button className="w-full mt-8 bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">
                 Adhérer à l'association locale
               </Button>
             </div>
