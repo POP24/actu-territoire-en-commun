@@ -37,25 +37,24 @@ const Vision = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto space-y-16">
-            {/* Vision Principale - Style paragraphe large */}
-            <div className="max-w-6xl mx-auto">
-              <div className="text-xl md:text-2xl lg:text-3xl leading-relaxed space-y-12 text-foreground/90">
-                <p className="text-center font-medium">
-                  Nous ne sommes pas en train de créer un nouveau monde.
-                </p>
+            {/* Vision Principale */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-foreground">
+                L'HEURE EST VENUE
+              </h2>
+              
+              <div className="max-w-4xl mx-auto text-lg md:text-xl leading-relaxed space-y-8 text-foreground/90">
+                <p>Nous ne sommes pas en train de créer un nouveau monde.</p>
+                <p>Nous relions celui qui émerge déjà partout.</p>
                 
-                <p className="text-center font-medium">
-                  Nous relions celui qui émerge déjà partout.
-                </p>
-                
-                <div className="text-center space-y-4 my-16">
-                  <p className="font-medium">Quand les fils seront tissés,</p>
-                  <p className="font-medium">quand les communes seront reliées,</p>
-                  <p className="font-medium">quand les caisses seront communes,</p>
-                  <p className="font-medium">alors la France des territoires vivants sera née.</p>
+                <div className="space-y-4 my-12">
+                  <p>Quand les fils seront tissés,</p>
+                  <p>quand les communes seront reliées,</p>
+                  <p>quand les caisses seront communes,</p>
+                  <p>alors la France des territoires vivants sera née.</p>
                 </div>
                 
-                <p className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-orange-500">
+                <p className="text-xl md:text-2xl font-bold text-orange-500">
                   Pas demain. Maintenant.
                 </p>
               </div>

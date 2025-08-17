@@ -58,7 +58,7 @@ const HeroSection = () => {
             {/* Top Stats - 2 levels improved */}
             <div className="max-w-5xl mx-auto">
               {/* First Level - Main Categories */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
+              <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-6">
                 <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-sm mb-1">LIEUX COMMUNS</div>
                   <div className="text-3xl font-black text-white">1000+</div>
@@ -104,7 +104,7 @@ const HeroSection = () => {
               <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20">
                 <div className="text-center mb-6">
                   <div className="border-b-2 border-gray-200 pb-4 mb-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+                    <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8">
                       {/* Usager Local */}
                       <div className="text-center hover-scale cursor-pointer">
                         <h3 className="text-lg font-black text-gray-900 mb-2">USAGER LOCAL</h3>
@@ -116,7 +116,7 @@ const HeroSection = () => {
                       </div>
                       
                       {/* Architecte Réseau */}
-                      <div className="text-center border-l-2 border-gray-200 pl-8 hover-scale cursor-pointer">
+                      <div className="text-center border-l border-gray-200 pl-3 sm:pl-6 md:pl-8 hover-scale cursor-pointer">
                         <h3 className="text-lg font-black text-gray-900 mb-2">ARCHITECTE RÉSEAU</h3>
                         <div className="text-3xl font-black text-green-brand mb-1">100€</div>
                         <div className="text-sm text-gray-600 mb-4">100€ unique</div>

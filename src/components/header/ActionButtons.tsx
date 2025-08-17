@@ -23,15 +23,6 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
         >
           ADHÉRER
         </Button>
-        <Button 
-          asChild
-          onClick={onButtonClick}
-          className="w-full bg-orange-500 hover:bg-orange-600 text-white rounded-xl py-3 font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-        >
-          <a href="https://lasuitedumonde.com" target="_blank" rel="noopener noreferrer">
-            🏠 lasuitedumonde.com
-          </a>
-        </Button>
       </div>
     );
   }
@@ -50,14 +41,6 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
       </NavLink>
       <Button className="bg-blue-700 hover:bg-blue-800 text-white rounded-xl px-4 sm:px-6 py-2 sm:py-2.5 font-medium text-sm sm:text-base shadow-lg hover:shadow-xl transition-all duration-300">
         ADHÉRER
-      </Button>
-      <Button 
-        asChild
-        className="bg-orange-500 hover:bg-orange-600 text-white rounded-xl px-2 py-2 sm:py-2.5 shadow-lg hover:shadow-xl transition-all duration-300"
-      >
-        <a href="https://lasuitedumonde.com" target="_blank" rel="noopener noreferrer">
-          🏠
-        </a>
       </Button>
     </div>
   );
