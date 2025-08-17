@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { ChevronRight, Users, Globe, DollarSign, MapPin, Heart } from "lucide-react";
-import campfireImage from "/lovable-uploads/55c4be87-7be8-49ad-af5e-7083f66ebb09.png";
+import megaFireBackground from "@/assets/mega-fire-background.jpg";
 import { useState, useEffect } from "react";
 
 const HeroSection = () => {
@@ -20,11 +20,11 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Background Image with Campfire */}
+      {/* Background with Mega Fire */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={campfireImage} 
-          alt="Feu de camp communautaire" 
+          src={megaFireBackground} 
+          alt="Méga feu dramatique" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-gray-900/90 to-black/95"></div>
