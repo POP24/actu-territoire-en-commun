@@ -13,113 +13,111 @@ const LaunchpadSection = () => {
           {/* Main Title */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              CROWDFUND <span className="text-cyan-400">YOUR BIOREGION</span>
+              FINANCEZ VOTRE <span className="text-cyan-400">TERRITOIRE</span>
             </h2>
-            <p className="text-gray-300 text-lg mb-2">Turn Ideas Into Action.</p>
-            <p className="text-gray-400">Finance projects that matter, together.</p>
+            <p className="text-gray-300 text-lg mb-2">Transformez les idées en actions.</p>
+            <p className="text-gray-400">Financez les projets qui comptent, ensemble.</p>
           </div>
 
           {/* Two Launchpads */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Real-Estate Launchpad */}
+            {/* Immobilier Partagé */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Real-Estate <span className="text-cyan-400">Launchpad</span>
+                Immobilier <span className="text-cyan-400">Partagé</span>
               </h3>
-              <p className="text-gray-300 mb-6">Fractionalize. Finance. Build.</p>
+              <p className="text-gray-300 mb-6">Mutualisez. Financez. Possédez.</p>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                 {/* Mock interface for Real Estate */}
                 <div className="bg-white rounded-xl p-4 mb-4">
                   <div className="flex justify-between items-center mb-4">
-                    <h4 className="font-semibold text-gray-800">Primary Market</h4>
-                    <div className="text-sm text-gray-500">🏠 REAL ESTATE</div>
+                    <h4 className="font-semibold text-gray-800">🏕 CAMPING COLLECTIF</h4>
+                    <div className="text-sm text-gray-500">DORDOGNE</div>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-4 mb-4">
-                    <div>
-                      <div className="bg-gray-100 h-20 rounded-lg mb-2"></div>
-                      <div className="text-xs text-gray-600">Property Details</div>
-                    </div>
-                    <div>
-                      <div className="bg-gradient-to-r from-cyan-400 to-blue-500 h-20 rounded-lg mb-2"></div>
-                      <div className="text-xs text-gray-600">Virtual Tour</div>
-                    </div>
-                    <div>
-                      <div className="bg-gray-100 h-20 rounded-lg mb-2"></div>
-                      <div className="text-xs text-gray-600">Investment Info</div>
-                    </div>
+                  <div className="bg-gradient-to-r from-green-400 to-green-600 h-24 rounded-lg mb-4 flex items-center justify-center">
+                    <div className="text-white font-bold">🏞️ Périgord Vert</div>
                   </div>
                   
                   <div className="flex justify-between items-center mb-4">
                     <div>
                       <div className="text-2xl font-bold text-primary">67%</div>
-                      <div className="text-xs text-gray-500">SUBSCRIBED</div>
+                      <div className="text-xs text-gray-500">FINANCÉ</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-sm font-semibold">€850,000 / €1,200,000</div>
-                      <div className="text-xs text-gray-500">Target Amount</div>
+                      <div className="text-sm font-semibold">850 000€ / 1 200 000€</div>
+                      <div className="text-xs text-gray-500">Objectif</div>
                     </div>
                   </div>
                   
+                  <div className="text-left text-xs text-gray-600 mb-4 space-y-1">
+                    <div>📍 4 hectares - Périgord Vert</div>
+                    <div>🏠 30 emplacements + gîtes</div>
+                    <div>📈 Rendement: 3-5% annuel</div>
+                    <div>Part minimum: 100€</div>
+                  </div>
+                  
                   <button className="w-full bg-gradient-to-r from-primary to-secondary text-white py-3 rounded-lg font-semibold">
-                    Invest Now
+                    INVESTIR MAINTENANT
                   </button>
                 </div>
                 
-                <p className="text-gray-300 text-sm">Crowdfund real-world assets like farms and shared spaces.</p>
-                <p className="text-gray-400 text-xs">Empower collective ownership with sustainable returns.</p>
+                <p className="text-gray-300 text-sm">Devenez copropriétaire d'un camping écologique</p>
+                <p className="text-gray-400 text-xs">Géré par la coopérative avec crédits séjours inclus</p>
               </div>
             </div>
 
-            {/* Membership Launchpad */}
+            {/* Trésorerie Commune */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Membership <span className="text-cyan-400">Launchpad</span>
+                Trésorerie <span className="text-cyan-400">Commune</span>
               </h3>
-              <p className="text-gray-300 mb-6">Join. Federate. Organize.</p>
+              <p className="text-gray-300 mb-6">Rejoignez. Votez. Décidez.</p>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                 {/* Mock interface for Membership */}
                 <div className="bg-gray-900 rounded-xl p-4 mb-4 border border-cyan-500/30">
                   <div className="flex justify-between items-center mb-4">
-                    <h4 className="font-semibold text-white">🌐 NFT MEMBERSHIP</h4>
+                    <h4 className="font-semibold text-white">🌱 COMMUNE DU BANDIAT</h4>
                     <div className="text-xs text-cyan-400">⚡ ACTIVE</div>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-4 mb-4">
-                    <div>
-                      <div className="bg-gradient-to-br from-purple-600 to-cyan-500 h-24 rounded-lg mb-2 flex items-center justify-center">
-                        <div className="text-white font-bold">✨ GENESIS</div>
-                      </div>
-                      <div className="text-xs text-gray-400">Genesis Membership</div>
-                    </div>
-                    <div>
-                      <div className="bg-gradient-to-br from-blue-600 to-purple-500 h-24 rounded-lg mb-2 flex items-center justify-center">
-                        <div className="text-white font-bold">🚀 CAPTAIN</div>
-                      </div>
-                      <div className="text-xs text-gray-400">Leadership Role</div>
-                    </div>
+                  <div className="bg-gradient-to-br from-green-600 to-cyan-500 h-20 rounded-lg mb-4 flex items-center justify-center">
+                    <div className="text-white font-bold text-sm">👥 Communauté Locale</div>
                   </div>
                   
                   <div className="flex justify-between items-center mb-4">
                     <div>
                       <div className="text-2xl font-bold text-cyan-400">67%</div>
-                      <div className="text-xs text-gray-400">MINTED</div>
+                      <div className="text-xs text-gray-400">DES MEMBRES</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-sm font-semibold text-white">1,247 / 10,000</div>
-                      <div className="text-xs text-gray-400">Members</div>
+                      <div className="text-sm font-semibold text-white">1 247 / 2 000</div>
+                      <div className="text-xs text-gray-400">Membres visés</div>
                     </div>
                   </div>
                   
+                  <div className="text-left text-xs text-white mb-4 space-y-1">
+                    <div className="font-semibold">TRÉSORERIE: 127 000€</div>
+                    <div className="text-gray-300">Projets en vote:</div>
+                    <div className="text-gray-400">• Achat tracteur collectif</div>
+                    <div className="text-gray-400">• Rénovation grange commune</div>
+                    <div className="text-gray-400">• Festival été 2025</div>
+                  </div>
+                  
+                  <div className="text-left text-xs text-white mb-4">
+                    <div>⭐ HABITANT: 10€/an</div>
+                    <div>🔥 ARCHITECTE: 100€ unique</div>
+                  </div>
+                  
                   <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 rounded-lg font-semibold">
-                    Join Network
+                    REJOINDRE LA COMMUNE
                   </button>
                 </div>
                 
-                <p className="text-gray-300 text-sm">Onboard pioneers with tokenized memberships.</p>
-                <p className="text-gray-400 text-xs">Unlock governance, perks, and collective resilience.</p>
+                <p className="text-gray-300 text-sm">Gouvernance directe de votre territoire</p>
+                <p className="text-gray-400 text-xs">Vote sur tous les projets et accès aux équipements</p>
               </div>
             </div>
           </div>
