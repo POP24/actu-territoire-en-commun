@@ -27,8 +27,8 @@ const Index = () => {
       <LaunchpadSection />
       <MaillageTerritorialSection />
       <PathwaysSection />
-      <OutilsSection />
       <GovernanceSection />
+      <OutilsSection />
       <FAQSection />
       <Footer />
     </div>
