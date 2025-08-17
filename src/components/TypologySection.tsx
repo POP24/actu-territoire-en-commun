@@ -24,20 +24,24 @@ const TypologySection = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Titre principal */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8">
             <span className="text-foreground">CE QU'ON</span>{" "}
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">ACTIVE</span>
           </h2>
           
           {/* Section Focus - Campings Collectifs */}
-          <div className="mb-12">
-            <div className="text-center border-t-2 border-b-2 border-primary/30 py-6 mb-6">
-              <div className="flex items-center justify-center gap-4 mb-2">
-                <span className="text-3xl">🏕️</span>
-                <h3 className="text-xl sm:text-2xl font-bold text-foreground">CAMPINGS COLLECTIFS</h3>
-                <span className="text-lg">⭐</span>
-                <span className="text-sm font-semibold text-primary">FOCUS ACTUEL</span>
-                <span className="text-lg">⭐</span>
+          <div className="mb-6 sm:mb-8">
+            <div className="text-center border-t border-b border-primary/30 py-3 sm:py-4 mb-4">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-xl sm:text-2xl">🏕️</span>
+                  <h3 className="text-sm sm:text-lg font-bold text-foreground">CAMPINGS COLLECTIFS</h3>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm">⭐</span>
+                  <span className="text-xs font-semibold text-primary">FOCUS ACTUEL</span>
+                  <span className="text-sm">⭐</span>
+                </div>
               </div>
               <div className="text-center mt-2">
                 <span className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold">
@@ -46,18 +50,18 @@ const TypologySection = () => {
               </div>
             </div>
             
-            <div className="bg-gradient-card rounded-xl p-6 border border-primary/20 shadow-soft">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                <div className="bg-primary/10 rounded-lg p-3 text-center">
-                  <div className="text-xl font-bold text-primary">3</div>
+            <div className="bg-gradient-card rounded-xl p-3 sm:p-4 border border-primary/20 shadow-soft">
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-4">
+                <div className="bg-primary/10 rounded-lg p-2 text-center">
+                  <div className="text-sm sm:text-lg font-bold text-primary">3</div>
                   <div className="text-xs text-muted-foreground">en acquisition</div>
                 </div>
-                <div className="bg-secondary/10 rounded-lg p-3 text-center">
-                  <div className="text-xl font-bold text-secondary">12</div>
+                <div className="bg-secondary/10 rounded-lg p-2 text-center">
+                  <div className="text-sm sm:text-lg font-bold text-secondary">12</div>
                   <div className="text-xs text-muted-foreground">identifiés</div>
                 </div>
-                <div className="bg-accent/10 rounded-lg p-3 text-center">
-                  <div className="text-xl font-bold text-accent">✓</div>
+                <div className="bg-accent/10 rounded-lg p-2 text-center">
+                  <div className="text-sm sm:text-lg font-bold text-accent">✓</div>
                   <div className="text-xs text-muted-foreground">Rentabilité prouvée</div>
                 </div>
               </div>
@@ -80,12 +84,12 @@ const TypologySection = () => {
           </div>
           
           {/* Section Autres développements */}
-          <div className="border-t-2 border-primary/30 pt-12">
-            <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
+          <div className="border-t border-primary/30 pt-6 sm:pt-8">
+            <h3 className="text-lg sm:text-xl font-bold text-center mb-4 sm:mb-6 text-foreground">
               AUSSI EN DÉVELOPPEMENT :
             </h3>
             
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mb-6">
               {autresTypes.map((type, index) => (
                 <div 
                   key={index}
