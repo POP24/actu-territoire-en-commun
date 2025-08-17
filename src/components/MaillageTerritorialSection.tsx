@@ -108,7 +108,7 @@ const MaillageTerritorialSection = () => {
               <div 
                 key={index} 
                  className={`relative group cursor-pointer transform transition-all duration-300 hover:scale-110 hover:z-10 ${
-                   category.isHot ? 'animate-pulse' : ''
+                   category.isHot ? 'animate-[pulse_3s_ease-in-out_infinite]' : ''
                  }`}
                >
                  {/* Card */}
@@ -129,7 +129,7 @@ const MaillageTerritorialSection = () => {
                      <div className="absolute top-2 left-2">
                        <span className={`text-xs px-2 py-1 rounded font-bold ${
                          category.isHot 
-                           ? "bg-red-600/90 text-white animate-pulse shadow-lg" 
+                           ? "bg-red-600/90 text-white animate-[pulse_2.5s_ease-in-out_infinite] shadow-lg" 
                            : category.type === "VIVRE" ? "bg-cyan-500/90 text-white" :
                              category.type === "PRODUIRE" ? "bg-green-500/90 text-white" :
                              "bg-blue-500/90 text-white"
