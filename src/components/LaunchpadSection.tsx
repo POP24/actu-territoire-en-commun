@@ -68,7 +68,7 @@ const LaunchpadSection = () => {
                     </div>
                   </div>
                   
-                  <button className="w-full bg-gradient-to-r from-primary to-secondary text-white py-3 rounded-lg font-semibold">
+                  <button className="w-full bg-orange-brand hover:bg-orange-dark text-white py-3 rounded-lg font-semibold">
                     INVESTIR
                   </button>
                 </div>
@@ -119,7 +119,7 @@ const LaunchpadSection = () => {
                     </div>
                   </div>
                   
-                  <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 rounded-lg font-semibold">
+                  <button className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold">
                     ADHÉRER
                   </button>
                 </div>
