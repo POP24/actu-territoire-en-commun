@@ -12,11 +12,11 @@ const ObjectiveSection = () => {
           </h2>
           
           <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-            <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 items-center justify-items-center max-w-6xl mx-auto mb-6 sm:mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center max-w-6xl mx-auto mb-6 sm:mb-8">
               
               {/* LES LIEUX EXISTENT */}
               <div className="flex justify-center animate-scale-in">
-                <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
+                <div className="w-full max-w-xs sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
                   <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">⚡</div>
                   <h3 className="text-sm sm:text-base md:text-lg font-bold text-green-700 dark:text-green-300 mb-1 sm:mb-2 tracking-wide text-center">LES LIEUX EXISTENT</h3>
                   <p className="text-xs sm:text-sm font-semibold text-green-600 dark:text-green-400 mb-2 sm:mb-3 text-center">Les territoires sont prêts</p>
@@ -33,7 +33,7 @@ const ObjectiveSection = () => {
 
               {/* LES OUTILS SONT PRÊTS */}
               <div className="flex justify-center animate-scale-in">
-                <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-blue-400/60 hover:ring-4 hover:ring-blue-400/30 cursor-pointer">
+                <div className="w-full max-w-xs sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-blue-400/60 hover:ring-4 hover:ring-blue-400/30 cursor-pointer">
                   <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">⚙️</div>
                   <h3 className="text-sm sm:text-base md:text-lg font-bold text-blue-700 dark:text-blue-300 mb-1 sm:mb-2 tracking-wide text-center">OUTILS PRÊTS</h3>
                   <p className="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400 mb-2 sm:mb-3 text-center">Gouvernance, cagnottes</p>
@@ -50,7 +50,7 @@ const ObjectiveSection = () => {
 
               {/* LES GENS SONT LÀ */}
               <div className="flex justify-center animate-scale-in">
-                <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-purple-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-purple-400/60 hover:ring-4 hover:ring-purple-400/30 cursor-pointer">
+                <div className="w-full max-w-xs sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-purple-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-purple-400/60 hover:ring-4 hover:ring-purple-400/30 cursor-pointer">
                   <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">✊</div>
                   <h3 className="text-sm sm:text-base md:text-lg font-bold text-purple-700 dark:text-purple-300 mb-1 sm:mb-2 tracking-wide text-center">LES GENS SONT LÀ</h3>
                   <p className="text-xs sm:text-sm font-semibold text-purple-600 dark:text-purple-400 mb-2 sm:mb-3 text-center">Réseaux actifs</p>

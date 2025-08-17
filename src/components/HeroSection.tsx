@@ -83,12 +83,13 @@ const HeroSection = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 sm:p-6 border border-white/20">
                 <h3 className="text-white font-bold text-base sm:text-lg mb-3 sm:mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
                 
-                {/* Real France Map - Full country view */}
+                {/* Real France Map - Fixed for mobile */}
                 <div className="relative w-full h-64 sm:h-80 md:h-[26rem] bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
                     src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5%2C42.0%2C8.5%2C51.2&amp;layer=mapnik&amp;marker=45.1834%2C0.7167"
-                    className="w-full h-full border-0 opacity-80"
+                    className="w-full h-full border-0 opacity-80 pointer-events-none"
                     title="Carte de France avec marqueur Dordogne"
+                    style={{ pointerEvents: 'none' }}
                   ></iframe>
                   
                   <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm">
@@ -106,20 +107,20 @@ const HeroSection = () => {
                   <div className="border-b-2 border-gray-200 pb-3 sm:pb-4 mb-4 sm:mb-6">
                     <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
                       {/* Usager Local */}
-                      <div className="text-center hover-scale cursor-pointer">
+                      <div className="text-center hover-scale cursor-pointer flex flex-col h-full">
                         <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">USAGER LOCAL</h3>
                         <div className="text-2xl sm:text-3xl font-black text-blue-700 mb-1">10€</div>
-                        <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4">Prix libre (min 10€)</div>
+                        <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow">Prix libre (min 10€)</div>
                         <Button className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
                           ADHÉRER
                         </Button>
                       </div>
                       
                       {/* Architecte Réseau */}
-                      <div className="text-center border-l border-gray-200 pl-2 sm:pl-3 md:pl-6 lg:pl-8 hover-scale cursor-pointer">
+                      <div className="text-center border-l border-gray-200 pl-2 sm:pl-3 md:pl-6 lg:pl-8 hover-scale cursor-pointer flex flex-col h-full">
                         <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">ARCHITECTE RÉSEAU</h3>
                         <div className="text-2xl sm:text-3xl font-black text-green-brand mb-1">100€</div>
-                        <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4">100€ unique</div>
+                        <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow">100€ unique</div>
                         <Button className="w-full bg-green-brand hover:bg-green-dark text-white font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
                           ADHÉRER
                         </Button>
