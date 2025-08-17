@@ -156,8 +156,8 @@ const Footer = () => {
 
         {/* Bottom Footer */}
         <div className="border-t border-background/20 py-6">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div className="flex flex-wrap gap-6 text-sm text-background/60">
+          <div className="text-center space-y-4">
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-background/60">
               <a href="/cgv" className="hover:text-background transition-colors">
                 CGV
               </a>
