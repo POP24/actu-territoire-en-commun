@@ -93,24 +93,30 @@ const LaunchpadSection = () => {
                     <div className="text-xs text-cyan-400">⚡ GOUVERNANCE</div>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="grid grid-cols-2 gap-4 mb-4">
                     <div>
-                      <div className="bg-gradient-to-br from-purple-600 to-cyan-500 h-28 rounded-lg mb-2 flex items-center justify-center">
+                      <div className="bg-gradient-to-br from-purple-600 to-cyan-500 h-24 rounded-lg mb-2 flex items-center justify-center">
                         <div className="text-white font-bold">⭐ USAGER LOCAL</div>
                       </div>
                       <div className="text-xs text-gray-400">Prix libre (min 10€)</div>
                     </div>
                     <div>
-                      <div className="bg-gradient-to-br from-blue-600 to-purple-500 h-28 rounded-lg mb-2 flex items-center justify-center">
+                      <div className="bg-gradient-to-br from-blue-600 to-purple-500 h-24 rounded-lg mb-2 flex items-center justify-center">
                         <div className="text-white font-bold">🔥 ARCHITECTE</div>
                       </div>
                       <div className="text-xs text-gray-400">100€ unique</div>
                     </div>
                   </div>
                   
-                  <div className="text-right mb-4">
-                    <div className="text-sm font-semibold text-white">1,247 / 10,000</div>
-                    <div className="text-xs text-gray-400">Members</div>
+                  <div className="flex justify-between items-center mb-4">
+                    <div>
+                      <div className="text-2xl font-bold text-cyan-400">13%</div>
+                      <div className="text-xs text-gray-400">MINTED</div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm font-semibold text-white">1,247 / 10,000</div>
+                      <div className="text-xs text-gray-400">Members</div>
+                    </div>
                   </div>
                   
                   <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 rounded-lg font-semibold">
