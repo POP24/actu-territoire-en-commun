@@ -108,91 +108,60 @@ const MaillageTerritorialSection = () => {
               <div 
                 key={index} 
                  className={`relative group cursor-pointer transform transition-all duration-300 hover:scale-110 hover:z-10 ${
-                   category.isHot ? 'md:col-span-2' : ''
+                   category.isHot ? 'animate-[pulse_3s_ease-in-out_infinite]' : ''
                  }`}
                >
                  {/* Card */}
-                 {category.isHot ? (
-                   <a 
-                     href="https://www.lasuitedumonde.com" 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     className="block"
-                   >
-                     <div className="backdrop-blur-sm rounded-xl border transition-all duration-300 overflow-hidden bg-red-500/20 border-red-500/50 shadow-lg shadow-red-500/30 group-hover:border-red-400/80 group-hover:bg-red-500/30">
-                       {/* Image */}
-                       <div className="aspect-square relative overflow-hidden rounded-t-xl">
-                         <img 
-                           src={category.image} 
-                           alt={category.title}
-                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                         />
+                 <div className={`backdrop-blur-sm rounded-xl border transition-all duration-300 overflow-hidden ${
+                   category.isHot 
+                     ? 'bg-red-500/20 border-red-500/50 shadow-lg shadow-red-500/30 group-hover:border-red-400/80 group-hover:bg-red-500/30' 
+                     : 'bg-white/10 border-white/20 group-hover:border-cyan-400/50 group-hover:bg-white/20'
+                 }`}>
+                  {/* Image */}
+                  <div className="aspect-square relative overflow-hidden rounded-t-xl">
+                    <img 
+                      src={category.image} 
+                      alt={category.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
 
-                          {/* Badge */}
-                          <div className="absolute top-2 left-2">
-                            <span className="text-xs px-2 py-1 rounded font-bold bg-red-600/90 text-white shadow-lg">
-                              {category.badge}
-                            </span>
-                          </div>
-                       </div>
-
-                       {/* Title and info below image */}
-                       <div className="p-3 text-center">
-                         <div className="text-3xl md:text-4xl mb-2">{category.emoji}</div>
-                         <h4 className="font-bold text-white text-xs md:text-sm mb-1">{category.title}</h4>
-                         <p className="text-gray-400 text-xs">{category.subtitle}</p>
-                       </div>
-
-                        {/* Hover Info Panel */}
-                        <div className="absolute inset-x-0 bottom-0 bg-black/95 backdrop-blur-sm p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                          <div className="text-center">
-                            <span className="text-xs font-semibold text-red-400">{category.metric}</span>
-                            <div className="text-orange-300 text-xs mt-1">
-                              Investir dès 50€ →
-                            </div>
-                          </div>
-                        </div>
+                     {/* Badge */}
+                     <div className="absolute top-2 left-2">
+                       <span className={`text-xs px-2 py-1 rounded font-bold ${
+                         category.isHot 
+                           ? "bg-red-600/90 text-white animate-[pulse_2.5s_ease-in-out_infinite] shadow-lg" 
+                           : category.type === "VIVRE" ? "bg-cyan-500/90 text-white" :
+                             category.type === "PRODUIRE" ? "bg-green-500/90 text-white" :
+                             "bg-blue-500/90 text-white"
+                       }`}>
+                         {category.badge}
+                       </span>
                      </div>
-                   </a>
-                 ) : (
-                   <div className="backdrop-blur-sm rounded-xl border transition-all duration-300 overflow-hidden bg-white/10 border-white/20 group-hover:border-cyan-400/50 group-hover:bg-white/20">
-                     {/* Image */}
-                     <div className="aspect-square relative overflow-hidden rounded-t-xl">
-                       <img 
-                         src={category.image} 
-                         alt={category.title}
-                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                       />
+                  </div>
 
-                        {/* Badge */}
-                        <div className="absolute top-2 left-2">
-                          <span className={`text-xs px-2 py-1 rounded font-bold ${
-                            category.type === "VIVRE" ? "bg-cyan-500/90 text-white" :
-                            category.type === "PRODUIRE" ? "bg-green-500/90 text-white" :
-                            "bg-blue-500/90 text-white"
-                          }`}>
-                            {category.badge}
-                          </span>
-                        </div>
+                  {/* Title and info below image */}
+                  <div className="p-3 text-center">
+                    <div className="text-3xl md:text-4xl mb-2">{category.emoji}</div>
+                    <h4 className="font-bold text-white text-xs md:text-sm mb-1">{category.title}</h4>
+                    <p className="text-gray-400 text-xs">{category.subtitle}</p>
+                  </div>
+
+                   {/* Hover Info Panel */}
+                   <div className="absolute inset-x-0 bottom-0 bg-black/95 backdrop-blur-sm p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                     <div className="text-center">
+                       <span className={`text-xs font-semibold ${
+                         category.isHot ? 'text-red-400' : 'text-cyan-400'
+                       }`}>{category.metric}</span>
+                       {category.isHot && (
+                         <div className="text-orange-300 text-xs mt-1">
+                           Investir dès 50€ →
+                         </div>
+                       )}
                      </div>
-
-                     {/* Title and info below image */}
-                     <div className="p-3 text-center">
-                       <div className="text-3xl md:text-4xl mb-2">{category.emoji}</div>
-                       <h4 className="font-bold text-white text-xs md:text-sm mb-1">{category.title}</h4>
-                       <p className="text-gray-400 text-xs">{category.subtitle}</p>
-                     </div>
-
-                      {/* Hover Info Panel */}
-                      <div className="absolute inset-x-0 bottom-0 bg-black/95 backdrop-blur-sm p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                        <div className="text-center">
-                          <span className="text-xs font-semibold text-cyan-400">{category.metric}</span>
-                        </div>
-                      </div>
                    </div>
-                 )}
-               </div>
-             ))}
+                </div>
+              </div>
+            ))}
           </div>
 
           {/* System Flow Diagram */}
