@@ -13,7 +13,7 @@ const LaunchpadSection = () => {
           {/* Main Title */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              FINANCEZ VOTRE <span className="text-cyan-400">TERRITOIRE</span>
+              FINANCEZ VOTRE <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITOIRE</span>
             </h2>
             <p className="text-gray-300 text-lg mb-2">Transformez les idées en actions.</p>
             <p className="text-gray-400">Financez les projets qui comptent, ensemble.</p>
@@ -24,7 +24,7 @@ const LaunchpadSection = () => {
             {/* Real-Estate Launchpad */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Immobilier <span className="text-cyan-400">Partagé</span>
+                Immobilier <span className="bg-gradient-to-r from-orange-brand to-gold bg-clip-text text-transparent">Partagé</span>
               </h3>
               <p className="text-gray-300 mb-6">Mutualisez. Financez. Construire.</p>
               
@@ -81,7 +81,7 @@ const LaunchpadSection = () => {
             {/* Membership Launchpad */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Trésorerie <span className="text-cyan-400">Commune</span>
+                Trésorerie <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Commune</span>
               </h3>
               <p className="text-gray-300 mb-6">Rejoignez. Votez. Décidez.</p>
               

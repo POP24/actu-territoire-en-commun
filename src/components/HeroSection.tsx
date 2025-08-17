@@ -134,7 +134,7 @@ const HeroSection = () => {
                     <div className="bg-gradient-orange-gold text-white inline-block py-2 px-6 rounded-lg font-bold text-sm tracking-wider mb-3">
                       OBJECTIF · TRÉSOR COMMUN
                     </div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-4">Financement Collectif</h4>
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">Progression du Trésor</h4>
                   </div>
                   
                   <div className="bg-gray-50 rounded-lg p-4 mb-4">
