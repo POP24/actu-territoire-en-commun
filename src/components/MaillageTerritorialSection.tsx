@@ -112,7 +112,7 @@ const MaillageTerritorialSection = () => {
           </div>
 
           {/* Compact 4x2 Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 mb-12">
             {categories.map((category, index) => {
               const CardWrapper = category.isHot ? 'a' : 'div';
               const cardProps = category.isHot 

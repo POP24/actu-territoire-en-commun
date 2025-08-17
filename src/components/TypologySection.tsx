@@ -85,7 +85,7 @@ const TypologySection = () => {
               AUSSI EN DÉVELOPPEMENT :
             </h3>
             
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 mb-8">
               {autresTypes.map((type, index) => (
                 <div 
                   key={index}
@@ -102,8 +102,8 @@ const TypologySection = () => {
                       {type.emoji}
                     </div>
                   </div>
-                  <div className="p-3 text-center">
-                    <div className="text-sm font-medium text-foreground">{type.title}</div>
+                  <div className="p-2 sm:p-3 text-center">
+                    <div className="text-xs sm:text-sm font-medium text-foreground">{type.title}</div>
                   </div>
                 </div>
               ))}

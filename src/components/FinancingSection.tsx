@@ -16,7 +16,7 @@ const FinancingSection = () => {
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITOIRE</span>
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
             {/* Immobilier Partagé */}
             <div className="text-center">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">

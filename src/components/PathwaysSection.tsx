@@ -10,7 +10,7 @@ const PathwaysSection = () => {
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">CHEMIN</span>
           </h2>
           
-          <div className="grid lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
             {/* Chemin 1 */}
             <div className="bg-gradient-card p-6 sm:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-brand cursor-pointer flex flex-col">
               <div className="flex flex-col items-center text-center mb-8">

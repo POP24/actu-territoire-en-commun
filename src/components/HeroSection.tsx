@@ -58,7 +58,7 @@ const HeroSection = () => {
             {/* Top Stats - 2 levels improved */}
             <div className="max-w-5xl mx-auto">
               {/* First Level - Main Categories */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
                 <div className="bg-white/15 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-sm mb-1">LIEUX COMMUNS</div>
                   <div className="text-3xl font-black text-white">1000+</div>
@@ -76,7 +76,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Content */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12">
             
             {/* Left: Interactive Real Map */}
             <div className="relative">
@@ -104,7 +104,7 @@ const HeroSection = () => {
               <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20">
                 <div className="text-center mb-6">
                   <div className="border-b-2 border-gray-200 pb-4 mb-6">
-                    <div className="grid grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
                       {/* Usager Local */}
                       <div className="text-center hover-scale cursor-pointer">
                         <h3 className="text-lg font-black text-gray-900 mb-2">USAGER LOCAL</h3>

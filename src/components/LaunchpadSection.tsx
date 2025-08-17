@@ -20,7 +20,7 @@ const LaunchpadSection = () => {
           </div>
 
           {/* Two Launchpads */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {/* Real-Estate Launchpad */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
@@ -36,7 +36,7 @@ const LaunchpadSection = () => {
                     <div className="text-sm text-gray-500">🏠 IMMOBILIER</div>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-4 mb-4">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-4">
                     <div className="hover-scale cursor-pointer">
                       <div className="h-24 rounded-lg mb-2 overflow-hidden">
                         <img src="/lovable-uploads/963b287f-eb27-42eb-b638-6ff50e70d2d7.png" alt="Camping tentes" className="w-full h-full object-cover" />
@@ -93,7 +93,7 @@ const LaunchpadSection = () => {
                     <div className="text-xs bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">⚡ GOUVERNANCE</div>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-4 mb-4">
+                  <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
                     <div className="hover-scale cursor-pointer">
                       <div className="bg-gradient-to-br from-purple-600 to-cyan-500 h-24 rounded-lg mb-2 flex items-center justify-center">
                         <div className="text-white font-bold">⭐ USAGER LOCAL</div>

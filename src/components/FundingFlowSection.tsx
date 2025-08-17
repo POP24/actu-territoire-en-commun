@@ -30,7 +30,7 @@ const FundingFlowSection = () => {
           </div>
 
           {/* How it works section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {/* Left side - How it works */}
             <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-cyan-400/20">
               <h3 className="text-2xl font-bold text-cyan-300 mb-8 text-center">
