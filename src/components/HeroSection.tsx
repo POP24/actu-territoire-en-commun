@@ -131,18 +131,23 @@ const HeroSection = () => {
                 {/* Section Objectif + Trésor Commun */}
                 <div className="bg-white rounded-xl p-6 border border-gray-200">
                   <div className="text-center mb-4">
-                    <div className="bg-gradient-orange-gold text-white inline-block py-2 px-6 rounded-lg font-bold text-sm tracking-wider mb-3">
+                    <div className="bg-gradient-orange-gold text-white inline-block py-2 px-6 rounded-lg font-bold text-sm tracking-wider mb-3 shadow-lg" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.5)'}}>
                       OBJECTIF · TRÉSOR COMMUN
                     </div>
                   </div>
                   
-                  <div className="bg-gray-50 rounded-lg p-4">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-gray-600">Progression</span>
-                      <span className="text-sm font-bold text-gray-900">{treasureProgress}%</span>
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <div className="flex justify-between items-center mb-3">
+                      <span className="text-sm font-bold text-gray-800">Progression</span>
+                      <span className="text-lg font-black text-gray-900">{treasureProgress}%</span>
                     </div>
-                    <Progress value={treasureProgress} className="h-3 mb-2" />
-                    <div className="flex justify-between text-xs text-gray-500">
+                    <div className="bg-gray-200 rounded-full h-4 mb-3">
+                      <div 
+                        className="bg-gradient-orange-gold h-4 rounded-full transition-all duration-500 shadow-sm" 
+                        style={{width: `${treasureProgress}%`}}
+                      ></div>
+                    </div>
+                    <div className="flex justify-between text-sm font-medium text-gray-700">
                       <span>650 000€ collectés</span>
                       <span>Objectif: 1M€</span>
                     </div>
