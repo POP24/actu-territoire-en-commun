@@ -16,7 +16,11 @@ const navItems = [
 const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   const baseClasses = isMobile 
     ? "block py-3 text-base font-medium transition-colors"
-    : "text-sm xl:text-base font-medium transition-colors";
+    : "text-sm xl:text-base font-medium transition-colors relative";
+  
+  const hoverClasses = isMobile 
+    ? ""
+    : "hover:after:scale-x-100 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-blue-700 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:origin-bottom-left";
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -45,7 +49,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
             <button
               key={item.to}
               onClick={() => handleClick(item)}
-              className={`${baseClasses} text-muted-foreground hover:text-foreground`}
+              className={`${baseClasses} ${hoverClasses} text-muted-foreground hover:text-foreground`}
             >
               {item.label}
             </button>
@@ -57,7 +61,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
             key={item.to}
             to={item.to}
             onClick={onLinkClick}
-            className={({ isActive }) => `${baseClasses} ${
+            className={({ isActive }) => `${baseClasses} ${hoverClasses} ${
               isActive 
                 ? "text-foreground border-b-2 border-blue-700" 
                 : "text-muted-foreground hover:text-foreground"
