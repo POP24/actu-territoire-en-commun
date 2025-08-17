@@ -20,17 +20,15 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Background Pattern with Genette */}
+      {/* Background with Single Large Genette */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="w-full h-full opacity-20"
-          style={{
-            backgroundImage: `url(${genetteLogo})`,
-            backgroundSize: '200px',
-            backgroundRepeat: 'repeat',
-            backgroundPosition: 'center'
-          }}
-        />
+        <div className="w-full h-full flex items-center justify-center">
+          <img 
+            src={genetteLogo} 
+            alt="Genette logo" 
+            className="w-96 h-96 opacity-10 object-contain"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/98 via-gray-900/95 to-black/98"></div>
       </div>
 
