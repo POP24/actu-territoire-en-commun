@@ -5,17 +5,18 @@ const MaillageTerritorialSection = () => {
       title: "CAMPINGS COLLECTIFS", 
       emoji: "🏕",
       subtitle: "Revenus + Accueil",
-      badge: "RENCONTRE",
-      metric: "3-8% rendement",
+      badge: "🔥 EN COURS",
+      metric: "775k€ à lever • Dordogne",
       image: "/lovable-uploads/2ca5809b-7acf-4fa7-a3af-c2c73102508e.png",
-      type: "VIVRE"
+      type: "VIVRE",
+      isHot: true
     },
     {
       title: "TIERS-LIEUX",
       emoji: "🏘",
       subtitle: "Vie sociale + Travail", 
       badge: "LIEN SOCIAL",
-      metric: "30+ emplois",
+      metric: "30+ emplois créés",
       image: "/lovable-uploads/301ed433-68f3-4972-88e1-bc23c23940fd.png",
       type: "VIVRE"
     },
@@ -25,7 +26,7 @@ const MaillageTerritorialSection = () => {
       emoji: "🌾",
       subtitle: "Autonomie alimentaire",
       badge: "NOURRIR",
-      metric: "100% bio",
+      metric: "100% bio • Circuits courts",
       image: "/lovable-uploads/78b36e6d-519e-40e3-8f9b-b6338ed51187.png",
       type: "PRODUIRE"
     },
@@ -34,7 +35,7 @@ const MaillageTerritorialSection = () => {
       emoji: "🏭",
       subtitle: "Production locale",
       badge: "FABRIQUER",
-      metric: "0 km transport",
+      metric: "0km • Artisanat local",
       image: "/lovable-uploads/c7c2c7c6-055e-463e-a54c-c039f1d3d5d2.png",
       type: "PRODUIRE"
     },
@@ -106,10 +107,16 @@ const MaillageTerritorialSection = () => {
             {categories.map((category, index) => (
               <div 
                 key={index} 
-                className="relative group cursor-pointer transform transition-all duration-300 hover:scale-110 hover:z-10"
-              >
-                {/* Card */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 group-hover:border-cyan-400/50 group-hover:bg-white/20 transition-all duration-300 overflow-hidden">
+                 className={`relative group cursor-pointer transform transition-all duration-300 hover:scale-110 hover:z-10 ${
+                   category.isHot ? 'animate-pulse' : ''
+                 }`}
+               >
+                 {/* Card */}
+                 <div className={`backdrop-blur-sm rounded-xl border transition-all duration-300 overflow-hidden ${
+                   category.isHot 
+                     ? 'bg-red-500/20 border-red-500/50 shadow-lg shadow-red-500/30 group-hover:border-red-400/80 group-hover:bg-red-500/30' 
+                     : 'bg-white/10 border-white/20 group-hover:border-cyan-400/50 group-hover:bg-white/20'
+                 }`}>
                   {/* Image */}
                   <div className="aspect-square relative overflow-hidden rounded-t-xl">
                     <img 
@@ -118,16 +125,18 @@ const MaillageTerritorialSection = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
 
-                    {/* Badge */}
-                    <div className="absolute top-2 left-2">
-                      <span className={`text-xs px-2 py-1 rounded backdrop-blur-sm ${
-                        category.type === "VIVRE" ? "bg-cyan-500/80 text-white" :
-                        category.type === "PRODUIRE" ? "bg-green-500/80 text-white" :
-                        "bg-blue-500/80 text-white"
-                      }`}>
-                        {category.badge}
-                      </span>
-                    </div>
+                     {/* Badge */}
+                     <div className="absolute top-2 left-2">
+                       <span className={`text-xs px-2 py-1 rounded font-bold ${
+                         category.isHot 
+                           ? "bg-red-600/90 text-white animate-pulse shadow-lg" 
+                           : category.type === "VIVRE" ? "bg-cyan-500/90 text-white" :
+                             category.type === "PRODUIRE" ? "bg-green-500/90 text-white" :
+                             "bg-blue-500/90 text-white"
+                       }`}>
+                         {category.badge}
+                       </span>
+                     </div>
                   </div>
 
                   {/* Title and info below image */}
@@ -137,13 +146,19 @@ const MaillageTerritorialSection = () => {
                     <p className="text-gray-400 text-xs">{category.subtitle}</p>
                   </div>
 
-                  {/* Hover Info Panel */}
-                  <div className="absolute inset-x-0 bottom-0 bg-black/95 backdrop-blur-sm p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <div className="flex justify-between items-center">
-                      <span className="text-cyan-400 text-xs font-semibold">{category.metric}</span>
-                      <span className="text-gray-500 text-xs">Click pour détails</span>
-                    </div>
-                  </div>
+                   {/* Hover Info Panel */}
+                   <div className="absolute inset-x-0 bottom-0 bg-black/95 backdrop-blur-sm p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                     <div className="text-center">
+                       <span className={`text-xs font-semibold ${
+                         category.isHot ? 'text-red-400' : 'text-cyan-400'
+                       }`}>{category.metric}</span>
+                       {category.isHot && (
+                         <div className="text-orange-300 text-xs mt-1">
+                           Investir dès 50€ →
+                         </div>
+                       )}
+                     </div>
+                   </div>
                 </div>
               </div>
             ))}
