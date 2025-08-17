@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const ObjectiveSection = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-background">
+    <section className="py-12 sm:py-16 md:py-20 bg-background pb-4 sm:pb-6">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
