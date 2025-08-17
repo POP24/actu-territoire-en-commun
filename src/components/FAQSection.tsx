@@ -3,20 +3,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const FAQSection = () => {
   return (
-    <section className="relative py-20 bg-slate-900 overflow-hidden">
-      {/* Light effect */}
-      <div className="absolute bottom-4 right-4 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl animate-pulse"></div>
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <section className="py-20 bg-gradient-to-b from-background via-muted/30 to-background">
+      <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              QUESTIONS{" "}
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                FRÉQUENTES
-              </span>
-            </h2>
-            <p className="text-lg text-gray-300">Trouvez les réponses aux questions les plus courantes sur La Suite du Monde</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Questions Fréquentes</h2>
+            <p className="text-lg text-muted-foreground">Trouvez les réponses aux questions les plus courantes sur La Suite du Monde</p>
           </div>
 
           <Tabs defaultValue="gouvernance" className="w-full">
