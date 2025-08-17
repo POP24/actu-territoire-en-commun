@@ -17,8 +17,8 @@ const Header = () => {
             onClick={scrollToTop}
             className="flex items-center space-x-3 cursor-pointer group"
           >
-            <div className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent group-hover:scale-105 transition-transform">
-              🏛️
+            <div className="text-2xl font-bold group-hover:scale-105 transition-transform">
+              🏛️ 🏛️
             </div>
             <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
               COMMUNE IMAGINÉE
