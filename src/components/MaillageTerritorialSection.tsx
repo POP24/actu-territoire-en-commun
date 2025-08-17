@@ -104,15 +104,15 @@ const MaillageTerritorialSection = () => {
         <div className="max-w-5xl mx-auto">
           {/* Main Title */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
               MAILLAGE DES <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">COMMUNS ESSENTIELS</span>
             </h2>
-            <p className="text-gray-300 text-lg mb-2">Acquérir ensemble, mailler le territoire,</p>
-            <p className="text-gray-400">créer l'autonomie par l'entraide</p>
+            <p className="text-gray-300 text-sm sm:text-lg mb-2">Acquérir ensemble, mailler le territoire,</p>
+            <p className="text-gray-400 text-sm sm:text-base">créer l'autonomie par l'entraide</p>
           </div>
 
           {/* Compact 4x2 Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 mb-12">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-12">
             {categories.map((category, index) => {
               const CardWrapper = category.isHot ? 'a' : 'div';
               const cardProps = category.isHot 
@@ -155,9 +155,9 @@ const MaillageTerritorialSection = () => {
 
                     {/* Title and info below image */}
                     <div className="p-3 text-center">
-                      <h4 className="font-bold text-white text-xs md:text-sm mb-1">{category.title}</h4>
+                      <h4 className="font-bold text-white text-xs sm:text-sm mb-1">{category.title}</h4>
                       <p className="text-gray-400 text-xs mb-2">{category.subtitle}</p>
-                      <div className="text-2xl md:text-3xl">{category.emoji}</div>
+                      <div className="text-lg sm:text-2xl">{category.emoji}</div>
                     </div>
 
                     {/* Hover Info Panel */}

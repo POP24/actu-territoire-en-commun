@@ -6,27 +6,27 @@ const OutilsSection = () => {
           
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6">
               OUTILS DES <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">COMMUNS</span>
             </h2>
-            <p className="text-xl sm:text-2xl text-muted-foreground mb-4">
+            <p className="text-base sm:text-xl md:text-2xl text-muted-foreground mb-3 sm:mb-4">
               Gouverner, investir et connecter.
             </p>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-sm sm:text-lg text-muted-foreground">
               Tout ce qu'il faut pour faire territoire ensemble.
             </p>
           </div>
 
           {/* 4 Piliers Cards */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 mb-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8 mb-8 sm:mb-12">
             
             {/* COMMUNAUTÉ */}
-            <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-6 hover-scale cursor-pointer animate-scale-in">
-              <div className="text-center mb-6">
-                <div className="text-5xl mb-4">🤝</div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Communauté</h3>
+            <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-3 sm:p-6 hover-scale cursor-pointer animate-scale-in">
+              <div className="text-center mb-4 sm:mb-6">
+                <div className="text-3xl sm:text-5xl mb-2 sm:mb-4">🤝</div>
+                <h3 className="text-base sm:text-xl font-bold text-foreground mb-2 sm:mb-4">Communauté</h3>
               </div>
-              <ul className="space-y-3 text-sm text-muted-foreground">
+              <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   Réseau social local
@@ -47,12 +47,12 @@ const OutilsSection = () => {
             </div>
 
             {/* GOUVERNANCE */}
-            <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-6 hover-scale cursor-pointer animate-scale-in">
-              <div className="text-center mb-6">
-                <div className="text-5xl mb-4">⚖️</div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Gouvernance</h3>
+            <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-3 sm:p-6 hover-scale cursor-pointer animate-scale-in">
+              <div className="text-center mb-4 sm:mb-6">
+                <div className="text-3xl sm:text-5xl mb-2 sm:mb-4">⚖️</div>
+                <h3 className="text-base sm:text-xl font-bold text-foreground mb-2 sm:mb-4">Gouvernance</h3>
               </div>
-              <ul className="space-y-3 text-sm text-muted-foreground">
+              <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   Assemblées locales
@@ -73,12 +73,12 @@ const OutilsSection = () => {
             </div>
 
             {/* FINANCEMENT */}
-            <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-6 hover-scale cursor-pointer animate-scale-in">
-              <div className="text-center mb-6">
-                <div className="text-5xl mb-4">🌱</div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Financement</h3>
+            <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-3 sm:p-6 hover-scale cursor-pointer animate-scale-in">
+              <div className="text-center mb-4 sm:mb-6">
+                <div className="text-3xl sm:text-5xl mb-2 sm:mb-4">🌱</div>
+                <h3 className="text-base sm:text-xl font-bold text-foreground mb-2 sm:mb-4">Financement</h3>
               </div>
-              <ul className="space-y-3 text-sm text-muted-foreground">
+              <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   Campagnes immobilières
@@ -99,12 +99,12 @@ const OutilsSection = () => {
             </div>
 
             {/* TERRITOIRES */}
-            <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-6 hover-scale cursor-pointer animate-scale-in">
-              <div className="text-center mb-6">
-                <div className="text-5xl mb-4">🗺️</div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Territoires</h3>
+            <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-3 sm:p-6 hover-scale cursor-pointer animate-scale-in">
+              <div className="text-center mb-4 sm:mb-6">
+                <div className="text-3xl sm:text-5xl mb-2 sm:mb-4">🗺️</div>
+                <h3 className="text-base sm:text-xl font-bold text-foreground mb-2 sm:mb-4">Territoires</h3>
               </div>
-              <ul className="space-y-3 text-sm text-muted-foreground">
+              <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-orange-brand rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   Bibliothèque des savoirs
