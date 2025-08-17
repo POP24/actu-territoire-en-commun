@@ -84,7 +84,7 @@ const HeroSection = () => {
                 <h3 className="text-white font-bold text-lg mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
                 
                 {/* Real France Map - Full country view */}
-                <div className="relative w-full h-80 bg-gray-900 rounded-2xl overflow-hidden">
+                <div className="relative w-full h-96 bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
                     src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5%2C42.0%2C8.5%2C51.2&amp;layer=mapnik&amp;marker=45.1834%2C0.7167"
                     className="w-full h-full border-0 opacity-80"
