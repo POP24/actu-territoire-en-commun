@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { ChevronRight, Users, Globe, DollarSign, MapPin, Heart } from "lucide-react";
-import communityGathering from "/lovable-uploads/0a3e519a-7871-4f9d-9d79-393c652214ee.png";
+import genetteLogo from "/lovable-uploads/1c5a52dd-ce56-4b56-9b0f-ab5bf69435dc.png";
 import { useState, useEffect } from "react";
 
 const HeroSection = () => {
@@ -20,14 +20,18 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Background Image Fullscreen */}
+      {/* Background Pattern with Genette */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={communityGathering} 
-          alt="Arrière-plan communautaire" 
-          className="w-full h-full object-cover"
+        <div 
+          className="w-full h-full opacity-20"
+          style={{
+            backgroundImage: `url(${genetteLogo})`,
+            backgroundSize: '200px',
+            backgroundRepeat: 'repeat',
+            backgroundPosition: 'center'
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-gray-900/90 to-black/95"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/98 via-gray-900/95 to-black/98"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
