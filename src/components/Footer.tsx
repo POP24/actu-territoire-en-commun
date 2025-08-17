@@ -2,8 +2,17 @@ import { Facebook, Instagram, Linkedin, Youtube, Mail, MapPin } from "lucide-rea
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background">
-      <div className="container mx-auto px-4 sm:px-6">
+    <footer className="relative bg-foreground text-background overflow-hidden">
+      {/* Light effect overlay */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/5f0f71d0-d521-44d1-b966-be3358bf8879.png" 
+          alt="Effet lumineux footer" 
+          className="w-full h-full object-cover mix-blend-screen opacity-20"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Main Footer Content */}
         <div className="py-16 sm:py-20">
           {/* Header Section */}
