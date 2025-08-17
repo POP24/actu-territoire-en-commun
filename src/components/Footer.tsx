@@ -27,29 +27,29 @@ const Footer = () => {
           </div>
 
           {/* Links Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 mb-8 sm:mb-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
             
             {/* Projet */}
             <div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 md:mb-6">Projet</h3>
-              <ul className="space-y-3">
+              <h3 className="text-sm sm:text-base md:text-lg font-bold mb-3 sm:mb-4">Projet</h3>
+              <ul className="space-y-2 sm:space-y-3">
                 <li>
-                  <a href="/vision" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/vision" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     Vision
                   </a>
                 </li>
                 <li>
-                  <a href="/territoires" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/territoires" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     Les Territoires
                   </a>
                 </li>
                 <li>
-                  <a href="/investir" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/investir" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     Investir
                   </a>
                 </li>
                 <li>
-                  <a href="/gouvernance" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/gouvernance" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     Gouvernance
                   </a>
                 </li>
@@ -58,26 +58,26 @@ const Footer = () => {
 
             {/* Communauté */}
             <div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 md:mb-6">Communauté</h3>
-              <ul className="space-y-3">
+              <h3 className="text-sm sm:text-base md:text-lg font-bold mb-3 sm:mb-4">Communauté</h3>
+              <ul className="space-y-2 sm:space-y-3">
                 <li>
-                  <a href="/equipe" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/equipe" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     L'Équipe
                   </a>
                 </li>
                 <li>
-                  <a href="/rejoindre" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/rejoindre" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     Nous rejoindre
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:reseau@lescommunes.org" className="text-background/80 hover:text-background transition-colors flex items-center gap-2">
-                    <Mail className="w-4 h-4" />
+                  <a href="mailto:reseau@lescommunes.org" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors flex items-center gap-2">
+                    <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
                     Contact
                   </a>
                 </li>
                 <li>
-                  <a href="/faq" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/faq" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     FAQ
                   </a>
                 </li>
@@ -86,25 +86,25 @@ const Footer = () => {
 
             {/* Participer */}
             <div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 md:mb-6">Participer</h3>
-              <ul className="space-y-3">
+              <h3 className="text-sm sm:text-base md:text-lg font-bold mb-3 sm:mb-4">Participer</h3>
+              <ul className="space-y-2 sm:space-y-3">
                 <li>
-                  <a href="/opportunites" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/opportunites" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     Participer maintenant
                   </a>
                 </li>
                 <li>
-                  <a href="/proposer-territoire" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/proposer-territoire" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     Proposer un territoire
                   </a>
                 </li>
                 <li>
-                  <a href="/boutique" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/boutique" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     La boutique
                   </a>
                 </li>
                 <li>
-                  <a href="/newsletter" className="text-background/80 hover:text-background transition-colors">
+                  <a href="/newsletter" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     Newsletter
                   </a>
                 </li>
@@ -113,42 +113,42 @@ const Footer = () => {
 
             {/* Réseaux sociaux */}
             <div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 md:mb-6">Réseaux sociaux</h3>
-              <div className="space-y-3">
+              <h3 className="text-sm sm:text-base md:text-lg font-bold mb-3 sm:mb-4">Réseaux sociaux</h3>
+              <div className="space-y-2 sm:space-y-3">
                 <a 
                   href="https://facebook.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+                  className="flex items-center gap-2 text-xs sm:text-sm text-background/80 hover:text-background transition-colors"
                 >
-                  <Facebook className="w-5 h-5" />
+                  <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
                   Facebook
                 </a>
                 <a 
                   href="https://instagram.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+                  className="flex items-center gap-2 text-xs sm:text-sm text-background/80 hover:text-background transition-colors"
                 >
-                  <Instagram className="w-5 h-5" />
+                  <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
                   Instagram
                 </a>
                 <a 
                   href="https://linkedin.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+                  className="flex items-center gap-2 text-xs sm:text-sm text-background/80 hover:text-background transition-colors"
                 >
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                   LinkedIn
                 </a>
                 <a 
                   href="https://youtube.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+                  className="flex items-center gap-2 text-xs sm:text-sm text-background/80 hover:text-background transition-colors"
                 >
-                  <Youtube className="w-5 h-5" />
+                  <Youtube className="w-4 h-4 sm:w-5 sm:h-5" />
                   YouTube
                 </a>
               </div>
@@ -156,8 +156,8 @@ const Footer = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center py-8 border-t border-background/20">
-            <button className="bg-green-brand hover:bg-green-dark text-white font-bold py-4 px-8 rounded-xl text-lg transition-all hover:scale-105 shadow-lg">
+          <div className="text-center py-6 sm:py-8 border-t border-background/20">
+            <button className="bg-green-brand hover:bg-green-dark text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-sm sm:text-base md:text-lg transition-all hover:scale-105 shadow-lg">
               Adhérer à 100€
             </button>
           </div>
