@@ -91,141 +91,88 @@ const MaillageTerritorialSection = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Main Title */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               MAILLAGE DES <span className="text-cyan-400">COMMUNS ESSENTIELS</span>
             </h2>
             <p className="text-gray-300 text-lg mb-2">Acquérir ensemble, mailler le territoire,</p>
             <p className="text-gray-400">créer l'autonomie par l'interdépendance</p>
           </div>
 
-          {/* Vivre & Accueillir Section */}
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                <span className="text-cyan-400">VIVRE & ACCUEILLIR</span>
-              </h3>
-              <p className="text-gray-300">Lieux de rencontre et financement</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {vivreCategories.map((category, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:border-cyan-400/50 transition-all duration-300 group">
-                  <div className="flex justify-between items-start mb-3">
-                    <span className="text-xs bg-cyan-500/20 text-cyan-400 px-2 py-1 rounded">{category.badge}</span>
-                    <span className="text-xs text-gray-400">{category.metric}</span>
-                  </div>
-                  <div className="aspect-square rounded-xl overflow-hidden mb-4">
+          {/* Compact 4x2 Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {categories.map((category, index) => (
+              <div 
+                key={index} 
+                className="relative group cursor-pointer transform transition-all duration-300 hover:scale-110 hover:z-10"
+              >
+                {/* Card */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 group-hover:border-cyan-400/50 group-hover:bg-white/20 transition-all duration-300 overflow-hidden">
+                  {/* Image */}
+                  <div className="aspect-square relative overflow-hidden">
                     <img 
                       src={category.image} 
                       alt={category.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
+                    
+                    {/* Overlay with emoji and title */}
+                    <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center">
+                      <div className="text-3xl md:text-4xl mb-2">{category.emoji}</div>
+                      <h4 className="font-bold text-white text-xs md:text-sm text-center px-2">{category.title}</h4>
+                    </div>
+
+                    {/* Badge */}
+                    <div className="absolute top-2 left-2">
+                      <span className={`text-xs px-2 py-1 rounded ${
+                        category.type === "VIVRE" ? "bg-cyan-500/20 text-cyan-400" :
+                        category.type === "PRODUIRE" ? "bg-green-500/20 text-green-400" :
+                        "bg-blue-500/20 text-blue-400"
+                      }`}>
+                        {category.badge}
+                      </span>
+                    </div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-2xl mb-2">{category.emoji}</div>
-                    <h4 className="font-bold text-white text-sm mb-1">{category.title}</h4>
-                    <p className="text-gray-400 text-xs">{category.subtitle}</p>
+
+                  {/* Hover Info Panel */}
+                  <div className="absolute inset-x-0 bottom-0 bg-black/90 backdrop-blur-sm p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <p className="text-gray-300 text-xs mb-1">{category.subtitle}</p>
+                    <div className="flex justify-between items-center">
+                      <span className="text-cyan-400 text-xs font-semibold">{category.metric}</span>
+                      <span className="text-gray-500 text-xs">Click pour détails</span>
+                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
-          {/* Produire & Transformer Section */}
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                <span className="text-cyan-400">PRODUIRE & TRANSFORMER</span>
-              </h3>
-              <p className="text-gray-300">Autonomie alimentaire et industrielle</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {produireCategories.map((category, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:border-cyan-400/50 transition-all duration-300 group">
-                  <div className="flex justify-between items-start mb-3">
-                    <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded">{category.badge}</span>
-                    <span className="text-xs text-gray-400">{category.metric}</span>
-                  </div>
-                  <div className="aspect-square rounded-xl overflow-hidden mb-4">
-                    <img 
-                      src={category.image} 
-                      alt={category.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl mb-2">{category.emoji}</div>
-                    <h4 className="font-bold text-white text-sm mb-1">{category.title}</h4>
-                    <p className="text-gray-400 text-xs">{category.subtitle}</p>
-                  </div>
+          {/* System Flow Diagram */}
+          <div className="text-center mb-8">
+            <h3 className="text-xl font-bold text-white mb-6">ÉCOSYSTÈME TERRITORIAL</h3>
+            <div className="max-w-3xl mx-auto bg-white/5 rounded-2xl p-6 border border-white/10">
+              <div className="text-sm text-gray-300 space-y-3">
+                <div className="flex items-center justify-center space-x-4 flex-wrap gap-2">
+                  <span className="text-cyan-400">🏕 Campings (€)</span>
+                  <span className="text-gray-500">→</span>
+                  <span className="text-green-400">Finance</span>
+                  <span className="text-gray-500">→</span>
+                  <span className="text-white">🌾 Fermes + 🏭 Manufactures</span>
                 </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Resources Section */}
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                <span className="text-cyan-400">RESSOURCER</span>
-              </h3>
-              <p className="text-gray-300">Ressources stratégiques communes</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {ressourcesCategories.map((category, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:border-cyan-400/50 transition-all duration-300 group">
-                  <div className="flex justify-between items-start mb-3">
-                    <span className="text-xs bg-blue-500/20 text-blue-400 px-2 py-1 rounded">{category.badge}</span>
-                    <span className="text-xs text-gray-400">{category.metric}</span>
-                  </div>
-                  <div className="aspect-square rounded-xl overflow-hidden mb-4">
-                    <img 
-                      src={category.image} 
-                      alt={category.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl mb-2">{category.emoji}</div>
-                    <h4 className="font-bold text-white text-sm mb-1">{category.title}</h4>
-                    <p className="text-gray-400 text-xs">{category.subtitle}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* System Diagram */}
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <h3 className="text-xl font-bold text-white mb-4">ÉCOSYSTÈME TERRITORIAL</h3>
-              <div className="max-w-2xl mx-auto bg-white/5 rounded-2xl p-6 border border-white/10">
-                <div className="text-sm text-gray-300 space-y-2">
-                  <div className="flex items-center justify-center space-x-4">
-                    <span className="text-cyan-400">🏕 Campings (€)</span>
-                    <span className="text-gray-500">→</span>
-                    <span className="text-green-400">Finance</span>
-                    <span className="text-gray-500">→</span>
-                    <span className="text-white">🌾 Fermes + 🏭 Manufactures</span>
-                  </div>
-                  <div className="text-center text-gray-500">↓</div>
-                  <div className="flex items-center justify-center space-x-4">
-                    <span className="text-white">🏘 Tiers-lieux</span>
-                    <span className="text-gray-500">←→</span>
-                    <span className="text-blue-400">🌲🏰💧⚙️ Ressources communes</span>
-                  </div>
+                <div className="text-center text-gray-500">↓</div>
+                <div className="flex items-center justify-center space-x-4 flex-wrap gap-2">
+                  <span className="text-white">🏘 Tiers-lieux</span>
+                  <span className="text-gray-500">←→</span>
+                  <span className="text-blue-400">🌲🏰💧⚙️ Ressources communes</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Bottom explanation */}
-          <div className="text-center mt-12">
+          <div className="text-center">
             <div className="max-w-4xl mx-auto space-y-4">
               <p className="text-gray-300 text-lg italic">
                 "Notre stratégie : acquérir des biens complémentaires qui s'auto-renforcent."
