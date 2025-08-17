@@ -27,7 +27,6 @@ const Index = () => {
       <MaillageTerritorialSection />
       <PathwaysSection />
       <GovernanceSection />
-      <TypologySection />
       <FAQSection />
       <Footer />
     </div>
