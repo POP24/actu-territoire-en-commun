@@ -73,40 +73,13 @@ const HeroSection = () => {
                 {/* Real France Map - Full country view */}
                 <div className="relative w-full h-80 bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5%2C41.3%2C9.7%2C51.2&amp;layer=mapnik"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5%2C42.0%2C8.5%2C51.2&amp;layer=mapnik&amp;marker=45.1834%2C0.7167"
                     className="w-full h-full border-0 opacity-80"
-                    title="Carte de France"
+                    title="Carte de France avec marqueur Dordogne"
                   ></iframe>
                   
-                  {/* Overlay with animated points */}
-                  <div className="absolute inset-0 pointer-events-none">
-                    {/* Points lumineux sur la France - Focus Dordogne */}
-                    {[
-                      { top: '65%', left: '25%', delay: 0, label: 'Dordogne - Siège Social', active: true }    // Dordogne - point principal
-                    ].map((point, index) => (
-                      <div
-                        key={index}
-                        className={`absolute transition-all duration-1000 ${
-                          animatedPoints.includes(index + 1) 
-                            ? 'opacity-100 scale-100' 
-                            : 'opacity-0 scale-50'
-                        }`}
-                        style={{ top: point.top, left: point.left }}
-                      >
-                        {/* Point principal plus gros */}
-                        <div className={`w-4 h-4 ${point.active ? 'bg-orange-500' : 'bg-blue-500'} rounded-full shadow-lg animate-pulse`}>
-                          <div className={`absolute inset-0 ${point.active ? 'bg-orange-400' : 'bg-blue-400'} rounded-full animate-ping`}></div>
-                        </div>
-                        {/* Label du point */}
-                        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-black/80 backdrop-blur-sm text-white px-2 py-1 rounded text-xs whitespace-nowrap">
-                          {point.label}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  
                   <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm">
-                    <span className="text-orange-400">●</span> Dordogne - Siège social actif
+                    <span className="text-orange-400">●</span> Dordogne - Territoire pionnier
                   </div>
                 </div>
               </div>
