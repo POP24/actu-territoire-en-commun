@@ -5,31 +5,31 @@ const PathwaysSection = () => {
     <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 sm:mb-16">
+          <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16">
             <span className="text-foreground">CHOISISSEZ VOTRE</span>{" "}
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">CHEMIN</span>
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3 md:gap-6 max-w-7xl mx-auto">
             {/* Chemin 1 */}
-            <div className="bg-gradient-card p-6 sm:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-brand cursor-pointer flex flex-col">
-              <div className="flex flex-col items-center text-center mb-8">
-                <div className="bg-green-brand text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-brand cursor-pointer flex flex-col">
+              <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
+                <div className="bg-green-brand text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 1 · Fédération nationale
                 </div>
-                  <div className="text-3xl sm:text-4xl font-bold text-green-brand mb-2">100€</div>
-                  <div className="text-green-brand font-semibold mb-4">Adhésion Architecte</div>
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground">Communauté Nationale</h3>
-                  <p className="text-muted-foreground italic">Coordination globale</p>
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-brand mb-2">100€</div>
+                  <div className="text-green-brand font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Adhésion Architecte</div>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Communauté Nationale</h3>
+                  <p className="text-muted-foreground italic text-sm">Coordination globale</p>
                 </div>
                 
-                <div className="space-y-4 sm:space-y-6 flex-1">
+                <div className="space-y-3 sm:space-y-4 md:space-y-6 flex-1">
                 <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">👑</span>
-                    <h4 className="text-lg font-semibold text-foreground">Adhésion fondatrice</h4>
+                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                    <span className="text-lg sm:text-xl">👑</span>
+                    <h4 className="text-sm sm:text-base md:text-lg font-semibold text-foreground">Adhésion fondatrice</h4>
                   </div>
-                  <ul className="space-y-2 text-foreground text-sm">
+                  <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
                       <span>Participez à la trésorerie collective</span>
@@ -46,11 +46,11 @@ const PathwaysSection = () => {
                 </div>
                 
                 <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🔗</span>
-                    <h4 className="text-lg font-semibold text-foreground">Connexion réseau</h4>
+                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                    <span className="text-lg sm:text-xl">🔗</span>
+                    <h4 className="text-sm sm:text-base md:text-lg font-semibold text-foreground">Connexion réseau</h4>
                   </div>
-                  <ul className="space-y-2 text-foreground text-sm">
+                  <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
                       <span>Rejoignez les cercles thématiques (Discord)</span>
@@ -67,30 +67,30 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-green-brand hover:bg-green-dark text-white font-bold py-3 rounded-xl">
+              <Button className="w-full mt-6 sm:mt-8 bg-green-brand hover:bg-green-dark text-white font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
                 Adhérer (100€)
               </Button>
             </div>
             
             {/* Chemin 2 */}
-            <div className="bg-gradient-card p-6 sm:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer flex flex-col">
-              <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
-                <div className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer flex flex-col">
+              <div className="flex flex-col items-center text-center mb-4 sm:mb-6 md:mb-8">
+                <div className="bg-blue-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 2 · Association locale
                 </div>
-                <div className="text-3xl sm:text-4xl font-bold text-blue-500 mb-2">10€ + prix libre</div>
-                <div className="text-blue-600 font-semibold mb-4">Adhésion Locale</div>
-                <h3 className="text-lg sm:text-xl font-bold text-foreground">Gouvernance du lieu</h3>
-                <p className="text-muted-foreground italic">Engagement sur votre territoire</p>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-2">10€ + prix libre</div>
+                <div className="text-blue-600 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Adhésion Locale</div>
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Gouvernance du lieu</h3>
+                <p className="text-muted-foreground italic text-sm">Engagement sur votre territoire</p>
               </div>
               
-              <div className="space-y-4 sm:space-y-6 flex-1">
+              <div className="space-y-3 sm:space-y-4 md:space-y-6 flex-1">
                 <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🗳️</span>
-                    <h4 className="text-lg font-semibold text-foreground">Vos droits de membre</h4>
+                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                    <span className="text-lg sm:text-xl">🗳️</span>
+                    <h4 className="text-sm sm:text-base md:text-lg font-semibold text-foreground">Vos droits de membre</h4>
                   </div>
-                  <ul className="space-y-2 text-foreground text-sm">
+                  <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
                       <span>Voter les grandes décisions du territoire / du lieu</span>
@@ -107,11 +107,11 @@ const PathwaysSection = () => {
                 </div>
                 
                 <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🏠</span>
-                    <h4 className="text-lg font-semibold text-foreground">Concrètement</h4>
+                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                    <span className="text-lg sm:text-xl">🏠</span>
+                    <h4 className="text-sm sm:text-base md:text-lg font-semibold text-foreground">Concrètement</h4>
                   </div>
-                  <ul className="space-y-2 text-foreground text-sm">
+                  <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
                       <span>Trésor collectif local (budget participatif)</span>
@@ -128,29 +128,29 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">
+              <Button className="w-full mt-6 sm:mt-8 bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
                 Adhérer à l'association locale
               </Button>
             </div>
             
             {/* Chemin 3 */}
-            <div className="bg-gradient-card p-6 sm:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer flex flex-col">
-              <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
-                <div className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer flex flex-col">
+              <div className="flex flex-col items-center text-center mb-4 sm:mb-6 md:mb-8">
+                <div className="bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 3 · Investissement Immobilier
                 </div>
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-500 mb-2">Obligation & Credit d'Usage</div>
-                <h3 className="text-lg sm:text-xl font-bold text-foreground">Achat collectif de Communs</h3>
-                <p className="text-muted-foreground italic">et de services</p>
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-orange-500 mb-2">Obligation & Credit d'Usage</div>
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Achat collectif de Communs</h3>
+                <p className="text-muted-foreground italic text-sm">et de services</p>
               </div>
               
-              <div className="space-y-4 sm:space-y-6 flex-1">
+              <div className="space-y-3 sm:space-y-4 md:space-y-6 flex-1">
                 <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">🏢</span>
-                    <h4 className="text-lg font-semibold text-foreground">Ce que vous trouverez</h4>
+                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                    <span className="text-lg sm:text-xl">🏢</span>
+                    <h4 className="text-sm sm:text-base md:text-lg font-semibold text-foreground">Ce que vous trouverez</h4>
                   </div>
-                  <ul className="space-y-2 text-foreground text-sm">
+                  <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-orange-500 mt-1">✓</span>
                       <span>Opérations en cours et lieux cibles</span>
@@ -171,7 +171,7 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl">
+              <Button className="w-full mt-6 sm:mt-8 bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
                 Accéder au site investissement
               </Button>
             </div>
