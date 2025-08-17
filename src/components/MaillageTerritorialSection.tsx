@@ -5,7 +5,7 @@ const MaillageTerritorialSection = () => {
       title: "CAMPINGS COLLECTIFS", 
       emoji: "🏕",
       subtitle: "Revenus + Accueil",
-      badge: "FINANCEMENT",
+      badge: "RENCONTRE",
       metric: "3-8% rendement",
       image: "/lovable-uploads/2ca5809b-7acf-4fa7-a3af-c2c73102508e.png",
       type: "VIVRE"
@@ -98,7 +98,7 @@ const MaillageTerritorialSection = () => {
               MAILLAGE DES <span className="text-cyan-400">COMMUNS ESSENTIELS</span>
             </h2>
             <p className="text-gray-300 text-lg mb-2">Acquérir ensemble, mailler le territoire,</p>
-            <p className="text-gray-400">créer l'autonomie par l'interdépendance</p>
+            <p className="text-gray-400">créer l'autonomie par l'entraide</p>
           </div>
 
           {/* Compact 4x2 Grid */}
@@ -111,34 +111,38 @@ const MaillageTerritorialSection = () => {
                 {/* Card */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 group-hover:border-cyan-400/50 group-hover:bg-white/20 transition-all duration-300 overflow-hidden">
                   {/* Image */}
-                  <div className="aspect-square relative overflow-hidden">
+                  <div className="aspect-square relative overflow-hidden rounded-t-xl">
                     <img 
                       src={category.image} 
                       alt={category.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     
-                    {/* Overlay with emoji and title */}
-                    <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center">
-                      <div className="text-3xl md:text-4xl mb-2">{category.emoji}</div>
-                      <h4 className="font-bold text-white text-xs md:text-sm text-center px-2">{category.title}</h4>
+                    {/* Overlay with emoji only */}
+                    <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                      <div className="text-4xl md:text-5xl">{category.emoji}</div>
                     </div>
 
                     {/* Badge */}
                     <div className="absolute top-2 left-2">
-                      <span className={`text-xs px-2 py-1 rounded ${
-                        category.type === "VIVRE" ? "bg-cyan-500/20 text-cyan-400" :
-                        category.type === "PRODUIRE" ? "bg-green-500/20 text-green-400" :
-                        "bg-blue-500/20 text-blue-400"
+                      <span className={`text-xs px-2 py-1 rounded backdrop-blur-sm ${
+                        category.type === "VIVRE" ? "bg-cyan-500/80 text-white" :
+                        category.type === "PRODUIRE" ? "bg-green-500/80 text-white" :
+                        "bg-blue-500/80 text-white"
                       }`}>
                         {category.badge}
                       </span>
                     </div>
                   </div>
 
+                  {/* Title and info below image */}
+                  <div className="p-3">
+                    <h4 className="font-bold text-white text-xs md:text-sm text-center mb-1">{category.title}</h4>
+                    <p className="text-gray-400 text-xs text-center">{category.subtitle}</p>
+                  </div>
+
                   {/* Hover Info Panel */}
-                  <div className="absolute inset-x-0 bottom-0 bg-black/90 backdrop-blur-sm p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <p className="text-gray-300 text-xs mb-1">{category.subtitle}</p>
+                  <div className="absolute inset-x-0 bottom-0 bg-black/95 backdrop-blur-sm p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     <div className="flex justify-between items-center">
                       <span className="text-cyan-400 text-xs font-semibold">{category.metric}</span>
                       <span className="text-gray-500 text-xs">Click pour détails</span>
