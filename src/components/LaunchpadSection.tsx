@@ -111,7 +111,7 @@ const LaunchpadSection = () => {
                   <div className="flex justify-between items-center mb-4">
                     <div>
                       <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">13%</div>
-                      <div className="text-xs text-gray-400">MINTED</div>
+                      <div className="text-xs text-gray-400">SOUSCRIT</div>
                     </div>
                     <div className="text-right">
                       <div className="text-sm font-semibold text-white">1,247 / 10,000</div>
