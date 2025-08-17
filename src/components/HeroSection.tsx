@@ -128,15 +128,16 @@ const HeroSection = () => {
                   </div>
                 </div>
 
-                {/* Objectif Banner */}
-                <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center py-2 px-4 rounded-t-lg font-bold text-sm tracking-wider">
-                  OBJECTIF
-                </div>
-                
-                {/* Trésor Commun Section */}
-                <div className="bg-gray-100 rounded-b-lg rounded-t-none p-4">
-                  <h4 className="text-lg font-bold text-gray-900 mb-3 text-center">TRÉSOR COMMUN</h4>
-                  <div className="bg-gray-100 rounded-lg p-4">
+                {/* Section Objectif + Trésor Commun */}
+                <div className="bg-white rounded-xl p-6 border border-gray-200">
+                  <div className="text-center mb-4">
+                    <div className="bg-gradient-orange-gold text-white inline-block py-2 px-6 rounded-lg font-bold text-sm tracking-wider mb-3">
+                      OBJECTIF · TRÉSOR COMMUN
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">Financement Collectif</h4>
+                  </div>
+                  
+                  <div className="bg-gray-50 rounded-lg p-4 mb-4">
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-sm font-medium text-gray-600">Progression</span>
                       <span className="text-sm font-bold text-gray-900">{treasureProgress}%</span>
@@ -146,6 +147,12 @@ const HeroSection = () => {
                       <span>650 000€ collectés</span>
                       <span>Objectif: 1M€</span>
                     </div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <Button className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-xl">
+                      CONTRIBUER
+                    </Button>
                   </div>
                 </div>
               </div>

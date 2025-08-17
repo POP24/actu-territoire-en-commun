@@ -38,6 +38,7 @@ All colors MUST be HSL.
     --gradient-cta: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
     --gradient-national: linear-gradient(135deg, #FE5C02 0%, #FF8C00 50%, #FFA500 100%);
     --gradient-territorial: linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%);
+    --gradient-orange-gold: linear-gradient(135deg, #FF8C00 0%, #FFD700 50%, #FFA500 100%);
     
     /* Enhanced dropdown gradients */
     --gradient-dropdown-bg: linear-gradient(145deg, rgba(254, 92, 2, 0.95) 0%, rgba(255, 140, 0, 0.9) 50%, rgba(255, 165, 0, 0.85) 100%);
@@ -53,6 +54,8 @@ All colors MUST be HSL.
     --orange-dark: 24 95% 48%;
     --green-brand: 120 60% 35%;
     --green-dark: 120 65% 30%;
+    --gold: 45 100% 50%;
+    --gold-dark: 42 100% 45%;
     
     --primary-glow: 185 75% 65%;
     --secondary-glow: 195 85% 70%;
