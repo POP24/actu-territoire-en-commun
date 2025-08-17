@@ -38,12 +38,9 @@ const HeroSection = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
               RÉSEAU DES <span className="text-white/90">COMMUNES</span>
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white/80 mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white/80 mb-12">
               SYSTÈME D'ORGANISATION LOCAL
             </h2>
-            <p className="text-sm text-white/70 mb-12">
-              ASSOCIATION - DAO (i) voir les statuts
-            </p>
             
             {/* Top Stats - 2 levels improved */}
             <div className="max-w-5xl mx-auto">
