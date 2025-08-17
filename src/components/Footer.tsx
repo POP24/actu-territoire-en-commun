@@ -1,53 +1,173 @@
-import { Button } from "@/components/ui/button";
+import { Facebook, Instagram, Linkedin, Youtube, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-12 sm:py-16 md:py-20 bg-gradient-hero text-white">
+    <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12">
-            REJOINDRE LE MOUVEMENT
-          </h2>
-          
-          <div className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-elegant mb-8 sm:mb-12">
-            <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 leading-relaxed">
-              Les liens invisibles existent déjà. Il ne reste qu'à les activer.
+        {/* Main Footer Content */}
+        <div className="py-16 sm:py-20">
+          {/* Header Section */}
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              Réseau des Communes
+            </h2>
+            <p className="text-lg sm:text-xl text-background/80 max-w-2xl mx-auto leading-relaxed">
+              Construire ensemble un réseau de communes autonomes pour expérimenter, 
+              se rencontrer, gouverner.
             </p>
+          </div>
+
+          {/* Links Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-12">
             
-            <div className="mb-6 sm:mb-8">
-              <h3 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Adhésion via :</h3>
-              <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-                <span className="bg-white/20 border border-white/40 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
-                  Telegram
-                </span>
-                <span className="bg-white/20 border border-white/40 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
-                  Discord
-                </span>
-                <span className="bg-white/20 border border-white/40 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
-                  Web
-                </span>
+            {/* Projet */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Projet</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="/vision" className="text-background/80 hover:text-background transition-colors">
+                    Vision
+                  </a>
+                </li>
+                <li>
+                  <a href="/territoires" className="text-background/80 hover:text-background transition-colors">
+                    Les Territoires
+                  </a>
+                </li>
+                <li>
+                  <a href="/investir" className="text-background/80 hover:text-background transition-colors">
+                    Investir
+                  </a>
+                </li>
+                <li>
+                  <a href="/gouvernance" className="text-background/80 hover:text-background transition-colors">
+                    Gouvernance
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Communauté */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Communauté</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="/equipe" className="text-background/80 hover:text-background transition-colors">
+                    L'Équipe
+                  </a>
+                </li>
+                <li>
+                  <a href="/rejoindre" className="text-background/80 hover:text-background transition-colors">
+                    Nous rejoindre
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:reseau@lescommunes.org" className="text-background/80 hover:text-background transition-colors flex items-center gap-2">
+                    <Mail className="w-4 h-4" />
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a href="/faq" className="text-background/80 hover:text-background transition-colors">
+                    FAQ
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Participer */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Participer</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="/opportunites" className="text-background/80 hover:text-background transition-colors">
+                    Participer maintenant
+                  </a>
+                </li>
+                <li>
+                  <a href="/proposer-territoire" className="text-background/80 hover:text-background transition-colors">
+                    Proposer un territoire
+                  </a>
+                </li>
+                <li>
+                  <a href="/boutique" className="text-background/80 hover:text-background transition-colors">
+                    La boutique
+                  </a>
+                </li>
+                <li>
+                  <a href="/newsletter" className="text-background/80 hover:text-background transition-colors">
+                    Newsletter
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Réseaux sociaux */}
+            <div>
+              <h3 className="text-xl font-bold mb-6">Réseaux sociaux</h3>
+              <div className="space-y-3">
+                <a 
+                  href="https://facebook.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+                >
+                  <Facebook className="w-5 h-5" />
+                  Facebook
+                </a>
+                <a 
+                  href="https://instagram.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+                >
+                  <Instagram className="w-5 h-5" />
+                  Instagram
+                </a>
+                <a 
+                  href="https://linkedin.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  LinkedIn
+                </a>
+                <a 
+                  href="https://youtube.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-background/80 hover:text-background transition-colors"
+                >
+                  <Youtube className="w-5 h-5" />
+                  YouTube
+                </a>
               </div>
             </div>
-            
-            <div className="mb-8">
-              <h3 className="text-lg font-semibold mb-4">Contact :</h3>
-              <a href="mailto:reseau@lescommunes.org" className="text-white hover:underline text-lg">
-                reseau@lescommunes.org
+          </div>
+
+          {/* CTA Section */}
+          <div className="text-center py-8 border-t border-background/20">
+            <button className="bg-green-brand hover:bg-green-dark text-white font-bold py-4 px-8 rounded-xl text-lg transition-all hover:scale-105 shadow-lg">
+              Adhérer à 100€
+            </button>
+          </div>
+        </div>
+
+        {/* Bottom Footer */}
+        <div className="border-t border-background/20 py-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div className="flex flex-wrap gap-6 text-sm text-background/60">
+              <a href="/cgv" className="hover:text-background transition-colors">
+                CGV
+              </a>
+              <a href="/politique-confidentialite" className="hover:text-background transition-colors">
+                Politique de confidentialité
               </a>
             </div>
-            
-            <Button 
-              size="lg"
-              className="text-lg px-12 py-4 bg-white text-primary hover:bg-white/90"
-            >
-              Adhérer à 100€
-            </Button>
-          </div>
-          
-          <div className="border-t border-white/20 pt-8 text-white/80">
-            <p className="text-lg">
-              <strong>Le Réseau des Communes</strong> - Tout existe déjà, connectons-le - 2025
-            </p>
+            <div className="text-sm text-background/60">
+              © 2025 Réseau des Communes. Fondé en 2024.
+            </div>
           </div>
         </div>
       </div>
