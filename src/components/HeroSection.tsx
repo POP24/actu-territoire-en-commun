@@ -134,10 +134,9 @@ const HeroSection = () => {
                     <div className="bg-gradient-orange-gold text-white inline-block py-2 px-6 rounded-lg font-bold text-sm tracking-wider mb-3">
                       OBJECTIF · TRÉSOR COMMUN
                     </div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-4">Progression du Trésor</h4>
                   </div>
                   
-                  <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                  <div className="bg-gray-50 rounded-lg p-4">
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-sm font-medium text-gray-600">Progression</span>
                       <span className="text-sm font-bold text-gray-900">{treasureProgress}%</span>
@@ -147,12 +146,6 @@ const HeroSection = () => {
                       <span>650 000€ collectés</span>
                       <span>Objectif: 1M€</span>
                     </div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <Button className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-xl">
-                      CONTRIBUER
-                    </Button>
                   </div>
                 </div>
               </div>
