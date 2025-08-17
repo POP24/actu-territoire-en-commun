@@ -1,15 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 
 const FinancingSection = () => {
-  const mechanismSteps = [
-    { label: "Recruter Focalisateur", bgColor: "bg-primary" },
-    { label: "Rassembler Groupe", bgColor: "bg-secondary" },
-    { label: "Créer Association", bgColor: "bg-accent" },
-    { label: "Lancer Financement", bgColor: "bg-muted" },
-    { label: "Acquérir Lieu", bgColor: "bg-primary/80" },
-    { label: "Retour Réseau", bgColor: "bg-secondary/80" }
-  ];
-
   return (
     <section id="financement" className="py-16 sm:py-20 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden">
       {/* Background elements */}
@@ -21,42 +12,43 @@ const FinancingSection = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8 sm:mb-12">
-            <span className="text-foreground">ACTIVE TON</span>{" "}
+            <span className="text-foreground">FINANCEZ VOTRE</span>{" "}
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITOIRE</span>
           </h2>
           
-          <div className="text-center mb-8 sm:mb-12 max-w-4xl mx-auto">
-            <p className="text-lg sm:text-xl text-foreground mb-6 sm:mb-8">
-              Coopérative intégrale transversale, pluridisciplinaire
-            </p>
-            <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6 sm:mb-8">
-              Activer votre territoire
-            </div>
-          </div>
-
-          {/* Mécanisme d'activation */}
-          <div className="mb-12 sm:mb-16">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 sm:mb-16">
-              <span className="text-foreground">MÉCANISME D'ACTIVATION</span>{" "}
-              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITORIALE</span>
-            </h3>
-            
-            {/* Desktop/Tablet grid */}
-            <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6 mb-8 sm:mb-12">
-              {mechanismSteps.map((step, index) => (
-                <div key={index} className={`${step.bgColor} rounded-full flex flex-col items-center justify-center text-white font-bold text-center p-4 sm:p-6 h-20 sm:h-24 shadow-soft hover:scale-105 transition-smooth`}>
-                  <div className="text-xs sm:text-sm leading-tight">{step.label}</div>
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
+            {/* Immobilier Partagé */}
+            <div className="text-center">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Immobilier Partagé</span>
+              </h3>
+              <div className="space-y-4 sm:space-y-6">
+                <div className="bg-card/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-border/20 shadow-soft">
+                  <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">Obligations</div>
+                  <div className="text-lg text-muted-foreground">Investissement sécurisé</div>
                 </div>
-              ))}
+                <div className="bg-card/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-border/20 shadow-soft">
+                  <div className="text-3xl sm:text-4xl font-bold text-secondary mb-2">Crédits d'Usage</div>
+                  <div className="text-lg text-muted-foreground">Accès aux lieux</div>
+                </div>
+              </div>
             </div>
 
-            {/* Mobile stack */}
-            <div className="sm:hidden space-y-4 mb-8">
-              {mechanismSteps.map((step, index) => (
-                <div key={index} className={`${step.bgColor} rounded-xl flex items-center justify-center text-white font-bold text-center p-4 shadow-soft`}>
-                  <div className="text-sm">{step.label}</div>
+            {/* Trésorerie Commune */}
+            <div className="text-center">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">
+                <span className="bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">Trésorerie Commune</span>
+              </h3>
+              <div className="space-y-4 sm:space-y-6">
+                <div className="bg-card/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-border/20 shadow-soft">
+                  <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">Budget Participatif</div>
+                  <div className="text-lg text-muted-foreground">Décisions collectives</div>
                 </div>
-              ))}
+                <div className="bg-card/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-border/20 shadow-soft">
+                  <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">Caisse Commune</div>
+                  <div className="text-lg text-muted-foreground">Mutualisation des ressources</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
