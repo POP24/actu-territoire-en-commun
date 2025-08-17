@@ -1,6 +1,6 @@
 const OutilsSection = () => {
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
+    <section className="py-16 sm:py-20 bg-gradient-to-br from-slate-50 via-blue-50/30 to-cyan-50/20">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           
