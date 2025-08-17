@@ -20,20 +20,15 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Background with Mega Fire */}
+      {/* Background with Light Effect */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={megaFireBackground} 
-          alt="Méga feu dramatique" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/95"></div>
+        <div className="absolute inset-0 bg-black"></div>
         {/* Light Effect Overlay */}
         <div className="absolute inset-0">
           <img 
             src="/lovable-uploads/976879dd-34f7-4896-9f36-09c3131d6526.png" 
             alt="Effet lumineux" 
-            className="w-full h-full object-cover mix-blend-screen opacity-30"
+            className="w-full h-full object-cover mix-blend-screen opacity-60"
           />
         </div>
       </div>
