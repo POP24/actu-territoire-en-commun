@@ -28,7 +28,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
           onClick={onLinkClick}
           className={({ isActive }) => `${baseClasses} ${
             isActive 
-              ? "text-foreground border-b-2 border-primary" 
+              ? "text-foreground border-b-2 border-blue-600" 
               : "text-muted-foreground hover:text-foreground"
           }`}
         >

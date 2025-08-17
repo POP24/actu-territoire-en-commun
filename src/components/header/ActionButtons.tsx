@@ -19,7 +19,7 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
         </NavLink>
         <Button 
           onClick={onButtonClick}
-          className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl py-3 font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-xl py-3 font-medium shadow-lg hover:shadow-xl transition-all duration-300"
         >
           ADHÉRER
         </Button>
@@ -33,13 +33,13 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
         to="/vision" 
         className={({ isActive }) => `hidden sm:block font-medium text-sm xl:text-base transition-colors duration-300 ${
           isActive 
-            ? "text-primary" 
-            : "text-primary hover:text-primary/80"
+            ? "text-blue-600" 
+            : "text-blue-600 hover:text-blue-700"
         }`}
       >
         Vision
       </NavLink>
-      <Button className="hidden sm:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl px-6 py-2.5 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+      <Button className="hidden sm:flex bg-blue-600 hover:bg-blue-700 text-white rounded-xl px-6 py-2.5 font-medium shadow-lg hover:shadow-xl transition-all duration-300">
         ADHÉRER
       </Button>
     </div>

@@ -18,7 +18,7 @@ const Logo = () => {
             className="h-6 sm:h-9" 
           />
         </Link>
-        <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent tracking-wider">
+        <span className="text-sm sm:text-base font-bold text-blue-600 tracking-wider">
           COMMUNE IMAGINÉE
         </span>
       </div>
