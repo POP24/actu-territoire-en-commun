@@ -28,6 +28,14 @@ const HeroSection = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/95"></div>
+        {/* Light Effect Overlay */}
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/976879dd-34f7-4896-9f36-09c3131d6526.png" 
+            alt="Effet lumineux" 
+            className="w-full h-full object-cover mix-blend-screen opacity-30"
+          />
+        </div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-32 sm:py-40">
