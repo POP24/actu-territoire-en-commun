@@ -6,6 +6,7 @@ import ObjectiveSection from "@/components/ObjectiveSection";
 import PathwaysSection from "@/components/PathwaysSection";
 import GovernanceSection from "@/components/GovernanceSection";
 import FinancingSection from "@/components/FinancingSection";
+import LaunchpadSection from "@/components/LaunchpadSection";
 import TypologySection from "@/components/TypologySection";
 
 
@@ -23,6 +24,7 @@ const Index = () => {
       <ObjectiveSection />
       <PathwaysSection />
       <GovernanceSection />
+      <LaunchpadSection />
       <TypologySection />
       <FAQSection />
       <Footer />
