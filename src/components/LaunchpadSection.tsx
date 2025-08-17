@@ -81,9 +81,9 @@ const LaunchpadSection = () => {
             {/* Membership Launchpad */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Membership <span className="text-cyan-400">Launchpad</span>
+                Trésorerie <span className="text-cyan-400">Commune</span>
               </h3>
-              <p className="text-gray-300 mb-6">Join. Federate. Organize.</p>
+              <p className="text-gray-300 mb-6">Rejoignez. Votez. Décidez.</p>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                 {/* Mock interface for Membership */}
@@ -96,15 +96,15 @@ const LaunchpadSection = () => {
                   <div className="grid grid-cols-2 gap-4 mb-4">
                     <div>
                       <div className="bg-gradient-to-br from-purple-600 to-cyan-500 h-24 rounded-lg mb-2 flex items-center justify-center">
-                        <div className="text-white font-bold">✨ GENESIS</div>
+                        <div className="text-white font-bold">⭐ USAGER</div>
                       </div>
-                      <div className="text-xs text-gray-400">Genesis Membership</div>
+                      <div className="text-xs text-gray-400">Prix libre (min 10€)</div>
                     </div>
                     <div>
                       <div className="bg-gradient-to-br from-blue-600 to-purple-500 h-24 rounded-lg mb-2 flex items-center justify-center">
-                        <div className="text-white font-bold">🚀 CAPTAIN</div>
+                        <div className="text-white font-bold">🔥 ARCHITECTE</div>
                       </div>
-                      <div className="text-xs text-gray-400">Leadership Role</div>
+                      <div className="text-xs text-gray-400">100€ unique</div>
                     </div>
                   </div>
                   
