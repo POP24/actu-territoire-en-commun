@@ -19,8 +19,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="SDM DAO"
-        description="10 000 membres pour financer des activateurs locaux. Adhérez dès 100€."
+        title="Association des Communs - Local & National"
+        description="Financez ensemble les projets de vos territoires. Prix libre dès 10€."
       />
       <Header />
       <HeroSection />
