@@ -28,7 +28,7 @@ const Logo = () => {
           />
         </button>
         <span className="text-xs sm:text-sm md:text-base font-bold text-blue-700 tracking-wider">
-          SDM DAO
+          COMMUNE IMAGINÉE
         </span>
       </div>
     </div>
