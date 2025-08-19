@@ -111,8 +111,9 @@ const HeroSection = () => {
                     <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
                       {/* Usager Local */}
                       <div className="text-center hover-scale cursor-pointer flex flex-col h-full">
-                        <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">USAGER LOCAL</h3>
-                        <div className="text-base sm:text-lg font-black text-blue-700 mb-1">Prix Libre</div>
+                        <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">RÉSEAU DES COMMUNES</h3>
+                        <p className="text-xs sm:text-sm text-gray-600 mb-2">Association d'Organisation Locale</p>
+                        <div className="text-2xl sm:text-3xl font-black text-blue-700 mb-1">Prix Libre</div>
                         <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow">à partir de 10€</div>
                         <Button variant="cta-blue" className="w-full font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
                           ADHÉRER
@@ -123,7 +124,7 @@ const HeroSection = () => {
                       <div className="text-center border-l border-gray-200 pl-2 sm:pl-3 md:pl-6 lg:pl-8 hover-scale cursor-pointer flex flex-col h-full">
                         <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">ARCHITECTE RÉSEAU</h3>
                         <div className="text-2xl sm:text-3xl font-black text-green-brand mb-1">100€</div>
-                        <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow"></div>
+                        <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow">10 000 adhésions disponible</div>
                         <Button variant="cta-green" className="w-full font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
                           ADHÉRER
                         </Button>
