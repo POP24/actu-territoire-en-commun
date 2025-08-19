@@ -44,7 +44,7 @@ const FundingFlowSection = () => {
                 </div>
 
                 <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">2️⃣ Deux professionnels par territoire (financés progressivement)</div>
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">2️⃣ Deux professionnels par territoire</div>
                   <ul className="text-cyan-100 text-xs space-y-1">
                     <li>• Connaisseurs du terrain local</li>
                     <li>• Rémunérés par le trésor commun</li>
@@ -53,7 +53,7 @@ const FundingFlowSection = () => {
                 </div>
 
                 <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">3️⃣ Acquisition de biens clés : terres, lieux de production, ressources</div>
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">3️⃣ Acquisition de biens clés : terres, lieux, ressources</div>
                   <div className="text-cyan-100 text-xs">Campings, fermes, forêts, moulins...</div>
                 </div>
 
