@@ -17,7 +17,7 @@ const PathwaysSection = () => {
                 <div className="bg-blue-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 1 · Association Locale
                 </div>
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-2">Prix libre à partir de 10€/an</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-2">Prix libre<br/><span className="text-lg sm:text-xl md:text-2xl">à partir de 10€/an</span></div>
                 <div className="text-blue-600 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Adhésion Locale</div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Gouvernance du lieu</h3>
                 <p className="text-muted-foreground italic text-sm">Engagement sur votre territoire</p>
