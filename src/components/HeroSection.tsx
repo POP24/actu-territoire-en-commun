@@ -108,11 +108,12 @@ const HeroSection = () => {
               <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl border border-white/20">
                 <div className="text-center mb-4 sm:mb-6">
                   <div className="border-b-2 border-gray-200 pb-3 sm:pb-4 mb-4 sm:mb-6">
-                    <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8 min-h-[140px] items-stretch">
+                    <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
                       {/* Usager Local */}
                       <div className="text-center hover-scale cursor-pointer flex flex-col h-full">
                         <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">USAGER LOCAL</h3>
-                        <div className="text-lg sm:text-xl md:text-2xl font-black text-blue-700 mb-2 sm:mb-4 flex-grow">Prix Libre (min. 10€)</div>
+                        <div className="text-lg sm:text-xl md:text-2xl font-black text-blue-700 mb-1">Prix Libre</div>
+                        <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow">à partir de 10€</div>
                         <Button variant="cta-blue" className="w-full font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
                           ADHÉRER
                         </Button>
