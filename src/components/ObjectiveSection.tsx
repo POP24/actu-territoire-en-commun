@@ -7,7 +7,8 @@ const ObjectiveSection = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 animate-fade-in">
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TOUT EXISTE DÉJÀ - RELIONS-NOUS</span>
+            <span className="text-foreground">L'HEURE</span>{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">EST VENUE</span>
           </h2>
           
           <div className="text-center mb-12 sm:mb-16 animate-fade-in">
@@ -15,7 +16,7 @@ const ObjectiveSection = () => {
               
               {/* LES LIEUX ATTENDENT */}
               <div className="flex justify-center animate-scale-in">
-                <div className="w-full max-w-xs sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-64 lg:h-68 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
+                <div className="w-full max-w-xs sm:w-52 sm:h-56 md:w-60 md:h-64 lg:w-68 lg:h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
                   <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 md:mb-3">🏡</div>
                   <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-green-700 dark:text-green-300 mb-1 sm:mb-2 tracking-wide text-center">LES LIEUX<br />ATTENDENT</h3>
                   <p className="text-xs font-semibold text-green-600 dark:text-green-400 mb-1 sm:mb-2 md:mb-3 text-center">Des milliers d'opportunités</p>
@@ -33,7 +34,7 @@ const ObjectiveSection = () => {
 
               {/* LES OUTILS FONCTIONNENT */}
               <div className="flex justify-center animate-scale-in">
-                <div className="w-full max-w-xs sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-64 lg:h-68 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-blue-400/60 hover:ring-4 hover:ring-blue-400/30 cursor-pointer">
+                <div className="w-full max-w-xs sm:w-52 sm:h-56 md:w-60 md:h-64 lg:w-68 lg:h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-blue-400/60 hover:ring-4 hover:ring-blue-400/30 cursor-pointer">
                   <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 md:mb-3">⚙️</div>
                   <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-blue-700 dark:text-blue-300 mb-1 sm:mb-2 tracking-wide text-center">LES OUTILS FONCTIONNENT</h3>
                   <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-1 sm:mb-2 md:mb-3 text-center">Solutions éprouvées et gratuites</p>
@@ -51,7 +52,7 @@ const ObjectiveSection = () => {
 
               {/* LES FORCES VIVES BOUILLONNENT - Prend toute la largeur sur mobile, normal sur desktop */}
               <div className="flex justify-center animate-scale-in col-span-2 sm:col-span-1">
-                <div className="w-full max-w-xs sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-64 lg:h-68 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-purple-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-purple-400/60 hover:ring-4 hover:ring-purple-400/30 cursor-pointer">
+                <div className="w-full max-w-xs sm:w-52 sm:h-56 md:w-60 md:h-64 lg:w-68 lg:h-72 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-purple-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-purple-400/60 hover:ring-4 hover:ring-purple-400/30 cursor-pointer">
                   <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 md:mb-3">✊</div>
                   <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-purple-700 dark:text-purple-300 mb-1 sm:mb-2 tracking-wide text-center">LES FORCES VIVES BOUILLONNENT</h3>
                   <p className="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-1 sm:mb-2 md:mb-3 text-center">1 million de personnes prêtes</p>
@@ -74,12 +75,13 @@ const ObjectiveSection = () => {
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
                   <span className="bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 bg-clip-text text-transparent">RELIONS</span> - NOUS.
                 </h3>
-                <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-4 sm:p-6 md:p-8 max-w-2xl mx-auto">
-                  <p className="text-base sm:text-lg md:text-xl font-semibold text-foreground mb-3 sm:mb-4">
-                    Lieux, Cagnottes, Votes.
-                  </p>
-                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground">
-                    On relie ce qui existe déjà pour faire basculer les territoires en autonomie.
+                <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-6 sm:p-8 md:p-10 max-w-3xl mx-auto">
+                  <h4 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">
+                    Lieux • Cagnottes • Votes
+                  </h4>
+                  <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium leading-relaxed">
+                    On relie ce qui existe déjà pour faire basculer<br className="hidden sm:block" /> 
+                    les territoires en autonomie.
                   </p>
                 </div>
                 
