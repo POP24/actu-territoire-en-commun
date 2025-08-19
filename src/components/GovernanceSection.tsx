@@ -21,8 +21,8 @@ const GovernanceSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 md:mb-6">
-              <span className="text-white">GOUVERNANCE NOUVELLE</span>{" "}
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">GÉNÉRATION</span>
+              <span className="text-white">GOUVERNANCE DES</span>{" "}
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">COMMUNS</span>
             </h2>
           </div>
 
@@ -58,7 +58,7 @@ const GovernanceSection = () => {
                 <div className="text-xs sm:text-sm text-white space-y-1">
                   <div>Autonome</div>
                   <div>↓</div>
-                  <div>Décide locale</div>
+                  <div>Décide localement</div>
                 </div>
               </div>
               <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20">
@@ -66,7 +66,7 @@ const GovernanceSection = () => {
                 <div className="text-xs sm:text-sm text-white space-y-1">
                   <div>Autonome</div>
                   <div>↓</div>
-                  <div>Décide locale</div>
+                  <div>Décide localement</div>
                 </div>
               </div>
               <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20">
@@ -74,15 +74,19 @@ const GovernanceSection = () => {
                 <div className="text-xs sm:text-sm text-white space-y-1">
                   <div>Autonome</div>
                   <div>↓</div>
-                  <div>Décide locale</div>
+                  <div>Décide localement</div>
                 </div>
               </div>
             </div>
 
             {/* Principe */}
-            <div className="text-center p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-cyan-400/30 max-w-xs sm:max-w-md mx-auto">
-              <div className="text-base sm:text-lg md:text-xl font-bold text-white mb-2">PAS DE HIÉRARCHIE</div>
-              <div className="text-sm sm:text-base md:text-lg text-white">Juste de la COOPÉRATION</div>
+            <div className="text-center p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-cyan-400/30 max-w-2xl mx-auto">
+              <div className="text-sm sm:text-base md:text-lg text-white">
+                <p className="mb-2">Une organisation coopérative et transparente qui articule :</p>
+                <p className="mb-2">Associations locales (vie du lieu, programmation, bénévolat) ;</p>
+                <p className="mb-2">Fédération (entraide, outils, cadre commun) ;</p>
+                <p>Responsabilités légales (gestion, sécurité, finances) assumées par les structures dédiées.</p>
+              </div>
             </div>
           </div>
         </div>
