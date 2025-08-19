@@ -20,8 +20,11 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-gradient-cta text-white font-medium",
         cta: "bg-gradient-cta text-white font-medium",
-        national: "text-white font-medium bg-orange-500 hover:bg-orange-600",
-        territorial: "text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-800 hover:from-blue-600 hover:via-blue-700 hover:to-blue-900",
+        "cta-blue": "btn-cta-blue",
+        "cta-orange": "btn-cta-orange", 
+        "cta-green": "btn-cta-green",
+        national: "btn-cta-orange",
+        territorial: "btn-cta-blue",
         "outline-hero": "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
       },
       size: {

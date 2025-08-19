@@ -19,7 +19,8 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
         </NavLink>
         <Button 
           onClick={onButtonClick}
-          className="w-full bg-blue-700 hover:bg-blue-800 text-white rounded-xl py-3 font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+          variant="cta-blue"
+          className="w-full rounded-xl py-3"
         >
           ADHÉRER
         </Button>
@@ -39,7 +40,7 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
       >
         Vision
       </NavLink>
-      <Button className="bg-blue-700 hover:bg-blue-800 text-white rounded-xl px-4 sm:px-6 py-2 sm:py-2.5 font-medium text-sm sm:text-base shadow-lg hover:shadow-xl transition-all duration-300">
+      <Button variant="cta-blue" className="rounded-xl px-4 sm:px-6 py-2 sm:py-2.5 text-sm sm:text-base">
         ADHÉRER
       </Button>
     </div>

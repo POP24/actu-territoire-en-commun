@@ -114,7 +114,7 @@ const HeroSection = () => {
                         <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">USAGER LOCAL</h3>
                         <div className="text-2xl sm:text-3xl font-black text-blue-700 mb-1">10€</div>
                         <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow">Prix libre (min 10€)</div>
-                        <Button className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
+                        <Button variant="cta-blue" className="w-full font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
                           ADHÉRER
                         </Button>
                       </div>
@@ -124,7 +124,7 @@ const HeroSection = () => {
                         <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">ARCHITECTE RÉSEAU</h3>
                         <div className="text-2xl sm:text-3xl font-black text-green-brand mb-1">100€</div>
                         <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow">100€ unique</div>
-                        <Button className="w-full bg-green-brand hover:bg-green-dark text-white font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
+                        <Button variant="cta-green" className="w-full font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
                           ADHÉRER
                         </Button>
                       </div>
@@ -164,8 +164,9 @@ const HeroSection = () => {
           {/* Bottom CTA */}
           <div className="text-center">
             <Button 
+              variant="cta-blue"
               size="lg" 
-              className="bg-blue-700 hover:bg-blue-800 text-white font-bold text-base sm:text-xl px-6 sm:px-12 py-4 sm:py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="font-bold text-base sm:text-xl px-6 sm:px-12 py-4 sm:py-6 rounded-2xl hover:scale-105"
             >
               ADHÉRER
               <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2" />
