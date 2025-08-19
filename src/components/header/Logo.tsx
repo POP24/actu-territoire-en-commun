@@ -11,16 +11,16 @@ const Logo = () => {
   };
 
   return (
-    <div className="flex items-center space-x-2 sm:space-x-4">
-      <button onClick={goToHome} className="transition-transform hover:scale-105">
+    <div className="flex items-center space-x-2 sm:space-x-4 group">
+      <button onClick={goToHome} className="transition-transform duration-200 group-hover:scale-110">
         <img 
           src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" 
           alt="Logo" 
           className="h-8 sm:h-12 md:h-14 rounded-lg shadow-sm" 
         />
       </button>
-      <div className="flex flex-col">
-        <button onClick={goToHome} className="transition-transform hover:scale-105">
+      <div className="flex flex-col transition-transform duration-200 group-hover:scale-105">
+        <button onClick={goToHome} className="transition-transform duration-200">
           <img 
             src="/lovable-uploads/c46d5cc1-ebb1-4b65-bce3-cb7de3d3223a.png" 
             alt="La Suite du Monde" 

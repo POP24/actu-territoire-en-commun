@@ -12,10 +12,12 @@ const MobileToggle = ({ isOpen, onToggle }: MobileToggleProps) => {
       variant="ghost"
       size="sm"
       onClick={onToggle}
-      className="lg:hidden p-2 hover:bg-accent"
+      className="lg:hidden p-2 hover:bg-orange-50 transition-colors duration-300"
       aria-label="Toggle menu"
     >
-      {isOpen ? <X size={24} /> : <Menu size={24} />}
+      <div className="transition-transform duration-300">
+        {isOpen ? <X size={24} className="transition-transform duration-300 rotate-90" /> : <Menu size={24} className="transition-transform duration-300" />}
+      </div>
     </Button>
   );
 };

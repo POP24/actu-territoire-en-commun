@@ -15,12 +15,12 @@ const navItems = [
 
 const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   const baseClasses = isMobile 
-    ? "block py-3 text-base font-medium transition-colors"
-    : "text-sm xl:text-base font-medium transition-colors relative";
+    ? "block py-3 text-base font-medium transition-colors duration-300"
+    : "text-sm xl:text-base font-medium transition-all duration-300 relative nav-link";
   
   const hoverClasses = isMobile 
-    ? ""
-    : "hover:after:scale-x-100 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-blue-700 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:origin-bottom-left";
+    ? "hover:bg-orange-50 rounded-lg px-3 py-2"
+    : "hover:bg-orange-50 hover:text-orange-600 px-3 py-2 rounded-lg";
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -49,7 +49,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
             <button
               key={item.to}
               onClick={() => handleClick(item)}
-              className={`${baseClasses} ${hoverClasses} text-muted-foreground hover:text-foreground`}
+              className={`${baseClasses} ${hoverClasses} text-gray-800 hover:text-orange-600`}
             >
               {item.label}
             </button>
@@ -63,8 +63,8 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
             onClick={onLinkClick}
             className={({ isActive }) => `${baseClasses} ${hoverClasses} ${
               isActive && item.to !== "/" 
-                ? "text-foreground border-b-2 border-blue-700" 
-                : "text-muted-foreground hover:text-foreground"
+                ? "text-orange-600 bg-orange-50" 
+                : "text-gray-800 hover:text-orange-600"
             }`}
           >
             {item.label}

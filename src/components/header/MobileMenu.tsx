@@ -10,7 +10,10 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="lg:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-border shadow-xl z-40">
+    <div 
+      className="lg:hidden fixed inset-0 bg-background/95 backdrop-blur-lg border-b border-border shadow-xl animate-fade-in"
+      style={{ zIndex: 999999, marginTop: '80px' }}
+    >
       <div className="px-6 py-6 space-y-2">
         <NavLinks onLinkClick={onClose} isMobile />
         <ActionButtons onButtonClick={onClose} isMobile />
