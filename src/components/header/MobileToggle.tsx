@@ -12,7 +12,7 @@ const MobileToggle = ({ isOpen, onToggle }: MobileToggleProps) => {
       variant="ghost"
       size="sm"
       onClick={onToggle}
-      className="lg:hidden p-2 hover:bg-orange-50 transition-colors duration-300"
+      className="lg:hidden p-2 hover:bg-blue-50 transition-colors duration-300"
       aria-label="Toggle menu"
     >
       <div className="transition-transform duration-300">
