@@ -32,7 +32,7 @@ const PathwaysSection = () => {
                   <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Voter les grandes décisions du territoire / du lieu</span>
+                      <span>Votez sur les programmes d'animation, événements et formations</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
@@ -53,7 +53,7 @@ const PathwaysSection = () => {
                   <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Trésor collectif local (budget participatif)</span>
+                      <span>Participez au Trésor collectif local (budget participatif)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
@@ -97,7 +97,7 @@ const PathwaysSection = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
-                      <span>Votez l'attribution des budgets territoriaux</span>
+                      <span>Votez sur l'attribution des budgets territoriaux</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
@@ -118,11 +118,11 @@ const PathwaysSection = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
-                      <span>Formations aux outils de gouvernance partagée</span>
+                      <span>Formation aux outils de gouvernance des communs</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
-                      <span>Accès prioritaire aux séjours et rencontres du réseau</span>
+                      <span>Avantages exclusifs à venir</span>
                     </li>
                   </ul>
                 </div>
@@ -139,7 +139,8 @@ const PathwaysSection = () => {
                 <div className="bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 3 · Investissement Immobilier
                 </div>
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-orange-500 mb-2">Obligation & Credit d'Usage</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-500 mb-2">À partir de 50€</div>
+                <div className="text-base sm:text-lg md:text-xl font-bold text-orange-500 mb-2">Obligation & Crédit d'Usage</div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Achat collectif de Communs</h3>
                 <p className="text-muted-foreground italic text-sm">et de services</p>
               </div>
@@ -157,7 +158,11 @@ const PathwaysSection = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-orange-500 mt-1">✓</span>
-                      <span>Obligations adossées à l'actif et crédits d'usage</span>
+                      <span>Obligations adossées à l'immobilier</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-orange-500 mt-1">✓</span>
+                      <span>Crédits d'usage sur les lieux</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-orange-500 mt-1">✓</span>

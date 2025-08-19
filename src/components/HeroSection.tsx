@@ -113,7 +113,7 @@ const HeroSection = () => {
                       <div className="text-center hover-scale cursor-pointer flex flex-col h-full">
                         <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">USAGER LOCAL</h3>
                         <div className="text-2xl sm:text-3xl font-black text-blue-700 mb-1">10€</div>
-                        <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow">Prix libre (min 10€)</div>
+                        <div className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4 flex-grow">Prix Libre (min 10€)</div>
                         <Button variant="cta-blue" className="w-full font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
                           ADHÉRER
                         </Button>
