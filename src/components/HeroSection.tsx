@@ -108,7 +108,7 @@ const HeroSection = () => {
               <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl border border-white/20">
                 <div className="text-center mb-4 sm:mb-6">
                   <div className="border-b-2 border-gray-200 pb-3 sm:pb-4 mb-4 sm:mb-6">
-                    <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
+                    <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8 min-h-[140px] items-stretch">
                       {/* Usager Local */}
                       <div className="text-center hover-scale cursor-pointer flex flex-col h-full">
                         <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 mb-1 sm:mb-2">USAGER LOCAL</h3>
