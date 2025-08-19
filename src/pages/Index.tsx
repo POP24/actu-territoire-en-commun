@@ -19,7 +19,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Réseau des Communes — Activer des communes autonomes"
+        title="SDM DAO"
         description="10 000 membres pour financer des activateurs locaux. Adhérez dès 100€."
       />
       <Header />

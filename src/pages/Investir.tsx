@@ -18,7 +18,7 @@ export default function Investir() {
   return (
     <>
       <SEO
-        title="Investir dès 100€ — Réseau des Communes"
+        title="Investir dès 100€ — SDM DAO"
         description="Devenez co‑bâtisseur de communes autonomes. Adhésion dès 100€, gouvernance partagée, transparence."
         jsonLd={jsonLd}
       />

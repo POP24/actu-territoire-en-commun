@@ -6,7 +6,7 @@ const Vision = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Vision — Le Réseau des Communes"
+        title="Vision — SDM DAO"
         description="Nous relions le monde qui émerge déjà partout. La France des territoires vivants naît maintenant."
       />
       <Header />
