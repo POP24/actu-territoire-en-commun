@@ -157,7 +157,7 @@ const Footer = () => {
 
           {/* CTA Section */}
           <div className="text-center py-6 sm:py-8 border-t border-background/20">
-            <button className="bg-green-brand hover:bg-green-dark text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-sm sm:text-base md:text-lg transition-all hover:scale-105 shadow-lg">
+            <button className="btn-cta-green font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-sm sm:text-base md:text-lg transition-all hover:scale-105">
               Adhérer à 100€
             </button>
           </div>

@@ -67,7 +67,7 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-6 sm:mt-8 bg-green-brand hover:bg-green-dark text-white font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button variant="cta-green" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
                 Adhérer (100€)
               </Button>
             </div>
@@ -128,7 +128,7 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-6 sm:mt-8 bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button variant="cta-blue" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
                 Adhérer à l'association locale
               </Button>
             </div>
@@ -171,7 +171,7 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-6 sm:mt-8 bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button variant="cta-orange" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
                 Accéder au site investissement
               </Button>
             </div>

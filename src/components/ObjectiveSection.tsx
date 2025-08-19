@@ -82,14 +82,14 @@ const ObjectiveSection = () => {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center items-center mt-4 sm:mt-6 md:mt-8">
-                  <button className="w-full sm:w-auto bg-blue-700 hover:bg-blue-800 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm">
+                  <button className="w-full sm:w-auto btn-cta-blue px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg font-semibold text-sm">
                     ADHÉRER
                   </button>
                   <a 
                     href="https://test24.lasuitedumonde.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm"
+                    className="w-full sm:w-auto btn-cta-orange px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg font-semibold text-sm"
                   >
                     INVESTIR LOCALEMENT
                   </a>

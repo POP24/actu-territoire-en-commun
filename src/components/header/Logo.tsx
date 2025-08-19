@@ -16,7 +16,7 @@ const Logo = () => {
         <img 
           src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" 
           alt="Logo" 
-          className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg shadow-sm" 
+          className="h-8 sm:h-12 md:h-14 rounded-lg shadow-sm" 
         />
       </button>
       <div className="flex flex-col">
