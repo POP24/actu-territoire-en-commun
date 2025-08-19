@@ -15,25 +15,25 @@ const ObjectiveSection = () => {
               
               {/* LES LIEUX ATTENDENT */}
               <div className="flex justify-center animate-scale-in">
-                <div className="w-full max-w-xs sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
+                <div className="w-full max-w-xs sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-64 lg:h-68 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
                   <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 md:mb-3">🏡</div>
-                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-green-700 dark:text-green-300 mb-1 sm:mb-2 tracking-wide text-center">LES LIEUX ATTENDENT</h3>
-                  <p className="text-xs font-semibold text-green-600 dark:text-green-400 mb-1 sm:mb-2 md:mb-3 text-center">12 000 communes rurales + milliers d'opportunités</p>
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-green-700 dark:text-green-300 mb-1 sm:mb-2 tracking-wide text-center">LES LIEUX<br />ATTENDENT</h3>
+                  <p className="text-xs font-semibold text-green-600 dark:text-green-400 mb-1 sm:mb-2 md:mb-3 text-center">Des milliers d'opportunités</p>
                   <div className="space-y-1 text-center text-xs">
                     <p className="text-green-600 dark:text-green-400">12 000 communes rurales &lt; 500 hab</p>
-                    <p className="text-green-600 dark:text-green-400">160 000 agriculteurs partent</p>
+                    <p className="text-green-600 dark:text-green-400">3 500 tiers‑lieux en fonctionnement</p>
                     <p className="text-green-600 dark:text-green-400">150 000 hectares/an libres</p>
                     <p className="text-green-600 dark:text-green-400">1 500 écolieux actifs</p>
                     <p className="text-green-600 dark:text-green-400">5 000+ fermes disponibles</p>
                     <div className="w-6 sm:w-8 md:w-12 h-px bg-green-500 my-1 sm:my-2 mx-auto"></div>
-                    <p className="text-xs font-black text-green-700 dark:text-green-200">Les terres se libèrent MAINTENANT</p>
+                    <p className="text-xs font-black text-green-700 dark:text-green-200">Les terres se libèrent</p>
                   </div>
                 </div>
               </div>
 
               {/* LES OUTILS FONCTIONNENT */}
               <div className="flex justify-center animate-scale-in">
-                <div className="w-full max-w-xs sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-blue-400/60 hover:ring-4 hover:ring-blue-400/30 cursor-pointer">
+                <div className="w-full max-w-xs sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-64 lg:h-68 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-blue-400/60 hover:ring-4 hover:ring-blue-400/30 cursor-pointer">
                   <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 md:mb-3">⚙️</div>
                   <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-blue-700 dark:text-blue-300 mb-1 sm:mb-2 tracking-wide text-center">LES OUTILS FONCTIONNENT</h3>
                   <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-1 sm:mb-2 md:mb-3 text-center">Solutions éprouvées et gratuites</p>
@@ -51,7 +51,7 @@ const ObjectiveSection = () => {
 
               {/* LES FORCES VIVES BOUILLONNENT - Prend toute la largeur sur mobile, normal sur desktop */}
               <div className="flex justify-center animate-scale-in col-span-2 sm:col-span-1">
-                <div className="w-full max-w-xs sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-purple-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-purple-400/60 hover:ring-4 hover:ring-purple-400/30 cursor-pointer">
+                <div className="w-full max-w-xs sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-64 lg:h-68 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-purple-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-purple-400/60 hover:ring-4 hover:ring-purple-400/30 cursor-pointer">
                   <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 md:mb-3">✊</div>
                   <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-purple-700 dark:text-purple-300 mb-1 sm:mb-2 tracking-wide text-center">LES FORCES VIVES BOUILLONNENT</h3>
                   <p className="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-1 sm:mb-2 md:mb-3 text-center">1 million de personnes prêtes</p>
