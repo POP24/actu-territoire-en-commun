@@ -80,12 +80,31 @@ const GovernanceSection = () => {
             </div>
 
             {/* Principe */}
-            <div className="text-center p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-cyan-400/30 max-w-2xl mx-auto">
-              <div className="text-sm sm:text-base md:text-lg text-white">
-                <p className="mb-2">Une organisation coopérative et transparente qui articule :</p>
-                <p className="mb-2">Associations locales (vie du lieu, programmation, bénévolat) ;</p>
-                <p className="mb-2">Fédération (entraide, outils, cadre commun) ;</p>
-                <p>Responsabilités légales (gestion, sécurité, finances) assumées par les structures dédiées.</p>
+            <div className="text-center p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-sm border border-cyan-400/40 max-w-3xl mx-auto shadow-lg">
+              <div className="text-white">
+                <p className="text-lg sm:text-xl md:text-2xl font-bold mb-6 text-cyan-300">
+                  Une organisation coopérative et transparente qui articule :
+                </p>
+                <div className="space-y-4 text-left max-w-2xl mx-auto">
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-400 font-bold text-xl mt-1">—</span>
+                    <p className="text-base sm:text-lg text-white">
+                      <span className="font-semibold text-cyan-300">Associations locales</span> (vie du lieu, programmation, bénévolat)
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-400 font-bold text-xl mt-1">—</span>
+                    <p className="text-base sm:text-lg text-white">
+                      <span className="font-semibold text-cyan-300">Fédération</span> (entraide, outils, cadre commun)
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-cyan-400 font-bold text-xl mt-1">—</span>
+                    <p className="text-base sm:text-lg text-white">
+                      <span className="font-semibold text-cyan-300">Responsabilités légales</span> (gestion, sécurité, finances) assumées par les structures dédiées
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
