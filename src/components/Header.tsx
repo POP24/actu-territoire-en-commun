@@ -11,6 +11,22 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const scrolled = useScroll(10);
 
+  // Calculate navbar height and set CSS variable
+  useEffect(() => {
+    const updateNavbarHeight = () => {
+      const navbar = document.querySelector('nav');
+      if (navbar) {
+        const height = navbar.offsetHeight;
+        document.documentElement.style.setProperty('--navbar-height', `${height}px`);
+      }
+    };
+
+    updateNavbarHeight();
+    window.addEventListener('resize', updateNavbarHeight);
+    
+    return () => window.removeEventListener('resize', updateNavbarHeight);
+  }, []);
+
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMenuOpen) {
