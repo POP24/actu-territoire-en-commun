@@ -39,12 +39,12 @@ const FundingFlowSection = () => {
               
               <div className="space-y-3 sm:space-y-4">
                 <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">1️⃣ Les adhésions alimentent le trésor commun</div>
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">1️⃣ Les adhésions construisent le trésor commun</div>
                   <div className="text-cyan-100 text-xs">10€ habitants + 100€ architectes = force collective</div>
                 </div>
 
                 <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">2️⃣ Chaque territoire active 2 FOCALISATEURS</div>
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">2️⃣ Deux professionnels par territoire (financés progressivement)</div>
                   <ul className="text-cyan-100 text-xs space-y-1">
                     <li>• Connaisseurs du terrain local</li>
                     <li>• Rémunérés par le trésor commun</li>
@@ -53,17 +53,17 @@ const FundingFlowSection = () => {
                 </div>
 
                 <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">3️⃣ On acquiert des biens stratégiques</div>
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">3️⃣ Acquisition de biens clés : terres, lieux de production, ressources</div>
                   <div className="text-cyan-100 text-xs">Campings, fermes, forêts, moulins...</div>
                 </div>
 
                 <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">4️⃣ Les revenus retournent au collectif</div>
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">4️⃣ Des bénéfices retournent au collectif</div>
                   <div className="text-cyan-100 text-xs">Location, production, événements → réinvestissement</div>
                 </div>
 
                 <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">5️⃣ Les biens deviennent communs</div>
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">5️⃣ Propriété collective progressive des lieux</div>
                   <div className="text-cyan-100 text-xs">Progressivement, tout passe en propriété collective</div>
                 </div>
               </div>
