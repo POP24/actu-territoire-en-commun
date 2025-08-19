@@ -96,13 +96,13 @@ const LaunchpadSection = () => {
                   <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
                     <div className="hover-scale cursor-pointer">
                       <div className="bg-gradient-to-br from-purple-600 to-cyan-500 h-24 rounded-lg mb-2 flex items-center justify-center">
-                        <div className="text-white font-bold">⭐ USAGER LOCAL</div>
+                        <div className="text-white font-bold">USAGER LOCAL</div>
                       </div>
                       <div className="text-xs text-gray-400">Prix libre (min 10€)</div>
                     </div>
                     <div className="hover-scale cursor-pointer">
                       <div className="bg-gradient-to-br from-blue-600 to-purple-500 h-24 rounded-lg mb-2 flex items-center justify-center">
-                        <div className="text-white font-bold">🔥 ARCHITECTE</div>
+                        <div className="text-white font-bold">ARCHITECTE</div>
                       </div>
                       <div className="text-xs text-gray-400">100€ unique</div>
                     </div>
