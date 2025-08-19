@@ -11,11 +11,72 @@ const PathwaysSection = () => {
           </h2>
           
           <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3 md:gap-6 max-w-7xl mx-auto">
-            {/* Chemin 1 */}
+            {/* Chemin 1 - Association locale (déplacé en premier) */}
+            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer flex flex-col">
+              <div className="flex flex-col items-center text-center mb-4 sm:mb-6 md:mb-8">
+                <div className="bg-blue-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                  Chemin 1 · Association Locale
+                </div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-2">Prix libre à partir de 10€/an</div>
+                <div className="text-blue-600 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Adhésion Locale</div>
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Gouvernance du lieu</h3>
+                <p className="text-muted-foreground italic text-sm">Engagement sur votre territoire</p>
+              </div>
+              
+              <div className="space-y-3 sm:space-y-4 md:space-y-6 flex-1">
+                <div>
+                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                    <span className="text-lg sm:text-xl">🗳️</span>
+                    <h4 className="text-sm sm:text-base md:text-lg font-semibold text-foreground">Vos droits de membre</h4>
+                  </div>
+                  <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">✓</span>
+                      <span>Voter les grandes décisions du territoire / du lieu</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">✓</span>
+                      <span>Proposer et rejoindre des projets (calendrier d'activités)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">✓</span>
+                      <span>Créer des événements et animer la vie locale</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                    <span className="text-lg sm:text-xl">🏠</span>
+                    <h4 className="text-sm sm:text-base md:text-lg font-semibold text-foreground">Concrètement</h4>
+                  </div>
+                  <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">✓</span>
+                      <span>Trésor collectif local (budget participatif)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">✓</span>
+                      <span>Occuper les lieux (tarifs membres, crédits d'usage)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">✓</span>
+                      <span>Accès prioritaire aux espaces et activités</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <Button variant="cta-blue" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+                Adhérer à l'association locale
+              </Button>
+            </div>
+            
+            {/* Chemin 2 - Fédération nationale (déplacé au centre) */}
             <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-brand cursor-pointer flex flex-col">
               <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
                 <div className="bg-green-brand text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                  Chemin 1 · Fédération nationale
+                  Chemin 2 · Fédération nationale
                 </div>
                   <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-brand mb-2">100€</div>
                   <div className="text-green-brand font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Adhésion Architecte</div>
@@ -69,67 +130,6 @@ const PathwaysSection = () => {
               
               <Button variant="cta-green" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
                 Adhérer (100€)
-              </Button>
-            </div>
-            
-            {/* Chemin 2 */}
-            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer flex flex-col">
-              <div className="flex flex-col items-center text-center mb-4 sm:mb-6 md:mb-8">
-                <div className="bg-blue-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                  Chemin 2 · Association locale
-                </div>
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-2">10€ + prix libre</div>
-                <div className="text-blue-600 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Adhésion Locale</div>
-                <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Gouvernance du lieu</h3>
-                <p className="text-muted-foreground italic text-sm">Engagement sur votre territoire</p>
-              </div>
-              
-              <div className="space-y-3 sm:space-y-4 md:space-y-6 flex-1">
-                <div>
-                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
-                    <span className="text-lg sm:text-xl">🗳️</span>
-                    <h4 className="text-sm sm:text-base md:text-lg font-semibold text-foreground">Vos droits de membre</h4>
-                  </div>
-                  <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Voter les grandes décisions du territoire / du lieu</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Proposer et rejoindre des projets (calendrier d'activités)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Créer des événements et animer la vie locale</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <div className="flex items-center gap-2 mb-2 sm:mb-3">
-                    <span className="text-lg sm:text-xl">🏠</span>
-                    <h4 className="text-sm sm:text-base md:text-lg font-semibold text-foreground">Concrètement</h4>
-                  </div>
-                  <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Trésor collectif local (budget participatif)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Occuper les lieux (tarifs membres, crédits d'usage)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Accès prioritaire aux espaces et activités</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              
-              <Button variant="cta-blue" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
-                Adhérer à l'association locale
               </Button>
             </div>
             
