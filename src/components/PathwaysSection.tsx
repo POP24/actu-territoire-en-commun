@@ -17,7 +17,7 @@ const PathwaysSection = () => {
                 <div className="bg-blue-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 1 · Association Locale
                 </div>
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-2">Prix libre<br/><span className="text-lg sm:text-xl md:text-2xl">à partir de 10€/an</span></div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-2">Prix Libre (min. 10€)</div>
                 <div className="text-blue-600 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Adhésion Locale</div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Gouvernance du lieu</h3>
                 <p className="text-muted-foreground italic text-sm">Engagement sur votre territoire</p>
@@ -135,12 +135,12 @@ const PathwaysSection = () => {
             
             {/* Chemin 3 */}
             <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer flex flex-col">
-              <div className="flex flex-col items-center text-center mb-4 sm:mb-6 md:mb-8">
+              <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
                 <div className="bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 3 · Investissement Immobilier
                 </div>
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-500 mb-2">À partir de 50€</div>
-                <div className="text-base sm:text-lg md:text-xl font-bold text-orange-500 mb-2">Obligation & Crédit d'Usage</div>
+                <div className="text-orange-500 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Obligation & Crédit d'Usage</div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Achat collectif de Communs</h3>
                 <p className="text-muted-foreground italic text-sm">et de services</p>
               </div>
