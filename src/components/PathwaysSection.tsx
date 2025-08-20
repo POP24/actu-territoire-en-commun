@@ -59,10 +59,6 @@ const PathwaysSection = () => {
                       <span className="text-blue-500 mt-1">✓</span>
                       <span>Occuper les lieux (tarifs membres, crédits d'usage)</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">✓</span>
-                      <span>Accès prioritaire aux espaces et activités</span>
-                    </li>
                   </ul>
                 </div>
               </div>
