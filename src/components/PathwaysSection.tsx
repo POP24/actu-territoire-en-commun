@@ -53,7 +53,7 @@ const PathwaysSection = () => {
                   <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Participez au Trésor collectif local - Montant libre : vous décidez de votre contribution</span>
+                      <span>Participez au Trésor collectif local (prix libre)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
