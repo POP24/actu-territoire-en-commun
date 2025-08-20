@@ -6,10 +6,10 @@ interface NavLinksProps {
 }
 
 const navItems = [
-  { to: "/", label: "Accueil" },
-  { to: "#financement", label: "Territoires" },
-  { to: "#gouvernance", label: "Gouvernance" },
+  { to: "/volontariat", label: "Volontariat" },
+  { to: "/parrainage", label: "Parrainage" },
   { to: "https://boutique.lasuitedumonde.com", label: "Boutique", external: true },
+  { to: "#financement", label: "Calendrier Territorial" },
   { to: "#faq", label: "FAQ" }
 ];
 
