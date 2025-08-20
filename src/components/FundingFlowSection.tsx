@@ -1,4 +1,8 @@
+import React, { useState } from 'react';
+import WhereYouAtQuiz from './WhereYouAtQuiz';
+
 const FundingFlowSection = () => {
+  const [showWhereYouAtQuiz, setShowWhereYouAtQuiz] = useState(false);
   return (
     <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
       {/* Modern Tech Background */}
@@ -82,7 +86,10 @@ const FundingFlowSection = () => {
                     <h3 className="text-cyan-300 font-semibold text-sm mb-1">Where You At?</h3>
                     <span className="text-xs text-cyan-200 block mb-2">1981 - Le quiz originel</span>
                     <p className="text-xs text-cyan-100 mb-3">Testez votre connaissance du milieu naturel : cycles de l'eau, sols, plantes natives, saisons...</p>
-                    <button className="w-full bg-cyan-600/20 hover:bg-cyan-600/30 text-cyan-300 border border-cyan-500/50 rounded-lg py-2 px-3 text-xs font-medium transition-colors">
+                    <button 
+                      onClick={() => setShowWhereYouAtQuiz(true)}
+                      className="w-full bg-cyan-600/20 hover:bg-cyan-600/30 text-cyan-300 border border-cyan-500/50 rounded-lg py-2 px-3 text-xs font-medium transition-colors"
+                    >
                       FAIRE LE TEST INDIVIDUEL
                     </button>
                   </div>
@@ -159,6 +166,11 @@ const FundingFlowSection = () => {
           </div>
         </div>
       </div>
+      
+      <WhereYouAtQuiz 
+        isOpen={showWhereYouAtQuiz} 
+        onClose={() => setShowWhereYouAtQuiz(false)} 
+      />
     </section>
   );
 };
