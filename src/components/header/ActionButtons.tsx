@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import NFTPurchaseModal from "@/components/NFTPurchaseModal";
+import MembershipSelectionModal from "@/components/MembershipSelectionModal";
 
 interface ActionButtonsProps {
   onButtonClick?: () => void;
@@ -9,13 +10,18 @@ interface ActionButtonsProps {
 }
 
 const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSelectionModalOpen, setIsSelectionModalOpen] = useState(false);
+  const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
   const [membershipType, setMembershipType] = useState<"local" | "architect">("local");
 
-  const handleAdherClick = (type: "local" | "architect") => {
-    setMembershipType(type);
-    setIsModalOpen(true);
+  const handleAdherClick = () => {
+    setIsSelectionModalOpen(true);
     onButtonClick?.();
+  };
+
+  const handleMembershipSelect = (type: "local" | "architect") => {
+    setMembershipType(type);
+    setIsPurchaseModalOpen(true);
   };
 
   if (isMobile) {
@@ -30,15 +36,20 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
             Vision
           </NavLink>
           <Button
-            onClick={() => handleAdherClick("local")}
+            onClick={handleAdherClick}
             className="w-full btn-cta-blue rounded-lg font-semibold"
           >
             ADHÉRER
           </Button>
         </div>
+        <MembershipSelectionModal
+          isOpen={isSelectionModalOpen}
+          onClose={() => setIsSelectionModalOpen(false)}
+          onSelectMembership={handleMembershipSelect}
+        />
         <NFTPurchaseModal
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
+          isOpen={isPurchaseModalOpen}
+          onClose={() => setIsPurchaseModalOpen(false)}
           membershipType={membershipType}
         />
       </>
@@ -59,15 +70,20 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
           Vision
         </NavLink>
         <Button
-          onClick={() => handleAdherClick("local")}
+          onClick={handleAdherClick}
           className="btn-cta-blue px-4 py-2 font-semibold"
         >
           ADHÉRER
         </Button>
       </div>
+      <MembershipSelectionModal
+        isOpen={isSelectionModalOpen}
+        onClose={() => setIsSelectionModalOpen(false)}
+        onSelectMembership={handleMembershipSelect}
+      />
       <NFTPurchaseModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        isOpen={isPurchaseModalOpen}
+        onClose={() => setIsPurchaseModalOpen(false)}
         membershipType={membershipType}
       />
     </>
