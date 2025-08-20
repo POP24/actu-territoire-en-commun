@@ -29,17 +29,16 @@ const GovernanceSection = () => {
           {/* Organisation Horizontale */}
           <div className="mb-8 sm:mb-12 md:mb-16">
             <div className="text-center mb-6 sm:mb-8">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2">🏛️ ORGANISATION HORIZONTALE</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2">🏛️ ORGANISATION COOPERATIVE</h3>
             </div>
             
             {/* Réseau National */}
             <div className="text-center mb-6 sm:mb-8">
               <div className="inline-block p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-cyan-400/30 max-w-xs sm:max-w-sm">
-                <h4 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2">RÉSEAU NATIONAL</h4>
+                <h4 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2">TRÉSOR NATIONAL</h4>
                 <div className="space-y-1 text-white">
-                  <div className="font-semibold text-sm sm:text-base">Caisse Commune</div>
-                  <div className="text-xl sm:text-2xl font-bold text-cyan-400">1,000,000€</div>
-                  <div className="text-xs sm:text-sm">Tous votent</div>
+                  <div className="text-xl sm:text-2xl font-bold text-cyan-400">1 000 000€ visés</div>
+                  <div className="text-xs sm:text-sm">Vote collectif</div>
                 </div>
               </div>
             </div>
@@ -47,14 +46,14 @@ const GovernanceSection = () => {
             {/* Flèche et distribution */}
             <div className="text-center mb-6 sm:mb-8">
               <div className="text-white font-semibold text-lg sm:text-xl">↓</div>
-              <div className="text-white text-sm sm:text-base">Distribution équitable</div>
+              <div className="text-white text-sm sm:text-base">Distribution</div>
               <div className="text-white font-semibold text-lg sm:text-xl">↓</div>
             </div>
 
             {/* Communes */}
             <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 max-w-3xl mx-auto mb-6 sm:mb-8">
               <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20">
-                <h4 className="font-bold text-white mb-2 text-sm sm:text-base">COMMUNE A</h4>
+                <h4 className="font-bold text-white mb-2 text-sm sm:text-base">LIEU A</h4>
                 <div className="text-xs sm:text-sm text-white space-y-1">
                   <div>Autonome</div>
                   <div>↓</div>
@@ -62,7 +61,7 @@ const GovernanceSection = () => {
                 </div>
               </div>
               <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20">
-                <h4 className="font-bold text-white mb-2 text-sm sm:text-base">COMMUNE B</h4>
+                <h4 className="font-bold text-white mb-2 text-sm sm:text-base">LIEU B</h4>
                 <div className="text-xs sm:text-sm text-white space-y-1">
                   <div>Autonome</div>
                   <div>↓</div>
@@ -70,7 +69,7 @@ const GovernanceSection = () => {
                 </div>
               </div>
               <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20">
-                <h4 className="font-bold text-white mb-2 text-sm sm:text-base">COMMUNE C</h4>
+                <h4 className="font-bold text-white mb-2 text-sm sm:text-base">LIEU C</h4>
                 <div className="text-xs sm:text-sm text-white space-y-1">
                   <div>Autonome</div>
                   <div>↓</div>
