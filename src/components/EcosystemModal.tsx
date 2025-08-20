@@ -11,17 +11,17 @@ interface EcosystemModalProps {
 const EcosystemModal: React.FC<EcosystemModalProps> = ({ isOpen, onClose }) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] bg-black/90 border-cyan-400/20 text-cyan-100">
-        <ScrollArea className="max-h-[80vh]">
-          <div className="p-6">
-            <h2 className="text-xl font-bold text-cyan-300 mb-6 text-center">ÉCOSYSTÈME DES COMMUNS</h2>
-            <p className="text-center text-cyan-200 mb-8">Les réseaux qui tissent l'autonomie territoriale</p>
+      <DialogContent className="max-w-[95vw] sm:max-w-4xl max-h-[95vh] sm:max-h-[90vh] bg-black/90 border-cyan-400/20 text-cyan-100 p-0">
+        <ScrollArea className="max-h-[90vh] sm:max-h-[80vh]">
+          <div className="p-4 sm:p-6">
+            <h2 className="text-lg sm:text-xl font-bold text-cyan-300 mb-4 sm:mb-6 text-center">ÉCOSYSTÈME DES COMMUNS</h2>
+            <p className="text-center text-cyan-200 mb-6 sm:mb-8 text-sm">Les réseaux qui tissent l'autonomie territoriale</p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
               {/* Terres & Agriculture */}
-              <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-                <h4 className="text-cyan-300 font-semibold text-lg mb-4">🌾 Terres & Agriculture</h4>
-                <ul className="text-cyan-100 space-y-2">
+              <div className="bg-black/50 rounded-xl p-4 sm:p-6 border border-cyan-500/30">
+                <h4 className="text-cyan-300 font-semibold text-base sm:text-lg mb-3 sm:mb-4">🌾 Terres & Agriculture</h4>
+                <ul className="text-cyan-100 space-y-1 sm:space-y-2 text-sm">
                   <li>• Terre de Liens</li>
                   <li>• Ouvre Ta Ferme</li>
                   <li>• CIVAM</li>
@@ -30,9 +30,9 @@ const EcosystemModal: React.FC<EcosystemModalProps> = ({ isOpen, onClose }) => {
               </div>
               
               {/* Outils Libres */}
-              <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-                <h4 className="text-cyan-300 font-semibold text-lg mb-4">💻 Outils Libres</h4>
-                <ul className="text-cyan-100 space-y-2">
+              <div className="bg-black/50 rounded-xl p-4 sm:p-6 border border-cyan-500/30">
+                <h4 className="text-cyan-300 font-semibold text-base sm:text-lg mb-3 sm:mb-4">💻 Outils Libres</h4>
+                <ul className="text-cyan-100 space-y-1 sm:space-y-2 text-sm">
                   <li>• Cagette.net</li>
                   <li>• Decidim</li>
                   <li>• Framasoft</li>
@@ -41,9 +41,9 @@ const EcosystemModal: React.FC<EcosystemModalProps> = ({ isOpen, onClose }) => {
               </div>
               
               {/* Financement */}
-              <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-                <h4 className="text-cyan-300 font-semibold text-lg mb-4">💰 Financement</h4>
-                <ul className="text-cyan-100 space-y-2">
+              <div className="bg-black/50 rounded-xl p-4 sm:p-6 border border-cyan-500/30">
+                <h4 className="text-cyan-300 font-semibold text-base sm:text-lg mb-3 sm:mb-4">💰 Financement</h4>
+                <ul className="text-cyan-100 space-y-1 sm:space-y-2 text-sm">
                   <li>• Le Milliard</li>
                   <li>• BlueBees</li>
                   <li>• Zeste</li>
@@ -51,9 +51,9 @@ const EcosystemModal: React.FC<EcosystemModalProps> = ({ isOpen, onClose }) => {
               </div>
               
               {/* Réseaux */}
-              <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-                <h4 className="text-cyan-300 font-semibold text-lg mb-4">🤝 Réseaux</h4>
-                <ul className="text-cyan-100 space-y-2">
+              <div className="bg-black/50 rounded-xl p-4 sm:p-6 border border-cyan-500/30">
+                <h4 className="text-cyan-300 font-semibold text-base sm:text-lg mb-3 sm:mb-4">🤝 Réseaux</h4>
+                <ul className="text-cyan-100 space-y-1 sm:space-y-2 text-sm">
                   <li>• France Tiers-Lieux</li>
                   <li>• Coopcycle</li>
                   <li>• Mobicoop</li>
@@ -64,7 +64,7 @@ const EcosystemModal: React.FC<EcosystemModalProps> = ({ isOpen, onClose }) => {
             
             <div className="flex justify-center">
               <Button 
-                className="px-8 py-3 bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 font-semibold text-base"
+                className="px-6 sm:px-8 py-2 sm:py-3 bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 font-semibold text-sm sm:text-base"
               >
                 SE LISTER COMME PARTENAIRE
               </Button>

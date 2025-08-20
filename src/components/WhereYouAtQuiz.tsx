@@ -105,44 +105,44 @@ const WhereYouAtQuiz: React.FC<WhereYouAtQuizProps> = ({ isOpen, onClose }) => {
   };
 
   const renderQuizChoice = () => (
-    <div className="p-6">
-      <h2 className="text-xl font-bold text-cyan-300 mb-6 text-center">CHOISISSEZ VOTRE TEST</h2>
+    <div className="p-4 sm:p-6">
+      <h2 className="text-lg sm:text-xl font-bold text-cyan-300 mb-4 sm:mb-6 text-center">CHOISISSEZ VOTRE TEST</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-          <h3 className="text-lg font-bold text-cyan-300 mb-2">📍 "Où en êtes-vous ?"</h3>
-          <p className="text-sm text-cyan-200 mb-3">Test individuel - Conscience du milieu</p>
-          <p className="text-sm text-cyan-100 mb-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+        <div className="bg-black/50 rounded-xl p-4 sm:p-6 border border-cyan-500/30">
+          <h3 className="text-base sm:text-lg font-bold text-cyan-300 mb-2">📍 "Où en êtes-vous ?"</h3>
+          <p className="text-xs sm:text-sm text-cyan-200 mb-3">Test individuel - Conscience du milieu</p>
+          <p className="text-xs sm:text-sm text-cyan-100 mb-4">
             20 questions sur votre connaissance du territoire : 
             eau, sol, plantes, cycles naturels...
           </p>
           <Button 
             onClick={() => startQuiz('where')}
-            className="w-full bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50"
+            className="w-full bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 text-xs sm:text-sm"
           >
             COMMENCER
           </Button>
         </div>
         
-        <div className="bg-black/50 rounded-xl p-6 border border-cyan-500/30">
-          <h3 className="text-lg font-bold text-cyan-300 mb-2">✊ "Comment vivez-vous ?"</h3>
-          <p className="text-sm text-cyan-200 mb-3">Test collectif - Action biorégionale</p>
-          <p className="text-sm text-cyan-100 mb-4">
+        <div className="bg-black/50 rounded-xl p-4 sm:p-6 border border-cyan-500/30">
+          <h3 className="text-base sm:text-lg font-bold text-cyan-300 mb-2">✊ "Comment vivez-vous ?"</h3>
+          <p className="text-xs sm:text-sm text-cyan-200 mb-3">Test collectif - Action biorégionale</p>
+          <p className="text-xs sm:text-sm text-cyan-100 mb-4">
             Évaluez vos pratiques : résistance locale, 
             communs, politique, écologie active...
           </p>
           <Button 
             onClick={() => startQuiz('how')}
-            className="w-full bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50"
+            className="w-full bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 text-xs sm:text-sm"
           >
             COMMENCER
           </Button>
         </div>
       </div>
       
-      <div className="mt-6 text-center">
-        <p className="text-xs text-cyan-200">
-          Sources : Van Andruss et al. (1981) • Miles & Thomashow (2012) • 
+      <div className="mt-4 sm:mt-6 text-center">
+        <p className="text-xs text-cyan-200 px-2">
+          Sources : Van Andruss et al. (1981) • Miles & Thomashaw (2012) • 
           Rollot & Schaffner (2024) - <em>Qu'est-ce qu'une biorégion ?</em>
         </p>
       </div>
@@ -359,8 +359,8 @@ const WhereYouAtQuiz: React.FC<WhereYouAtQuizProps> = ({ isOpen, onClose }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] bg-black/90 border-cyan-400/20 text-cyan-100">
-        <ScrollArea className="max-h-[80vh]">
+      <DialogContent className="max-w-[95vw] sm:max-w-4xl max-h-[95vh] sm:max-h-[90vh] bg-black/90 border-cyan-400/20 text-cyan-100 p-0">
+        <ScrollArea className="max-h-[90vh] sm:max-h-[80vh]">
           {!selectedQuiz && renderQuizChoice()}
           {selectedQuiz === 'where' && !showResults && renderWhereQuizQuestion()}
           {selectedQuiz === 'how' && !showResults && renderHowQuizQuestion()}

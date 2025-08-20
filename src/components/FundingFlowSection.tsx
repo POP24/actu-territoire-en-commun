@@ -36,20 +36,20 @@ const FundingFlowSection = () => {
           </div>
 
           {/* How it works section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start">
             {/* Left side - How it works */}
-            <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20">
+            <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 h-full">
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6 text-center">
                 FLUX FINANCIERS
               </h3>
               
-              <div className="space-y-3 sm:space-y-4">
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
+              <div className="space-y-3 sm:space-y-4 flex flex-col h-full">
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
                   <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">1️⃣ Les adhésions construisent le trésor commun</div>
                   <div className="text-cyan-100 text-xs">Prix libre dès 10€ (local) • 100€ (architecte réseau)</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
                   <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">2️⃣ Des professionnels pour fédérer chaque territoire</div>
                   <ul className="text-cyan-100 text-xs space-y-1">
                     <li>• Connaisseurs du terrain local</li>
@@ -58,18 +58,18 @@ const FundingFlowSection = () => {
                   </ul>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
                   <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">3️⃣ Acquisitions collectives de lieux clés</div>
                   <div className="text-cyan-100 text-xs">Terres agricoles • Espaces de production • Lieux de vie</div>
                   <div className="text-cyan-100 text-xs mt-1">Campings, fermes, forêts, moulins...</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
                   <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">4️⃣ Les bénéfices alimentent la croissance</div>
                   <div className="text-cyan-100 text-xs">Après charges et frais → Réinvestissement collectif</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
                   <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">5️⃣ Propriété collective progressive</div>
                   <div className="text-cyan-100 text-xs">Petit à petit, les lieux deviennent des communs.</div>
                 </div>
@@ -77,36 +77,36 @@ const FundingFlowSection = () => {
             </div>
 
             {/* Right side - New containers */}
-            <div className="flex flex-col space-y-4 sm:space-y-6">
+            <div className="flex flex-col space-y-4 sm:space-y-6 h-full">
               {/* Container 1 - TESTEZ VOTRE ANCRAGE LOCAL */}
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center">
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center flex-1 flex flex-col justify-center">
                 <h2 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6">TESTEZ VOTRE ANCRAGE LOCAL</h2>
                 
-                <p className="text-cyan-100 text-sm mb-6">
-                  Quiz individuel et collectif pour évaluer<br />
+                <p className="text-cyan-100 text-sm mb-6 px-2">
+                  Quiz individuel et collectif pour évaluer<br className="hidden sm:block" />
                   votre conscience biorégionale
                 </p>
                 
                 <button 
                   onClick={() => setShowWhereYouAtQuiz(true)}
-                  className="bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 rounded-lg py-3 px-6 text-sm font-medium transition-colors"
+                  className="bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 rounded-lg py-3 px-4 sm:px-6 text-sm font-medium transition-colors mx-auto"
                 >
                   DÉCOUVRIR LES QUIZZ
                 </button>
               </div>
 
               {/* Container 2 - DONNÉES OUVERTES DU RÉSEAU */}
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center">
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center flex-1 flex flex-col justify-center">
                 <h2 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6">DONNÉES OUVERTES DU RÉSEAU</h2>
                 
-                <p className="text-cyan-100 text-sm mb-6">
-                  Explorez les cartes, projets et partenaires<br />
+                <p className="text-cyan-100 text-sm mb-6 px-2">
+                  Explorez les cartes, projets et partenaires<br className="hidden sm:block" />
                   qui construisent les communs
                 </p>
                 
                 <button 
                   onClick={() => setShowEcosystemModal(true)}
-                  className="bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 rounded-lg py-3 px-6 text-sm font-medium transition-colors"
+                  className="bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 rounded-lg py-3 px-4 sm:px-6 text-sm font-medium transition-colors mx-auto"
                 >
                   DÉCOUVRIR L'ÉCOSYSTÈME
                 </button>
