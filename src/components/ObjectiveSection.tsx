@@ -27,7 +27,7 @@ const ObjectiveSection = () => {
                     <p className="text-green-600 dark:text-green-400">1 500 écolieux actifs</p>
                     <p className="text-green-600 dark:text-green-400">5 000+ fermes disponibles</p>
                     <div className="w-6 sm:w-8 md:w-12 h-px bg-green-500 my-1 sm:my-2 mx-auto"></div>
-                    <p className="text-xs font-black text-green-700 dark:text-green-200">Les terres se libèrent</p>
+                    <p className="text-xs font-black text-green-700 dark:text-green-200 mb-2 sm:mb-3">Les terres se libèrent</p>
                   </div>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const ObjectiveSection = () => {
                     <p className="text-blue-600 dark:text-blue-400">Terre de Liens collectif</p>
                     <p className="text-blue-600 dark:text-blue-400">SCIC, SCI rodés</p>
                     <div className="w-6 sm:w-8 md:w-12 h-px bg-blue-500 my-1 sm:my-2 mx-auto"></div>
-                    <p className="text-xs font-black text-blue-700 dark:text-blue-200">Pas besoin de réinventer</p>
+                    <p className="text-xs font-black text-blue-700 dark:text-blue-200 mb-2 sm:mb-3">Pas besoin de réinventer</p>
                   </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const ObjectiveSection = () => {
                     <p className="text-purple-600 dark:text-purple-400">Réseaux CIVAM, MRJC actifs</p>
                     <p className="text-purple-600 dark:text-purple-400">100k+ membres AMAP</p>
                     <div className="w-6 sm:w-8 md:w-12 h-px bg-purple-500 my-1 sm:my-2 mx-auto"></div>
-                    <p className="text-xs font-black text-purple-700 dark:text-purple-200">L'énergie est là, mais dispersée</p>
+                    <p className="text-xs font-black text-purple-700 dark:text-purple-200 mb-2 sm:mb-3">L'énergie est là, mais dispersée</p>
                   </div>
                 </div>
               </div>
