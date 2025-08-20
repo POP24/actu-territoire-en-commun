@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { NavLink } from "react-router-dom";
-import { ConnectButton } from "thirdweb/react";
-import { client } from "@/client";
+import { useState } from "react";
+import NFTPurchaseModal from "@/components/NFTPurchaseModal";
 
 interface ActionButtonsProps {
   onButtonClick?: () => void;
@@ -9,6 +9,15 @@ interface ActionButtonsProps {
 }
 
 const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [membershipType, setMembershipType] = useState<"local" | "architect">("local");
+
+  const handleAdherClick = (type: "local" | "architect") => {
+    setMembershipType(type);
+    setIsModalOpen(true);
+    onButtonClick?.();
+  };
+
   if (isMobile) {
     return (
       <div className="pt-4 space-y-3">
@@ -19,23 +28,35 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
         >
           Vision
         </NavLink>
-        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-1 border border-white/20 hover:bg-white/20 transition-all duration-300">
-          <ConnectButton
-            client={client}
-            appMetadata={{
-              name: "Association des Communs",
-              url: "https://association-des-communs.fr",
-            }}
-            connectButton={{
-              label: "ADHÉRER"
-            }}
-          />
-        </div>
+        <Button
+          onClick={() => handleAdherClick("local")}
+          className="w-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 text-white font-semibold"
+        >
+          ADHÉRER
+        </Button>
       </div>
     );
   }
 
-  return (
+  const mobileContent = (
+    <div className="pt-4 space-y-3">
+      <NavLink 
+        to="/vision" 
+        onClick={onButtonClick}
+        className="block py-2 text-base font-medium text-primary hover:text-primary/80 transition-colors"
+      >
+        Vision
+      </NavLink>
+      <Button
+        onClick={() => handleAdherClick("local")}
+        className="w-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 text-white font-semibold"
+      >
+        ADHÉRER
+      </Button>
+    </div>
+  );
+
+  const desktopContent = (
     <div className="flex items-center space-x-2 sm:space-x-4">
       <NavLink 
         to="/vision" 
@@ -47,19 +68,24 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
       >
         Vision
       </NavLink>
-      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-1 border border-white/20 hover:bg-white/20 transition-all duration-300">
-        <ConnectButton
-          client={client}
-          appMetadata={{
-            name: "Association des Communs",
-            url: "https://association-des-communs.fr",
-          }}
-          connectButton={{
-            label: "ADHÉRER"
-          }}
-        />
-      </div>
+      <Button
+        onClick={() => handleAdherClick("local")}
+        className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 text-white font-semibold px-4 py-2"
+      >
+        ADHÉRER
+      </Button>
     </div>
+  );
+
+  return (
+    <>
+      {isMobile ? mobileContent : desktopContent}
+      <NFTPurchaseModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        membershipType={membershipType}
+      />
+    </>
   );
 };
 
