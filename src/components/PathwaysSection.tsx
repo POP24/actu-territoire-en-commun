@@ -32,7 +32,7 @@ const PathwaysSection = () => {
                   <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
-                      <span>Votez sur les programmes d'animation, événements et formations</span>
+                      <span>Vote collectif sur les programmes d'animation, événements et formations</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-500 mt-1">✓</span>
@@ -93,7 +93,7 @@ const PathwaysSection = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
-                      <span>Votez sur l'attribution des budgets territoriaux</span>
+                      <span>Vote collectif sur l'attribution des budgets territoriaux</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
