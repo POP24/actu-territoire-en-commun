@@ -70,30 +70,90 @@ const FundingFlowSection = () => {
               </div>
             </div>
 
-            {/* Right side - Visual representation */}
-            <div className="flex flex-col justify-center space-y-3 sm:space-y-4 md:space-y-6">
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-5 md:p-6 lg:p-8 border border-cyan-400/20 text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3">💰</div>
-                <h4 className="text-sm sm:text-base md:text-lg font-bold text-cyan-300 mb-2">Trésor Commun</h4>
-                <p className="text-cyan-100 text-xs sm:text-sm">
-                  Les adhésions se transforment en patrimoine collectif
-                </p>
+            {/* Right side - New containers */}
+            <div className="flex flex-col space-y-4 sm:space-y-6">
+              {/* Container 1 - Territory Knowledge Quiz */}
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-5 md:p-6 border border-cyan-400/20">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-300 mb-2">Connaissez-vous votre territoire ?</h2>
+                <p className="text-cyan-100 text-sm mb-4 sm:mb-6">Deux approches pour tester votre ancrage local</p>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
+                  <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
+                    <h3 className="text-cyan-300 font-semibold text-sm mb-1">Where You At?</h3>
+                    <span className="text-xs text-cyan-200 block mb-2">1981 - Le quiz originel</span>
+                    <p className="text-xs text-cyan-100 mb-3">Testez votre connaissance du milieu naturel : cycles de l'eau, sols, plantes natives, saisons...</p>
+                    <button className="w-full bg-cyan-600/20 hover:bg-cyan-600/30 text-cyan-300 border border-cyan-500/50 rounded-lg py-2 px-3 text-xs font-medium transition-colors">
+                      FAIRE LE TEST INDIVIDUEL
+                    </button>
+                  </div>
+                  
+                  <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30">
+                    <h3 className="text-cyan-300 font-semibold text-sm mb-1">How You Live?</h3>
+                    <span className="text-xs text-cyan-200 block mb-2">2012 - Version actualisée</span>
+                    <p className="text-xs text-cyan-100 mb-3">Évaluez vos pratiques collectives : actions locales, résistance, communs, politique...</p>
+                    <button className="w-full bg-cyan-600/20 hover:bg-cyan-600/30 text-cyan-300 border border-cyan-500/50 rounded-lg py-2 px-3 text-xs font-medium transition-colors">
+                      TESTER VOTRE COLLECTIF
+                    </button>
+                  </div>
+                </div>
+                
+                <p className="text-xs text-cyan-200 text-center">D'après Van Andruss (1981) et Rollot & Schaffner (2024)</p>
               </div>
 
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-5 md:p-6 lg:p-8 border border-cyan-400/20 text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3">🏡</div>
-                <h4 className="text-sm sm:text-base md:text-lg font-bold text-cyan-300 mb-2">Biens Stratégiques</h4>
-                <p className="text-cyan-100 text-xs sm:text-sm">
-                  Acquisition progressive de lieux d'exception
-                </p>
-              </div>
-
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-5 md:p-6 lg:p-8 border border-cyan-400/20 text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-3">🌱</div>
-                <h4 className="text-sm sm:text-base md:text-lg font-bold text-cyan-300 mb-2">Croissance</h4>
-                <p className="text-cyan-100 text-xs sm:text-sm">
-                  Réinvestissement permanent pour l'expansion
-                </p>
+              {/* Container 2 - Commons Ecosystem */}
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-5 md:p-6 border border-cyan-400/20">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-300 mb-2">Écosystème des Communs</h2>
+                <p className="text-cyan-100 text-sm mb-4 sm:mb-6">Les réseaux qui tissent l'autonomie territoriale</p>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
+                  <div className="bg-black/50 rounded-xl p-3 border border-cyan-500/30">
+                    <h4 className="text-cyan-300 font-semibold text-sm mb-2">🌾 Terres & Agriculture</h4>
+                    <ul className="text-xs text-cyan-100 space-y-1">
+                      <li>• Terre de Liens</li>
+                      <li>• Ouvre Ta Ferme</li>
+                      <li>• CIVAM</li>
+                      <li>• Fermes d'Avenir</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-black/50 rounded-xl p-3 border border-cyan-500/30">
+                    <h4 className="text-cyan-300 font-semibold text-sm mb-2">💻 Outils Libres</h4>
+                    <ul className="text-xs text-cyan-100 space-y-1">
+                      <li>• Cagette.net</li>
+                      <li>• Decidim</li>
+                      <li>• Framasoft</li>
+                      <li>• Open Food France</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-black/50 rounded-xl p-3 border border-cyan-500/30">
+                    <h4 className="text-cyan-300 font-semibold text-sm mb-2">💰 Financement</h4>
+                    <ul className="text-xs text-cyan-100 space-y-1">
+                      <li>• Le Milliard</li>
+                      <li>• BlueBees</li>
+                      <li>• Zeste</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-black/50 rounded-xl p-3 border border-cyan-500/30">
+                    <h4 className="text-cyan-300 font-semibold text-sm mb-2">🤝 Réseaux</h4>
+                    <ul className="text-xs text-cyan-100 space-y-1">
+                      <li>• France Tiers-Lieux</li>
+                      <li>• Coopcycle</li>
+                      <li>• Mobicoop</li>
+                      <li>• Colibris</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+                  <button className="flex-1 bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 rounded-lg py-2 px-4 text-xs font-medium transition-colors">
+                    EXPLORER LA CARTE
+                  </button>
+                  <button className="flex-1 bg-black/30 hover:bg-black/40 text-cyan-300 border border-cyan-500/50 rounded-lg py-2 px-4 text-xs font-medium transition-colors">
+                    SE LISTER COMME PARTENAIRE
+                  </button>
+                </div>
               </div>
             </div>
           </div>
