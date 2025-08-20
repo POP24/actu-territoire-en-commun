@@ -78,10 +78,9 @@ const FundingFlowSection = () => {
 
             {/* Right side - New containers */}
             <div className="flex flex-col space-y-4 sm:space-y-6">
-              {/* Container 1 - ANCRAGE TERRITORIAL */}
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-5 md:p-6 border border-cyan-400/20 text-center">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-300 mb-2">ANCRAGE TERRITORIAL</h2>
-                <h3 className="text-base sm:text-lg font-bold text-cyan-300 mb-4">TESTEZ VOTRE ANCRAGE LOCAL</h3>
+              {/* Container 1 - TESTEZ VOTRE ANCRAGE LOCAL */}
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center">
+                <h2 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6">TESTEZ VOTRE ANCRAGE LOCAL</h2>
                 
                 <p className="text-cyan-100 text-sm mb-6">
                   Quiz individuel et collectif pour évaluer<br />
@@ -97,8 +96,8 @@ const FundingFlowSection = () => {
               </div>
 
               {/* Container 2 - DONNÉES OUVERTES DU RÉSEAU */}
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-4 sm:p-5 md:p-6 border border-cyan-400/20 text-center">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-cyan-300 mb-4">DONNÉES OUVERTES DU RÉSEAU</h2>
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center">
+                <h2 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6">DONNÉES OUVERTES DU RÉSEAU</h2>
                 
                 <p className="text-cyan-100 text-sm mb-6">
                   Explorez les cartes, projets et partenaires<br />
