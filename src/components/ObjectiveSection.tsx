@@ -21,7 +21,7 @@ const ObjectiveSection = () => {
                   <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-green-700 dark:text-green-300 mb-1 sm:mb-2 tracking-wide text-center">LES LIEUX<br />ATTENDENT</h3>
                   <p className="text-xs font-semibold text-green-600 dark:text-green-400 mb-1 sm:mb-2 md:mb-3 text-center">Des milliers d'opportunités</p>
                   <div className="space-y-1 text-center text-xs">
-                    <p className="text-green-600 dark:text-green-400">12 000 communes rurales</p>
+                    <p className="text-green-600 dark:text-green-400">30 800 communes rurales</p>
                     <p className="text-green-600 dark:text-green-400">3 500 tiers‑lieux en fonctionnement</p>
                     <p className="text-green-600 dark:text-green-400">150 000 hectares/an libres</p>
                     <p className="text-green-600 dark:text-green-400">1 500 écolieux actifs</p>
