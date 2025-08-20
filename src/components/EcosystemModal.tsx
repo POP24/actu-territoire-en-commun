@@ -62,14 +62,9 @@ const EcosystemModal: React.FC<EcosystemModalProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex justify-center">
               <Button 
-                className="flex-1 bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50"
-              >
-                EXPLORER LA CARTE
-              </Button>
-              <Button 
-                className="flex-1 bg-black/30 hover:bg-black/40 text-cyan-300 border border-cyan-500/50"
+                className="px-8 py-3 bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 font-semibold text-base"
               >
                 SE LISTER COMME PARTENAIRE
               </Button>
