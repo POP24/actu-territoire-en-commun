@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { NavLink } from "react-router-dom";
+import { ConnectButton } from "thirdweb/react";
+import { client } from "@/client";
 
 interface ActionButtonsProps {
   onButtonClick?: () => void;
@@ -17,13 +19,18 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
         >
           Vision
         </NavLink>
-        <Button 
-          onClick={onButtonClick}
-          variant="cta-blue"
-          className="w-full rounded-xl py-3"
-        >
-          ADHÉRER
-        </Button>
+        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-1 border border-white/20 hover:bg-white/20 transition-all duration-300">
+          <ConnectButton
+            client={client}
+            appMetadata={{
+              name: "Association des Communs",
+              url: "https://association-des-communs.fr",
+            }}
+            connectButton={{
+              label: "ADHÉRER"
+            }}
+          />
+        </div>
       </div>
     );
   }
@@ -40,9 +47,18 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
       >
         Vision
       </NavLink>
-      <Button variant="cta-blue" className="rounded-xl px-4 sm:px-6 py-2 sm:py-2.5 text-sm sm:text-base">
-        ADHÉRER
-      </Button>
+      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-1 border border-white/20 hover:bg-white/20 transition-all duration-300">
+        <ConnectButton
+          client={client}
+          appMetadata={{
+            name: "Association des Communs",
+            url: "https://association-des-communs.fr",
+          }}
+          connectButton={{
+            label: "ADHÉRER"
+          }}
+        />
+      </div>
     </div>
   );
 };

@@ -3,6 +3,8 @@ import { Progress } from "@/components/ui/progress";
 import { ChevronRight, Users, Globe, DollarSign, MapPin, Heart } from "lucide-react";
 import megaFireBackground from "@/assets/mega-fire-background.jpg";
 import { useState, useEffect } from "react";
+import { ConnectButton } from "thirdweb/react";
+import { client } from "@/client";
 
 const HeroSection = () => {
   const [animatedPoints, setAnimatedPoints] = useState<number[]>([]);
@@ -114,9 +116,18 @@ const HeroSection = () => {
                         <h3 className="text-base sm:text-lg md:text-xl font-black text-gray-900 mb-1 sm:mb-2">USAGER LOCAL</h3>
                         <div className="text-2xl sm:text-3xl md:text-4xl font-black text-blue-700 mb-1">Prix Libre</div>
                         <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">à partir de 10€</div>
-                        <Button variant="cta-blue" className="w-full font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
-                          ADHÉRER
-                        </Button>
+                        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-1 border border-white/20">
+                          <ConnectButton
+                            client={client}
+                            appMetadata={{
+                              name: "Association des Communs",
+                              url: "https://association-des-communs.fr",
+                            }}
+                            connectButton={{
+                              label: "ADHÉRER"
+                            }}
+                          />
+                        </div>
                       </div>
                       
                       {/* Architecte Réseau */}
@@ -124,9 +135,18 @@ const HeroSection = () => {
                         <h3 className="text-base sm:text-lg md:text-xl font-black text-gray-900 mb-1 sm:mb-2">ARCHITECTE RÉSEAU</h3>
                         <div className="text-3xl sm:text-4xl font-black text-green-brand mb-1">100€</div>
                         <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">10 000 adhésions disponible</div>
-                        <Button variant="cta-green" className="w-full font-bold py-2 sm:py-3 text-xs sm:text-sm rounded-xl">
-                          ADHÉRER
-                        </Button>
+                        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-1 border border-white/20">
+                          <ConnectButton
+                            client={client}
+                            appMetadata={{
+                              name: "Association des Communs",
+                              url: "https://association-des-communs.fr",
+                            }}
+                            connectButton={{
+                              label: "ADHÉRER"
+                            }}
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -163,14 +183,18 @@ const HeroSection = () => {
 
           {/* Bottom CTA */}
           <div className="text-center">
-            <Button 
-              variant="cta-blue"
-              size="lg" 
-              className="font-bold text-base sm:text-xl px-6 sm:px-12 py-4 sm:py-6 rounded-2xl hover:scale-105"
-            >
-              ADHÉRER
-              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2" />
-            </Button>
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-1 border border-white/20">
+              <ConnectButton
+                client={client}
+                appMetadata={{
+                  name: "Association des Communs",
+                  url: "https://association-des-communs.fr",
+                }}
+                connectButton={{
+                  label: "ADHÉRER"
+                }}
+              />
+            </div>
             <p className="text-white/80 mt-3 sm:mt-4 text-sm sm:text-lg px-4">
               Ensemble, créons les communes de demain
             </p>
