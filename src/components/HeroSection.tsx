@@ -124,7 +124,7 @@ const HeroSection = () => {
                         <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">à partir de 10€</div>
                         <Button
                           onClick={() => handleAdherClick("local")}
-                          className="w-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 text-primary hover:text-primary/80 font-semibold"
+                          className="w-full btn-cta-blue font-semibold text-white"
                         >
                           ADHÉRER
                         </Button>
@@ -137,7 +137,7 @@ const HeroSection = () => {
                         <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">10 000 adhésions disponible</div>
                         <Button
                           onClick={() => handleAdherClick("architect")}
-                          className="w-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 text-primary hover:text-primary/80 font-semibold"
+                          className="w-full btn-cta-green font-semibold text-white"
                         >
                           ADHÉRER
                         </Button>
@@ -175,18 +175,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Bottom CTA */}
-          <div className="text-center">
-            <Button
-              onClick={() => handleAdherClick("local")}
-              className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 text-white font-semibold px-8 py-3"
-            >
-              ADHÉRER
-            </Button>
-            <p className="text-white/80 mt-3 sm:mt-4 text-sm sm:text-lg px-4">
-              Ensemble, créons les communes de demain
-            </p>
-          </div>
         </div>
       </div>
 
