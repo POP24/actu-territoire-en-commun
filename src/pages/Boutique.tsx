@@ -10,6 +10,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 
 const Boutique = () => {
   const [isInterestModalOpen, setIsInterestModalOpen] = useState(false);
+  const [creatorShare, setCreatorShare] = useState(50);
   const [formData, setFormData] = useState({
     profile: "",
     territory: "",
@@ -117,17 +118,37 @@ const Boutique = () => {
                   RÉPARTITION ÉQUITABLE
                 </CardTitle>
                 <p className="text-muted-foreground">
-                  Sur chaque vente, après coûts de production :
+                  Chaque créateur définit sa contribution
                 </p>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="grid grid-cols-2 gap-2">
-                    <Badge variant="secondary" className="justify-center py-2">50% Créateur</Badge>
-                    <Badge variant="outline" className="justify-center py-2">50% Association</Badge>
-                  </div>
                   <p className="text-sm text-muted-foreground text-center">
-                    Transparence totale sur les marges
+                    Sur les marges après production :
+                  </p>
+                  <div className="space-y-3">
+                    <label className="block text-sm font-medium text-card-foreground text-center">
+                      Répartition personnalisable
+                    </label>
+                    <input
+                      type="range"
+                      min="20"
+                      max="80"
+                      value={creatorShare}
+                      onChange={(e) => setCreatorShare(parseInt(e.target.value))}
+                      className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer slider-thumb"
+                    />
+                    <div className="flex justify-between text-sm">
+                      <span className="font-medium text-primary">
+                        Créateur : <strong>{creatorShare}%</strong>
+                      </span>
+                      <span className="font-medium text-muted-foreground">
+                        Communs : <strong>{100 - creatorShare}%</strong>
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-xs text-muted-foreground text-center">
+                    Minimum 20% pour les communs
                   </p>
                 </div>
               </CardContent>
@@ -229,27 +250,77 @@ const Boutique = () => {
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Lancement de la Boutique */}
       <section className="py-16 bg-card">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-card-foreground mb-8">
-              IMPACT EN TEMPS RÉEL
+              LANCEMENT DE LA BOUTIQUE
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-primary mb-2">3 450€</div>
-              <p className="text-muted-foreground">Reversés au trésor commun</p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Phase Actuelle */}
+              <Card className="bg-primary/10 border border-primary">
+                <CardHeader className="text-center">
+                  <Badge variant="secondary" className="mb-4 mx-auto">MAINTENANT</Badge>
+                  <CardTitle className="text-xl font-bold text-card-foreground">
+                    Phase d'amorçage
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-card-foreground">
+                    <li className="flex items-center"><span className="text-green-500 mr-2">✓</span>Recrutement des créateurs</li>
+                    <li className="flex items-center"><span className="text-green-500 mr-2">✓</span>Mise en place technique</li>
+                    <li className="flex items-center"><span className="text-green-500 mr-2">✓</span>Premiers designs</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Printemps 2025 */}
+              <Card className="bg-card border-border">
+                <CardHeader className="text-center">
+                  <Badge variant="outline" className="mb-4 mx-auto">PRINTEMPS 2025</Badge>
+                  <CardTitle className="text-xl font-bold text-card-foreground">
+                    Ouverture officielle
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-card-foreground">
+                    <li className="flex items-center"><span className="text-blue-500 mr-2">→</span>Boutique en ligne active</li>
+                    <li className="flex items-center"><span className="text-blue-500 mr-2">→</span>10 créateurs fondateurs</li>
+                    <li className="flex items-center"><span className="text-blue-500 mr-2">→</span>1ère boutique physique</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Fin 2025 */}
+              <Card className="bg-card border-border">
+                <CardHeader className="text-center">
+                  <Badge variant="outline" className="mb-4 mx-auto">FIN 2025</Badge>
+                  <CardTitle className="text-xl font-bold text-card-foreground">
+                    Déploiement réseau
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-card-foreground">
+                    <li className="flex items-center"><span className="text-blue-500 mr-2">→</span>3 boutiques physiques</li>
+                    <li className="flex items-center"><span className="text-blue-500 mr-2">→</span>50 créateurs actifs</li>
+                    <li className="flex items-center"><span className="text-blue-500 mr-2">→</span>Autonomie financière</li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-primary mb-2">12</div>
-              <p className="text-muted-foreground">Créateurs partenaires</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-primary mb-2">89%</div>
-              <p className="text-muted-foreground">Production française</p>
+
+            <div className="text-center mt-12">
+              <Button 
+                variant="cta-orange"
+                size="lg"
+                className="rounded-xl px-8 py-4 text-lg font-bold"
+              >
+                FAIRE PARTIE DES FONDATEURS
+              </Button>
             </div>
           </div>
         </div>
@@ -454,27 +525,34 @@ const Boutique = () => {
 
           <div className="text-center mt-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              PORTEZ LE CHANGEMENT
+              REJOIGNEZ LE MOUVEMENT
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Chaque achat est un vote pour l'économie locale et solidaire
+              Créateurs, territoires, citoyens : construisons ensemble l'économie de demain
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
               <Button 
                 onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
-                variant="cta-orange"
-                size="lg"
-                className="rounded-xl px-6 py-3 text-base font-bold"
-              >
-                VISITER LA BOUTIQUE →
-              </Button>
-              <Button 
                 variant="outline"
                 size="lg"
                 className="rounded-xl px-6 py-3 text-base font-bold"
               >
-                DEVENIR CRÉATEUR PARTENAIRE
+                DÉCOUVRIR LA BOUTIQUE
+              </Button>
+              <Button 
+                variant="cta-orange"
+                size="lg"
+                className="rounded-xl px-6 py-3 text-base font-bold"
+              >
+                DEVENIR CRÉATEUR
+              </Button>
+              <Button 
+                variant="cta-blue"
+                size="lg"
+                className="rounded-xl px-6 py-3 text-base font-bold"
+              >
+                OUVRIR UNE BOUTIQUE LOCALE
               </Button>
             </div>
           </div>
