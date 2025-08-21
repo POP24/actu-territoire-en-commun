@@ -3,6 +3,9 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 
 const Parrainage = () => {
@@ -76,9 +79,21 @@ const Parrainage = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Inscrivez-vous
               </h3>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-lg mb-6">
                 Recevez votre code ambassadeur et vos outils
               </p>
+              <Button 
+                variant="cta-orange"
+                size="sm"
+                className="rounded-xl px-6 py-2 text-sm font-bold mb-2"
+              >
+                DEVENIR AMBASSADEUR
+              </Button>
+              <div className="flex justify-center gap-2 text-xs text-muted-foreground">
+                <span>📱 App Store</span>
+                <span>•</span>  
+                <span>🤖 Play Store</span>
+              </div>
             </div>
 
             {/* Étape 2 */}
@@ -89,9 +104,39 @@ const Parrainage = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Parrainez
               </h3>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-lg mb-6">
                 Partagez votre vision, invitez votre réseau
               </p>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="rounded-xl px-6 py-2 text-sm font-bold"
+                  >
+                    INVITER MON RÉSEAU
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-md">
+                  <DialogHeader>
+                    <DialogTitle>Invitation à votre réseau local</DialogTitle>
+                  </DialogHeader>
+                  <div className="space-y-4">
+                    <p className="text-sm text-muted-foreground">
+                      Contactez-moi, je veux vous mettre en relation avec La Suite du Monde
+                    </p>
+                    <div className="space-y-3">
+                      <Input placeholder="Votre nom" />
+                      <Input placeholder="Email" type="email" />
+                      <Input placeholder="Téléphone" type="tel" />
+                      <Textarea placeholder="Votre message..." />
+                    </div>
+                    <Button className="w-full">
+                      ENVOYER L'INVITATION
+                    </Button>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
 
             {/* Étape 3 */}
@@ -102,20 +147,11 @@ const Parrainage = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Choisissez votre répartition
               </h3>
-              <div className="bg-card p-6 rounded-xl border border-border">
-                <p className="text-lg font-semibold text-card-foreground mb-4">
-                  Commission totale : 5%
-                </p>
-                <input
-                  type="range"
-                  min="1"
-                  max="4"
-                  step="0.1"
-                  value={commissionSplit}
-                  onChange={handleSliderChange}
-                  className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer mb-4"
-                />
-                <div className="flex justify-between text-sm mb-2">
+              <p className="text-muted-foreground text-lg mb-4">
+                Commission totale : 5%
+              </p>
+              <div className="space-y-2">
+                <div className="flex justify-between text-sm">
                   <span className="font-medium text-primary">
                     Pour vous : {commissionSplit.toFixed(1)}%
                   </span>
@@ -123,81 +159,20 @@ const Parrainage = () => {
                     Pour l'asso : {(5 - commissionSplit).toFixed(1)}%
                   </span>
                 </div>
+                <input
+                  type="range"
+                  min="1"
+                  max="4"
+                  step="0.1"
+                  value={commissionSplit}
+                  onChange={handleSliderChange}
+                  className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer"
+                />
                 <p className="text-xs text-muted-foreground">
                   Minimum 1% pour l'association
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Types de parrainage */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              TROIS NIVEAUX D'ENGAGEMENT
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Parrain Membre */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                  🌱 PARRAIN MEMBRE
-                </CardTitle>
-                <p className="text-lg text-muted-foreground">
-                  Adhésions simples
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2 text-card-foreground">
-                  <li>• 3€ par adhésion locale</li>
-                  <li>• 10€ par architecte réseau</li>
-                  <li>• Crédits d'usage bonus</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Parrain Investisseur */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                  🏡 PARRAIN INVESTISSEUR
-                </CardTitle>
-                <p className="text-lg text-muted-foreground">
-                  Investissements immobiliers
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2 text-card-foreground">
-                  <li>• 2-5% sur les montants</li>
-                  <li>• Formation incluse</li>
-                  <li>• Outils de présentation</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Parrain Territoire */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                  ⭐ PARRAIN TERRITOIRE
-                </CardTitle>
-                <p className="text-lg text-muted-foreground">
-                  Développeur local
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2 text-card-foreground">
-                  <li>• Commissions majorées</li>
-                  <li>• Statut coordinateur</li>
-                  <li>• Budget événements</li>
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
