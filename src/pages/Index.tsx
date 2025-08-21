@@ -19,7 +19,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Association des Communs - Local & National"
+        title="SDM DAO"
         description="Financez ensemble les projets de vos territoires. Prix libre dès 10€."
       />
       <Header />
