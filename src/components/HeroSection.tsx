@@ -4,16 +4,31 @@ import { ChevronRight, Users, Globe, DollarSign, MapPin, Heart } from "lucide-re
 import megaFireBackground from "@/assets/mega-fire-background.jpg";
 import { useState, useEffect } from "react";
 import NFTPurchaseModal from "@/components/NFTPurchaseModal";
+import MembershipSelectionModal from "@/components/MembershipSelectionModal";
 
 const HeroSection = () => {
   const [animatedPoints, setAnimatedPoints] = useState<number[]>([]);
   const [treasureProgress, setTreasuryProgress] = useState(65);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
+  const [isSelectionModalOpen, setIsSelectionModalOpen] = useState(false);
   const [membershipType, setMembershipType] = useState<"local" | "architect">("local");
 
-  const handleAdherClick = (type: "local" | "architect") => {
+  const handleDirectAdherClick = (type: "local" | "architect") => {
     setMembershipType(type);
-    setIsModalOpen(true);
+    setIsPurchaseModalOpen(true);
+  };
+
+  const handleGeneralAdherClick = () => {
+    setIsSelectionModalOpen(true);
+  };
+
+  const handleMembershipSelect = (type: "local" | "architect") => {
+    setMembershipType(type);
+    setIsPurchaseModalOpen(true);
+  };
+
+  const handleInvestClick = () => {
+    window.open('https://lasuitedumonde.com', '_blank');
   };
 
   // Animation des points lumineux
@@ -123,10 +138,10 @@ const HeroSection = () => {
                         <div className="text-2xl sm:text-3xl md:text-4xl font-black text-blue-700 mb-1">Prix Libre</div>
                         <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">à partir de 10€</div>
                         <Button
-                          onClick={() => handleAdherClick("local")}
+                          onClick={() => handleDirectAdherClick("local")}
                           className="w-full btn-cta-blue font-semibold text-white"
                         >
-                          ADHÉSION LOCALE →
+                          ADHÉSION LOCALE
                         </Button>
                       </div>
                       
@@ -136,10 +151,10 @@ const HeroSection = () => {
                         <div className="text-3xl sm:text-4xl font-black text-green-brand mb-1">100€</div>
                         <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">10 000 adhésions disponible</div>
                         <Button
-                          onClick={() => handleAdherClick("architect")}
+                          onClick={() => handleDirectAdherClick("architect")}
                           className="w-full btn-cta-green font-semibold text-white"
                         >
-                          ADHÉSION ARCHITECTE →
+                          ADHÉSION ARCHITECTE
                         </Button>
                       </div>
                     </div>
@@ -170,6 +185,16 @@ const HeroSection = () => {
                       <span>Objectif: 1M€</span>
                     </div>
                   </div>
+                  
+                  {/* Bouton ADHERER global */}
+                  <div className="mt-4 text-center">
+                    <Button
+                      onClick={handleGeneralAdherClick}
+                      className="btn-cta-blue px-6 py-2 font-semibold"
+                    >
+                      ADHÉRER
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -178,9 +203,15 @@ const HeroSection = () => {
         </div>
       </div>
 
+      <MembershipSelectionModal
+        isOpen={isSelectionModalOpen}
+        onClose={() => setIsSelectionModalOpen(false)}
+        onSelectMembership={handleMembershipSelect}
+      />
+      
       <NFTPurchaseModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        isOpen={isPurchaseModalOpen}
+        onClose={() => setIsPurchaseModalOpen(false)}
         membershipType={membershipType}
       />
     </section>

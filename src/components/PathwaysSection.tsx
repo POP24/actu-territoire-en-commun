@@ -172,7 +172,11 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button variant="cta-orange" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button 
+                onClick={() => window.open('https://lasuitedumonde.com', '_blank')}
+                variant="cta-orange" 
+                className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base"
+              >
                 INVESTIR DANS LES COMMUNS →
               </Button>
             </div>
