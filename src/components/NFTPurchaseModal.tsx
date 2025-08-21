@@ -13,39 +13,73 @@ interface NFTPurchaseModalProps {
   membershipType: "local" | "architect";
 }
 
+interface LocalMembershipFeatures {
+  rights: string[];
+  concrete: string[];
+}
+
+interface ArchitectMembershipFeatures {
+  founding: string[];
+  network: string[];
+}
+
+interface NFTConfig {
+  name: string;
+  price: number;
+  description: string;
+  contractAddress: string;
+  features: LocalMembershipFeatures | ArchitectMembershipFeatures;
+}
+
 const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalProps) => {
   const [step, setStep] = useState(1);
   const [isProcessing, setIsProcessing] = useState(false);
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [location, setLocation] = useState("");
+  const [phone, setPhone] = useState("");
+  const [acceptPolicy, setAcceptPolicy] = useState(true);
+  const [acceptNewsletter, setAcceptNewsletter] = useState(false);
   const account = useActiveAccount();
   const { approveUSDC, executePurchase, checkOwnership } = useContractPurchase();
 
   // NFT configuration based on membership type
   const nftConfig = {
     local: {
-      name: "USAGER LOCAL",
+      name: "MEMBRE LOCAL",
       price: 10,
-      description: "Adhésion locale avec accès aux lieux communs du réseau",
+      description: "Ancrez-vous dans votre territoire",
       contractAddress: "0x1234567890123456789012345678901234567890", // Replace with actual contract
-      features: [
-        "Accès aux lieux communs",
-        "Participation aux décisions locales",
-        "Crédits d'usage",
-        "Support communautaire"
-      ]
+      features: {
+        rights: [
+          "Votez sur les programmes d'animation, événements et formations",
+          "Proposez et rejoignez des projets (calendrier d'activités)", 
+          "Créez des événements et animez la vie locale"
+        ],
+        concrete: [
+          "Participez au Trésor collectif local (prix libre)",
+          "Occupez les lieux (tarifs membres, crédits d'usage)",
+          "Accès prioritaire aux espaces et activités"
+        ]
+      }
     },
     architect: {
       name: "ARCHITECTE RÉSEAU", 
       price: 100,
-      description: "Adhésion réseau avec droits de gouvernance étendue",
+      description: "Coordonnez et développez les communs",
       contractAddress: "0x1234567890123456789012345678901234567890", // Replace with actual contract
-      features: [
-        "Tous les avantages Usager Local",
-        "Droits de gouvernance réseau",
-        "Création de nouveaux lieux",
-        "Commission sur les adhésions",
-        "Formation exclusive"
-      ]
+      features: {
+        founding: [
+          "Participez à la trésorerie collective",
+          "Votez l'attribution des budgets territoriaux",
+          "Accédez à toutes les opportunités du réseau"
+        ],
+        network: [
+          "Rejoignez les cercles thématiques (Discord)",
+          "Formation aux outils de gouvernance des communs",
+          "Accès prioritaire aux séjours et rencontres du réseau"
+        ]
+      }
     }
   };
 
@@ -96,6 +130,11 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
   const resetAndClose = () => {
     setStep(1);
     setEmail("");
+    setName("");
+    setLocation("");
+    setPhone("");
+    setAcceptPolicy(true);
+    setAcceptNewsletter(false);
     onClose();
   };
 
@@ -128,14 +167,66 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
               </div>
 
               {/* Features */}
-              <div className="space-y-3">
-                <h4 className="font-semibold text-foreground">Inclus dans votre adhésion :</h4>
-                {currentNft.features.map((feature, index) => (
-                  <div key={index} className="flex items-center text-sm text-muted-foreground">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                    {feature}
-                  </div>
-                ))}
+              <div className="space-y-4">
+                {membershipType === "local" ? (
+                  <>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center">
+                        🗳️ Vos droits de membre
+                      </h4>
+                      <div className="space-y-2">
+                        {(currentNft.features as LocalMembershipFeatures).rights.map((feature: string, index: number) => (
+                          <div key={index} className="flex items-start text-sm text-muted-foreground">
+                            <span className="text-green-500 mr-2 mt-0.5">✓</span>
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center">
+                        🏠 Concrètement
+                      </h4>
+                      <div className="space-y-2">
+                        {(currentNft.features as LocalMembershipFeatures).concrete.map((feature: string, index: number) => (
+                          <div key={index} className="flex items-start text-sm text-muted-foreground">
+                            <span className="text-green-500 mr-2 mt-0.5">✓</span>
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center">
+                        👑 Adhésion fondatrice
+                      </h4>
+                      <div className="space-y-2">
+                        {(currentNft.features as ArchitectMembershipFeatures).founding.map((feature: string, index: number) => (
+                          <div key={index} className="flex items-start text-sm text-muted-foreground">
+                            <span className="text-green-500 mr-2 mt-0.5">✓</span>
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center">
+                        🔗 Connexion réseau
+                      </h4>
+                      <div className="space-y-2">
+                        {(currentNft.features as ArchitectMembershipFeatures).network.map((feature: string, index: number) => (
+                          <div key={index} className="flex items-start text-sm text-muted-foreground">
+                            <span className="text-green-500 mr-2 mt-0.5">✓</span>
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
 
@@ -178,16 +269,73 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
               </div>
             </div>
 
-            {/* Email */}
+            {/* Contact Form */}
             <div className="space-y-4">
-              <h4 className="font-semibold">2. Email de confirmation (optionnel)</h4>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="votre@email.com"
-                className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-              />
+              <h4 className="font-semibold">2. Complétez votre profil (recommandé)</h4>
+              
+              {/* Row 1: Email and Name side by side */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Email"
+                  className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Nom ou organisation"
+                  required
+                  className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+              
+              {/* Row 2: Location and Phone side by side */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                  placeholder="Localité"
+                  className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <input
+                  type="tel"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  placeholder="Téléphone"
+                  className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+              
+              {/* Checkboxes */}
+              <div className="space-y-3">
+                <label className="flex items-start space-x-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={acceptPolicy}
+                    onChange={(e) => setAcceptPolicy(e.target.checked)}
+                    className="mt-1 h-4 w-4 text-primary border-white/30 rounded focus:ring-primary focus:ring-2"
+                  />
+                  <span className="text-sm text-muted-foreground">
+                    J'accepte la politique de confidentialité
+                  </span>
+                </label>
+                
+                <label className="flex items-start space-x-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={acceptNewsletter}
+                    onChange={(e) => setAcceptNewsletter(e.target.checked)}
+                    className="mt-1 h-4 w-4 text-primary border-white/30 rounded focus:ring-primary focus:ring-2"
+                  />
+                  <span className="text-sm text-muted-foreground">
+                    Je souhaite m'inscrire à la newsletter pour recevoir les actualités
+                  </span>
+                </label>
+              </div>
             </div>
 
             {/* Action Button */}
