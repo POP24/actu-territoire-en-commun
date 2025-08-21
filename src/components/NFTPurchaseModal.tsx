@@ -46,7 +46,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
   // NFT configuration based on membership type
   const nftConfig = {
     local: {
-      name: "MEMBRE LOCAL",
+      name: "USAGER LOCAL",
       price: 10,
       description: "Ancrez-vous dans votre territoire",
       contractAddress: "0x1234567890123456789012345678901234567890", // Replace with actual contract
