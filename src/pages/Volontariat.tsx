@@ -14,7 +14,7 @@ const Volontariat = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-primary">
+      <section className="pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-16 bg-gradient-primary">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
