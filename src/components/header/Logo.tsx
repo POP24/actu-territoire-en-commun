@@ -53,7 +53,7 @@ const Logo = () => {
           <div className="absolute top-full left-0 mt-1 bg-background/95 backdrop-blur-sm rounded-md shadow-lg p-1 z-50 animate-fade-in">
             <div className="flex flex-col space-y-1">
               <button 
-                onClick={() => window.open('https://test24.lasuitedumonde.com', '_blank')}
+                onClick={() => window.location.href = 'https://test24.lasuitedumonde.com'}
                 className="p-1 rounded hover:bg-accent/50 transition-colors"
               >
                 <img 
@@ -63,7 +63,7 @@ const Logo = () => {
                 />
               </button>
               <button 
-                onClick={() => window.open('https://app.lasuitedumonde.com', '_blank')}
+                onClick={() => window.location.href = 'https://app.lasuitedumonde.com'}
                 className="p-1 rounded hover:bg-accent/50 transition-colors"
               >
                 <img 
