@@ -22,8 +22,31 @@ const Parrainage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-16 bg-gradient-primary">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative overflow-hidden">
+        {/* Modern Tech Background - Same as homepage */}
+        <div className="absolute inset-0 z-0">
+          {/* Base black background */}
+          <div className="absolute inset-0 bg-black"></div>
+          
+          {/* Gradient overlays inspired by the reference */}
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-600/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-tl from-cyan-400/10 via-transparent to-transparent"></div>
+          
+          {/* Light shape effect */}
+          <div className="absolute inset-0">
+            <img 
+              src="/lovable-uploads/976879dd-34f7-4896-9f36-09c3131d6526.png" 
+              alt="Effet lumineux" 
+              className="w-full h-full object-cover mix-blend-screen opacity-40"
+            />
+          </div>
+          
+          {/* Additional tech glow effects */}
+          <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 text-center pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-16">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               PROGRAMME AMBASSADEUR
