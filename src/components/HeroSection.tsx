@@ -114,9 +114,15 @@ const HeroSection = () => {
                 <div className="relative w-full h-64 sm:h-80 md:h-[26rem] bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
                     src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5%2C42.0%2C8.5%2C51.2&amp;layer=mapnik&amp;marker=45.1834%2C0.7167"
-                    className="w-full h-full border-0 opacity-80 pointer-events-none"
+                    className="w-full h-full border-0 opacity-90"
                     title="Carte de France avec marqueur Dordogne"
+                    loading="lazy"
                   ></iframe>
+                  
+                  {/* Custom marker overlay pour s'assurer de la visibilité */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <div className="w-6 h-6 bg-red-500 rounded-full border-2 border-white shadow-lg animate-pulse"></div>
+                  </div>
                   
                   <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm">
                     <span className="text-orange-400">📍</span> Dordogne - Territoire pionnier
