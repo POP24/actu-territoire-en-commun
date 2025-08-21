@@ -59,7 +59,7 @@ const Logo = () => {
               >
                 <img 
                   src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
-                  alt="La Suite du Monde" 
+                  alt="" 
                   className="h-10 w-10 rounded" 
                 />
               </button>
@@ -70,7 +70,7 @@ const Logo = () => {
               >
                 <img 
                   src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
-                  alt="Autre site" 
+                  alt="" 
                   className="h-10 w-10 rounded" 
                 />
               </button>
