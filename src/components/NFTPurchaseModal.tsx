@@ -142,14 +142,39 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             {/* Wallet Connection */}
             <div className="space-y-4">
               <h4 className="font-semibold">1. Connectez votre portefeuille</h4>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-1 border border-white/20">
-                <ConnectButton
-                  client={client}
-                  appMetadata={{
-                    name: "Association des Communs",
-                    url: "https://association-des-communs.fr",
-                  }}
-                />
+              <div className="bg-gradient-to-r from-primary/20 to-secondary/20 backdrop-blur-sm rounded-xl p-6 border border-primary/30 shadow-lg">
+                <div className="flex flex-col items-center space-y-4">
+                  <div className="text-4xl mb-2">🔐</div>
+                  <div className="connect-button-wrapper w-full">
+                    <ConnectButton
+                      client={client}
+                      appMetadata={{
+                        name: "Association des Communs",
+                        url: "https://association-des-communs.fr",
+                      }}
+                      connectButton={{
+                        style: {
+                          background: "linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)))",
+                          color: "white",
+                          border: "none",
+                          borderRadius: "12px",
+                          padding: "16px 32px",
+                          fontSize: "16px",
+                          fontWeight: "600",
+                          boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                          transition: "all 0.3s ease",
+                          width: "100%",
+                          minHeight: "50px"
+                        }
+                      }}
+                    />
+                  </div>
+                  {account && (
+                    <div className="text-center text-sm text-green-400 bg-green-500/10 px-4 py-2 rounded-lg border border-green-500/20">
+                      ✓ Portefeuille connecté : {account.address.slice(0, 6)}...{account.address.slice(-4)}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 
