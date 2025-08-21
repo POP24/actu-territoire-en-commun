@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
 import { ConnectButton, useActiveAccount, BuyWidget } from "thirdweb/react";
 import { client } from "@/client";
 import { useContractPurchase } from "@/hooks/useContract";
@@ -17,6 +19,10 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
   const [step, setStep] = useState(1);
   const [isProcessing, setIsProcessing] = useState(false);
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [location, setLocation] = useState("");
+  const [acceptNewsletter, setAcceptNewsletter] = useState(false);
+  const [connectionMethod, setConnectionMethod] = useState<string>("");
   const account = useActiveAccount();
   const { approveUSDC, executePurchase, checkOwnership } = useContractPurchase();
 
@@ -96,108 +102,232 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
   const resetAndClose = () => {
     setStep(1);
     setEmail("");
+    setName("");
+    setLocation("");
+    setAcceptNewsletter(false);
+    setConnectionMethod("");
     onClose();
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={resetAndClose}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
-        <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-center">
-            {currentNft.name}
-          </DialogTitle>
-        </DialogHeader>
-
         {step === 1 && (
-          <div className="space-y-6">
-            {/* NFT Details */}
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-6">
-              <div className="text-center mb-4">
-                <div className="text-6xl mb-4">
-                  {membershipType === "local" ? "🏠" : "🏗️"}
-                </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">
-                  {currentNft.name}
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  {currentNft.description}
+          <div className="adhesion-popup space-y-6">
+            {/* Header */}
+            <header className="popup-header text-center bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-6">
+              <div className="text-6xl mb-4">
+                {membershipType === "local" ? "🏡" : "🏗️"}
+              </div>
+              <h2 className="text-2xl font-bold text-foreground mb-2">
+                {membershipType === "local" ? "MEMBRE LOCAL" : "ARCHITECTE RÉSEAU"}
+              </h2>
+              <p className="subtitle text-muted-foreground mb-2">
+                {membershipType === "local" ? "Ancrez-vous dans votre territoire" : "Coordonnez le réseau national"}
+              </p>
+              <p className="price text-4xl font-bold text-green-600">
+                {membershipType === "local" ? "À partir de 10€/an" : "100€"}
+              </p>
+            </header>
+
+            {/* Benefits List */}
+            <div className="benefits-list space-y-4">
+              {membershipType === "local" ? (
+                <>
+                  <div>
+                    <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                      🗳️ Vos droits de membre
+                    </h3>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Votez sur les programmes d'animation, événements et formations</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Proposez et rejoignez des projets (calendrier d'activités)</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Créez des événements et animez la vie locale</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                      🏠 Concrètement
+                    </h3>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Participez au Trésor collectif local (prix libre)</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Occupez les lieux (tarifs membres, crédits d'usage)</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Accès prioritaire aux espaces et activités</span>
+                      </li>
+                    </ul>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div>
+                    <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                      👑 Adhésion fondatrice
+                    </h3>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Participez à la trésorerie collective</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Votez sur l'attribution des budgets territoriaux</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Accédez à toutes les opportunités du réseau</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                      🔗 Connexion réseau
+                    </h3>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Rejoignez les cercles thématiques (Discord)</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Formation aux outils de gouvernance des communs</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-green-500 mt-1">✓</span>
+                        <span>Avantages exclusifs à venir</span>
+                      </li>
+                    </ul>
+                  </div>
+                </>
+              )}
+            </div>
+
+            {/* Connexion Multi-plateformes */}
+            <div className="wallet-section space-y-4">
+              <h3 className="font-bold text-foreground">1. Connectez-vous</h3>
+              <div className="connect-options grid grid-cols-2 gap-3">
+                <ConnectButton
+                  client={client}
+                  appMetadata={{
+                    name: "SDM DAO",
+                    url: "https://sdm-dao.fr",
+                  }}
+                  connectButton={{
+                    style: {
+                      background: "linear-gradient(135deg, #3b82f6, #1d4ed8)",
+                      color: "white",
+                      border: "none",
+                      borderRadius: "12px",
+                      padding: "12px 16px",
+                      fontSize: "14px",
+                      fontWeight: "600",
+                      boxShadow: "0 4px 12px rgba(59, 130, 246, 0.3)",
+                      transition: "all 0.3s ease",
+                      width: "100%",
+                      minHeight: "48px"
+                    }
+                  }}
+                />
+                <Button 
+                  variant="outline" 
+                  className="connect-btn h-12 text-sm font-semibold"
+                  onClick={() => {
+                    toast.info("Connexion Telegram bientôt disponible");
+                    setConnectionMethod("telegram");
+                  }}
+                >
+                  ✉️ Telegram
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="connect-btn h-12 text-sm font-semibold"
+                  onClick={() => {
+                    toast.info("Connexion Gmail bientôt disponible");
+                    setConnectionMethod("gmail");
+                  }}
+                >
+                  📧 Gmail
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="connect-btn h-12 text-sm font-semibold"
+                  onClick={() => {
+                    toast.info("Connexion Facebook bientôt disponible");
+                    setConnectionMethod("facebook");
+                  }}
+                >
+                  👤 Facebook
+                </Button>
+              </div>
+              {(account || connectionMethod) && (
+                <p className="connected-status text-center text-sm text-green-600 bg-green-50 px-4 py-2 rounded-lg border border-green-200">
+                  ✓ Connecté
                 </p>
-                <div className="text-4xl font-bold text-green-600">
-                  {currentNft.price}€
-                </div>
-              </div>
-
-              {/* Features */}
-              <div className="space-y-3">
-                <h4 className="font-semibold text-foreground">Inclus dans votre adhésion :</h4>
-                {currentNft.features.map((feature, index) => (
-                  <div key={index} className="flex items-center text-sm text-muted-foreground">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                    {feature}
-                  </div>
-                ))}
-              </div>
+              )}
             </div>
 
-            {/* Wallet Connection */}
-            <div className="space-y-4">
-              <h4 className="font-semibold">1. Connectez votre portefeuille</h4>
-              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur-sm rounded-xl p-6 border border-blue-500/30 shadow-lg">
-                <div className="flex flex-col items-center space-y-4">
-                  <div className="text-4xl mb-2">🔐</div>
-                  <div className="connect-button-wrapper flex justify-center">
-                    <ConnectButton
-                      client={client}
-                      appMetadata={{
-                        name: "Association des Communs",
-                        url: "https://association-des-communs.fr",
-                      }}
-                      connectButton={{
-                        style: {
-                          background: "linear-gradient(135deg, #3b82f6, #1d4ed8)",
-                          color: "white",
-                          border: "none",
-                          borderRadius: "12px",
-                          padding: "12px 24px",
-                          fontSize: "16px",
-                          fontWeight: "600",
-                          boxShadow: "0 4px 12px rgba(59, 130, 246, 0.3)",
-                          transition: "all 0.3s ease",
-                          minWidth: "200px",
-                          minHeight: "50px"
-                        }
-                      }}
-                    />
-                  </div>
-                  {account && (
-                    <div className="text-center text-sm text-green-600 bg-green-50 px-4 py-2 rounded-lg border border-green-200">
-                      ✓ Connecté avec succès
-                    </div>
-                  )}
-                </div>
+            {/* Infos Hubspot */}
+            <div className="contact-section space-y-4">
+              <h3 className="font-bold text-foreground">2. Restez informé (optionnel)</h3>
+              <div className="form-row grid grid-cols-1 md:grid-cols-2 gap-3">
+                <Input
+                  type="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <Input
+                  type="text"
+                  placeholder="Nom ou pseudo"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
               </div>
-            </div>
-
-            {/* Email */}
-            <div className="space-y-4">
-              <h4 className="font-semibold">2. Email de confirmation (optionnel)</h4>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="votre@email.com"
-                className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+              <Input
+                type="text"
+                placeholder="Localité"
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
               />
+              <div className="flex items-center space-x-2">
+                <Checkbox 
+                  id="newsletter"
+                  checked={acceptNewsletter}
+                  onCheckedChange={(checked) => setAcceptNewsletter(checked === true)}
+                />
+                <label 
+                  htmlFor="newsletter" 
+                  className="text-sm text-muted-foreground cursor-pointer"
+                >
+                  J'accepte de recevoir les actualités du réseau (RGPD respecté)
+                </label>
+              </div>
             </div>
 
-            {/* Action Button */}
             <Button
               onClick={() => setStep(2)}
-              disabled={!account}
-              className="w-full py-4 text-lg font-semibold"
+              disabled={!account && !connectionMethod}
+              className="cta-primary w-full py-4 text-lg font-semibold"
               size="lg"
             >
-              {!account ? "Connectez votre portefeuille d'abord" : "Continuer"}
+              {membershipType === "local" ? "ADHÉSION LOCALE →" : "ADHÉSION ARCHITECTE →"}
             </Button>
           </div>
         )}
