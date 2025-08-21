@@ -55,6 +55,7 @@ const Logo = () => {
               <button 
                 onClick={() => window.location.href = 'https://test24.lasuitedumonde.com'}
                 className="p-1 rounded hover:bg-accent/50 transition-colors"
+                title="Immobilier"
               >
                 <img 
                   src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
@@ -65,6 +66,7 @@ const Logo = () => {
               <button 
                 onClick={() => window.location.href = 'https://app.lasuitedumonde.com'}
                 className="p-1 rounded hover:bg-accent/50 transition-colors"
+                title="Investissement"
               >
                 <img 
                   src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
