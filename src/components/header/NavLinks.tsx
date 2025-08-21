@@ -8,7 +8,7 @@ interface NavLinksProps {
 const navItems = [
   { to: "/volontariat", label: "Volontariat" },
   { to: "/parrainage", label: "Parrainage" },
-  { to: "https://boutique.lasuitedumonde.com", label: "Boutique", external: true },
+  { to: "/boutique", label: "Boutique des Communs" },
   { to: "#financement", label: "Calendrier Territorial" },
   { to: "#faq", label: "FAQ" }
 ];
@@ -31,10 +31,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   };
 
   const handleClick = (item: any) => {
-    if (item.external) {
-      window.open(item.to, '_blank');
-      onLinkClick?.();
-    } else if (item.to.startsWith('#')) {
+    if (item.to.startsWith('#')) {
       scrollToSection(item.to.replace('#', ''));
     } else {
       onLinkClick?.();
@@ -44,7 +41,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   return (
     <>
       {navItems.map((item) => {
-        if (item.external || item.to.startsWith('#')) {
+        if (item.to.startsWith('#')) {
           return (
             <button
               key={item.to}

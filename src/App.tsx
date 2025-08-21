@@ -11,6 +11,7 @@ import Opportunites from "./pages/Opportunites";
 import Vision from "./pages/Vision";
 import Volontariat from "./pages/Volontariat";
 import Parrainage from "./pages/Parrainage";
+import Boutique from "./pages/Boutique";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/vision" element={<Vision />} />
             <Route path="/volontariat" element={<Volontariat />} />
             <Route path="/parrainage" element={<Parrainage />} />
+            <Route path="/boutique" element={<Boutique />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
