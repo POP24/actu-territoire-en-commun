@@ -64,7 +64,7 @@ const PathwaysSection = () => {
               </div>
               
               <Button variant="cta-blue" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
-                Adhérer à l'association locale
+                ADHÉSION LOCALE →
               </Button>
             </div>
             
@@ -125,7 +125,7 @@ const PathwaysSection = () => {
               </div>
               
               <Button variant="cta-green" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
-                Adhérer (100€)
+                ADHÉSION ARCHITECTE →
               </Button>
             </div>
             
@@ -173,7 +173,7 @@ const PathwaysSection = () => {
               </div>
               
               <Button variant="cta-orange" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
-                Accéder au site investissement
+                INVESTIR DANS LES COMMUNS →
               </Button>
             </div>
           </div>

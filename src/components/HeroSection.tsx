@@ -126,7 +126,7 @@ const HeroSection = () => {
                           onClick={() => handleAdherClick("local")}
                           className="w-full btn-cta-blue font-semibold text-white"
                         >
-                          ADHÉRER
+                          ADHÉSION LOCALE →
                         </Button>
                       </div>
                       
@@ -139,7 +139,7 @@ const HeroSection = () => {
                           onClick={() => handleAdherClick("architect")}
                           className="w-full btn-cta-green font-semibold text-white"
                         >
-                          ADHÉRER
+                          ADHÉSION ARCHITECTE →
                         </Button>
                       </div>
                     </div>
