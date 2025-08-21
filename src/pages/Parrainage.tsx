@@ -147,15 +147,15 @@ const Parrainage = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Choisissez votre répartition
               </h3>
-              <p className="text-muted-foreground text-lg mb-4">
+              <p className="text-muted-foreground text-lg mb-6">
                 Commission totale : 5%
               </p>
-              <div className="space-y-2">
-                <div className="flex justify-between text-sm">
+              <div className="bg-card rounded-xl p-6 border border-border max-w-sm mx-auto">
+                <div className="flex justify-between text-sm mb-3">
                   <span className="font-medium text-primary">
                     Pour vous : {commissionSplit.toFixed(1)}%
                   </span>
-                  <span className="font-medium text-secondary">
+                  <span className="font-medium text-muted-foreground">
                     Pour l'asso : {(5 - commissionSplit).toFixed(1)}%
                   </span>
                 </div>
@@ -166,9 +166,9 @@ const Parrainage = () => {
                   step="0.1"
                   value={commissionSplit}
                   onChange={handleSliderChange}
-                  className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer"
+                  className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer slider-thumb"
                 />
-                <p className="text-xs text-muted-foreground">
+                <p className="text-xs text-muted-foreground mt-2 text-center">
                   Minimum 1% pour l'association
                 </p>
               </div>
