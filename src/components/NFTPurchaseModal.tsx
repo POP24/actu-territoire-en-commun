@@ -141,12 +141,6 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
   return (
     <Dialog open={isOpen} onOpenChange={resetAndClose}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
-        <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-center">
-            {currentNft.name}
-          </DialogTitle>
-        </DialogHeader>
-
         {step === 1 && (
           <div className="space-y-6">
             {/* NFT Details */}
@@ -231,11 +225,10 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             </div>
 
             {/* Wallet Connection */}
-            <div className="space-y-4">
+            <div className="space-y-3">
               <h4 className="font-semibold">1. Connectez votre portefeuille</h4>
-              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur-sm rounded-xl p-6 border border-blue-500/30 shadow-lg">
-                <div className="flex flex-col items-center space-y-4">
-                  <div className="text-4xl mb-2">🔐</div>
+              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur-sm rounded-xl p-4 border border-blue-500/30">
+                <div className="flex flex-col items-center space-y-3">
                   <div className="connect-button-wrapper flex justify-center">
                     <ConnectButton
                       client={client}
@@ -249,19 +242,19 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                           color: "white",
                           border: "none",
                           borderRadius: "12px",
-                          padding: "12px 24px",
-                          fontSize: "16px",
+                          padding: "10px 20px",
+                          fontSize: "14px",
                           fontWeight: "600",
                           boxShadow: "0 4px 12px rgba(59, 130, 246, 0.3)",
                           transition: "all 0.3s ease",
-                          minWidth: "200px",
-                          minHeight: "50px"
+                          minWidth: "180px",
+                          minHeight: "40px"
                         }
                       }}
                     />
                   </div>
                   {account && (
-                    <div className="text-center text-sm text-green-600 bg-green-50 px-4 py-2 rounded-lg border border-green-200">
+                    <div className="text-center text-sm text-green-600 bg-green-50 px-3 py-1 rounded-lg border border-green-200">
                       ✓ Connecté avec succès
                     </div>
                   )}
