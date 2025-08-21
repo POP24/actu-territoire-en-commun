@@ -59,7 +59,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" 
                   alt="SDM DAO" 
-                  className="h-5 w-5 rounded" 
+                  className="h-7 w-7 rounded" 
                 />
               </button>
               <button 
@@ -67,18 +67,18 @@ const Logo = () => {
                 className="p-1 rounded hover:bg-accent/50 transition-colors"
               >
                 <img 
-                  src="/lovable-uploads/b128d8a7-0fb3-437b-b29a-1d76f7cca438.png" 
+                  src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
                   alt="La Suite du Monde" 
-                  className="h-5 w-5 rounded" 
+                  className="h-7 w-7 rounded" 
                 />
               </button>
               <button 
                 className="p-1 rounded hover:bg-accent/50 transition-colors opacity-50 cursor-not-allowed"
               >
                 <img 
-                  src="/lovable-uploads/a101e879-52d2-4f3b-8b81-6609abff5b5f.png" 
+                  src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
                   alt="Autre site" 
-                  className="h-5 w-5 rounded" 
+                  className="h-7 w-7 rounded" 
                 />
               </button>
             </div>
