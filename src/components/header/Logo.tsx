@@ -49,41 +49,37 @@ const Logo = () => {
           />
         </button>
         
-        {/* Discrete dropdown */}
         {showDropdown && (
-          <div className="absolute top-full left-0 mt-2 bg-background/95 backdrop-blur-sm border border-border/50 rounded-lg shadow-lg p-2 z-50 animate-fade-in">
-            <div className="flex flex-col space-y-2">
+          <div className="absolute top-full left-0 mt-1 bg-background/95 backdrop-blur-sm rounded-md shadow-lg p-1 z-50 animate-fade-in">
+            <div className="flex flex-col space-y-1">
               <button 
                 onClick={goToHome}
-                className="flex items-center space-x-2 p-2 rounded-md hover:bg-accent/50 transition-colors"
+                className="p-1 rounded hover:bg-accent/50 transition-colors"
               >
                 <img 
                   src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" 
                   alt="SDM DAO" 
-                  className="h-6 w-6 rounded-md" 
+                  className="h-5 w-5 rounded" 
                 />
-                <span className="text-xs text-muted-foreground">SDM DAO</span>
               </button>
               <button 
                 onClick={() => window.open('https://www.lasuitedumonde.com', '_blank')}
-                className="flex items-center space-x-2 p-2 rounded-md hover:bg-accent/50 transition-colors"
+                className="p-1 rounded hover:bg-accent/50 transition-colors"
               >
                 <img 
                   src="/lovable-uploads/b128d8a7-0fb3-437b-b29a-1d76f7cca438.png" 
                   alt="La Suite du Monde" 
-                  className="h-6 w-6 rounded-md" 
+                  className="h-5 w-5 rounded" 
                 />
-                <span className="text-xs text-muted-foreground">Immobilier</span>
               </button>
               <button 
-                className="flex items-center space-x-2 p-2 rounded-md hover:bg-accent/50 transition-colors opacity-50 cursor-not-allowed"
+                className="p-1 rounded hover:bg-accent/50 transition-colors opacity-50 cursor-not-allowed"
               >
                 <img 
                   src="/lovable-uploads/a101e879-52d2-4f3b-8b81-6609abff5b5f.png" 
                   alt="Autre site" 
-                  className="h-6 w-6 rounded-md" 
+                  className="h-5 w-5 rounded" 
                 />
-                <span className="text-xs text-muted-foreground">Bientôt</span>
               </button>
             </div>
           </div>
