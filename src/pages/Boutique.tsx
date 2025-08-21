@@ -495,7 +495,7 @@ const Boutique = () => {
       </section>
 
       {/* Votre Rôle d'Ambassadeur */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
@@ -504,95 +504,72 @@ const Boutique = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Étape 1 */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  1
-                </div>
-                <CardTitle className="text-xl font-bold text-card-foreground">
-                  INSCRIVEZ-VOUS
-                </CardTitle>
-                <p className="text-muted-foreground">
-                  Recevez votre code ambassadeur et vos outils
-                </p>
-              </CardHeader>
-              <CardContent className="text-center">
-                <Button variant="cta-blue" size="lg" className="w-full mb-4">
-                  DEVENIR AMBASSADEUR
-                </Button>
-                <div className="flex justify-center gap-4">
-                  <div className="bg-black text-white px-3 py-1 rounded text-xs flex items-center gap-1">
-                    <span>📱</span> App Store
-                  </div>
-                  <div className="bg-green-600 text-white px-3 py-1 rounded text-xs flex items-center gap-1">
-                    <span>🤖</span> Play Store
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            {/* Étape 1 - Inscrivez-vous */}
+            <div className="text-center bg-card rounded-2xl p-8 border border-border hover:shadow-elegant transition-all duration-300">
+              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                1
+              </div>
+              <h3 className="text-xl font-bold text-card-foreground mb-4">
+                Inscrivez-vous
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Recevez votre code ambassadeur et vos outils
+              </p>
+              <Button variant="cta-orange" size="lg" className="w-full mb-4">
+                DEVENIR AMBASSADEUR
+              </Button>
+              <div className="flex justify-center gap-2 text-xs">
+                <span className="bg-black text-white px-2 py-1 rounded flex items-center gap-1">
+                  📱 App Store
+                </span>
+                <span className="bg-green-600 text-white px-2 py-1 rounded flex items-center gap-1">
+                  🤖 Play Store
+                </span>
+              </div>
+            </div>
 
-            {/* Étape 2 */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  2
-                </div>
-                <CardTitle className="text-xl font-bold text-card-foreground">
-                  PARRAINEZ
-                </CardTitle>
-                <p className="text-muted-foreground">
-                  Partagez votre vision, invitez votre réseau
-                </p>
-              </CardHeader>
-              <CardContent className="text-center">
-                <Button variant="cta-orange" size="lg" className="w-full">
-                  INVITER MON RÉSEAU
-                </Button>
-                <p className="text-xs text-muted-foreground mt-2">
-                  "Contactez-moi, je veux vous mettre en relation avec La Suite du Monde"
-                </p>
-              </CardContent>
-            </Card>
+            {/* Étape 2 - Parrainez */}
+            <div className="text-center bg-card rounded-2xl p-8 border border-border hover:shadow-elegant transition-all duration-300">
+              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                2
+              </div>
+              <h3 className="text-xl font-bold text-card-foreground mb-4">
+                Parrainez
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Partagez votre vision, invitez votre réseau
+              </p>
+              <Button variant="cta-blue" size="lg" className="w-full mb-2">
+                INVITER MON RÉSEAU
+              </Button>
+            </div>
 
-            {/* Étape 3 */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  3
-                </div>
-                <CardTitle className="text-xl font-bold text-card-foreground">
-                  CHOISISSEZ VOTRE RÉPARTITION
-                </CardTitle>
-                <p className="text-muted-foreground mb-4">
-                  Commission totale : 5%
-                </p>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="space-y-3">
-                    <input
-                      type="range"
-                      min="10"
-                      max="40"
-                      value={25}
-                      className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer slider-thumb"
-                    />
-                    <div className="flex justify-between text-sm">
-                      <span className="font-medium text-primary">
-                        Pour vous : <strong>2.5%</strong>
-                      </span>
-                      <span className="font-medium text-muted-foreground">
-                        Pour l'asso : <strong>2.5%</strong>
-                      </span>
-                    </div>
+            {/* Étape 3 - Choisissez votre répartition */}
+            <div className="text-center bg-card rounded-2xl p-8 border border-border hover:shadow-elegant transition-all duration-300">
+              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                3
+              </div>
+              <h3 className="text-xl font-bold text-card-foreground mb-4">
+                Choisissez votre répartition
+              </h3>
+              <div className="mb-6">
+                <p className="text-muted-foreground mb-4">Commission totale : 5%</p>
+                <div className="space-y-3">
+                  <input
+                    type="range"
+                    min="10"
+                    max="40"
+                    value={25}
+                    className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer"
+                  />
+                  <div className="flex justify-between text-sm">
+                    <span className="text-primary font-medium">Pour vous : 2.5%</span>
+                    <span className="text-muted-foreground font-medium">Pour l'asso : 2.5%</span>
                   </div>
-                  <p className="text-xs text-muted-foreground text-center">
-                    Minimum 1% pour l'association
-                  </p>
+                  <p className="text-xs text-muted-foreground">Minimum 1% pour l'association</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
