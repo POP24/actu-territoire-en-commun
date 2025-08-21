@@ -6,6 +6,7 @@ import { client } from "@/client";
 import { useContractPurchase } from "@/hooks/useContract";
 import { arbitrum } from "thirdweb/chains";
 import { toast } from "sonner";
+import { inAppWallet, createWallet } from "thirdweb/wallets";
 
 interface NFTPurchaseModalProps {
   isOpen: boolean;
@@ -42,6 +43,20 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
   const [acceptNewsletter, setAcceptNewsletter] = useState(false);
   const account = useActiveAccount();
   const { approveUSDC, executePurchase, checkOwnership } = useContractPurchase();
+
+  // Wallet configuration
+  const wallets = [
+    inAppWallet({
+      auth: {
+        options: ["google", "facebook", "telegram"],
+      },
+    }),
+    createWallet("io.metamask"),
+    createWallet("com.coinbase.wallet"),
+    createWallet("me.rainbow"),
+    createWallet("io.rabby"),
+    createWallet("io.zerion.wallet"),
+  ];
 
   // NFT configuration based on membership type
   const nftConfig = {
@@ -232,6 +247,8 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                   <div className="connect-button-wrapper flex justify-center">
                     <ConnectButton
                       client={client}
+                      connectModal={{ size: "compact" }}
+                      wallets={wallets}
                       appMetadata={{
                         name: "Association des Communs",
                         url: "https://association-des-communs.fr",
