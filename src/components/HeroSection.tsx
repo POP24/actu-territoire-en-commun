@@ -71,12 +71,9 @@ const HeroSection = () => {
           
           {/* Header Section */}
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <div className="relative inline-block">
-              <div className="absolute inset-0 bg-black/30 rounded-lg"></div>
-              <h1 className="page-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-4 sm:mb-6 relative z-10 px-4 py-2">
-                réseau des communes
-              </h1>
-            </div>
+            <h1 className="page-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-4 sm:mb-6" style={{ textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
+              Réseau des Communes
+            </h1>
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white/80 mb-8 sm:mb-12">
               Association d'Organisation Locale
             </h2>
