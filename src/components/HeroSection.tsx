@@ -66,7 +66,7 @@ const HeroSection = () => {
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-3 sm:px-4 md:px-6 py-20 sm:py-24 md:py-28 lg:py-32">
+      <div className="relative z-10 container mx-auto px-3 sm:px-4 md:px-6 pt-20 lg:pt-[140px] pb-20 sm:pb-24 md:pb-28 lg:pb-32">
         <div className="max-w-7xl mx-auto">
           
           {/* Header Section */}
