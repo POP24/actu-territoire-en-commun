@@ -82,7 +82,7 @@ const HeroSection = () => {
             <div className="max-w-5xl mx-auto">
               {/* Titre Objectifs */}
               <div className="text-center mb-4">
-                <div className="bg-white/20 backdrop-blur-sm text-white inline-block py-2 px-6 rounded-lg font-bold text-sm tracking-wider shadow-lg">
+                <div className="bg-orange-500/90 backdrop-blur-sm text-white inline-block py-2 px-6 rounded-lg font-bold text-sm tracking-wider shadow-lg">
                   OBJECTIFS
                 </div>
               </div>
@@ -91,7 +91,7 @@ const HeroSection = () => {
               <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-6">
                 <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-xs sm:text-sm mb-1">LIEUX COMMUNS</div>
-                  <div className="text-xl sm:text-2xl md:text-3xl font-black text-white">1000+</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-black text-cyan-400">1000+</div>
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-xs sm:text-sm mb-1">TRÉSOR COLLECTIF</div>
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-xl border border-white/20 text-center">
                   <div className="text-white font-bold text-xs sm:text-sm mb-1">GOUVERNANCE</div>
-                  <div className="text-sm sm:text-base md:text-lg font-bold text-white">
+                  <div className="text-sm sm:text-base md:text-lg font-bold text-cyan-400">
                     <span className="block sm:inline">LOCALE</span>
                     <span className="hidden sm:inline">/</span>
                     <span className="block sm:inline">GLOBAL</span>
@@ -169,13 +169,13 @@ const HeroSection = () => {
                 </div>
 
                 {/* Section Objectif + Trésor Commun */}
-                <div className="bg-white rounded-xl p-3 sm:p-4 md:p-6 border border-gray-200">
-                  <div className="bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200">
-                    <div className="flex justify-between items-center mb-2 sm:mb-3">
+                <div className="bg-white rounded-xl p-2 sm:p-3 border border-gray-200">
+                  <div className="bg-gray-50 rounded-lg p-2 sm:p-3 border border-gray-200">
+                    <div className="flex justify-between items-center mb-1 sm:mb-2">
                       <span className="text-xs sm:text-sm font-bold text-gray-800">Progression</span>
                       <span className="text-base sm:text-lg font-black text-gray-900">{treasureProgress}%</span>
                     </div>
-                    <div className="bg-gray-200 rounded-full h-3 sm:h-4 mb-2 sm:mb-3">
+                    <div className="bg-gray-200 rounded-full h-3 sm:h-4 mb-1 sm:mb-2">
                       <div 
                         className="bg-gradient-orange-gold h-3 sm:h-4 rounded-full transition-all duration-500 shadow-sm" 
                         style={{width: `${treasureProgress}%`}}
