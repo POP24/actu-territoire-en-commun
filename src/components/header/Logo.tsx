@@ -60,7 +60,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
                   alt="" 
-                  className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 rounded" 
+                  className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 rounded" 
                 />
               </button>
               <button 
@@ -71,7 +71,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
                   alt="" 
-                  className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 rounded" 
+                  className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 rounded" 
                 />
               </button>
             </div>
