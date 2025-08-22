@@ -12,7 +12,7 @@ export default function Opportunites() {
         description="Découvrez les sites étudiés par le collectif et proposez un lieu dans votre territoire."
       />
       <Header />
-      <main className="container mx-auto px-6 pt-28 pb-16">
+      <main className="container mx-auto px-6 pt-40 lg:pt-60 pb-16">
         <h1 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-8">Les Campings à Rejoindre</h1>
         <p className="text-sm sm:text-base text-muted-foreground max-w-2xl">Dossiers en étude, potentiels de reprise ou co‑exploitation. Filtrez par région, taille et budget.</p>
 

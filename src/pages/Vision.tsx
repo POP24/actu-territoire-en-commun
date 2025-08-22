@@ -12,7 +12,7 @@ const Vision = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-black relative overflow-hidden">
+      <section className="pt-40 lg:pt-60 pb-20 bg-black relative overflow-hidden">
         {/* Tech background similar to governance */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-600/20"></div>

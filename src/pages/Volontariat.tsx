@@ -38,7 +38,7 @@ const Volontariat = () => {
           <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 text-center pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-16">
+        <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               VOLONTARIAT DANS LE RÉSEAU
