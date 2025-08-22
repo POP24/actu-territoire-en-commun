@@ -80,6 +80,13 @@ const HeroSection = () => {
             
             {/* Top Stats - 2 levels improved */}
             <div className="max-w-5xl mx-auto">
+              {/* Titre Objectifs */}
+              <div className="text-center mb-4">
+                <div className="bg-white/20 backdrop-blur-sm text-white inline-block py-2 px-6 rounded-lg font-bold text-sm tracking-wider shadow-lg">
+                  OBJECTIFS
+                </div>
+              </div>
+              
               {/* First Level - Main Categories */}
               <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-6">
                 <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-xl border border-white/20 text-center">
@@ -110,8 +117,8 @@ const HeroSection = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 sm:p-6 border border-white/20">
                 <h3 className="text-white font-bold text-base sm:text-lg mb-3 sm:mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
                 
-                {/* Real France Map - Fixed for mobile with scroll passthrough */}
-                <div className="relative w-full h-64 sm:h-80 md:h-[26rem] bg-gray-900 rounded-2xl overflow-hidden">
+                {/* Real France Map - Reduced height */}
+                <div className="relative w-full h-48 sm:h-60 md:h-72 bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
                     src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5%2C42.0%2C8.5%2C51.2&amp;layer=mapnik&amp;marker=45.1834%2C0.7167"
                     className="w-full h-full border-0 opacity-80 pointer-events-none"
