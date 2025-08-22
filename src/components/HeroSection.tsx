@@ -163,12 +163,6 @@ const HeroSection = () => {
 
                 {/* Section Objectif + Trésor Commun */}
                 <div className="bg-white rounded-xl p-3 sm:p-4 md:p-6 border border-gray-200">
-                  <div className="text-center mb-3 sm:mb-4">
-                    <div className="bg-gradient-orange-gold text-white inline-block py-1 sm:py-2 px-3 sm:px-6 rounded-lg font-bold text-xs sm:text-sm tracking-wider mb-2 sm:mb-3 shadow-lg" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.5)'}}>
-                      TRÉSOR COMMUN
-                    </div>
-                  </div>
-                  
                   <div className="bg-gray-50 rounded-lg p-3 sm:p-4 border border-gray-200">
                     <div className="flex justify-between items-center mb-2 sm:mb-3">
                       <span className="text-xs sm:text-sm font-bold text-gray-800">Progression</span>
@@ -184,16 +178,6 @@ const HeroSection = () => {
                       <span>650 000€ collectés</span>
                       <span>Objectif: 1M€</span>
                     </div>
-                  </div>
-                  
-                  {/* Bouton ADHERER global */}
-                  <div className="mt-4 text-center">
-                    <Button
-                      onClick={handleGeneralAdherClick}
-                      className="btn-cta-blue px-6 py-2 font-semibold"
-                    >
-                      ADHÉRER
-                    </Button>
                   </div>
                 </div>
               </div>
