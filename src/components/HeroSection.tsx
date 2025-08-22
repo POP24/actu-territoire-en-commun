@@ -94,8 +94,8 @@ const HeroSection = () => {
               {/* Conteneur avec liseret OBJECTIFS */}
               <div className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden">
                 {/* Liseret OBJECTIFS */}
-                <div className="bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 text-white text-center py-2 px-4">
-                  <span className="font-bold text-sm tracking-wider">OBJECTIFS</span>
+                <div className="bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 text-white text-center py-1 px-4">
+                  <span className="font-bold text-xs tracking-wider">OBJECTIFS</span>
                 </div>
                 
                 {/* Cards directement attachées */}
