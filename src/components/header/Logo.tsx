@@ -78,7 +78,7 @@ const Logo = () => {
           </div>
         )}
       </div>
-      <div className="flex flex-col transition-transform duration-200 group-hover:scale-105">
+      <div className="flex flex-col items-center transition-transform duration-200 group-hover:scale-105">
         <button onClick={goToHome} className="transition-transform duration-200">
           <img 
             src="/lovable-uploads/c46d5cc1-ebb1-4b65-bce3-cb7de3d3223a.png" 
@@ -86,7 +86,7 @@ const Logo = () => {
             className="h-4 sm:h-6 md:h-9" 
           />
         </button>
-        <span className="text-xs sm:text-sm md:text-base font-bold text-blue-700 tracking-wider">
+        <span className="text-xs sm:text-sm md:text-base font-bold text-blue-700 tracking-wider text-center">
           ASSOCIATION
         </span>
       </div>
