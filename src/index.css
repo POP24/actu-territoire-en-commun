@@ -171,6 +171,11 @@ All colors MUST be HSL.
     @apply text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300;
   }
   
+  .page-title {
+    @apply font-bold tracking-tight leading-tight;
+    font-family: 'Inter', sans-serif;
+  }
+  
   .hover-scale {
     @apply transition-transform duration-200 ease-out hover:scale-105;
   }
