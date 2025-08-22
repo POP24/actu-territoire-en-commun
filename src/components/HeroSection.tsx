@@ -39,6 +39,17 @@ const HeroSection = () => {
         setAnimatedPoints(prev => [...prev, point]);
       }, index * 500);
     });
+
+    // Debug PIN visibility
+    setTimeout(() => {
+      const pinElement = document.querySelector('.pin-debug');
+      console.log('PIN element found:', pinElement);
+      if (pinElement) {
+        console.log('PIN visibility:', window.getComputedStyle(pinElement).visibility);
+        console.log('PIN display:', window.getComputedStyle(pinElement).display);
+        console.log('PIN z-index:', window.getComputedStyle(pinElement).zIndex);
+      }
+    }, 1000);
   }, []);
 
   return (
@@ -125,7 +136,17 @@ const HeroSection = () => {
                     title="Carte de France avec marqueur Dordogne"
                   ></iframe>
                   
-                  <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm">
+                  <div 
+                    className="pin-debug absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm z-50 border-2 border-orange-400"
+                    style={{ 
+                      position: 'absolute',
+                      zIndex: 999,
+                      display: 'block',
+                      visibility: 'visible',
+                      backgroundColor: 'rgba(0,0,0,0.9)',
+                      minWidth: 'fit-content'
+                    }}
+                  >
                     <span className="text-orange-400">📍</span> Dordogne - Territoire pionnier
                   </div>
                 </div>
