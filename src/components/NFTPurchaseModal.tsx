@@ -43,7 +43,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
   const [acceptNewsletter, setAcceptNewsletter] = useState(false);
   const account = useActiveAccount();
   const { approveUSDC, executePurchase, checkOwnership } = useContractPurchase();
-
+console.log("changes")
   // Wallet configuration
   const wallets = [
     inAppWallet({
@@ -390,7 +390,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                 client={client}
                 chain={arbitrum}
                 amount={String(currentNft.price)}
-                tokenAddress="0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
+                tokenAddress="0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
               />
             </div>
 
