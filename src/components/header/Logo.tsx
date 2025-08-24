@@ -50,28 +50,28 @@ const Logo = () => {
         </button>
         
         {showDropdown && (
-          <div className="absolute top-full left-0 mt-1 bg-background/95 backdrop-blur-sm rounded-md shadow-lg p-1 z-50 animate-fade-in w-fit">
-            <div className="flex flex-col space-y-1">
+          <div className="absolute top-full left-0 sm:left-1/2 sm:-translate-x-1/2 mt-1 bg-popover border border-border rounded-md shadow-lg p-2 z-[9999] animate-fade-in min-w-[80px] max-w-[120px]">
+            <div className="flex flex-col space-y-2">
               <button 
                 onClick={() => window.location.href = 'https://test24.lasuitedumonde.com'}
-                className="p-1 rounded hover:bg-accent/50 transition-colors"
+                className="p-2 rounded-md hover:bg-accent/80 transition-colors group"
                 title="Immobilier"
               >
                 <img 
                   src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
                   alt="Immobilier" 
-                  className="w-8 h-8 sm:w-10 sm:h-10 rounded object-contain"
+                  className="w-8 h-8 sm:w-9 sm:h-9 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
                 />
               </button>
               <button 
                 onClick={() => window.location.href = 'https://app.lasuitedumonde.com'}
-                className="p-1 rounded hover:bg-accent/50 transition-colors"
+                className="p-2 rounded-md hover:bg-accent/80 transition-colors group"
                 title="Investissement"
               >
                 <img 
                   src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
                   alt="Investissement" 
-                  className="w-8 h-8 sm:w-10 sm:h-10 rounded object-contain" 
+                  className="w-8 h-8 sm:w-9 sm:h-9 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
                 />
               </button>
             </div>
