@@ -50,28 +50,28 @@ const Logo = () => {
         </button>
         
         {showDropdown && (
-          <div className="absolute top-full left-1 mt-1 bg-popover/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-1 z-[9999] animate-fade-in">
+          <div className="absolute top-full left-0 sm:left-1 mt-1 bg-popover/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-1 z-[9999] animate-fade-in">
             <div className="flex flex-col gap-1">
               <button 
                 onClick={() => window.location.href = 'https://test24.lasuitedumonde.com'}
-                className="p-2 rounded-md hover:bg-accent/80 transition-colors group"
+                className="p-1 sm:p-2 rounded-md hover:bg-accent/80 transition-colors group"
                 title="Immobilier"
               >
                 <img 
                   src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
                   alt="Immobilier" 
-                  className="w-10 h-10 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
+                  className="w-8 h-8 sm:w-10 sm:h-10 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
                 />
               </button>
               <button 
                 onClick={() => window.location.href = 'https://app.lasuitedumonde.com'}
-                className="p-2 rounded-md hover:bg-accent/80 transition-colors group"
+                className="p-1 sm:p-2 rounded-md hover:bg-accent/80 transition-colors group"
                 title="Investissement"
               >
                 <img 
                   src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
                   alt="Investissement" 
-                  className="w-10 h-10 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
+                  className="w-8 h-8 sm:w-10 sm:h-10 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
                 />
               </button>
             </div>
