@@ -50,28 +50,28 @@ const Logo = () => {
         </button>
         
         {showDropdown && (
-          <div className="absolute top-full left-0 mt-2 bg-popover border border-border rounded-lg shadow-xl p-2 z-[9999] animate-fade-in w-16 sm:w-20">
+          <div className="absolute top-full left-0 mt-2 bg-popover border border-border rounded-lg shadow-xl p-2 z-[9999] animate-fade-in w-20 sm:w-16">
             <div className="flex flex-col gap-2">
               <button 
                 onClick={() => window.location.href = 'https://test24.lasuitedumonde.com'}
-                className="p-2 rounded-md hover:bg-accent/80 transition-colors group w-full"
+                className="p-1 rounded-md hover:bg-accent/80 transition-colors group w-full"
                 title="Immobilier"
               >
                 <img 
                   src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
                   alt="Immobilier" 
-                  className="w-12 h-12 sm:w-14 sm:h-14 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
+                  className="w-16 h-16 sm:w-12 sm:h-12 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
                 />
               </button>
               <button 
                 onClick={() => window.location.href = 'https://app.lasuitedumonde.com'}
-                className="p-2 rounded-md hover:bg-accent/80 transition-colors group w-full"
+                className="p-1 rounded-md hover:bg-accent/80 transition-colors group w-full"
                 title="Investissement"
               >
                 <img 
                   src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
                   alt="Investissement" 
-                  className="w-12 h-12 sm:w-14 sm:h-14 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
+                  className="w-16 h-16 sm:w-12 sm:h-12 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
                 />
               </button>
             </div>
