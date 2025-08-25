@@ -50,11 +50,11 @@ const Logo = () => {
         </button>
         
         {showDropdown && (
-          <div className="absolute top-full left-[-4px] mt-2 bg-popover border border-border rounded-lg shadow-xl p-0.5 z-[9999] animate-fade-in w-16 sm:w-16">
-            <div className="flex flex-col gap-0.5">
+          <div className="absolute top-full left-[-8px] sm:left-0 mt-2 bg-popover border border-border rounded-lg shadow-xl p-0 sm:p-0.5 z-[9999] animate-fade-in w-14 sm:w-16">
+            <div className="flex flex-col gap-0 sm:gap-0.5">
               <button 
                 onClick={() => window.location.href = 'https://test24.lasuitedumonde.com'}
-                className="p-1 rounded-md hover:bg-accent/80 transition-colors group w-full"
+                className="p-0.5 sm:p-1 rounded-md hover:bg-blue-500/20 transition-colors group w-full"
                 title="Immobilier"
               >
                 <img 
@@ -65,7 +65,7 @@ const Logo = () => {
               </button>
               <button 
                 onClick={() => window.location.href = 'https://app.lasuitedumonde.com'}
-                className="p-1 rounded-md hover:bg-accent/80 transition-colors group w-full"
+                className="p-0.5 sm:p-1 rounded-md hover:bg-blue-500/20 transition-colors group w-full"
                 title="Investissement"
               >
                 <img 
