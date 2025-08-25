@@ -50,7 +50,7 @@ const Logo = () => {
         </button>
         
         {showDropdown && (
-          <div className="absolute top-full left-0 sm:left-0 mt-1 bg-popover border border-border rounded-md shadow-lg p-2 z-[9999] animate-fade-in min-w-[60px] max-w-[80px]">
+          <div className="absolute top-full left-0 sm:left-0 mt-1 bg-popover border border-border rounded-md shadow-lg p-1 z-[9999] animate-fade-in min-w-[50px] max-w-[60px]">
             <div className="flex flex-col space-y-2">
               <button 
                 onClick={() => window.location.href = 'https://test24.lasuitedumonde.com'}
