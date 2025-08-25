@@ -50,7 +50,7 @@ const Logo = () => {
         </button>
         
         {showDropdown && (
-          <div className="absolute top-full left-0 sm:left-0 mt-1 bg-popover border border-border rounded-md shadow-lg p-1 z-[9999] animate-fade-in min-w-[50px] max-w-[60px]">
+          <div className="absolute top-full left-0 sm:left-0 mt-1 bg-popover border border-border rounded-md shadow-lg p-1 z-[9999] animate-fade-in min-w-[60px] max-w-[72px]">
             <div className="flex flex-col space-y-2">
               <button 
                 onClick={() => window.location.href = 'https://test24.lasuitedumonde.com'}
@@ -60,7 +60,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
                   alt="Immobilier" 
-                  className="w-8 h-8 sm:w-9 sm:h-9 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
+                  className="w-10 h-10 sm:w-11 sm:h-11 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
                 />
               </button>
               <button 
@@ -71,7 +71,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
                   alt="Investissement" 
-                  className="w-8 h-8 sm:w-9 sm:h-9 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
+                  className="w-10 h-10 sm:w-11 sm:h-11 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
                 />
               </button>
             </div>
