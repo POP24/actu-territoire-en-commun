@@ -64,7 +64,7 @@ console.log("changes")
       name: "USAGER LOCAL",
       price: 10,
       description: "Ancrez-vous dans votre territoire",
-      contractAddress: "0x1234567890123456789012345678901234567890", // Replace with actual contract
+      contractAddress: "0x0b27EB1A9922c4Cd7327B9DbeA7F250622Ebbea9", // Replace with actual contract
       features: {
         rights: [
           "Votez sur les programmes d'animation, événements et formations",
@@ -82,7 +82,7 @@ console.log("changes")
       name: "ARCHITECTE RÉSEAU", 
       price: 100,
       description: "Coordonnez et développez les communs",
-      contractAddress: "0x1234567890123456789012345678901234567890", // Replace with actual contract
+      contractAddress: "0x0b27EB1A9922c4Cd7327B9DbeA7F250622Ebbea9", // Replace with actual contract
       features: {
         founding: [
           "Participez à la trésorerie collective",

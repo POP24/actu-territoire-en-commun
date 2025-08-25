@@ -1,12 +1,71 @@
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { ChevronRight, Users, Globe, DollarSign, MapPin, Heart } from "lucide-react";
+import { ChevronRight, Users, Globe, DollarSign, MapPin, Heart, CloudCog } from "lucide-react";
 import megaFireBackground from "@/assets/mega-fire-background.jpg";
 import { useState, useEffect } from "react";
 import NFTPurchaseModal from "@/components/NFTPurchaseModal";
 import MembershipSelectionModal from "@/components/MembershipSelectionModal";
+import { useContractPurchase } from "@/hooks/useContract";
+import { calculateTotalRevenue } from "@/utils/getCounter";
 
 const HeroSection = () => {
+
+  
+  const { getTotalSupply, getKeyPrice } = useContractPurchase();
+  const [revenue, setRevenue] = useState(0);
+  const exchangeRateAPIkey = "37e5dd65a83c6aa37b3ba2c4";
+  const NFTS = [
+    {
+      name: "USAGER LOCAL",
+      contractAddress: "0x0b27EB1A9922c4Cd7327B9DbeA7F250622Ebbea9" // Replace with actual contract
+    },
+    {
+      name: "ARCHITECTE RÉSEAU",
+      contractAddress: "0x0b27EB1A9922c4Cd7327B9DbeA7F250622Ebbea9" // Replace with actual contract
+    }
+  ];
+const fetchRevenueCounter = async () => {
+  try {
+    console.log("Fetching revenue...");
+
+    const totalRevenue = await calculateTotalRevenue(NFTS, getTotalSupply, getKeyPrice);
+    console.log("Total Revenue (EUR):", totalRevenue);
+
+    const exchangeApiURL = `https://v6.exchangerate-api.com/v6/${exchangeRateAPIkey}/pair/EUR/GBP/${totalRevenue}`;
+
+    const response = await fetch(exchangeApiURL);
+
+    if (!response.ok) {
+      throw new Error(`Exchange API failed with status: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    if (!data.conversion_result) {
+      throw new Error(`Invalid response: ${JSON.stringify(data)}`);
+    }
+
+    console.log("Total Revenue in GBP:", data.conversion_result);
+    setRevenue(data.conversion_result);
+
+    return data.conversion_result;
+  } catch (error) {
+    console.error("Error fetching revenue:", error.message);
+    return null; // or you can rethrow: throw error;
+  }
+};
+
+
+useEffect(() => {
+  console.log("fix");
+  fetchRevenueCounter()
+    .then(() => console.log("Revenue fetch done"))
+    .catch((err) => console.error("Error fetching revenue:", err));
+}, []);
+
+
+
+
   const [animatedPoints, setAnimatedPoints] = useState<number[]>([]);
   const [treasureProgress, setTreasuryProgress] = useState(65);
   const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
@@ -58,28 +117,28 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         {/* Base black background */}
         <div className="absolute inset-0 bg-black"></div>
-        
+
         {/* Gradient overlays inspired by the reference */}
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-600/20"></div>
         <div className="absolute inset-0 bg-gradient-to-tl from-cyan-400/10 via-transparent to-transparent"></div>
-        
+
         {/* Light shape effect */}
         <div className="absolute inset-0">
-          <img 
-            src="/lovable-uploads/976879dd-34f7-4896-9f36-09c3131d6526.png" 
-            alt="Effet lumineux" 
+          <img
+            src="/lovable-uploads/976879dd-34f7-4896-9f36-09c3131d6526.png"
+            alt="Effet lumineux"
             className="w-full h-full object-cover mix-blend-screen opacity-40"
           />
         </div>
-        
+
         {/* Additional tech glow effects */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-3 sm:px-4 md:px-6 pt-40 lg:pt-60 pb-20 sm:pb-24 md:pb-28 lg:pb-32">
         <div className="max-w-7xl mx-auto">
-          
+
           {/* Header Section */}
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h1 className="page-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-4 sm:mb-6" style={{ textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
@@ -88,7 +147,7 @@ const HeroSection = () => {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white/80 mb-8 sm:mb-12">
               Association d'Organisation Locale
             </h2>
-            
+
             {/* Top Stats - 2 levels improved */}
             <div className="max-w-5xl mx-auto">
               {/* Conteneur avec liseret OBJECTIFS */}
@@ -97,7 +156,7 @@ const HeroSection = () => {
                 <div className="bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 text-white text-center py-0.5 px-4">
                   <span className="font-bold text-xs tracking-wider">OBJECTIFS</span>
                 </div>
-                
+
                 {/* Cards directement attachées */}
                 <div className="grid grid-cols-3 gap-0 p-4">
                   <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-l-xl border-r border-white/20 text-center">
@@ -116,6 +175,10 @@ const HeroSection = () => {
                       <span className="block sm:inline">GLOBAL</span>
                     </div>
                   </div>
+                  <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 border-r border-white/20 text-center">
+                    <div className="text-white font-bold text-xs sm:text-sm mb-1">Montant collecté</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-black text-orange-400">{revenue?revenue : "0"}€</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -123,12 +186,12 @@ const HeroSection = () => {
 
           {/* Main Content */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12">
-            
+
             {/* Left: Interactive Real Map */}
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 sm:p-6 border border-white/20">
                 <h3 className="text-white font-bold text-base sm:text-lg mb-3 sm:mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
-                
+
                 {/* Real France Map - Slightly increased height */}
                 <div className="relative w-full h-52 sm:h-64 md:h-80 bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
@@ -136,10 +199,10 @@ const HeroSection = () => {
                     className="w-full h-full border-0 opacity-80 pointer-events-none"
                     title="Carte de France avec marqueur Dordogne"
                   ></iframe>
-                  
-                  <div 
+
+                  <div
                     className="pin-debug absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-2 rounded-lg text-sm z-50 border-2 border-orange-400"
-                    style={{ 
+                    style={{
                       position: 'absolute',
                       zIndex: 999,
                       display: 'block',
@@ -173,7 +236,7 @@ const HeroSection = () => {
                           ADHÉSION LOCALE
                         </Button>
                       </div>
-                      
+
                       {/* Architecte Réseau */}
                       <div className="text-center border-l border-gray-200 pl-2 sm:pl-3 md:pl-6 lg:pl-8 hover-scale cursor-pointer flex flex-col h-full">
                         <h3 className="text-base sm:text-lg md:text-xl font-black text-gray-900 mb-1 sm:mb-2">ARCHITECTE RÉSEAU</h3>
@@ -198,9 +261,9 @@ const HeroSection = () => {
                       <span className="text-base sm:text-lg font-black text-gray-900">{treasureProgress}%</span>
                     </div>
                     <div className="bg-gray-200 rounded-full h-3 sm:h-4 mb-1 sm:mb-2">
-                      <div 
-                        className="bg-gradient-orange-gold h-3 sm:h-4 rounded-full transition-all duration-500 shadow-sm" 
-                        style={{width: `${treasureProgress}%`}}
+                      <div
+                        className="bg-gradient-orange-gold h-3 sm:h-4 rounded-full transition-all duration-500 shadow-sm"
+                        style={{ width: `${treasureProgress}%` }}
                       ></div>
                     </div>
                     <div className="flex justify-between text-xs sm:text-sm font-medium text-gray-700">
@@ -221,7 +284,7 @@ const HeroSection = () => {
         onClose={() => setIsSelectionModalOpen(false)}
         onSelectMembership={handleMembershipSelect}
       />
-      
+
       <NFTPurchaseModal
         isOpen={isPurchaseModalOpen}
         onClose={() => setIsPurchaseModalOpen(false)}
