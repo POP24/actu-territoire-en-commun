@@ -60,7 +60,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
                   alt="Immobilier" 
-                  className="w-8 h-8 sm:w-10 sm:h-10 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
                 />
               </button>
               <button 
@@ -71,7 +71,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
                   alt="Investissement" 
-                  className="w-8 h-8 sm:w-10 sm:h-10 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
                 />
               </button>
             </div>
