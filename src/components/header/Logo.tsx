@@ -50,8 +50,8 @@ const Logo = () => {
         </button>
         
         {showDropdown && (
-          <div className="absolute top-full left-0 sm:left-0 mt-1 bg-popover border border-border rounded-md shadow-lg p-1 z-[9999] animate-fade-in min-w-[60px] max-w-[72px]">
-            <div className="flex flex-col space-y-2">
+          <div className="absolute top-full left-1 mt-1 bg-popover/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-1 z-[9999] animate-fade-in">
+            <div className="flex flex-col gap-1">
               <button 
                 onClick={() => window.location.href = 'https://test24.lasuitedumonde.com'}
                 className="p-2 rounded-md hover:bg-accent/80 transition-colors group"
@@ -60,7 +60,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
                   alt="Immobilier" 
-                  className="w-10 h-10 sm:w-11 sm:h-11 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
+                  className="w-10 h-10 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
                 />
               </button>
               <button 
@@ -71,7 +71,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
                   alt="Investissement" 
-                  className="w-10 h-10 sm:w-11 sm:h-11 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
+                  className="w-10 h-10 rounded object-contain mx-auto group-hover:scale-110 transition-transform" 
                 />
               </button>
             </div>
@@ -83,7 +83,7 @@ const Logo = () => {
           <img 
             src="/lovable-uploads/c46d5cc1-ebb1-4b65-bce3-cb7de3d3223a.png" 
             alt="La Suite du Monde" 
-            className="h-4 sm:h-6 md:h-9" 
+            className="h-6 sm:h-9 md:h-10" 
           />
         </button>
         <span className="text-xs sm:text-sm md:text-base font-bold text-blue-700 tracking-wider text-center">
