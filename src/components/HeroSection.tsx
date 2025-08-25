@@ -47,7 +47,9 @@ const fetchRevenueCounter = async () => {
 
     console.log("Total Revenue in GBP:", data.conversion_result);
     setRevenue(data.conversion_result);
-
+    const targetRevenue = 1000000; // 1M
+setTreasuryProgress(
+  revenue ? Math.min((data.conversion_result) * 100, 100) : 0);
     return data.conversion_result;
   } catch (error) {
     console.error("Error fetching revenue:", error.message);
@@ -175,10 +177,7 @@ useEffect(() => {
                       <span className="block sm:inline">GLOBAL</span>
                     </div>
                   </div>
-                  <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 border-r border-white/20 text-center">
-                    <div className="text-white font-bold text-xs sm:text-sm mb-1">Montant collecté</div>
-                    <div className="text-xl sm:text-2xl md:text-3xl font-black text-orange-400">{revenue?revenue : "0"}€</div>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -267,7 +266,7 @@ useEffect(() => {
                       ></div>
                     </div>
                     <div className="flex justify-between text-xs sm:text-sm font-medium text-gray-700">
-                      <span>650 000€ collectés</span>
+                      <span>{revenue?revenue:0}€ collectés</span>
                       <span>Objectif: 1M€</span>
                     </div>
                   </div>
