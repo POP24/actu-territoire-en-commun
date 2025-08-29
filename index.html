@@ -26,10 +26,9 @@
 // CSS pour forcer la visibilité du launcher Landbot avec NOTRE logo
 const style = document.createElement('style');
 style.textContent = `
-  .LandbotPopup, .LivechatLauncher, .landbot-popup, 
-  .landbot-popup-launcher, .Landbot__Popup, 
-  [class*="landbot"], [id*="landbot"], 
-  .landbot-launcher, .landbot-container {
+  /* Styles pour le launcher uniquement - ne pas affecter le popup */
+  .landbot-popup-launcher, .landbot-launcher, 
+  [class*="landbot"][class*="launcher"] {
     z-index: 999999 !important;
     position: fixed !important;
     bottom: 24px !important;
@@ -52,27 +51,25 @@ style.textContent = `
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
   
-  /* Effet hover pour agrandir le chatbot */
-  .LandbotPopup:hover, .LivechatLauncher:hover, .landbot-popup:hover, 
-  .landbot-popup-launcher:hover, .Landbot__Popup:hover, 
-  [class*="landbot"]:hover, [id*="landbot"]:hover, 
-  .landbot-launcher:hover, .landbot-container:hover {
+  /* Effet hover pour le launcher uniquement */
+  .landbot-popup-launcher:hover, .landbot-launcher:hover,
+  [class*="landbot"][class*="launcher"]:hover {
     transform: scale(1.5) rotate(6deg) !important;
     background: linear-gradient(135deg, #ff6b35, #f7931e, #ff8500) !important;
     box-shadow: 0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6) !important;
   }
   
-  /* Force notre logo même si Landbot essaie de le changer */
+  /* Force notre logo sur le launcher */
   .landbot-popup-launcher img,
   .landbot-popup-launcher svg,
-  .LandbotPopup img,
-  .LandbotPopup svg {
+  .landbot-launcher img,
+  .landbot-launcher svg {
     display: none !important;
   }
   
-  /* Assure que notre background est visible */
+  /* Background pour le launcher */
   .landbot-popup-launcher::before,
-  .LandbotPopup::before {
+  .landbot-launcher::before {
     content: '' !important;
     position: absolute !important;
     top: 0 !important;
@@ -86,6 +83,13 @@ style.textContent = `
     border-radius: 50% !important;
     z-index: 9999 !important;
     border: 4px solid #FF8B00 !important;
+  }
+  
+  /* NE PAS affecter le popup - laisser Landbot gérer */
+  .landbot-popup-window, .landbot-popup-content, 
+  [class*="landbot"][class*="popup"]:not([class*="launcher"]) {
+    position: fixed !important;
+    /* Laisser Landbot gérer le positionnement du popup */
   }
 `;
 document.head.appendChild(style);
