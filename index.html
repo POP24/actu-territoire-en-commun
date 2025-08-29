@@ -47,8 +47,8 @@ style.textContent = `
     background-position: center !important;
     border-radius: 50% !important;
     cursor: pointer !important;
-    border: 4px solid #FF8B00 !important;
-    box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3) !important;
+    border: 3px solid #FF8B00 !important;
+    box-shadow: 0 4px 12px rgba(255, 139, 0, 0.4) !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
   
@@ -85,45 +85,28 @@ style.textContent = `
     background-position: center !important;
     border-radius: 50% !important;
     z-index: 9999 !important;
-    border: 4px solid #FF8B00 !important;
+    border: 3px solid #FF8B00 !important;
   }
 `;
 document.head.appendChild(style);
 
-document.addEventListener('DOMContentLoaded', initLandbot);
-window.addEventListener('load', initLandbot);
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
 var myLandbot;
 function initLandbot() {
-  if (myLandbot) return;
-  var s = document.createElement('script');
-  s.async = true;
-  s.onload = function () {
-    try {
-      var LandbotRef = (window).Landbot || (typeof Landbot !== 'undefined' ? Landbot : null);
-      if (!LandbotRef) {
-        console.error('[Landbot] Global not available after script load');
-        return;
-      }
-      myLandbot = new LandbotRef.Popup({
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      myLandbot = new Landbot.Popup({
         configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
-        launcher: {
-          icon: '/landbot-logo.png',
-          backgroundColor: '#D97706',
-          borderRadius: '50%',
-          width: '60px',
-          height: '60px'
-        }
       });
-      window.myLandbot = myLandbot;
-      console.log('[Landbot] Initialized', myLandbot);
-    } catch (e) {
-      console.error('[Landbot] init error', e);
-    }
-  };
-  s.onerror = function (e) { console.error('[Landbot] script load error', e); };
-  s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-  var x = document.getElementsByTagName('script')[0];
-  x.parentNode.insertBefore(s, x);
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
 }
 </script>
   </body>
