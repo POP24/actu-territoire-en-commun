@@ -22,109 +22,138 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-// CSS pour forcer la visibilité du launcher Landbot avec NOTRE logo
-const style = document.createElement('style');
-style.textContent = `
-  .LandbotPopup, .LivechatLauncher, .landbot-popup, 
-  .landbot-popup-launcher, .Landbot__Popup, 
-  [class*="landbot"], [id*="landbot"], 
-  .landbot-launcher, .landbot-container {
-    z-index: 999999 !important;
-    position: fixed !important;
-    bottom: 20px !important;
-    right: 20px !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    display: block !important;
-    pointer-events: auto !important;
-    transform: none !important;
-    width: 80px !important;
-    height: 80px !important;
-    background-image: url('/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png') !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    border-radius: 50% !important;
-    cursor: pointer !important;
-    border: 4px solid #FF8B00 !important;
-    box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  }
-  
-  /* Effet hover pour agrandir le chatbot */
-  .LandbotPopup:hover, .LivechatLauncher:hover, .landbot-popup:hover, 
-  .landbot-popup-launcher:hover, .Landbot__Popup:hover, 
-  [class*="landbot"]:hover, [id*="landbot"]:hover, 
-  .landbot-launcher:hover, .landbot-container:hover {
-    transform: scale(1.5) rotate(6deg) !important;
-    background: linear-gradient(135deg, #ff6b35, #f7931e, #ff8500) !important;
-    box-shadow: 0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6) !important;
-  }
-  
-  /* Force notre logo même si Landbot essaie de le changer */
-  .landbot-popup-launcher img,
-  .landbot-popup-launcher svg,
-  .LandbotPopup img,
-  .LandbotPopup svg {
-    display: none !important;
-  }
-  
-  /* Assure que notre background est visible */
-  .landbot-popup-launcher::before,
-  .LandbotPopup::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background-image: url('/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png') !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    border-radius: 50% !important;
-    z-index: 9999 !important;
-    border: 4px solid #FF8B00 !important;
-  }
-`;
-document.head.appendChild(style);
-
-document.addEventListener('DOMContentLoaded', initLandbot);
-window.addEventListener('load', initLandbot);
-var myLandbot;
-function initLandbot() {
-  if (myLandbot) return;
-  var s = document.createElement('script');
-  s.async = true;
-  s.onload = function () {
-    try {
-      var LandbotRef = (window).Landbot || (typeof Landbot !== 'undefined' ? Landbot : null);
-      if (!LandbotRef) {
-        console.error('[Landbot] Global not available after script load');
-        return;
+    <!-- Landbot Fullpage Script -->
+    <script SameSite="None; Secure" type="module" src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs"></script>
+    
+    <!-- Custom Chatbot Launcher -->
+    <div id="custom-chatbot-launcher"></div>
+    
+    <style>
+      /* Launcher personnalisé avec spécifications exactes */
+      #custom-chatbot-launcher {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+        background-image: url('/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        border: 4px solid #FF8B00;
+        box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3);
+        cursor: pointer;
+        z-index: 999999;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       }
-      myLandbot = new LandbotRef.Popup({
-        configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
-        launcher: {
-          icon: '/landbot-logo.png',
-          backgroundColor: '#D97706',
-          borderRadius: '50%',
-          width: '60px',
-          height: '60px'
+      
+      /* Effet hover avec agrandissement et rotation */
+      #custom-chatbot-launcher:hover {
+        transform: scale(1.5) rotate(6deg);
+        background: linear-gradient(135deg, #ff6b35, #f7931e, #ff8500);
+        box-shadow: 0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6);
+      }
+      
+      /* Container fullscreen pour Landbot */
+      #landbot-fullscreen {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000000;
+        background: white;
+      }
+      
+      #landbot-fullscreen.active {
+        display: block;
+      }
+      
+      /* Bouton de fermeture */
+      #close-landbot {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background: #FF8B00;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1000001;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    
+    <script type="module">
+      let myLandbot;
+      let isLandbotOpen = false;
+      
+      // Initialiser le launcher personnalisé
+      document.addEventListener('DOMContentLoaded', function() {
+        const launcher = document.getElementById('custom-chatbot-launcher');
+        
+        // Créer le container fullscreen
+        const fullscreenContainer = document.createElement('div');
+        fullscreenContainer.id = 'landbot-fullscreen';
+        fullscreenContainer.innerHTML = `
+          <button id="close-landbot">×</button>
+          <div id="landbot-container" style="width: 100%; height: 100%;"></div>
+        `;
+        document.body.appendChild(fullscreenContainer);
+        
+        // Event listener pour ouvrir le chatbot
+        launcher.addEventListener('click', function() {
+          if (!isLandbotOpen) {
+            openLandbot();
+          }
+        });
+        
+        // Event listener pour fermer le chatbot
+        document.getElementById('close-landbot').addEventListener('click', function() {
+          closeLandbot();
+        });
+      });
+      
+      // Fonction pour ouvrir le Landbot fullscreen
+      function openLandbot() {
+        if (!myLandbot) {
+          // Initialiser Landbot en mode fullscreen
+          myLandbot = new Landbot.Container({
+            container: '#landbot-container',
+            configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
+          });
+        }
+        
+        // Afficher le container fullscreen
+        document.getElementById('landbot-fullscreen').classList.add('active');
+        isLandbotOpen = true;
+        
+        // Empêcher le scroll du body
+        document.body.style.overflow = 'hidden';
+      }
+      
+      // Fonction pour fermer le Landbot
+      function closeLandbot() {
+        document.getElementById('landbot-fullscreen').classList.remove('active');
+        isLandbotOpen = false;
+        
+        // Restaurer le scroll du body
+        document.body.style.overflow = '';
+      }
+      
+      // Fermer avec Escape
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && isLandbotOpen) {
+          closeLandbot();
         }
       });
-      window.myLandbot = myLandbot;
-      console.log('[Landbot] Initialized', myLandbot);
-    } catch (e) {
-      console.error('[Landbot] init error', e);
-    }
-  };
-  s.onerror = function (e) { console.error('[Landbot] script load error', e); };
-  s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-  var x = document.getElementsByTagName('script')[0];
-  x.parentNode.insertBefore(s, x);
-}
-</script>
+    </script>
   </body>
 </html>
