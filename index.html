@@ -36,6 +36,46 @@
             myLandbot = new Landbot.Popup({
               configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
             });
+            
+            // Hack pour personnaliser le bouton Landbot
+            setTimeout(() => {
+              const style = document.createElement('style');
+              style.textContent = `
+                /* Cacher le bouton Landbot par défaut */
+                .LivechatLauncher, [class*="Launcher"] {
+                  display: none !important;
+                }
+                
+                /* Si on veut garder le bouton Landbot mais changer l'image */
+                .LivechatLauncher img,
+                [class*="Launcher"] img,
+                [class*="launcher"] img {
+                  content: url('/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png') !important;
+                  width: 64px !important;
+                  height: 64px !important;
+                  border-radius: 50% !important;
+                }
+                
+                .LivechatLauncher,
+                [class*="Launcher"] {
+                  width: 80px !important;
+                  height: 80px !important;
+                  background: #FF8B00 !important;
+                  border-radius: 50% !important;
+                  padding: 8px !important;
+                  box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3) !important;
+                  transition: all 0.3s ease !important;
+                }
+                
+                .LivechatLauncher:hover,
+                [class*="Launcher"]:hover {
+                  transform: scale(1.5) rotate(6deg) !important;
+                  background: linear-gradient(135deg, #ff6b35, #f7931e, #ff8500) !important;
+                  box-shadow: 0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6) !important;
+                }
+              `;
+              document.head.appendChild(style);
+            }, 1000);
           });
           s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
           var x = document.getElementsByTagName('script')[0];

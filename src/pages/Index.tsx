@@ -11,7 +11,6 @@ import LaunchpadSection from "@/components/LaunchpadSection";
 import MaillageTerritorialSection from "@/components/MaillageTerritorialSection";
 import TypologySection from "@/components/TypologySection";
 import OutilsSection from "@/components/OutilsSection";
-import ChatButton from "@/components/ChatButton";
 
 import Footer from "@/components/Footer";
 
@@ -33,7 +32,6 @@ const Index = () => {
       <FundingFlowSection />
       <FAQSection />
       <Footer />
-      <ChatButton />
     </div>
   );
 };
