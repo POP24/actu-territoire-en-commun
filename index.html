@@ -26,11 +26,12 @@
 // CSS pour customiser UNIQUEMENT le launcher, pas le popup
 const style = document.createElement('style');
 style.textContent = `
-  /* Cibler UNIQUEMENT l'élément launcher */
-  div[data-landbot-popup] div[data-landbot-launcher],
-  div[class*="landbot"] div[class*="launcher"],
-  .landbot-popup .landbot-launcher,
-  iframe + div[style*="position: fixed"][style*="bottom"][style*="right"] {
+  /* Cibler l'élément launcher de Landbot avec des sélecteurs plus larges */
+  [class*="landbot"]:not([class*="window"]):not([class*="popup"]):not([class*="frame"]),
+  [id*="landbot"]:not([id*="window"]):not([id*="popup"]):not([id*="frame"]),
+  div[style*="position: fixed"][style*="bottom"][style*="right"][style*="width"][style*="height"]:not([src]):not(iframe),
+  .landbot-launcher,
+  .landbot-popup-launcher {
     z-index: 999999 !important;
     position: fixed !important;
     bottom: 24px !important;
@@ -48,21 +49,22 @@ style.textContent = `
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
   
-  /* Effet hover UNIQUEMENT sur le launcher */
-  div[data-landbot-popup] div[data-landbot-launcher]:hover,
-  div[class*="landbot"] div[class*="launcher"]:hover,
-  .landbot-popup .landbot-launcher:hover,
-  iframe + div[style*="position: fixed"][style*="bottom"][style*="right"]:hover {
+  /* Effet hover sur le launcher */
+  [class*="landbot"]:not([class*="window"]):not([class*="popup"]):not([class*="frame"]):hover,
+  [id*="landbot"]:not([id*="window"]):not([id*="popup"]):not([id*="frame"]):hover,
+  div[style*="position: fixed"][style*="bottom"][style*="right"][style*="width"][style*="height"]:not([src]):not(iframe):hover,
+  .landbot-launcher:hover,
+  .landbot-popup-launcher:hover {
     transform: scale(1.5) rotate(6deg) !important;
     background: linear-gradient(135deg, #ff6b35, #f7931e, #ff8500) !important;
     box-shadow: 0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6) !important;
   }
   
   /* Masquer les icônes par défaut du launcher */
-  div[data-landbot-popup] div[data-landbot-launcher] img,
-  div[data-landbot-popup] div[data-landbot-launcher] svg,
-  div[class*="landbot"] div[class*="launcher"] img,
-  div[class*="landbot"] div[class*="launcher"] svg {
+  [class*="landbot"] img,
+  [class*="landbot"] svg,
+  [id*="landbot"] img,
+  [id*="landbot"] svg {
     display: none !important;
   }
   
