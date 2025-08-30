@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const ChatButton = () => {
-  const [isInitializing, setIsInitializing] = useState(false);
-  const [landbotReady, setLandbotReady] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const landbotRef = useRef<any>(null);
 
   // Charger le script Landbot au montage du composant
   React.useEffect(() => {
@@ -15,95 +15,112 @@ const ChatButton = () => {
     }
   }, []);
 
-  // Nettoyage complet quand le composant se démonte
-  React.useEffect(() => {
-    return () => {
-      document.body.style.overflow = 'unset';
-      // Nettoyer tous les éléments Landbot
-      const landbotElements = document.querySelectorAll('[class*="Landbot"], [class*="sc-"]');
-      landbotElements.forEach(el => el.remove());
-    };
-  }, []);
-
-  const handleClick = () => {
-    if (isInitializing || landbotReady) return;
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
     
-    setIsInitializing(true);
+    if (isOpen) return;
+    
+    setIsOpen(true);
     document.body.style.overflow = 'hidden';
     
-    // Initialiser Landbot seulement quand on clique
+    // Attendre que Landbot soit disponible
     const initLandbot = () => {
-      if ((window as any).Landbot) {
+      if ((window as any).Landbot && !landbotRef.current) {
         try {
-          const landbot = new (window as any).Landbot.Popup({
+          landbotRef.current = new (window as any).Landbot.Popup({
             configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
           });
-          
-          // Ouvrir le popup après un délai
-          setTimeout(() => {
-            landbot.open();
-            setLandbotReady(true);
-            setIsInitializing(false);
-          }, 500);
-          
+          landbotRef.current.open();
         } catch (error) {
           console.error('Erreur Landbot:', error);
           handleClose();
         }
-      } else {
-        setTimeout(initLandbot, 200);
+      } else if (!(window as any).Landbot) {
+        setTimeout(initLandbot, 100);
+      } else if (landbotRef.current) {
+        landbotRef.current.open();
       }
     };
 
-    initLandbot();
+    setTimeout(initLandbot, 200);
   };
 
   const handleClose = () => {
-    setIsInitializing(false);
-    setLandbotReady(false);
+    if (landbotRef.current) {
+      try {
+        landbotRef.current.close();
+      } catch (error) {
+        console.log('Landbot déjà fermé');
+      }
+    }
+    
+    setIsOpen(false);
     document.body.style.overflow = 'unset';
     
-    // Nettoyer les éléments Landbot
+    // Nettoyer les éléments Landbot du DOM
     setTimeout(() => {
-      const landbotElements = document.querySelectorAll('[class*="Landbot"], [class*="sc-"]');
-      landbotElements.forEach(el => el.remove());
+      const landbotElements = document.querySelectorAll('[class*="Landbot"], [class*="sc-"], .LandbotPopup');
+      landbotElements.forEach(el => {
+        if (el.parentNode) {
+          el.parentNode.removeChild(el);
+        }
+      });
     }, 100);
   };
 
   // Gestion de la touche Escape
   React.useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && (isInitializing || landbotReady)) {
+      if (e.key === 'Escape' && isOpen) {
         handleClose();
       }
     };
     
-    document.addEventListener('keydown', handleEscape);
+    if (isOpen) {
+      document.addEventListener('keydown', handleEscape);
+    }
+    
     return () => document.removeEventListener('keydown', handleEscape);
-  }, [isInitializing, landbotReady]);
+  }, [isOpen]);
 
   return (
     <>
-      {/* Bouton flottant avec votre design actuel */}
+      {/* Bouton simplifié avec image en background */}
       <button
         onClick={handleClick}
-        disabled={isInitializing}
-        className="fixed bottom-5 right-5 w-20 h-20 p-2 bg-[#FF8B00] rounded-full cursor-pointer z-[999999] transition-all duration-300 ease-out shadow-[0_0_0_2px_#FF8B00,_0_4px_12px_rgba(255,139,0,0.3)] flex items-center justify-center hover:scale-150 hover:rotate-6 hover:bg-gradient-to-br hover:from-[#ff6b35] hover:via-[#f7931e] hover:to-[#ff8500] hover:shadow-[0_8px_32px_rgba(255,139,0,0.4),_0_12px_40px_rgba(255,107,53,0.6)] disabled:opacity-70"
-      >
-        <div 
-          className="w-16 h-16 bg-cover bg-no-repeat bg-center rounded-full"
-          style={{
-            backgroundImage: 'url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png)'
-          }}
-        />
-      </button>
+        className="fixed bottom-5 right-5 w-20 h-20 rounded-full cursor-pointer z-[999999] transition-all duration-300 ease-out flex items-center justify-center hover:scale-150 hover:rotate-6"
+        style={{
+          padding: '8px',
+          backgroundColor: '#FF8B00',
+          boxShadow: '0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3)',
+          backgroundImage: 'url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png)',
+          backgroundSize: '64px 64px',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.background = 'linear-gradient(135deg, #ff6b35, #f7931e, #ff8500), url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png)';
+          e.currentTarget.style.backgroundSize = '100%, 64px 64px';
+          e.currentTarget.style.backgroundRepeat = 'no-repeat, no-repeat';
+          e.currentTarget.style.backgroundPosition = 'center, center';
+          e.currentTarget.style.boxShadow = '0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6)';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.background = '#FF8B00 url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png)';
+          e.currentTarget.style.backgroundSize = '64px 64px';
+          e.currentTarget.style.backgroundRepeat = 'no-repeat';
+          e.currentTarget.style.backgroundPosition = 'center';
+          e.currentTarget.style.boxShadow = '0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3)';
+        }}
+      />
 
-      {/* Overlay seulement quand Landbot est prêt */}
-      {landbotReady && (
+      {/* Overlay et bouton fermer */}
+      {isOpen && (
         <div className="fixed inset-0 bg-black/5 z-[999998]">
           <button
             onClick={handleClose}
-            className="absolute top-4 right-4 z-[1000000] w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-gray-800 transition-colors"
+            className="absolute top-4 right-4 z-[1000000] w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-gray-800 transition-colors text-lg font-bold"
           >
             ✕
           </button>
