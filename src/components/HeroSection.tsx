@@ -171,10 +171,10 @@ useEffect(() => {
                   </div>
                   <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-r-xl text-center group hover:bg-white/25 transition-all duration-300">
                     <div className="text-white font-bold text-xs sm:text-sm mb-1">GOUVERNANCE</div>
-                    <div className="text-sm sm:text-base md:text-lg font-bold bg-gradient-to-r from-blue-300 via-indigo-400 to-purple-400 bg-clip-text text-transparent group-hover:from-blue-200 group-hover:via-indigo-300 group-hover:to-purple-300 transition-all duration-300 drop-shadow-lg">
-                      <span className="block sm:inline">LOCALE</span>
-                      <span className="hidden sm:inline text-white/80">/</span>
-                      <span className="block sm:inline">GLOBAL</span>
+                    <div className="text-sm sm:text-base md:text-lg font-bold drop-shadow-lg">
+                      <span className="bg-gradient-to-r from-emerald-300 via-green-400 to-teal-400 bg-clip-text text-transparent group-hover:from-emerald-200 group-hover:via-green-300 group-hover:to-teal-300 transition-all duration-300 block sm:inline">LOCALE</span>
+                      <span className="hidden sm:inline text-white/80 mx-1">/</span>
+                      <span className="bg-gradient-to-r from-blue-300 via-purple-400 to-indigo-400 bg-clip-text text-transparent group-hover:from-blue-200 group-hover:via-purple-300 group-hover:to-indigo-300 transition-all duration-300 block sm:inline">GLOBAL</span>
                     </div>
                   </div>
 
