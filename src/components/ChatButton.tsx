@@ -1,22 +1,10 @@
 import React from 'react';
 
 const ChatButton = () => {
-  const handleClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    
-    // Ouvrir Landbot s'il est disponible
-    if ((window as any).myLandbot) {
-      (window as any).myLandbot.open();
-    }
-  };
-
   return (
     <button
-      onClick={handleClick}
       className="fixed bottom-5 right-5 w-20 h-20 rounded-full cursor-pointer z-[999999] transition-all duration-300 ease-out flex items-center justify-center hover:scale-150 hover:rotate-6"
       style={{
-        padding: '8px',
         backgroundColor: '#FF8B00',
         boxShadow: '0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3)',
         backgroundImage: 'url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png)',
@@ -25,14 +13,16 @@ const ChatButton = () => {
         backgroundPosition: 'center',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.background = 'linear-gradient(135deg, #ff6b35, #f7931e, #ff8500), url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png)';
+        // Garder l'image en superposition du gradient
+        e.currentTarget.style.backgroundImage = 'linear-gradient(135deg, #ff6b35, #f7931e, #ff8500), url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png)';
         e.currentTarget.style.backgroundSize = '100%, 64px 64px';
         e.currentTarget.style.backgroundRepeat = 'no-repeat, no-repeat';
         e.currentTarget.style.backgroundPosition = 'center, center';
         e.currentTarget.style.boxShadow = '0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.background = '#FF8B00 url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png)';
+        // Remettre l'état normal avec l'image
+        e.currentTarget.style.backgroundImage = 'url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png)';
         e.currentTarget.style.backgroundSize = '64px 64px';
         e.currentTarget.style.backgroundRepeat = 'no-repeat';
         e.currentTarget.style.backgroundPosition = 'center';
