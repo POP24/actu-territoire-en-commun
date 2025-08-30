@@ -14,7 +14,7 @@ const ObjectiveSection = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
               <span className="text-foreground drop-shadow-sm">L'HEURE</span>{" "}
-              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-pulse">EST VENUE</span>
+              <span className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent animate-pulse">EST VENUE</span>
             </h2>
           </div>
 
@@ -129,27 +129,27 @@ const ObjectiveSection = () => {
 
           {/* RELIONS-NOUS Section */}
           <div className="relative animate-fade-in">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-3xl blur-3xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-blue-600/5 to-blue-700/5 rounded-3xl blur-3xl"></div>
             <div className="relative max-w-5xl mx-auto text-center">
               
               {/* Title */}
               <div className="mb-12">
                 <h3 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
-                  <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">RELIONS</span>
+                  <span className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent">RELIONS</span>
                   <span className="text-foreground"> - NOUS.</span>
                 </h3>
               </div>
               
               {/* Central Message Card */}
               <div className="relative group mb-12">
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-700"></div>
-                <div className="relative bg-card/90 backdrop-blur-md border border-border/50 rounded-3xl p-10 lg:p-16 shadow-2xl">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-blue-600/20 to-blue-700/20 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-700"></div>
+                <div className="relative bg-card/90 backdrop-blur-md border border-blue-200/50 rounded-3xl p-10 lg:p-16 shadow-2xl">
                   <div className="space-y-8">
-                    <h4 className="text-2xl sm:text-3xl lg:text-4xl font-black bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent tracking-wide">
+                    <h4 className="text-2xl sm:text-3xl lg:text-4xl font-black bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent tracking-wide">
                       Lieux • Cagnottes • Votes
                     </h4>
                     
-                    <div className="w-24 h-px bg-gradient-to-r from-primary via-secondary to-accent mx-auto"></div>
+                    <div className="w-24 h-px bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 mx-auto"></div>
                     
                     <p className="text-lg sm:text-xl lg:text-2xl text-foreground/90 font-semibold leading-relaxed max-w-3xl mx-auto">
                       On relie ce qui existe déjà pour faire basculer<br className="hidden sm:block" /> 
@@ -161,19 +161,18 @@ const ObjectiveSection = () => {
               
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center items-center">
-                <button className="group relative overflow-hidden bg-gradient-to-r from-primary to-secondary text-primary-foreground px-8 lg:px-12 py-4 lg:py-5 rounded-2xl font-black text-lg tracking-wide shadow-xl hover:shadow-2xl hover:shadow-primary/30 transform hover:-translate-y-1 transition-all duration-300 min-w-[200px]">
-                  <span className="relative z-10">ADHÉRER</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </button>
+                <Button variant="cta-blue" className="px-8 lg:px-12 py-4 lg:py-5 rounded-2xl font-black text-lg tracking-wide min-w-[200px]">
+                  ADHÉRER
+                </Button>
                 
                 <a 
                   href="https://test24.lasuitedumonde.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="group relative overflow-hidden bg-gradient-to-r from-accent to-secondary text-accent-foreground px-8 lg:px-12 py-4 lg:py-5 rounded-2xl font-black text-lg tracking-wide shadow-xl hover:shadow-2xl hover:shadow-accent/30 transform hover:-translate-y-1 transition-all duration-300 min-w-[200px] text-center"
                 >
-                  <span className="relative z-10">INVESTIR LOCALEMENT</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <Button variant="cta-orange" className="px-8 lg:px-12 py-4 lg:py-5 rounded-2xl font-black text-lg tracking-wide min-w-[200px] w-full">
+                    INVESTIR LOCALEMENT
+                  </Button>
                 </a>
               </div>
             </div>
