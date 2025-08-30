@@ -155,7 +155,7 @@ useEffect(() => {
               {/* Conteneur avec liseret OBJECTIFS */}
               <div className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden">
                 {/* Liseret OBJECTIFS */}
-                <div className="bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 text-white text-center py-0.5 px-4">
+                <div className="bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-500 text-white text-center py-0.5 px-4">
                   <span className="font-bold text-xs tracking-wider">OBJECTIFS</span>
                 </div>
 
@@ -167,7 +167,7 @@ useEffect(() => {
                   </div>
                   <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 border-r border-white/20 text-center">
                     <div className="text-white font-bold text-xs sm:text-sm mb-1">TRÉSOR COLLECTIF</div>
-                    <div className="text-xl sm:text-2xl md:text-3xl font-black text-orange-400">1M€</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-black text-cyan-400">1M€</div>
                   </div>
                   <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-r-xl text-center">
                     <div className="text-white font-bold text-xs sm:text-sm mb-1">GOUVERNANCE</div>
