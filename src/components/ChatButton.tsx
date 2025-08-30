@@ -14,7 +14,7 @@ const ChatButton = () => {
     }
   }, []);
 
-  // Gestion des effets du popup fullscreen
+  // Gestion du popup fullscreen seulement quand ouvert
   React.useEffect(() => {
     if (isOpen) {
       // Prévenir le scroll du body
@@ -28,34 +28,31 @@ const ChatButton = () => {
       };
       document.addEventListener('keydown', handleEscape);
 
-      // Initialiser Landbot Popup - optimisé pour réduire le lag
+      // Initialiser Landbot Popup seulement si disponible
       const initLandbot = () => {
         if ((window as any).Landbot) {
-          setTimeout(() => {
-            try {
-              const landbot = new (window as any).Landbot.Popup({
-                configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
-              });
-
-              // Ouvrir immédiatement le popup
-              setTimeout(() => {
-                landbot.open();
-              }, 100);
-
-            } catch (error) {
-              console.error('Erreur Landbot:', error);
-            }
-          }, 100);
+          try {
+            const landbot = new (window as any).Landbot.Popup({
+              configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
+            });
+            landbot.open();
+          } catch (error) {
+            console.error('Erreur Landbot:', error);
+            setIsOpen(false); // Fermer en cas d'erreur
+          }
         } else {
-          setTimeout(initLandbot, 500);
+          // Retry après 200ms si Landbot n'est pas encore chargé
+          setTimeout(initLandbot, 200);
         }
       };
 
-      initLandbot();
+      // Attendre un délai pour éviter les conflits
+      const timer = setTimeout(initLandbot, 300);
 
       return () => {
         document.body.style.overflow = 'unset';
         document.removeEventListener('keydown', handleEscape);
+        clearTimeout(timer);
       };
     }
   }, [isOpen]);
