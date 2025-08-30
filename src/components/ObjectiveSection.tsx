@@ -3,104 +3,182 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const ObjectiveSection = () => {
   return (
-    <section className="pt-16 sm:pt-20 pb-4 sm:pb-6 bg-background">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 animate-fade-in">
-            <span className="text-foreground">L'HEURE</span>{" "}
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">EST VENUE</span>
-          </h2>
+    <section className="pt-20 pb-16 bg-gradient-to-b from-background to-background/95 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(120,119,198,0.05),transparent_70%)] dark:bg-[radial-gradient(circle_at_20%_50%,rgba(120,119,198,0.1),transparent_70%)]"></div>
+      
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="max-w-7xl mx-auto">
           
-          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-center justify-items-center max-w-6xl mx-auto mb-6 sm:mb-8">
-              
-              {/* LES LIEUX ATTENDENT */}
-              <div className="flex justify-center animate-scale-in">
-                <div className="w-full max-w-xs sm:w-52 sm:h-64 md:w-60 md:h-72 lg:w-68 lg:h-80 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-green-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-green-400/60 hover:ring-4 hover:ring-green-400/30 cursor-pointer">
-                  <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 md:mb-3">🏡</div>
-                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-green-700 dark:text-green-300 mb-1 sm:mb-2 tracking-wide text-center">LES LIEUX<br />ATTENDENT</h3>
-                  <p className="text-xs font-semibold text-green-600 dark:text-green-400 mb-1 sm:mb-2 md:mb-3 text-center">Des milliers d'opportunités</p>
-                  <div className="space-y-1 text-center text-xs">
-                    <p className="text-green-600 dark:text-green-400">30 800 communes rurales</p>
-                    <p className="text-green-600 dark:text-green-400">3 500 tiers‑lieux en fonctionnement</p>
-                    <p className="text-green-600 dark:text-green-400">150 000 hectares/an libres</p>
-                    <p className="text-green-600 dark:text-green-400">1 500 écolieux actifs</p>
-                    <p className="text-green-600 dark:text-green-400">5 000+ fermes disponibles</p>
-                    <div className="w-6 sm:w-8 md:w-12 h-px bg-green-500 my-1 sm:my-2 mx-auto"></div>
-                    <p className="text-xs font-black text-green-700 dark:text-green-200 mb-4 sm:mb-6">Les terres se libèrent</p>
-                  </div>
-                </div>
-              </div>
+          {/* Main Title */}
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
+              <span className="text-foreground drop-shadow-sm">L'HEURE</span>{" "}
+              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-pulse">EST VENUE</span>
+            </h2>
+          </div>
 
-              {/* LES OUTILS FONCTIONNENT */}
-              <div className="flex justify-center animate-scale-in">
-                <div className="w-full max-w-xs sm:w-52 sm:h-64 md:w-60 md:h-72 lg:w-68 lg:h-80 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-blue-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-blue-400/60 hover:ring-4 hover:ring-blue-400/30 cursor-pointer">
-                  <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 md:mb-3">⚙️</div>
-                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-blue-700 dark:text-blue-300 mb-1 sm:mb-2 tracking-wide text-center">LES OUTILS FONCTIONNENT</h3>
-                  <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-1 sm:mb-2 md:mb-3 text-center">Solutions éprouvées et gratuites</p>
-                  <div className="space-y-1 text-center text-xs">
-                    <p className="text-blue-600 dark:text-blue-400">Decidim, Loomio testés</p>
-                    <p className="text-blue-600 dark:text-blue-400">HelloAsso : 20k assos</p>
-                    <p className="text-blue-600 dark:text-blue-400">Open Collective transparent</p>
-                    <p className="text-blue-600 dark:text-blue-400">Terre de Liens collectif</p>
-                    <p className="text-blue-600 dark:text-blue-400">SCIC, SCI rodés</p>
-                    <div className="w-6 sm:w-8 md:w-12 h-px bg-blue-500 my-1 sm:my-2 mx-auto"></div>
-                    <p className="text-xs font-black text-blue-700 dark:text-blue-200 mb-4 sm:mb-6">Pas besoin de réinventer</p>
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-20 animate-fade-in">
+            
+            {/* Card 1: LES LIEUX ATTENDENT */}
+            <div className="group relative animate-scale-in">
+              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500/20 via-green-500/20 to-emerald-600/20 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 lg:p-10 h-full transition-all duration-500 group-hover:border-emerald-400/40 group-hover:shadow-2xl group-hover:shadow-emerald-500/20 group-hover:-translate-y-2 cursor-pointer">
+                <div className="text-center space-y-6">
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-emerald-100 to-green-100 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform duration-300">🏡</div>
+                  
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-black text-emerald-700 dark:text-emerald-300 mb-3 tracking-wide">
+                      LES LIEUX<br />ATTENDENT
+                    </h3>
+                    <p className="text-base font-bold text-emerald-600 dark:text-emerald-400 mb-6">Des milliers d'opportunités</p>
                   </div>
-                </div>
-              </div>
-
-              {/* LES FORCES VIVES BOUILLONNENT - Prend toute la largeur sur mobile, normal sur desktop */}
-              <div className="flex justify-center animate-scale-in col-span-2 sm:col-span-1">
-                <div className="w-full max-w-xs sm:w-52 sm:h-64 md:w-60 md:h-72 lg:w-68 lg:h-80 bg-gradient-card rounded-2xl shadow-soft border border-border flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 transition-all duration-700 ease-out hover:shadow-2xl hover:shadow-purple-500/40 hover:-translate-y-4 hover:scale-[1.02] hover:border-purple-400/60 hover:ring-4 hover:ring-purple-400/30 cursor-pointer">
-                  <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 md:mb-3">✊</div>
-                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-purple-700 dark:text-purple-300 mb-1 sm:mb-2 tracking-wide text-center">LES FORCES VIVES BOUILLONNENT</h3>
-                  <p className="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-1 sm:mb-2 md:mb-3 text-center">1 million de personnes prêtes</p>
-                  <div className="space-y-1 text-center text-xs">
-                    <p className="text-purple-600 dark:text-purple-400">200k néo-ruraux depuis 2020</p>
-                    <p className="text-purple-600 dark:text-purple-400">50k+ porteurs agricoles</p>
-                    <p className="text-purple-600 dark:text-purple-400">30k jeunes cherchent terres</p>
-                    <p className="text-purple-600 dark:text-purple-400">Réseaux CIVAM, MRJC actifs</p>
-                    <p className="text-purple-600 dark:text-purple-400">100k+ membres AMAP</p>
-                    <div className="w-6 sm:w-8 md:w-12 h-px bg-purple-500 my-1 sm:my-2 mx-auto"></div>
-                    <p className="text-xs font-black text-purple-700 dark:text-purple-200 mb-4 sm:mb-6">L'énergie est là, mais dispersée</p>
+                  
+                  <div className="space-y-3 text-sm">
+                    <div className="bg-emerald-50/50 dark:bg-emerald-900/10 rounded-xl p-4 space-y-2">
+                      <p className="text-emerald-700 dark:text-emerald-300 font-medium">30 800 communes rurales</p>
+                      <p className="text-emerald-700 dark:text-emerald-300 font-medium">3 500 tiers‑lieux en fonctionnement</p>
+                      <p className="text-emerald-700 dark:text-emerald-300 font-medium">150 000 hectares/an libres</p>
+                      <p className="text-emerald-700 dark:text-emerald-300 font-medium">1 500 écolieux actifs</p>
+                      <p className="text-emerald-700 dark:text-emerald-300 font-medium">5 000+ fermes disponibles</p>
+                    </div>
+                    
+                    <div className="flex items-center justify-center space-x-2 py-4">
+                      <div className="w-12 h-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent"></div>
+                      <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                      <div className="w-12 h-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent"></div>
+                    </div>
+                    
+                    <p className="text-base font-black text-emerald-800 dark:text-emerald-200 italic">Les terres se libèrent</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* RELIONS-NOUS Section */}
-            <div className="flex justify-center py-4 sm:py-6 animate-fade-in">
-              <div className="text-center space-y-4 sm:space-y-6 max-w-4xl mx-auto px-4 sm:px-6">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-                  <span className="bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 bg-clip-text text-transparent">RELIONS</span> - NOUS.
-                </h3>
-                <div className="bg-gradient-card rounded-2xl shadow-soft border border-border p-6 sm:p-8 md:p-10 max-w-3xl mx-auto">
-                  <h4 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">
-                    Lieux • Cagnottes • Votes
-                  </h4>
-                  <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium leading-relaxed">
-                    On relie ce qui existe déjà pour faire basculer<br className="hidden sm:block" /> 
-                    les territoires en autonomie.
-                  </p>
+            {/* Card 2: LES OUTILS FONCTIONNENT */}
+            <div className="group relative animate-scale-in">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-cyan-500/20 to-blue-600/20 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 lg:p-10 h-full transition-all duration-500 group-hover:border-blue-400/40 group-hover:shadow-2xl group-hover:shadow-blue-500/20 group-hover:-translate-y-2 cursor-pointer">
+                <div className="text-center space-y-6">
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-2xl flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform duration-300">⚙️</div>
+                  
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-black text-blue-700 dark:text-blue-300 mb-3 tracking-wide">
+                      LES OUTILS FONCTIONNENT
+                    </h3>
+                    <p className="text-base font-bold text-blue-600 dark:text-blue-400 mb-6">Solutions éprouvées et gratuites</p>
+                  </div>
+                  
+                  <div className="space-y-3 text-sm">
+                    <div className="bg-blue-50/50 dark:bg-blue-900/10 rounded-xl p-4 space-y-2">
+                      <p className="text-blue-700 dark:text-blue-300 font-medium">Decidim, Loomio testés</p>
+                      <p className="text-blue-700 dark:text-blue-300 font-medium">HelloAsso : 20k assos</p>
+                      <p className="text-blue-700 dark:text-blue-300 font-medium">Open Collective transparent</p>
+                      <p className="text-blue-700 dark:text-blue-300 font-medium">Terre de Liens collectif</p>
+                      <p className="text-blue-700 dark:text-blue-300 font-medium">SCIC, SCI rodés</p>
+                    </div>
+                    
+                    <div className="flex items-center justify-center space-x-2 py-4">
+                      <div className="w-12 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+                      <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                      <div className="w-12 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+                    </div>
+                    
+                    <p className="text-base font-black text-blue-800 dark:text-blue-200 italic">Pas besoin de réinventer</p>
+                  </div>
                 </div>
-                
-                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center items-center mt-4 sm:mt-6 md:mt-8">
-                  <button className="w-full sm:w-auto btn-cta-blue px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg font-semibold text-sm">
-                    ADHÉRER
-                  </button>
-                  <a 
-                    href="https://test24.lasuitedumonde.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-full sm:w-auto btn-cta-orange px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg font-semibold text-sm"
-                  >
-                    INVESTIR LOCALEMENT
-                  </a>
+              </div>
+            </div>
+
+            {/* Card 3: LES FORCES VIVES BOUILLONNENT */}
+            <div className="group relative animate-scale-in">
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-purple-600/20 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 lg:p-10 h-full transition-all duration-500 group-hover:border-purple-400/40 group-hover:shadow-2xl group-hover:shadow-purple-500/20 group-hover:-translate-y-2 cursor-pointer">
+                <div className="text-center space-y-6">
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform duration-300">✊</div>
+                  
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-black text-purple-700 dark:text-purple-300 mb-3 tracking-wide">
+                      LES FORCES VIVES BOUILLONNENT
+                    </h3>
+                    <p className="text-base font-bold text-purple-600 dark:text-purple-400 mb-6">1 million de personnes prêtes</p>
+                  </div>
+                  
+                  <div className="space-y-3 text-sm">
+                    <div className="bg-purple-50/50 dark:bg-purple-900/10 rounded-xl p-4 space-y-2">
+                      <p className="text-purple-700 dark:text-purple-300 font-medium">200k néo-ruraux depuis 2020</p>
+                      <p className="text-purple-700 dark:text-purple-300 font-medium">50k+ porteurs agricoles</p>
+                      <p className="text-purple-700 dark:text-purple-300 font-medium">30k jeunes cherchent terres</p>
+                      <p className="text-purple-700 dark:text-purple-300 font-medium">Réseaux CIVAM, MRJC actifs</p>
+                      <p className="text-purple-700 dark:text-purple-300 font-medium">100k+ membres AMAP</p>
+                    </div>
+                    
+                    <div className="flex items-center justify-center space-x-2 py-4">
+                      <div className="w-12 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+                      <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
+                      <div className="w-12 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+                    </div>
+                    
+                    <p className="text-base font-black text-purple-800 dark:text-purple-200 italic">L'énergie est là, mais dispersée</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* RELIONS-NOUS Section */}
+          <div className="relative animate-fade-in">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-3xl blur-3xl"></div>
+            <div className="relative max-w-5xl mx-auto text-center">
+              
+              {/* Title */}
+              <div className="mb-12">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
+                  <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">RELIONS</span>
+                  <span className="text-foreground"> - NOUS.</span>
+                </h3>
+              </div>
+              
+              {/* Central Message Card */}
+              <div className="relative group mb-12">
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-700"></div>
+                <div className="relative bg-card/90 backdrop-blur-md border border-border/50 rounded-3xl p-10 lg:p-16 shadow-2xl">
+                  <div className="space-y-8">
+                    <h4 className="text-2xl sm:text-3xl lg:text-4xl font-black bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent tracking-wide">
+                      Lieux • Cagnottes • Votes
+                    </h4>
+                    
+                    <div className="w-24 h-px bg-gradient-to-r from-primary via-secondary to-accent mx-auto"></div>
+                    
+                    <p className="text-lg sm:text-xl lg:text-2xl text-foreground/90 font-semibold leading-relaxed max-w-3xl mx-auto">
+                      On relie ce qui existe déjà pour faire basculer<br className="hidden sm:block" /> 
+                      les territoires en autonomie.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center items-center">
+                <button className="group relative overflow-hidden bg-gradient-to-r from-primary to-secondary text-primary-foreground px-8 lg:px-12 py-4 lg:py-5 rounded-2xl font-black text-lg tracking-wide shadow-xl hover:shadow-2xl hover:shadow-primary/30 transform hover:-translate-y-1 transition-all duration-300 min-w-[200px]">
+                  <span className="relative z-10">ADHÉRER</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </button>
+                
+                <a 
+                  href="https://test24.lasuitedumonde.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group relative overflow-hidden bg-gradient-to-r from-accent to-secondary text-accent-foreground px-8 lg:px-12 py-4 lg:py-5 rounded-2xl font-black text-lg tracking-wide shadow-xl hover:shadow-2xl hover:shadow-accent/30 transform hover:-translate-y-1 transition-all duration-300 min-w-[200px] text-center"
+                >
+                  <span className="relative z-10">INVESTIR LOCALEMENT</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
