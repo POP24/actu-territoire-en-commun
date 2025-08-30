@@ -22,92 +22,71 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-// CSS pour forcer l'affichage du launcher Landbot  
-const style = document.createElement('style');
-style.textContent = `
-  /* Sélecteurs très généraux pour attraper le launcher */
-  *[class*="landbot"]:not(iframe):not([src]),
-  *[id*="landbot"]:not(iframe):not([src]),
-  div[style*="position"][style*="bottom"][style*="right"]:not(iframe):not([class*="popup"]):not([id*="popup"]) {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    z-index: 999999 !important;
-    position: fixed !important;
-    bottom: 24px !important;
-    right: 24px !important;
-    width: 64px !important;
-    height: 64px !important;
-    background-image: url('/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png') !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    border-radius: 50% !important;
-    cursor: pointer !important;
-    border: 4px solid #FF8B00 !important;
-    box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    pointer-events: auto !important;
-  }
-  
-  /* Effet hover */
-  *[class*="landbot"]:not(iframe):not([src]):hover,
-  *[id*="landbot"]:not(iframe):not([src]):hover,
-  div[style*="position"][style*="bottom"][style*="right"]:not(iframe):not([class*="popup"]):not([id*="popup"]):hover {
-    transform: scale(1.5) rotate(6deg) !important;
-    background: linear-gradient(135deg, #ff6b35, #f7931e, #ff8500) !important;
-    box-shadow: 0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6) !important;
-  }
-  
-  /* Masquer icônes par défaut */
-  *[class*="landbot"] img, *[class*="landbot"] svg,
-  *[id*="landbot"] img, *[id*="landbot"] svg {
-    display: none !important;
-  }
-  
-  /* Préserver les iframes et popups */
-  iframe[src*="landbot"], 
-  *[class*="popup"], *[id*="popup"],
-  *[class*="window"], *[id*="window"] {
-    background: none !important;
-    border: none !important;
-    border-radius: 0 !important;
-    width: auto !important;
-    height: auto !important;
-  }
-`;
-document.head.appendChild(style);
+    
+    <!-- Landbot avec script moderne -->
+    <script SameSite="None; Secure" type="module" src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs"></script>
+    
+    <!-- Notre launcher personnalisé -->
+    <div id="custom-landbot-launcher" style="
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 64px;
+      height: 64px;
+      background-image: url('/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 4px solid #FF8B00;
+      box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 999999;
+    "></div>
 
-window.addEventListener('mouseover', initLandbot, { once: true });
-window.addEventListener('touchstart', initLandbot, { once: true });
-var myLandbot;
-function initLandbot() {
-  if (!myLandbot) {
-    var s = document.createElement('script');
-    s.async = true;
-    s.onload = function () {
-      try {
-        var LandbotRef = window.Landbot || (typeof Landbot !== 'undefined' ? Landbot : null);
-        if (!LandbotRef) {
-          console.error('[Landbot] Global not available after script load');
-          return;
-        }
-        myLandbot = new LandbotRef.Popup({
-          configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
+    <script type="module">
+      let myLandbot;
+      
+      // Initialiser Landbot sans launcher visible
+      myLandbot = new Landbot.Popup({
+        configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-2624889-3OOHST8FZXKRYDFL/index.json',
+      });
+      
+      // Masquer le launcher par défaut de Landbot
+      const hideLandbotLauncher = () => {
+        const landbotElements = document.querySelectorAll('[class*="landbot"], [id*="landbot"]');
+        landbotElements.forEach(el => {
+          if (!el.src && el.style && el.style.position === 'fixed') {
+            el.style.display = 'none !important';
+          }
         });
-        window.myLandbot = myLandbot;
-        console.log('[Landbot] Initialized', myLandbot);
-      } catch (e) {
-        console.error('[Landbot] init error', e);
-      }
-    };
-    s.onerror = function (e) { console.error('[Landbot] script load error', e); };
-    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  }
-}
-</script>
+      };
+      
+      // Observer pour masquer le launcher Landbot dès qu'il apparaît
+      const observer = new MutationObserver(hideLandbotLauncher);
+      observer.observe(document.body, { childList: true, subtree: true });
+      
+      // Effet hover sur notre launcher
+      const customLauncher = document.getElementById('custom-landbot-launcher');
+      customLauncher.addEventListener('mouseenter', () => {
+        customLauncher.style.transform = 'scale(1.5) rotate(6deg)';
+        customLauncher.style.background = 'linear-gradient(135deg, #ff6b35, #f7931e, #ff8500)';
+        customLauncher.style.boxShadow = '0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6)';
+      });
+      
+      customLauncher.addEventListener('mouseleave', () => {
+        customLauncher.style.transform = 'scale(1) rotate(0deg)';
+        customLauncher.style.backgroundImage = 'url("/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png")';
+        customLauncher.style.boxShadow = '0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3)';
+      });
+      
+      // Ouvrir le popup quand on clique sur notre launcher
+      customLauncher.addEventListener('click', () => {
+        if (myLandbot) {
+          myLandbot.open();
+        }
+      });
+    </script>
   </body>
 </html>
