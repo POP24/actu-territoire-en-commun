@@ -43,5 +43,28 @@
         }
       }
     </script>
+    
+    <style>
+      /* Personnalisation du bouton Landbot */
+      .ldbt-bubble, [id*="landbot"] [class*="bubble"] {
+        width: 80px !important;
+        height: 80px !important;
+        background: #FF8B00 url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png) center/64px 64px no-repeat !important;
+        border-radius: 50% !important;
+        box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3) !important;
+        transition: all 0.3s ease-out !important;
+      }
+      
+      .ldbt-bubble:hover, [id*="landbot"] [class*="bubble"]:hover {
+        transform: scale(1.5) rotate(6deg) !important;
+        background: linear-gradient(135deg, #ff6b35, #f7931e, #ff8500), url(/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png) center/64px 64px no-repeat !important;
+        box-shadow: 0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6) !important;
+      }
+      
+      /* Masquer l'image par défaut de Landbot mais garder notre background */
+      .ldbt-bubble img, [id*="landbot"] [class*="bubble"] img {
+        display: none !important;
+      }
+    </style>
   </body>
 </html>
