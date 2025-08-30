@@ -36,16 +36,29 @@
         right: 20px;
         width: 80px;
         height: 80px;
+        padding: 8px;
+        background-color: #FF8B00;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 999999;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      /* Image du logo 64x64 à l'intérieur */
+      #custom-chatbot-launcher::after {
+        content: '';
+        width: 64px;
+        height: 64px;
         background-image: url('/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
-        border: 4px solid #FF8B00;
-        box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3);
-        cursor: pointer;
-        z-index: 999999;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: block;
       }
       
       /* Effet hover avec agrandissement et rotation */
@@ -53,23 +66,6 @@
         transform: scale(1.5) rotate(6deg);
         background: linear-gradient(135deg, #ff6b35, #f7931e, #ff8500);
         box-shadow: 0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6);
-      }
-      
-      /* Maintenir l'image du logo en overlay même en hover */
-      #custom-chatbot-launcher::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 50%;
-        pointer-events: none;
-        z-index: 1;
       }
       
       /* Container fullscreen pour Landbot */
