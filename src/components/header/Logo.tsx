@@ -36,11 +36,11 @@ const Logo = () => {
   }, [showDropdown]);
 
   return (
-    <div className="flex items-center space-x-2 sm:space-x-4 group">
+    <div className="flex items-center space-x-2 sm:space-x-4">
       <div className="relative" ref={dropdownRef}>
         <button 
           onClick={handleLogoClick} 
-          className="transition-transform duration-200 group-hover:scale-110"
+          className="transition-transform duration-200 hover:scale-110"
         >
           <img 
             src="/lovable-uploads/78e2c716-3ddd-4f91-a2d2-ac34b20dad6f.png" 
@@ -78,7 +78,7 @@ const Logo = () => {
           </div>
         )}
       </div>
-      <div className="flex flex-col items-center transition-transform duration-200 group-hover:scale-105">
+      <div className="flex flex-col items-center transition-transform duration-200 hover:scale-105">
         <button onClick={goToHome} className="transition-transform duration-200">
           <img 
             src="/lovable-uploads/c46d5cc1-ebb1-4b65-bce3-cb7de3d3223a.png" 
