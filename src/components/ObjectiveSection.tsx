@@ -12,7 +12,7 @@ const ObjectiveSection = () => {
           
           {/* Main Title */}
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
               <span className="text-foreground drop-shadow-sm">L'HEURE</span>{" "}
               <span className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent animate-pulse">EST VENUE</span>
             </h2>
