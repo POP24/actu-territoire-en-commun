@@ -29,57 +29,57 @@ const GovernanceSection = () => {
           {/* Organisation Horizontale */}
           <div className="mb-8 sm:mb-12 md:mb-16">
             <div className="text-center mb-6 sm:mb-8">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2">🏛️ ORGANISATION COOPERATIVE</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 hover:text-cyan-200 hover:scale-105 transition-all duration-300 cursor-default">🏛️ ORGANISATION COOPERATIVE</h3>
             </div>
             
             {/* Réseau National */}
             <div className="text-center mb-6 sm:mb-8">
-              <div className="inline-block p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-cyan-400/30 max-w-xs sm:max-w-sm">
-                <h4 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2">TRÉSOR NATIONAL</h4>
+              <div className="inline-block p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-cyan-400/30 max-w-xs sm:max-w-sm hover:bg-white/20 hover:border-cyan-400/50 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-400/30 transition-all duration-300 cursor-pointer group">
+                <h4 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2 group-hover:text-cyan-200 transition-colors duration-300">TRÉSOR NATIONAL</h4>
                 <div className="space-y-1 text-white">
-                  <div className="text-xl sm:text-2xl font-bold text-cyan-400">1 000 000€ visés</div>
-                  <div className="text-xs sm:text-sm">Vote collectif</div>
+                  <div className="text-xl sm:text-2xl font-bold text-cyan-400 group-hover:text-cyan-300 group-hover:scale-110 transition-all duration-300">1 000 000€ visés</div>
+                  <div className="text-xs sm:text-sm group-hover:text-cyan-100 transition-colors duration-300">Vote collectif</div>
                 </div>
               </div>
             </div>
 
             {/* Flèche et distribution */}
             <div className="text-center mb-6 sm:mb-8">
-              <div className="text-white font-semibold text-lg sm:text-xl">↓</div>
-              <div className="text-white text-sm sm:text-base">Distribution</div>
-              <div className="text-white font-semibold text-lg sm:text-xl">↓</div>
+              <div className="text-white font-semibold text-lg sm:text-xl hover:text-cyan-300 hover:scale-110 transition-all duration-300 cursor-default">↓</div>
+              <div className="text-white text-sm sm:text-base hover:text-cyan-200 transition-colors duration-300 cursor-default">Distribution</div>
+              <div className="text-white font-semibold text-lg sm:text-xl hover:text-cyan-300 hover:scale-110 transition-all duration-300 cursor-default">↓</div>
             </div>
 
             {/* Communes */}
             <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 max-w-3xl mx-auto mb-6 sm:mb-8">
-              <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20">
-                <h4 className="font-bold text-white mb-2 text-sm sm:text-base">LIEU A</h4>
+              <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20 hover:bg-white/20 hover:border-cyan-400/40 hover:scale-105 hover:shadow-lg hover:shadow-cyan-400/20 transition-all duration-300 cursor-pointer group">
+                <h4 className="font-bold text-white mb-2 text-sm sm:text-base group-hover:text-cyan-200 transition-colors duration-300">LIEU A</h4>
                 <div className="text-xs sm:text-sm text-white space-y-1">
-                  <div>Autonome</div>
-                  <div>↓</div>
-                  <div>Décide localement</div>
+                  <div className="group-hover:text-cyan-100 transition-colors duration-300">Autonome</div>
+                  <div className="group-hover:text-cyan-300 group-hover:scale-125 transition-all duration-300">↓</div>
+                  <div className="group-hover:text-cyan-100 transition-colors duration-300">Décide localement</div>
                 </div>
               </div>
-              <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20">
-                <h4 className="font-bold text-white mb-2 text-sm sm:text-base">LIEU B</h4>
+              <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20 hover:bg-white/20 hover:border-cyan-400/40 hover:scale-105 hover:shadow-lg hover:shadow-cyan-400/20 transition-all duration-300 cursor-pointer group">
+                <h4 className="font-bold text-white mb-2 text-sm sm:text-base group-hover:text-cyan-200 transition-colors duration-300">LIEU B</h4>
                 <div className="text-xs sm:text-sm text-white space-y-1">
-                  <div>Autonome</div>
-                  <div>↓</div>
-                  <div>Décide localement</div>
+                  <div className="group-hover:text-cyan-100 transition-colors duration-300">Autonome</div>
+                  <div className="group-hover:text-cyan-300 group-hover:scale-125 transition-all duration-300">↓</div>
+                  <div className="group-hover:text-cyan-100 transition-colors duration-300">Décide localement</div>
                 </div>
               </div>
-              <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20">
-                <h4 className="font-bold text-white mb-2 text-sm sm:text-base">LIEU C</h4>
+              <div className="text-center p-3 sm:p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-cyan-400/20 hover:bg-white/20 hover:border-cyan-400/40 hover:scale-105 hover:shadow-lg hover:shadow-cyan-400/20 transition-all duration-300 cursor-pointer group">
+                <h4 className="font-bold text-white mb-2 text-sm sm:text-base group-hover:text-cyan-200 transition-colors duration-300">LIEU C</h4>
                 <div className="text-xs sm:text-sm text-white space-y-1">
-                  <div>Autonome</div>
-                  <div>↓</div>
-                  <div>Décide localement</div>
+                  <div className="group-hover:text-cyan-100 transition-colors duration-300">Autonome</div>
+                  <div className="group-hover:text-cyan-300 group-hover:scale-125 transition-all duration-300">↓</div>
+                  <div className="group-hover:text-cyan-100 transition-colors duration-300">Décide localement</div>
                 </div>
               </div>
             </div>
 
             {/* Principe */}
-            <div className="text-center p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-sm border border-cyan-400/40 max-w-3xl mx-auto shadow-lg">
+            <div className="text-center p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-sm border border-cyan-400/40 max-w-3xl mx-auto shadow-lg hover:from-white/25 hover:via-white/20 hover:to-white/15 hover:border-cyan-400/60 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-400/30 transition-all duration-300 cursor-pointer group">
               <div className="text-white">
                 <p className="text-lg sm:text-xl md:text-2xl font-bold mb-6 text-cyan-300">
                   Une organisation coopérative et transparente qui articule :
