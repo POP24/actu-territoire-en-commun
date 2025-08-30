@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const ObjectiveSection = () => {
   return (
-    <section className="pt-20 pb-16 bg-gradient-to-b from-background to-background/95 relative overflow-hidden">
+    <section className="pt-20 pb-16 bg-gradient-to-b from-blue-500/10 via-blue-600/5 to-background relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(120,119,198,0.05),transparent_70%)] dark:bg-[radial-gradient(circle_at_20%_50%,rgba(120,119,198,0.1),transparent_70%)]"></div>
       
