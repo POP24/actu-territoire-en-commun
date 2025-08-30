@@ -192,16 +192,16 @@ const WhereYouAtQuiz: React.FC<WhereYouAtQuizProps> = ({ isOpen, onClose }) => {
         <Button 
           onClick={() => handleAnswer('')}
           variant="outline"
-          className="border-cyan-500/50 text-cyan-300 hover:bg-cyan-600/20"
+          className="border-cyan-400 bg-cyan-500/10 text-white hover:bg-cyan-500/30 hover:border-cyan-300 font-medium"
         >
-          Passer
+          PASSER
         </Button>
         <Button 
           onClick={resetQuiz}
           variant="outline"
-          className="border-cyan-500/50 text-cyan-300 hover:bg-cyan-600/20"
+          className="border-cyan-400 bg-cyan-500/10 text-white hover:bg-cyan-500/30 hover:border-cyan-300 font-medium"
         >
-          Recommencer
+          RECOMMENCER
         </Button>
       </div>
     </div>
@@ -260,9 +260,9 @@ const WhereYouAtQuiz: React.FC<WhereYouAtQuizProps> = ({ isOpen, onClose }) => {
           <Button 
             onClick={resetQuiz}
             variant="outline"
-            className="border-cyan-500/50 text-cyan-300 hover:bg-cyan-600/20"
+            className="border-cyan-400 bg-cyan-500/10 text-white hover:bg-cyan-500/30 hover:border-cyan-300 font-medium"
           >
-            Recommencer
+            RECOMMENCER
           </Button>
         </div>
       </div>
