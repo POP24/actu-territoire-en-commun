@@ -29,10 +29,10 @@
     <!-- Notre launcher personnalisé -->
     <div id="custom-landbot-launcher" style="
       position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 64px;
-      height: 64px;
+      bottom: 20px;
+      right: 20px;
+      width: 80px;
+      height: 80px;
       background-image: url('/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png');
       background-size: cover;
       background-repeat: no-repeat;
@@ -69,15 +69,21 @@
       
       // Effet hover sur notre launcher
       const customLauncher = document.getElementById('custom-landbot-launcher');
+      
       customLauncher.addEventListener('mouseenter', () => {
         customLauncher.style.transform = 'scale(1.5) rotate(6deg)';
         customLauncher.style.background = 'linear-gradient(135deg, #ff6b35, #f7931e, #ff8500)';
+        customLauncher.style.backgroundImage = 'none';
         customLauncher.style.boxShadow = '0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6)';
       });
       
       customLauncher.addEventListener('mouseleave', () => {
         customLauncher.style.transform = 'scale(1) rotate(0deg)';
+        customLauncher.style.background = 'none';
         customLauncher.style.backgroundImage = 'url("/lovable-uploads/5817d468-330a-4484-82c1-8f805fced65b.png")';
+        customLauncher.style.backgroundSize = 'cover';
+        customLauncher.style.backgroundRepeat = 'no-repeat';
+        customLauncher.style.backgroundPosition = 'center';
         customLauncher.style.boxShadow = '0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3)';
       });
       
