@@ -38,40 +38,40 @@ const FundingFlowSection = () => {
           {/* How it works section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start">
             {/* Left side - How it works */}
-            <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 h-full">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6 text-center">
+            <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 h-full hover:bg-black/50 hover:border-cyan-400/40 hover:scale-[1.02] transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20">
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6 text-center hover:text-cyan-200 transition-colors duration-300 cursor-default">
                 FLUX FINANCIERS
               </h3>
               
               <div className="space-y-3 sm:space-y-4 flex flex-col h-full">
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">1️⃣ Les adhésions construisent le trésor commun</div>
-                  <div className="text-cyan-100 text-xs">Prix libre dès 10€ (local) • 100€ (architecte réseau)</div>
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1 hover:bg-black/70 hover:border-cyan-400/50 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 cursor-pointer group">
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base group-hover:text-cyan-200 transition-colors duration-300">1️⃣ Les adhésions construisent le trésor commun</div>
+                  <div className="text-cyan-100 text-xs group-hover:text-white transition-colors duration-300">Prix libre dès 10€ (local) • 100€ (architecte réseau)</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">2️⃣ Des professionnels pour fédérer chaque territoire</div>
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1 hover:bg-black/70 hover:border-cyan-400/50 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 cursor-pointer group">
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base group-hover:text-cyan-200 transition-colors duration-300">2️⃣ Des professionnels pour fédérer chaque territoire</div>
                   <ul className="text-cyan-100 text-xs space-y-1">
-                    <li>• Connaisseurs du terrain local</li>
-                    <li>• Rémunérés par le trésor commun</li>
-                    <li>• Fédèrent et animent la commune</li>
+                    <li className="group-hover:text-white transition-colors duration-300 hover:translate-x-1 transition-transform">• Connaisseurs du terrain local</li>
+                    <li className="group-hover:text-white transition-colors duration-300 hover:translate-x-1 transition-transform">• Rémunérés par le trésor commun</li>
+                    <li className="group-hover:text-white transition-colors duration-300 hover:translate-x-1 transition-transform">• Fédèrent et animent la commune</li>
                   </ul>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">3️⃣ Acquisitions collectives de lieux clés</div>
-                  <div className="text-cyan-100 text-xs">Terres agricoles • Espaces de production • Lieux de vie</div>
-                  <div className="text-cyan-100 text-xs mt-1">Campings, fermes, forêts, moulins...</div>
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1 hover:bg-black/70 hover:border-cyan-400/50 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 cursor-pointer group">
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base group-hover:text-cyan-200 transition-colors duration-300">3️⃣ Acquisitions collectives de lieux clés</div>
+                  <div className="text-cyan-100 text-xs group-hover:text-white transition-colors duration-300 hover:translate-x-1 transition-transform">Terres agricoles • Espaces de production • Lieux de vie</div>
+                  <div className="text-cyan-100 text-xs mt-1 group-hover:text-white transition-colors duration-300 hover:translate-x-1 transition-transform">Campings, fermes, forêts, moulins...</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">4️⃣ Les bénéfices alimentent la croissance</div>
-                  <div className="text-cyan-100 text-xs">Après charges et frais → Réinvestissement collectif</div>
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1 hover:bg-black/70 hover:border-cyan-400/50 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 cursor-pointer group">
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base group-hover:text-cyan-200 transition-colors duration-300">4️⃣ Les bénéfices alimentent la croissance</div>
+                  <div className="text-cyan-100 text-xs group-hover:text-white transition-colors duration-300 hover:translate-x-1 transition-transform">Après charges et frais → Réinvestissement collectif</div>
                 </div>
 
-                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base">5️⃣ Propriété collective progressive</div>
-                  <div className="text-cyan-100 text-xs">Petit à petit, les lieux deviennent des communs.</div>
+                <div className="bg-black/50 rounded-xl p-3 sm:p-4 border border-cyan-500/30 flex-1 hover:bg-black/70 hover:border-cyan-400/50 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 cursor-pointer group">
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm md:text-base group-hover:text-cyan-200 transition-colors duration-300">5️⃣ Propriété collective progressive</div>
+                  <div className="text-cyan-100 text-xs group-hover:text-white transition-colors duration-300 hover:translate-x-1 transition-transform">Petit à petit, les lieux deviennent des communs.</div>
                 </div>
               </div>
             </div>
@@ -79,34 +79,34 @@ const FundingFlowSection = () => {
             {/* Right side - New containers */}
             <div className="flex flex-col space-y-4 sm:space-y-6 h-full">
               {/* Container 1 - TESTEZ VOTRE ANCRAGE LOCAL */}
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center flex-1 flex flex-col justify-center">
-                <h2 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6">TESTEZ VOTRE ANCRAGE LOCAL</h2>
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center flex-1 flex flex-col justify-center hover:bg-black/50 hover:border-cyan-400/50 hover:scale-[1.03] hover:shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 group cursor-pointer">
+                <h2 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6 group-hover:text-cyan-200 group-hover:scale-105 transition-all duration-300">TESTEZ VOTRE ANCRAGE LOCAL</h2>
                 
-                <p className="text-cyan-100 text-sm mb-6 px-2">
+                <p className="text-cyan-100 text-sm mb-6 px-2 group-hover:text-white transition-colors duration-300">
                   Quiz individuel et collectif pour évaluer<br className="hidden sm:block" />
                   votre conscience biorégionale
                 </p>
                 
                 <button 
                   onClick={() => setShowWhereYouAtQuiz(true)}
-                  className="bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 rounded-lg py-3 px-4 sm:px-6 text-sm font-medium transition-colors mx-auto"
+                  className="bg-cyan-600/30 hover:bg-cyan-500/50 text-cyan-300 border border-cyan-500/50 rounded-lg py-3 px-4 sm:px-6 text-sm font-medium transition-all duration-300 mx-auto hover:scale-110 hover:shadow-lg hover:shadow-cyan-400/40 hover:text-white hover:border-cyan-400 hover:rotate-1 hover:-translate-y-1"
                 >
                   DÉCOUVRIR LES QUIZZ
                 </button>
               </div>
 
               {/* Container 2 - DONNÉES OUVERTES DU RÉSEAU */}
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center flex-1 flex flex-col justify-center">
-                <h2 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6">DONNÉES OUVERTES DU RÉSEAU</h2>
+              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 border border-cyan-400/20 text-center flex-1 flex flex-col justify-center hover:bg-black/50 hover:border-cyan-400/50 hover:scale-[1.03] hover:shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 group cursor-pointer">
+                <h2 className="text-base sm:text-lg md:text-xl font-bold text-cyan-300 mb-4 sm:mb-6 group-hover:text-cyan-200 group-hover:scale-105 transition-all duration-300">DONNÉES OUVERTES DU RÉSEAU</h2>
                 
-                <p className="text-cyan-100 text-sm mb-6 px-2">
+                <p className="text-cyan-100 text-sm mb-6 px-2 group-hover:text-white transition-colors duration-300">
                   Explorez les cartes, projets et partenaires<br className="hidden sm:block" />
                   qui construisent les communs
                 </p>
                 
                 <button 
                   onClick={() => setShowEcosystemModal(true)}
-                  className="bg-cyan-600/30 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/50 rounded-lg py-3 px-4 sm:px-6 text-sm font-medium transition-colors mx-auto"
+                  className="bg-cyan-600/30 hover:bg-cyan-500/50 text-cyan-300 border border-cyan-500/50 rounded-lg py-3 px-4 sm:px-6 text-sm font-medium transition-all duration-300 mx-auto hover:scale-110 hover:shadow-lg hover:shadow-cyan-400/40 hover:text-white hover:border-cyan-400 hover:-rotate-1 hover:-translate-y-1"
                 >
                   DÉCOUVRIR L'ÉCOSYSTÈME
                 </button>
