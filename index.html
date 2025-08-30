@@ -23,15 +23,16 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-// CSS pour customiser UNIQUEMENT le launcher, pas le popup
+// CSS pour forcer l'affichage du launcher Landbot  
 const style = document.createElement('style');
 style.textContent = `
-  /* Cibler l'élément launcher de Landbot avec des sélecteurs plus larges */
-  [class*="landbot"]:not([class*="window"]):not([class*="popup"]):not([class*="frame"]),
-  [id*="landbot"]:not([id*="window"]):not([id*="popup"]):not([id*="frame"]),
-  div[style*="position: fixed"][style*="bottom"][style*="right"][style*="width"][style*="height"]:not([src]):not(iframe),
-  .landbot-launcher,
-  .landbot-popup-launcher {
+  /* Sélecteurs très généraux pour attraper le launcher */
+  *[class*="landbot"]:not(iframe):not([src]),
+  *[id*="landbot"]:not(iframe):not([src]),
+  div[style*="position"][style*="bottom"][style*="right"]:not(iframe):not([class*="popup"]):not([id*="popup"]) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     z-index: 999999 !important;
     position: fixed !important;
     bottom: 24px !important;
@@ -47,34 +48,33 @@ style.textContent = `
     border: 4px solid #FF8B00 !important;
     box-shadow: 0 0 0 2px #FF8B00, 0 4px 12px rgba(255, 139, 0, 0.3) !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    pointer-events: auto !important;
   }
   
-  /* Effet hover sur le launcher */
-  [class*="landbot"]:not([class*="window"]):not([class*="popup"]):not([class*="frame"]):hover,
-  [id*="landbot"]:not([id*="window"]):not([id*="popup"]):not([id*="frame"]):hover,
-  div[style*="position: fixed"][style*="bottom"][style*="right"][style*="width"][style*="height"]:not([src]):not(iframe):hover,
-  .landbot-launcher:hover,
-  .landbot-popup-launcher:hover {
+  /* Effet hover */
+  *[class*="landbot"]:not(iframe):not([src]):hover,
+  *[id*="landbot"]:not(iframe):not([src]):hover,
+  div[style*="position"][style*="bottom"][style*="right"]:not(iframe):not([class*="popup"]):not([id*="popup"]):hover {
     transform: scale(1.5) rotate(6deg) !important;
     background: linear-gradient(135deg, #ff6b35, #f7931e, #ff8500) !important;
     box-shadow: 0 8px 32px rgba(255, 139, 0, 0.4), 0 12px 40px rgba(255, 107, 53, 0.6) !important;
   }
   
-  /* Masquer les icônes par défaut du launcher */
-  [class*="landbot"] img,
-  [class*="landbot"] svg,
-  [id*="landbot"] img,
-  [id*="landbot"] svg {
+  /* Masquer icônes par défaut */
+  *[class*="landbot"] img, *[class*="landbot"] svg,
+  *[id*="landbot"] img, *[id*="landbot"] svg {
     display: none !important;
   }
   
-  /* S'assurer que le popup window n'est PAS affecté */
-  div[data-landbot-popup]:not([data-landbot-launcher]),
-  iframe[src*="landbot"] {
+  /* Préserver les iframes et popups */
+  iframe[src*="landbot"], 
+  *[class*="popup"], *[id*="popup"],
+  *[class*="window"], *[id*="window"] {
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
     width: auto !important;
     height: auto !important;
-    position: fixed !important;
-    /* Laisser Landbot gérer entièrement le popup */
   }
 `;
 document.head.appendChild(style);
