@@ -172,9 +172,9 @@ useEffect(() => {
                   <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-r-xl text-center group hover:bg-white/25 transition-all duration-300">
                     <div className="text-white font-bold text-xs sm:text-sm mb-1">GOUVERNANCE</div>
                     <div className="text-sm sm:text-base md:text-lg font-bold drop-shadow-lg">
-                      <span className="bg-gradient-to-r from-emerald-300 via-green-400 to-teal-400 bg-clip-text text-transparent group-hover:from-emerald-200 group-hover:via-green-300 group-hover:to-teal-300 transition-all duration-300 block sm:inline">LOCALE</span>
+                      <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:via-blue-400 group-hover:to-cyan-400 transition-all duration-300 block sm:inline">LOCALE</span>
                       <span className="hidden sm:inline text-white/80 mx-1">/</span>
-                      <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:via-blue-400 group-hover:to-cyan-400 transition-all duration-300 block sm:inline">GLOBAL</span>
+                      <span className="bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 bg-clip-text text-transparent group-hover:from-emerald-300 group-hover:via-green-400 group-hover:to-teal-400 transition-all duration-300 block sm:inline">GLOBAL</span>
                     </div>
                   </div>
 
@@ -230,9 +230,10 @@ useEffect(() => {
                         <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">à partir de 10€</div>
                         <Button
                           onClick={() => handleDirectAdherClick("local")}
-                          className="w-full btn-cta-blue font-semibold text-white"
+                          className="w-full btn-cta-blue font-semibold text-white text-xs sm:text-sm md:text-base px-2 sm:px-4 py-2 sm:py-3"
                         >
-                          ADHÉSION LOCALE
+                          <span className="hidden sm:inline">ADHÉSION LOCALE</span>
+                          <span className="sm:hidden">LOCALE</span>
                         </Button>
                       </div>
 
@@ -243,9 +244,10 @@ useEffect(() => {
                         <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">10 000 adhésions disponible</div>
                         <Button
                           onClick={() => handleDirectAdherClick("architect")}
-                          className="w-full btn-cta-green font-semibold text-white"
+                          className="w-full btn-cta-green font-semibold text-white text-xs sm:text-sm md:text-base px-2 sm:px-4 py-2 sm:py-3"
                         >
-                          ADHÉSION ARCHITECTE
+                          <span className="hidden sm:inline">ADHÉSION ARCHITECTE</span>
+                          <span className="sm:hidden">ARCHITECTE</span>
                         </Button>
                       </div>
                     </div>
