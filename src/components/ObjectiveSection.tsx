@@ -130,7 +130,7 @@ const ObjectiveSection = () => {
           {/* RELIONS-NOUS Section */}
           <div className="relative animate-fade-in">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-blue-600/5 to-blue-700/5 rounded-3xl blur-3xl"></div>
-            <div className="relative max-w-5xl mx-auto text-center">
+            <div className="relative max-w-4xl mx-auto text-center">
               
               {/* Title */}
               <div className="mb-12">
@@ -141,17 +141,17 @@ const ObjectiveSection = () => {
               </div>
               
               {/* Central Message Card */}
-              <div className="relative group mb-12">
+              <div className="relative group mb-12 max-w-3xl mx-auto">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-blue-600/20 to-blue-700/20 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-700"></div>
-                <div className="relative bg-card/90 backdrop-blur-md border border-blue-200/50 rounded-3xl p-10 lg:p-16 shadow-2xl">
-                  <div className="space-y-8">
-                    <h4 className="text-2xl sm:text-3xl lg:text-4xl font-black bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent tracking-wide">
+                <div className="relative bg-card/90 backdrop-blur-md border border-blue-200/50 rounded-3xl p-8 lg:p-12 shadow-2xl">
+                  <div className="space-y-6">
+                    <h4 className="text-xl sm:text-2xl lg:text-3xl font-black bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-700 bg-clip-text text-transparent tracking-wide">
                       Lieux • Cagnottes • Votes
                     </h4>
                     
-                    <div className="w-24 h-px bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 mx-auto"></div>
+                    <div className="w-20 h-px bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-700 mx-auto"></div>
                     
-                    <p className="text-lg sm:text-xl lg:text-2xl text-foreground/90 font-semibold leading-relaxed max-w-3xl mx-auto">
+                    <p className="text-base sm:text-lg lg:text-xl text-foreground/90 font-semibold leading-relaxed max-w-2xl mx-auto">
                       On relie ce qui existe déjà pour faire basculer<br className="hidden sm:block" /> 
                       les territoires en autonomie.
                     </p>
@@ -160,8 +160,10 @@ const ObjectiveSection = () => {
               </div>
               
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center items-center">
-                <Button variant="cta-blue" className="px-8 lg:px-12 py-4 lg:py-5 rounded-2xl font-black text-lg tracking-wide min-w-[200px]">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+                <Button 
+                  className="w-full sm:w-auto btn-cta-blue font-semibold text-white px-8 py-3 rounded-xl"
+                >
                   ADHÉRER
                 </Button>
                 
@@ -169,10 +171,11 @@ const ObjectiveSection = () => {
                   href="https://test24.lasuitedumonde.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
                 >
-                  <Button variant="cta-orange" className="px-8 lg:px-12 py-4 lg:py-5 rounded-2xl font-black text-lg tracking-wide min-w-[200px] w-full">
+                  <button className="w-full btn-cta-orange font-semibold text-white px-8 py-3 rounded-xl">
                     INVESTIR LOCALEMENT
-                  </Button>
+                  </button>
                 </a>
               </div>
             </div>
