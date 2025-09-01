@@ -239,23 +239,35 @@ Il a toujours su que vous viendriez.
         description="Découvrez les dix paroles sacrées qui fondent notre vision d'un monde tissé de reliances, où chaque territoire retrouve sa souveraineté et sa connexion au vivant."
       />
       
-      <div className="min-h-screen bg-gradient-to-br from-background via-secondary/5 to-primary/5">
+      <div className="min-h-screen">
         <Header />
         
-        <main className="container mx-auto px-4 py-8">
-          {/* Hero cosmique */}
-          <div className="text-center mb-16 relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-primary/20 blur-3xl -z-10"></div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
-              Vision
-            </h1>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-foreground/90">
-              Le Temps de la Grande Convergence
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Dix paroles sacrées pour tisser la suite du monde
-            </p>
+        {/* Hero Section avec background sombre et effets */}
+        <section className="pt-40 lg:pt-60 pb-20 bg-black relative overflow-hidden">
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-600/20"></div>
+            <div className="absolute inset-0 bg-gradient-to-tl from-cyan-400/10 via-transparent to-transparent"></div>
+            <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
           </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-6xl md:text-8xl font-bold mb-8 text-white">
+                Vision
+              </h1>
+              <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-cyan-100">
+                Le Temps de la Grande Convergence
+              </h2>
+              <p className="text-xl text-cyan-200/80 max-w-3xl mx-auto leading-relaxed">
+                Dix paroles sacrées pour tisser la suite du monde
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <main className="bg-gradient-to-br from-background via-secondary/5 to-primary/5">
+          <div className="container mx-auto px-4 py-16">
 
           {/* Accordéon mystique des paroles */}
           <div className="max-w-5xl mx-auto mb-16">
@@ -321,6 +333,7 @@ Il a toujours su que vous viendriez.
               </Button>
             </div>
           </section>
+          </div>
         </main>
         
         <Footer />
