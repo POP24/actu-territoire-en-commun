@@ -80,37 +80,37 @@ const ObjectiveSection = () => {
               <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border-2 border-emerald-200/50 dark:border-emerald-800/50 rounded-3xl overflow-hidden shadow-2xl">
                 
                 {/* Card Header with Tribal Symbol */}
-                <div className="relative p-8 pb-0">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-400/20 to-green-400/20 rounded-full blur-2xl"></div>
-                  <div className="relative flex flex-col items-center space-y-6">
+                <div className="relative p-6 pb-0">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-emerald-400/20 to-green-400/20 rounded-full blur-2xl"></div>
+                  <div className="relative flex flex-col items-center space-y-4">
                     
                     {/* Enhanced Tribal Symbol */}
                     <div className="relative group/symbol">
                       <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 to-green-500 rounded-2xl blur-lg opacity-40 group-hover/symbol:opacity-70 transition-all duration-500"></div>
-                      <div className="relative w-20 h-20 bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 rounded-2xl flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-xl transform group-hover/symbol:rotate-12 transition-all duration-500">
+                      <div className="relative w-16 h-16 bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 rounded-2xl flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-xl transform group-hover/symbol:rotate-12 transition-all duration-500">
                         <TribalLandSymbol />
                       </div>
                     </div>
                     
                     {/* Title Section */}
                     <div className="text-center">
-                      <div className="mb-4">
-                        <div className="w-16 h-0.5 bg-gradient-to-r from-emerald-400 to-green-500 mx-auto mb-3"></div>
-                        <h3 className="text-2xl lg:text-3xl font-black text-emerald-700 dark:text-emerald-300 tracking-wider leading-tight">
+                      <div className="mb-2">
+                        <div className="w-12 h-0.5 bg-gradient-to-r from-emerald-400 to-green-500 mx-auto mb-2"></div>
+                        <h3 className="text-xl lg:text-2xl font-black text-emerald-700 dark:text-emerald-300 tracking-wider leading-tight">
                           LES LIEUX
                         </h3>
-                        <h4 className="text-xl lg:text-2xl font-black text-emerald-600 dark:text-emerald-400 tracking-wider">
+                        <h4 className="text-lg lg:text-xl font-black text-emerald-600 dark:text-emerald-400 tracking-wider">
                           ATTENDENT
                         </h4>
-                        <div className="w-16 h-0.5 bg-gradient-to-r from-green-500 to-emerald-400 mx-auto mt-3"></div>
+                        <div className="w-12 h-0.5 bg-gradient-to-r from-green-500 to-emerald-400 mx-auto mt-2"></div>
                       </div>
-                      <p className="text-lg font-bold text-emerald-600 dark:text-emerald-400 mb-6">Des milliers d'opportunités</p>
+                      <p className="text-base font-bold text-emerald-600 dark:text-emerald-400 mb-4">Des milliers d'opportunités</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* Data Grid */}
-                <div className="p-8 pt-4">
+                <div className="p-6 pt-2">
                   <div className="grid grid-cols-1 gap-3 mb-6">
                     <div className="flex justify-between items-center bg-emerald-50/80 dark:bg-emerald-900/20 rounded-xl p-4 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50">
                       <span className="text-emerald-800 dark:text-emerald-200 font-semibold">Communes rurales</span>
@@ -157,37 +157,37 @@ const ObjectiveSection = () => {
               <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border-2 border-blue-200/50 dark:border-blue-800/50 rounded-3xl overflow-hidden shadow-2xl">
                 
                 {/* Card Header with Tribal Symbol */}
-                <div className="relative p-8 pb-0">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-2xl"></div>
-                  <div className="relative flex flex-col items-center space-y-6">
+                <div className="relative p-6 pb-0">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-2xl"></div>
+                  <div className="relative flex flex-col items-center space-y-4">
                     
                     {/* Enhanced Tribal Symbol */}
                     <div className="relative group/symbol">
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-2xl blur-lg opacity-40 group-hover/symbol:opacity-70 transition-all duration-500"></div>
-                      <div className="relative w-20 h-20 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-2xl flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-xl transform group-hover/symbol:rotate-12 transition-all duration-500">
+                      <div className="relative w-16 h-16 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-2xl flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-xl transform group-hover/symbol:rotate-12 transition-all duration-500">
                         <TribalToolsSymbol />
                       </div>
                     </div>
                     
                     {/* Title Section */}
                     <div className="text-center">
-                      <div className="mb-4">
-                        <div className="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-500 mx-auto mb-3"></div>
-                        <h3 className="text-2xl lg:text-3xl font-black text-blue-700 dark:text-blue-300 tracking-wider leading-tight">
+                      <div className="mb-2">
+                        <div className="w-12 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-500 mx-auto mb-2"></div>
+                        <h3 className="text-xl lg:text-2xl font-black text-blue-700 dark:text-blue-300 tracking-wider leading-tight">
                           LES OUTILS
                         </h3>
-                        <h4 className="text-xl lg:text-2xl font-black text-blue-600 dark:text-blue-400 tracking-wider">
+                        <h4 className="text-lg lg:text-xl font-black text-blue-600 dark:text-blue-400 tracking-wider">
                           FONCTIONNENT
                         </h4>
-                        <div className="w-16 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-400 mx-auto mt-3"></div>
+                        <div className="w-12 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-400 mx-auto mt-2"></div>
                       </div>
-                      <p className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-6">Solutions éprouvées et gratuites</p>
+                      <p className="text-base font-bold text-blue-600 dark:text-blue-400 mb-4">Solutions éprouvées et gratuites</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* Data Grid */}
-                <div className="p-8 pt-4">
+                <div className="p-6 pt-2">
                   <div className="grid grid-cols-1 gap-3 mb-6">
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-xl p-4 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold">Decidim, Loomio</span>
@@ -234,37 +234,37 @@ const ObjectiveSection = () => {
               <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border-2 border-purple-200/50 dark:border-purple-800/50 rounded-3xl overflow-hidden shadow-2xl">
                 
                 {/* Card Header with Tribal Symbol */}
-                <div className="relative p-8 pb-0">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-2xl"></div>
-                  <div className="relative flex flex-col items-center space-y-6">
+                <div className="relative p-6 pb-0">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-2xl"></div>
+                  <div className="relative flex flex-col items-center space-y-4">
                     
                     {/* Enhanced Tribal Symbol */}
                     <div className="relative group/symbol">
                       <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl blur-lg opacity-40 group-hover/symbol:opacity-70 transition-all duration-500"></div>
-                      <div className="relative w-20 h-20 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-2xl flex items-center justify-center text-purple-600 dark:text-purple-400 shadow-xl transform group-hover/symbol:rotate-12 transition-all duration-500">
+                      <div className="relative w-16 h-16 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-2xl flex items-center justify-center text-purple-600 dark:text-purple-400 shadow-xl transform group-hover/symbol:rotate-12 transition-all duration-500">
                         <TribalForceSymbol />
                       </div>
                     </div>
                     
                     {/* Title Section */}
                     <div className="text-center">
-                      <div className="mb-4">
-                        <div className="w-16 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mx-auto mb-3"></div>
-                        <h3 className="text-2xl lg:text-3xl font-black text-purple-700 dark:text-purple-300 tracking-wider leading-tight">
+                      <div className="mb-2">
+                        <div className="w-12 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 mx-auto mb-2"></div>
+                        <h3 className="text-xl lg:text-2xl font-black text-purple-700 dark:text-purple-300 tracking-wider leading-tight">
                           LES FORCES VIVES
                         </h3>
-                        <h4 className="text-xl lg:text-2xl font-black text-purple-600 dark:text-purple-400 tracking-wider">
+                        <h4 className="text-lg lg:text-xl font-black text-purple-600 dark:text-purple-400 tracking-wider">
                           BOUILLONNENT
                         </h4>
-                        <div className="w-16 h-0.5 bg-gradient-to-r from-pink-500 to-purple-400 mx-auto mt-3"></div>
+                        <div className="w-12 h-0.5 bg-gradient-to-r from-pink-500 to-purple-400 mx-auto mt-2"></div>
                       </div>
-                      <p className="text-lg font-bold text-purple-600 dark:text-purple-400 mb-6">1 million de personnes prêtes</p>
+                      <p className="text-base font-bold text-purple-600 dark:text-purple-400 mb-4">1 million de personnes prêtes</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* Data Grid */}
-                <div className="p-8 pt-4">
+                <div className="p-6 pt-2">
                   <div className="grid grid-cols-1 gap-3 mb-6">
                     <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-xl p-4 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
                       <span className="text-purple-800 dark:text-purple-200 font-semibold">Néo-ruraux 2020+</span>
