@@ -82,7 +82,7 @@ const Parrainage = () => {
               {/* App Download Buttons */}
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a 
-                  href="#" 
+                  href="https://apps.apple.com/us/app/la-suite-du-monde/id6751546986" 
                   className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
                   aria-label="Télécharger sur l'App Store"
                 >
@@ -93,7 +93,7 @@ const Parrainage = () => {
                   />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://play.google.com/store/apps/details?id=com.wimmov.lasuitedumonde" 
                   className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
                   aria-label="L'obtenir sur Google Play"
                 >
