@@ -206,41 +206,63 @@ const Parrainage = () => {
       {/* CTA Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border">
-            <div className="max-w-2xl mx-auto mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <div className="bg-card rounded-2xl p-8 md:p-12 border border-border">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Rejoignez l'aventure
               </h2>
-              <p className="text-muted-foreground text-lg mb-8">
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                 Téléchargez l'application et devenez ambassadeur dès maintenant
               </p>
+            </div>
+            
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-12">
+              {/* Image des fonctionnalités de l'app */}
+              <div className="flex-1 max-w-lg">
+                <img 
+                  src="/lovable-uploads/47b56ce3-43aa-48e1-9fb6-bee0f0cfb7e1.png" 
+                  alt="Fonctionnalités de l'application mobile" 
+                  className="w-full h-auto rounded-xl shadow-2xl"
+                />
+              </div>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                {/* QR Code stylé */}
-                <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl p-6 border border-primary/20">
-                  <img 
-                    src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
-                    alt="QR Code" 
-                    className="w-24 h-24 mx-auto mb-3"
-                  />
-                  <p className="text-xs text-muted-foreground font-medium">Scan moi</p>
+              {/* Section téléchargement */}
+              <div className="flex-1 max-w-md">
+                <div className="bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/20">
+                  <div className="text-center mb-6">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      Téléchargement rapide
+                    </h3>
+                    <p className="text-muted-foreground text-sm">
+                      Scannez le QR code ou cliquez sur le bouton
+                    </p>
+                  </div>
+                  
+                  {/* QR Code */}
+                  <div className="bg-white rounded-xl p-4 mb-6 shadow-sm border">
+                    <img 
+                      src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
+                      alt="QR Code pour télécharger l'application" 
+                      className="w-32 h-32 mx-auto"
+                    />
+                  </div>
+                  
+                  {/* Séparateur */}
+                  <div className="flex items-center mb-6">
+                    <div className="flex-1 h-px bg-border"></div>
+                    <span className="px-3 text-sm text-muted-foreground font-medium">ou</span>
+                    <div className="flex-1 h-px bg-border"></div>
+                  </div>
+                  
+                  {/* CTA Button */}
+                  <Button 
+                    variant="cta-orange"
+                    size="lg"
+                    className="w-full rounded-xl px-6 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    TÉLÉCHARGER L'APP
+                  </Button>
                 </div>
-                
-                {/* Ou séparateur */}
-                <div className="flex items-center">
-                  <div className="hidden sm:block w-12 h-px bg-border mx-4"></div>
-                  <span className="text-muted-foreground text-sm font-medium px-2">ou</span>
-                  <div className="hidden sm:block w-12 h-px bg-border mx-4"></div>
-                </div>
-                
-                {/* CTA Button */}
-                <Button 
-                  variant="cta-orange"
-                  size="lg"
-                  className="rounded-xl px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  TÉLÉCHARGER L'APP
-                </Button>
               </div>
             </div>
           </div>
