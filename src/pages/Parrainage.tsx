@@ -204,66 +204,56 @@ const Parrainage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="bg-card rounded-2xl p-8 md:p-12 border border-border">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Rejoignez l'aventure
-              </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Téléchargez l'application et devenez ambassadeur dès maintenant
-              </p>
-            </div>
+      <section className="relative overflow-hidden">
+        {/* Background Image Banner */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/47b56ce3-43aa-48e1-9fb6-bee0f0cfb7e1.png" 
+            alt="Fonctionnalités de l'application mobile" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 py-20 md:py-32">
+          <div className="text-center text-white">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              Travaillons ensemble
+            </h2>
+            <p className="text-xl md:text-2xl text-white/90 font-medium mb-12 max-w-3xl mx-auto">
+              Téléchargez l'application et devenez ambassadeur dès maintenant
+            </p>
             
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-12">
-              {/* Image des fonctionnalités de l'app */}
-              <div className="flex-1 max-w-lg">
-                <img 
-                  src="/lovable-uploads/47b56ce3-43aa-48e1-9fb6-bee0f0cfb7e1.png" 
-                  alt="Fonctionnalités de l'application mobile" 
-                  className="w-full h-auto rounded-xl shadow-2xl"
-                />
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+              {/* QR Code */}
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
+                <div className="bg-white rounded-xl p-4 mb-4">
+                  <img 
+                    src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
+                    alt="QR Code pour télécharger l'application" 
+                    className="w-32 h-32 mx-auto"
+                  />
+                </div>
+                <p className="text-white/90 text-sm font-medium">
+                  Scannez pour télécharger
+                </p>
               </div>
               
-              {/* Section téléchargement */}
-              <div className="flex-1 max-w-md">
-                <div className="bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/20">
-                  <div className="text-center mb-6">
-                    <h3 className="text-xl font-bold text-foreground mb-2">
-                      Téléchargement rapide
-                    </h3>
-                    <p className="text-muted-foreground text-sm">
-                      Scannez le QR code ou cliquez sur le bouton
-                    </p>
-                  </div>
-                  
-                  {/* QR Code */}
-                  <div className="bg-white rounded-xl p-4 mb-6 shadow-sm border">
-                    <img 
-                      src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
-                      alt="QR Code pour télécharger l'application" 
-                      className="w-32 h-32 mx-auto"
-                    />
-                  </div>
-                  
-                  {/* Séparateur */}
-                  <div className="flex items-center mb-6">
-                    <div className="flex-1 h-px bg-border"></div>
-                    <span className="px-3 text-sm text-muted-foreground font-medium">ou</span>
-                    <div className="flex-1 h-px bg-border"></div>
-                  </div>
-                  
-                  {/* CTA Button */}
-                  <Button 
-                    variant="cta-orange"
-                    size="lg"
-                    className="w-full rounded-xl px-6 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300"
-                  >
-                    TÉLÉCHARGER L'APP
-                  </Button>
-                </div>
+              {/* Séparateur */}
+              <div className="flex items-center">
+                <div className="hidden sm:block w-16 h-px bg-white/30 mx-4"></div>
+                <span className="text-white/90 text-lg font-medium px-4">ou</span>
+                <div className="hidden sm:block w-16 h-px bg-white/30 mx-4"></div>
               </div>
+              
+              {/* CTA Button */}
+              <Button 
+                variant="cta-orange"
+                size="lg"
+                className="rounded-xl px-8 py-4 text-lg font-bold shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+              >
+                TÉLÉCHARGER L'APP
+              </Button>
             </div>
           </div>
         </div>
