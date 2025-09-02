@@ -59,7 +59,7 @@ const LaunchpadSection = () => {
                   
                   <div className="flex justify-between items-center mb-4">
                     <div>
-                      <div className="text-2xl font-bold text-primary">35%</div>
+                      <div className="text-2xl font-bold text-primary">0%</div>
                       <div className="text-xs text-gray-500">FINANCÉ</div>
                     </div>
                     <div className="text-right">
@@ -110,7 +110,7 @@ const LaunchpadSection = () => {
                   
                   <div className="flex justify-between items-center mb-4">
                     <div>
-                      <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">13%</div>
+                      <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">0%</div>
                       <div className="text-xs text-gray-400">SOUSCRIT</div>
                     </div>
                     <div className="text-right">
