@@ -162,26 +162,40 @@ const Parrainage = () => {
               </p>
               <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-4 border border-blue-400/30 max-w-sm mx-auto shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="flex items-center justify-between">
-                  <span className={`text-sm font-semibold transition-all duration-300 ${commissionSplit === 2.5 ? 'text-white' : 'text-blue-100'}`}>
-                    Vous
-                  </span>
+                  <div className="flex items-center">
+                    <span className={`text-sm font-semibold transition-all duration-300 ${commissionSplit === 2.5 ? 'text-white' : 'text-blue-100'}`}>
+                      Vous
+                    </span>
+                    {commissionSplit === 2.5 && (
+                      <span className="ml-2 text-xs font-bold text-white bg-white/20 px-2 py-1 rounded">
+                        2.5%
+                      </span>
+                    )}
+                  </div>
                   
-                  {/* Toggle Switch */}
-                  <div className="relative mx-4">
-                    <div className="w-16 h-8 bg-white/20 rounded-full p-1 cursor-pointer transition-all duration-300" 
+                  {/* Toggle Switch - Plus étroit */}
+                  <div className="relative mx-3">
+                    <div className="w-12 h-6 bg-white/20 rounded-full p-0.5 cursor-pointer transition-all duration-300" 
                          onClick={() => setCommissionSplit(commissionSplit === 2.5 ? 0 : 2.5)}>
-                      <div className={`h-6 w-6 rounded-full transition-all duration-500 ease-out transform shadow-md ${
+                      <div className={`h-5 w-5 rounded-full transition-all duration-500 ease-out transform shadow-md ${
                         commissionSplit === 2.5 
-                          ? 'translate-x-0 bg-white' 
-                          : 'translate-x-8 bg-white'
+                          ? 'translate-x-0 bg-orange-400' 
+                          : 'translate-x-6 bg-green-400'
                       }`}>
                       </div>
                     </div>
                   </div>
                   
-                  <span className={`text-sm font-semibold transition-all duration-300 ${commissionSplit === 2.5 ? 'text-blue-100' : 'text-white'}`}>
-                    Asso
-                  </span>
+                  <div className="flex items-center">
+                    <span className={`text-sm font-semibold transition-all duration-300 ${commissionSplit === 2.5 ? 'text-blue-100' : 'text-white'}`}>
+                      Asso
+                    </span>
+                    {commissionSplit === 0 && (
+                      <span className="ml-2 text-xs font-bold text-white bg-white/20 px-2 py-1 rounded">
+                        2.5%
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
