@@ -155,8 +155,8 @@ useEffect(() => {
               {/* Conteneur avec liseret OBJECTIFS */}
               <div className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden">
                 {/* Liseret OBJECTIFS */}
-                <div className="bg-gradient-to-r from-blue-600 via-gray-600 to-gray-800 text-white text-center py-0.5 px-4">
-                  <span className="font-bold text-xs tracking-wider">OBJECTIFS</span>
+                <div className="bg-gradient-to-r from-blue-600 via-gray-600 to-gray-800 text-white text-center py-1 px-4">
+                  <span className="font-bold text-sm tracking-wider">OBJECTIFS</span>
                 </div>
 
                 {/* Cards directement attachées */}
@@ -174,7 +174,7 @@ useEffect(() => {
                     <div className="text-sm sm:text-base md:text-lg font-bold drop-shadow-lg">
                       <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:via-blue-400 group-hover:to-cyan-400 transition-all duration-300 block sm:inline">LOCALE</span>
                       <span className="hidden sm:inline text-white/80 mx-1">/</span>
-                      <span className="bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 bg-clip-text text-transparent group-hover:from-emerald-300 group-hover:via-green-400 group-hover:to-teal-400 transition-all duration-300 block sm:inline">GLOBAL</span>
+                      <span className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 bg-clip-text text-transparent group-hover:from-orange-300 group-hover:via-red-400 group-hover:to-pink-400 transition-all duration-300 block sm:inline">GLOBAL</span>
                     </div>
                   </div>
 
@@ -189,10 +189,10 @@ useEffect(() => {
             {/* Left: Interactive Real Map */}
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 sm:p-6 border border-white/20">
-                {/* Bandeau RÉSEAU EN CONSTRUCTION */}
-                <div className="bg-gradient-to-r from-white via-gray-100 to-white rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 shadow-lg border-2 border-gray-300 text-center">
-                  <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-gray-900 drop-shadow-lg" style={{ textShadow: '1px 1px 2px rgba(255,255,255,0.7)' }}>
-                    RÉSEAU EN CONSTRUCTION
+                {/* Bandeau REJOIGNEZ LE MOUVEMENT */}
+                <div className="bg-gradient-to-r from-white via-gray-100 to-white rounded-lg p-2 sm:p-3 mb-4 sm:mb-6 shadow-lg border-2 border-gray-300 text-center">
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 drop-shadow-lg" style={{ textShadow: '1px 1px 2px rgba(255,255,255,0.7)' }}>
+                    REJOIGNEZ LE MOUVEMENT
                   </h2>
                 </div>
                 
@@ -227,8 +227,8 @@ useEffect(() => {
               <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl border border-white/20">
                 <div className="text-center mb-4 sm:mb-6">
                   {/* Bandeau ADHÉSION */}
-                  <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 shadow-lg">
-                    <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
+                  <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 rounded-lg p-2 sm:p-3 mb-4 sm:mb-6 shadow-lg">
+                    <h2 className="text-lg sm:text-xl md:text-2xl font-black text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
                       ADHÉSION
                     </h2>
                   </div>
