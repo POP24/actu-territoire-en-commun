@@ -80,60 +80,60 @@ const GovernanceSection = () => {
 
             {/* ARCHITECTURE DE DÉCISION */}
             <div className="text-center mb-8 sm:mb-12">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 hover:text-cyan-200 hover:scale-105 transition-all duration-300 cursor-default">🏛️ ARCHITECTURE DE DÉCISION</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 hover:text-cyan-200 hover:scale-105 transition-all duration-300 cursor-default">⚡ ARCHITECTURE DE DÉCISION</h3>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
-              {/* Cercle Local - Bleu */}
+              {/* Cercle Local - Turquoise */}
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                <div className="relative p-6 sm:p-8 bg-black/90 rounded-2xl border border-blue-400/50 hover:border-blue-400/80 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-teal-400 to-cyan-400 rounded-2xl blur opacity-90 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                <div className="relative p-6 sm:p-8 bg-black/90 rounded-2xl border-2 border-cyan-400/70 hover:border-cyan-300/90 hover:shadow-2xl hover:shadow-cyan-400/40 transition-all duration-300 hover:scale-105 cursor-pointer backdrop-blur-sm">
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-500/20 flex items-center justify-center border-2 border-blue-400 group-hover:border-blue-300 group-hover:shadow-lg group-hover:shadow-blue-400/50 transition-all duration-300">
-                      <span className="text-2xl text-blue-400 group-hover:text-blue-300 group-hover:scale-110 transition-all duration-300">🔵</span>
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-cyan-500/25 flex items-center justify-center border-2 border-cyan-400 group-hover:border-cyan-300 group-hover:shadow-xl group-hover:shadow-cyan-400/60 transition-all duration-300">
+                      <span className="text-2xl text-cyan-400 group-hover:text-cyan-300 group-hover:scale-110 transition-all duration-300">🔵</span>
                     </div>
-                    <h4 className="text-lg sm:text-xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors duration-300">Cercle Local</h4>
+                    <h4 className="text-lg sm:text-xl font-bold text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300">Cercle Local</h4>
                   </div>
                   <div className="space-y-3 text-white text-sm sm:text-base">
-                    <div><span className="font-semibold text-blue-300">Qui :</span> Usagers actifs du lieu</div>
-                    <div><span className="font-semibold text-blue-300">Décide :</span> Vie quotidienne, programmation</div>
-                    <div><span className="font-semibold text-blue-300">Budget :</span> Cagnotte locale autonome</div>
+                    <div><span className="font-semibold text-cyan-300">Qui :</span> Usagers actifs du lieu</div>
+                    <div><span className="font-semibold text-cyan-300">Décide :</span> Vie quotidienne, programmation</div>
+                    <div><span className="font-semibold text-cyan-300">Budget :</span> Cagnotte locale autonome</div>
                   </div>
                 </div>
               </div>
 
-              {/* Cercle National - Rouge */}
+              {/* Cercle National - Turquoise */}
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-red-400 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                <div className="relative p-6 sm:p-8 bg-black/90 rounded-2xl border border-red-400/50 hover:border-red-400/80 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <div className="absolute -inset-1 bg-gradient-to-r from-teal-500 via-cyan-400 to-teal-400 rounded-2xl blur opacity-90 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                <div className="relative p-6 sm:p-8 bg-black/90 rounded-2xl border-2 border-teal-400/70 hover:border-teal-300/90 hover:shadow-2xl hover:shadow-teal-400/40 transition-all duration-300 hover:scale-105 cursor-pointer backdrop-blur-sm">
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-red-500/20 flex items-center justify-center border-2 border-red-400 group-hover:border-red-300 group-hover:shadow-lg group-hover:shadow-red-400/50 transition-all duration-300">
-                      <span className="text-2xl text-red-400 group-hover:text-red-300 group-hover:scale-110 transition-all duration-300">🔴</span>
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-teal-500/25 flex items-center justify-center border-2 border-teal-400 group-hover:border-teal-300 group-hover:shadow-xl group-hover:shadow-teal-400/60 transition-all duration-300">
+                      <span className="text-2xl text-teal-400 group-hover:text-teal-300 group-hover:scale-110 transition-all duration-300">🔴</span>
                     </div>
-                    <h4 className="text-lg sm:text-xl font-bold text-red-400 group-hover:text-red-300 transition-colors duration-300">Cercle National</h4>
+                    <h4 className="text-lg sm:text-xl font-bold text-teal-400 group-hover:text-teal-300 transition-colors duration-300">Cercle National</h4>
                   </div>
                   <div className="space-y-3 text-white text-sm sm:text-base">
-                    <div><span className="font-semibold text-red-300">Qui :</span> Architectes + délégués locaux</div>
-                    <div><span className="font-semibold text-red-300">Décide :</span> Budget national, outils mutualisés</div>
-                    <div><span className="font-semibold text-red-300">Vote :</span> Architectes (budget) + délégués (orientations)</div>
+                    <div><span className="font-semibold text-teal-300">Qui :</span> Architectes + délégués locaux</div>
+                    <div><span className="font-semibold text-teal-300">Décide :</span> Budget national, outils mutualisés</div>
+                    <div><span className="font-semibold text-teal-300">Vote :</span> Architectes (budget) + délégués (orientations)</div>
                   </div>
                 </div>
               </div>
 
-              {/* Cercle Gardien - Blanc */}
+              {/* Cercle Gardien - Turquoise clair */}
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-white/60 to-gray-300/60 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                <div className="relative p-6 sm:p-8 bg-black/90 rounded-2xl border border-white/50 hover:border-white/80 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-300 via-sky-400 to-cyan-300 rounded-2xl blur opacity-90 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" style={{animationDelay: '1s'}}></div>
+                <div className="relative p-6 sm:p-8 bg-black/90 rounded-2xl border-2 border-cyan-300/70 hover:border-cyan-200/90 hover:shadow-2xl hover:shadow-cyan-300/40 transition-all duration-300 hover:scale-105 cursor-pointer backdrop-blur-sm">
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center border-2 border-white/60 group-hover:border-white/80 group-hover:shadow-lg group-hover:shadow-white/50 transition-all duration-300">
-                      <span className="text-2xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300">⚪</span>
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-cyan-300/20 flex items-center justify-center border-2 border-cyan-300/80 group-hover:border-cyan-200 group-hover:shadow-xl group-hover:shadow-cyan-300/60 transition-all duration-300">
+                      <span className="text-2xl text-cyan-300 group-hover:text-cyan-200 group-hover:scale-110 transition-all duration-300">⚪</span>
                     </div>
-                    <h4 className="text-lg sm:text-xl font-bold text-white/90 group-hover:text-white transition-colors duration-300">Cercle Gardien</h4>
+                    <h4 className="text-lg sm:text-xl font-bold text-cyan-300 group-hover:text-cyan-200 transition-colors duration-300">Cercle Gardien</h4>
                   </div>
                   <div className="space-y-3 text-white text-sm sm:text-base">
-                    <div><span className="font-semibold text-white/80">Qui :</span> 7 sages tirés au sort</div>
-                    <div><span className="font-semibold text-white/80">Rôle :</span> Protection des valeurs, médiation</div>
-                    <div><span className="font-semibold text-white/80">Pouvoir :</span> Véto sur dérives</div>
+                    <div><span className="font-semibold text-cyan-200">Qui :</span> 7 sages tirés au sort</div>
+                    <div><span className="font-semibold text-cyan-200">Rôle :</span> Protection des valeurs, médiation</div>
+                    <div><span className="font-semibold text-cyan-200">Pouvoir :</span> Véto sur dérives</div>
                   </div>
                 </div>
               </div>
