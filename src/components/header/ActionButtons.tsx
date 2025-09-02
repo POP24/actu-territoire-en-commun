@@ -27,17 +27,17 @@ const ActionButtons = ({ onButtonClick, isMobile = false }: ActionButtonsProps) 
   if (isMobile) {
     return (
       <>
-        <div className="pt-4 space-y-3">
+        <div className="pt-6 space-y-4 w-full">
           <NavLink 
             to="/vision" 
             onClick={onButtonClick}
-            className="block py-2 text-base font-medium text-primary hover:text-primary/80 transition-colors"
+            className="block w-full py-4 text-xl font-bold text-center text-primary hover:text-primary/80 transition-colors hover:bg-primary/10 rounded-xl px-4 border-2 border-transparent hover:border-primary/20"
           >
             Vision
           </NavLink>
           <Button
             onClick={handleAdherClick}
-            className="w-full btn-cta-blue rounded-lg font-semibold"
+            className="w-full btn-cta-blue rounded-xl font-bold text-lg py-4"
           >
             ADHÉRER
           </Button>

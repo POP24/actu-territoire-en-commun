@@ -15,12 +15,12 @@ const navItems = [
 
 const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   const baseClasses = isMobile 
-    ? "block py-3 text-lg font-bold transition-colors duration-300"
-    : "text-base font-medium transition-all duration-300 relative nav-link";
+    ? "block w-full py-4 text-xl font-bold transition-colors duration-300 text-center"
+    : "text-sm lg:text-base font-medium transition-all duration-300 relative nav-link";
   
   const hoverClasses = isMobile 
-    ? "hover:bg-blue-50 rounded-lg px-3 py-2"
-    : "hover:bg-blue-50 hover:text-blue-600 px-3 py-2 rounded-lg";
+    ? "hover:bg-primary/10 rounded-xl px-4 py-3 border-2 border-transparent hover:border-primary/20"
+    : "hover:bg-primary/10 hover:text-primary px-3 py-2 rounded-lg";
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -46,7 +46,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
             <button
               key={item.to}
               onClick={() => handleClick(item)}
-              className={`${baseClasses} ${hoverClasses} text-gray-800 hover:text-blue-600`}
+              className={`${baseClasses} ${hoverClasses} ${isMobile ? 'text-foreground hover:text-primary' : 'text-gray-800 hover:text-primary'}`}
             >
               {item.label}
             </button>
@@ -60,8 +60,8 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
             onClick={onLinkClick}
             className={({ isActive }) => `${baseClasses} ${hoverClasses} ${
               isActive && item.to !== "/" 
-                ? "text-blue-600 bg-blue-50" 
-                : "text-gray-800 hover:text-blue-600"
+                ? isMobile ? "text-primary bg-primary/10 border-primary/20" : "text-primary bg-primary/10"
+                : isMobile ? "text-foreground hover:text-primary" : "text-gray-800 hover:text-primary"
             }`}
           >
             {item.label}

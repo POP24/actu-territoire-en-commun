@@ -32,17 +32,17 @@ const Header = () => {
 
   return (
     <header className={headerClasses}>
-      <div className="container mx-auto px-4 sm:px-6">
-        <nav className="flex items-center justify-between py-2 sm:py-3 md:py-4">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6">
+        <nav className="flex items-center justify-between py-3 sm:py-4">
           <Logo />
           
           {/* Navigation desktop */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <NavLinks />
           </div>
           
           {/* Actions */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             <ActionButtons />
             <MobileToggle 
               isOpen={isMenuOpen} 

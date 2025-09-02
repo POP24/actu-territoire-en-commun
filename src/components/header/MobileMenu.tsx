@@ -14,9 +14,11 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
       className="lg:hidden fixed inset-0 bg-background/95 backdrop-blur-lg border-b border-border shadow-xl animate-fade-in"
       style={{ zIndex: 999999, marginTop: '80px' }}
     >
-      <div className="px-6 py-6 space-y-2">
-        <NavLinks onLinkClick={onClose} isMobile />
-        <ActionButtons onButtonClick={onClose} isMobile />
+      <div className="flex flex-col items-center justify-center min-h-[60vh] px-6 py-8">
+        <div className="w-full max-w-sm text-center space-y-4">
+          <NavLinks onLinkClick={onClose} isMobile />
+          <ActionButtons onButtonClick={onClose} isMobile />
+        </div>
       </div>
     </div>
   );
