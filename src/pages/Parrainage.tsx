@@ -66,21 +66,21 @@ const Parrainage = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Étape 1 */}
-            <div className="text-center flex flex-col h-full">
+          <div className="flex justify-center max-w-6xl mx-auto">
+            {/* Étape 1 - Centrée */}
+            <div className="text-center max-w-md">
               <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 1
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Rejoignez notre application mobile
               </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium flex-grow">
+              <p className="text-muted-foreground text-lg mb-8 font-medium">
                 Téléchargez l'Application Ambassadeur
               </p>
               
               {/* App Download Buttons */}
-              <div className="mt-auto flex flex-col sm:flex-row justify-center items-center gap-4">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a 
                   href="#" 
                   className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
@@ -105,107 +105,12 @@ const Parrainage = () => {
                 </a>
               </div>
             </div>
-
-            {/* Étape 2 */}
-            <div className="text-center flex flex-col h-full">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                2
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Parrainez
-              </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium flex-grow">
-                Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
-              </p>
-              
-              {/* CTA aligné */}
-              <div className="mt-auto">
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Button 
-                      variant="default"
-                      size="lg"
-                      className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                    >
-                      INVITER MON RÉSEAU
-                    </Button>
-                  </DialogTrigger>
-                  <DialogContent className="sm:max-w-md">
-                    <DialogHeader>
-                      <DialogTitle>Invitation à votre réseau local</DialogTitle>
-                    </DialogHeader>
-                    <div className="space-y-4">
-                      <p className="text-sm text-muted-foreground">
-                        Contactez-moi, je veux vous mettre en relation avec La Suite du Monde
-                      </p>
-                      <div className="space-y-3">
-                        <Input placeholder="Votre nom" />
-                        <Input placeholder="Email" type="email" />
-                        <Input placeholder="Téléphone" type="tel" />
-                        <Textarea placeholder="Votre message..." />
-                      </div>
-                      <Button className="w-full">
-                        ENVOYER L'INVITATION
-                      </Button>
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </div>
-            </div>
-
-            {/* Étape 3 */}
-            <div className="text-center flex flex-col h-full">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                3
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Soyez récompensé !
-              </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium flex-grow">
-                Gagnez 2.5% de commission sur chaque parrainage
-              </p>
-              
-              {/* Widget de répartition simplifié */}
-              <div className="mt-auto">
-                <div className="bg-card rounded-xl p-4 border border-border max-w-sm mx-auto mb-4">
-                  <div className="flex items-center justify-center gap-4 mb-3">
-                    <Button
-                      variant={commissionSplit === 2.5 ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setCommissionSplit(2.5)}
-                      className="text-xs"
-                    >
-                      Pour vous
-                    </Button>
-                    <Button
-                      variant={commissionSplit === 0 ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setCommissionSplit(0)}
-                      className="text-xs"
-                    >
-                      Pour l'asso
-                    </Button>
-                  </div>
-                  <p className="text-sm font-semibold text-center">
-                    Commission : 2.5%
-                  </p>
-                </div>
-                
-                <Button 
-                  variant="default"
-                  size="lg"
-                  className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                >
-                  COMMENCER
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Floating QR Code - Hidden on mobile */}
-      <div className="fixed top-32 right-6 z-40 hidden lg:block">
+      {/* Floating QR Code */}
+      <div className="fixed top-32 right-6 z-40">
         <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-4 border border-blue-400/30 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
           <div className="text-center mb-3">
             <p className="text-xs font-semibold text-white">Télécharger l'app</p>
