@@ -78,30 +78,44 @@ const GovernanceSection = () => {
               </div>
             </div>
 
-            {/* Principe */}
-            <div className="text-center p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-sm border border-cyan-400/40 max-w-3xl mx-auto shadow-lg hover:from-white/25 hover:via-white/20 hover:to-white/15 hover:border-cyan-400/60 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-400/30 transition-all duration-300 cursor-pointer group">
+            {/* Répartition des responsabilités */}
+            <div className="text-center p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-sm border border-cyan-400/40 max-w-5xl mx-auto shadow-lg hover:from-white/25 hover:via-white/20 hover:to-white/15 hover:border-cyan-400/60 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-400/30 transition-all duration-300 cursor-pointer group">
               <div className="text-white">
-                <p className="text-lg sm:text-xl md:text-2xl font-bold mb-6 text-cyan-300">
-                  Une organisation coopérative et transparente qui articule :
+                <p className="text-lg sm:text-xl md:text-2xl font-bold mb-8 text-cyan-300">
+                  RÉPARTITION DES RESPONSABILITÉS
                 </p>
-                <div className="space-y-4 text-left max-w-2xl mx-auto">
-                  <div className="flex items-start gap-3">
-                    <span className="text-cyan-400 font-bold text-xl mt-1">—</span>
-                    <p className="text-base sm:text-lg text-white">
-                      <span className="font-semibold text-cyan-300">Associations locales</span> (vie du lieu, programmation, bénévolat)
-                    </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                  {/* Cercle Local */}
+                  <div className="text-center space-y-4">
+                    <h4 className="text-xl sm:text-2xl font-bold text-cyan-300 mb-4">🏘️ Cercle Local</h4>
+                    <div className="space-y-3 text-left">
+                      <p className="text-sm sm:text-base text-white">Gestion quotidienne du lieu</p>
+                      <p className="text-sm sm:text-base text-white">Animation de la vie collective</p>
+                      <p className="text-sm sm:text-base text-white">Programmation culturelle et pédagogique</p>
+                      <p className="text-sm sm:text-base text-white">Relations avec le territoire immédiat</p>
+                    </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-cyan-400 font-bold text-xl mt-1">—</span>
-                    <p className="text-base sm:text-lg text-white">
-                      <span className="font-semibold text-cyan-300">Fédération</span> (entraide, outils, cadre commun)
-                    </p>
+
+                  {/* Cercle National */}
+                  <div className="text-center space-y-4">
+                    <h4 className="text-xl sm:text-2xl font-bold text-cyan-300 mb-4">🔗 Cercle National</h4>
+                    <div className="space-y-3 text-left">
+                      <p className="text-sm sm:text-base text-white">Mutualisation des ressources</p>
+                      <p className="text-sm sm:text-base text-white">Représentation politique</p>
+                      <p className="text-sm sm:text-base text-white">Développement des outils communs</p>
+                      <p className="text-sm sm:text-base text-white">Coordination inter-territoriale</p>
+                    </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-cyan-400 font-bold text-xl mt-1">—</span>
-                    <p className="text-base sm:text-lg text-white">
-                      <span className="font-semibold text-cyan-300">Responsabilités légales</span> (gestion, sécurité, finances) assumées par les structures dédiées
-                    </p>
+
+                  {/* Structures juridiques */}
+                  <div className="text-center space-y-4">
+                    <h4 className="text-xl sm:text-2xl font-bold text-cyan-300 mb-4">⚖️ Structures juridiques dédiées</h4>
+                    <div className="space-y-3 text-left">
+                      <p className="text-sm sm:text-base text-white"><span className="font-semibold text-cyan-200">SA/SCI:</span> Propriété foncière collective</p>
+                      <p className="text-sm sm:text-base text-white"><span className="font-semibold text-cyan-200">Association loi 1901:</span> Rachat progressif des Communs</p>
+                      <p className="text-sm sm:text-base text-white"><span className="font-semibold text-cyan-200">Coopérative:</span> Activités économiques</p>
+                    </div>
                   </div>
                 </div>
               </div>
