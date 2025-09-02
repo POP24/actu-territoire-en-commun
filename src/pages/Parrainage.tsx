@@ -205,16 +205,39 @@ const Parrainage = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-primary mb-4">
+                  Rejoignez notre application mobile
+                </h3>
+                <p className="text-muted-foreground">
+                  Accédez à votre tableau de bord ambassadeur
+                </p>
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-primary mb-4">
+                  Suivez vos recommandations
+                </h3>
+                <p className="text-muted-foreground">
+                  Trackez vos parrainages en temps réel
+                </p>
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-primary mb-4">
+                  Soyez récompensé !
+                </h3>
+                <p className="text-muted-foreground">
+                  Recevez vos gains automatiquement
+                </p>
+              </div>
+            </div>
             <Button 
               variant="cta-orange"
               size="lg"
-              className="rounded-xl px-8 py-4 text-lg font-bold mb-4"
+              className="rounded-xl px-8 py-4 text-lg font-bold"
             >
               DEVENIR AMBASSADEUR
             </Button>
-            <p className="text-muted-foreground">
-              Application mobile disponible
-            </p>
           </div>
         </div>
       </section>
