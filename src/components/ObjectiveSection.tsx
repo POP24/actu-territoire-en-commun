@@ -181,7 +181,7 @@ const ObjectiveSection = () => {
                         </h4>
                         <div className="w-8 md:w-12 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-400 mx-auto mt-2"></div>
                       </div>
-                      <p className="text-sm md:text-base font-bold text-blue-600 dark:text-blue-400 mb-3 md:mb-4">Solutions éprouvées et gratuites</p>
+                      <p className="text-sm md:text-base font-bold text-blue-600 dark:text-blue-400 mb-3 md:mb-4">L'infrastructure collaborative existe déjà</p>
                     </div>
                   </div>
                 </div>
@@ -208,6 +208,42 @@ const ObjectiveSection = () => {
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">SCIC, SCI</span>
                       <span className="text-base md:text-lg font-black text-blue-600 dark:text-blue-400">RODÉS</span>
+                    </div>
+                    
+                    {/* Nouveau separator */}
+                    <div className="flex items-center justify-center space-x-3 py-2 md:py-3">
+                      <div className="w-8 md:w-12 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+                      <span className="text-xs md:text-sm font-bold text-blue-600 dark:text-blue-400">FINANCEMENT PARTICIPATIF</span>
+                      <div className="w-8 md:w-12 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+                    </div>
+                    
+                    <div className="flex justify-between items-center bg-green-50/80 dark:bg-green-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-green-200/50 dark:border-green-800/50">
+                      <span className="text-green-800 dark:text-green-200 font-semibold text-sm md:text-base">Financement participatif</span>
+                      <span className="text-lg md:text-2xl font-black text-green-600 dark:text-green-400">2,35 Mds€</span>
+                    </div>
+                    <div className="flex justify-between items-center bg-green-50/80 dark:bg-green-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-green-200/50 dark:border-green-800/50">
+                      <span className="text-green-800 dark:text-green-200 font-semibold text-sm md:text-base">HelloAsso Associations Actives</span>
+                      <span className="text-lg md:text-2xl font-black text-green-600 dark:text-green-400">20K</span>
+                    </div>
+                    
+                    {/* Nouveau separator */}
+                    <div className="flex items-center justify-center space-x-3 py-2 md:py-3">
+                      <div className="w-8 md:w-12 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent"></div>
+                      <span className="text-xs md:text-sm font-bold text-purple-600 dark:text-purple-400">SOLUTIONS LIBRES</span>
+                      <div className="w-8 md:w-12 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent"></div>
+                    </div>
+                    
+                    <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
+                      <span className="text-purple-800 dark:text-purple-200 font-semibold text-sm md:text-base">Logiciels libres</span>
+                      <span className="text-lg md:text-2xl font-black text-purple-600 dark:text-purple-400">500K+</span>
+                    </div>
+                    <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
+                      <span className="text-purple-800 dark:text-purple-200 font-semibold text-sm md:text-base">Woofing France</span>
+                      <span className="text-lg md:text-2xl font-black text-purple-600 dark:text-purple-400">25K</span>
+                    </div>
+                    <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
+                      <span className="text-purple-800 dark:text-purple-200 font-semibold text-sm md:text-base">Réseaux de monnaies locales</span>
+                      <span className="text-lg md:text-2xl font-black text-purple-600 dark:text-purple-400">82</span>
                     </div>
                   </div>
                   
