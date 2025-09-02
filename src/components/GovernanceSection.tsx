@@ -78,44 +78,64 @@ const GovernanceSection = () => {
               </div>
             </div>
 
-            {/* Répartition des responsabilités */}
-            <div className="text-center p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-sm border border-cyan-400/40 max-w-5xl mx-auto shadow-lg hover:from-white/25 hover:via-white/20 hover:to-white/15 hover:border-cyan-400/60 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-400/30 transition-all duration-300 cursor-pointer group">
-              <div className="text-white">
-                <p className="text-lg sm:text-xl md:text-2xl font-bold mb-8 text-cyan-300">
-                  RÉPARTITION DES RESPONSABILITÉS
-                </p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-                  {/* Cercle Local */}
-                  <div className="text-center space-y-4">
-                    <h4 className="text-xl sm:text-2xl font-bold text-cyan-300 mb-4">🏘️ Cercle Local</h4>
-                    <div className="space-y-3 text-left">
-                      <p className="text-sm sm:text-base text-white">Gestion quotidienne du lieu</p>
-                      <p className="text-sm sm:text-base text-white">Animation de la vie collective</p>
-                      <p className="text-sm sm:text-base text-white">Programmation culturelle et pédagogique</p>
-                      <p className="text-sm sm:text-base text-white">Relations avec le territoire immédiat</p>
+            {/* RÉPARTITION DES RESPONSABILITÉS */}
+            <div className="text-center mb-8 sm:mb-12">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 hover:text-cyan-200 hover:scale-105 transition-all duration-300 cursor-default">🏛️ RÉPARTITION DES RESPONSABILITÉS</h3>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto mb-12 sm:mb-16 md:mb-20">
+              {/* Cercle Local - Vert */}
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-green-400 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div className="relative p-6 sm:p-8 bg-black/90 rounded-2xl border border-green-400/50 hover:border-green-400/80 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <div className="text-center mb-4">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-500/20 flex items-center justify-center border-2 border-green-400 group-hover:border-green-300 group-hover:shadow-lg group-hover:shadow-green-400/50 transition-all duration-300">
+                      <span className="text-2xl text-green-400 group-hover:text-green-300 group-hover:scale-110 transition-all duration-300">🏘️</span>
                     </div>
+                    <h4 className="text-lg sm:text-xl font-bold text-green-400 group-hover:text-green-300 transition-colors duration-300">Cercle Local</h4>
                   </div>
-
-                  {/* Cercle National */}
-                  <div className="text-center space-y-4">
-                    <h4 className="text-xl sm:text-2xl font-bold text-cyan-300 mb-4">🔗 Cercle National</h4>
-                    <div className="space-y-3 text-left">
-                      <p className="text-sm sm:text-base text-white">Mutualisation des ressources</p>
-                      <p className="text-sm sm:text-base text-white">Représentation politique</p>
-                      <p className="text-sm sm:text-base text-white">Développement des outils communs</p>
-                      <p className="text-sm sm:text-base text-white">Coordination inter-territoriale</p>
-                    </div>
+                  <div className="space-y-3 text-white text-sm sm:text-base">
+                    <div><span className="font-semibold text-green-300">•</span> Gestion quotidienne du lieu</div>
+                    <div><span className="font-semibold text-green-300">•</span> Animation de la vie collective</div>
+                    <div><span className="font-semibold text-green-300">•</span> Programmation culturelle et pédagogique</div>
+                    <div><span className="font-semibold text-green-300">•</span> Relations avec le territoire immédiat</div>
                   </div>
+                </div>
+              </div>
 
-                  {/* Structures juridiques */}
-                  <div className="text-center space-y-4">
-                    <h4 className="text-xl sm:text-2xl font-bold text-cyan-300 mb-4">⚖️ Structures juridiques dédiées</h4>
-                    <div className="space-y-3 text-left">
-                      <p className="text-sm sm:text-base text-white"><span className="font-semibold text-cyan-200">SA/SCI:</span> Propriété foncière collective</p>
-                      <p className="text-sm sm:text-base text-white"><span className="font-semibold text-cyan-200">Association loi 1901:</span> Rachat progressif des Communs</p>
-                      <p className="text-sm sm:text-base text-white"><span className="font-semibold text-cyan-200">Coopérative:</span> Activités économiques</p>
+              {/* Cercle National - Violet */}
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-purple-400 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div className="relative p-6 sm:p-8 bg-black/90 rounded-2xl border border-purple-400/50 hover:border-purple-400/80 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <div className="text-center mb-4">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center border-2 border-purple-400 group-hover:border-purple-300 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300">
+                      <span className="text-2xl text-purple-400 group-hover:text-purple-300 group-hover:scale-110 transition-all duration-300">🔗</span>
                     </div>
+                    <h4 className="text-lg sm:text-xl font-bold text-purple-400 group-hover:text-purple-300 transition-colors duration-300">Cercle National</h4>
+                  </div>
+                  <div className="space-y-3 text-white text-sm sm:text-base">
+                    <div><span className="font-semibold text-purple-300">•</span> Mutualisation des ressources</div>
+                    <div><span className="font-semibold text-purple-300">•</span> Représentation politique</div>
+                    <div><span className="font-semibold text-purple-300">•</span> Développement des outils communs</div>
+                    <div><span className="font-semibold text-purple-300">•</span> Coordination inter-territoriale</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Structures Juridiques - Orange */}
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-orange-600 to-orange-400 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div className="relative p-6 sm:p-8 bg-black/90 rounded-2xl border border-orange-400/50 hover:border-orange-400/80 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <div className="text-center mb-4">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-orange-500/20 flex items-center justify-center border-2 border-orange-400 group-hover:border-orange-300 group-hover:shadow-lg group-hover:shadow-orange-400/50 transition-all duration-300">
+                      <span className="text-2xl text-orange-400 group-hover:text-orange-300 group-hover:scale-110 transition-all duration-300">⚖️</span>
+                    </div>
+                    <h4 className="text-lg sm:text-xl font-bold text-orange-400 group-hover:text-orange-300 transition-colors duration-300">Structures juridiques</h4>
+                  </div>
+                  <div className="space-y-3 text-white text-sm sm:text-base">
+                    <div><span className="font-semibold text-orange-300">SA/SCI:</span> Propriété foncière collective</div>
+                    <div><span className="font-semibold text-orange-300">Association loi 1901:</span> Rachat progressif des Communs</div>
+                    <div><span className="font-semibold text-orange-300">Coopérative:</span> Activités économiques</div>
                   </div>
                 </div>
               </div>
