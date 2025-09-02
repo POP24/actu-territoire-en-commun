@@ -24,6 +24,27 @@ const Parrainage = () => {
       />
       <Header />
       
+      {/* Floating App Download Card */}
+      <div className="fixed top-24 right-6 z-40 animate-fade-in">
+        <div className="bg-card/95 backdrop-blur-sm border border-border rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover-scale">
+          <div className="text-center">
+            <h3 className="text-sm font-bold text-foreground mb-3">
+              Télécharger L'App
+            </h3>
+            <div className="bg-white p-2 rounded-lg mb-3">
+              <img 
+                src="/lovable-uploads/08e10928-b084-4884-9874-ade0e7f14da8.png" 
+                alt="QR Code pour télécharger l'application" 
+                className="w-20 h-20 mx-auto"
+              />
+            </div>
+            <p className="text-xs text-muted-foreground">
+              Scannez le QR code
+            </p>
+          </div>
+        </div>
+      </div>
+      
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         {/* Modern Tech Background - Same as homepage */}
