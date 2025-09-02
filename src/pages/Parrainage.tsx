@@ -78,7 +78,7 @@ const Parrainage = () => {
                 1
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                Inscrivez-vous
+                Rejoignez notre application mobile
               </h3>
               <p className="text-muted-foreground text-lg mb-6">
                 Télécharger L'Application Ambassadeur
@@ -129,7 +129,7 @@ const Parrainage = () => {
                 Parrainez
               </h3>
               <p className="text-muted-foreground text-lg mb-6">
-                Partagez votre vision, invitez votre réseau
+                Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
               </p>
               <Dialog>
                 <DialogTrigger asChild>
@@ -169,10 +169,10 @@ const Parrainage = () => {
                 3
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                Choisissez votre répartition
+                Soyez récompensé !
               </h3>
               <p className="text-muted-foreground text-lg mb-6">
-                Commission totale : 5%
+                Choisissez votre répartition entre vous et l'association.
               </p>
               <div className="bg-card rounded-xl p-6 border border-border max-w-sm mx-auto">
                 <div className="flex justify-between text-sm mb-3">
@@ -205,32 +205,6 @@ const Parrainage = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Rejoignez notre application mobile
-                </h3>
-                <p className="text-muted-foreground">
-                  Accédez à votre tableau de bord ambassadeur
-                </p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Suivez vos recommandations
-                </h3>
-                <p className="text-muted-foreground">
-                  Trackez vos parrainages en temps réel
-                </p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  Soyez récompensé !
-                </h3>
-                <p className="text-muted-foreground">
-                  Recevez vos gains automatiquement
-                </p>
-              </div>
-            </div>
             <Button 
               variant="cta-orange"
               size="lg"
