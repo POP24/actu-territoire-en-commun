@@ -205,6 +205,13 @@ const Parrainage = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border">
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/671e188b-74e3-43cc-a4b5-75df69e67f7a.png" 
+                alt="Programme Ambassadeur" 
+                className="w-full max-w-md mx-auto h-auto rounded-xl"
+              />
+            </div>
             <Button 
               variant="cta-orange"
               size="lg"
