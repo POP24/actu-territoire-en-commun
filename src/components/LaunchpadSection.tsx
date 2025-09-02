@@ -93,20 +93,20 @@ const LaunchpadSection = () => {
                     <div className="text-xs bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">⚡ GOUVERNANCE</div>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
-                    <div className="hover-scale cursor-pointer">
-                      <div className="bg-gradient-to-br from-purple-600 to-cyan-500 h-24 rounded-lg mb-2 flex items-center justify-center">
-                        <div className="text-white font-bold">USAGER LOCAL</div>
-                      </div>
-                      <div className="text-xs text-gray-400">Prix libre (min 10€)</div>
-                    </div>
-                    <div className="hover-scale cursor-pointer">
-                      <div className="bg-gradient-to-br from-blue-600 to-purple-500 h-24 rounded-lg mb-2 flex items-center justify-center">
-                        <div className="text-white font-bold">ARCHITECTE</div>
-                      </div>
-                      <div className="text-xs text-gray-400">100€ unique</div>
-                    </div>
-                  </div>
+                   <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
+                     <div className="hover-scale cursor-pointer">
+                       <div className="bg-gradient-to-br from-blue-600 to-blue-700 h-24 rounded-lg mb-2 flex flex-col items-center justify-center">
+                         <div className="text-blue-300 font-bold text-sm mb-1">LOCAL</div>
+                         <div className="text-white font-bold text-xs">A PARTIR DE 10E</div>
+                       </div>
+                     </div>
+                     <div className="hover-scale cursor-pointer">
+                       <div className="bg-gradient-to-br from-green-600 to-green-700 h-24 rounded-lg mb-2 flex flex-col items-center justify-center">
+                         <div className="text-green-300 font-bold text-sm mb-1">ARCHITECTE</div>
+                         <div className="text-white font-bold text-xs">100E</div>
+                       </div>
+                     </div>
+                   </div>
                   
                   <div className="flex justify-between items-center mb-4">
                     <div>
