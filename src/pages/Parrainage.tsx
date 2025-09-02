@@ -216,67 +216,34 @@ const Parrainage = () => {
             </p>
           </div>
           
-          {/* Download Container */}
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
-              <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
-                Téléchargez l'application
-              </h3>
-              
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+          {/* Floating Download Container */}
+          <div className="max-w-md mx-auto">
+            <div className="bg-card rounded-2xl p-8 border border-border shadow-2xl hover:shadow-3xl transition-all duration-300">
+              <div className="text-center space-y-6">
+                {/* CTA Button */}
+                <Button 
+                  variant="cta-orange"
+                  size="lg"
+                  className="w-full rounded-xl px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  TÉLÉCHARGER L'APP
+                </Button>
+                
+                {/* Separator */}
+                <div className="flex items-center">
+                  <div className="flex-1 h-px bg-border"></div>
+                  <span className="px-4 text-muted-foreground text-sm font-medium">ou</span>
+                  <div className="flex-1 h-px bg-border"></div>
+                </div>
+                
                 {/* QR Code */}
                 <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-6 border border-primary/20">
-                  <div className="bg-white rounded-lg p-3 mb-3">
+                  <div className="bg-white rounded-lg p-3">
                     <img 
                       src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
                       alt="QR Code pour télécharger l'application" 
-                      className="w-24 h-24 mx-auto"
+                      className="w-32 h-32 mx-auto"
                     />
-                  </div>
-                  <p className="text-xs text-muted-foreground text-center font-medium">
-                    Scan rapide
-                  </p>
-                </div>
-                
-                {/* Or separator */}
-                <div className="flex items-center">
-                  <span className="text-muted-foreground text-sm font-medium">ou</span>
-                </div>
-                
-                {/* CTA Button */}
-                <div className="flex-1 min-w-0 max-w-xs">
-                  <Button 
-                    variant="cta-orange"
-                    size="lg"
-                    className="w-full rounded-xl px-6 py-4 text-base font-bold shadow-lg hover:shadow-xl transition-all duration-300"
-                  >
-                    TÉLÉCHARGER L'APP
-                  </Button>
-                  
-                  {/* Store badges */}
-                  <div className="flex justify-center gap-3 mt-4">
-                    <a 
-                      href="#" 
-                      className="transition-transform hover:scale-105"
-                      aria-label="Télécharger sur l'App Store"
-                    >
-                      <img 
-                        src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
-                        alt="App Store" 
-                        className="h-8 w-auto"
-                      />
-                    </a>
-                    <a 
-                      href="#" 
-                      className="transition-transform hover:scale-105"
-                      aria-label="Google Play"
-                    >
-                      <img 
-                        src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
-                        alt="Google Play" 
-                        className="h-8 w-auto"
-                      />
-                    </a>
                   </div>
                 </div>
               </div>
