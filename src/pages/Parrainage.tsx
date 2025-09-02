@@ -160,47 +160,31 @@ const Parrainage = () => {
               <p className="text-muted-foreground text-lg mb-8 font-medium">
                 Choisissez votre répartition : 2.5% pour vous ou 2.5% pour l'association
               </p>
-              <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-4 border border-blue-400/30 max-w-sm mx-auto shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <span className={`text-sm font-semibold transition-all duration-300 ${commissionSplit === 2.5 ? 'text-white' : 'text-blue-100'}`}>
-                      Vous
-                    </span>
-                    {commissionSplit === 2.5 && (
-                      <span className="ml-2 text-xs font-bold text-white bg-white/20 px-2 py-1 rounded">
-                        2.5%
-                      </span>
-                    )}
-                  </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-200 max-w-md mx-auto shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center justify-center space-x-1 bg-gray-100 rounded-lg p-1">
+                  {/* Option Vous */}
+                  <button
+                    onClick={() => setCommissionSplit(2.5)}
+                    className={`flex-1 py-3 px-6 rounded-md text-sm font-semibold transition-all duration-300 ${
+                      commissionSplit === 2.5 
+                        ? 'bg-white text-gray-800 shadow-md' 
+                        : 'text-gray-600 hover:text-gray-800'
+                    }`}
+                  >
+                    Vous - 2.5%
+                  </button>
                   
-                  {/* Toggle Switch - Design moitié-moitié avec curseur fixe */}
-                  <div className="relative mx-3">
-                    <div className="w-16 h-6 rounded-full overflow-hidden cursor-pointer transition-all duration-300 border-2 border-white/30" 
-                         onClick={() => setCommissionSplit(commissionSplit === 2.5 ? 0 : 2.5)}>
-                      {/* Moitié gauche */}
-                      <div className={`absolute left-0 top-0 w-1/2 h-full transition-all duration-500 ${
-                        commissionSplit === 2.5 ? 'bg-orange-400' : 'bg-white/20'
-                      }`}></div>
-                      {/* Moitié droite */}
-                      <div className={`absolute right-0 top-0 w-1/2 h-full transition-all duration-500 ${
-                        commissionSplit === 0 ? 'bg-green-400' : 'bg-white/20'
-                      }`}></div>
-                      {/* Curseur fixe au centre */}
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1 h-4 bg-white rounded-full shadow-md">
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center">
-                    <span className={`text-sm font-semibold transition-all duration-300 ${commissionSplit === 2.5 ? 'text-blue-100' : 'text-white'}`}>
-                      Asso
-                    </span>
-                    {commissionSplit === 0 && (
-                      <span className="ml-2 text-xs font-bold text-white bg-white/20 px-2 py-1 rounded">
-                        2.5%
-                      </span>
-                    )}
-                  </div>
+                  {/* Option Asso */}
+                  <button
+                    onClick={() => setCommissionSplit(0)}
+                    className={`flex-1 py-3 px-6 rounded-md text-sm font-semibold transition-all duration-300 ${
+                      commissionSplit === 0 
+                        ? 'bg-white text-gray-800 shadow-md' 
+                        : 'text-gray-600 hover:text-gray-800'
+                    }`}
+                  >
+                    Asso - 2.5%
+                  </button>
                 </div>
               </div>
             </div>
