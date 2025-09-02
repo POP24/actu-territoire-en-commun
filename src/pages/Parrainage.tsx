@@ -85,14 +85,35 @@ const Parrainage = () => {
               <Button 
                 variant="cta-orange"
                 size="sm"
-                className="rounded-xl px-6 py-2 text-sm font-bold mb-2"
+                className="rounded-xl px-6 py-2 text-sm font-bold mb-4"
               >
                 DEVENIR AMBASSADEUR
               </Button>
-              <div className="flex justify-center gap-2 text-xs text-muted-foreground">
-                <span>📱 App Store</span>
-                <span>•</span>  
-                <span>🤖 Play Store</span>
+              
+              {/* App Download Buttons */}
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
+                <a 
+                  href="#" 
+                  className="block transition-transform hover:scale-105"
+                  aria-label="Télécharger sur l'App Store"
+                >
+                  <img 
+                    src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
+                    alt="Télécharger dans l'App Store" 
+                    className="h-10 w-auto"
+                  />
+                </a>
+                <a 
+                  href="#" 
+                  className="block transition-transform hover:scale-105"
+                  aria-label="L'obtenir sur Google Play"
+                >
+                  <img 
+                    src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
+                    alt="L'obtenir sur Google Play" 
+                    className="h-10 w-auto"
+                  />
+                </a>
               </div>
             </div>
 
