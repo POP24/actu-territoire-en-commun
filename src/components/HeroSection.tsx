@@ -163,7 +163,7 @@ useEffect(() => {
                 <div className="grid grid-cols-3 gap-0 p-4">
                   <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-l-xl border-r border-white/20 text-center group hover:bg-white/25 transition-all duration-300">
                     <div className="text-white font-bold text-xs sm:text-sm mb-1">LIEUX COMMUNS</div>
-                    <div className="text-xl sm:text-2xl md:text-3xl font-black bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:via-blue-400 group-hover:to-cyan-400 transition-all duration-300 drop-shadow-lg">1000+</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-black bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent group-hover:from-blue-500 group-hover:via-blue-600 group-hover:to-blue-700 transition-all duration-300 drop-shadow-lg">1000+</div>
                   </div>
                   <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 border-r border-white/20 text-center group hover:bg-white/25 transition-all duration-300">
                     <div className="text-white font-bold text-xs sm:text-sm mb-1">TRÉSOR COLLECTIF</div>
@@ -172,9 +172,9 @@ useEffect(() => {
                   <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-r-xl text-center group hover:bg-white/25 transition-all duration-300">
                     <div className="text-white font-bold text-xs sm:text-sm mb-1">GOUVERNANCE</div>
                     <div className="text-sm sm:text-base md:text-lg font-bold drop-shadow-lg">
-                      <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:via-blue-400 group-hover:to-cyan-400 transition-all duration-300 block sm:inline">LOCALE</span>
+                      <span className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent group-hover:from-blue-500 group-hover:via-blue-600 group-hover:to-blue-700 transition-all duration-300 block sm:inline">LOCALE</span>
                       <span className="hidden sm:inline text-white/80 mx-1">/</span>
-                      <span className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 bg-clip-text text-transparent group-hover:from-orange-300 group-hover:via-red-400 group-hover:to-pink-400 transition-all duration-300 block sm:inline">GLOBAL</span>
+                      <span className="bg-gradient-to-br from-green-600 via-green-700 to-green-800 bg-clip-text text-transparent group-hover:from-green-500 group-hover:via-green-600 group-hover:to-green-700 transition-all duration-300 block sm:inline">NATIONALE</span>
                     </div>
                   </div>
 
