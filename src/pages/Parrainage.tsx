@@ -204,7 +204,7 @@ const Parrainage = () => {
       </section>
 
       {/* Floating QR Code */}
-      <div className="fixed top-32 right-6 z-40">
+      <div className="fixed top-32 right-6 z-40 hidden md:block">
         <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-4 border border-blue-400/30 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
           <div className="text-center mb-3">
             <p className="text-xs font-semibold text-white">Télécharger l'app</p>
