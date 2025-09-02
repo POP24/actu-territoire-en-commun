@@ -57,16 +57,16 @@ const LaunchpadSection = () => {
                     </div>
                   </div>
                   
-                  <div className="flex justify-between items-center mb-4">
-                    <div>
-                      <div className="text-2xl font-bold text-primary">0%</div>
-                      <div className="text-xs text-gray-500">FINANCÉ</div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-sm font-semibold">€850,000 / €2,650,000</div>
-                      <div className="text-xs text-gray-500">Objectif</div>
-                    </div>
-                  </div>
+                   <div className="flex justify-between items-center mb-4">
+                     <div>
+                       <div className="text-2xl font-bold text-primary">0%</div>
+                       <div className="text-xs text-gray-500">FINANCÉ</div>
+                     </div>
+                     <div className="text-right">
+                       <div className="text-sm font-semibold">€0 / €2,650,000</div>
+                       <div className="text-xs text-gray-500">Objectif</div>
+                     </div>
+                   </div>
                   
                   <button className="w-full btn-cta-orange py-3 rounded-lg font-semibold">
                     INVESTIR
@@ -85,39 +85,39 @@ const LaunchpadSection = () => {
               </h3>
               <p className="text-gray-300 mb-6">Rejoignez. Votez. Décidez.</p>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 h-fit">
-                {/* Mock interface for Membership */}
-                <div className="bg-gray-900 rounded-xl p-4 mb-4 border border-cyan-500/30">
-                  <div className="flex justify-between items-center mb-4">
-                    <h4 className="font-semibold text-white">🌐 ADHÉSION ASSOCIATIVE</h4>
-                    <div className="text-xs bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">⚡ GOUVERNANCE</div>
-                  </div>
-                  
+               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 h-fit mt-4">
+                 {/* Mock interface for Membership */}
+                 <div className="bg-gray-900 rounded-xl p-4 mb-4 border border-cyan-500/30">
+                   <div className="flex justify-between items-center mb-4">
+                     <h4 className="font-semibold text-white">🌐 ADHÉSION ASSOCIATIVE</h4>
+                     <div className="text-xs bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">⚡ GOUVERNANCE</div>
+                   </div>
+                   
                    <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
                      <div className="hover-scale cursor-pointer">
-                       <div className="bg-gradient-to-br from-blue-600 to-blue-700 h-24 rounded-lg mb-2 flex flex-col items-center justify-center">
-                         <div className="text-white font-bold text-sm mb-1">LOCAL</div>
-                         <div className="text-white font-bold text-xs">À PARTIR DE 10€</div>
+                       <div className="bg-gradient-to-br from-blue-600 to-blue-700 h-28 rounded-lg mb-2 flex flex-col items-center justify-center">
+                         <div className="text-white font-bold text-base mb-1">LOCAL</div>
+                         <div className="text-white font-bold text-sm">À PARTIR DE 10€</div>
                        </div>
                      </div>
                      <div className="hover-scale cursor-pointer">
-                       <div className="bg-gradient-to-br from-green-600 to-green-700 h-24 rounded-lg mb-2 flex flex-col items-center justify-center">
-                         <div className="text-white font-bold text-sm mb-1">ARCHITECTE</div>
-                         <div className="text-white font-bold text-xs">100€</div>
+                       <div className="bg-gradient-to-br from-green-600 to-green-700 h-28 rounded-lg mb-2 flex flex-col items-center justify-center">
+                         <div className="text-white font-bold text-base mb-1">ARCHITECTE</div>
+                         <div className="text-white font-bold text-sm">100€</div>
                        </div>
                      </div>
                    </div>
                   
-                  <div className="flex justify-between items-center mb-4">
-                    <div>
-                      <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">0%</div>
-                      <div className="text-xs text-gray-400">SOUSCRIT</div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-sm font-semibold text-white">1,247 / 10,000</div>
-                      <div className="text-xs text-gray-400">Members</div>
-                    </div>
-                  </div>
+                   <div className="flex justify-between items-center mb-4">
+                     <div>
+                       <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">0%</div>
+                       <div className="text-xs text-gray-400">SOUSCRIT</div>
+                     </div>
+                     <div className="text-right">
+                       <div className="text-sm font-semibold text-white">0 / 10,000</div>
+                       <div className="text-xs text-gray-400">Members</div>
+                     </div>
+                   </div>
                   
                   <button className="w-full btn-cta-blue py-3 rounded-lg font-semibold">
                     ADHÉRER
