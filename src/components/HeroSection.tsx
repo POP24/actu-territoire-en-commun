@@ -188,9 +188,14 @@ useEffect(() => {
 
             {/* Left: Interactive Real Map */}
             <div className="relative">
+              {/* Bandeau RÉSEAU EN CONSTRUCTION */}
+              <div className="bg-gradient-to-r from-white via-gray-100 to-white rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 shadow-lg border-2 border-gray-300">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-gray-900 drop-shadow-lg" style={{ textShadow: '1px 1px 2px rgba(255,255,255,0.7)' }}>
+                  RÉSEAU EN CONSTRUCTION
+                </h2>
+              </div>
+              
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 sm:p-6 border border-white/20">
-                <h3 className="text-white font-bold text-base sm:text-lg mb-3 sm:mb-4 text-center">RÉSEAU EN CONSTRUCTION</h3>
-
                 {/* Real France Map - Slightly increased height */}
                 <div className="relative w-full h-52 sm:h-64 md:h-80 bg-gray-900 rounded-2xl overflow-hidden">
                   <iframe
