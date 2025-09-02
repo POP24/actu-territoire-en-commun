@@ -79,15 +79,30 @@ const Parrainage = () => {
                 Téléchargez l'Application Ambassadeur
               </p>
               
-              {/* CTA aligné */}
-              <div className="mt-auto">
-                <Button 
-                  variant="default"
-                  size="lg"
-                  className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              {/* App Download Buttons */}
+              <div className="mt-auto flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a 
+                  href="#" 
+                  className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
+                  aria-label="Télécharger sur l'App Store"
                 >
-                  TÉLÉCHARGER L'APP
-                </Button>
+                  <img 
+                    src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
+                    alt="Télécharger dans l'App Store" 
+                    className="h-12 w-auto"
+                  />
+                </a>
+                <a 
+                  href="#" 
+                  className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
+                  aria-label="L'obtenir sur Google Play"
+                >
+                  <img 
+                    src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
+                    alt="L'obtenir sur Google Play" 
+                    className="h-12 w-auto"
+                  />
+                </a>
               </div>
             </div>
 
