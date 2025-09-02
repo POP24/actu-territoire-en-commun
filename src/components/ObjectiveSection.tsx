@@ -311,12 +311,14 @@ const ObjectiveSection = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-blue-600/5 to-blue-700/5 rounded-3xl blur-3xl"></div>
             <div className="relative max-w-4xl mx-auto text-center">
               
-              {/* Title */}
+              {/* Title with same style as L'HEURE EST VENUE */}
               <div className="mb-12">
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
-                  <span className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent">RELIONS</span>
-                  <span className="text-foreground"> - NOUS.</span>
+                <div className="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-6 rounded-full"></div>
+                <h3 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-wide">
+                  <span className="text-foreground drop-shadow-sm">RELIONS</span>{" "}
+                  <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">- NOUS</span>
                 </h3>
+                <div className="w-24 h-1 bg-gradient-to-r from-accent via-secondary to-primary mx-auto rounded-full"></div>
               </div>
               
               {/* Central Message Card */}
