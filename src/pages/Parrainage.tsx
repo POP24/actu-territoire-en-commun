@@ -203,19 +203,25 @@ const Parrainage = () => {
         </div>
       </section>
 
+      {/* Floating QR Code */}
+      <div className="fixed top-6 right-6 z-50">
+        <div className="bg-white/95 backdrop-blur-lg rounded-2xl p-4 border border-primary/20 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+          <div className="text-center mb-3">
+            <p className="text-xs font-semibold text-foreground">Télécharger l'app</p>
+          </div>
+          <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-lg p-2">
+            <img 
+              src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
+              alt="QR Code pour télécharger l'application" 
+              className="w-20 h-20 mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* CTA Section */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Travaillons ensemble
-            </h2>
-            <p className="text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
-              Rejoignez notre communauté d'ambassadeurs et développons ensemble l'écosystème des communs
-            </p>
-          </div>
-          
+        <div className="container mx-auto px-4">          
           {/* Floating Download Container */}
           <div className="max-w-md mx-auto">
             <div className="bg-card rounded-2xl p-8 border border-border shadow-2xl hover:shadow-3xl transition-all duration-300">
