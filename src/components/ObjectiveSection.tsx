@@ -210,14 +210,8 @@ const ObjectiveSection = () => {
                       <span className="text-base md:text-lg font-black text-blue-600 dark:text-blue-400">RODÉS</span>
                     </div>
                     
-                    {/* Nouveau separator */}
-                    <div className="flex items-center justify-center space-x-3 py-2 md:py-3">
-                      <div className="w-8 md:w-12 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
-                      <span className="text-xs md:text-sm font-bold text-blue-600 dark:text-blue-400">FINANCEMENT PARTICIPATIF</span>
-                      <div className="w-8 md:w-12 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
-                    </div>
-                    
-                    <div className="flex justify-between items-center bg-green-50/80 dark:bg-green-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-green-200/50 dark:border-green-800/50">
+                    {/* Financement participatif */}
+                    <div className="flex justify-between items-center bg-green-50/80 dark:bg-green-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-green-200/50 dark:border-green-800/50 mt-3">
                       <span className="text-green-800 dark:text-green-200 font-semibold text-sm md:text-base">Financement participatif</span>
                       <span className="text-lg md:text-2xl font-black text-green-600 dark:text-green-400">2,35 Mds€</span>
                     </div>
@@ -226,14 +220,8 @@ const ObjectiveSection = () => {
                       <span className="text-lg md:text-2xl font-black text-green-600 dark:text-green-400">20K</span>
                     </div>
                     
-                    {/* Nouveau separator */}
-                    <div className="flex items-center justify-center space-x-3 py-2 md:py-3">
-                      <div className="w-8 md:w-12 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent"></div>
-                      <span className="text-xs md:text-sm font-bold text-purple-600 dark:text-purple-400">SOLUTIONS LIBRES</span>
-                      <div className="w-8 md:w-12 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent"></div>
-                    </div>
-                    
-                    <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
+                    {/* Autres données */}
+                    <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50 mt-3">
                       <span className="text-purple-800 dark:text-purple-200 font-semibold text-sm md:text-base">Logiciels libres</span>
                       <span className="text-lg md:text-2xl font-black text-purple-600 dark:text-purple-400">500K+</span>
                     </div>
