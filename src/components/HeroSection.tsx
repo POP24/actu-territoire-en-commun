@@ -69,7 +69,7 @@ useEffect(() => {
 
 
   const [animatedPoints, setAnimatedPoints] = useState<number[]>([]);
-  const [treasureProgress, setTreasuryProgress] = useState(65);
+  const [treasureProgress, setTreasuryProgress] = useState(0);
   const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
   const [isSelectionModalOpen, setIsSelectionModalOpen] = useState(false);
   const [membershipType, setMembershipType] = useState<"local" | "architect">("local");
