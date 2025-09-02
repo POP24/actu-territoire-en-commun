@@ -50,7 +50,7 @@ const FundingFlowSection = () => {
                 </div>
 
                 <div className="bg-black/50 rounded-xl p-2 sm:p-3 border border-cyan-500/30 hover:bg-black/70 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 cursor-pointer group">
-                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm group-hover:text-cyan-200 transition-colors duration-300">2️⃣ Des professionnels pour fédérer chaque territoire</div>
+                  <div className="text-cyan-300 font-semibold mb-1 text-xs sm:text-sm group-hover:text-cyan-200 transition-colors duration-300">2️⃣ Des personnes pour fédérer chaque territoire</div>
                   <ul className="text-cyan-100 text-xs space-y-1">
                     <li className="group-hover:text-white transition-colors duration-300">• Connaisseurs du terrain local</li>
                     <li className="group-hover:text-white transition-colors duration-300">• Rémunérés par le trésor commun</li>
