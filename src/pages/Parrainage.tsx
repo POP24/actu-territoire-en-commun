@@ -209,8 +209,8 @@ const Parrainage = () => {
           <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border">
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/671e188b-74e3-43cc-a4b5-75df69e67f7a.png" 
-                alt="Programme Ambassadeur" 
+                src="/lovable-uploads/4be2bc40-1a7e-4e11-8342-14194ed6f39f.png" 
+                alt="Application mobile La Suite du Monde" 
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto h-auto rounded-xl"
               />
             </div>
@@ -219,7 +219,7 @@ const Parrainage = () => {
               size="lg"
               className="rounded-xl px-8 py-4 text-lg font-bold"
             >
-              DEVENIR AMBASSADEUR
+              TÉLÉCHARGER L'APPLICATION
             </Button>
           </div>
         </div>
