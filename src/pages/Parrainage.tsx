@@ -66,9 +66,9 @@ const Parrainage = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Étape 1 */}
-            <div className="text-center">
+          <div className="flex justify-center max-w-6xl mx-auto">
+            {/* Étape 1 - Centrée */}
+            <div className="text-center max-w-md">
               <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 1
               </div>
@@ -103,100 +103,6 @@ const Parrainage = () => {
                     className="h-12 w-auto"
                   />
                 </a>
-              </div>
-            </div>
-
-            {/* Étape 2 */}
-            <div className="text-center">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                2
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Parrainez
-              </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium">
-                Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
-              </p>
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button 
-                    variant="default"
-                    size="lg"
-                    className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                  >
-                    INVITER MON RÉSEAU
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-md">
-                  <DialogHeader>
-                    <DialogTitle>Invitation à votre réseau local</DialogTitle>
-                  </DialogHeader>
-                  <div className="space-y-4">
-                    <p className="text-sm text-muted-foreground">
-                      Contactez-moi, je veux vous mettre en relation avec La Suite du Monde
-                    </p>
-                    <div className="space-y-3">
-                      <Input placeholder="Votre nom" />
-                      <Input placeholder="Email" type="email" />
-                      <Input placeholder="Téléphone" type="tel" />
-                      <Textarea placeholder="Votre message..." />
-                    </div>
-                    <Button className="w-full">
-                      ENVOYER L'INVITATION
-                    </Button>
-                  </div>
-                </DialogContent>
-              </Dialog>
-            </div>
-
-            {/* Étape 3 */}
-            <div className="text-center">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                3
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Soyez récompensé !
-              </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium">
-                Choisissez votre répartition : 2.5% pour vous ou 2.5% pour l'association
-              </p>
-              <div className="bg-card rounded-xl p-6 border border-border max-w-xs mx-auto shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="mb-4">
-                  <div className="flex items-center justify-between mb-3 text-xs font-semibold">
-                    <span className={`transition-all duration-300 ${commissionSplit === 2.5 ? 'text-orange-500' : 'text-muted-foreground'}`}>
-                      Pour vous : 2.5%
-                    </span>
-                    <span className={`transition-all duration-300 ${commissionSplit === 2.5 ? 'text-muted-foreground' : 'text-blue-500'}`}>
-                      Pour l'asso : 2.5%
-                    </span>
-                  </div>
-                  
-                  {/* Compact Toggle Switch */}
-                  <div className="relative mx-auto w-32">
-                    <div className="w-full h-8 bg-gradient-to-r from-orange-100 to-blue-100 rounded-full p-1 cursor-pointer transition-all duration-300" 
-                         onClick={() => setCommissionSplit(commissionSplit === 2.5 ? 0 : 2.5)}>
-                      <div className={`h-6 w-1/2 rounded-full transition-all duration-500 ease-out transform shadow-md ${
-                        commissionSplit === 2.5 
-                          ? 'translate-x-0 bg-gradient-to-r from-orange-400 to-orange-500' 
-                          : 'translate-x-full bg-gradient-to-r from-blue-400 to-blue-500'
-                      }`}>
-                        <div className="h-full w-full rounded-full flex items-center justify-center">
-                          <div className="w-4 h-4 bg-white rounded-full shadow-sm"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-3 text-center">
-                    <p className={`text-sm font-semibold transition-all duration-300 ${
-                      commissionSplit === 2.5 
-                        ? 'text-orange-500' 
-                        : 'text-blue-500'
-                    }`}>
-                      {commissionSplit === 2.5 ? 'Vous : 2.5%' : 'Asso : 2.5%'}
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
