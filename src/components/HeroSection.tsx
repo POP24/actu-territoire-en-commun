@@ -223,31 +223,37 @@ useEffect(() => {
                 <div className="text-center mb-4 sm:mb-6">
                   <div className="border-b-2 border-gray-200 pb-3 sm:pb-4 mb-4 sm:mb-6">
                     <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
-                      {/* Usager Local */}
+                      {/* Local */}
                       <div className="text-center hover-scale cursor-pointer flex flex-col h-full">
-                        <h3 className="text-base sm:text-lg md:text-xl font-black text-gray-900 mb-1 sm:mb-2">USAGER LOCAL</h3>
-                        <div className="text-2xl sm:text-3xl md:text-4xl font-black text-blue-700 mb-1">Prix Libre</div>
-                        <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">à partir de 10€</div>
+                        <h3 className="text-base sm:text-lg md:text-xl font-black text-gray-900 mb-2 sm:mb-3">LOCAL</h3>
+                        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-xl p-3 sm:p-4 mb-3 sm:mb-4 shadow-inner border-2 border-blue-200/50">
+                          <div className="text-lg sm:text-xl md:text-2xl font-black text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)' }}>
+                            À PARTIR DE 10€
+                          </div>
+                        </div>
                         <Button
                           onClick={() => handleDirectAdherClick("local")}
-                          className="w-full btn-cta-blue font-semibold text-white text-xs sm:text-sm md:text-base px-2 sm:px-4 py-2 sm:py-3"
+                          className="w-full btn-cta-blue font-semibold text-white text-xs sm:text-sm md:text-base px-2 sm:px-4 py-2 sm:py-3 mt-auto"
                         >
                           <span className="hidden sm:inline">ADHÉSION LOCALE</span>
-                          <span className="sm:hidden">LOCALE</span>
+                          <span className="sm:hidden">ADHÉRER</span>
                         </Button>
                       </div>
 
-                      {/* Architecte Réseau */}
+                      {/* Architecte */}
                       <div className="text-center border-l border-gray-200 pl-2 sm:pl-3 md:pl-6 lg:pl-8 hover-scale cursor-pointer flex flex-col h-full">
-                        <h3 className="text-base sm:text-lg md:text-xl font-black text-gray-900 mb-1 sm:mb-2">ARCHITECTE RÉSEAU</h3>
-                        <div className="text-3xl sm:text-4xl font-black text-green-brand mb-1">100€</div>
-                        <div className="text-sm sm:text-base text-gray-600 mb-2 sm:mb-4 flex-grow">10 000 adhésions disponible</div>
+                        <h3 className="text-base sm:text-lg md:text-xl font-black text-gray-900 mb-2 sm:mb-3">ARCHITECTE</h3>
+                        <div className="bg-gradient-to-br from-green-600 via-green-700 to-green-800 rounded-xl p-3 sm:p-4 mb-3 sm:mb-4 shadow-inner border-2 border-green-200/50">
+                          <div className="text-2xl sm:text-3xl md:text-4xl font-black text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)' }}>
+                            100€
+                          </div>
+                        </div>
                         <Button
                           onClick={() => handleDirectAdherClick("architect")}
-                          className="w-full btn-cta-green font-semibold text-white text-xs sm:text-sm md:text-base px-2 sm:px-4 py-2 sm:py-3"
+                          className="w-full btn-cta-green font-semibold text-white text-xs sm:text-sm md:text-base px-2 sm:px-4 py-2 sm:py-3 mt-auto"
                         >
                           <span className="hidden sm:inline">ADHÉSION ARCHITECTE</span>
-                          <span className="sm:hidden">ARCHITECTE</span>
+                          <span className="sm:hidden">ADHÉRER</span>
                         </Button>
                       </div>
                     </div>
