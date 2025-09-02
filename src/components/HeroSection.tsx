@@ -174,7 +174,7 @@ useEffect(() => {
                     <div className="text-sm sm:text-base md:text-lg font-bold drop-shadow-lg">
                       <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:via-blue-400 group-hover:to-cyan-400 transition-all duration-300 block sm:inline">LOCALE</span>
                       <span className="hidden sm:inline text-white/80 mx-1">/</span>
-                      <span className="bg-gradient-to-br from-green-600 via-green-700 to-green-800 bg-clip-text text-transparent group-hover:from-green-500 group-hover:via-green-600 group-hover:to-green-700 transition-all duration-300 block sm:inline">NATIONALE</span>
+                      <span className="bg-gradient-to-br from-green-500 via-green-600 to-green-700 bg-clip-text text-transparent group-hover:from-green-400 group-hover:via-green-500 group-hover:to-green-600 transition-all duration-300 block sm:inline">NATIONALE</span>
                     </div>
                   </div>
 
