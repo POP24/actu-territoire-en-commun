@@ -160,35 +160,35 @@ const Parrainage = () => {
               <p className="text-muted-foreground text-lg mb-8 font-medium">
                 Choisissez votre répartition : 2.5% pour vous ou 2.5% pour l'association
               </p>
-              <div className="bg-card rounded-xl p-6 border border-border max-w-xs mx-auto shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="mb-4">
-                  <div className="flex items-center justify-between mb-3 text-xs font-semibold">
+              <div className="bg-card rounded-lg p-3 border border-border max-w-[160px] mx-auto shadow-sm hover:shadow-md transition-all duration-300">
+                <div className="mb-2">
+                  <div className="flex items-center justify-between mb-2 text-[10px] font-semibold">
                     <span className={`transition-all duration-300 ${commissionSplit === 2.5 ? 'text-orange-500' : 'text-muted-foreground'}`}>
-                      Pour vous : 2.5%
+                      Vous : 2.5%
                     </span>
                     <span className={`transition-all duration-300 ${commissionSplit === 2.5 ? 'text-muted-foreground' : 'text-blue-500'}`}>
-                      Pour l'asso : 2.5%
+                      Asso : 2.5%
                     </span>
                   </div>
                   
                   {/* Compact Toggle Switch */}
-                  <div className="relative mx-auto w-32">
-                    <div className="w-full h-8 bg-gradient-to-r from-orange-100 to-blue-100 rounded-full p-1 cursor-pointer transition-all duration-300" 
+                  <div className="relative mx-auto w-20">
+                    <div className="w-full h-5 bg-gradient-to-r from-orange-100 to-blue-100 rounded-full p-0.5 cursor-pointer transition-all duration-300" 
                          onClick={() => setCommissionSplit(commissionSplit === 2.5 ? 0 : 2.5)}>
-                      <div className={`h-6 w-1/2 rounded-full transition-all duration-500 ease-out transform shadow-md ${
+                      <div className={`h-4 w-1/2 rounded-full transition-all duration-500 ease-out transform shadow-sm ${
                         commissionSplit === 2.5 
                           ? 'translate-x-0 bg-gradient-to-r from-orange-400 to-orange-500' 
                           : 'translate-x-full bg-gradient-to-r from-blue-400 to-blue-500'
                       }`}>
                         <div className="h-full w-full rounded-full flex items-center justify-center">
-                          <div className="w-4 h-4 bg-white rounded-full shadow-sm"></div>
+                          <div className="w-2 h-2 bg-white rounded-full shadow-sm"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="mt-3 text-center">
-                    <p className={`text-sm font-semibold transition-all duration-300 ${
+                  <div className="mt-2 text-center">
+                    <p className={`text-[10px] font-semibold transition-all duration-300 ${
                       commissionSplit === 2.5 
                         ? 'text-orange-500' 
                         : 'text-blue-500'
