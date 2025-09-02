@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 interface NavLinksProps {
   onLinkClick?: () => void;
@@ -14,6 +14,8 @@ const navItems = [
 ];
 
 const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
+  const location = useLocation();
+  
   const baseClasses = isMobile 
     ? "block w-full py-4 text-xl font-bold transition-colors duration-300 text-center"
     : "text-sm lg:text-base font-bold transition-all duration-300 relative nav-link";
@@ -21,6 +23,11 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   const hoverClasses = isMobile 
     ? "hover:bg-primary/10 rounded-xl px-4 py-3 border-2 border-transparent hover:border-primary/20"
     : "hover:bg-primary/10 hover:text-primary px-3 py-2 rounded-lg";
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    onLinkClick?.();
+  };
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -33,6 +40,9 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   const handleClick = (item: any) => {
     if (item.to.startsWith('#')) {
       scrollToSection(item.to.replace('#', ''));
+    } else if (item.to === "/" && location.pathname === "/") {
+      // Si on est déjà sur la homepage et qu'on clique sur "L'Association", remonter en haut
+      scrollToTop();
     } else {
       onLinkClick?.();
     }
@@ -57,7 +67,15 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
           <NavLink
             key={item.to}
             to={item.to}
-            onClick={onLinkClick}
+            onClick={(e) => {
+              if (item.to === "/" && location.pathname === "/") {
+                // Si on est déjà sur la homepage et qu'on clique sur "L'Association", remonter en haut
+                e.preventDefault();
+                scrollToTop();
+              } else {
+                onLinkClick?.();
+              }
+            }}
             className={({ isActive }) => `${baseClasses} ${hoverClasses} ${
               isActive && item.to !== "/" 
                 ? isMobile ? "text-primary bg-primary/10 border-primary/20" : "text-primary bg-primary/10"
