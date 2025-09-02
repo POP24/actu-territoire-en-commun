@@ -10,11 +10,6 @@ import { useState } from "react";
 
 const Parrainage = () => {
   const [commissionSplit, setCommissionSplit] = useState(2.5);
-  
-  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = parseFloat(e.target.value);
-    setCommissionSplit(value);
-  };
 
   return (
     <div className="min-h-screen">
@@ -163,29 +158,45 @@ const Parrainage = () => {
                 Soyez récompensé !
               </h3>
               <p className="text-muted-foreground text-lg mb-8 font-medium">
-                Choisissez votre répartition entre vous et l'association.
+                Choisissez votre répartition : 2.5% pour vous ou 2.5% pour l'association
               </p>
               <div className="bg-card rounded-xl p-8 border border-border max-w-sm mx-auto shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="flex justify-between text-sm mb-4 font-semibold">
-                  <span className="text-primary">
-                    Pour vous : {commissionSplit.toFixed(1)}%
-                  </span>
-                  <span className="text-muted-foreground">
-                    Pour l'asso : {(5 - commissionSplit).toFixed(1)}%
-                  </span>
+                <div className="mb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className={`text-sm font-bold transition-all duration-300 ${commissionSplit === 2.5 ? 'text-orange-500 scale-110' : 'text-muted-foreground'}`}>
+                      Pour vous : 2.5%
+                    </span>
+                    <span className={`text-sm font-bold transition-all duration-300 ${commissionSplit === 2.5 ? 'text-muted-foreground' : 'text-blue-500 scale-110'}`}>
+                      Pour l'asso : 2.5%
+                    </span>
+                  </div>
+                  
+                  {/* Custom Toggle Switch */}
+                  <div className="relative">
+                    <div className="w-full h-12 bg-gradient-to-r from-orange-100 to-blue-100 rounded-full p-1 cursor-pointer transition-all duration-300" 
+                         onClick={() => setCommissionSplit(commissionSplit === 2.5 ? 0 : 2.5)}>
+                      <div className={`h-10 w-1/2 rounded-full transition-all duration-500 ease-out transform shadow-lg ${
+                        commissionSplit === 2.5 
+                          ? 'translate-x-0 bg-gradient-to-r from-orange-400 to-orange-500' 
+                          : 'translate-x-full bg-gradient-to-r from-blue-400 to-blue-500'
+                      }`}>
+                        <div className="h-full w-full rounded-full flex items-center justify-center">
+                          <div className="w-6 h-6 bg-white rounded-full shadow-md"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-4 text-center">
+                    <p className={`text-lg font-bold transition-all duration-300 ${
+                      commissionSplit === 2.5 
+                        ? 'text-orange-500' 
+                        : 'text-blue-500'
+                    }`}>
+                      {commissionSplit === 2.5 ? 'Vous recevez 2.5%' : 'L\'association reçoit 2.5%'}
+                    </p>
+                  </div>
                 </div>
-                <input
-                  type="range"
-                  min="1"
-                  max="4"
-                  step="0.1"
-                  value={commissionSplit}
-                  onChange={handleSliderChange}
-                  className="w-full h-3 bg-muted rounded-lg appearance-none cursor-pointer slider-thumb transition-all duration-300"
-                />
-                <p className="text-xs text-muted-foreground mt-3 text-center font-medium">
-                  Minimum 1% pour l'association
-                </p>
               </div>
             </div>
           </div>
@@ -200,7 +211,7 @@ const Parrainage = () => {
               <img 
                 src="/lovable-uploads/671e188b-74e3-43cc-a4b5-75df69e67f7a.png" 
                 alt="Programme Ambassadeur" 
-                className="w-full max-w-md mx-auto h-auto rounded-xl"
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto h-auto rounded-xl"
               />
             </div>
             <Button 
