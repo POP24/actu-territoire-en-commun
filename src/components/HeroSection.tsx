@@ -155,7 +155,7 @@ useEffect(() => {
               {/* Conteneur avec liseret OBJECTIFS */}
               <div className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden">
                 {/* Liseret OBJECTIFS */}
-                <div className="bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-500 text-white text-center py-0.5 px-4">
+                <div className="bg-gradient-to-r from-blue-600 via-gray-600 to-gray-800 text-white text-center py-0.5 px-4">
                   <span className="font-bold text-xs tracking-wider">OBJECTIFS</span>
                 </div>
 
@@ -190,7 +190,7 @@ useEffect(() => {
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 sm:p-6 border border-white/20">
                 {/* Bandeau RÉSEAU EN CONSTRUCTION */}
-                <div className="bg-gradient-to-r from-white via-gray-100 to-white rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 shadow-lg border-2 border-gray-300">
+                <div className="bg-gradient-to-r from-white via-gray-100 to-white rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 shadow-lg border-2 border-gray-300 text-center">
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-gray-900 drop-shadow-lg" style={{ textShadow: '1px 1px 2px rgba(255,255,255,0.7)' }}>
                     RÉSEAU EN CONSTRUCTION
                   </h2>
