@@ -216,111 +216,70 @@ const Parrainage = () => {
             </p>
           </div>
           
-          {/* Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
-            {/* Left: Download Section */}
-            <div className="space-y-8">
-              <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
-                <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
-                  Téléchargez l'application
-                </h3>
+          {/* Download Container */}
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-card rounded-2xl p-8 border border-border shadow-lg">
+              <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
+                Téléchargez l'application
+              </h3>
+              
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+                {/* QR Code */}
+                <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-6 border border-primary/20">
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <img 
+                      src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
+                      alt="QR Code pour télécharger l'application" 
+                      className="w-24 h-24 mx-auto"
+                    />
+                  </div>
+                  <p className="text-xs text-muted-foreground text-center font-medium">
+                    Scan rapide
+                  </p>
+                </div>
                 
-                <div className="flex flex-col sm:flex-row items-center gap-8">
-                  {/* QR Code */}
-                  <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-6 border border-primary/20">
-                    <div className="bg-white rounded-lg p-3 mb-3">
-                      <img 
-                        src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
-                        alt="QR Code pour télécharger l'application" 
-                        className="w-24 h-24 mx-auto"
-                      />
-                    </div>
-                    <p className="text-xs text-muted-foreground text-center font-medium">
-                      Scan rapide
-                    </p>
-                  </div>
+                {/* Or separator */}
+                <div className="flex items-center">
+                  <span className="text-muted-foreground text-sm font-medium">ou</span>
+                </div>
+                
+                {/* CTA Button */}
+                <div className="flex-1 min-w-0 max-w-xs">
+                  <Button 
+                    variant="cta-orange"
+                    size="lg"
+                    className="w-full rounded-xl px-6 py-4 text-base font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    TÉLÉCHARGER L'APP
+                  </Button>
                   
-                  {/* Or separator */}
-                  <div className="flex items-center">
-                    <span className="text-muted-foreground text-sm font-medium">ou</span>
-                  </div>
-                  
-                  {/* CTA Button */}
-                  <div className="flex-1">
-                    <Button 
-                      variant="cta-orange"
-                      size="lg"
-                      className="w-full rounded-xl px-6 py-4 text-base font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                  {/* Store badges */}
+                  <div className="flex justify-center gap-3 mt-4">
+                    <a 
+                      href="#" 
+                      className="transition-transform hover:scale-105"
+                      aria-label="Télécharger sur l'App Store"
                     >
-                      TÉLÉCHARGER L'APP
-                    </Button>
-                    
-                    {/* Store badges */}
-                    <div className="flex justify-center gap-3 mt-4">
-                      <a 
-                        href="#" 
-                        className="transition-transform hover:scale-105"
-                        aria-label="Télécharger sur l'App Store"
-                      >
-                        <img 
-                          src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
-                          alt="App Store" 
-                          className="h-8 w-auto"
-                        />
-                      </a>
-                      <a 
-                        href="#" 
-                        className="transition-transform hover:scale-105"
-                        aria-label="Google Play"
-                      >
-                        <img 
-                          src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
-                          alt="Google Play" 
-                          className="h-8 w-auto"
-                        />
-                      </a>
-                    </div>
+                      <img 
+                        src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
+                        alt="App Store" 
+                        className="h-8 w-auto"
+                      />
+                    </a>
+                    <a 
+                      href="#" 
+                      className="transition-transform hover:scale-105"
+                      aria-label="Google Play"
+                    >
+                      <img 
+                        src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
+                        alt="Google Play" 
+                        className="h-8 w-auto"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-            
-            {/* Right: App Preview */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-primary/5 via-transparent to-primary/10 rounded-2xl p-8">
-                <img 
-                  src="/lovable-uploads/47b56ce3-43aa-48e1-9fb6-bee0f0cfb7e1.png" 
-                  alt="Fonctionnalités de l'application mobile" 
-                  className="w-full h-auto rounded-xl shadow-2xl"
-                />
-              </div>
-            </div>
-          </div>
-          
-          {/* Bottom Features */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
-            <div className="bg-card rounded-xl p-6 border border-border">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-primary font-bold text-xl">📱</span>
-              </div>
-              <h4 className="font-bold text-foreground mb-2">Interface intuitive</h4>
-              <p className="text-muted-foreground text-sm">Naviguez facilement dans votre espace ambassadeur</p>
-            </div>
-            
-            <div className="bg-card rounded-xl p-6 border border-border">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-primary font-bold text-xl">📊</span>
-              </div>
-              <h4 className="font-bold text-foreground mb-2">Suivi en temps réel</h4>
-              <p className="text-muted-foreground text-sm">Trackez vos parrainages et commissions instantanément</p>
-            </div>
-            
-            <div className="bg-card rounded-xl p-6 border border-border">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-primary font-bold text-xl">💰</span>
-              </div>
-              <h4 className="font-bold text-foreground mb-2">Gains automatiques</h4>
-              <p className="text-muted-foreground text-sm">Recevez vos commissions automatiquement</p>
             </div>
           </div>
         </div>
