@@ -158,8 +158,8 @@ const Parrainage = () => {
                 Soyez récompensé !
               </h3>
               <p className="text-muted-foreground text-lg mb-8 font-medium">
-                Choisissez votre répartition :<br/>
-                2.5% de commission soit pour vous / soit pour l'association
+                Choisissez comment répartir votre commission.<br/>
+                Entre vous et l'Association
               </p>
               <div className="bg-white rounded-xl p-3 border border-gray-200 max-w-md mx-auto shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="flex items-center justify-center space-x-1 bg-gray-100 rounded-lg p-1">
