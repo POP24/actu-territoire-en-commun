@@ -204,43 +204,44 @@ const Parrainage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="bg-white rounded-2xl p-8 md:p-12 border border-gray-200">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-8">
-              {/* Image App Store à gauche */}
-              <div className="flex-shrink-0">
-                <img 
-                  src="/lovable-uploads/4be2bc40-1a7e-4e11-8342-14194ed6f39f.png" 
-                  alt="Application mobile La Suite du Monde" 
-                  className="w-48 md:w-56 lg:w-64 h-auto rounded-xl shadow-lg"
-                />
-              </div>
+          <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border">
+            <div className="max-w-2xl mx-auto mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                Rejoignez l'aventure
+              </h2>
+              <p className="text-muted-foreground text-lg mb-8">
+                Téléchargez l'application et devenez ambassadeur dès maintenant
+              </p>
               
-              {/* QR Code à droite */}
-              <div className="bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 rounded-2xl p-8 shadow-lg">
-                <div className="text-center mb-4">
-                  <h3 className="text-white font-bold text-lg mb-2">Scannez pour télécharger</h3>
-                  <p className="text-blue-100 text-sm">Accédez directement à l'app</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                {/* QR Code stylé */}
+                <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl p-6 border border-primary/20">
                   <img 
                     src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
-                    alt="QR Code pour télécharger l'application" 
-                    className="w-32 h-32 mx-auto"
+                    alt="QR Code" 
+                    className="w-24 h-24 mx-auto mb-3"
                   />
+                  <p className="text-xs text-muted-foreground font-medium">Scan moi</p>
                 </div>
+                
+                {/* Ou séparateur */}
+                <div className="flex items-center">
+                  <div className="hidden sm:block w-12 h-px bg-border mx-4"></div>
+                  <span className="text-muted-foreground text-sm font-medium px-2">ou</span>
+                  <div className="hidden sm:block w-12 h-px bg-border mx-4"></div>
+                </div>
+                
+                {/* CTA Button */}
+                <Button 
+                  variant="cta-orange"
+                  size="lg"
+                  className="rounded-xl px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  TÉLÉCHARGER L'APP
+                </Button>
               </div>
-            </div>
-            
-            <div className="text-center">
-              <Button 
-                variant="cta-orange"
-                size="lg"
-                className="rounded-xl px-8 py-4 text-lg font-bold"
-              >
-                TÉLÉCHARGER L'APPLICATION
-              </Button>
             </div>
           </div>
         </div>
