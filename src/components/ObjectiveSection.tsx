@@ -314,7 +314,7 @@ const ObjectiveSection = () => {
               {/* Title with same style as L'HEURE EST VENUE */}
               <div className="mb-12">
                 <div className="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-6 rounded-full"></div>
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-black mb-6 leading-tight tracking-wide">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 leading-tight tracking-wide">
                   <span className="text-foreground drop-shadow-sm">RELIONS</span>{" "}
                   <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">- NOUS</span>
                 </h3>
