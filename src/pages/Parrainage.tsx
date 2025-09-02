@@ -173,15 +173,20 @@ const Parrainage = () => {
                     )}
                   </div>
                   
-                  {/* Toggle Switch - Plus étroit */}
+                  {/* Toggle Switch - Design moitié-moitié avec curseur fixe */}
                   <div className="relative mx-3">
-                    <div className="w-12 h-6 bg-white/20 rounded-full p-0.5 cursor-pointer transition-all duration-300" 
+                    <div className="w-16 h-6 rounded-full overflow-hidden cursor-pointer transition-all duration-300 border-2 border-white/30" 
                          onClick={() => setCommissionSplit(commissionSplit === 2.5 ? 0 : 2.5)}>
-                      <div className={`h-5 w-5 rounded-full transition-all duration-500 ease-out transform shadow-md ${
-                        commissionSplit === 2.5 
-                          ? 'translate-x-0 bg-orange-400' 
-                          : 'translate-x-6 bg-green-400'
-                      }`}>
+                      {/* Moitié gauche */}
+                      <div className={`absolute left-0 top-0 w-1/2 h-full transition-all duration-500 ${
+                        commissionSplit === 2.5 ? 'bg-orange-400' : 'bg-white/20'
+                      }`}></div>
+                      {/* Moitié droite */}
+                      <div className={`absolute right-0 top-0 w-1/2 h-full transition-all duration-500 ${
+                        commissionSplit === 0 ? 'bg-green-400' : 'bg-white/20'
+                      }`}></div>
+                      {/* Curseur fixe au centre */}
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1 h-4 bg-white rounded-full shadow-md">
                       </div>
                     </div>
                   </div>
