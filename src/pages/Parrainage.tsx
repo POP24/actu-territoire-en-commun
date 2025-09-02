@@ -68,143 +68,129 @@ const Parrainage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Étape 1 */}
-            <div className="text-center">
+            <div className="text-center flex flex-col h-full">
               <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 1
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Rejoignez notre application mobile
               </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium">
+              <p className="text-muted-foreground text-lg mb-8 font-medium flex-grow">
                 Téléchargez l'Application Ambassadeur
               </p>
               
-              {/* App Download Buttons */}
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a 
-                  href="#" 
-                  className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
-                  aria-label="Télécharger sur l'App Store"
+              {/* CTA aligné */}
+              <div className="mt-auto">
+                <Button 
+                  variant="default"
+                  size="lg"
+                  className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 >
-                  <img 
-                    src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
-                    alt="Télécharger dans l'App Store" 
-                    className="h-12 w-auto"
-                  />
-                </a>
-                <a 
-                  href="#" 
-                  className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
-                  aria-label="L'obtenir sur Google Play"
-                >
-                  <img 
-                    src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
-                    alt="L'obtenir sur Google Play" 
-                    className="h-12 w-auto"
-                  />
-                </a>
+                  TÉLÉCHARGER L'APP
+                </Button>
               </div>
             </div>
 
             {/* Étape 2 */}
-            <div className="text-center">
+            <div className="text-center flex flex-col h-full">
               <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 2
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Parrainez
               </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium">
+              <p className="text-muted-foreground text-lg mb-8 font-medium flex-grow">
                 Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
               </p>
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button 
-                    variant="default"
-                    size="lg"
-                    className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                  >
-                    INVITER MON RÉSEAU
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-md">
-                  <DialogHeader>
-                    <DialogTitle>Invitation à votre réseau local</DialogTitle>
-                  </DialogHeader>
-                  <div className="space-y-4">
-                    <p className="text-sm text-muted-foreground">
-                      Contactez-moi, je veux vous mettre en relation avec La Suite du Monde
-                    </p>
-                    <div className="space-y-3">
-                      <Input placeholder="Votre nom" />
-                      <Input placeholder="Email" type="email" />
-                      <Input placeholder="Téléphone" type="tel" />
-                      <Textarea placeholder="Votre message..." />
-                    </div>
-                    <Button className="w-full">
-                      ENVOYER L'INVITATION
+              
+              {/* CTA aligné */}
+              <div className="mt-auto">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button 
+                      variant="default"
+                      size="lg"
+                      className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                    >
+                      INVITER MON RÉSEAU
                     </Button>
-                  </div>
-                </DialogContent>
-              </Dialog>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-md">
+                    <DialogHeader>
+                      <DialogTitle>Invitation à votre réseau local</DialogTitle>
+                    </DialogHeader>
+                    <div className="space-y-4">
+                      <p className="text-sm text-muted-foreground">
+                        Contactez-moi, je veux vous mettre en relation avec La Suite du Monde
+                      </p>
+                      <div className="space-y-3">
+                        <Input placeholder="Votre nom" />
+                        <Input placeholder="Email" type="email" />
+                        <Input placeholder="Téléphone" type="tel" />
+                        <Textarea placeholder="Votre message..." />
+                      </div>
+                      <Button className="w-full">
+                        ENVOYER L'INVITATION
+                      </Button>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+              </div>
             </div>
 
             {/* Étape 3 */}
-            <div className="text-center">
+            <div className="text-center flex flex-col h-full">
               <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 3
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Soyez récompensé !
               </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium">
-                Choisissez votre répartition : 2.5% pour vous ou 2.5% pour l'association
+              <p className="text-muted-foreground text-lg mb-8 font-medium flex-grow">
+                Gagnez 2.5% de commission sur chaque parrainage
               </p>
-              <div className="bg-card rounded-xl p-6 border border-border max-w-xs mx-auto shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="mb-4">
-                  <div className="flex items-center justify-between mb-3 text-xs font-semibold">
-                    <span className={`transition-all duration-300 ${commissionSplit === 2.5 ? 'text-orange-500' : 'text-muted-foreground'}`}>
-                      Pour vous : 2.5%
-                    </span>
-                    <span className={`transition-all duration-300 ${commissionSplit === 2.5 ? 'text-muted-foreground' : 'text-blue-500'}`}>
-                      Pour l'asso : 2.5%
-                    </span>
+              
+              {/* Widget de répartition simplifié */}
+              <div className="mt-auto">
+                <div className="bg-card rounded-xl p-4 border border-border max-w-sm mx-auto mb-4">
+                  <div className="flex items-center justify-center gap-4 mb-3">
+                    <Button
+                      variant={commissionSplit === 2.5 ? "default" : "outline"}
+                      size="sm"
+                      onClick={() => setCommissionSplit(2.5)}
+                      className="text-xs"
+                    >
+                      Pour vous
+                    </Button>
+                    <Button
+                      variant={commissionSplit === 0 ? "default" : "outline"}
+                      size="sm"
+                      onClick={() => setCommissionSplit(0)}
+                      className="text-xs"
+                    >
+                      Pour l'asso
+                    </Button>
                   </div>
-                  
-                  {/* Compact Toggle Switch */}
-                  <div className="relative mx-auto w-32">
-                    <div className="w-full h-8 bg-gradient-to-r from-orange-100 to-blue-100 rounded-full p-1 cursor-pointer transition-all duration-300" 
-                         onClick={() => setCommissionSplit(commissionSplit === 2.5 ? 0 : 2.5)}>
-                      <div className={`h-6 w-1/2 rounded-full transition-all duration-500 ease-out transform shadow-md ${
-                        commissionSplit === 2.5 
-                          ? 'translate-x-0 bg-gradient-to-r from-orange-400 to-orange-500' 
-                          : 'translate-x-full bg-gradient-to-r from-blue-400 to-blue-500'
-                      }`}>
-                        <div className="h-full w-full rounded-full flex items-center justify-center">
-                          <div className="w-4 h-4 bg-white rounded-full shadow-sm"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-3 text-center">
-                    <p className={`text-sm font-semibold transition-all duration-300 ${
-                      commissionSplit === 2.5 
-                        ? 'text-orange-500' 
-                        : 'text-blue-500'
-                    }`}>
-                      {commissionSplit === 2.5 ? 'Vous : 2.5%' : 'Asso : 2.5%'}
-                    </p>
-                  </div>
+                  <p className="text-sm font-semibold text-center">
+                    Commission : 2.5%
+                  </p>
                 </div>
+                
+                <Button 
+                  variant="default"
+                  size="lg"
+                  className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                >
+                  COMMENCER
+                </Button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Floating QR Code */}
-      <div className="fixed top-32 right-6 z-40">
+      {/* Floating QR Code - Hidden on mobile */}
+      <div className="fixed top-32 right-6 z-40 hidden lg:block">
         <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-4 border border-blue-400/30 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
           <div className="text-center mb-3">
             <p className="text-xs font-semibold text-white">Télécharger l'app</p>
