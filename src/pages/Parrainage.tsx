@@ -158,7 +158,8 @@ const Parrainage = () => {
                 Soyez récompensé !
               </h3>
               <p className="text-muted-foreground text-lg mb-8 font-medium">
-                Choisissez votre répartition : 2.5% pour vous ou 2.5% pour l'association
+                Choisissez votre répartition :<br/>
+                2.5% de commission soit pour vous / soit pour l'association
               </p>
               <div className="bg-white rounded-xl p-3 border border-gray-200 max-w-md mx-auto shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="flex items-center justify-center space-x-1 bg-gray-100 rounded-lg p-1">
@@ -179,7 +180,7 @@ const Parrainage = () => {
                     onClick={() => setCommissionSplit(0)}
                     className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all duration-300 ${
                       commissionSplit === 0 
-                        ? 'bg-white text-gray-800 shadow-md' 
+                        ? 'bg-blue-500 text-white shadow-md' 
                         : 'text-gray-600 hover:text-gray-800'
                     }`}
                   >
