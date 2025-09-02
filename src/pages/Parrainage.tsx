@@ -222,36 +222,34 @@ const Parrainage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">          
-          {/* Floating Download Container */}
-          <div className="max-w-md mx-auto">
-            <div className="bg-card rounded-2xl p-8 border border-border shadow-2xl hover:shadow-3xl transition-all duration-300">
-              <div className="text-center space-y-6">
+          {/* Download Container */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-card rounded-2xl p-8 md:p-12 border border-border shadow-2xl hover:shadow-3xl transition-all duration-300">
+              <div className="text-center space-y-8">
+                {/* App Preview Image */}
+                <div className="mb-8">
+                  <img 
+                    src="/lovable-uploads/094fc38c-78c7-4bb5-9a70-beee7a9b6087.png" 
+                    alt="Fonctionnalités de l'application mobile" 
+                    className="w-full max-w-3xl mx-auto h-auto rounded-xl shadow-2xl"
+                  />
+                </div>
+                
                 {/* CTA Button */}
-                <Button 
-                  variant="cta-orange"
-                  size="lg"
-                  className="w-full rounded-xl px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                <a 
+                  href="https://lasuitedumonde.wimmov.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
                 >
-                  TÉLÉCHARGER L'APP
-                </Button>
-                
-                {/* Separator */}
-                <div className="flex items-center">
-                  <div className="flex-1 h-px bg-border"></div>
-                  <span className="px-4 text-muted-foreground text-sm font-medium">ou</span>
-                  <div className="flex-1 h-px bg-border"></div>
-                </div>
-                
-                {/* QR Code */}
-                <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-6 border border-primary/20">
-                  <div className="bg-white rounded-lg p-3">
-                    <img 
-                      src="/lovable-uploads/7e36a26f-369d-4ce0-b760-7846dec7f583.png" 
-                      alt="QR Code pour télécharger l'application" 
-                      className="w-32 h-32 mx-auto"
-                    />
-                  </div>
-                </div>
+                  <Button 
+                    variant="cta-orange"
+                    size="lg"
+                    className="rounded-xl px-12 py-6 text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    TÉLÉCHARGER L'APP
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
