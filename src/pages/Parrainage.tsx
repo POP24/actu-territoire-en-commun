@@ -80,41 +80,32 @@ const Parrainage = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Rejoignez notre application mobile
               </h3>
-              <p className="text-muted-foreground text-lg mb-6">
-                Télécharger L'Application Ambassadeur
+              <p className="text-muted-foreground text-lg mb-8 font-medium">
+                Téléchargez l'Application Ambassadeur
               </p>
               
-              {/* QR Code */}
-              <div className="bg-white p-3 rounded-lg mb-6 mx-auto w-fit">
-                <img 
-                  src="/lovable-uploads/08e10928-b084-4884-9874-ade0e7f14da8.png" 
-                  alt="QR Code pour télécharger l'application ambassadeur" 
-                  className="w-24 h-24 mx-auto"
-                />
-              </div>
-              
               {/* App Download Buttons */}
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a 
                   href="#" 
-                  className="block transition-transform hover:scale-105"
+                  className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
                   aria-label="Télécharger sur l'App Store"
                 >
                   <img 
                     src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
                     alt="Télécharger dans l'App Store" 
-                    className="h-10 w-auto"
+                    className="h-12 w-auto"
                   />
                 </a>
                 <a 
                   href="#" 
-                  className="block transition-transform hover:scale-105"
+                  className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
                   aria-label="L'obtenir sur Google Play"
                 >
                   <img 
                     src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
                     alt="L'obtenir sur Google Play" 
-                    className="h-10 w-auto"
+                    className="h-12 w-auto"
                   />
                 </a>
               </div>
@@ -128,15 +119,15 @@ const Parrainage = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Parrainez
               </h3>
-              <p className="text-muted-foreground text-lg mb-6">
+              <p className="text-muted-foreground text-lg mb-8 font-medium">
                 Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
               </p>
               <Dialog>
                 <DialogTrigger asChild>
                   <Button 
-                    variant="outline"
-                    size="sm"
-                    className="rounded-xl px-6 py-2 text-sm font-bold"
+                    variant="default"
+                    size="lg"
+                    className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
                   >
                     INVITER MON RÉSEAU
                   </Button>
@@ -171,15 +162,15 @@ const Parrainage = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Soyez récompensé !
               </h3>
-              <p className="text-muted-foreground text-lg mb-6">
+              <p className="text-muted-foreground text-lg mb-8 font-medium">
                 Choisissez votre répartition entre vous et l'association.
               </p>
-              <div className="bg-card rounded-xl p-6 border border-border max-w-sm mx-auto">
-                <div className="flex justify-between text-sm mb-3">
-                  <span className="font-medium text-primary">
+              <div className="bg-card rounded-xl p-8 border border-border max-w-sm mx-auto shadow-sm hover:shadow-md transition-all duration-300">
+                <div className="flex justify-between text-sm mb-4 font-semibold">
+                  <span className="text-primary">
                     Pour vous : {commissionSplit.toFixed(1)}%
                   </span>
-                  <span className="font-medium text-muted-foreground">
+                  <span className="text-muted-foreground">
                     Pour l'asso : {(5 - commissionSplit).toFixed(1)}%
                   </span>
                 </div>
@@ -190,9 +181,9 @@ const Parrainage = () => {
                   step="0.1"
                   value={commissionSplit}
                   onChange={handleSliderChange}
-                  className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer slider-thumb"
+                  className="w-full h-3 bg-muted rounded-lg appearance-none cursor-pointer slider-thumb transition-all duration-300"
                 />
-                <p className="text-xs text-muted-foreground mt-2 text-center">
+                <p className="text-xs text-muted-foreground mt-3 text-center font-medium">
                   Minimum 1% pour l'association
                 </p>
               </div>
