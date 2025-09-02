@@ -6,10 +6,10 @@ interface NavLinksProps {
 }
 
 const navItems = [
+  { to: "/", label: "L'Association" },
   { to: "/volontariat", label: "Volontariat" },
   { to: "/parrainage", label: "Parrainage" },
   { to: "/boutique", label: "Boutique des Communs" },
-  { to: "#financement", label: "Calendrier Territorial" },
   { to: "#faq", label: "FAQ" }
 ];
 
