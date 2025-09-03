@@ -46,6 +46,8 @@ const TribalForceSymbol = () => (
 const ObjectiveSection = () => {
   return (
     <section className="py-4 xs:py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 2xl:py-24 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
+      <div className="container mx-auto px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 sm:p-8 md:p-10">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-32 h-32 xs:w-40 xs:h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 2xl:w-112 2xl:h-112 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -53,7 +55,7 @@ const ObjectiveSection = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 xs:w-32 xs:h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 2xl:w-80 2xl:h-80 bg-accent/5 rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
       
-      <div className="container mx-auto px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+      
         <div className="max-w-xs xs:max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-8xl mx-auto">
           
           {/* Enhanced Main Title */}
@@ -362,6 +364,7 @@ const ObjectiveSection = () => {
             </div>
           </div>
 
+        </div>
         </div>
       </div>
     </section>
