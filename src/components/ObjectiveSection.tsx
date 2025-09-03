@@ -190,24 +190,24 @@ const ObjectiveSection = () => {
                 <div className="p-3 sm:p-4 md:p-6 pt-0 md:pt-2">
                   <div className="grid grid-cols-1 gap-2 md:gap-3 mb-4 md:mb-6">
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
-                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">Financement participatif</span>
-                      <span className="text-lg md:text-2xl font-black text-blue-600 dark:text-blue-400">2,35 Mds€</span>
+                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">Crowdfunding 2024 Don</span>
+                      <span className="text-lg md:text-2xl font-black text-blue-600 dark:text-blue-400">179M€</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
-                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">HelloAsso Associations Actives</span>
-                      <span className="text-lg md:text-2xl font-black text-blue-600 dark:text-blue-400">20K</span>
+                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">Crowdfunding 2024 Immo</span>
+                      <span className="text-lg md:text-2xl font-black text-blue-600 dark:text-blue-400">850M€</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
-                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">Logiciels libres</span>
-                      <span className="text-lg md:text-2xl font-black text-blue-600 dark:text-blue-400">500K+</span>
+                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">Monnaies locales</span>
+                      <span className="text-lg md:text-2xl font-black text-blue-600 dark:text-blue-400">82</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
-                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">Woofing France</span>
-                      <span className="text-lg md:text-2xl font-black text-blue-600 dark:text-blue-400">25K</span>
+                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">HelloAsso</span>
+                      <span className="text-lg md:text-2xl font-black text-blue-600 dark:text-blue-400">370K assos</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-lg md:rounded-xl p-2.5 md:p-4 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
-                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">Réseaux de monnaies locales</span>
-                      <span className="text-base md:text-lg font-black text-blue-600 dark:text-blue-400">82 EN CIRCULATION</span>
+                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-sm md:text-base">SEL actifs</span>
+                      <span className="text-lg md:text-2xl font-black text-blue-600 dark:text-blue-400">600+</span>
                     </div>
                   </div>
                   
