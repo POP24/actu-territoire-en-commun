@@ -12,7 +12,7 @@ const LaunchpadSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Main Title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
               FINANCEZ VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">TERRITOIRE</span>
             </h2>
             <p className="text-gray-300 text-lg mb-2">Transformez les idées en actions.</p>
