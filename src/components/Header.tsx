@@ -33,21 +33,21 @@ const Header = () => {
   return (
     <header className={headerClasses}>
       <div className="container mx-auto px-3 sm:px-4 lg:px-6">
-        <nav className="flex items-center justify-between py-3 sm:py-4 lg:grid lg:grid-cols-3 lg:gap-4">
+        <nav className="flex items-center justify-between py-3 sm:py-4 xl:grid xl:grid-cols-3 xl:gap-4">
           <Logo />
           
-          {/* Menu hamburger centré en mobile, navigation en desktop */}
-          <div className="flex items-center justify-center lg:justify-center">
-            {/* Mobile Toggle - centré sur mobile */}
-            <div className="lg:hidden">
+          {/* Menu hamburger en mobile, navigation responsive en desktop */}
+          <div className="flex items-center justify-center">
+            {/* Mobile Toggle - Affiché sur small et medium */}
+            <div className="xl:hidden">
               <MobileToggle 
                 isOpen={isMenuOpen} 
                 onToggle={() => setIsMenuOpen(!isMenuOpen)} 
               />
             </div>
             
-            {/* Navigation desktop */}
-            <div className="hidden lg:flex items-center space-x-3 xl:space-x-4 2xl:space-x-6">
+            {/* Navigation desktop - 3 colonnes sur xl+, 2 colonnes sur lg */}
+            <div className="hidden xl:block">
               <NavLinks />
             </div>
           </div>

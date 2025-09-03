@@ -28,7 +28,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   
   const baseClasses = isMobile 
     ? "block w-full py-4 text-xl font-bold transition-colors duration-300 text-center"
-    : "text-xs sm:text-sm lg:text-sm xl:text-base font-bold transition-all duration-300 relative nav-link whitespace-nowrap";
+    : "text-xs xl:text-sm 2xl:text-base font-bold transition-all duration-300 relative nav-link whitespace-nowrap";
   
   const hoverClasses = isMobile 
     ? "hover:bg-primary/10 rounded-xl px-4 py-3 border-2 border-transparent hover:border-primary/20"
@@ -59,7 +59,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   };
 
   return (
-    <>
+    <div className={isMobile ? "space-y-4" : "grid grid-cols-3 xl:grid-cols-5 gap-2 xl:gap-4 items-center"}>
       {navItems.map((item) => {
         // Pour les éléments avec dropdown
         if (item.hasDropdown) {
@@ -187,7 +187,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
           </NavLink>
         );
       })}
-    </>
+    </div>
   );
 };
 
