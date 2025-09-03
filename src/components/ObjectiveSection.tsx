@@ -307,33 +307,33 @@ const ObjectiveSection = () => {
           </div>
 
           {/* RELIONS-NOUS Section */}
-          <div className="relative animate-fade-in">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-blue-600/5 to-blue-700/5 rounded-3xl blur-3xl"></div>
-            <div className="relative max-w-4xl mx-auto text-center">
+          <div className="relative animate-fade-in px-3 sm:px-4 md:px-6">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-blue-600/5 to-blue-700/5 rounded-2xl sm:rounded-3xl blur-3xl"></div>
+            <div className="relative max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto text-center">
               
-              {/* Title with same style as L'HEURE EST VENUE */}
-              <div className="mb-12">
-                <div className="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-6 rounded-full"></div>
-                <h3 className="text-4xl md:text-6xl font-bold mb-6 leading-tight tracking-wide">
-                  <span className="text-foreground drop-shadow-sm">RELIONS</span>{" "}
-                  <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">- NOUS</span>
+              {/* Title with same style as L'HEURE EST VENUE but fully responsive */}
+              <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+                <div className="w-16 sm:w-20 md:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-3 sm:mb-4 md:mb-6 rounded-full"></div>
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 leading-tight tracking-wide px-2">
+                  <span className="text-foreground drop-shadow-sm block sm:inline">RELIONS</span>{" "}
+                  <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent block sm:inline">- NOUS</span>
                 </h3>
-                <div className="w-24 h-1 bg-gradient-to-r from-accent via-secondary to-primary mx-auto rounded-full"></div>
+                <div className="w-16 sm:w-20 md:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-accent via-secondary to-primary mx-auto rounded-full"></div>
               </div>
               
               {/* Central Message Card */}
-              <div className="relative group mb-12 max-w-3xl mx-auto">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-blue-600/20 to-blue-700/20 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-700"></div>
-                <div className="relative bg-card/90 backdrop-blur-md border border-blue-200/50 rounded-3xl p-8 lg:p-12 shadow-2xl">
-                  <div className="space-y-6">
-                    <h4 className="text-xl sm:text-2xl lg:text-3xl font-black bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-700 bg-clip-text text-transparent tracking-wide">
+              <div className="relative group mb-6 sm:mb-8 md:mb-10 lg:mb-12 max-w-full sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto">
+                <div className="absolute -inset-0.5 sm:-inset-1 bg-gradient-to-r from-blue-500/20 via-blue-600/20 to-blue-700/20 rounded-2xl sm:rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-700"></div>
+                <div className="relative bg-card/90 backdrop-blur-md border border-blue-200/50 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 shadow-xl sm:shadow-2xl">
+                  <div className="space-y-3 sm:space-y-4 md:space-y-6">
+                    <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-black bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-700 bg-clip-text text-transparent tracking-wide px-2">
                       Lieux • Cagnottes • Votes
                     </h4>
                     
-                    <div className="w-20 h-px bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-700 mx-auto"></div>
+                    <div className="w-12 sm:w-16 md:w-20 h-px bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-700 mx-auto"></div>
                     
-                    <p className="text-base sm:text-lg lg:text-xl text-foreground/90 font-semibold leading-relaxed max-w-2xl mx-auto">
-                      On relie ce qui existe déjà pour faire basculer<br className="hidden sm:block" /> 
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-foreground/90 font-semibold leading-relaxed max-w-full sm:max-w-md md:max-w-xl lg:max-w-2xl mx-auto px-2">
+                      On relie ce qui existe déjà pour faire basculer<br className="hidden md:block" /> 
                       les territoires en autonomie.
                     </p>
                   </div>
@@ -341,9 +341,9 @@ const ObjectiveSection = () => {
               </div>
               
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-full sm:max-w-md md:max-w-lg lg:max-w-2xl mx-auto px-4">
                 <Button 
-                  className="w-full sm:w-auto btn-cta-blue font-semibold text-white px-8 py-3 rounded-xl"
+                  className="w-full sm:w-auto btn-cta-blue font-semibold text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base"
                 >
                   ADHÉRER
                 </Button>
@@ -354,7 +354,7 @@ const ObjectiveSection = () => {
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto"
                 >
-                  <button className="w-full btn-cta-orange font-semibold text-white px-8 py-3 rounded-xl">
+                  <button className="w-full btn-cta-orange font-semibold text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base">
                     INVESTIR LOCALEMENT
                   </button>
                 </a>
