@@ -71,8 +71,8 @@ const ObjectiveSection = () => {
             </p>
           </div>
 
-          {/* Enhanced Cards Grid - Ultra Responsive */}
-          <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-2 xs:gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 2xl:gap-8 3xl:gap-10 mb-8 xs:mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 2xl:mb-28 animate-fade-in">
+          {/* Enhanced Cards Grid - Ultra Responsive - Always 3 Columns */}
+          <div className="grid grid-cols-3 gap-1 xs:gap-2 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-6 2xl:gap-8 3xl:gap-10 mb-8 xs:mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 2xl:mb-28 animate-fade-in">
             
             {/* Card 1: LES LIEUX ATTENDENT - Territorial Awakening */}
             <div className="group relative transform transition-all duration-700 hover:scale-102 xs:hover:scale-103 sm:hover:scale-104 md:hover:scale-105 animate-scale-in">
