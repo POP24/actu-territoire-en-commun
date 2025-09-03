@@ -13,7 +13,7 @@ const navItems = [
     label: "L'Association",
     hasDropdown: true,
     subItems: [
-      { to: "#gouvernance", label: "GOUVERNANCE" }
+      { to: "#gouvernance", label: "Gouvernance" }
     ]
   },
   { to: "/volontariat", label: "Volontariat" },

@@ -46,8 +46,6 @@ const TribalForceSymbol = () => (
 const ObjectiveSection = () => {
   return (
     <section className="py-4 xs:py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 2xl:py-24 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
-      <div className="container mx-auto px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 sm:p-8 md:p-10">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-32 h-32 xs:w-40 xs:h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 2xl:w-112 2xl:h-112 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -55,8 +53,9 @@ const ObjectiveSection = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 xs:w-32 xs:h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 2xl:w-80 2xl:h-80 bg-accent/5 rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
       
-      
-        <div className="max-w-xs xs:max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-8xl mx-auto">
+      <div className="container mx-auto px-1 xs:px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8 2xl:px-10 relative z-10">
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 sm:p-8 md:p-10">
+          <div className="max-w-xs xs:max-w-sm sm:max-w-full md:max-w-5xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto">
           
           {/* Enhanced Main Title */}
           <div className="text-center mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 2xl:mb-24 animate-fade-in">
@@ -205,7 +204,7 @@ const ObjectiveSection = () => {
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">HelloAsso</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-blue-600 dark:text-blue-400">370K assos</span>
+                      <span className="text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-black text-blue-600 dark:text-blue-400 whitespace-nowrap">370K assos</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">SEL actifs</span>
