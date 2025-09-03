@@ -28,7 +28,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   
   const baseClasses = isMobile 
     ? "block w-full py-4 text-xl font-bold transition-colors duration-300 text-center"
-    : "text-sm lg:text-base font-bold transition-all duration-300 relative nav-link";
+    : "text-xs sm:text-sm lg:text-sm xl:text-base font-bold transition-all duration-300 relative nav-link whitespace-nowrap";
   
   const hoverClasses = isMobile 
     ? "hover:bg-primary/10 rounded-xl px-4 py-3 border-2 border-transparent hover:border-primary/20"

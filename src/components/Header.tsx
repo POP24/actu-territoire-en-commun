@@ -47,7 +47,7 @@ const Header = () => {
             </div>
             
             {/* Navigation desktop */}
-            <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <div className="hidden lg:flex items-center space-x-3 xl:space-x-4 2xl:space-x-6">
               <NavLinks />
             </div>
           </div>
