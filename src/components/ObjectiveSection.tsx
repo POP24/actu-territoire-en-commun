@@ -45,7 +45,7 @@ const TribalForceSymbol = () => (
 
 const ObjectiveSection = () => {
   return (
-    <section className="py-4 xs:py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 2xl:py-24 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
+    <section className="py-2 xs:py-3 sm:py-4 md:py-6 lg:py-8 xl:py-10 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-32 h-32 xs:w-40 xs:h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 2xl:w-112 2xl:h-112 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -54,34 +54,34 @@ const ObjectiveSection = () => {
       </div>
       
       <div className="container mx-auto px-1 xs:px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8 2xl:px-10 relative z-10">
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 sm:p-8 md:p-10">
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-3 sm:p-4 md:p-6">
           <div className="max-w-xs xs:max-w-sm sm:max-w-full md:max-w-5xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto">
           
           {/* Enhanced Main Title */}
           <div className="text-center mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 2xl:mb-24 animate-fade-in">
             <div className="mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-8 xl:mb-10">
               <div className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 rounded-full"></div>
-              <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-black mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 leading-tight tracking-wide px-1 xs:px-2 sm:px-2 md:px-3 lg:px-4">
+              <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black mb-2 xs:mb-3 sm:mb-4 md:mb-5 leading-tight tracking-wide px-1 xs:px-2 sm:px-3">
                 <span className="text-foreground drop-shadow-sm block xs:block sm:inline">L'HEURE</span>{" "}
                 <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent block xs:block sm:inline">EST VENUE</span>
               </h2>
               <div className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-accent via-secondary to-primary mx-auto rounded-full"></div>
             </div>
-            <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-muted-foreground max-w-full xs:max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl mx-auto leading-relaxed px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-full xs:max-w-lg sm:max-w-xl md:max-w-2xl mx-auto leading-relaxed px-2 sm:px-4">
               Les forces convergent, les outils sont prêts, les territoires s'éveillent
             </p>
           </div>
 
           {/* Enhanced Cards Grid - Mobile 1 Column, Compact Width */}
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 xs:gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 2xl:gap-8 3xl:gap-10 mb-8 xs:mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 2xl:mb-28 animate-fade-in max-w-sm xs:max-w-md sm:max-w-none mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-5 mb-6 sm:mb-8 md:mb-10 animate-fade-in max-w-sm xs:max-w-md sm:max-w-none mx-auto">
             
             {/* Card 1: LES LIEUX ATTENDENT - Territorial Awakening */}
             <div className="group relative transform transition-all duration-700 hover:scale-102 xs:hover:scale-103 sm:hover:scale-104 md:hover:scale-105 animate-scale-in">
               <div className="absolute -inset-0.5 xs:-inset-1 sm:-inset-1 md:-inset-2 lg:-inset-2 xl:-inset-3 bg-gradient-to-r from-emerald-400/30 via-green-400/30 to-emerald-500/30 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-3xl xl:rounded-3xl blur-lg xs:blur-xl sm:blur-xl md:blur-xl lg:blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-1000"></div>
-              <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border border-emerald-200/50 dark:border-emerald-800/50 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-3xl xl:rounded-3xl overflow-hidden shadow-lg xs:shadow-xl sm:shadow-xl md:shadow-2xl lg:shadow-2xl xl:shadow-3xl min-h-[320px] xs:min-h-[360px] sm:min-h-[400px] md:min-h-[480px] lg:min-h-[520px] xl:min-h-[580px] 2xl:min-h-[620px] flex flex-col">
+              <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border border-emerald-200/50 dark:border-emerald-800/50 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl md:shadow-2xl min-h-[240px] xs:min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[380px] flex flex-col">
                 
                 {/* Card Header with Tribal Symbol */}
-                <div className="relative p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pb-1 xs:pb-2 sm:pb-2 md:pb-3 lg:pb-3 xl:pb-4 flex-shrink-0">
+                <div className="relative p-2 sm:p-3 md:p-4 pb-1 sm:pb-2 md:pb-3 flex-shrink-0">
                   <div className="absolute top-0 right-0 w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 2xl:w-28 2xl:h-28 bg-gradient-to-br from-emerald-400/20 to-green-400/20 rounded-full blur-xl xs:blur-2xl sm:blur-2xl md:blur-2xl lg:blur-3xl"></div>
                   <div className="relative flex flex-col items-center space-y-1 xs:space-y-2 sm:space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-5">
                     
@@ -155,7 +155,7 @@ const ObjectiveSection = () => {
             {/* Card 2: LES OUTILS FONCTIONNENT - Digital Mastery */}
             <div className="group relative transform transition-all duration-700 hover:scale-102 xs:hover:scale-103 sm:hover:scale-104 md:hover:scale-105 animate-scale-in" style={{animationDelay: '0.2s'}}>
               <div className="absolute -inset-0.5 xs:-inset-1 sm:-inset-1 md:-inset-2 lg:-inset-2 xl:-inset-3 bg-gradient-to-r from-blue-400/30 via-cyan-400/30 to-blue-500/30 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-3xl xl:rounded-3xl blur-lg xs:blur-xl sm:blur-xl md:blur-xl lg:blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-1000"></div>
-              <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border border-blue-200/50 dark:border-blue-800/50 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-3xl xl:rounded-3xl overflow-hidden shadow-lg xs:shadow-xl sm:shadow-xl md:shadow-2xl lg:shadow-2xl xl:shadow-3xl min-h-[320px] xs:min-h-[360px] sm:min-h-[400px] md:min-h-[480px] lg:min-h-[520px] xl:min-h-[580px] 2xl:min-h-[620px] flex flex-col">
+              <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border border-blue-200/50 dark:border-blue-800/50 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl md:shadow-2xl min-h-[240px] xs:min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[380px] flex flex-col">
                 
                 {/* Card Header with Tribal Symbol */}
                 <div className="relative p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pb-1 xs:pb-2 sm:pb-2 md:pb-3 lg:pb-3 xl:pb-4 flex-shrink-0">
@@ -232,7 +232,7 @@ const ObjectiveSection = () => {
             {/* Card 3: LES FORCES VIVES BOUILLONNENT - Collective Power */}
             <div className="group relative transform transition-all duration-700 hover:scale-102 xs:hover:scale-103 sm:hover:scale-104 md:hover:scale-105 animate-scale-in" style={{animationDelay: '0.4s'}}>
               <div className="absolute -inset-0.5 xs:-inset-1 sm:-inset-1 md:-inset-2 lg:-inset-2 xl:-inset-3 bg-gradient-to-r from-purple-400/30 via-pink-400/30 to-purple-500/30 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-3xl xl:rounded-3xl blur-lg xs:blur-xl sm:blur-xl md:blur-xl lg:blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-1000"></div>
-              <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border border-purple-200/50 dark:border-purple-800/50 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-3xl xl:rounded-3xl overflow-hidden shadow-lg xs:shadow-xl sm:shadow-xl md:shadow-2xl lg:shadow-2xl xl:shadow-3xl min-h-[320px] xs:min-h-[360px] sm:min-h-[400px] md:min-h-[480px] lg:min-h-[520px] xl:min-h-[580px] 2xl:min-h-[620px] flex flex-col">
+              <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border border-purple-200/50 dark:border-purple-800/50 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl md:shadow-2xl min-h-[240px] xs:min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[380px] flex flex-col">
                 
                 {/* Card Header with Tribal Symbol */}
                 <div className="relative p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pb-1 xs:pb-2 sm:pb-2 md:pb-3 lg:pb-3 xl:pb-4 flex-shrink-0">
