@@ -12,9 +12,19 @@ const LaunchpadSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Main Title */}
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              ACTIVEZ VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">TERRITOIRE</span>
-            </h2>
+            <button 
+              onClick={() => {
+                const pathwaysSection = document.querySelector('[data-section="pathways"]');
+                if (pathwaysSection) {
+                  pathwaysSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+              className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 hover:opacity-80 transition-opacity cursor-pointer bg-transparent border-none p-0"
+            >
+              CHOISISSEZ VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">CHEMIN</span>
+            </button>
             <p className="text-gray-300 text-lg mb-2">Transformez les idées en actions.</p>
             <p className="text-gray-400">Financez les projets qui comptent, ensemble.</p>
           </div>

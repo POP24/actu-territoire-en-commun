@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const PathwaysSection = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-blue-500/10 via-blue-600/5 to-background relative overflow-hidden">
+    <section data-section="pathways" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-blue-500/10 via-blue-600/5 to-background relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8 sm:mb-12 md:mb-16">
