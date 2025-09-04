@@ -81,7 +81,7 @@ const ObjectiveSection = () => {
               <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border border-emerald-200/50 dark:border-emerald-800/50 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl md:shadow-2xl min-h-[240px] xs:min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[380px] flex flex-col">
                 
                 {/* Card Header with Tribal Symbol */}
-                <div className="relative p-2 sm:p-3 md:p-4 pb-1 sm:pb-2 md:pb-3 flex-shrink-0">
+                <div className="relative p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pb-1 xs:pb-2 sm:pb-2 md:pb-3 lg:pb-3 xl:pb-4 flex-shrink-0">
                   <div className="absolute top-0 right-0 w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 2xl:w-28 2xl:h-28 bg-gradient-to-br from-emerald-400/20 to-green-400/20 rounded-full blur-xl xs:blur-2xl sm:blur-2xl md:blur-2xl lg:blur-3xl"></div>
                   <div className="relative flex flex-col items-center space-y-1 xs:space-y-2 sm:space-y-2 md:space-y-3 lg:space-y-4 xl:space-y-5">
                     
@@ -111,7 +111,7 @@ const ObjectiveSection = () => {
                 </div>
                 
                 {/* Data Grid */}
-                <div className="p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pt-0 xs:pt-1 sm:pt-1 md:pt-2 lg:pt-2 xl:pt-3 flex-grow flex flex-col">
+                <div className="p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pt-1 xs:pt-1 sm:pt-1 md:pt-2 lg:pt-2 xl:pt-3 flex-grow flex flex-col">
                   <div className="grid grid-cols-1 gap-1 xs:gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-3.5 2xl:gap-4 mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 flex-grow">
                     <div className="flex justify-between items-center bg-emerald-50/80 dark:bg-emerald-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50">
                       <span className="text-emerald-800 dark:text-emerald-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base whitespace-nowrap">Communes rurales</span>
@@ -188,7 +188,7 @@ const ObjectiveSection = () => {
                 </div>
                 
                 {/* Data Grid */}
-                <div className="p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pt-0 xs:pt-1 sm:pt-1 md:pt-2 lg:pt-2 xl:pt-3 flex-grow flex flex-col">
+                <div className="p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pt-1 xs:pt-1 sm:pt-1 md:pt-2 lg:pt-2 xl:pt-3 flex-grow flex flex-col">
                   <div className="grid grid-cols-1 gap-1 xs:gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-3.5 2xl:gap-4 mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 flex-grow">
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base whitespace-nowrap">Crowdfunding 2024 Don</span>
@@ -265,7 +265,7 @@ const ObjectiveSection = () => {
                 </div>
                 
                 {/* Data Grid */}
-                <div className="p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pt-0 xs:pt-1 sm:pt-1 md:pt-2 lg:pt-2 xl:pt-3 flex-grow flex flex-col">
+                <div className="p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pt-1 xs:pt-1 sm:pt-1 md:pt-2 lg:pt-2 xl:pt-3 flex-grow flex flex-col">
                   <div className="grid grid-cols-1 gap-1 xs:gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-3.5 2xl:gap-4 mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 flex-grow">
                     <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
                       <span className="text-purple-800 dark:text-purple-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Néo-ruraux 2020+</span>
