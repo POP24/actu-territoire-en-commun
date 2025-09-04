@@ -5,10 +5,6 @@ const PathwaysSection = () => {
     <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-blue-500/10 via-blue-600/5 to-background relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8 sm:mb-12 md:mb-16">
-            <span className="text-foreground">CHOISISSEZ VOTRE</span>{" "}
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">CHEMIN</span>
-          </h2>
           
           <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3 md:gap-6 max-w-7xl mx-auto">
             {/* Chemin 1 - Association locale (déplacé en premier) */}
