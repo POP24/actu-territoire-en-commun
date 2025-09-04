@@ -27,12 +27,12 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   
   const baseClasses = isMobile 
-    ? "block w-full py-4 text-xl font-bold transition-colors duration-300 text-center"
-    : "text-xs xl:text-sm 2xl:text-base font-bold transition-all duration-300 relative nav-link whitespace-nowrap";
+    ? "block w-full py-4 text-lg font-semibold transition-colors duration-300 text-center"
+    : "text-sm font-semibold transition-all duration-300 relative nav-link whitespace-nowrap px-2 py-1";
   
   const hoverClasses = isMobile 
     ? "hover:bg-primary/10 rounded-xl px-4 py-3 border-2 border-transparent hover:border-primary/20"
-    : "hover:bg-primary/10 hover:text-primary px-3 py-2 rounded-lg";
+    : "hover:bg-primary/10 hover:text-primary px-2 py-1 rounded-md";
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -59,7 +59,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   };
 
   return (
-    <div className={isMobile ? "space-y-4" : "grid grid-cols-3 xl:grid-cols-5 gap-2 xl:gap-4 items-center"}>
+    <div className={isMobile ? "space-y-4" : "flex items-center gap-1 justify-center flex-wrap"}>
       {navItems.map((item) => {
         // Pour les éléments avec dropdown
         if (item.hasDropdown) {

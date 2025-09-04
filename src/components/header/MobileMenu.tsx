@@ -11,7 +11,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
   return (
     <div 
-      className="xl:hidden fixed inset-0 bg-background/95 backdrop-blur-lg border-b border-border shadow-xl animate-fade-in"
+      className="lg:hidden fixed inset-0 bg-background/95 backdrop-blur-lg border-b border-border shadow-xl animate-fade-in"
       style={{ zIndex: 999999, marginTop: '80px' }}
     >
       <div className="flex flex-col items-center justify-center min-h-[60vh] px-6 py-8">
