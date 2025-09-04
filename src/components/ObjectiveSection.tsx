@@ -61,7 +61,7 @@ const ObjectiveSection = () => {
           <div className="text-center mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 2xl:mb-24 animate-fade-in">
             <div className="mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-8 xl:mb-10">
               <div className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 rounded-full"></div>
-              <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black mb-2 xs:mb-3 sm:mb-4 md:mb-5 leading-tight tracking-wide px-1 xs:px-2 sm:px-3">
+              <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-2 xs:mb-3 sm:mb-4 md:mb-5 leading-tight tracking-wide px-1 xs:px-2 sm:px-3">
                 <span className="text-foreground drop-shadow-sm block xs:block sm:inline">L'HEURE</span>{" "}
                 <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent block xs:block sm:inline">EST VENUE</span>
               </h2>
