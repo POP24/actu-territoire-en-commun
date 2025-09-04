@@ -12,6 +12,11 @@ const LaunchpadSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Main Title */}
           <div className="text-center mb-16">
+            <div className="mb-6">
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white mb-2 tracking-wide">
+                ACTIVEZ VOTRE TERRITOIRE
+              </h2>
+            </div>
             <button 
               onClick={() => {
                 const pathwaysSection = document.querySelector('[data-section="pathways"]');
