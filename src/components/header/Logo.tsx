@@ -57,33 +57,39 @@ const Logo = () => {
                 className="p-1 rounded-md hover:bg-blue-500/20 transition-colors group w-full flex items-center justify-center"
                 title="Immobilier"
               >
-                <img 
-                  src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
-                  alt="Immobilier" 
-                  className="w-10 h-10 sm:w-12 sm:h-12 rounded object-cover group-hover:scale-110 transition-transform"
-                />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/fb0f9c64-f0f8-419f-bd77-e9f05ff7a3ae.png" 
+                    alt="Immobilier" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                  />
+                </div>
               </button>
               <button 
                 onClick={() => window.location.href = 'https://boutique.lasuitedumonde.com'}
                 className="p-1 rounded-md hover:bg-blue-500/20 transition-colors group w-full flex items-center justify-center"
                 title="Boutique"
               >
-                <img 
-                  src="/lovable-uploads/f616929d-9295-4444-954e-21b6a06cf62b.png" 
-                  alt="Boutique" 
-                  className="w-10 h-10 sm:w-12 sm:h-12 rounded object-cover group-hover:scale-110 transition-transform"
-                />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/f616929d-9295-4444-954e-21b6a06cf62b.png" 
+                    alt="Boutique" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                  />
+                </div>
               </button>
               <button 
                 onClick={() => window.location.href = 'https://app.lasuitedumonde.com'}
                 className="p-1 rounded-md hover:bg-blue-500/20 transition-colors group w-full flex items-center justify-center"
                 title="Investissement"
               >
-                <img 
-                  src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
-                  alt="Investissement" 
-                  className="w-10 h-10 sm:w-12 sm:h-12 rounded object-cover group-hover:scale-110 transition-transform" 
-                />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/6090480e-da46-4622-8b6f-07293e7bcdb8.png" 
+                    alt="Investissement" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform" 
+                  />
+                </div>
               </button>
             </div>
           </div>
