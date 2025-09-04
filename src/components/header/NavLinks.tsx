@@ -27,8 +27,8 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   
   const baseClasses = isMobile 
-    ? "block w-full py-4 text-lg font-semibold transition-colors duration-300 text-center"
-    : "text-sm font-semibold transition-all duration-300 relative nav-link whitespace-nowrap px-3 py-2";
+    ? "block w-full py-4 text-lg font-bold transition-colors duration-300 text-center"
+    : "text-sm font-bold transition-all duration-300 relative nav-link whitespace-nowrap px-3 py-2";
   
   const hoverClasses = isMobile 
     ? "hover:bg-primary/10 rounded-xl px-4 py-3 border-2 border-transparent hover:border-primary/20"
@@ -97,7 +97,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
                           scrollToSection(subItem.to.replace('#', ''));
                           setOpenDropdown(null);
                         }}
-                        className="block w-full py-3 px-4 text-center text-lg font-semibold text-foreground hover:text-primary hover:bg-primary/10 transition-colors duration-300 first:rounded-t-lg last:rounded-b-lg"
+                        className="block w-full py-3 px-4 text-center text-lg font-bold text-foreground hover:text-primary hover:bg-primary/10 transition-colors duration-300 first:rounded-t-lg last:rounded-b-lg"
                       >
                         {subItem.label}
                       </button>
@@ -144,7 +144,7 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
                           scrollToSection(subItem.to.replace('#', ''));
                           onLinkClick?.();
                         }}
-                        className="block w-full py-3 px-4 text-left text-sm font-semibold text-gray-800 hover:text-primary hover:bg-primary/10 transition-colors duration-300 first:rounded-t-lg last:rounded-b-lg"
+                        className="block w-full py-3 px-4 text-left text-sm font-bold text-gray-800 hover:text-primary hover:bg-primary/10 transition-colors duration-300 first:rounded-t-lg last:rounded-b-lg"
                       >
                         {subItem.label}
                       </button>
