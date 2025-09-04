@@ -333,9 +333,8 @@ const ObjectiveSection = () => {
                     
                     <div className="w-8 xs:w-10 sm:w-12 md:w-14 lg:w-16 xl:w-20 2xl:w-24 h-px bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-700 mx-auto"></div>
                     
-                    <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-foreground/90 font-semibold leading-relaxed max-w-full xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto px-1 xs:px-2 sm:px-2 md:px-3 lg:px-4">
-                      On relie ce qui existe déjà pour faire basculer<br className="hidden md:block" /> 
-                      les territoires en autonomie.
+                    <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl text-foreground/90 font-semibold leading-relaxed max-w-full xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto px-1 xs:px-2 sm:px-2 md:px-3 lg:px-4">
+                      Relions ce qui existe deja,
                     </p>
                   </div>
                 </div>
