@@ -69,7 +69,7 @@ const Logo = () => {
                 title="Boutique"
               >
                 <img 
-                  src="/lovable-uploads/9cd49f05-606f-4611-ae44-b984a5b777b5.png" 
+                  src="/lovable-uploads/865348c2-1377-4b95-b71b-9a180d092e15.png" 
                   alt="Boutique" 
                   className="w-16 h-16 sm:w-20 sm:h-20 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
                 />
