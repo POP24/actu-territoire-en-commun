@@ -150,37 +150,6 @@ useEffect(() => {
               Association d'Organisation Locale
             </h2>
 
-            {/* Top Stats - 2 levels improved */}
-            <div className="max-w-5xl mx-auto">
-              {/* Conteneur avec liseret OBJECTIFS */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 overflow-hidden">
-                {/* Liseret OBJECTIFS */}
-                <div className="bg-gradient-to-r from-blue-600 via-gray-600 to-gray-800 text-white text-center py-1 px-4">
-                  <span className="font-bold text-sm tracking-wider">OBJECTIFS</span>
-                </div>
-
-                {/* Cards directement attachées */}
-                <div className="grid grid-cols-3 gap-0 p-4">
-                  <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-l-xl border-r border-white/20 text-center group hover:bg-white/25 transition-all duration-300">
-                    <div className="text-white font-bold text-xs sm:text-sm mb-1">LIEUX COMMUNS</div>
-                    <div className="text-xl sm:text-2xl md:text-3xl font-black bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:via-blue-400 group-hover:to-cyan-400 transition-all duration-300 drop-shadow-lg">1000+</div>
-                  </div>
-                  <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 border-r border-white/20 text-center group hover:bg-white/25 transition-all duration-300">
-                    <div className="text-white font-bold text-xs sm:text-sm mb-1">TRÉSOR COLLECTIF</div>
-                    <div className="text-xl sm:text-2xl md:text-3xl font-black bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent group-hover:from-orange-300 group-hover:via-orange-400 group-hover:to-red-400 transition-all duration-300 drop-shadow-lg">1M€</div>
-                  </div>
-                  <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-r-xl text-center group hover:bg-white/25 transition-all duration-300">
-                    <div className="text-white font-bold text-xs sm:text-sm mb-1">GOUVERNANCE</div>
-                    <div className="text-sm sm:text-base md:text-lg font-bold drop-shadow-lg">
-                      <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:via-blue-400 group-hover:to-cyan-400 transition-all duration-300 block sm:inline">LOCALE</span>
-                      <span className="hidden sm:inline text-white/80 mx-1">/</span>
-                      <span className="bg-gradient-to-br from-green-500 via-green-600 to-green-700 bg-clip-text text-transparent group-hover:from-green-400 group-hover:via-green-500 group-hover:to-green-600 transition-all duration-300 block sm:inline">NATIONALE</span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Main Content */}
