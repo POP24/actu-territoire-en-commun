@@ -72,8 +72,8 @@ const ObjectiveSection = () => {
             </p>
           </div>
 
-          {/* Enhanced Cards Grid - Mobile 1 Column, Compact Width */}
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-5 mb-6 sm:mb-8 md:mb-10 animate-fade-in max-w-sm xs:max-w-md sm:max-w-none mx-auto">
+          {/* Enhanced Cards Grid - Mobile 1 Column, Wider containers */}
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-5 mb-6 sm:mb-8 md:mb-10 animate-fade-in max-w-md xs:max-w-lg sm:max-w-none mx-auto">
             
             {/* Card 1: LES LIEUX ATTENDENT - Territorial Awakening */}
             <div className="group relative transform transition-all duration-700 hover:scale-102 xs:hover:scale-103 sm:hover:scale-104 md:hover:scale-105 animate-scale-in">
@@ -114,7 +114,7 @@ const ObjectiveSection = () => {
                 <div className="p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pt-0 xs:pt-1 sm:pt-1 md:pt-2 lg:pt-2 xl:pt-3 flex-grow flex flex-col">
                   <div className="grid grid-cols-1 gap-1 xs:gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-3.5 2xl:gap-4 mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 flex-grow">
                     <div className="flex justify-between items-center bg-emerald-50/80 dark:bg-emerald-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50">
-                      <span className="text-emerald-800 dark:text-emerald-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Communes rurales</span>
+                      <span className="text-emerald-800 dark:text-emerald-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base whitespace-nowrap">Communes rurales</span>
                       <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-emerald-600 dark:text-emerald-400">30.8K</span>
                     </div>
                     <div className="flex justify-between items-center bg-emerald-50/80 dark:bg-emerald-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50">
@@ -182,7 +182,7 @@ const ObjectiveSection = () => {
                         </h4>
                         <div className="w-4 xs:w-5 sm:w-6 md:w-8 lg:w-10 xl:w-12 2xl:w-14 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-400 mx-auto mt-0.5 xs:mt-1 sm:mt-1 md:mt-1 lg:mt-2 xl:mt-2"></div>
                       </div>
-                      <p className="text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-bold text-blue-600 dark:text-blue-400 mb-1 xs:mb-2 sm:mb-2 md:mb-3 lg:mb-4 xl:mb-5 px-1 xs:px-2 sm:px-2 md:px-3 lg:px-4">L'infrastructure collaborative existe déjà</p>
+                      <p className="text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base font-bold text-blue-600 dark:text-blue-400 mb-1 xs:mb-2 sm:mb-2 md:mb-3 lg:mb-4 xl:mb-5 px-1 xs:px-2 sm:px-2 md:px-3 lg:px-4 whitespace-nowrap">L'infrastructure collaborative existe déjà</p>
                     </div>
                   </div>
                 </div>
@@ -191,11 +191,11 @@ const ObjectiveSection = () => {
                 <div className="p-2 xs:p-3 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-8 pt-0 xs:pt-1 sm:pt-1 md:pt-2 lg:pt-2 xl:pt-3 flex-grow flex flex-col">
                   <div className="grid grid-cols-1 gap-1 xs:gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-3.5 2xl:gap-4 mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 flex-grow">
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
-                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Crowdfunding 2024 Don</span>
+                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base whitespace-nowrap">Crowdfunding 2024 Don</span>
                       <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-blue-600 dark:text-blue-400">179M€</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
-                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Crowdfunding 2024 Immo</span>
+                      <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base whitespace-nowrap">Crowdfunding 2024 Immo</span>
                       <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-blue-600 dark:text-blue-400">850M€</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
