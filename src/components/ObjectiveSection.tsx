@@ -115,23 +115,23 @@ const ObjectiveSection = () => {
                   <div className="grid grid-cols-1 gap-1 xs:gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-3.5 2xl:gap-4 mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 flex-grow">
                     <div className="flex justify-between items-center bg-emerald-50/80 dark:bg-emerald-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50">
                       <span className="text-emerald-800 dark:text-emerald-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Communes rurales</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-emerald-600 dark:text-emerald-400">30.8K</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-emerald-600 dark:text-emerald-400">30.8K</span>
                     </div>
                     <div className="flex justify-between items-center bg-emerald-50/80 dark:bg-emerald-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50">
                       <span className="text-emerald-800 dark:text-emerald-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Tiers-lieux actifs</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-emerald-600 dark:text-emerald-400">3.5K</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-emerald-600 dark:text-emerald-400">3.5K</span>
                     </div>
                     <div className="flex justify-between items-center bg-emerald-50/80 dark:bg-emerald-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50">
                       <span className="text-emerald-800 dark:text-emerald-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Hectares libres/an</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-emerald-600 dark:text-emerald-400">150K</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-emerald-600 dark:text-emerald-400">150K</span>
                     </div>
                     <div className="flex justify-between items-center bg-emerald-50/80 dark:bg-emerald-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50">
                       <span className="text-emerald-800 dark:text-emerald-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Écolieux actifs</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-emerald-600 dark:text-emerald-400">1.5K</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-emerald-600 dark:text-emerald-400">1.5K</span>
                     </div>
                     <div className="flex justify-between items-center bg-emerald-50/80 dark:bg-emerald-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50">
                       <span className="text-emerald-800 dark:text-emerald-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Fermes disponibles</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-emerald-600 dark:text-emerald-400">5K+</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-emerald-600 dark:text-emerald-400">5K+</span>
                     </div>
                   </div>
                   
@@ -192,23 +192,23 @@ const ObjectiveSection = () => {
                   <div className="grid grid-cols-1 gap-1 xs:gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-3.5 2xl:gap-4 mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 flex-grow">
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Crowdfunding 2024 Don</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-blue-600 dark:text-blue-400">179M€</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-blue-600 dark:text-blue-400">179M€</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Crowdfunding 2024 Immo</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-blue-600 dark:text-blue-400">850M€</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-blue-600 dark:text-blue-400">850M€</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Monnaies locales</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-blue-600 dark:text-blue-400">82</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-blue-600 dark:text-blue-400">82</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">HelloAsso</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-blue-600 dark:text-blue-400">370K assos</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-blue-600 dark:text-blue-400">370K assos</span>
                     </div>
                     <div className="flex justify-between items-center bg-blue-50/80 dark:bg-blue-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/50">
                       <span className="text-blue-800 dark:text-blue-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">SEL actifs</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-blue-600 dark:text-blue-400">600+</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-blue-600 dark:text-blue-400">600+</span>
                     </div>
                   </div>
                   
@@ -269,23 +269,23 @@ const ObjectiveSection = () => {
                   <div className="grid grid-cols-1 gap-1 xs:gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-3 xl:gap-3.5 2xl:gap-4 mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 flex-grow">
                     <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
                       <span className="text-purple-800 dark:text-purple-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Néo-ruraux 2020+</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-purple-600 dark:text-purple-400">200K</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-purple-600 dark:text-purple-400">200K</span>
                     </div>
                     <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
                       <span className="text-purple-800 dark:text-purple-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Porteurs agricoles</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-purple-600 dark:text-purple-400">50K+</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-purple-600 dark:text-purple-400">50K+</span>
                     </div>
                     <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
                       <span className="text-purple-800 dark:text-purple-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Jeunes cherchent terres</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-purple-600 dark:text-purple-400">30K</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-purple-600 dark:text-purple-400">30K</span>
                     </div>
                     <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
                       <span className="text-purple-800 dark:text-purple-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">CIVAM, MRJC</span>
-                      <span className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black text-purple-600 dark:text-purple-400">ACTIFS</span>
+                      <span className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl font-black text-purple-600 dark:text-purple-400">ACTIFS</span>
                     </div>
                     <div className="flex justify-between items-center bg-purple-50/80 dark:bg-purple-900/20 rounded-md xs:rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-xl xl:rounded-2xl p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-5 backdrop-blur-sm border border-purple-200/50 dark:border-purple-800/50">
                       <span className="text-purple-800 dark:text-purple-200 font-semibold text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">Membres AMAP</span>
-                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black text-purple-600 dark:text-purple-400">100K+</span>
+                      <span className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-black text-purple-600 dark:text-purple-400">100K+</span>
                     </div>
                   </div>
                   
