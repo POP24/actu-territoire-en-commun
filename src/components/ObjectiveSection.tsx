@@ -146,7 +146,7 @@ const ObjectiveSection = () => {
                   </div>
                   
                   <div className="text-center">
-                    <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black text-emerald-700 dark:text-emerald-300 italic">Les terres se libèrent</p>
+                    <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-black text-emerald-700 dark:text-emerald-300 italic whitespace-nowrap">Les terres se libèrent</p>
                   </div>
                 </div>
               </div>
@@ -223,7 +223,7 @@ const ObjectiveSection = () => {
                   </div>
                   
                   <div className="text-center">
-                    <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black text-blue-700 dark:text-blue-300 italic">L'infrastructure est prête</p>
+                    <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-black text-blue-700 dark:text-blue-300 italic whitespace-nowrap">L'infrastructure est prête</p>
                   </div>
                 </div>
               </div>
@@ -300,7 +300,7 @@ const ObjectiveSection = () => {
                   </div>
                   
                   <div className="text-center">
-                    <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black text-purple-700 dark:text-purple-300 italic">L'énergie est là, mais dispersée</p>
+                    <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-black text-purple-700 dark:text-purple-300 italic whitespace-nowrap">L'énergie est là, mais dispersée</p>
                   </div>
                 </div>
               </div>
