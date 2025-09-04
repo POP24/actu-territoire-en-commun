@@ -65,13 +65,13 @@ const Logo = () => {
               </button>
               <button 
                 onClick={() => window.location.href = 'https://boutique.lasuitedumonde.com'}
-                className="p-0.5 sm:p-1 rounded-md hover:bg-purple-500/20 transition-colors group w-full"
+                className="p-0.5 sm:p-1 rounded-md hover:bg-blue-500/20 transition-colors group w-full"
                 title="Boutique"
               >
                 <img 
                   src="/lovable-uploads/9cd49f05-606f-4611-ae44-b984a5b777b5.png" 
                   alt="Boutique" 
-                  className="w-12 h-12 sm:w-16 sm:h-16 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
+                  className="w-14 h-14 sm:w-20 sm:h-20 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
                 />
               </button>
               <button 
