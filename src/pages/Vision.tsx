@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Link } from "react-router-dom";
 
 export default function Vision() {
   const paroles = [
@@ -313,23 +314,32 @@ Il a toujours su que vous viendriez.
                 Tout commence quand vous dites oui
               </h3>
               <p className="text-xl text-muted-foreground mb-8">
-                La Suite du Monde vous attend là où vous êtes, maintenant.
               </p>
             </div>
             
             {/* Boutons d'action cosmiques */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              <Button size="lg" className="h-16 text-base font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 shadow-lg hover:shadow-xl">
-                ACTIVER MON<br />TERRITOIRE
-              </Button>
-              <Button size="lg" variant="outline" className="h-16 text-base font-semibold border-primary/40 hover:border-primary hover:bg-primary/10 transition-all duration-300">
-                REJOINDRE<br />UN CERCLE
-              </Button>
-              <Button size="lg" variant="outline" className="h-16 text-base font-semibold border-primary/40 hover:border-primary hover:bg-primary/10 transition-all duration-300">
-                CONTRIBUER<br />À LA CAGNOTTE
-              </Button>
-              <Button size="lg" variant="outline" className="h-16 text-base font-semibold border-primary/40 hover:border-primary hover:bg-primary/10 transition-all duration-300">
-                DEVENIR<br />TISSERAND
+              <Link to="/#activez-territoire">
+                <Button size="lg" className="h-16 text-base font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 shadow-lg hover:shadow-xl w-full">
+                  ACTIVER MON<br />TERRITOIRE
+                </Button>
+              </Link>
+              <Link to="/volontariat">
+                <Button size="lg" className="h-16 text-base font-semibold bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white transition-all duration-300 shadow-lg hover:shadow-xl w-full">
+                  ÊTRE<br />VOLONTAIRE
+                </Button>
+              </Link>
+              <Link to="/parrainage">
+                <Button size="lg" className="h-16 text-base font-semibold bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white transition-all duration-300 shadow-lg hover:shadow-xl w-full">
+                  PARRAINER
+                </Button>
+              </Link>
+              <Button 
+                size="lg" 
+                className="h-16 text-base font-semibold bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white transition-all duration-300 shadow-lg hover:shadow-xl w-full"
+                onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
+              >
+                VOIR LA<br />BOUTIQUE
               </Button>
             </div>
           </section>
