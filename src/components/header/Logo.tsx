@@ -64,6 +64,17 @@ const Logo = () => {
                 />
               </button>
               <button 
+                onClick={() => window.location.href = 'https://boutique.lasuitedumonde.com'}
+                className="p-0.5 sm:p-1 rounded-md hover:bg-purple-500/20 transition-colors group w-full"
+                title="Boutique"
+              >
+                <img 
+                  src="/lovable-uploads/9cd49f05-606f-4611-ae44-b984a5b777b5.png" 
+                  alt="Boutique" 
+                  className="w-8 h-8 sm:w-12 sm:h-12 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
+                />
+              </button>
+              <button 
                 onClick={() => window.location.href = 'https://app.lasuitedumonde.com'}
                 className="p-0.5 sm:p-1 rounded-md hover:bg-blue-500/20 transition-colors group w-full"
                 title="Investissement"
