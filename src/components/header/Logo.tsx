@@ -71,7 +71,7 @@ const Logo = () => {
                 <img 
                   src="/lovable-uploads/865348c2-1377-4b95-b71b-9a180d092e15.png" 
                   alt="Boutique" 
-                  className="w-16 h-16 sm:w-20 sm:h-20 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
+                  className="w-14 h-14 sm:w-16 sm:h-16 rounded object-contain mx-auto group-hover:scale-110 transition-transform"
                 />
               </button>
               <button 
