@@ -260,9 +260,6 @@ Il a toujours su que vous viendriez.
               <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-cyan-100">
                 Le Temps de la Grande Convergence
               </h2>
-              <p className="text-xl text-cyan-200/80 max-w-3xl mx-auto leading-relaxed">
-                Dix paroles sacrées pour tisser la suite du monde
-              </p>
             </div>
           </div>
         </section>
