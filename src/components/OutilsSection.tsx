@@ -124,6 +124,27 @@ const OutilsSection = () => {
               </ul>
             </div>
           </div>
+
+          {/* CTAs Section */}
+          <div className="text-center mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <a href="/volontariat" className="block">
+                <div className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white rounded-2xl p-6 h-20 flex items-center justify-center text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover-scale cursor-pointer">
+                  ÊTRE VOLONTAIRE
+                </div>
+              </a>
+              <a href="/parrainage" className="block">
+                <div className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-2xl p-6 h-20 flex items-center justify-center text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover-scale cursor-pointer">
+                  PARRAINER
+                </div>
+              </a>
+              <a href="/boutique" className="block">
+                <div className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-2xl p-6 h-20 flex items-center justify-center text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover-scale cursor-pointer">
+                  BOUTIQUE DES COMMUNS
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
