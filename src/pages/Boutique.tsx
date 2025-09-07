@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const Boutique = () => {
@@ -18,6 +18,10 @@ const Boutique = () => {
     email: "",
     phone: ""
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -494,85 +498,6 @@ const Boutique = () => {
         </div>
       </section>
 
-      {/* Votre Rôle d'Ambassadeur */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              VOTRE RÔLE D'AMBASSADEUR
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Étape 1 - Inscrivez-vous */}
-            <div className="text-center bg-card rounded-2xl p-8 border border-border hover:shadow-elegant transition-all duration-300">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                1
-              </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-4">
-                Inscrivez-vous
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Recevez votre code ambassadeur et vos outils
-              </p>
-              <Button variant="cta-orange" size="lg" className="w-full mb-4">
-                DEVENIR AMBASSADEUR
-              </Button>
-              <div className="flex justify-center gap-2 text-xs">
-                <span className="bg-black text-white px-2 py-1 rounded flex items-center gap-1">
-                  📱 App Store
-                </span>
-                <span className="bg-green-600 text-white px-2 py-1 rounded flex items-center gap-1">
-                  🤖 Play Store
-                </span>
-              </div>
-            </div>
-
-            {/* Étape 2 - Parrainez */}
-            <div className="text-center bg-card rounded-2xl p-8 border border-border hover:shadow-elegant transition-all duration-300">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                2
-              </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-4">
-                Parrainez
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Partagez votre vision, invitez votre réseau
-              </p>
-              <Button variant="cta-blue" size="lg" className="w-full mb-2">
-                INVITER MON RÉSEAU
-              </Button>
-            </div>
-
-            {/* Étape 3 - Choisissez votre répartition */}
-            <div className="text-center bg-card rounded-2xl p-8 border border-border hover:shadow-elegant transition-all duration-300">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                3
-              </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-4">
-                Choisissez votre répartition
-              </h3>
-              <div className="mb-6">
-                <p className="text-muted-foreground mb-4">Commission totale : 5%</p>
-                <div className="space-y-3">
-                  <input
-                    type="range"
-                    min="10"
-                    max="40"
-                    value={25}
-                    className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer"
-                  />
-                  <div className="flex justify-between text-sm">
-                    <span className="text-primary font-medium">Pour vous : 2.5%</span>
-                    <span className="text-muted-foreground font-medium">Pour l'asso : 2.5%</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground">Minimum 1% pour l'association</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Final */}
       <section className="py-16 bg-background">
