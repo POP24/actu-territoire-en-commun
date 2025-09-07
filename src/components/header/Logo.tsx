@@ -5,6 +5,7 @@ const Logo = () => {
   const navigate = useNavigate();
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const hoverTimeoutRef = useRef<number | null>(null);
   
   const goToHome = () => {
     navigate("/");
@@ -13,9 +14,18 @@ const Logo = () => {
     }, 100);
   };
 
-  const handleLogoClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setShowDropdown(!showDropdown);
+  const handleMouseEnter = () => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
+    setShowDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    hoverTimeoutRef.current = window.setTimeout(() => {
+      setShowDropdown(false);
+    }, 200);
   };
 
   // Close dropdown when clicking outside
@@ -35,11 +45,24 @@ const Logo = () => {
     };
   }, [showDropdown]);
 
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (hoverTimeoutRef.current) {
+        clearTimeout(hoverTimeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="flex items-center space-x-2 sm:space-x-4">
-      <div className="relative" ref={dropdownRef}>
+      <div 
+        className="relative" 
+        ref={dropdownRef}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         <button 
-          onClick={handleLogoClick} 
           className="transition-transform duration-200 hover:scale-110"
         >
           <img 
