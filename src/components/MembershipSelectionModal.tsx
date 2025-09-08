@@ -59,9 +59,8 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
                 
                 <h3 className="text-2xl font-black text-foreground mb-3 tracking-tight">USAGER LOCAL</h3>
                 <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-2">
-                  <span className="text-3xl font-black text-primary">Prix Libre</span>
+                  <span className="text-3xl font-black text-primary">A PARTIR DE 10€</span>
                 </div>
-                <div className="text-base text-muted-foreground font-medium">à partir de 10€</div>
               </div>
 
               <div className="space-y-4 mb-8">
@@ -69,19 +68,23 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
                 <div className="space-y-3">
                   <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
                     <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full"></div>
-                    <span className="font-medium">Accès aux lieux communs</span>
+                    <span className="font-medium">Votez sur les programmes d'animation et événements</span>
                   </div>
                   <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
                     <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full"></div>
-                    <span className="font-medium">Participation aux décisions locales</span>
+                    <span className="font-medium">Proposer et rejoindre des projets</span>
                   </div>
                   <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
                     <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full"></div>
-                    <span className="font-medium">Crédits d'usage territoriaux</span>
+                    <span className="font-medium">Créer des événements et animer la vie locale</span>
                   </div>
                   <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
                     <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full"></div>
-                    <span className="font-medium">Support communautaire avancé</span>
+                    <span className="font-medium">Participez au Trésor collectif local</span>
+                  </div>
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Profitez des espaces communs</span>
                   </div>
                 </div>
               </div>
