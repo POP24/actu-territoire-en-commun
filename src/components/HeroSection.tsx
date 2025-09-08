@@ -151,10 +151,14 @@ useEffect(() => {
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20">
                 {/* Bandeau REJOIGNEZ LE MOUVEMENT */}
-                <div className="bg-gradient-to-r from-white via-gray-100 to-white rounded-lg p-2 sm:p-3 mb-4 sm:mb-6 shadow-lg border-2 border-gray-300 text-center">
-                  <h2 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 drop-shadow-lg" style={{ textShadow: '1px 1px 2px rgba(255,255,255,0.7)' }}>
-                    REJOIGNEZ LE MOUVEMENT
-                  </h2>
+                <div className="text-center mb-4 sm:mb-6">
+                  <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                    <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+                    <h2 className="text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight whitespace-nowrap text-white px-4 sm:px-6">
+                      Rejoignez le <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Mouvement</span>
+                    </h2>
+                    <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+                  </div>
                 </div>
                 
                 {/* Real France Map - Slightly increased height */}
@@ -188,10 +192,14 @@ useEffect(() => {
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl border border-white/20">
                 <div className="text-center mb-4 sm:mb-6">
                   {/* Bandeau ADHÉSION */}
-                  <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 rounded-lg p-2 sm:p-3 mb-4 sm:mb-6 shadow-lg">
-                    <h2 className="text-lg sm:text-xl md:text-2xl font-black text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
-                      ADHÉSION
-                    </h2>
+                  <div className="text-center mb-4 sm:mb-6">
+                    <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                      <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+                      <h2 className="text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight whitespace-nowrap text-gray-900 px-4 sm:px-6">
+                        <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Adhésion</span>
+                      </h2>
+                      <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+                    </div>
                   </div>
                   
                   <div className="border-b-2 border-gray-200 pb-3 sm:pb-4 mb-4 sm:mb-6">
