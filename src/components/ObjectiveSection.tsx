@@ -63,7 +63,7 @@ const ObjectiveSection = () => {
               <div className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 rounded-full"></div>
               <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-2 xs:mb-3 sm:mb-4 md:mb-5 leading-tight tracking-wide px-1 xs:px-2 sm:px-3">
                 <span className="text-foreground drop-shadow-sm block xs:block sm:inline">L'heure</span>{" "}
-                <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent block xs:block sm:inline">est Venue</span>
+                <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent block xs:block sm:inline">est Venue</span>
               </h2>
               <div className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-accent via-secondary to-primary mx-auto rounded-full"></div>
             </div>
@@ -317,7 +317,7 @@ const ObjectiveSection = () => {
                 <div className="w-10 xs:w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 rounded-full"></div>
                 <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-black mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 leading-tight tracking-wide px-1 xs:px-2 sm:px-2 md:px-3 lg:px-4">
                   <span className="text-foreground drop-shadow-sm block xs:block sm:inline">Relions</span>{" "}
-                  <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent block xs:block sm:inline">- Nous</span>
+                  <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent block xs:block sm:inline">- Nous</span>
                 </h3>
                 <div className="w-10 xs:w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-accent via-secondary to-primary mx-auto rounded-full"></div>
               </div>

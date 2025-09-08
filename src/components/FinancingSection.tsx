@@ -13,14 +13,14 @@ const FinancingSection = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8">
             <span className="text-foreground">FINANCEZ VOTRE</span>{" "}
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">TERRITOIRE</span>
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">TERRITOIRE</span>
           </h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {/* Immobilier Partagé */}
             <div className="text-center">
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Immobilier Partagé</span>
+                <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Immobilier Partagé</span>
               </h3>
               <div className="space-y-3 sm:space-y-4">
                 <div className="bg-card/50 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-border/20 shadow-soft">
@@ -37,7 +37,7 @@ const FinancingSection = () => {
             {/* Trésorerie Commune */}
             <div className="text-center">
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
-                <span className="bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">Trésorerie Commune</span>
+                <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Trésorerie Commune</span>
               </h3>
               <div className="space-y-3 sm:space-y-4">
                 <div className="bg-card/50 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-border/20 shadow-soft">

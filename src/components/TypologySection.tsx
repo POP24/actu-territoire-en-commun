@@ -26,7 +26,7 @@ const TypologySection = () => {
           {/* Titre principal */}
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8">
             <span className="text-foreground">CE QU'ON</span>{" "}
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">ACTIVE</span>
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ACTIVE</span>
           </h2>
           
           {/* Section Focus - Campings Collectifs */}
