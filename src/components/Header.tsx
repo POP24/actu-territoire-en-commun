@@ -28,7 +28,6 @@ const Header = () => {
     fixed top-0 left-0 right-0 z-50 transition-all duration-300
     bg-background/90 backdrop-blur-md shadow-lg border-b border-border/50
     ${scrolled ? 'bg-background/95' : 'bg-background/85'}
-    bg-[url('/lovable-uploads/3147cbe0-8ba8-4fb5-b1fe-541d5e47e339.png')] bg-cover bg-center bg-no-repeat
   `.trim();
 
   return (
