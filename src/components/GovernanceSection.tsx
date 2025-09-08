@@ -22,7 +22,7 @@ const GovernanceSection = () => {
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 md:mb-6">
               <span className="text-white">Gouvernance des</span>{" "}
-              Gouvernance des <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Communs</span>
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Communs</span>
             </h2>
           </div>
 
