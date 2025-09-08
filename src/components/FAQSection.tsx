@@ -7,8 +7,8 @@ const FAQSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-foreground">
-              QUESTIONS <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">FRÉQUENTES</span>
+            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-foreground">
+              questions <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">fréquentes</span>
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground">Trouvez les réponses aux questions les plus courantes sur La Suite du Monde</p>
           </div>

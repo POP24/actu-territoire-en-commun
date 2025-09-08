@@ -6,8 +6,8 @@ const OutilsSection = () => {
           
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6">
-              OUTILS DES <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">COMMUNS</span>
+            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6">
+              outils des <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">communs</span>
             </h2>
             <p className="text-base sm:text-xl md:text-2xl text-muted-foreground mb-3 sm:mb-4">
               Gouverner, investir et connecter.

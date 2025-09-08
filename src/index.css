@@ -179,4 +179,21 @@ All colors MUST be HSL.
   .hover-scale {
     @apply transition-transform duration-200 ease-out hover:scale-105;
   }
+  
+  /* Blue gradient underline for section titles */
+  .title-with-underline {
+    @apply relative inline-block;
+  }
+  
+  .title-with-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, #3b82f6 20%, #1d4ed8 50%, #3b82f6 80%, transparent 100%);
+    border-radius: 2px;
+  }
 }
