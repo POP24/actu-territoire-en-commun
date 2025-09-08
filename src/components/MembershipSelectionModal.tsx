@@ -29,87 +29,147 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Usager Local */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border-2 border-blue-200 hover:border-blue-300 transition-all duration-300 cursor-pointer group"
+          <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-8 border border-border/20 hover:border-primary/30 transition-all duration-500 cursor-pointer group overflow-hidden shadow-soft hover:shadow-elegant"
                onClick={handleSelectLocal}>
-            <div className="text-center mb-6">
-              <div className="text-6xl mb-4">🏠</div>
-              <h3 className="text-2xl font-black text-gray-900 mb-2">USAGER LOCAL</h3>
-              <div className="text-4xl font-black text-blue-700 mb-2">Prix Libre</div>
-              <div className="text-lg text-gray-600 mb-4">à partir de 10€</div>
+            
+            {/* Futuristic background pattern */}
+            <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+              <div className="absolute top-4 right-4 w-32 h-32 border border-primary/20 rounded-full"></div>
+              <div className="absolute bottom-8 left-8 w-16 h-16 border border-primary/20 rounded-full"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-primary/10 rounded-full"></div>
+            </div>
+            
+            {/* Geometric accent */}
+            <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden">
+              <div className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rotate-45 rounded-sm"></div>
             </div>
 
-            <div className="space-y-3 mb-6">
-              <h4 className="font-semibold text-gray-900">Inclus dans votre adhésion :</h4>
-              <div className="space-y-2">
-                <div className="flex items-center text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                  Accès aux lieux communs
+            <div className="relative z-10">
+              <div className="text-center mb-8">
+                {/* Tech-inspired icon replacement */}
+                <div className="w-16 h-16 mx-auto mb-6 relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/70 rounded-lg rotate-3 shadow-lg"></div>
+                  <div className="absolute inset-1 bg-background rounded-lg flex items-center justify-center">
+                    <div className="w-8 h-8 border-2 border-primary rounded-sm relative">
+                      <div className="absolute inset-2 bg-primary/20 rounded-sm"></div>
+                      <div className="absolute top-1 right-1 w-1 h-1 bg-primary rounded-full"></div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                  Participation aux décisions locales
+                
+                <h3 className="text-2xl font-black text-foreground mb-3 tracking-tight">USAGER LOCAL</h3>
+                <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-2">
+                  <span className="text-3xl font-black text-primary">Prix Libre</span>
                 </div>
-                <div className="flex items-center text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                  Crédits d'usage
-                </div>
-                <div className="flex items-center text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                  Support communautaire
+                <div className="text-base text-muted-foreground font-medium">à partir de 10€</div>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <h4 className="font-bold text-foreground text-lg border-b border-border pb-2">Accès Privilégié</h4>
+                <div className="space-y-3">
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Accès aux lieux communs</span>
+                  </div>
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Participation aux décisions locales</span>
+                  </div>
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Crédits d'usage territoriaux</span>
+                  </div>
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Support communautaire avancé</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <Button 
-              onClick={handleSelectLocal}
-              className="w-full btn-cta-blue font-semibold text-lg py-3 group-hover:scale-105 transition-transform duration-300"
-            >
-              CHOISIR USAGER LOCAL
-            </Button>
+              <Button 
+                onClick={handleSelectLocal}
+                className="w-full btn-cta-blue font-bold text-lg py-4 group-hover:scale-105 transition-all duration-300 relative overflow-hidden"
+              >
+                <span className="relative z-10">ACTIVER ACCÈS LOCAL</span>
+              </Button>
+            </div>
           </div>
 
           {/* Architecte Réseau */}
-          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 border-2 border-green-200 hover:border-green-300 transition-all duration-300 cursor-pointer group"
+          <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-8 border border-border/20 hover:border-green-brand/30 transition-all duration-500 cursor-pointer group overflow-hidden shadow-soft hover:shadow-elegant"
                onClick={handleSelectArchitect}>
-            <div className="text-center mb-6">
-              <div className="text-6xl mb-4">🏗️</div>
-              <h3 className="text-2xl font-black text-gray-900 mb-2">ARCHITECTE RÉSEAU</h3>
-              <div className="text-4xl font-black text-green-700 mb-2">100€</div>
-              <div className="text-lg text-gray-600 mb-4">10 000 adhésions disponibles</div>
+            
+            {/* Futuristic background pattern */}
+            <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+              <div className="absolute top-4 right-4 w-32 h-32 border border-green-brand/20 rounded-full"></div>
+              <div className="absolute bottom-8 left-8 w-16 h-16 border border-green-brand/20 rounded-full"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-green-brand/10 rounded-full"></div>
+            </div>
+            
+            {/* Premium indicator */}
+            <div className="absolute top-6 right-6 px-3 py-1 bg-gradient-to-r from-gold to-gold-dark rounded-full text-xs font-bold text-white transform rotate-12">
+              PREMIUM
+            </div>
+            
+            {/* Geometric accent */}
+            <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden">
+              <div className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-green-brand/20 to-green-brand/10 rotate-45 rounded-sm"></div>
             </div>
 
-            <div className="space-y-3 mb-6">
-              <h4 className="font-semibold text-gray-900">Inclus dans votre adhésion :</h4>
-              <div className="space-y-2">
-                <div className="flex items-center text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Tous les avantages Usager Local
+            <div className="relative z-10">
+              <div className="text-center mb-8">
+                {/* Tech-inspired icon replacement */}
+                <div className="w-16 h-16 mx-auto mb-6 relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-brand to-green-dark rounded-lg rotate-3 shadow-lg"></div>
+                  <div className="absolute inset-1 bg-background rounded-lg flex items-center justify-center">
+                    <div className="w-8 h-8 border-2 border-green-brand rounded-sm relative">
+                      <div className="absolute inset-1 border border-green-brand/50 rounded-sm"></div>
+                      <div className="absolute top-1 right-1 w-2 h-2 bg-green-brand rounded-sm"></div>
+                      <div className="absolute bottom-1 left-1 w-1 h-1 bg-green-brand/70 rounded-full"></div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Droits de gouvernance réseau
+                
+                <h3 className="text-2xl font-black text-foreground mb-3 tracking-tight">ARCHITECTE RÉSEAU</h3>
+                <div className="inline-flex items-center px-4 py-2 bg-green-brand/10 rounded-full mb-2">
+                  <span className="text-3xl font-black text-green-brand">100€</span>
                 </div>
-                <div className="flex items-center text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Création de nouveaux lieux
-                </div>
-                <div className="flex items-center text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Commission sur les adhésions
-                </div>
-                <div className="flex items-center text-sm text-gray-700">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Formation exclusive
+                <div className="text-base text-muted-foreground font-medium">10 000 accès disponibles</div>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <h4 className="font-bold text-foreground text-lg border-b border-border pb-2">Gouvernance Réseau</h4>
+                <div className="space-y-3">
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-green-brand to-green-brand/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Tous les privilèges Usager Local</span>
+                  </div>
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-green-brand to-green-brand/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Droits de gouvernance réseau</span>
+                  </div>
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-green-brand to-green-brand/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Création de nouveaux territoires</span>
+                  </div>
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-green-brand to-green-brand/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Commission sur développement</span>
+                  </div>
+                  <div className="flex items-center text-sm text-foreground/80 group-hover:text-foreground transition-colors">
+                    <div className="w-1 h-6 bg-gradient-to-b from-green-brand to-green-brand/50 mr-4 rounded-full"></div>
+                    <span className="font-medium">Formation exclusive avancée</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <Button 
-              onClick={handleSelectArchitect}
-              className="w-full btn-cta-green font-semibold text-lg py-3 group-hover:scale-105 transition-transform duration-300"
-            >
-              CHOISIR ARCHITECTE RÉSEAU
-            </Button>
+              <Button 
+                onClick={handleSelectArchitect}
+                className="w-full btn-cta-green font-bold text-lg py-4 group-hover:scale-105 transition-all duration-300 relative overflow-hidden"
+              >
+                <span className="relative z-10">ACTIVER ACCÈS ARCHITECTE</span>
+              </Button>
+            </div>
           </div>
         </div>
 
