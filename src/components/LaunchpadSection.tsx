@@ -12,8 +12,8 @@ const LaunchpadSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Main Title */}
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              ACTIVEZ VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">TERRITOIRE</span>
+            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+              Activez votre <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Territoire</span>
             </h2>
             <p className="text-gray-300 text-lg mb-2">Transformez les idées en actions.</p>
             <p className="text-gray-400">Financez les projets qui comptent, ensemble.</p>

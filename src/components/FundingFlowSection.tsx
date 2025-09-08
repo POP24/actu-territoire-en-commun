@@ -26,8 +26,8 @@ const FundingFlowSection = () => {
           {/* Header */}
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 md:mb-6">
-              <span className="text-white">construire le</span>{" "}
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">réseau</span>
+              <span className="text-white">Construire le</span>{" "}
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Réseau</span>
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-cyan-100 max-w-3xl mx-auto px-4">
               Votre adhésion construit le trésor commun.<br />

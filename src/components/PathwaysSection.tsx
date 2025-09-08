@@ -9,7 +9,7 @@ const PathwaysSection = () => {
           {/* Title */}
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6">
-              choisissez votre <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">chemin</span>
+              Choisissez votre <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Chemin</span>
             </h2>
           </div>
 
