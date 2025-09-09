@@ -70,7 +70,16 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button variant="cta-blue" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button 
+                onClick={() => {
+                  const section = document.getElementById('adhesion-locale');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                variant="cta-blue" 
+                className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base"
+              >
                 ADHÉSION LOCALE →
               </Button>
             </div>
@@ -131,7 +140,16 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button variant="cta-green" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button 
+                onClick={() => {
+                  const section = document.getElementById('adhesion-architecte');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                variant="cta-green" 
+                className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base"
+              >
                 ADHÉSION ARCHITECTE →
               </Button>
             </div>

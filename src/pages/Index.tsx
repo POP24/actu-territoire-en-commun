@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ObjectiveSection from "@/components/ObjectiveSection";
 import PathwaysSection from "@/components/PathwaysSection";
+import AdhesionLocaleSection from "@/components/AdhesionLocaleSection";
+import AdhesionArchitecteSection from "@/components/AdhesionArchitecteSection";
 import GovernanceSection from "@/components/GovernanceSection";
 import FinancingSection from "@/components/FinancingSection";
 import LaunchpadSection from "@/components/LaunchpadSection";
@@ -25,6 +27,8 @@ const Index = () => {
       <Header />
       <HeroSection />
       <PathwaysSection />
+      <AdhesionLocaleSection />
+      <AdhesionArchitecteSection />
       <LaunchpadSection />
       <MaillageTerritorialSection />
       <ObjectiveSection />
