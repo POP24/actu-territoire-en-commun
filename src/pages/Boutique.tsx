@@ -66,7 +66,7 @@ const Boutique = () => {
               LA BOUTIQUE DES COMMUNS
             </h1>
             <p className="text-xl md:text-2xl text-white/90 font-medium mb-8">
-              Soutenez le réseau en portant ses valeurs
+              Un outil du réseau pour financer le compte commun territorial
             </p>
             <Button 
               onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
@@ -85,98 +85,39 @@ const Boutique = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              UN MODÈLE ÉCONOMIQUE TRANSPARENT
+              CRÉATEURS + TERRITOIRES = COMPTE COMMUN
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Chaque achat finance directement les projets du territoire 
-              et rémunère équitablement les créateurs locaux
+              La Boutique des Communs est votre espace de création collective.<br/>
+              Chaque achat alimente directement le trésor commun de votre territoire.
+            </p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-6 font-medium">
+              Le principe est simple :
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Créateurs Locaux */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="text-6xl mb-4">🎨</div>
-                <CardTitle className="text-2xl font-bold text-card-foreground">
-                  CRÉATEURS LOCAUX
-                </CardTitle>
-                <p className="text-muted-foreground">
-                  Artistes et artisans du réseau proposent leurs créations
-                </p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-card-foreground">
-                  <li className="flex items-center"><span className="text-green-500 mr-2">✓</span>Design original</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">✓</span>Production éthique</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">✓</span>Matériaux durables</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Répartition Équitable */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="text-6xl mb-4">⚖️</div>
-                <CardTitle className="text-2xl font-bold text-card-foreground">
-                  RÉPARTITION ÉQUITABLE
-                </CardTitle>
-                <p className="text-muted-foreground">
-                  Chaque créateur définit sa contribution
-                </p>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-sm text-muted-foreground text-center">
-                    Sur les marges après production :
-                  </p>
-                  <div className="space-y-3">
-                    <label className="block text-sm font-medium text-card-foreground text-center">
-                      Répartition personnalisable
-                    </label>
-                    <input
-                      type="range"
-                      min="20"
-                      max="80"
-                      value={creatorShare}
-                      onChange={(e) => setCreatorShare(parseInt(e.target.value))}
-                      className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer slider-thumb"
-                    />
-                    <div className="flex justify-between text-sm">
-                      <span className="font-medium text-primary">
-                        Créateur : <strong>{creatorShare}%</strong>
-                      </span>
-                      <span className="font-medium text-muted-foreground">
-                        Communs : <strong>{100 - creatorShare}%</strong>
-                      </span>
-                    </div>
-                  </div>
-                  <p className="text-xs text-muted-foreground text-center">
-                    Minimum 20% pour les communs
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Circuit Vertueux */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="text-6xl mb-4">🔄</div>
-                <CardTitle className="text-2xl font-bold text-card-foreground">
-                  CIRCUIT VERTUEUX
-                </CardTitle>
-                <p className="text-muted-foreground">
-                  Les bénéfices alimentent automatiquement :
-                </p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-card-foreground">
-                  <li className="flex items-center"><span className="text-green-500 mr-2">✓</span>Le trésor commun</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">✓</span>Les projets locaux</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">✓</span>De nouvelles créations</li>
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-card border-border rounded-2xl p-8 text-center">
+                <div className="text-4xl mb-4">🎨</div>
+                <h3 className="text-xl font-bold text-card-foreground mb-4">Les créateurs locaux proposent leurs œuvres</h3>
+              </div>
+              <div className="bg-card border-border rounded-2xl p-8 text-center">
+                <div className="text-4xl mb-4">🌱</div>
+                <h3 className="text-xl font-bold text-card-foreground mb-4">Production à la demande, zéro stock</h3>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-card border-border rounded-2xl p-8 text-center">
+                <div className="text-4xl mb-4">⚖️</div>
+                <h3 className="text-xl font-bold text-card-foreground mb-4">50% créateur / 50% compte commun</h3>
+              </div>
+              <div className="bg-card border-border rounded-2xl p-8 text-center">
+                <div className="text-4xl mb-4">🔍</div>
+                <h3 className="text-xl font-bold text-card-foreground mb-4">100% transparent, 100% traçable</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -186,25 +127,70 @@ const Boutique = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              COMMENT ÇA FONCTIONNE ?
+              COMMENT ÇA MARCHE
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { num: "1", title: "Vous commandez", desc: "Sur notre boutique autonome, paiement sécurisé" },
-              { num: "2", title: "Production locale", desc: "Impression à la demande, zéro stock, zéro déchet" },
-              { num: "3", title: "Répartition directe", desc: "Les marges sont distribuées automatiquement selon nos accords" },
-              { num: "4", title: "Impact visible", desc: "Suivez l'utilisation des fonds sur le tableau de bord" }
-            ].map((etape, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                  {etape.num}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Créateur */}
+            <Card className="bg-card border-border">
+              <CardHeader className="text-center">
+                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  1
                 </div>
-                <h4 className="text-xl font-bold text-foreground mb-4">{etape.title}</h4>
-                <p className="text-muted-foreground">{etape.desc}</p>
-              </div>
-            ))}
+                <CardTitle className="text-2xl font-bold text-card-foreground">
+                  Vous êtes créateur ?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 text-card-foreground">
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Proposez vos créations (textile, accessoires, art)</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Définissez vos prix avec nous</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Recevez 50% des marges automatiquement</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Participez à la vie de la boutique locale</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Soutien */}
+            <Card className="bg-card border-border">
+              <CardHeader className="text-center">
+                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  2
+                </div>
+                <CardTitle className="text-2xl font-bold text-card-foreground">
+                  Vous soutenez le mouvement ?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 text-card-foreground">
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Achetez des créations uniques et locales</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Financez le compte commun territorial</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Suivez l'utilisation des fonds</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Portez les valeurs du réseau</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Territoire */}
+            <Card className="bg-card border-border">
+              <CardHeader className="text-center">
+                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  3
+                </div>
+                <CardTitle className="text-2xl font-bold text-card-foreground">
+                  Le territoire se construit
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 text-card-foreground">
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Les 50% alimentent le trésor collectif</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Finance les projets votés localement</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Rémunère les coordinateurs territoriaux</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Permet de nouvelles acquisitions communes</li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
