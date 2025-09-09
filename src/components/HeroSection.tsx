@@ -141,6 +141,39 @@ useEffect(() => {
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white/80 mb-8 sm:mb-12">
               Outils d'Organisation Local
             </h2>
+            
+            {/* Top Stats - 2 levels improved */}
+            <div className="max-w-5xl mx-auto">
+              {/* Conteneur avec liseret OBJECTIFS */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden">
+                {/* Liseret OBJECTIFS */}
+                <div className="bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 text-white text-center py-0.5 px-4">
+                  <span className="font-bold text-xs tracking-wider">OBJECTIFS</span>
+                </div>
+                
+                {/* Cards directement attachées */}
+                <div className="grid grid-cols-3 gap-0 p-4">
+                  <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-l-xl border-r border-white/20 text-center">
+                    <div className="text-white font-bold text-xs sm:text-sm mb-1">LIEUX COMMUNS</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-black text-cyan-400">1000+</div>
+                  </div>
+                  <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 border-r border-white/20 text-center">
+                    <div className="text-white font-bold text-xs sm:text-sm mb-1">TRÉSOR COLLECTIF</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-black text-orange-400">1M€</div>
+                  </div>
+                  <div className="bg-white/15 backdrop-blur-sm px-2 sm:px-4 md:px-6 py-3 sm:py-4 rounded-r-xl text-center">
+                    <div className="text-white font-bold text-xs sm:text-sm mb-1">GOUVERNANCE</div>
+                    <div className="text-sm sm:text-base md:text-lg font-bold text-cyan-400">
+                      <span className="block sm:inline">LOCALE</span>
+                      <span className="hidden sm:inline">/</span>
+                      <span className="block sm:inline">GLOBAL</span>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
 
           </div>
 
