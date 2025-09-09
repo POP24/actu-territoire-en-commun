@@ -25,7 +25,7 @@ const PathwaysSection = () => {
                   Chemin 1 · Association Locale
                 </div>
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 mb-2">À partir de 10€</div>
-                <div className="text-blue-600 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Adhésion Locale</div>
+                <div className="text-blue-600 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">ADHÉSION LOCALE</div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Gouvernance du lieu</h3>
                 <p className="text-muted-foreground italic text-sm">Engagement sur votre territoire</p>
               </div>
@@ -82,7 +82,7 @@ const PathwaysSection = () => {
                   Chemin 2 · Fédération nationale
                 </div>
                   <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-brand mb-2">100€</div>
-                  <div className="text-green-brand font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Adhésion Architecte</div>
+                  <div className="text-green-brand font-semibold mb-3 sm:mb-4 text-sm sm:text-base">ADHÉSION ARCHITECTE</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Communauté Nationale</h3>
                   <p className="text-muted-foreground italic text-sm">Coordination globale</p>
                 </div>

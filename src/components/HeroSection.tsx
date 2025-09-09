@@ -154,9 +154,9 @@ useEffect(() => {
                 <div className="text-center mb-4 sm:mb-6">
                   <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
                     <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-                    <h2 className="text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight whitespace-nowrap text-white px-4 sm:px-6">
-                      Rejoignez le <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Mouvement</span>
-                    </h2>
+                     <h2 className="text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight whitespace-nowrap text-white px-4 sm:px-6">
+                       REJOIGNEZ LE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">MOUVEMENT</span>
+                     </h2>
                     <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
                   </div>
                 </div>
@@ -195,9 +195,9 @@ useEffect(() => {
                   <div className="text-center mb-4 sm:mb-6">
                     <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
                       <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-                      <h2 className="text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight whitespace-nowrap text-gray-900 px-4 sm:px-6">
-                        <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Adhésion</span>
-                      </h2>
+                       <h2 className="text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight whitespace-nowrap text-gray-900 px-4 sm:px-6">
+                         <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ADHÉSION</span>
+                       </h2>
                       <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
                     </div>
                   </div>
