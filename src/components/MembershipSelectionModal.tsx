@@ -23,13 +23,13 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
       <DialogContent className="max-w-4xl">
         <DialogHeader>
           <DialogTitle className="text-center mb-6">
-            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
-              <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-               <h2 className="text-2xl sm:text-3xl font-black leading-tight tracking-tight whitespace-nowrap text-foreground px-8 sm:px-12">
-                 CHOISISSEZ VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ADHÉSION</span>
+             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+               <div className="flex-1 h-1 bg-gradient-to-r from-transparent via-gray-700 to-gray-700 rounded-full shadow-md"></div>
+               <h2 className="text-2xl sm:text-3xl font-black leading-tight tracking-wide whitespace-nowrap text-foreground px-8 sm:px-12 drop-shadow-sm">
+                 CHOISISSEZ VOTRE <span className="text-gray-900 font-black">ADHÉSION</span>
                </h2>
-              <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
-            </div>
+               <div className="flex-1 h-1 bg-gradient-to-l from-transparent via-gray-700 to-gray-700 rounded-full shadow-md"></div>
+             </div>
           </DialogTitle>
         </DialogHeader>
 

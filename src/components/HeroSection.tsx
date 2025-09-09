@@ -150,16 +150,16 @@ useEffect(() => {
             {/* Left: Interactive Real Map */}
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20">
-                {/* Bandeau REJOIGNEZ LE MOUVEMENT */}
-                <div className="text-center mb-4 sm:mb-6">
-                  <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
-                    <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-                     <h2 className="text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight whitespace-nowrap text-white px-4 sm:px-6">
-                       REJOIGNEZ LE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">MOUVEMENT</span>
+                 {/* Bandeau REJOIGNEZ LE MOUVEMENT */}
+                 <div className="text-center mb-4 sm:mb-6">
+                   <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                     <div className="flex-1 h-1 bg-gradient-to-r from-transparent via-white/80 to-white/80 rounded-full shadow-lg"></div>
+                     <h2 className="text-xl sm:text-2xl md:text-3xl font-black leading-tight tracking-wide whitespace-nowrap text-white px-6 sm:px-8 drop-shadow-lg">
+                       REJOIGNEZ LE <span className="text-white font-black">MOUVEMENT</span>
                      </h2>
-                    <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
-                  </div>
-                </div>
+                     <div className="flex-1 h-1 bg-gradient-to-l from-transparent via-white/80 to-white/80 rounded-full shadow-lg"></div>
+                   </div>
+                 </div>
                 
                 {/* Real France Map - Slightly increased height */}
                 <div className="relative w-full h-52 sm:h-64 md:h-80 bg-gray-900 rounded-2xl overflow-hidden">
@@ -191,16 +191,16 @@ useEffect(() => {
               {/* Cards Container */}
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl border border-white/20">
                 <div className="text-center mb-4 sm:mb-6">
-                  {/* Bandeau ADHÉSION */}
-                  <div className="text-center mb-4 sm:mb-6">
-                    <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
-                      <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-                       <h2 className="text-lg sm:text-xl md:text-2xl font-black leading-tight tracking-tight whitespace-nowrap text-gray-900 px-4 sm:px-6">
-                         <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ADHÉSION</span>
+                   {/* Bandeau ADHÉSION */}
+                   <div className="text-center mb-4 sm:mb-6">
+                     <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                       <div className="flex-1 h-1 bg-gradient-to-r from-transparent via-gray-800/60 to-gray-800/60 rounded-full shadow-md"></div>
+                       <h2 className="text-xl sm:text-2xl md:text-3xl font-black leading-tight tracking-wide whitespace-nowrap text-gray-900 px-6 sm:px-8 drop-shadow-sm">
+                         <span className="text-gray-900 font-black bg-gradient-to-r from-gray-800 to-gray-900 bg-clip-text text-transparent">ADHÉSION</span>
                        </h2>
-                      <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
-                    </div>
-                  </div>
+                       <div className="flex-1 h-1 bg-gradient-to-l from-transparent via-gray-800/60 to-gray-800/60 rounded-full shadow-md"></div>
+                     </div>
+                   </div>
                   
                   <div className="border-b-2 border-gray-200 pb-3 sm:pb-4 mb-4 sm:mb-6">
                     <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
