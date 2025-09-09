@@ -10,9 +10,9 @@ const PathwaysSection = () => {
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
               <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight tracking-tight whitespace-nowrap text-foreground px-8 sm:px-12">
-                Choisissez votre <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Chemin</span>
-              </h2>
+               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight tracking-tight whitespace-nowrap text-foreground px-8 sm:px-12 font-playfair">
+                 Choisissez votre <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Chemin</span>
+               </h2>
               <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
             </div>
           </div>
