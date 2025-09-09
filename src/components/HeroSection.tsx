@@ -142,19 +142,6 @@ useEffect(() => {
               Outils d'Organisation Local
             </h2>
             
-            {/* Top Stats - 2 levels improved */}
-            <div className="max-w-5xl mx-auto">
-              {/* Conteneur avec liseret OBJECTIFS */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden">
-                {/* Liseret OBJECTIFS */}
-                <div className="bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 text-white text-center py-0.5 px-4">
-                  <span className="font-bold text-xs tracking-wider">OBJECTIFS</span>
-                </div>
-                
-          
-
-              </div>
-            </div>
 
           </div>
 
