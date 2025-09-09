@@ -315,10 +315,10 @@ const ObjectiveSection = () => {
               {/* Title with same style as L'HEURE EST VENUE but fully responsive */}
               <div className="mb-4 xs:mb-5 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12 2xl:mb-16">
                 <div className="w-10 xs:w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 rounded-full"></div>
-                <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-black mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 leading-tight tracking-wide px-1 xs:px-2 sm:px-2 md:px-3 lg:px-4">
-                  <span className="text-foreground drop-shadow-sm block xs:block sm:inline">Relions</span>{" "}
-                  <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent block xs:block sm:inline">- Nous</span>
-                </h3>
+                 <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-black mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 leading-tight tracking-wide px-1 xs:px-2 sm:px-2 md:px-3 lg:px-4">
+                   <span className="text-foreground drop-shadow-sm block xs:block sm:inline">RELIONS</span>{" "}
+                   <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent block xs:block sm:inline">- NOUS</span>
+                 </h3>
                 <div className="w-10 xs:w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-accent via-secondary to-primary mx-auto rounded-full"></div>
               </div>
               
