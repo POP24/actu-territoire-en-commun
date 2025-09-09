@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import Investir from "./pages/Investir";
 import Opportunites from "./pages/Opportunites";
 import Vision from "./pages/Vision";
+import Vision2 from "./pages/Vision2";
 import Volontariat from "./pages/Volontariat";
 import Parrainage from "./pages/Parrainage";
 import Boutique from "./pages/Boutique";
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/investir" element={<Investir />} />
             <Route path="/opportunites" element={<Opportunites />} />
             <Route path="/vision" element={<Vision />} />
+            <Route path="/vision2" element={<Vision2 />} />
             <Route path="/volontariat" element={<Volontariat />} />
             <Route path="/parrainage" element={<Parrainage />} />
             <Route path="/boutique" element={<Boutique />} />
