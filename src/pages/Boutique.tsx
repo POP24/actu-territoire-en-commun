@@ -104,9 +104,8 @@ const Boutique = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-card-foreground">
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Proposez vos créations (textile, accessoires, art)</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Proposez vos créations ou productions</li>
                   <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Définissez vos prix avec nous</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Recevez 50% des marges automatiquement</li>
                   <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Participez à la vie de la boutique locale</li>
                 </ul>
               </CardContent>
@@ -126,7 +125,6 @@ const Boutique = () => {
                 <ul className="space-y-3 text-card-foreground">
                   <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Achetez des créations uniques et locales</li>
                   <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Financez le compte commun territorial</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Suivez l'utilisation des fonds</li>
                   <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Portez les valeurs du réseau</li>
                 </ul>
               </CardContent>
@@ -144,8 +142,7 @@ const Boutique = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-card-foreground">
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Les 50% alimentent le trésor collectif</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Finance les projets votés localement</li>
+                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Le trésor finance les projets votés localement</li>
                   <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Rémunère les coordinateurs territoriaux</li>
                   <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Permet de nouvelles acquisitions communes</li>
                 </ul>
@@ -155,50 +152,15 @@ const Boutique = () => {
         </div>
       </section>
 
-      {/* Appel Créateurs */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              CRÉATEURS, REJOIGNEZ L'AVENTURE
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Ce que nous offrons</h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Plateforme de vente clé en main</li>
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Gestion automatisée des commandes</li>
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Production et livraison gérées</li>
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Communauté engagée d'acheteurs</li>
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Rémunération équitable garantie</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Ce que nous cherchons</h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Designs alignés avec nos valeurs</li>
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Créations originales et locales</li>
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Engagement dans le temps</li>
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Volonté de co-construire</li>
-                <li className="flex items-center"><span className="text-green-500 mr-3">✓</span>Transparence sur les process</li>
-              </ul>
-            </div>
-          </div>
-
           <div className="text-center mt-12">
             <Button 
               variant="cta-blue"
               size="lg"
               className="rounded-xl px-8 py-4 text-lg font-bold"
             >
-              PROPOSER VOS CRÉATIONS
+              PROPOSER UNE COLLABORATION
             </Button>
           </div>
-        </div>
-      </section>
 
 
       {/* Du Digital au Territorial */}

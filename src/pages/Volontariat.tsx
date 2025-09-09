@@ -165,6 +165,44 @@ const Volontariat = () => {
         </div>
       </section>
 
+      {/* CTA Final */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="text-center mb-6">
+              <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight whitespace-nowrap text-foreground px-8 sm:px-12">
+                  Rejoignez le <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Mouvement</span>
+                </h2>
+                <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+              </div>
+            </div>
+            <p className="text-xl text-muted-foreground mb-8">
+              Créateurs, territoires, citoyens : construisons ensemble l'économie de demain
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+              <Button 
+                onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
+                variant="outline"
+                size="lg"
+                className="rounded-xl px-6 py-3 text-base font-bold"
+              >
+                DÉCOUVRIR LA BOUTIQUE
+              </Button>
+              <Button 
+                variant="cta-orange"
+                size="lg"
+                className="rounded-xl px-6 py-3 text-base font-bold"
+              >
+                DEVENIR VOLONTAIRE
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
