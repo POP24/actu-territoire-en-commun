@@ -60,12 +60,44 @@ const ObjectiveSection = () => {
           {/* Enhanced Main Title */}
           <div className="text-center mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 2xl:mb-24 animate-fade-in">
             <div className="mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-8 xl:mb-10">
-              <div className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 rounded-full"></div>
+              {/* Enhanced Top Decorative Line */}
+              <div className="relative flex items-center justify-center mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-24 xs:w-28 sm:w-32 md:w-40 lg:w-48 xl:w-56 2xl:w-64 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+                </div>
+                <div className="relative flex items-center space-x-2 md:space-x-3 lg:space-x-4">
+                  <div className="w-1 h-1 xs:w-1.5 xs:h-1.5 md:w-2 md:h-2 bg-primary rounded-full animate-pulse"></div>
+                  <div className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 h-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-full shadow-lg shadow-primary/30 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                  <div className="w-1 h-1 xs:w-1.5 xs:h-1.5 md:w-2 md:h-2 bg-accent rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                </div>
+              </div>
+              
               <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-2 xs:mb-3 sm:mb-4 md:mb-5 leading-tight tracking-wide px-1 xs:px-2 sm:px-3">
                 <span className="text-foreground drop-shadow-sm block xs:block sm:inline">L'HEURE</span>{" "}
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent block xs:block sm:inline">EST VENUE</span>
               </h2>
-              <div className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-accent via-secondary to-primary mx-auto rounded-full"></div>
+              
+              {/* Enhanced Bottom Decorative Line */}
+              <div className="relative flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-32 xs:w-36 sm:w-40 md:w-48 lg:w-56 xl:w-64 2xl:w-72 h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent"></div>
+                </div>
+                <div className="relative flex items-center space-x-1.5 md:space-x-2 lg:space-x-3">
+                  <div className="w-2 h-px xs:w-3 xs:h-px sm:w-4 sm:h-px md:w-6 md:h-0.5 lg:w-8 lg:h-0.5 bg-gradient-to-r from-transparent to-accent rounded-full"></div>
+                  <div className="relative">
+                    <div className="w-1.5 h-1.5 xs:w-2 xs:h-2 md:w-2.5 md:h-2.5 bg-secondary rounded-full"></div>
+                    <div className="absolute inset-0 w-1.5 h-1.5 xs:w-2 xs:h-2 md:w-2.5 md:h-2.5 bg-secondary/50 rounded-full animate-ping"></div>
+                  </div>
+                  <div className="w-8 xs:w-10 sm:w-12 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-1 bg-gradient-to-r from-accent via-secondary to-primary rounded-full relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+                  </div>
+                  <div className="relative">
+                    <div className="w-1.5 h-1.5 xs:w-2 xs:h-2 md:w-2.5 md:h-2.5 bg-primary rounded-full"></div>
+                    <div className="absolute inset-0 w-1.5 h-1.5 xs:w-2 xs:h-2 md:w-2.5 md:h-2.5 bg-primary/50 rounded-full animate-ping" style={{animationDelay: '0.7s'}}></div>
+                  </div>
+                  <div className="w-2 h-px xs:w-3 xs:h-px sm:w-4 sm:h-px md:w-6 md:h-0.5 lg:w-8 lg:h-0.5 bg-gradient-to-l from-transparent to-primary rounded-full"></div>
+                </div>
+              </div>
             </div>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-full xs:max-w-lg sm:max-w-xl md:max-w-2xl mx-auto leading-relaxed px-2 sm:px-4">
               Les forces convergent, les outils sont prêts, les territoires s'éveillent
@@ -312,14 +344,40 @@ const ObjectiveSection = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-blue-600/5 to-blue-700/5 rounded-xl xs:rounded-2xl sm:rounded-2xl md:rounded-3xl lg:rounded-3xl xl:rounded-4xl blur-2xl xs:blur-3xl sm:blur-3xl md:blur-3xl lg:blur-4xl"></div>
             <div className="relative max-w-xs xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-5xl mx-auto text-center">
               
-              {/* Title with same style as L'HEURE EST VENUE but fully responsive */}
+              {/* Title with enhanced decorative lines */}
               <div className="mb-4 xs:mb-5 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12 2xl:mb-16">
-                <div className="w-10 xs:w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 rounded-full"></div>
+                {/* Enhanced Top Decorative Line */}
+                <div className="relative flex items-center justify-center mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 xs:w-24 sm:w-28 md:w-32 lg:w-40 xl:w-48 2xl:w-56 h-px bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent"></div>
+                  </div>
+                  <div className="relative flex items-center space-x-1.5 md:space-x-2 lg:space-x-3">
+                    <div className="w-1 h-1 xs:w-1.5 xs:h-1.5 md:w-2 md:h-2 bg-primary rounded-full animate-pulse"></div>
+                    <div className="w-10 xs:w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-full shadow-lg shadow-cyan-400/30 animate-pulse" style={{animationDelay: '0.4s'}}></div>
+                    <div className="w-1 h-1 xs:w-1.5 xs:h-1.5 md:w-2 md:h-2 bg-accent rounded-full animate-pulse" style={{animationDelay: '0.8s'}}></div>
+                  </div>
+                </div>
+                
                  <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl font-black mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 leading-tight tracking-wide px-1 xs:px-2 sm:px-2 md:px-3 lg:px-4">
                    <span className="text-foreground drop-shadow-sm block xs:block sm:inline">RELIONS</span>{" "}
                    <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent block xs:block sm:inline">- NOUS</span>
                  </h3>
-                <div className="w-10 xs:w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-0.5 sm:h-0.5 md:h-1 lg:h-1 xl:h-1.5 bg-gradient-to-r from-accent via-secondary to-primary mx-auto rounded-full"></div>
+                 
+                {/* Enhanced Bottom Decorative Line */}
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-24 xs:w-28 sm:w-32 md:w-36 lg:w-44 xl:w-52 2xl:w-60 h-px bg-gradient-to-r from-transparent via-blue-400/15 to-transparent"></div>
+                  </div>
+                  <div className="relative flex items-center space-x-1 md:space-x-1.5 lg:space-x-2">
+                    <div className="w-1.5 h-px xs:w-2 xs:h-px sm:w-3 sm:h-px md:w-4 md:h-0.5 bg-gradient-to-r from-transparent to-accent rounded-full"></div>
+                    <div className="w-1 h-1 xs:w-1.5 xs:h-1.5 bg-accent/80 rounded-full animate-pulse"></div>
+                    <div className="w-10 xs:w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-0.5 md:h-1 bg-gradient-to-r from-accent via-secondary to-primary rounded-full relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+                    </div>
+                    <div className="w-1 h-1 xs:w-1.5 xs:h-1.5 bg-primary/80 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                    <div className="w-1.5 h-px xs:w-2 xs:h-px sm:w-3 sm:h-px md:w-4 md:h-0.5 bg-gradient-to-l from-transparent to-primary rounded-full"></div>
+                  </div>
+                </div>
               </div>
               
               {/* Central Message Card */}
