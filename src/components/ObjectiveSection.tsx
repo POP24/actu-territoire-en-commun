@@ -167,42 +167,18 @@ const ObjectiveSection = () => {
                     </div>
                   </div>
                   
-                  {/* Enhanced Top Decorative Line for "Les terres se libèrent" */}
-                  <div className="relative flex items-center justify-center mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 mt-auto">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-24 xs:w-28 sm:w-32 md:w-40 lg:w-48 xl:w-56 2xl:w-64 h-px bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent"></div>
+                  {/* Mystical Separator */}
+                  <div className="flex items-center justify-center space-x-1.5 xs:space-x-2 sm:space-x-2.5 md:space-x-3 lg:space-x-3.5 xl:space-x-4 py-1.5 xs:py-2 sm:py-2.5 md:py-3 lg:py-4 xl:py-5 2xl:py-6 mt-auto">
+                    <div className="w-6 xs:w-8 sm:w-10 md:w-12 lg:w-14 xl:w-16 2xl:w-20 h-px bg-gradient-to-r from-transparent via-emerald-400 to-transparent"></div>
+                    <div className="relative">
+                      <div className="w-1 h-1 xs:w-1.5 xs:h-1.5 sm:w-2 sm:h-2 md:w-2.5 md:h-2.5 lg:w-3 lg:h-3 xl:w-4 xl:h-4 bg-emerald-400 rounded-full animate-pulse"></div>
+                      <div className="absolute inset-0 w-1 h-1 xs:w-1.5 xs:h-1.5 sm:w-2 sm:h-2 md:w-2.5 md:h-2.5 lg:w-3 lg:h-3 xl:w-4 xl:h-4 bg-emerald-400 rounded-full animate-ping"></div>
                     </div>
-                    <div className="relative flex items-center space-x-2 md:space-x-3 lg:space-x-4">
-                      <div className="w-1 h-1 xs:w-1.5 xs:h-1.5 md:w-2 md:h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                      <div className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 h-1 bg-gradient-to-r from-emerald-400 via-green-500 to-emerald-600 rounded-full shadow-lg shadow-emerald-400/30 animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                      <div className="w-1 h-1 xs:w-1.5 xs:h-1.5 md:w-2 md:h-2 bg-green-500 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-                    </div>
+                    <div className="w-6 xs:w-8 sm:w-10 md:w-12 lg:w-14 xl:w-16 2xl:w-20 h-px bg-gradient-to-r from-transparent via-emerald-400 to-transparent"></div>
                   </div>
                   
                   <div className="text-center">
                     <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-black text-emerald-700 dark:text-emerald-300 italic whitespace-nowrap">Les terres se libèrent</p>
-                  </div>
-                  
-                  {/* Enhanced Bottom Decorative Line for "Les terres se libèrent" */}
-                  <div className="relative flex items-center justify-center mt-2 xs:mt-3 sm:mt-3 md:mt-4 lg:mt-5 xl:mt-6 2xl:mt-8">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-32 xs:w-36 sm:w-40 md:w-48 lg:w-56 xl:w-64 2xl:w-72 h-px bg-gradient-to-r from-transparent via-green-500/20 to-transparent"></div>
-                    </div>
-                    <div className="relative flex items-center space-x-1.5 md:space-x-2 lg:space-x-3">
-                      <div className="w-2 h-px xs:w-3 xs:h-px sm:w-4 sm:h-px md:w-6 md:h-0.5 lg:w-8 lg:h-0.5 bg-gradient-to-r from-transparent to-green-500 rounded-full"></div>
-                      <div className="relative">
-                        <div className="w-1.5 h-1.5 xs:w-2 xs:h-2 md:w-2.5 md:h-2.5 bg-emerald-500 rounded-full"></div>
-                        <div className="absolute inset-0 w-1.5 h-1.5 xs:w-2 xs:h-2 md:w-2.5 md:h-2.5 bg-emerald-500/50 rounded-full animate-ping"></div>
-                      </div>
-                      <div className="w-8 xs:w-10 sm:w-12 md:w-16 lg:w-20 xl:w-24 2xl:w-28 h-1 bg-gradient-to-r from-green-500 via-emerald-500 to-emerald-400 rounded-full relative overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
-                      </div>
-                      <div className="relative">
-                        <div className="w-1.5 h-1.5 xs:w-2 xs:h-2 md:w-2.5 md:h-2.5 bg-emerald-400 rounded-full"></div>
-                        <div className="absolute inset-0 w-1.5 h-1.5 xs:w-2 xs:h-2 md:w-2.5 md:h-2.5 bg-emerald-400/50 rounded-full animate-ping" style={{animationDelay: '0.7s'}}></div>
-                      </div>
-                      <div className="w-2 h-px xs:w-3 xs:h-px sm:w-4 sm:h-px md:w-6 md:h-0.5 lg:w-8 lg:h-0.5 bg-gradient-to-l from-transparent to-emerald-400 rounded-full"></div>
-                    </div>
                   </div>
                 </div>
               </div>
