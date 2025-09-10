@@ -101,7 +101,7 @@ const [percentage, setPercentage] = useState<string>("0");
 
                   <div className="flex justify-between items-center mb-4">
                     <div>
-                      <div className="text-2xl font-bold text-primary">{percentage?percentage:0}%</div>
+                      <div className="text-2xl font-bold text-primary">0%</div>
                       <div className="text-xs text-gray-500">FINANCÉ</div>
                     </div>
                     <div className="text-right">
@@ -152,7 +152,7 @@ const [percentage, setPercentage] = useState<string>("0");
 
                   <div className="flex justify-between items-center mb-4">
                     <div>
-                      <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">{percentage}%</div>
+                      <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">{Math.round(parseFloat(percentage) * 100) / 100}%</div>
                       <div className="text-xs text-gray-400">SOUSCRIT</div>
                     </div>
                     <div className="text-right">
