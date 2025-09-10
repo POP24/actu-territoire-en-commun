@@ -233,7 +233,7 @@ useEffect(() => {
                   <div className="bg-gray-50 rounded-lg p-2 sm:p-3 border border-gray-200">
                     <div className="flex justify-between items-center mb-1 sm:mb-2">
                       <span className="text-xs sm:text-sm font-bold text-gray-800">Progression</span>
-                      <span className="text-base sm:text-lg font-black text-gray-900">{Math.round(treasureProgress * 100) / 100}%</span>
+                      <span className="text-base sm:text-lg font-black text-gray-900">{treasureProgress.toFixed(2)}%</span>
                     </div>
                     <div className="bg-gray-200 rounded-full h-3 sm:h-4 mb-1 sm:mb-2">
                       <div
@@ -242,7 +242,7 @@ useEffect(() => {
                       ></div>
                     </div>
                     <div className="flex justify-between text-xs sm:text-sm font-medium text-gray-700">
-                      <span>{revenue?revenue:0}€ collectés</span>
+                      <span>{revenue ? Math.ceil(revenue * 100) / 100 : 0}€ collectés</span>
                       <span>Objectif: 1M€</span>
                     </div>
                   </div>
