@@ -233,7 +233,7 @@ useEffect(() => {
                   <div className="bg-gray-50 rounded-lg p-2 sm:p-3 border border-gray-200">
                     <div className="flex justify-between items-center mb-1 sm:mb-2">
                       <span className="text-xs sm:text-sm font-bold text-gray-800">Progression</span>
-                      <span className="text-base sm:text-lg font-black text-gray-900">{treasureProgress.toFixed(2)}%</span>
+                      <span className="text-base sm:text-lg font-black text-gray-900">{(Math.ceil(treasureProgress * 100) / 100).toFixed(2)}%</span>
                     </div>
                     <div className="bg-gray-200 rounded-full h-3 sm:h-4 mb-1 sm:mb-2">
                       <div
