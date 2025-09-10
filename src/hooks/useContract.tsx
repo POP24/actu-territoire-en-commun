@@ -2,6 +2,7 @@ import { prepareContractCall, estimateGas, readContract, getContract, defineChai
 import { useSendTransaction, useActiveAccount, useSimulateTransaction } from "thirdweb/react";
 import { client } from "../client";
 
+
 export function useContractPurchase() {
   const account: any = useActiveAccount();
   const chain: any = defineChain(42161); // Arbitrum
@@ -100,6 +101,21 @@ export function useContractPurchase() {
     return Number(data);
   };
 
+  const getTotalOwners = async (contractAddress: string) => {
+    const lockContract = getLockContract(contractAddress);
+
+    const data = await readContract({
+      contract:lockContract,
+      method:
+        "function numberOfOwners() view returns (uint256)",
+      params: [],
+    });
+    console.log(data)
+    return data
+
+  }
+
+
   const getKeyPrice = async (contractAddress: string) => {
     const lockContract = getLockContract(contractAddress);
 
@@ -112,5 +128,5 @@ export function useContractPurchase() {
     return Number(data);
   };
 
-  return { approveUSDC, executePurchase, estimateTrxGas, checkOwnership, getTotalSupply, getKeyPrice };
+  return { approveUSDC, executePurchase, estimateTrxGas,getTotalOwners, checkOwnership, getTotalSupply, getKeyPrice };
 }

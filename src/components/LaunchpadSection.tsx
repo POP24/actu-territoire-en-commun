@@ -1,4 +1,46 @@
+import { useEffect,useState } from "react";
+import { useContractPurchase } from "@/hooks/useContract";
+
 const LaunchpadSection = () => {
+
+  const { getTotalOwners } = useContractPurchase()
+  const NFTS = [
+    {
+      name: "USAGER LOCAL",
+      contractAddress: "0x0b27EB1A9922c4Cd7327B9DbeA7F250622Ebbea9" // Replace with actual contract
+    },
+    {
+      name: "ARCHITECTE RÉSEAU",
+      contractAddress: "0x0b27EB1A9922c4Cd7327B9DbeA7F250622Ebbea9" // Replace with actual contract
+    }
+  ];
+
+  const [totalOwners, setTotalOwners] = useState<number>(0);
+const [percentage, setPercentage] = useState<string>("0");
+
+  useEffect(() => {
+    const fetchOwners = async () => {
+      try {
+        let combined = 0;
+        for (const nft of NFTS) {
+          const owners = await getTotalOwners(nft.contractAddress);
+          console.log(owners)
+          combined += Number(owners);
+        }
+        setTotalOwners(combined);
+      const percentageValue = (combined / 10000) * 100;
+      console.log(percentageValue)
+
+      setPercentage(percentageValue.toFixed(2)); // "0.06"
+    } catch (err) {
+        console.error("Failed to fetch total owners:", err);
+      }
+    };
+
+    fetchOwners();
+
+  }, [getTotalOwners]);
+ console.log(percentage)
   return (
     <section id="activez-territoire" className="relative py-16 bg-black overflow-hidden">
       {/* Animated background effects */}
@@ -27,7 +69,7 @@ const LaunchpadSection = () => {
                 Immobilier <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Partagé</span>
               </h3>
               <p className="text-gray-300 mb-6">Mutualisez. Financez. Construire.</p>
-              
+
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 h-fit">
                 {/* Mock interface for Real Estate */}
                 <div className="bg-white rounded-xl p-4 mb-4">
@@ -35,7 +77,7 @@ const LaunchpadSection = () => {
                     <h4 className="font-semibold text-gray-800">🏕 CAMPINGS EN COMMUN - DORDOGNE</h4>
                     <div className="text-sm text-gray-500">🏠 IMMOBILIER</div>
                   </div>
-                  
+
                   <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 mb-4">
                     <div className="hover-scale cursor-pointer">
                       <div className="h-24 rounded-lg mb-2 overflow-hidden">
@@ -56,23 +98,23 @@ const LaunchpadSection = () => {
                       <div className="text-xs text-gray-600">Troisième palier</div>
                     </div>
                   </div>
-                  
-                   <div className="flex justify-between items-center mb-4">
-                     <div>
-                       <div className="text-2xl font-bold text-primary">0%</div>
-                       <div className="text-xs text-gray-500">FINANCÉ</div>
-                     </div>
-                     <div className="text-right">
-                       <div className="text-sm font-semibold">€0 / €2,650,000</div>
-                       <div className="text-xs text-gray-500">Objectif</div>
-                     </div>
-                   </div>
-                  
+
+                  <div className="flex justify-between items-center mb-4">
+                    <div>
+                      <div className="text-2xl font-bold text-primary">{percentage?percentage:0}%</div>
+                      <div className="text-xs text-gray-500">FINANCÉ</div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm font-semibold">€0 / €2,650,000</div>
+                      <div className="text-xs text-gray-500">Objectif</div>
+                    </div>
+                  </div>
+
                   <button className="w-full btn-cta-orange py-3 rounded-lg font-semibold">
                     INVESTIR
                   </button>
                 </div>
-                
+
                 <p className="text-gray-300 text-sm">Achetons les terres de notre émancipation</p>
                 <p className="text-gray-400 text-xs">Propriété collective avec rendements durables.</p>
               </div>
@@ -84,46 +126,46 @@ const LaunchpadSection = () => {
                 Trésorerie <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Commune</span>
               </h3>
               <p className="text-gray-300 mb-6">Rejoignez. Votez. Décidez.</p>
-              
-               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 h-fit mt-4">
-                 {/* Mock interface for Membership */}
-                 <div className="bg-gray-900 rounded-xl p-4 mb-4 border border-cyan-500/30">
-                   <div className="flex justify-between items-center mb-4">
-                     <h4 className="font-semibold text-white">🌐 ADHÉSION ASSOCIATIVE</h4>
-                     <div className="text-xs bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">⚡ GOUVERNANCE</div>
-                   </div>
-                   
-                   <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
-                     <div className="hover-scale cursor-pointer">
-                       <div className="bg-gradient-to-br from-blue-600 to-blue-700 h-28 rounded-lg mb-2 flex flex-col items-center justify-center">
-                         <div className="text-white font-bold text-base mb-1">LOCAL</div>
-                         <div className="text-white font-bold text-sm">À PARTIR DE 10€</div>
-                       </div>
-                     </div>
-                     <div className="hover-scale cursor-pointer">
-                       <div className="bg-gradient-to-br from-green-600 to-green-700 h-28 rounded-lg mb-2 flex flex-col items-center justify-center">
-                         <div className="text-white font-bold text-base mb-1">ARCHITECTE</div>
-                         <div className="text-white font-bold text-sm">100€</div>
-                       </div>
-                     </div>
-                   </div>
-                  
-                   <div className="flex justify-between items-center mb-4">
-                     <div>
-                       <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">0%</div>
-                       <div className="text-xs text-gray-400">SOUSCRIT</div>
-                     </div>
-                     <div className="text-right">
-                       <div className="text-sm font-semibold text-white">0 / 10,000</div>
-                       <div className="text-xs text-gray-400">Members</div>
-                     </div>
-                   </div>
-                  
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 h-fit mt-4">
+                {/* Mock interface for Membership */}
+                <div className="bg-gray-900 rounded-xl p-4 mb-4 border border-cyan-500/30">
+                  <div className="flex justify-between items-center mb-4">
+                    <h4 className="font-semibold text-white">🌐 ADHÉSION ASSOCIATIVE</h4>
+                    <div className="text-xs bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">⚡ GOUVERNANCE</div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
+                    <div className="hover-scale cursor-pointer">
+                      <div className="bg-gradient-to-br from-blue-600 to-blue-700 h-28 rounded-lg mb-2 flex flex-col items-center justify-center">
+                        <div className="text-white font-bold text-base mb-1">LOCAL</div>
+                        <div className="text-white font-bold text-sm">À PARTIR DE 10€</div>
+                      </div>
+                    </div>
+                    <div className="hover-scale cursor-pointer">
+                      <div className="bg-gradient-to-br from-green-600 to-green-700 h-28 rounded-lg mb-2 flex flex-col items-center justify-center">
+                        <div className="text-white font-bold text-base mb-1">ARCHITECTE</div>
+                        <div className="text-white font-bold text-sm">100€</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-between items-center mb-4">
+                    <div>
+                      <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">{percentage}%</div>
+                      <div className="text-xs text-gray-400">SOUSCRIT</div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm font-semibold text-white">{totalOwners?totalOwners:0} / 10,000</div>
+                      <div className="text-xs text-gray-400">Members</div>
+                    </div>
+                  </div>
+
                   <button className="w-full btn-cta-blue py-3 rounded-lg font-semibold">
                     ADHÉRER
                   </button>
                 </div>
-                
+
                 <p className="text-gray-300 text-sm">Participez aux décisions de votre territoire</p>
                 <p className="text-gray-400 text-xs">Gouvernance, avantages et résilience collective.</p>
               </div>
