@@ -20,17 +20,20 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl">
+      <DialogContent className="max-w-4xl" aria-describedby="membership-selection-description">
         <DialogHeader>
           <DialogTitle className="text-center mb-6">
-             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
-               <div className="flex-1 h-1 bg-gradient-to-r from-transparent via-gray-700 to-gray-700 rounded-full shadow-md"></div>
-               <h2 className="text-2xl sm:text-3xl font-black leading-tight tracking-wide whitespace-nowrap text-foreground px-8 sm:px-12 drop-shadow-sm">
-                 CHOISISSEZ VOTRE <span className="text-gray-900 font-black">ADHÉSION</span>
-               </h2>
-               <div className="flex-1 h-1 bg-gradient-to-l from-transparent via-gray-700 to-gray-700 rounded-full shadow-md"></div>
-             </div>
+            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+              <div className="flex-1 h-1 bg-gradient-to-r from-transparent via-gray-700 to-gray-700 rounded-full shadow-md"></div>
+              <h2 className="text-2xl sm:text-3xl font-black leading-tight tracking-wide whitespace-nowrap text-foreground px-8 sm:px-12 drop-shadow-sm">
+                CHOISISSEZ VOTRE <span className="text-gray-900 font-black">ADHÉSION</span>
+              </h2>
+              <div className="flex-1 h-1 bg-gradient-to-l from-transparent via-gray-700 to-gray-700 rounded-full shadow-md"></div>
+            </div>
           </DialogTitle>
+          <div id="membership-selection-description" className="sr-only">
+            Sélectionnez le type d'adhésion qui vous convient le mieux
+          </div>
         </DialogHeader>
 
         <div className="grid md:grid-cols-2 gap-8">

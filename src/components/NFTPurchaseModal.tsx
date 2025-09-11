@@ -43,7 +43,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
   const [acceptNewsletter, setAcceptNewsletter] = useState(false);
   const account = useActiveAccount();
   const { approveUSDC, executePurchase, checkOwnership } = useContractPurchase();
-console.log("changes")
+
   // Wallet configuration
   const wallets = [
     inAppWallet({
@@ -155,7 +155,13 @@ console.log("changes")
 
   return (
     <Dialog open={isOpen} onOpenChange={resetAndClose}>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto" aria-describedby="nft-purchase-description">
+        <DialogHeader className="sr-only">
+          <DialogTitle>Achat d'adhésion NFT</DialogTitle>
+          <div id="nft-purchase-description">
+            Processus d'achat de votre adhésion NFT pour rejoindre l'association
+          </div>
+        </DialogHeader>
         {step === 1 && (
           <div className="space-y-6">
             {/* NFT Details */}

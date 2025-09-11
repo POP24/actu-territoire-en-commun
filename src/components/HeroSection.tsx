@@ -27,13 +27,8 @@ const HeroSection = () => {
   ];
 const fetchRevenueCounter = async () => {
   try {
-    console.log("Fetching revenue...");
-
     const totalRevenue = await calculateTotalRevenue(NFTS, getTotalSupply, getKeyPrice);
-    console.log("Total Revenue (EUR):", totalRevenue);
-
     const exchangeApiURL = `https://v6.exchangerate-api.com/v6/${exchangeRateAPIkey}/pair/EUR/GBP/${totalRevenue}`;
-
     const response = await fetch(exchangeApiURL);
 
     if (!response.ok) {
@@ -46,24 +41,22 @@ const fetchRevenueCounter = async () => {
       throw new Error(`Invalid response: ${JSON.stringify(data)}`);
     }
 
-    console.log("Total Revenue in GBP:", data.conversion_result);
     setRevenue(data.conversion_result);
     const targetRevenue = 1000000; // 1M
-setTreasuryProgress(
-  revenue ? Math.min((data.conversion_result) * 100, 100) : 0);
+    setTreasuryProgress(
+      data.conversion_result ? Math.min((data.conversion_result / targetRevenue) * 100, 100) : 0
+    );
     return data.conversion_result;
   } catch (error) {
-    console.error("Error fetching revenue:", error.message);
-    return null; // or you can rethrow: throw error;
+    return null;
   }
 };
 
 
 useEffect(() => {
-  console.log("fix");
   fetchRevenueCounter()
-    .then(() => console.log("Revenue fetch done"))
-    .catch((err) => console.error("Error fetching revenue:", err));
+    .then(() => {})
+    .catch(() => {});
 }, []);
 
 
@@ -93,25 +86,12 @@ useEffect(() => {
     window.open('https://lasuitedumonde.com', '_blank');
   };
 
-  // Animation des points lumineux
+  // Animation des points lumineux - optimisée
   useEffect(() => {
-    const points = [1, 2, 3, 4, 5];
-    points.forEach((point, index) => {
-      setTimeout(() => {
-        setAnimatedPoints(prev => [...prev, point]);
-      }, index * 500);
-    });
-
-    // Debug PIN visibility
-    setTimeout(() => {
-      const pinElement = document.querySelector('.pin-debug');
-      console.log('PIN element found:', pinElement);
-      if (pinElement) {
-        console.log('PIN visibility:', window.getComputedStyle(pinElement).visibility);
-        console.log('PIN display:', window.getComputedStyle(pinElement).display);
-        console.log('PIN z-index:', window.getComputedStyle(pinElement).zIndex);
-      }
-    }, 1000);
+    const timer = setTimeout(() => {
+      setAnimatedPoints([1, 2, 3, 4, 5]);
+    }, 100);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
