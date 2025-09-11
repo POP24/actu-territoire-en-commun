@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatButton from "@/components/ChatButton";
 import SEO from "@/components/SEO";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -52,12 +53,16 @@ const Parrainage = () => {
 
         <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-hero-entrance">
-              PROGRAMME AMBASSADEUR
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-medium animate-fade-in-up stagger-1">
-              Faites grandir le réseau, gagnez des commissions
-            </p>
+            <ScrollReveal animation="fade-up">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                PROGRAMME AMBASSADEUR
+              </h1>
+            </ScrollReveal>
+            <ScrollReveal animation="fade-up" delay={200}>
+              <p className="text-xl md:text-2xl text-white/90 font-medium">
+                Faites grandir le réseau, gagnez des commissions
+              </p>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -65,18 +70,21 @@ const Parrainage = () => {
       {/* Comment ça marche */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 animate-on-scroll">
-              VOTRE RÔLE D'AMBASSADEUR
-            </h2>
-          </div>
+          <ScrollReveal animation="fade-up">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+                VOTRE RÔLE D'AMBASSADEUR
+              </h2>
+            </div>
+          </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Étape 1 */}
-            <div className="text-center animate-on-scroll-left hover-lift">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                1
-              </div>
+            <ScrollReveal animation="fade-left" delay={0}>
+              <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
+                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                  1
+                </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Rejoignez notre application mobile
               </h3>
@@ -108,14 +116,16 @@ const Parrainage = () => {
                     className="h-12 w-auto"
                   />
                 </a>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Étape 2 */}
-            <div className="text-center animate-on-scroll hover-lift">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                2
-              </div>
+            <ScrollReveal animation="fade-up" delay={200}>
+              <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
+                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                  2
+                </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Parrainez
               </h3>
@@ -153,12 +163,14 @@ const Parrainage = () => {
                 </DialogContent>
               </Dialog>
             </div>
+            </ScrollReveal>
 
             {/* Étape 3 */}
-            <div className="text-center animate-on-scroll-right hover-lift">
-              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                3
-              </div>
+            <ScrollReveal animation="fade-right" delay={400}>
+              <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
+                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                  3
+                </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Soyez récompensé !
               </h3>
@@ -193,6 +205,7 @@ const Parrainage = () => {
                 </div>
               </div>
             </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
