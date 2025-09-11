@@ -62,114 +62,126 @@ const Volontariat = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-background animate-on-scroll">
-        <div className="container mx-auto px-4">
-          <div className="mb-16 animate-hero-entrance">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground animate-fade-in-up stagger-1">
-              INVESTISSEZ VOTRE TEMPS, GAGNEZ DES CRÉDITS
-            </h2>
-            <p className="text-xl text-center text-muted-foreground animate-fade-in-up stagger-2">
-              Alternative solidaire au woofing traditionnel
-            </p>
-          </div>
-
-          {/* Three Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 animate-on-scroll">
-            {/* Chantiers Participatifs */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300 animate-on-scroll-scale hover-card stagger-3">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                  🏕 CHANTIERS PARTICIPATIFS
-                </CardTitle>
-                <p className="text-lg font-semibold text-primary">
-                  5 jours = 50€ de crédits
+      <ScrollReveal animation="fade-up" delay={300}>
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <ScrollReveal animation="fade-up" delay={100}>
+              <div className="mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
+                  INVESTISSEZ VOTRE TEMPS, GAGNEZ DES CRÉDITS
+                </h2>
+                <p className="text-xl text-center text-muted-foreground">
+                  Alternative solidaire au woofing traditionnel
                 </p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2 text-card-foreground">
-                  <li>• Construction écologique</li>
-                  <li>• Aménagement des lieux</li>
-                  <li>• Jardinage et permaculture</li>
-                </ul>
+              </div>
+            </ScrollReveal>
+
+            {/* Three Columns */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              {/* Chantiers Participatifs */}
+              <ScrollReveal animation="fade-left" delay={200}>
+                <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300">
+                  <CardHeader className="text-center">
+                    <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
+                      🏕 CHANTIERS PARTICIPATIFS
+                    </CardTitle>
+                    <p className="text-lg font-semibold text-primary">
+                      5 jours = 50€ de crédits
+                    </p>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <ul className="space-y-2 text-card-foreground">
+                      <li>• Construction écologique</li>
+                      <li>• Aménagement des lieux</li>
+                      <li>• Jardinage et permaculture</li>
+                    </ul>
+                    <Button 
+                      variant="cta-orange"
+                      className="w-full rounded-xl py-3 text-base font-medium"
+                    >
+                      VOIR LES CHANTIERS
+                    </Button>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+
+              {/* Missions Courtes */}
+              <ScrollReveal animation="scale" delay={300}>
+                <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300">
+                  <CardHeader className="text-center">
+                    <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
+                      🌱 MISSIONS COURTES
+                    </CardTitle>
+                    <p className="text-lg font-semibold text-primary">
+                      1 journée = 10€ de crédits
+                    </p>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <ul className="space-y-2 text-card-foreground">
+                      <li>• Animation d'ateliers</li>
+                      <li>• Aide aux événements</li>
+                      <li>• Accueil des visiteurs</li>
+                    </ul>
+                    <Button 
+                      variant="cta-blue"
+                      className="w-full rounded-xl py-3 text-base font-medium"
+                    >
+                      MISSIONS DISPONIBLES
+                    </Button>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+
+              {/* Bénévolat à Distance */}
+              <ScrollReveal animation="fade-right" delay={400}>
+                <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300">
+                  <CardHeader className="text-center">
+                    <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
+                      💻 BÉNÉVOLAT À DISTANCE
+                    </CardTitle>
+                    <p className="text-lg font-semibold text-primary">
+                      Selon contribution
+                    </p>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <ul className="space-y-2 text-card-foreground">
+                      <li>• Communication digitale</li>
+                      <li>• Développement web</li>
+                      <li>• Gestion administrative</li>
+                    </ul>
+                    <Button 
+                      variant="cta-green"
+                      className="w-full rounded-xl py-3 text-base font-medium"
+                    >
+                      PROPOSER MES COMPÉTENCES
+                    </Button>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+            </div>
+
+            {/* CTA Section */}
+            <ScrollReveal animation="scale" delay={500}>
+              <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border hover:scale-105 transition-all duration-300">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-card-foreground">
+                  Comment ça marche ?
+                </h2>
+                <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+                  1 jour de volontariat = 10€ de crédits d'usage<br />
+                  Utilisables sur tous les lieux du réseau
+                </p>
                 <Button 
                   variant="cta-orange"
-                  className="w-full rounded-xl py-3 text-base font-medium"
+                  size="lg"
+                  className="rounded-xl px-8 py-4 text-lg font-bold"
                 >
-                  VOIR LES CHANTIERS
+                  S'INSCRIRE COMME VOLONTAIRE
                 </Button>
-              </CardContent>
-            </Card>
-
-            {/* Missions Courtes */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300 animate-on-scroll-scale hover-card stagger-4">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                  🌱 MISSIONS COURTES
-                </CardTitle>
-                <p className="text-lg font-semibold text-primary">
-                  1 journée = 10€ de crédits
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2 text-card-foreground">
-                  <li>• Animation d'ateliers</li>
-                  <li>• Aide aux événements</li>
-                  <li>• Accueil des visiteurs</li>
-                </ul>
-                <Button 
-                  variant="cta-blue"
-                  className="w-full rounded-xl py-3 text-base font-medium"
-                >
-                  MISSIONS DISPONIBLES
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Bénévolat à Distance */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300 animate-on-scroll-scale hover-card stagger-5">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                  💻 BÉNÉVOLAT À DISTANCE
-                </CardTitle>
-                <p className="text-lg font-semibold text-primary">
-                  Selon contribution
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2 text-card-foreground">
-                  <li>• Communication digitale</li>
-                  <li>• Développement web</li>
-                  <li>• Gestion administrative</li>
-                </ul>
-                <Button 
-                  variant="cta-green"
-                  className="w-full rounded-xl py-3 text-base font-medium"
-                >
-                  PROPOSER MES COMPÉTENCES
-                </Button>
-              </CardContent>
-            </Card>
+              </div>
+            </ScrollReveal>
           </div>
-
-          {/* CTA Section */}
-          <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border animate-on-scroll-scale">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-card-foreground">
-              Comment ça marche ?
-            </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              1 jour de volontariat = 10€ de crédits d'usage<br />
-              Utilisables sur tous les lieux du réseau
-            </p>
-            <Button 
-              variant="cta-orange"
-              size="lg"
-              className="rounded-xl px-8 py-4 text-lg font-bold"
-            >
-              S'INSCRIRE COMME VOLONTAIRE
-            </Button>
-          </div>
-        </div>
-      </section>
+        </section>
+      </ScrollReveal>
 
       {/* CTA Final */}
       <section className="py-16 bg-background">
