@@ -183,10 +183,11 @@ const ObjectiveSection = () => {
                   
                   <div className="text-center">
                     <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-black text-emerald-700 dark:text-emerald-300 italic whitespace-nowrap">Les terres se libèrent</p>
-                 </div>
-               </div>
-               </div>
-             </ScrollReveal>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </ScrollReveal>
             </div>
 
             {/* Card 2: LES OUTILS FONCTIONNENT - Digital Mastery */}
@@ -432,7 +433,6 @@ const ObjectiveSection = () => {
             </div>
           </div>
 
-        </div>
         </div>
       </div>
     </section>

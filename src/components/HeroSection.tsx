@@ -185,6 +185,7 @@ useEffect(() => {
                   >
                     <span className="text-orange-400">📍</span> Dordogne - Territoire pionnier
                   </div>
+                  </div>
                 </div>
               </div>
             </ScrollReveal>
