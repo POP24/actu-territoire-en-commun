@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import TestAnimation from "@/components/TestAnimation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useEffect } from "react";
@@ -205,7 +204,6 @@ const Volontariat = () => {
       </section>
 
       <Footer />
-      <TestAnimation />
     </div>
   );
 };

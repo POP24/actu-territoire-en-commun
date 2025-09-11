@@ -153,11 +153,11 @@
 .stagger-7 { animation-delay: 0.7s; }
 .stagger-8 { animation-delay: 0.8s; }
 
-/* ANIMATIONS AU SCROLL - VERSION SIMPLIFIÉE */
+/* ANIMATIONS AU SCROLL */
 .animate-on-scroll {
-  opacity: 0 !important;
-  transform: translateY(30px) !important;
-  transition: all 0.8s ease-out !important;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate-on-scroll.in-view {
@@ -166,9 +166,9 @@
 }
 
 .animate-on-scroll-left {
-  opacity: 0 !important;
-  transform: translateX(-50px) !important;
-  transition: all 0.8s ease-out !important;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate-on-scroll-left.in-view {
@@ -177,9 +177,9 @@
 }
 
 .animate-on-scroll-right {
-  opacity: 0 !important;
-  transform: translateX(50px) !important;
-  transition: all 0.8s ease-out !important;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate-on-scroll-right.in-view {
@@ -188,9 +188,9 @@
 }
 
 .animate-on-scroll-scale {
-  opacity: 0 !important;
-  transform: scale(0.95) !important;
-  transition: all 0.8s ease-out !important;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate-on-scroll-scale.in-view {
