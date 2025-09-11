@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import ScrollReveal from "@/components/ScrollReveal";
 
 // Symboles tribaux ancestraux en SVG
 const TribalLandSymbol = () => (
@@ -58,8 +59,9 @@ const ObjectiveSection = () => {
           <div className="max-w-xs xs:max-w-sm sm:max-w-full md:max-w-5xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto">
           
           {/* Enhanced Main Title */}
-          <div className="text-center mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 2xl:mb-24 animate-hero-entrance">
-            <div className="mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-8 xl:mb-10 animate-fade-in-up stagger-1">
+          <ScrollReveal animation="fade-up">
+            <div className="text-center mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 2xl:mb-24">
+              <div className="mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-8 xl:mb-10">
               {/* Enhanced Top Decorative Line */}
               <div className="relative flex items-center justify-center mb-2 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8">
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -99,16 +101,18 @@ const ObjectiveSection = () => {
                 </div>
               </div>
             </div>
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-full xs:max-w-lg sm:max-w-xl md:max-w-2xl mx-auto leading-relaxed px-2 sm:px-4">
-              Les forces convergent, les outils sont prêts, les territoires s'éveillent
-            </p>
-          </div>
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-full xs:max-w-lg sm:max-w-xl md:max-w-2xl mx-auto leading-relaxed px-2 sm:px-4">
+                Les forces convergent, les outils sont prêts, les territoires s'éveillent
+              </p>
+            </div>
+          </ScrollReveal>
 
           {/* Enhanced Cards Grid - Mobile 1 Column, Wider containers */}
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-5 mb-6 sm:mb-8 md:mb-10 animate-on-scroll max-w-md xs:max-w-lg sm:max-w-none mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-5 mb-6 sm:mb-8 md:mb-10 max-w-md xs:max-w-lg sm:max-w-none mx-auto">
             
             {/* Card 1: LES LIEUX ATTENDENT - Territorial Awakening */}
-            <div className="group relative transform transition-all duration-700 hover:scale-102 xs:hover:scale-103 sm:hover:scale-104 md:hover:scale-105 animate-on-scroll-scale hover-card stagger-2">
+            <ScrollReveal animation="fade-left" delay={200}>
+              <div className="group relative transform transition-all duration-700 hover:scale-102 xs:hover:scale-103 sm:hover:scale-104 md:hover:scale-105 hover:shadow-2xl">
               <div className="absolute -inset-0.5 xs:-inset-1 sm:-inset-1 md:-inset-2 lg:-inset-2 xl:-inset-3 bg-gradient-to-r from-emerald-400/30 via-green-400/30 to-emerald-500/30 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-3xl xl:rounded-3xl blur-lg xs:blur-xl sm:blur-xl md:blur-xl lg:blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-1000"></div>
               <div className="relative bg-gradient-to-br from-card/95 to-card/85 backdrop-blur-xl border border-emerald-200/50 dark:border-emerald-800/50 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl md:shadow-2xl min-h-[240px] xs:min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[380px] flex flex-col">
                 
@@ -179,9 +183,10 @@ const ObjectiveSection = () => {
                   
                   <div className="text-center">
                     <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-black text-emerald-700 dark:text-emerald-300 italic whitespace-nowrap">Les terres se libèrent</p>
-                  </div>
-                </div>
-              </div>
+                 </div>
+               </div>
+               </div>
+             </ScrollReveal>
             </div>
 
             {/* Card 2: LES OUTILS FONCTIONNENT - Digital Mastery */}

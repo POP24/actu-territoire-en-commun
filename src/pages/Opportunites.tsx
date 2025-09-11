@@ -2,6 +2,7 @@ import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatButton from "@/components/ChatButton";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import campingCollectif from "@/assets/camping-collectif.jpg";
 
@@ -14,11 +15,14 @@ export default function Opportunites() {
       />
       <Header />
       <main className="container mx-auto px-6 pt-40 lg:pt-60 pb-16">
-        <h1 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-8 animate-hero-entrance">Les Campings à Rejoindre</h1>
-        <p className="text-sm sm:text-base text-muted-foreground max-w-2xl animate-fade-in-up stagger-1">Dossiers en étude, potentiels de reprise ou co‑exploitation. Filtrez par région, taille et budget.</p>
+        <ScrollReveal animation="fade-up">
+          <h1 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-8">Les Campings à Rejoindre</h1>
+          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl">Dossiers en étude, potentiels de reprise ou co‑exploitation. Filtrez par région, taille et budget.</p>
+        </ScrollReveal>
 
-        <section className="mt-6 sm:mt-10">
-          <div className="bg-card rounded-xl overflow-hidden shadow-soft ring-2 ring-primary ring-offset-2 ring-offset-background shadow-lg shadow-primary/20 animate-on-scroll hover-lift">
+        <ScrollReveal animation="scale" delay={300}>
+          <section className="mt-6 sm:mt-10">
+            <div className="bg-card rounded-xl overflow-hidden shadow-soft ring-2 ring-primary ring-offset-2 ring-offset-background shadow-lg shadow-primary/20 hover:shadow-2xl transition-all duration-300">
             <div className="flex flex-col lg:flex-row">
               {/* Image à gauche */}
               <div className="relative lg:w-1/2">
@@ -74,12 +78,15 @@ export default function Opportunites() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
-        <section className="mt-8 sm:mt-12 bg-card p-4 sm:p-6 rounded-lg sm:rounded-xl shadow-soft animate-on-scroll hover-lift">
-          <h2 className="text-lg sm:text-2xl font-semibold mb-2">Proposer un camping</h2>
-          <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">Vous connaissez un site à potentiel ? Partagez les infos clés et nous reviendrons vers vous.</p>
-          <Button variant="hero" size="sm" className="text-sm sm:text-base">Soumettre un site</Button>
-        </section>
+        <ScrollReveal animation="fade-up" delay={500}>
+          <section className="mt-8 sm:mt-12 bg-card p-4 sm:p-6 rounded-lg sm:rounded-xl shadow-soft hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <h2 className="text-lg sm:text-2xl font-semibold mb-2">Proposer un camping</h2>
+            <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">Vous connaissez un site à potentiel ? Partagez les infos clés et nous reviendrons vers vous.</p>
+            <Button variant="hero" size="sm" className="text-sm sm:text-base">Soumettre un site</Button>
+          </section>
+        </ScrollReveal>
       </main>
       <Footer />
       <ChatButton />

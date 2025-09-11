@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ChatButton from "@/components/ChatButton";
 import SEO from "@/components/SEO";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -62,21 +64,27 @@ const Boutique = () => {
 
         <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-hero-entrance">
-              LA BOUTIQUE DES COMMUNS
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-medium mb-8 animate-fade-in-up stagger-1">
-              La Boutique des Communs est votre espace de création collective.<br/>
-              Chaque achat alimente directement le trésor commun de votre territoire.
-            </p>
-            <Button 
-              onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
-              variant="cta-orange"
-              size="lg"
-              className="rounded-xl px-8 py-4 text-lg font-bold animate-fade-in-up stagger-2"
-            >
-              Découvrir la boutique →
-            </Button>
+            <ScrollReveal animation="fade-up">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                LA BOUTIQUE DES COMMUNS
+              </h1>
+            </ScrollReveal>
+            <ScrollReveal animation="fade-up" delay={200}>
+              <p className="text-xl md:text-2xl text-white/90 font-medium mb-8">
+                La Boutique des Communs est votre espace de création collective.<br/>
+                Chaque achat alimente directement le trésor commun de votre territoire.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal animation="fade-up" delay={400}>
+              <Button 
+                onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
+                variant="cta-orange"
+                size="lg"
+                className="rounded-xl px-8 py-4 text-lg font-bold"
+              >
+                Découvrir la boutique →
+              </Button>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -85,69 +93,77 @@ const Boutique = () => {
       {/* Comment ça marche */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 animate-on-scroll">
-              COMMENT ÇA MARCHE
-            </h2>
-          </div>
+          <ScrollReveal animation="fade-up">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+                COMMENT ÇA MARCHE
+              </h2>
+            </div>
+          </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Créateur */}
-            <Card className="bg-card border-border animate-on-scroll-left">
-              <CardHeader className="text-center">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  1
-                </div>
-                <CardTitle className="text-2xl font-bold text-card-foreground">
-                  Vous êtes créateur ?
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-card-foreground">
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Proposez vos créations ou productions</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Définissez vos prix avec nous</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Participez à la vie de la boutique locale</li>
-                </ul>
-              </CardContent>
-            </Card>
+            <ScrollReveal animation="fade-left" delay={0}>
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <CardHeader className="text-center">
+                  <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                    1
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-card-foreground">
+                    Vous êtes créateur ?
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 text-card-foreground">
+                    <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Proposez vos créations ou productions</li>
+                    <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Définissez vos prix avec nous</li>
+                    <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Participez à la vie de la boutique locale</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
 
             {/* Soutien */}
-            <Card className="bg-card border-border animate-on-scroll-scale">
-              <CardHeader className="text-center">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  2
-                </div>
-                <CardTitle className="text-2xl font-bold text-card-foreground">
-                  Vous soutenez le mouvement ?
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-card-foreground">
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Achetez des créations uniques et locales</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Financez le compte commun territorial</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Portez les valeurs du réseau</li>
-                </ul>
-              </CardContent>
-            </Card>
+            <ScrollReveal animation="scale" delay={200}>
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <CardHeader className="text-center">
+                  <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                    2
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-card-foreground">
+                    Vous soutenez le mouvement ?
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 text-card-foreground">
+                    <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Achetez des créations uniques et locales</li>
+                    <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Financez le compte commun territorial</li>
+                    <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Portez les valeurs du réseau</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
 
             {/* Territoire */}
-            <Card className="bg-card border-border animate-on-scroll-right">
-              <CardHeader className="text-center">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  3
-                </div>
-                <CardTitle className="text-2xl font-bold text-card-foreground">
-                  Le territoire se construit
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-card-foreground">
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Le trésor finance les projets votés localement</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Rémunère les coordinateurs territoriaux</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Permet de nouvelles acquisitions communes</li>
-                </ul>
-              </CardContent>
-            </Card>
+            <ScrollReveal animation="fade-right" delay={400}>
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <CardHeader className="text-center">
+                  <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                    3
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-card-foreground">
+                    Le territoire se construit
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 text-card-foreground">
+                    <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Le trésor finance les projets votés localement</li>
+                    <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Rémunère les coordinateurs territoriaux</li>
+                    <li className="flex items-center"><span className="text-green-500 mr-2">•</span>Permet de nouvelles acquisitions communes</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
           </div>
         </div>
       </section>

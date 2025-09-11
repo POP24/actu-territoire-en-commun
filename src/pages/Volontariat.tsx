@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatButton from "@/components/ChatButton";
+import ScrollReveal from "@/components/ScrollReveal";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -46,12 +47,16 @@ const Volontariat = () => {
 
         <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16 animate-hero-entrance">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in-up stagger-1">
-              VOLONTARIAT DANS LE RÉSEAU
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-medium animate-fade-in-up stagger-2">
-              Échangez votre temps contre des crédits d'usage
-            </p>
+            <ScrollReveal animation="fade-up">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                VOLONTARIAT DANS LE RÉSEAU
+              </h1>
+            </ScrollReveal>
+            <ScrollReveal animation="fade-up" delay={200}>
+              <p className="text-xl md:text-2xl text-white/90 font-medium">
+                Échangez votre temps contre des crédits d'usage
+              </p>
+            </ScrollReveal>
           </div>
         </div>
       </section>

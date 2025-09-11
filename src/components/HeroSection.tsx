@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { ChevronRight, Users, Globe, DollarSign, MapPin, Heart, CloudCog } from "lucide-react";
 import megaFireBackground from "@/assets/mega-fire-background.jpg";
+import ScrollReveal from "@/components/ScrollReveal";
 import { useState, useEffect } from "react";
 import NFTPurchaseModal from "@/components/NFTPurchaseModal";
 import MembershipSelectionModal from "@/components/MembershipSelectionModal";
@@ -134,23 +135,24 @@ useEffect(() => {
         <div className="max-w-7xl mx-auto">
 
           {/* Header Section */}
-          <div className="text-center mb-8 sm:mb-12 md:mb-16 animate-hero-entrance">
-            <h1 className="page-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-4 sm:mb-6" style={{ textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
-              Association des campings
-            </h1>
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-8 sm:mb-12" style={{ textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
-              Outils d'Organisation Local
-            </h2>
-            
-
-          </div>
+          <ScrollReveal animation="fade-up">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <h1 className="page-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-4 sm:mb-6" style={{ textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
+                Association des campings
+              </h1>
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-8 sm:mb-12" style={{ textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
+                Outils d'Organisation Local
+              </h2>
+            </div>
+          </ScrollReveal>
 
           {/* Main Content */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12">
 
             {/* Left: Interactive Real Map */}
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20">
+            <ScrollReveal animation="fade-left" delay={200}>
+              <div className="relative">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20">
                  {/* Bandeau REJOIGNEZ LE MOUVEMENT */}
                  <div className="text-center mb-4 sm:mb-6">
                    <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
@@ -185,10 +187,11 @@ useEffect(() => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Right: Membership Cards Side by Side */}
-            <div className="space-y-6">
+            <ScrollReveal animation="fade-right" delay={400}>
+              <div className="space-y-6">
               {/* Cards Container */}
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl border border-white/20">
                 <div className="text-center mb-4 sm:mb-6">
@@ -248,7 +251,8 @@ useEffect(() => {
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
+            </ScrollReveal>
           </div>
 
         </div>

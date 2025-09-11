@@ -2,6 +2,7 @@ import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatButton from "@/components/ChatButton";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
@@ -255,12 +256,16 @@ Il a toujours su que vous viendriez.
           
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-6xl md:text-8xl font-bold mb-8 text-white animate-hero-entrance">
-                Vision
-              </h1>
-              <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-cyan-100 animate-fade-in-up stagger-1">
-                Le Temps de la Grande Convergence
-              </h2>
+              <ScrollReveal animation="fade-up">
+                <h1 className="text-6xl md:text-8xl font-bold mb-8 text-white">
+                  Vision
+                </h1>
+              </ScrollReveal>
+              <ScrollReveal animation="fade-up" delay={200}>
+                <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-cyan-100">
+                  Le Temps de la Grande Convergence
+                </h2>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -269,14 +274,15 @@ Il a toujours su que vous viendriez.
           <div className="container mx-auto px-4 py-16">
 
           {/* Accordéon mystique des paroles */}
-          <div className="max-w-5xl mx-auto mb-16">
-            <Accordion type="single" collapsible className="space-y-4">
-              {paroles.map((parole, index) => (
-                <AccordionItem 
-                  key={parole.id} 
-                  value={parole.id}
-                  className="border border-primary/20 rounded-lg bg-background/50 backdrop-blur-sm hover:bg-background/70 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-on-scroll hover-lift"
-                >
+          <ScrollReveal animation="fade-up" delay={300}>
+            <div className="max-w-5xl mx-auto mb-16">
+              <Accordion type="single" collapsible className="space-y-4">
+                {paroles.map((parole, index) => (
+                  <AccordionItem 
+                    key={parole.id} 
+                    value={parole.id}
+                    className="border border-primary/20 rounded-lg bg-background/50 backdrop-blur-sm hover:bg-background/70 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:scale-105"
+                  >
                   <AccordionTrigger className="px-6 py-6 hover:no-underline group">
                     <div className="flex items-center gap-4 text-left">
                       <div className="flex-shrink-0 p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-all duration-300">
@@ -339,8 +345,9 @@ Il a toujours su que vous viendriez.
               >
                 VOIR LA<br />BOUTIQUE
               </Button>
-            </div>
-          </section>
+              </div>
+            </section>
+          </ScrollReveal>
           </div>
         </main>
         

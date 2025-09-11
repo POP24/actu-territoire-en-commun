@@ -12,7 +12,6 @@ import MaillageTerritorialSection from "@/components/MaillageTerritorialSection"
 import TypologySection from "@/components/TypologySection";
 import OutilsSection from "@/components/OutilsSection";
 import ChatButton from "@/components/ChatButton";
-import GlobalAnimationScript from "@/components/GlobalAnimationScript";
 
 import Footer from "@/components/Footer";
 
