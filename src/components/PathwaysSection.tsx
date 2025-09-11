@@ -21,10 +21,10 @@ const PathwaysSection = () => {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3 md:gap-6 max-w-7xl mx-auto">
-            {/* Chemin 1 - Association locale (déplacé en premier) */}
+            {/* Chemin 1 - Association locale */}
             <ScrollReveal animation="fade-left" delay={200}>
-              <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer flex flex-col">
-              <div className="flex flex-col items-center text-center mb-4 sm:mb-6 md:mb-8">
+              <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer flex flex-col h-full">
+              <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
                 <div className="bg-blue-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 1 · Association Locale
                 </div>
@@ -74,15 +74,15 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button variant="cta-blue" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button variant="cta-blue" className="w-full mt-auto font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
                 ADHÉSION LOCALE →
               </Button>
               </div>
             </ScrollReveal>
             
-            {/* Chemin 2 - Fédération nationale (déplacé au centre) */}
+            {/* Chemin 2 - Fédération nationale */}
             <ScrollReveal animation="scale" delay={300}>
-              <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-brand cursor-pointer flex flex-col">
+              <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-brand cursor-pointer flex flex-col h-full">
               <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
                 <div className="bg-green-brand text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 2 · Fédération nationale
@@ -137,15 +137,15 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button variant="cta-green" className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button variant="cta-green" className="w-full mt-auto font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
                 ADHÉSION ARCHITECTE →
               </Button>
               </div>
             </ScrollReveal>
             
-            {/* Chemin 3 */}
+            {/* Chemin 3 - Investissement Immobilier */}
             <ScrollReveal animation="fade-right" delay={400}>
-              <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer flex flex-col">
+              <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer flex flex-col h-full">
               <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
                 <div className="bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 3 · Investissement Immobilier
@@ -190,7 +190,7 @@ const PathwaysSection = () => {
               <Button 
                 onClick={() => window.open('https://lasuitedumonde.com', '_blank')}
                 variant="cta-orange" 
-                className="w-full mt-6 sm:mt-8 font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base"
+                className="w-full mt-auto font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base"
               >
                 INVESTIR DANS LES COMMUNS →
               </Button>
