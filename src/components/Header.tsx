@@ -25,8 +25,9 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const headerClasses = `
-    fixed top-0 left-0 right-0 z-50 transition-all duration-300
+    fixed top-0 left-0 right-0 z-header transition-all duration-300
     bg-background/90 backdrop-blur-md shadow-lg border-b border-border/50
+    h-[var(--nav-h-xs)] md:h-[var(--nav-h-md)] lg:h-[var(--nav-h-lg)]
     ${scrolled ? 'bg-background/95' : 'bg-background/85'}
   `.trim();
 

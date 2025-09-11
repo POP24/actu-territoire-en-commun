@@ -12,7 +12,7 @@ export default {
 	theme: {
 		container: {
 			center: true,
-			padding: '2rem',
+			padding: { DEFAULT: '1rem', md: '1.5rem', xl: '2rem' },
 			screens: {
 				'2xl': '1400px'
 			}
@@ -21,6 +21,20 @@ export default {
 			fontFamily: {
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
 				'inter': ['Inter', 'system-ui', 'sans-serif'],
+			},
+			fontSize: {
+				'h1': ['var(--h1)', { lineHeight: '1.15', fontWeight: '700' }],
+				'h2': ['var(--h2)', { lineHeight: '1.20', fontWeight: '700' }],
+				'h3': ['var(--h3)', { lineHeight: '1.25', fontWeight: '600' }],
+				'body-l': ['var(--body-l)', { lineHeight: '1.7' }],
+				'body-m': ['var(--body-m)', { lineHeight: '1.7' }],
+				'small':  ['var(--small)',  { lineHeight: '1.4' }]
+			},
+			zIndex: { 
+				header: 50, 
+				dropdown: 70, 
+				overlay: 80, 
+				modal: 90 
 			},
 			colors: {
 				border: 'hsl(var(--border))',

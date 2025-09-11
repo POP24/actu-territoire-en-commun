@@ -1,0 +1,31 @@
+:root {
+  /* NAV heights */
+  --nav-h-xs: 72px;
+  --nav-h-md: 80px;
+  --nav-h-lg: 88px;
+
+  /* Typo fluide (structure seulement) */
+  --h1: clamp(1.75rem, 4.5vw, 3.75rem);
+  --h2: clamp(1.375rem, 3.2vw, 2.25rem);
+  --h3: clamp(1.125rem, 2.4vw, 1.875rem);
+  --body-l: clamp(1rem, 1.2vw, 1.125rem);
+  --body-m: clamp(0.9375rem, 1vw, 1rem);
+  --small: clamp(0.8125rem, 0.8vw, 0.875rem);
+}
+
+/* Helpers (sans couleur) */
+.text-h1 { font-size: var(--h1); line-height: 1.15; font-weight: 700; }
+.text-h2 { font-size: var(--h2); line-height: 1.20; font-weight: 700; }
+.text-h3 { font-size: var(--h3); line-height: 1.25; font-weight: 600; }
+.text-body-l { font-size: var(--body-l); line-height: 1.7; }
+.text-body-m { font-size: var(--body-m); line-height: 1.7; }
+.text-small  { font-size: var(--small);  line-height: 1.4; }
+
+/* Motion a11y */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* Anti-scale global (widgets tiers) */
+html, body { zoom: 1 !important; }
+.landbot-container, .widget-sandbox { transform: none !important; transform-origin: center !important; }
