@@ -1,6 +1,7 @@
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ChatButton from "@/components/ChatButton";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import FranceMap from "@/components/FranceMap";
@@ -35,13 +36,13 @@ const Vision = () => {
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto">
-          <h1 className="page-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
+          <h1 className="page-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-hero-entrance" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
             Vision
           </h1>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-8" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 animate-fade-in-up stagger-1" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
             Organiser la suite
           </h2>
-          <p className="text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>
+          <p className="text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up stagger-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>
             Créons ensemble 1000 lieux d'accueil pour se rencontrer, expérimenter, s'entraider.
           </p>
           <Button 
@@ -374,6 +375,7 @@ const Vision = () => {
       </section>
 
       <Footer />
+      <ChatButton />
     </div>
   );
 };

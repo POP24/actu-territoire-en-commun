@@ -1,6 +1,7 @@
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ChatButton from "@/components/ChatButton";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { useState } from "react";
@@ -25,11 +26,11 @@ export default function Investir() {
       <Header />
       <main className="container mx-auto px-6 pt-28 pb-16">
         <header className="max-w-3xl mx-auto text-center mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-4xl font-bold mb-3">Investir dans des Communes Utiles</h1>
-          <p className="text-muted-foreground text-sm sm:text-base">Votre contribution finance l'achat, la rénovation frugale et l'activation des lieux. 1 personne = 1 voix.</p>
+          <h1 className="text-2xl sm:text-4xl font-bold mb-3 animate-hero-entrance">Investir dans des Communes Utiles</h1>
+          <p className="text-muted-foreground text-sm sm:text-base animate-fade-in-up stagger-1">Votre contribution finance l'achat, la rénovation frugale et l'activation des lieux. 1 personne = 1 voix.</p>
         </header>
 
-        <section aria-labelledby="montant" className="max-w-2xl mx-auto bg-card rounded-lg p-4 sm:p-6 shadow-soft">
+        <section aria-labelledby="montant" className="max-w-2xl mx-auto bg-card rounded-lg p-4 sm:p-6 shadow-soft animate-on-scroll hover-lift">
           <h2 id="montant" className="text-lg sm:text-xl font-semibold mb-2">Choisissez votre montant</h2>
           <div className="flex items-center gap-4">
             <span className="text-sm text-muted-foreground">100€</span>
@@ -47,21 +48,22 @@ export default function Investir() {
         </section>
 
         <section className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 mt-8 sm:mt-12" aria-label="Avantages">
-          <article className="bg-card rounded-lg p-3 sm:p-5 shadow-soft">
+          <article className="bg-card rounded-lg p-3 sm:p-5 shadow-soft animate-on-scroll-left hover-lift">
             <h3 className="text-sm sm:text-base font-semibold mb-1">Droit de vote</h3>
             <p className="text-xs sm:text-sm text-muted-foreground">Décisions clés votées par les membres.</p>
           </article>
-          <article className="bg-card rounded-lg p-3 sm:p-5 shadow-soft">
+          <article className="bg-card rounded-lg p-3 sm:p-5 shadow-soft animate-on-scroll hover-lift">
             <h3 className="text-sm sm:text-base font-semibold mb-1">Transparence</h3>
             <p className="text-xs sm:text-sm text-muted-foreground">Budgets et rapports trimestriels publiés.</p>
           </article>
-          <article className="bg-card rounded-lg p-3 sm:p-5 shadow-soft">
+          <article className="bg-card rounded-lg p-3 sm:p-5 shadow-soft animate-on-scroll-right hover-lift">
             <h3 className="text-sm sm:text-base font-semibold mb-1">Accès membre</h3>
             <p className="text-xs sm:text-sm text-muted-foreground">Invitations aux ouvertures et priorités de réservation.</p>
           </article>
         </section>
       </main>
       <Footer />
+      <ChatButton />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ChatButton from "@/components/ChatButton";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -51,10 +52,10 @@ const Parrainage = () => {
 
         <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-hero-entrance">
               PROGRAMME AMBASSADEUR
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-medium">
+            <p className="text-xl md:text-2xl text-white/90 font-medium animate-fade-in-up stagger-1">
               Faites grandir le réseau, gagnez des commissions
             </p>
           </div>
@@ -65,14 +66,14 @@ const Parrainage = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 animate-on-scroll">
               VOTRE RÔLE D'AMBASSADEUR
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Étape 1 */}
-            <div className="text-center">
+            <div className="text-center animate-on-scroll-left hover-lift">
               <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 1
               </div>
@@ -111,7 +112,7 @@ const Parrainage = () => {
             </div>
 
             {/* Étape 2 */}
-            <div className="text-center">
+            <div className="text-center animate-on-scroll hover-lift">
               <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 2
               </div>
@@ -154,7 +155,7 @@ const Parrainage = () => {
             </div>
 
             {/* Étape 3 */}
-            <div className="text-center">
+            <div className="text-center animate-on-scroll-right hover-lift">
               <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 3
               </div>
@@ -288,6 +289,7 @@ const Parrainage = () => {
       </section>
 
       <Footer />
+      <ChatButton />
     </div>
   );
 };
