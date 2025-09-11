@@ -35,7 +35,6 @@ const Index = () => {
       <FAQSection />
       <Footer />
       <ChatButton />
-      <GlobalAnimationScript />
     </div>
   );
 };

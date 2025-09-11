@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThirdwebProvider } from "thirdweb/react";
+import GlobalAnimationScript from "@/components/GlobalAnimationScript";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Investir from "./pages/Investir";
@@ -22,6 +23,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        <GlobalAnimationScript />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />

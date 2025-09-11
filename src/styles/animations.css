@@ -161,8 +161,8 @@
 }
 
 .animate-on-scroll.in-view {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .animate-on-scroll-left {
@@ -172,8 +172,8 @@
 }
 
 .animate-on-scroll-left.in-view {
-  opacity: 1;
-  transform: translateX(0);
+  opacity: 1 !important;
+  transform: translateX(0) !important;
 }
 
 .animate-on-scroll-right {
@@ -183,8 +183,8 @@
 }
 
 .animate-on-scroll-right.in-view {
-  opacity: 1;
-  transform: translateX(0);
+  opacity: 1 !important;
+  transform: translateX(0) !important;
 }
 
 .animate-on-scroll-scale {
@@ -194,8 +194,8 @@
 }
 
 .animate-on-scroll-scale.in-view {
-  opacity: 1;
-  transform: scale(1);
+  opacity: 1 !important;
+  transform: scale(1) !important;
 }
 
 /* EFFETS HOVER */

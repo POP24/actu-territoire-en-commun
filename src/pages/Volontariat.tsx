@@ -43,12 +43,12 @@ const Volontariat = () => {
           <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16">
+        <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16 animate-hero-entrance">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in-up stagger-1">
               VOLONTARIAT DANS LE RÉSEAU
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-medium">
+            <p className="text-xl md:text-2xl text-white/90 font-medium animate-fade-in-up stagger-2">
               Échangez votre temps contre des crédits d'usage
             </p>
           </div>
@@ -56,21 +56,21 @@ const Volontariat = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-background animate-on-scroll">
         <div className="container mx-auto px-4">
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
+          <div className="mb-16 animate-hero-entrance">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground animate-fade-in-up stagger-1">
               INVESTISSEZ VOTRE TEMPS, GAGNEZ DES CRÉDITS
             </h2>
-            <p className="text-xl text-center text-muted-foreground">
+            <p className="text-xl text-center text-muted-foreground animate-fade-in-up stagger-2">
               Alternative solidaire au woofing traditionnel
             </p>
           </div>
 
           {/* Three Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 animate-on-scroll">
             {/* Chantiers Participatifs */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
+            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300 animate-on-scroll-scale hover-card stagger-3">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
                   🏕 CHANTIERS PARTICIPATIFS
@@ -95,7 +95,7 @@ const Volontariat = () => {
             </Card>
 
             {/* Missions Courtes */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
+            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300 animate-on-scroll-scale hover-card stagger-4">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
                   🌱 MISSIONS COURTES
@@ -120,7 +120,7 @@ const Volontariat = () => {
             </Card>
 
             {/* Bénévolat à Distance */}
-            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300">
+            <Card className="bg-card border-border hover:shadow-elegant transition-all duration-300 animate-on-scroll-scale hover-card stagger-5">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
                   💻 BÉNÉVOLAT À DISTANCE
@@ -146,7 +146,7 @@ const Volontariat = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border">
+          <div className="bg-card rounded-2xl p-8 md:p-12 text-center border border-border animate-on-scroll-scale">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-card-foreground">
               Comment ça marche ?
             </h2>
