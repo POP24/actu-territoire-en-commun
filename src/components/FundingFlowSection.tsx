@@ -6,10 +6,9 @@ const FundingFlowSection = () => {
   const [showWhereYouAtQuiz, setShowWhereYouAtQuiz] = useState(false);
   const [showEcosystemModal, setShowEcosystemModal] = useState(false);
   return (
-    <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden animate-on-scroll">
       {/* Modern Tech Background */}
       <div className="absolute inset-0 z-0">
-        {/* Base black background */}
         <div className="absolute inset-0 bg-black"></div>
         
         {/* Gradient overlays inspired by the reference */}
@@ -24,8 +23,8 @@ const FundingFlowSection = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 md:mb-6">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16 animate-hero-entrance">
+            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 animate-fade-in-up stagger-1">
               <span className="text-white">Construire le</span>{" "}
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Réseau</span>
             </h2>

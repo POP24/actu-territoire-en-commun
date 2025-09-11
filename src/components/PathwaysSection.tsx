@@ -7,8 +7,8 @@ const PathwaysSection = () => {
         <div className="max-w-6xl mx-auto">
           
           {/* Title */}
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16 animate-hero-entrance">
+            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4 animate-fade-in-up stagger-1">
               <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight tracking-tight whitespace-nowrap text-foreground px-8 sm:px-12 font-sans">
                 Choisissez votre <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Chemin</span>
@@ -17,9 +17,9 @@ const PathwaysSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3 md:gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3 md:gap-6 max-w-7xl mx-auto animate-on-scroll">
             {/* Chemin 1 - Association locale (déplacé en premier) */}
-            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer flex flex-col">
+            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer flex flex-col animate-on-scroll-scale hover-card stagger-2">
               <div className="flex flex-col items-center text-center mb-4 sm:mb-6 md:mb-8">
                 <div className="bg-blue-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 1 · Association Locale
@@ -76,7 +76,7 @@ const PathwaysSection = () => {
             </div>
             
             {/* Chemin 2 - Fédération nationale (déplacé au centre) */}
-            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-brand cursor-pointer flex flex-col">
+            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-green-brand cursor-pointer flex flex-col animate-on-scroll-scale hover-card stagger-3">
               <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
                 <div className="bg-green-brand text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 2 · Fédération nationale
@@ -137,7 +137,7 @@ const PathwaysSection = () => {
             </div>
             
             {/* Chemin 3 */}
-            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer flex flex-col">
+            <div className="bg-gradient-card p-4 sm:p-6 md:p-8 rounded-2xl shadow-elegant border-2 border-border transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-orange-400 cursor-pointer flex flex-col animate-on-scroll-scale hover-card stagger-4">
               <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
                 <div className="bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 3 · Investissement Immobilier

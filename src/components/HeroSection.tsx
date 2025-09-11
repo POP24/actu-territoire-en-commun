@@ -134,7 +134,7 @@ useEffect(() => {
         <div className="max-w-7xl mx-auto">
 
           {/* Header Section */}
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16 animate-hero-entrance">
             <h1 className="page-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-4 sm:mb-6" style={{ textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
               Association des campings
             </h1>

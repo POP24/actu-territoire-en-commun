@@ -42,7 +42,7 @@ const [percentage, setPercentage] = useState<string>("0");
   }, [getTotalOwners]);
  console.log(percentage)
   return (
-    <section id="activez-territoire" className="relative py-16 bg-black overflow-hidden">
+    <section id="activez-territoire" className="relative py-16 bg-black overflow-hidden animate-on-scroll">
       {/* Animated background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -53,8 +53,8 @@ const [percentage, setPercentage] = useState<string>("0");
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Main Title */}
-          <div className="text-center mb-16">
-            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+          <div className="text-center mb-16 animate-hero-entrance">
+            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in-up stagger-1">
               Activez votre <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Territoire</span>
             </h2>
             <p className="text-gray-300 text-lg mb-2">Transformez les idées en actions.</p>
@@ -62,9 +62,9 @@ const [percentage, setPercentage] = useState<string>("0");
           </div>
 
           {/* Two Launchpads */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 animate-on-scroll">
             {/* Real-Estate Launchpad */}
-            <div className="text-center">
+            <div className="text-center animate-on-scroll-left hover-card stagger-2">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                 Immobilier <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Partagé</span>
               </h3>

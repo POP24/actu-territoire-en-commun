@@ -3,18 +3,18 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="py-20 bg-gradient-to-b from-blue-500/10 via-blue-600/5 to-background relative overflow-hidden">
+    <section id="faq" className="py-20 bg-gradient-to-b from-blue-500/10 via-blue-600/5 to-background relative overflow-hidden animate-on-scroll">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-foreground">
+          <div className="text-center mb-12 animate-hero-entrance">
+            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-foreground animate-fade-in-up stagger-1">
               Questions <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Fréquentes</span>
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground">Trouvez les réponses aux questions les plus courantes sur La Suite du Monde</p>
           </div>
 
-          <Tabs defaultValue="gouvernance" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-6 sm:mb-8 bg-muted/50 p-1 rounded-xl">
+          <Tabs defaultValue="gouvernance" className="w-full animate-on-scroll-scale">
+            <TabsList className="grid w-full grid-cols-3 mb-6 sm:mb-8 bg-muted/50 p-1 rounded-xl animate-fade-in-up stagger-2">
               <TabsTrigger 
                 value="gouvernance" 
                 className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground font-semibold py-2 sm:py-3 px-2 sm:px-6 rounded-lg transition-all text-xs sm:text-sm"
