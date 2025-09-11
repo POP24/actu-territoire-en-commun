@@ -62,10 +62,10 @@ const Boutique = () => {
 
         <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-hero-entrance">
               LA BOUTIQUE DES COMMUNS
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-medium mb-8">
+            <p className="text-xl md:text-2xl text-white/90 font-medium mb-8 animate-fade-in-up stagger-1">
               La Boutique des Communs est votre espace de création collective.<br/>
               Chaque achat alimente directement le trésor commun de votre territoire.
             </p>
@@ -73,7 +73,7 @@ const Boutique = () => {
               onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
               variant="cta-orange"
               size="lg"
-              className="rounded-xl px-8 py-4 text-lg font-bold"
+              className="rounded-xl px-8 py-4 text-lg font-bold animate-fade-in-up stagger-2"
             >
               Découvrir la boutique →
             </Button>
@@ -86,14 +86,14 @@ const Boutique = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 animate-on-scroll">
               COMMENT ÇA MARCHE
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Créateur */}
-            <Card className="bg-card border-border">
+            <Card className="bg-card border-border animate-on-scroll-left">
               <CardHeader className="text-center">
                 <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   1
@@ -112,7 +112,7 @@ const Boutique = () => {
             </Card>
 
             {/* Soutien */}
-            <Card className="bg-card border-border">
+            <Card className="bg-card border-border animate-on-scroll-scale">
               <CardHeader className="text-center">
                 <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   2
@@ -131,7 +131,7 @@ const Boutique = () => {
             </Card>
 
             {/* Territoire */}
-            <Card className="bg-card border-border">
+            <Card className="bg-card border-border animate-on-scroll-right">
               <CardHeader className="text-center">
                 <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   3
@@ -167,16 +167,16 @@ const Boutique = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 animate-on-scroll">
               DU DIGITAL AU TERRITORIAL
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground animate-on-scroll">
               Un réseau de boutiques locales pour ancrer l'économie créative
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <Card className="bg-card border-border">
+            <Card className="bg-card border-border animate-on-scroll-left hover-lift">
               <CardHeader className="text-center">
                 <div className="text-6xl mb-4">💻</div>
                 <CardTitle className="text-2xl font-bold text-card-foreground">
@@ -184,23 +184,10 @@ const Boutique = () => {
                 </CardTitle>
                 <p className="text-muted-foreground">Vitrine nationale disponible 24/7</p>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2 text-card-foreground">
-                  <li>• Tous les créateurs du réseau</li>
-                  <li>• Livraison partout en France</li>
-                  <li>• Production à la demande</li>
-                </ul>
-                <Button 
-                  onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
-                  variant="outline"
-                  className="w-full"
-                >
-                  Visiter →
-                </Button>
-              </CardContent>
+...
             </Card>
 
-            <Card className="bg-card border-border">
+            <Card className="bg-card border-border animate-on-scroll-right hover-lift">
               <CardHeader className="text-center">
                 <div className="text-6xl mb-4">🏪</div>
                 <CardTitle className="text-2xl font-bold text-card-foreground">
@@ -234,25 +221,25 @@ const Boutique = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 animate-on-scroll">
               PASSEZ À L'ACTION
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="text-center bg-card rounded-2xl p-8 border border-border">
+            <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll-left hover-lift">
               <h3 className="text-xl font-bold text-card-foreground mb-4">JE SUIS CRÉATEUR</h3>
               <p className="text-muted-foreground mb-6">Vendez en boutique physique et en ligne</p>
               <Button variant="cta-blue" className="w-full">PROPOSER MES CRÉATIONS</Button>
             </div>
 
-            <div className="text-center bg-card rounded-2xl p-8 border border-border">
+            <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll hover-lift">
               <h3 className="text-xl font-bold text-card-foreground mb-4">JE SUIS COORDINATEUR LOCAL</h3>
               <p className="text-muted-foreground mb-6">Ouvrez une boutique sur votre territoire</p>
               <Button variant="cta-orange" className="w-full">LANCER UNE BOUTIQUE</Button>
             </div>
 
-            <div className="text-center bg-card rounded-2xl p-8 border border-border">
+            <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll-right hover-lift">
               <h3 className="text-xl font-bold text-card-foreground mb-4">J'AI UN LOCAL DISPONIBLE</h3>
               <p className="text-muted-foreground mb-6">Mettez-le à disposition du réseau</p>
               <Button variant="cta-green" className="w-full">PROPOSER MON LOCAL</Button>
