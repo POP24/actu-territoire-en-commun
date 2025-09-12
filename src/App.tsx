@@ -14,6 +14,7 @@ import Vision3 from "./pages/Vision3";
 import Volontariat from "./pages/Volontariat";
 import Parrainage from "./pages/Parrainage";
 import Boutique from "./pages/Boutique";
+import Labo from "./pages/Labo";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/volontariat" element={<Volontariat />} />
             <Route path="/parrainage" element={<Parrainage />} />
             <Route path="/boutique" element={<Boutique />} />
+            <Route path="/labo" element={<Labo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
