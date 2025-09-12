@@ -57,11 +57,6 @@ const Volontariat = () => {
                 Échangez votre temps contre des crédits d'usage
               </p>
             </ScrollReveal>
-            <ScrollReveal animation="fade-up" delay={400}>
-              <p className="text-lg text-white/80">
-                Participez à la vie du réseau et obtenez des avantages exclusifs
-              </p>
-            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -72,11 +67,11 @@ const Volontariat = () => {
           <div className="container mx-auto px-4">
             <ScrollReveal animation="fade-up" delay={100}>
               <div className="mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground underline decoration-primary decoration-2 underline-offset-4">
                   INVESTISSEZ VOTRE TEMPS, GAGNEZ DES CRÉDITS
                 </h2>
                 <p className="text-xl text-center text-muted-foreground">
-                  Alternative solidaire au woofing traditionnel
+                  Participez à la vie du réseau
                 </p>
               </div>
             </ScrollReveal>
@@ -149,9 +144,6 @@ const Volontariat = () => {
                      <div className="text-center">
                        <p className="text-lg font-semibold text-primary">
                          Crédits d'Usage selon l'implication
-                       </p>
-                       <p className="text-sm text-muted-foreground font-medium">
-                         Engagez-vous d'où vous êtes
                        </p>
                      </div>
                    </CardHeader>
