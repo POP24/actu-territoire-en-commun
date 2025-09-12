@@ -102,7 +102,7 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
                 onClick={handleSelectLocal}
                 className="w-full btn-cta-blue font-bold text-lg py-4 group-hover:scale-105 transition-all duration-300 relative overflow-hidden"
               >
-                <span className="relative z-10">ACTIVER ACCÈS LOCAL</span>
+                <span className="relative z-10">ADHÉSION LOCALE</span>
               </Button>
             </div>
           </div>
@@ -179,7 +179,7 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
                 onClick={handleSelectArchitect}
                 className="w-full btn-cta-green font-bold text-lg py-4 group-hover:scale-105 transition-all duration-300 relative overflow-hidden"
               >
-                <span className="relative z-10">ACTIVER ACCÈS ARCHITECTE</span>
+                <span className="relative z-10">ADHÉSION ARCHITECTE</span>
               </Button>
             </div>
           </div>

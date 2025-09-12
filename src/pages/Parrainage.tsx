@@ -81,130 +81,142 @@ const Parrainage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Étape 1 */}
             <ScrollReveal animation="fade-left" delay={0}>
-              <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                  1
-                </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Rejoignez notre application mobile
-              </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium">
-                Téléchargez l'Application Ambassadeur
-              </p>
-              
-              {/* App Download Buttons */}
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a 
-                  href="https://apps.apple.com/us/app/la-suite-du-monde/id6751546986" 
-                  className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
-                  aria-label="Télécharger sur l'App Store"
-                >
-                  <img 
-                    src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
-                    alt="Télécharger dans l'App Store" 
-                    className="h-12 w-auto"
-                  />
-                </a>
-                <a 
-                  href="https://play.google.com/store/apps/details?id=com.wimmov.lasuitedumonde" 
-                  className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
-                  aria-label="L'obtenir sur Google Play"
-                >
-                  <img 
-                    src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
-                    alt="L'obtenir sur Google Play" 
-                    className="h-12 w-auto"
-                  />
-                </a>
-                </div>
-              </div>
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8">
+                <CardHeader className="text-center">
+                  <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                    1
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-card-foreground">
+                    Rejoignez notre application mobile
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-lg mb-8 font-medium">
+                    Téléchargez l'Application Ambassadeur
+                  </p>
+                  
+                  {/* App Download Buttons */}
+                  <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a 
+                      href="https://apps.apple.com/us/app/la-suite-du-monde/id6751546986" 
+                      className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
+                      aria-label="Télécharger sur l'App Store"
+                    >
+                      <img 
+                        src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
+                        alt="Télécharger dans l'App Store" 
+                        className="h-12 w-auto"
+                      />
+                    </a>
+                    <a 
+                      href="https://play.google.com/store/apps/details?id=com.wimmov.lasuitedumonde" 
+                      className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
+                      aria-label="L'obtenir sur Google Play"
+                    >
+                      <img 
+                        src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
+                        alt="L'obtenir sur Google Play" 
+                        className="h-12 w-auto"
+                      />
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
             </ScrollReveal>
 
             {/* Étape 2 */}
             <ScrollReveal animation="fade-up" delay={200}>
-              <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                  2
-                </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Parrainez
-              </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium">
-                Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
-              </p>
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button 
-                    variant="default"
-                    size="lg"
-                    className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                  >
-                    INVITER MON RÉSEAU
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-md">
-                  <DialogHeader>
-                    <DialogTitle>Invitation à votre réseau local</DialogTitle>
-                  </DialogHeader>
-                  <div className="space-y-4">
-                    <p className="text-sm text-muted-foreground">
-                      Contactez-moi, je veux vous mettre en relation avec La Suite du Monde
-                    </p>
-                    <div className="space-y-3">
-                      <Input placeholder="Votre nom" />
-                      <Input placeholder="Email" type="email" />
-                      <Input placeholder="Téléphone" type="tel" />
-                      <Textarea placeholder="Votre message..." />
-                    </div>
-                    <Button className="w-full">
-                      ENVOYER L'INVITATION
-                    </Button>
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8">
+                <CardHeader className="text-center">
+                  <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                    2
                   </div>
-                </DialogContent>
-              </Dialog>
-            </div>
+                  <CardTitle className="text-2xl font-bold text-card-foreground">
+                    Parrainez
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-lg mb-8 font-medium">
+                    Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
+                  </p>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button 
+                        variant="default"
+                        size="lg"
+                        className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                      >
+                        INVITER MON RÉSEAU
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-md">
+                      <DialogHeader>
+                        <DialogTitle>Invitation à votre réseau local</DialogTitle>
+                      </DialogHeader>
+                      <div className="space-y-4">
+                        <p className="text-sm text-muted-foreground">
+                          Contactez-moi, je veux vous mettre en relation avec La Suite du Monde
+                        </p>
+                        <div className="space-y-3">
+                          <Input placeholder="Votre nom" />
+                          <Input placeholder="Email" type="email" />
+                          <Input placeholder="Téléphone" type="tel" />
+                          <Textarea placeholder="Votre message..." />
+                        </div>
+                        <Button className="w-full">
+                          ENVOYER L'INVITATION
+                        </Button>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+                </CardContent>
+              </Card>
             </ScrollReveal>
 
             {/* Étape 3 */}
             <ScrollReveal animation="fade-right" delay={400}>
-              <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
-                <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
-                  3
-                </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Soyez récompensé !
-              </h3>
-              <p className="text-muted-foreground text-lg mb-8 font-medium">
-                Choisissez comment répartir votre commission.
-              </p>
-              <div className="bg-white rounded-xl p-3 border border-gray-200 max-w-md mx-auto shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center justify-center space-x-1 bg-gray-100 rounded-lg p-1">
-                  {/* Option Vous */}
-                  <button
-                    onClick={() => setCommissionSplit(2.5)}
-                    className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all duration-300 ${
-                      commissionSplit === 2.5 
-                        ? 'bg-white text-gray-800 shadow-md' 
-                        : 'text-gray-600 hover:text-gray-800'
-                    }`}
-                  >
-                    Vous - 2.5%
-                  </button>
-                  
-                  {/* Option Asso */}
-                  <button
-                    onClick={() => setCommissionSplit(0)}
-                    className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all duration-300 ${
-                      commissionSplit === 0 
-                        ? 'bg-blue-500 text-white shadow-md' 
-                        : 'text-gray-600 hover:text-gray-800'
-                    }`}
-                  >
-                    Asso - 2.5%
-                  </button>
-                </div>
-              </div>
-            </div>
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8">
+                <CardHeader className="text-center">
+                  <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                    3
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-card-foreground">
+                    Soyez récompensé !
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-lg mb-8 font-medium">
+                    Choisissez comment répartir votre commission.
+                  </p>
+                  <div className="bg-white rounded-xl p-3 border border-gray-200 max-w-md mx-auto shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div className="flex items-center justify-center space-x-1 bg-gray-100 rounded-lg p-1">
+                      {/* Option Vous */}
+                      <button
+                        onClick={() => setCommissionSplit(2.5)}
+                        className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all duration-300 ${
+                          commissionSplit === 2.5 
+                            ? 'bg-white text-gray-800 shadow-md' 
+                            : 'text-gray-600 hover:text-gray-800'
+                        }`}
+                      >
+                        Vous - 2.5%
+                      </button>
+                      
+                      {/* Option Asso */}
+                      <button
+                        onClick={() => setCommissionSplit(0)}
+                        className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all duration-300 ${
+                          commissionSplit === 0 
+                            ? 'bg-blue-500 text-white shadow-md' 
+                            : 'text-gray-600 hover:text-gray-800'
+                        }`}
+                      >
+                        Asso - 2.5%
+                      </button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </ScrollReveal>
           </div>
         </div>

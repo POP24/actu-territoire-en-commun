@@ -191,7 +191,7 @@ useEffect(() => {
                     <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
                       {/* Local */}
                       <div className="text-center hover-scale cursor-pointer flex flex-col h-full" onClick={() => handleDirectAdherClick("local")}>
-                        <h3 className="text-base sm:text-lg md:text-xl font-black text-gray-900 mb-2 sm:mb-3">LOCAL</h3>
+                        <h3 className="text-base sm:text-lg md:text-xl font-black text-gray-900 mb-2 sm:mb-3">LOCALE</h3>
                         <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-xl p-3 sm:p-4 mb-3 sm:mb-4 shadow-inner border-2 border-blue-200/50 flex items-center justify-center min-h-[60px] sm:min-h-[70px] md:min-h-[80px]">
                           <div className="text-sm xs:text-base sm:text-lg md:text-lg lg:text-xl xl:text-lg font-black text-white drop-shadow-lg leading-tight whitespace-nowrap" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)' }}>
                             À PARTIR DE 10€
