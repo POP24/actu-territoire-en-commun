@@ -90,44 +90,85 @@ const Boutique = () => {
       </section>
 
       {/* Evolution de la boutique */}
-      <section className="py-16 bg-background">
+      <section className="py-20 bg-gradient-to-br from-background via-muted/20 to-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+          <ScrollReveal animation="fade-up">
+            <div className="text-center mb-16">
+              <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-6">
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground px-4 sm:px-6 md:px-8 text-center">
+                  L'ÉVOLUTION DE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">LA BOUTIQUE</span>
+                </h2>
+                <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto mb-16">
             {/* AUJOURD'HUI */}
             <ScrollReveal animation="fade-right">
-              <div className="bg-card rounded-2xl p-6 border border-border h-full">
-                <div className="mb-6">
-                  <h3 className="text-xl font-bold text-foreground mb-2">
-                    AUJOURD'HUI : BOUTIQUE OFFICIELLE EN LIGNE
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-4">
+              <div className="relative bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-3xl p-8 border border-blue-200/50 dark:border-blue-800/30 h-full overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-blue-200/30 to-transparent rounded-full -mr-16 -mt-16"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                    <h3 className="text-2xl font-black text-foreground">
+                      AUJOURD'HUI
+                    </h3>
+                  </div>
+                  <h4 className="text-xl font-bold text-blue-700 dark:text-blue-300 mb-4">
+                    BOUTIQUE OFFICIELLE EN LIGNE
+                  </h4>
+                  <p className="text-muted-foreground mb-6 font-medium">
                     Pour lancer le mouvement, on démarre avec nos produits fondateurs.
                   </p>
-                </div>
-                
-                <div className="space-y-3 text-sm text-muted-foreground">
-                  <p>• Chaque achat finance directement les projets collectifs du réseau</p>
-                  <p>• T-shirts, gourdes, accessoires : portez fièrement les valeurs des communs</p>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3 p-3 bg-white/50 dark:bg-gray-900/30 rounded-xl">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                      <p className="text-sm font-medium text-foreground">Chaque achat finance directement les projets collectifs du réseau</p>
+                    </div>
+                    <div className="flex items-start gap-3 p-3 bg-white/50 dark:bg-gray-900/30 rounded-xl">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                      <p className="text-sm font-medium text-foreground">T-shirts, gourdes, accessoires : portez fièrement les valeurs des communs</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </ScrollReveal>
 
             {/* DEMAIN */}
             <ScrollReveal animation="fade-left">
-              <div className="bg-card rounded-2xl p-6 border border-border h-full">
-                <div className="mb-6">
-                  <h3 className="text-xl font-bold text-foreground mb-2">
-                    DEMAIN : VOS CRÉATIONS, VOS BOUTIQUES
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-4 font-semibold">
+              <div className="relative bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 rounded-3xl p-8 border border-purple-200/50 dark:border-purple-800/30 h-full overflow-hidden">
+                <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-purple-200/30 to-transparent rounded-full -ml-16 -mt-16"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                    <h3 className="text-2xl font-black text-foreground">
+                      DEMAIN
+                    </h3>
+                  </div>
+                  <h4 className="text-xl font-bold text-purple-700 dark:text-purple-300 mb-2">
+                    VOS CRÉATIONS, VOS BOUTIQUES
+                  </h4>
+                  <p className="text-sm font-bold text-muted-foreground mb-6 uppercase tracking-wide">
                     LE CONCEPT COMPLET
                   </p>
-                </div>
 
-                <div className="space-y-3 text-sm text-muted-foreground">
-                  <p>• La Boutique des Communs deviendra votre espace de création collective</p>
-                  <p>• Chaque territoire aura sa boutique, chaque créateur sa vitrine</p>
-                  <p>• Chaque achat nourrira le trésor commun local</p>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3 p-3 bg-white/50 dark:bg-gray-900/30 rounded-xl">
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                      <p className="text-sm font-medium text-foreground">La Boutique des Communs deviendra votre espace de création collective</p>
+                    </div>
+                    <div className="flex items-start gap-3 p-3 bg-white/50 dark:bg-gray-900/30 rounded-xl">
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                      <p className="text-sm font-medium text-foreground">Chaque territoire aura sa boutique, chaque créateur sa vitrine</p>
+                    </div>
+                    <div className="flex items-start gap-3 p-3 bg-white/50 dark:bg-gray-900/30 rounded-xl">
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                      <p className="text-sm font-medium text-foreground">Chaque achat nourrira le trésor commun local</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </ScrollReveal>
@@ -215,6 +256,7 @@ const Boutique = () => {
               </Card>
             </ScrollReveal>
           </div>
+
         </div>
       </section>
 
@@ -245,17 +287,17 @@ const Boutique = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <Card className="bg-card border-border animate-on-scroll-left hover-lift">
               <CardHeader className="text-center">
                 <div className="text-6xl mb-4">📱</div>
-                <CardTitle className="text-2xl font-bold text-card-foreground">
+                <CardTitle className="text-xl font-bold text-card-foreground">
                   PHASE 1 : BOUTIQUE EN LIGNE
                 </CardTitle>
-                <p className="text-muted-foreground">(Maintenant)</p>
+                <p className="text-muted-foreground text-sm">(Maintenant)</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <ul className="space-y-2 text-card-foreground">
+                <ul className="space-y-2 text-card-foreground text-sm">
                   <li>• Collection officielle La Suite du Monde</li>
                   <li>• Livraison partout en France</li>
                   <li>• 100% des bénéfices au réseau</li>
@@ -270,16 +312,16 @@ const Boutique = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card border-border animate-on-scroll-right hover-lift">
+            <Card className="bg-card border-border animate-on-scroll hover-lift">
               <CardHeader className="text-center">
                 <div className="text-6xl mb-4">🏪</div>
-                <CardTitle className="text-2xl font-bold text-card-foreground">
+                <CardTitle className="text-xl font-bold text-card-foreground">
                   PHASE 2 : BOUTIQUES PHYSIQUES
                 </CardTitle>
-                <p className="text-muted-foreground">(2025-2026)</p>
+                <p className="text-muted-foreground text-sm">(2025-2026)</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <ul className="space-y-2 text-card-foreground">
+                <ul className="space-y-2 text-card-foreground text-sm">
                   <li>• Un lieu par territoire</li>
                   <li>• Dépôt-vente pour créateurs locaux</li>
                   <li>• Point de rencontre et d'événements</li>
@@ -293,28 +335,23 @@ const Boutique = () => {
                 </Button>
               </CardContent>
             </Card>
-          </div>
 
-          {/* Phase 3 - Nouvelle card en dessous */}
-          <div className="mt-8 max-w-2xl mx-auto">
-            <ScrollReveal animation="fade-up">
-              <Card className="bg-card border-border animate-on-scroll hover-lift">
-                <CardHeader className="text-center">
-                  <div className="text-6xl mb-4">🌐</div>
-                  <CardTitle className="text-2xl font-bold text-card-foreground">
-                    PHASE 3 : RÉSEAU INTERCONNECTÉ
-                  </CardTitle>
-                  <p className="text-muted-foreground">(2026+)</p>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <ul className="space-y-2 text-card-foreground text-center">
-                    <li>• Place du Marché nationale</li>
-                    <li>• Échanges inter-territoires</li>
-                    <li>• Monnaie locale intégrée</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </ScrollReveal>
+            <Card className="bg-card border-border animate-on-scroll-right hover-lift">
+              <CardHeader className="text-center">
+                <div className="text-6xl mb-4">🌐</div>
+                <CardTitle className="text-xl font-bold text-card-foreground">
+                  PHASE 3 : RÉSEAU INTERCONNECTÉ
+                </CardTitle>
+                <p className="text-muted-foreground text-sm">(2026+)</p>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-2 text-card-foreground text-sm">
+                  <li>• Place du Marché nationale</li>
+                  <li>• Échanges inter-territoires</li>
+                  <li>• Monnaie locale intégrée</li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -336,22 +373,22 @@ const Boutique = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll-left hover-lift">
+            <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll-left hover-lift h-full flex flex-col">
               <h3 className="text-xl font-bold text-card-foreground mb-4">JE SUIS CRÉATEUR</h3>
-              <p className="text-muted-foreground mb-6">Vendez en boutique physique et en ligne</p>
-              <Button variant="cta-blue" className="w-full">PROPOSER MES CRÉATIONS</Button>
+              <p className="text-muted-foreground mb-6 flex-1">Vendez en boutique physique et en ligne</p>
+              <Button variant="cta-blue" className="w-full mt-auto">PROPOSER MES CRÉATIONS</Button>
             </div>
 
-            <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll hover-lift">
+            <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll hover-lift h-full flex flex-col">
               <h3 className="text-xl font-bold text-card-foreground mb-4">JE SUIS COORDINATEUR LOCAL</h3>
-              <p className="text-muted-foreground mb-6">Ouvrez une boutique sur votre territoire</p>
-              <Button variant="cta-orange" className="w-full">LANCER UNE BOUTIQUE</Button>
+              <p className="text-muted-foreground mb-6 flex-1">Ouvrez une boutique sur votre territoire</p>
+              <Button variant="cta-orange" className="w-full mt-auto">LANCER UNE BOUTIQUE</Button>
             </div>
 
-            <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll-right hover-lift">
+            <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll-right hover-lift h-full flex flex-col">
               <h3 className="text-xl font-bold text-card-foreground mb-4">J'AI UN LOCAL DISPONIBLE</h3>
-              <p className="text-muted-foreground mb-6">Mettez-le à disposition du réseau</p>
-              <Button variant="cta-green" className="w-full">PROPOSER MON LOCAL</Button>
+              <p className="text-muted-foreground mb-6 flex-1">Mettez-le à disposition du réseau</p>
+              <Button variant="cta-green" className="w-full mt-auto">PROPOSER MON LOCAL</Button>
             </div>
           </div>
 
