@@ -89,6 +89,52 @@ const Boutique = () => {
         </div>
       </section>
 
+      {/* Evolution de la boutique */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+            {/* AUJOURD'HUI */}
+            <ScrollReveal animation="fade-right">
+              <div className="bg-card rounded-2xl p-6 border border-border h-full">
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-foreground mb-2">
+                    AUJOURD'HUI : BOUTIQUE OFFICIELLE EN LIGNE
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Pour lancer le mouvement, on démarre avec nos produits fondateurs.
+                  </p>
+                </div>
+                
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  <p>• Chaque achat finance directement les projets collectifs du réseau</p>
+                  <p>• T-shirts, gourdes, accessoires : portez fièrement les valeurs des communs</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* DEMAIN */}
+            <ScrollReveal animation="fade-left">
+              <div className="bg-card rounded-2xl p-6 border border-border h-full">
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-foreground mb-2">
+                    DEMAIN : VOS CRÉATIONS, VOS BOUTIQUES
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-4 font-semibold">
+                    LE CONCEPT COMPLET
+                  </p>
+                </div>
+
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  <p>• La Boutique des Communs deviendra votre espace de création collective</p>
+                  <p>• Chaque territoire aura sa boutique, chaque créateur sa vitrine</p>
+                  <p>• Chaque achat nourrira le trésor commun local</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
 
       {/* Comment ça marche */}
       <section className="py-16 bg-muted/30">
@@ -202,28 +248,41 @@ const Boutique = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <Card className="bg-card border-border animate-on-scroll-left hover-lift">
               <CardHeader className="text-center">
-                <div className="text-6xl mb-4">💻</div>
+                <div className="text-6xl mb-4">📱</div>
                 <CardTitle className="text-2xl font-bold text-card-foreground">
-                  BOUTIQUE EN LIGNE
+                  PHASE 1 : BOUTIQUE EN LIGNE
                 </CardTitle>
-                <p className="text-muted-foreground">Vitrine nationale disponible 24/7</p>
+                <p className="text-muted-foreground">(Maintenant)</p>
               </CardHeader>
-...
+              <CardContent className="space-y-4">
+                <ul className="space-y-2 text-card-foreground">
+                  <li>• Collection officielle La Suite du Monde</li>
+                  <li>• Livraison partout en France</li>
+                  <li>• 100% des bénéfices au réseau</li>
+                </ul>
+                <Button 
+                  onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
+                  variant="cta-blue"
+                  className="w-full"
+                >
+                  Découvrir la boutique →
+                </Button>
+              </CardContent>
             </Card>
 
             <Card className="bg-card border-border animate-on-scroll-right hover-lift">
               <CardHeader className="text-center">
                 <div className="text-6xl mb-4">🏪</div>
                 <CardTitle className="text-2xl font-bold text-card-foreground">
-                  BOUTIQUES LOCALES
+                  PHASE 2 : BOUTIQUES PHYSIQUES
                 </CardTitle>
-                <p className="text-muted-foreground">Pignon sur rue dans chaque territoire</p>
+                <p className="text-muted-foreground">(2025-2026)</p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <ul className="space-y-2 text-card-foreground">
-                  <li>• Créateurs locaux en dépôt-vente</li>
-                  <li>• Point de rencontre du réseau</li>
-                  <li>• Événements et ateliers</li>
+                  <li>• Un lieu par territoire</li>
+                  <li>• Dépôt-vente pour créateurs locaux</li>
+                  <li>• Point de rencontre et d'événements</li>
                 </ul>
                 <Button 
                   onClick={() => setIsInterestModalOpen(true)}
@@ -234,6 +293,28 @@ const Boutique = () => {
                 </Button>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Phase 3 - Nouvelle card en dessous */}
+          <div className="mt-8 max-w-2xl mx-auto">
+            <ScrollReveal animation="fade-up">
+              <Card className="bg-card border-border animate-on-scroll hover-lift">
+                <CardHeader className="text-center">
+                  <div className="text-6xl mb-4">🌐</div>
+                  <CardTitle className="text-2xl font-bold text-card-foreground">
+                    PHASE 3 : RÉSEAU INTERCONNECTÉ
+                  </CardTitle>
+                  <p className="text-muted-foreground">(2026+)</p>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <ul className="space-y-2 text-card-foreground text-center">
+                    <li>• Place du Marché nationale</li>
+                    <li>• Échanges inter-territoires</li>
+                    <li>• Monnaie locale intégrée</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
           </div>
         </div>
       </section>
