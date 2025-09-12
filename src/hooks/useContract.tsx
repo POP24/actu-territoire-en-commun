@@ -105,7 +105,7 @@ export function useContractPurchase() {
     const lockContract = getLockContract(contractAddress);
 
     const data = await readContract({
-      contract:lockContract,
+      contract: lockContract,
       method:
         "function numberOfOwners() view returns (uint256)",
       params: [],
