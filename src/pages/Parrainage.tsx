@@ -110,7 +110,7 @@ const Parrainage = () => {
                       <img 
                         src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
                         alt="Télécharger dans l'App Store" 
-                        className="h-12 w-auto"
+                        className="h-16 w-auto"
                       />
                     </a>
                     <a 
@@ -121,7 +121,7 @@ const Parrainage = () => {
                       <img 
                         src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
                         alt="L'obtenir sur Google Play" 
-                        className="h-12 w-auto"
+                        className="h-16 w-auto"
                       />
                     </a>
                   </div>
