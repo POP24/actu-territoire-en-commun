@@ -90,16 +90,17 @@ const Volontariat = () => {
                     <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
                       🏕 CHANTIERS PARTICIPATIFS
                     </CardTitle>
-                    <p className="text-lg font-semibold text-primary">
-                      5 jours = 50€ de crédits
-                    </p>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <ul className="space-y-2 text-card-foreground">
-                      <li>• Construction écologique</li>
-                      <li>• Aménagement des lieux</li>
-                      <li>• Jardinage et permaculture</li>
-                    </ul>
+                     <p className="text-lg font-semibold text-primary">
+                       5 jours = 100€ de crédits
+                     </p>
+                   </CardHeader>
+                   <CardContent className="space-y-4">
+                     <ul className="space-y-2 text-card-foreground">
+                       <li>• Construction écologique & éco-rénovation</li>
+                       <li>• Permaculture et jardins nourriciers</li>
+                       <li>• Aménagement d'espaces collectifs</li>
+                       <li className="italic text-muted-foreground">• Hébergement et repas inclus</li>
+                     </ul>
                     <Button 
                       variant="cta-orange"
                       className="w-full rounded-xl py-3 text-base font-medium"
@@ -114,19 +115,20 @@ const Volontariat = () => {
               <ScrollReveal animation="scale" delay={300}>
                 <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300">
                   <CardHeader className="text-center">
-                    <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                      🌱 MISSIONS COURTES
-                    </CardTitle>
-                    <p className="text-lg font-semibold text-primary">
-                      1 journée = 10€ de crédits
-                    </p>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <ul className="space-y-2 text-card-foreground">
-                      <li>• Animation d'ateliers</li>
-                      <li>• Aide aux événements</li>
-                      <li>• Accueil des visiteurs</li>
-                    </ul>
+                   <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
+                       🌱 MISSIONS PONCTUELLES
+                     </CardTitle>
+                     <p className="text-lg font-semibold text-primary">
+                       1 journée = 20€ de crédits
+                     </p>
+                   </CardHeader>
+                   <CardContent className="space-y-4">
+                     <ul className="space-y-2 text-card-foreground">
+                       <li>• Animation d'ateliers et transmission de savoirs</li>
+                       <li>• Support lors d'événements</li>
+                       <li>• Accueil et orientation des visiteurs</li>
+                       <li className="italic text-muted-foreground">• Idéal pour les week-ends</li>
+                     </ul>
                     <Button 
                       variant="cta-blue"
                       className="w-full rounded-xl py-3 text-base font-medium"
@@ -141,19 +143,25 @@ const Volontariat = () => {
               <ScrollReveal animation="fade-right" delay={400}>
                 <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300">
                   <CardHeader className="text-center">
-                    <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                      💻 BÉNÉVOLAT À DISTANCE
-                    </CardTitle>
-                    <p className="text-lg font-semibold text-primary">
-                      Selon contribution
-                    </p>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <ul className="space-y-2 text-card-foreground">
-                      <li>• Communication digitale</li>
-                      <li>• Développement web</li>
-                      <li>• Gestion administrative</li>
-                    </ul>
+                   <CardTitle className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
+                       💻 BÉNÉVOLAT À DISTANCE
+                     </CardTitle>
+                     <div className="text-center">
+                       <p className="text-lg font-semibold text-primary">
+                         Crédits d'Usage selon l'implication
+                       </p>
+                       <p className="text-sm text-muted-foreground font-medium">
+                         Engagez-vous d'où vous êtes
+                       </p>
+                     </div>
+                   </CardHeader>
+                   <CardContent className="space-y-4">
+                     <ul className="space-y-2 text-card-foreground">
+                       <li>• Communication et réseaux sociaux</li>
+                       <li>• Développement web et design</li>
+                       <li>• Support administratif et traduction</li>
+                       <li className="italic text-muted-foreground">• Restons-ensemble depuis chez vous</li>
+                     </ul>
                     <Button 
                       variant="cta-green"
                       className="w-full rounded-xl py-3 text-base font-medium"
@@ -171,10 +179,10 @@ const Volontariat = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-card-foreground">
                   Comment ça marche ?
                 </h2>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-                  1 jour de volontariat = 10€ de crédits d'usage<br />
-                  Utilisables sur tous les lieux du réseau
-                </p>
+                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+                   1 jour de volontariat = 20€ de crédits d'usage<br />
+                   Utilisables sur tous les lieux du réseau
+                 </p>
                 <Button 
                   variant="cta-orange"
                   size="lg"
