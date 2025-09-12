@@ -40,6 +40,12 @@ const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {
   };
 
   const scrollToSection = (id: string) => {
+    // Si on est sur une autre page que la home, naviguer vers la home d'abord
+    if (location.pathname !== '/' && id === 'faq') {
+      window.location.href = '/#faq';
+      return;
+    }
+    
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
