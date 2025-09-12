@@ -91,7 +91,6 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
         ],
         network: [
           "Rejoignez les cercles thématiques (Discord)",
-          "Formation aux outils de gouvernance des communs",
           "Accès prioritaire aux séjours et rencontres du réseau"
         ]
       }

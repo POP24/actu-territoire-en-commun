@@ -153,7 +153,7 @@ const PathwaysSection = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
-                      <span>Formation aux outils de gouvernance des communs</span>
+                      <span>Avantages exclusifs à venir</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
@@ -218,7 +218,7 @@ const PathwaysSection = () => {
               </div>
               
               <Button 
-                onClick={() => window.open('https://lasuitedumonde.com', '_blank')}
+                onClick={() => window.open('https://test24.lasuitedumonde.com', '_blank')}
                 variant="cta-orange" 
                 className="w-full mt-auto font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base"
               >

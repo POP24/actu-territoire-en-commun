@@ -24,7 +24,7 @@ const LaunchpadSection = () => {
   const [membershipType, setMembershipType] = useState<"local" | "architect">("local");
 
   const handleInvestClick = () => {
-    window.open('https://www.lasuitedumonde.com', '_blank');
+    window.open('https://test24.lasuitedumonde.com', '_blank');
   };
 
   const handleAdhererClick = () => {

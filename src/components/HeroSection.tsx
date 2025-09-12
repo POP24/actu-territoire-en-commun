@@ -83,7 +83,7 @@ useEffect(() => {
   };
 
   const handleInvestClick = () => {
-    window.open('https://lasuitedumonde.com', '_blank');
+    window.open('https://test24.lasuitedumonde.com', '_blank');
   };
 
   // Animation des points lumineux - optimisée
