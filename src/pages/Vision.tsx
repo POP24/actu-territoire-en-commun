@@ -1,390 +1,359 @@
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";  
+import Footer from "@/components/Footer";
 import ChatButton from "@/components/ChatButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import FranceMap from "@/components/FranceMap";
-import RegionProposalDialog from "@/components/RegionProposalDialog";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Link } from "react-router-dom";
 
-const Vision = () => {
-  const [isDeclarationExpanded, setIsDeclarationExpanded] = useState(false);
+export default function Vision() {
+  const paroles = [
+    {
+      id: "memoire-terre",
+      titre: "La mémoire de la Terre",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M20 8 L20 32 M8 20 L32 20" stroke="currentColor" strokeWidth="1"/>
+          <circle cx="20" cy="14" r="2" fill="currentColor"/>
+          <circle cx="20" cy="26" r="2" fill="currentColor"/>
+          <circle cx="14" cy="20" r="2" fill="currentColor"/>
+          <circle cx="26" cy="20" r="2" fill="currentColor"/>
+        </svg>
+      ),
+      contenu: `La Terre se souvient d'un temps où chaque vallée avait sa voix, chaque montagne son gardien, chaque source son mystère partagé. Un temps où les humains savaient que marcher, c'est tisser. Que parler, c'est relier. Que vivre ensemble, c'est créer le monde.
 
-  const scrollToDeclaration = () => {
-    const element = document.getElementById('declaration');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
+Cette mémoire n'est pas perdue. Elle dort sous le béton, elle attend sous les champs de monoculture, elle pulse dans les dernières forêts. Elle vit surtout dans nos cellules, dans cette part de nous qui sait encore trembler devant un coucher de soleil, qui reconnaît le chant de la pluie, qui sent la parenté avec tout ce qui vit.
+
+Le moment est venu de réveiller cette mémoire. Non pas pour retourner en arrière - il n'y a pas d'arrière. Mais pour reprendre le fil là où nous l'avons lâché et tisser maintenant la suite du monde.`
+    },
+    {
+      id: "heure-retournement",
+      titre: "L'heure du retournement",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <path d="M20 5 L35 20 L20 35 L5 20 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M20 12 Q28 20 20 28 Q12 20 20 12" fill="currentColor" opacity="0.3"/>
+          <circle cx="20" cy="20" r="3" fill="currentColor"/>
+        </svg>
+      ),
+      contenu: `Nous vivons l'heure où le serpent se mord la queue. Où la ligne droite du progrès infini rencontre le mur du réel. Où la grande machine tousse, craque, révèle ses limites.
+
+C'est l'heure terrible et magnifique où tout bascule.
+
+Les peuples qui ont traversé des apocalypses nous l'enseignent : c'est dans l'effondrement que germe le renouveau. C'est quand la nuit est la plus noire que les étoiles deviennent guides. C'est quand tout semble perdu que l'essentiel se révèle.
+
+Nous ne sommes pas la première humanité à vivre une fin du monde. Mais nous sommes peut-être la première à pouvoir consciemment choisir le monde d'après. À condition de nous souvenir que nous ne sommes pas les propriétaires de la Terre, mais ses enfants. Pas ses maîtres, mais ses apprentis.`
+    },
+    {
+      id: "peuple-seuil",
+      titre: "Le peuple du seuil",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <rect x="8" y="8" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M8 20 L32 20" stroke="currentColor" strokeWidth="2"/>
+          <circle cx="15" cy="13" r="2" fill="currentColor"/>
+          <circle cx="25" cy="27" r="2" fill="currentColor"/>
+          <path d="M20 8 L20 32" stroke="currentColor" strokeWidth="1" opacity="0.5"/>
+        </svg>
+      ),
+      contenu: `Nous sommes le peuple du seuil. Ni tout à fait dans l'ancien monde, ni encore dans le nouveau. Nous portons en nous les codes des deux réalités.
+
+Nous connaissons la solitude des villes et la nostalgie des communautés.
+Nous portons la blessure de la séparation et la mémoire de l'unité.
+Nous avons goûté au poison de l'accumulation et nous cherchons la médecine du partage.
+
+Cette position inconfortable est notre force. Nous sommes les traducteurs entre les mondes. Nous pouvons entendre les ancêtres et parler aux enfants à naître. Nous comprenons la langue des machines et nous réapprenons celle des arbres.
+
+Notre génération n'est pas maudite. Elle est bénie de la plus grande responsabilité : tenir le pont pendant la grande traversée.`
+    },
+    {
+      id: "prophetie-mycelium",
+      titre: "La prophétie du mycélium",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <circle cx="20" cy="20" r="3" fill="currentColor"/>
+          <path d="M20 20 L12 8 M20 20 L28 8 M20 20 L8 24 M20 20 L32 24 M20 20 L15 32 M20 20 L25 32" stroke="currentColor" strokeWidth="1.5"/>
+          <circle cx="12" cy="8" r="2" fill="currentColor"/>
+          <circle cx="28" cy="8" r="2" fill="currentColor"/>
+          <circle cx="8" cy="24" r="2" fill="currentColor"/>
+          <circle cx="32" cy="24" r="2" fill="currentColor"/>
+          <circle cx="15" cy="32" r="2" fill="currentColor"/>
+          <circle cx="25" cy="32" r="2" fill="currentColor"/>
+        </svg>
+      ),
+      contenu: `Sous la surface visible, dans l'obscurité fertile, quelque chose grandit. Comme le mycélium qui relie tous les arbres de la forêt, un réseau invisible se tisse entre ceux qui ont compris.
+
+Ce réseau n'a pas de centre. Pas de chef. Pas de dogme. Il a mille nœuds et chaque nœud est souverain. Il pulse de l'intelligence collective de tous ceux qui le composent.
+
+Quand un territoire souffre, le réseau le sent et envoie les nutriments.
+Quand une solution émerge, elle voyage instantanément à tous les nœuds.
+Quand une communauté s'éveille, elle active toutes les autres.
+
+Cette prophétie n'est pas à venir. Elle est déjà là. Dans chaque jardin partagé, chaque cercle de parole, chaque cagnotte solidaire, le mycélium grandit. Invisible aux radars du vieux monde. Inarrêtable comme la vie elle-même.`
+    },
+    {
+      id: "serment-vivant",
+      titre: "Le serment du vivant",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <path d="M20 5 L25 15 L15 15 Z" fill="currentColor"/>
+          <path d="M12 18 L28 18 L28 28 L12 28 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M16 22 L20 26 L28 14" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <circle cx="20" cy="35" r="3" fill="currentColor"/>
+        </svg>
+      ),
+      contenu: `Nous ne sommes pas une organisation. Nous sommes un organisme.
+Nous ne suivons pas un plan. Nous suivons le vivant.
+Nous ne conquérons pas. Nous composons.
+
+Voici notre serment :
+
+Là où la terre est blessée, nous serons la médecine.
+Là où les liens sont rompus, nous serons le fil.
+Là où la parole est confisquée, nous serons le cercle.
+Là où l'ancien meurt seul, nous serons la présence.
+Là où l'enfant ne trouve pas sa place, nous serons le village.
+
+Ce serment ne se prête pas. Il se vit.
+Il ne s'écrit pas dans le marbre mais dans la chair du quotidien.
+Il ne demande pas de mourir pour une cause mais de vivre pour la Vie.`
+    },
+    {
+      id: "architecture-sacree",
+      titre: "L'architecture sacrée du commun",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <polygon points="20,5 30,15 30,30 10,30 10,15" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <circle cx="20" cy="20" r="4" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+          <path d="M15 25 L25 25 M17.5 28 L22.5 28" stroke="currentColor" strokeWidth="1"/>
+          <path d="M20 5 L20 16" stroke="currentColor" strokeWidth="1" opacity="0.7"/>
+        </svg>
+      ),
+      contenu: `Le sacré n'est pas dans les temples. Il est dans l'espace entre nous quand nous créons ensemble.
+
+Chaque territoire porte en lui une architecture invisible : les lignes de désir où les gens marchent vraiment, les points de rassemblement naturels où la vie converge, les seuils où les mondes se touchent.
+
+Notre travail n'est pas d'imposer un plan mais de révéler ce qui est déjà là. De reconnaître les confluences naturelles. D'honorer les centres vivants. De protéger les bordures fertiles où la diversité foisonne.
+
+Le commun n'est pas ce qui appartient à tous. C'est ce qui n'appartient à personne et dont tous prennent soin. C'est l'eau de la source, l'ombre du grand chêne, le four du village, la mémoire des anciens, le rire des enfants.
+
+Créer des communs, c'est se souvenir que nous sommes communs. Issus de la même source. Tissés de la même étoffe. Promis au même retour.`
+    },
+    {
+      id: "grande-respiration",
+      titre: "La grande respiration",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M20 8 Q8 20 20 32 Q32 20 20 8" fill="none" stroke="currentColor" strokeWidth="1"/>
+          <path d="M12 14 Q20 6 28 14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+          <path d="M12 26 Q20 34 28 26" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+        </svg>
+      ),
+      contenu: `L'univers respire. Expansion, contraction. Systole, diastole. Inspire, expire.
+
+Nous avons vécu cinq siècles d'expansion. De conquête. D'extraction. L'humanité occidentale a inspiré jusqu'à l'étouffement.
+
+Vient maintenant le temps de l'expiration. Du retour. Du don.
+
+Ce n'est pas une punition. C'est une grâce. Enfin nous pouvons relâcher. Enfin nous pouvons rendre. Enfin nous pouvons nous reposer dans quelque chose de plus grand que notre volonté de puissance.
+
+Les territoires qui se réveillent sont les premiers à entrer dans cette nouvelle respiration. Ils inspirent du ciel et expirent vers la terre. Ils reçoivent l'ancien et enfantent le nouveau. Ils accueillent le blessé et libèrent le guéri.`
+    },
+    {
+      id: "nous-sommes-medecine",
+      titre: "Nous sommes la médecine",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <path d="M20 5 L20 35 M5 20 L35 20" stroke="currentColor" strokeWidth="3"/>
+          <circle cx="20" cy="20" r="8" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M16 16 L24 24 M24 16 L16 24" stroke="currentColor" strokeWidth="1"/>
+        </svg>
+      ),
+      contenu: `La maladie de ce temps a un nom : la séparation.
+Séparation d'avec la nature. D'avec les autres. D'avec nous-mêmes. D'avec le sacré.
+
+Mais toute maladie porte en elle sa médecine. Et la médecine de la séparation, c'est nous. Nous qui sentons la douleur de la coupure. Nous qui ne pouvons plus supporter l'isolement. Nous qui cherchons, parfois maladroitement, à retisser.
+
+Nous sommes le système immunitaire de la Terre qui s'active. Les anticorps du vivant. La fièvre qui monte pour brûler ce qui doit mourir et protéger ce qui doit vivre.
+
+Cette médecine n'est pas douce. Elle brûle parfois. Elle exige que nous lâchions nos armures, nos certitudes, nos conforts. Mais elle est la seule médecine. Et elle opère déjà.`
+    },
+    {
+      id: "futur-ancien",
+      titre: "Le futur est ancien",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <circle cx="20" cy="20" r="12" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M20 12 L20 20 L26 26" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <circle cx="20" cy="8" r="1.5" fill="currentColor"/>
+          <circle cx="32" cy="20" r="1.5" fill="currentColor"/>
+          <circle cx="20" cy="32" r="1.5" fill="currentColor"/>
+          <circle cx="8" cy="20" r="1.5" fill="currentColor"/>
+        </svg>
+      ),
+      contenu: `Le nouveau monde que nous cherchons n'est pas à inventer. Il est à se rappeler.
+
+Les solutions sont millénaires : le cercle, le feu, le partage, la réciprocité, l'entraide, le respect, la célébration, la transmission.
+
+La sagesse est éternelle : tout est lié, tout est vivant, tout est sacré, tout retourne à la source.
+
+L'architecture est organique : des petites unités autonomes reliées en réseau, la diversité comme force, l'adaptation constante, la coopération plutôt que la compétition.
+
+Nous ne sommes pas des révolutionnaires. Nous sommes des archéologues du futur. Nous déterrons ce qui a toujours été là, sous les couches de béton et d'oubli. Nous essuyons la poussière sur les vieux miroirs jusqu'à ce qu'ils reflètent à nouveau le ciel.`
+    },
+    {
+      id: "maintenant",
+      titre: "Maintenant",
+      symbol: (
+        <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary">
+          <circle cx="20" cy="20" r="15" fill="currentColor" opacity="0.1"/>
+          <circle cx="20" cy="20" r="8" fill="currentColor" opacity="0.3"/>
+          <circle cx="20" cy="20" r="4" fill="currentColor"/>
+          <path d="M20 5 L22 8 L18 8 Z" fill="currentColor"/>
+        </svg>
+      ),
+      contenu: `Il n'y a pas de sauveur à attendre.
+Il n'y a pas de moment plus propice.
+Il n'y a pas de lieu plus adapté que là où vous êtes.
+Il n'y a pas de meilleur équipement que vos mains nues et votre cœur ouvert.
+
+Maintenant est le seul temps du verbe être.
+Ici est le centre du monde.
+Vous êtes le maillon exact qui manquait à la chaîne.
+
+La Suite du Monde n'est pas une organisation que vous rejoignez.
+C'est un mouvement qui vous traverse quand vous décidez de vivre en cohérence avec ce que vous savez être vrai.
+
+Le territoire ne vous attend pas demain.
+Il vous attend maintenant.
+Il a toujours su que vous viendriez.
+
+**Tout commence quand vous dites oui.**`
+    }
+  ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
       <SEO 
-        title="Vision - La Suite du Monde" 
-        description="Créons ensemble 1000 lieux d'accueil pour se rencontrer, expérimenter, s'entraider. Organiser la suite du monde."
+        title="Vision - Le Temps de la Grande Convergence | SDM DAO"
+        description="Découvrez les dix paroles sacrées qui fondent notre vision d'un monde tissé de reliances, où chaque territoire retrouve sa souveraineté et sa connexion au vivant."
       />
-      <Header />
       
-      {/* Hero Section with Background Image */}
-      <section 
-        className="relative min-h-[60vh] md:min-h-[65vh] flex items-center justify-center px-4"
-        style={{
-          backgroundImage: 'url(/lovable-uploads/ae030518-6c8f-4494-9e81-4210b0f6c729.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto">
-          <ScrollReveal animation="fade-up">
-            <h1 className="page-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
-              Vision
-            </h1>
-          </ScrollReveal>
-          <ScrollReveal animation="fade-up" delay={200}>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-8" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
-              Organiser la suite
-            </h2>
-          </ScrollReveal>
-          <ScrollReveal animation="fade-up" delay={400}>
-            <p className="text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>
-              Créons ensemble 1000 lieux d'accueil pour se rencontrer, expérimenter, s'entraider.
-            </p>
-          </ScrollReveal>
-          <Button 
-            onClick={scrollToDeclaration}
-            className="btn-cta-blue px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-          >
-            DÉCLARATION DE LA SUITE DU MONDE
-          </Button>
-        </div>
-      </section>
-
-      {/* Vision Section - 4 subsections */}
-      <div className="bg-background">
+      <div className="min-h-screen">
+        <Header />
         
-        {/* 2.1 Vision principale */}
-        <section className="py-16 px-4 bg-white">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 bg-clip-text text-transparent">
-                  Imaginez des territoires où l'on achète ensemble des lieux stratégiques
-                </span>
-              </h2>
-              <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                Des espaces pour tester un autre mode de vie, se rencontrer, jardiner, transmettre, expérimenter et bifurquer ensemble.
-              </p>
-              <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mt-4 leading-relaxed">
-                La Suite du Monde bâtit un maillage vivant, solidaire et accueillant de lieux qui permettent à chacun de changer de vie sans risque, sans mobiliser tout son capital dès le départ.
-              </p>
-            </div>
-            
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <FranceMap />
-              </div>
-              <div className="space-y-6">
-                <div className="text-center lg:text-left">
-                  <RegionProposalDialog>
-                    <Button className="btn-cta-orange px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                      PROPOSER UNE IDÉE
-                    </Button>
-                  </RegionProposalDialog>
-                </div>
-              </div>
+        {/* Hero Section avec background sombre et effets */}
+        <section className="pt-40 lg:pt-60 pb-20 bg-black relative overflow-hidden">
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-600/20"></div>
+            <div className="absolute inset-0 bg-gradient-to-tl from-cyan-400/10 via-transparent to-transparent"></div>
+            <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <ScrollReveal animation="fade-up">
+                <h1 className="text-6xl md:text-8xl font-bold mb-8 text-white">
+                  Vision
+                </h1>
+              </ScrollReveal>
+              <ScrollReveal animation="fade-up" delay={200}>
+                <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-cyan-100">
+                  Le Temps de la Grande Convergence
+                </h2>
+              </ScrollReveal>
             </div>
           </div>
         </section>
 
-        {/* 2.2 Le maillon manquant */}
-        <section className="py-16 px-4 bg-gradient-to-br from-orange-50 via-orange-100 to-amber-50">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">
-              Le maillon manquant : la rencontre
-            </h2>
-            
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-              <p className="text-xl leading-relaxed">
-                Entre le rêve d'une autre vie et le saut dans l'inconnu, il manquait un espace. Un lieu pour se donner le temps.
-              </p>
-              
-              <div className="bg-white/60 p-6 rounded-xl shadow-sm">
-                <ul className="space-y-3 text-lg">
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-3">•</span>
-                    Le temps de rencontrer un territoire, ses habitants, ses possibles.
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-3">•</span>
-                    Le temps de tester des modes de vie, des métiers, des relations.
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-3">•</span>
-                    Le temps d'explorer sans mobiliser tout son capital, sans s'engager trop vite.
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-3">•</span>
-                    Le temps d'attendre de ne plus être seul avant de s'ancrer durablement.
-                  </li>
-                </ul>
-              </div>
+        <main className="bg-gradient-to-br from-background via-secondary/5 to-primary/5">
+          <div className="container mx-auto px-4 py-16">
 
-              <p className="text-lg leading-relaxed">
-                Combien se sont précipités sur le premier corps de ferme, le premier habitat, portés par l'urgence du changement ? Combien ont investi toutes leurs ressources dans un lieu découvert en quelques semaines, pour réaliser ensuite que ce n'était pas là qu'ils pourraient vivre des décennies heureuses ?
-              </p>
-
-              <p className="text-lg leading-relaxed">
-                Ce que nous faisons ensemble, c'est de créer ce maillon manquant : des espaces transitoires où l'on peut se poser, respirer, expérimenter. Des lieux où l'erreur est permise, où les essais sont encouragés, où les rencontres façonnent progressivement le projet de vie qui nous correspond vraiment.
-              </p>
-
-              <p className="text-lg leading-relaxed">
-                Ici, on peut jardiner sans posséder la terre. Construire sans s'endetter. Tisser des liens sans s'enfermer. Découvrir quel territoire nous appelle, quelles personnes résonnent avec nos aspirations, quelle vie nous voulons vraiment mener.
-              </p>
-
-              <p className="text-lg leading-relaxed">
-                Ces lieux d'accueil temporaire sont les antichambres de l'engagement pérenne. Ils permettent de passer de la solitude du projet individuel à la force du collectif déjà constitué. De transformer l'angoisse du grand saut en une succession de petits pas conscients et choisis.
-              </p>
-            </div>
+          {/* Accordéon mystique des paroles */}
+          <ScrollReveal animation="fade-up" delay={300}>
+            <div className="max-w-5xl mx-auto mb-16">
+              <Accordion type="single" collapsible className="space-y-4">
+                {paroles.map((parole, index) => (
+                  <AccordionItem 
+                    key={parole.id} 
+                    value={parole.id}
+                    className="border border-primary/20 rounded-lg bg-background/50 backdrop-blur-sm hover:bg-background/70 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:scale-105"
+                  >
+                  <AccordionTrigger className="px-6 py-6 hover:no-underline group">
+                    <div className="flex items-center gap-4 text-left">
+                      <div className="flex-shrink-0 p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-all duration-300">
+                        {parole.symbol}
+                      </div>
+                      <div>
+                        <div className="text-sm text-primary font-medium mb-1">
+                          {index + 1}ère parole
+                        </div>
+                        <div className="text-xl font-semibold text-foreground">
+                          {parole.titre}
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-6">
+                    <div className="pt-4 border-t border-primary/10">
+                      <div className="text-lg leading-relaxed text-foreground/90 whitespace-pre-line">
+                        {parole.contenu}
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
-        </section>
 
-        {/* 2.3 Il est grand temps de s'entraider */}
-        <section className="py-16 px-4 bg-white">
-          <div className="container mx-auto max-w-6xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">
-              Il est grand temps de s'entraider
-            </h2>
-            <p className="text-lg text-center text-gray-700 mb-16 max-w-4xl mx-auto">
-              Nous ne sommes pas seuls. Partout, des femmes et des hommes inventent de nouvelles formes de vie, plus autonomes et solidaires. La Suite du Monde facilite ces transitions en créant des passerelles entre ceux qui cherchent et ceux qui accueillent.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-bold mb-6 text-green-800">Des terres et des liens</h3>
-                <p className="mb-4 text-green-700 font-medium">Nous créerons des espaces d'accueil :</p>
-                <ul className="space-y-3 mb-6 text-green-700">
-                  <li className="flex items-center"><span className="text-green-500 mr-3">•</span>Campings partagés</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-3">•</span>Fermes collectives</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-3">•</span>Habitats légers</li>
-                  <li className="flex items-center"><span className="text-green-500 mr-3">•</span>Espaces d'apprentissage</li>
-                </ul>
-                <p className="text-green-600 italic">Chaque lieu est une porte ouverte pour tester et s'installer.</p>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-bold mb-6 text-blue-800">Les ressources à partager</h3>
-                <p className="mb-4 text-blue-700 font-medium">Nous mutualiserons :</p>
-                <ul className="space-y-3 mb-6 text-blue-700">
-                  <li className="flex items-center"><span className="text-blue-500 mr-3">•</span>Outils et savoirs</li>
-                  <li className="flex items-center"><span className="text-blue-500 mr-3">•</span>Réseaux d'entraide</li>
-                  <li className="flex items-center"><span className="text-blue-500 mr-3">•</span>Moyens de production</li>
-                  <li className="flex items-center"><span className="text-blue-500 mr-3">•</span>Espaces de stockage</li>
-                </ul>
-                <p className="text-blue-600 italic">Rendre accessible ce qui semble hors de portée seul.</p>
-              </div>
+          {/* Appel final mystique */}
+          <section className="text-center relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/10 blur-2xl -z-10"></div>
+            <div className="max-w-4xl mx-auto mb-12">
+              <h3 className="text-4xl font-bold mb-8 text-primary">
+                Tout commence quand vous dites oui
+              </h3>
+              <p className="text-xl text-muted-foreground mb-8">
+              </p>
             </div>
-
-            <div className="text-center space-x-4">
-              <Button className="btn-cta-green px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                PROPOSER UN PARTENARIAT
+            
+            {/* Boutons d'action cosmiques */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              <Link to="/#activez-territoire">
+                <Button size="lg" className="h-16 text-base font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 shadow-lg hover:shadow-xl w-full">
+                  ACTIVER MON<br />TERRITOIRE
+                </Button>
+              </Link>
+              <Link to="/volontariat">
+                <Button size="lg" className="h-16 text-base font-semibold bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white transition-all duration-300 shadow-lg hover:shadow-xl w-full">
+                  ÊTRE<br />VOLONTAIRE
+                </Button>
+              </Link>
+              <Link to="/parrainage">
+                <Button size="lg" className="h-16 text-base font-semibold bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white transition-all duration-300 shadow-lg hover:shadow-xl w-full">
+                  PARRAINER
+                </Button>
+              </Link>
+              <Button 
+                size="lg" 
+                className="h-16 text-base font-semibold bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white transition-all duration-300 shadow-lg hover:shadow-xl w-full"
+                onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
+              >
+                VOIR LA<br />BOUTIQUE
               </Button>
-              <Button className="btn-cta-blue px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                DEVENIR VOLONTAIRE
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* 2.4 S'il fallait une raison : les enfants */}
-        <section className="py-16 px-4 bg-gradient-to-br from-orange-50 via-orange-100 to-amber-50">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">
-              S'il fallait une raison : les enfants
-            </h2>
-            <h3 className="text-xl md:text-2xl font-semibold mb-8 text-center text-gray-700">
-              Si nous ne le faisons pas pour nous, faisons-le pour eux.
-            </h3>
-            
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-              <p className="text-lg leading-relaxed">
-                Pour celles et ceux qui arrivent, grandissent, observent — et nous regardent faire.
-                Pour qu'ils puissent vivre demain dans un monde habitable, habité et accueillant.
-              </p>
-
-              <p className="text-lg leading-relaxed">
-                Dans chaque lieu, nous créons des espaces pensés pour l'enfance :
-                des bois à explorer, des jardins à cultiver, des cabanes à bâtir, des histoires à raconter.
-                Des lieux où l'on apprend en vivant, où l'on joue sérieusement, où l'on découvre le réel avec ses mains, ses sens, son cœur.
-              </p>
-
-              <p className="text-lg leading-relaxed font-medium">Mais cela ne suffit pas.</p>
-
-              <p className="text-lg leading-relaxed">
-                Nous voulons soutenir les écoles alternatives, les pédagogies libres, les collectifs d'instruction, les familles qui cherchent des chemins d'émancipation.
-                Offrir des campings qui deviennent aussi des écoles de la forêt, des villages de savoirs partagés, des points d'ancrage pour des éducations choisies, vivantes, joyeuses.
-              </p>
-
-              <p className="text-lg leading-relaxed">
-                Soutenir les enfants, c'est aussi soutenir les parents.
-                Créer un environnement accueillant pour les familles, faciliter le quotidien, ouvrir des temps de répit, de transmission, de complicité.
-                Permettre aux mères et aux pères de ne pas être seuls, de s'entraider, de respirer.
-                Et permettre aux aînés de transmettre, de vieillir entourés d'enfants et de rester utiles aux autres.
-              </p>
-
-              <p className="text-lg leading-relaxed">
-                C'est pourquoi nous tissons un réseau global, maillé, autonome, intergénérationnel :
-                Des lieux en lien les uns avec les autres, unis par une même volonté de préparer un monde plus doux, plus solidaire, plus fertile.
-              </p>
-
-              <div className="bg-white/70 p-8 rounded-xl shadow-sm border-l-4 border-orange-400 mt-8">
-                <p className="text-lg leading-relaxed font-medium mb-4">Nous plantons des arbres aujourd'hui.</p>
-                <p className="text-lg leading-relaxed mb-4">Mais pas seulement pour les voir pousser.</p>
-                <p className="text-lg leading-relaxed italic text-orange-700">
-                  Nous plantons des racines de confiance. Des structures d'accueil. Des graines de liberté.
-                </p>
               </div>
-            </div>
+            </section>
+          </ScrollReveal>
           </div>
-        </section>
+        </main>
+        
+        <Footer />
+        <ChatButton />
       </div>
-
-      {/* Declaration Section */}
-      <section id="declaration" className="py-16 px-4" style={{ backgroundColor: '#f8f7ef' }}>
-        <div className="container mx-auto max-w-4xl">
-          {/* Logo */}
-          <div className="text-center mb-12">
-            <div className="w-32 h-32 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
-              <span className="text-3xl font-bold text-primary">LSM</span>
-            </div>
-            <h2 className="text-2xl font-bold mb-8 text-gray-800">EN QUELQUES MOTS</h2>
-          </div>
-          
-          <div className="text-center mb-16">
-            <p className="text-lg leading-relaxed text-gray-700">
-              Face à l'effondrement en cours, la Suite du Monde acquiert puis libère des terres agricoles et biens immobiliers afin d'y développer des projets liés à l'habitat, la production agricole, l'énergie, l'organisation communaliste, l'événementiel, l'éducation, ou toute activité permettant davantage d'autonomie. Elle multiplie les activités de recherche, d'expérimentation et de conseil afin de rendre multipliables ces Communes Imaginées, connectées entre-elles.
-            </p>
-          </div>
-
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
-              Déclaration de la Suite du Monde
-            </h2>
-            
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
-              <p>Nous voulons permettre l'autogestion de grappes de terrains de vie et de production,</p>
-              <p>Nous voulons expérimenter une organisation communaliste afin de faire communs et communes,</p>
-              <p>Nous voulons multiplier les pratiques coopératives locales et connectées entre elles,</p>
-              <p>Nous voulons, face à l'effondrement écologique, économique, démocratique, nous organiser,</p>
-              <p>Aussi nous convenons de déclarer "Communes Imaginées" les lieux, outils et moments qui nous rassemblent.</p>
-
-              <div className="my-8"></div>
-
-              <p>La Suite du Monde acquiert et contractualise à ces fins des terres et bâtis,</p>
-              <p>Sur lesquels nous faisons le serment commun de nous confronter ensemble au monde,</p>
-              <p>Le pacte de compter sur nos propres forces comme sources de nos libertés,</p>
-              <p>Afin d'y vivre, apprendre, échanger et cultiver de façon solidaire,</p>
-              <p>De préserver des terres de la prédation et de prendre soin du vivant,</p>
-              <p>De veiller à la qualité de nos liens, tout en demeurant rejoignables.</p>
-
-              <div className="mt-8 text-center">
-                <p className="text-sm text-gray-600 italic">
-                  Première rédaction le 25 novembre 2018, à Saint-Barthélemy-de-Bussière, France<br />
-                  Commune Imaginée du Bandiat.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Le monde change très vite - Collapsible Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <button
-            onClick={() => setIsDeclarationExpanded(!isDeclarationExpanded)}
-            className="w-full text-left mb-8 group"
-          >
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-4 group-hover:text-primary transition-colors">
-              Le monde change très vite
-            </h2>
-            <p className="text-xl text-center text-gray-600 mb-4">
-              Beaucoup de privés, peu de communs.
-            </p>
-            <div className="flex justify-center">
-              {isDeclarationExpanded ? (
-                <ChevronUp className="w-6 h-6 text-gray-500 group-hover:text-primary transition-colors" />
-              ) : (
-                <ChevronDown className="w-6 h-6 text-gray-500 group-hover:text-primary transition-colors" />
-              )}
-            </div>
-          </button>
-          
-          {isDeclarationExpanded && (
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-6 animate-fade-in">
-              <p>
-                Monter des associations, des coopératives, des structures pour faire société et décider ensemble. Aider les communs, soutenir des collectifs, s'organiser encore, partout, mailler le territoire, se lier encore, toujours, porter des coups, prendre des lieux, tisser des complicités et bâtir, cultiver ensemble. Faire Commune. Prendre des communes. Occuper, bloquer, défaire ce qui oppresse : capitalisme, racisme, patriarcat, destruction du vivant. Faire ce qui émancipe.
-              </p>
-
-              <p>
-                Il est dans le feu de ces diversités de tactiques aucune qui ne soit pas urgente, aucune à délaisser, aucune à ostraciser.
-              </p>
-
-              <p>
-                Il est des écrans, de fumées, de flux, des voiles et des intérêts dressés contre nos colères. Il y a le confort plus encore que le conformisme. La peur aussi. Puissent-ils alors nous voler la peur.
-              </p>
-
-              <p>
-                Des fragments de la suite du monde, se détachaient deux rives, plus que jamais liées. Nous vivions à la lisière. Du monde effondré, normé, d'aussi loin que leur fiction causait bruit, la clameur marchande avait peu à peu cessé de porter.
-              </p>
-
-              <p>
-                C'était il y a un instant ou une éternité, maintenant et sans doute demain. Dans des fermes autonomes, vers la Commune, dans des marchés, dans des villages, dans des villes, dans des tiers-lieux, en campements. Un maillage intense et réprimé, joyeux et secret. Sous nos yeux et nos pieds crottés. Quand il ne s'agit plus d'occupation de temps ou de places mais d'habiter et vivre pleinement, d'être pris par la terre, les livres, le vent, le bois à fendre et les adventices, alors, de ces fragments d'ils et elles jaillit un NOUS! Inattendu si ce n'est inespéré, impréparé, sauvage, spontané. Sans Appel ni consigne. Juste une étincelle, dit-on : les prémices du printemps.
-              </p>
-
-              <p>
-                Jamais nous n'avions été si multiples et déterminés. La veille encore, nul pourtant ne pressentit cette fougue. Quand le fleuve et les fous sortirent de leur lit, le courant fut si fort qu'il emporta digues et barrages, submergea les conforts préconstruits et emplit à jamais sillons et consciences de ponts d'attention. En chaque interstice étincelait l'impérieux besoin de réapprendre à VIVRE.
-              </p>
-
-              <p>
-                Cette année-là, un archipel émergea. C'était la fin des États, de partout rongés par la liberté reprise de bosquets en vallées, cimes et bocages. Dans ces Communes Imaginées Autogérées, la fête dura mille ans. Si vous tendez l'oreille - cela demande un effort - vous en entendrez sans doute les premières notes, ténues, dans les flammes qui crépitent.
-              </p>
-
-              <div className="text-center my-12 bg-gray-50 p-8 rounded-xl">
-                <p className="font-bold text-lg leading-relaxed">
-                  Ventre mou de l'histoire,<br />
-                  Tout s'effondre,<br />
-                  L'ennemi s'organise,<br />
-                  Lions-nous,<br />
-                  Désertons,<br />
-                  Pensons,<br />
-                  Bâtissons,<br />
-                  Pour lutter gaiement,<br />
-                  Face au pire.
-                </p>
-              </div>
-
-              <p>
-                Casser le plan, dépasser le projet-profit, habiter le présent et ses lisières, dés-aménager, composer ensemble pour fracturer l'état-béton.
-              </p>
-
-              <p>
-                Reprendre la ville. Les forêts. Du gris faire commune. Des espaces publics, un tableau vivant. Graffer nos rêves de Communes sur les murs aveugles de leurs métropoles.
-              </p>
-
-              <p>
-                Des déclarations d'autochtonie, des forêts et communes libres, riches de complicités nouvelles : l'hiver est chaud quand on se lie.
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
-
-      <Footer />
-      <ChatButton />
-    </div>
+    </>
   );
-};
-
-export default Vision;
+}
