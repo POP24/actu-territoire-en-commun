@@ -8,35 +8,60 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 
 const Labo = () => {
-  const getCounter = (feature: string): number => {
-    const stored = localStorage.getItem(`counter_${feature}`);
-    return stored ? parseInt(stored, 10) : 0;
-  };
   const [counters, setCounters] = useState({
     doleances: 0,
     calendrier: 0,
     marche: 0
   });
 
+  // Charger les compteurs depuis CountAPI
+  const loadCounters = async () => {
+    const features = ['doleances', 'calendrier', 'marche'];
+    const promises = features.map(feature => 
+      fetch(`https://api.countapi.xyz/get/lasuitedumonde.com/${feature}`)
+        .then(res => res.json())
+        .catch(() => ({ value: 0 }))
+    );
+    
+    const results = await Promise.all(promises);
+    setCounters({
+      doleances: results[0].value || 0,
+      calendrier: results[1].value || 0,
+      marche: results[2].value || 0
+    });
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    
-    // Load counters
-    setCounters({
-      doleances: getCounter("doleances"),
-      calendrier: getCounter("calendrier"),
-      marche: getCounter("marche")
-    });
+    loadCounters();
   }, []);
 
-  const handleInterest = (feature: string) => {
-    const currentCount = getCounter(feature);
-    const newCount = currentCount + 1;
-    localStorage.setItem(`counter_${feature}`, newCount.toString());
-    setCounters(prev => ({
-      ...prev,
-      [feature]: newCount
-    }));
+  const handleInterest = async (feature: string) => {
+    // Vérifier si déjà voté
+    if (localStorage.getItem(`voted-${feature}`)) {
+      alert('Vous avez déjà voté pour cette fonctionnalité !');
+      return;
+    }
+    
+    try {
+      // Incrémenter le compteur via CountAPI
+      const response = await fetch(`https://api.countapi.xyz/hit/lasuitedumonde.com/${feature}`);
+      const data = await response.json();
+      
+      // Mettre à jour l'état local
+      setCounters(prev => ({
+        ...prev,
+        [feature]: data.value
+      }));
+      
+      // Marquer comme voté
+      localStorage.setItem(`voted-${feature}`, 'true');
+      
+      alert('Merci pour votre intérêt !');
+    } catch (error) {
+      console.error('Erreur lors du vote:', error);
+      alert('Erreur lors de l\'enregistrement de votre vote');
+    }
   };
 
   return (
