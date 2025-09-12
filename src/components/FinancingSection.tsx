@@ -1,6 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import MembershipSelectionModal from "@/components/MembershipSelectionModal";
+import NFTPurchaseModal from "@/components/NFTPurchaseModal";
 
 const FinancingSection = () => {
+  const [isSelectionModalOpen, setIsSelectionModalOpen] = useState(false);
+  const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
+  const [membershipType, setMembershipType] = useState<"local" | "architect">("local");
+
+  const handleSelectMembership = (type: "local" | "architect") => {
+    setMembershipType(type);
+    setIsPurchaseModalOpen(true);
+  };
+
+  const handleLocalClick = () => {
+    setMembershipType("local");
+    setIsPurchaseModalOpen(true);
+  };
+
+  const handleArchitectClick = () => {
+    setMembershipType("architect");
+    setIsPurchaseModalOpen(true);
+  };
   return (
     <section id="financement" className="py-16 sm:py-20 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden">
       {/* Background elements */}
@@ -39,20 +61,62 @@ const FinancingSection = () => {
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Trésorerie Commune</span>
               </h3>
-              <div className="space-y-3 sm:space-y-4">
-                <div className="bg-card/50 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-border/20 shadow-soft">
-                  <div className="text-base sm:text-lg font-bold text-accent mb-2">Budget Participatif</div>
-                  <div className="text-sm text-muted-foreground">Décisions collectives</div>
+              
+              <div className="bg-card/50 backdrop-blur-sm rounded-lg p-6 border border-border/20 shadow-soft space-y-4">
+                <p className="text-lg font-bold text-foreground">
+                  Rejoignez. Votez. Décidez.
+                </p>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center justify-center gap-2 text-base font-bold text-foreground">
+                    <span>🌐</span>
+                    <span>ADHÉSION ASSOCIATIVE</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 text-base font-bold text-foreground">
+                    <span>⚡</span>
+                    <span>GOUVERNANCE</span>
+                  </div>
                 </div>
-                <div className="bg-card/50 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-border/20 shadow-soft">
-                  <div className="text-base sm:text-lg font-bold text-primary mb-2">Caisse Commune</div>
-                  <div className="text-sm text-muted-foreground">Mutualisation des ressources</div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                  <Button
+                    onClick={handleLocalClick}
+                    className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white font-bold py-3 px-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <div className="text-center">
+                      <div className="text-sm">LOCALE</div>
+                      <div className="text-xs">À PARTIR DE 10€</div>
+                    </div>
+                  </Button>
+                  
+                  <Button
+                    onClick={handleArchitectClick}
+                    className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 px-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <div className="text-center">
+                      <div className="text-sm">ARCHITECTE</div>
+                      <div className="text-xs">100€</div>
+                    </div>
+                  </Button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Modals */}
+      <MembershipSelectionModal
+        isOpen={isSelectionModalOpen}
+        onClose={() => setIsSelectionModalOpen(false)}
+        onSelectMembership={handleSelectMembership}
+      />
+      
+      <NFTPurchaseModal
+        isOpen={isPurchaseModalOpen}
+        onClose={() => setIsPurchaseModalOpen(false)}
+        membershipType={membershipType}
+      />
     </section>
   );
 };
