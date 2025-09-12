@@ -72,7 +72,7 @@ const Parrainage = () => {
         </div>
       </section>
 
-      {/* Comment ça marche */}
+      {/* VOTRE RÔLE D'AMBASSADEUR */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <ScrollReveal animation="fade-up">
@@ -84,114 +84,100 @@ const Parrainage = () => {
                 </h2>
                 <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
               </div>
-            </div>
-          </ScrollReveal>
-
-          <div className="max-w-4xl mx-auto mb-16">
-            <p className="text-lg text-muted-foreground text-center leading-relaxed">
-              <strong>Le pouvoir du bouche-à-oreille :</strong> Vous êtes force de proposition → Vous parlez de La Suite du Monde → Quelqu'un achète des obligations → Commission de 2,5%
-            </p>
-            <div className="bg-card rounded-2xl p-8 mt-8 border border-border">
-              <h3 className="text-xl font-bold text-card-foreground mb-4">Concrètement :</h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  Vous recommandez les campings disponibles sur lasuitedumonde.com
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  Votre contact investit dans des obligations (ex: 1000€)
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  Vous recevez 25€ de commission
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* VOS 3 OPTIONS DE RÉCOMPENSE */}
-      <section className="py-16 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <ScrollReveal animation="fade-up">
-            <div className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground mb-6">
-                VOS 3 OPTIONS DE RÉCOMPENSE
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Chaque commission peut servir VOTRE vision :
+              <p className="text-lg text-muted-foreground mt-4">
+                Le bouche-à-oreille au service du collectif
               </p>
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Option 1 */}
-            <ScrollReveal animation="fade-left" delay={0}>
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8 h-full">
-                <CardHeader className="text-center">
-                  <div className="text-4xl mb-4">💶</div>
-                  <CardTitle className="text-xl font-bold text-card-foreground">
-                    COMMISSION PERSONNELLE
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4 font-medium">
-                    Gardez votre rétribution
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+            {/* Le pouvoir du bouche-à-oreille */}
+            <ScrollReveal animation="fade-right">
+              <div className="bg-card rounded-2xl p-6 border border-border h-full">
+                <div className="mb-6">
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                    <strong className="text-foreground">Le pouvoir du bouche-à-oreille :</strong><br />
+                    Vous êtes force de proposition → Vous parlez de La Suite du Monde → Quelqu'un achète des obligations → Commission de 2,5%
                   </p>
-                  <p className="text-sm text-muted-foreground">
-                    Pour valoriser votre temps et votre réseau
-                  </p>
-                </CardContent>
-              </Card>
+                </div>
+                
+                <div className="bg-muted/50 rounded-xl p-4">
+                  <h3 className="text-lg font-bold text-foreground mb-3">Concrètement :</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Vous recommandez les campings disponibles sur lasuitedumonde.com
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Votre contact investit dans des obligations (ex: 1000€)
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Vous recevez 25€ de commission
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </ScrollReveal>
 
-            {/* Option 2 */}
-            <ScrollReveal animation="fade-up" delay={200}>
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8 h-full">
-                <CardHeader className="text-center">
-                  <div className="text-4xl mb-4">🎫</div>
-                  <CardTitle className="text-xl font-bold text-card-foreground">
-                    CRÉDITS D'USAGE
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4 font-medium">
-                    Transformez en nuitées dans le réseau
-                  </p>
+            {/* VOS 3 OPTIONS DE RÉCOMPENSE */}
+            <ScrollReveal animation="fade-left">
+              <div className="bg-card rounded-2xl p-6 border border-border h-full">
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-foreground mb-2">
+                    VOS 3 OPTIONS DE RÉCOMPENSE
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    1€ de commission = 1€ utilisable partout
+                    Chaque commission peut servir VOTRE vision :
                   </p>
-                </CardContent>
-              </Card>
-            </ScrollReveal>
+                </div>
 
-            {/* Option 3 */}
-            <ScrollReveal animation="fade-right" delay={400}>
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8 h-full">
-                <CardHeader className="text-center">
-                  <div className="text-4xl mb-4">🌱</div>
-                  <CardTitle className="text-xl font-bold text-card-foreground">
-                    DON À L'ASSOCIATION
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4 font-medium">
-                    Renforcez le mouvement des communs
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    Pour soutenir le développement du réseau
-                  </p>
-                </CardContent>
-              </Card>
+                <div className="space-y-4">
+                  {/* Option 1 */}
+                  <div className="bg-muted/50 rounded-xl p-4 transition-all duration-300 hover:bg-muted/70">
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">💶</span>
+                      <div className="flex-1">
+                        <h4 className="font-bold text-foreground text-sm mb-1">COMMISSION PERSONNELLE</h4>
+                        <p className="text-xs text-muted-foreground mb-1">Gardez votre rétribution</p>
+                        <p className="text-xs text-muted-foreground/80">Pour valoriser votre temps et votre réseau</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Option 2 */}
+                  <div className="bg-muted/50 rounded-xl p-4 transition-all duration-300 hover:bg-muted/70">
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">🎫</span>
+                      <div className="flex-1">
+                        <h4 className="font-bold text-foreground text-sm mb-1">CRÉDITS D'USAGE</h4>
+                        <p className="text-xs text-muted-foreground mb-1">Transformez en nuitées dans le réseau</p>
+                        <p className="text-xs text-muted-foreground/80">1€ de commission = 1€ utilisable partout</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Option 3 */}
+                  <div className="bg-muted/50 rounded-xl p-4 transition-all duration-300 hover:bg-muted/70">
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">🌱</span>
+                      <div className="flex-1">
+                        <h4 className="font-bold text-foreground text-sm mb-1">DON À L'ASSOCIATION</h4>
+                        <p className="text-xs text-muted-foreground mb-1">Renforcez le mouvement des communs</p>
+                        <p className="text-xs text-muted-foreground/80">Pour soutenir le développement du réseau</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </ScrollReveal>
           </div>
         </div>
       </section>
 
-      {/* Comment ça marche */}
-      <section className="py-16 bg-background">
+      {/* Comment ça marche - Application mobile */}
+      <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <ScrollReveal animation="fade-up">
             <div className="text-center mb-16">
