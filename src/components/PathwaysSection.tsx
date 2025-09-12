@@ -113,10 +113,10 @@ const PathwaysSection = () => {
                 <div className="bg-green-brand text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                   Chemin 2 · Fédération nationale
                 </div>
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-brand mb-2">100€</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-brand mb-2">100€</div>
                   <div className="text-green-brand font-semibold mb-3 sm:mb-4 text-sm sm:text-base">ADHÉSION ARCHITECTE</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground">Communauté Nationale</h3>
-                  <p className="text-muted-foreground italic text-sm">Coordination globale</p>
+                  <p className="text-muted-foreground italic text-sm">Coordination globale · Seulement 10 000 tickets</p>
                 </div>
                 
                 <div className="space-y-3 sm:space-y-4 md:space-y-6 flex-1">
@@ -149,15 +149,7 @@ const PathwaysSection = () => {
                   <ul className="space-y-1 sm:space-y-2 text-foreground text-xs sm:text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-green-brand mt-1">✓</span>
-                      <span>Rejoignez les cercles thématiques (Discord)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-green-brand mt-1">✓</span>
-                      <span>Avantages exclusifs à venir</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-green-brand mt-1">✓</span>
-                      <span>Avantages exclusifs à venir</span>
+                      <span>Rejoignez Discord</span>
                     </li>
                   </ul>
                 </div>
