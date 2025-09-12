@@ -1,6 +1,8 @@
 import { useEffect,useState } from "react";
 import { useContractPurchase } from "@/hooks/useContract";
 import ScrollReveal from "@/components/ScrollReveal";
+import MembershipSelectionModal from "@/components/MembershipSelectionModal";
+import NFTPurchaseModal from "@/components/NFTPurchaseModal";
 
 const LaunchpadSection = () => {
   const { getTotalOwners } = useContractPurchase()
@@ -17,6 +19,22 @@ const LaunchpadSection = () => {
 
   const [totalOwners, setTotalOwners] = useState<number>(0);
   const [percentage, setPercentage] = useState<string>("0");
+  const [isSelectionModalOpen, setIsSelectionModalOpen] = useState(false);
+  const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
+  const [membershipType, setMembershipType] = useState<"local" | "architect">("local");
+
+  const handleInvestClick = () => {
+    window.open('https://www.lasuitedumonde.com', '_blank');
+  };
+
+  const handleAdhererClick = () => {
+    setIsSelectionModalOpen(true);
+  };
+
+  const handleMembershipSelect = (type: "local" | "architect") => {
+    setMembershipType(type);
+    setIsPurchaseModalOpen(true);
+  };
 
   useEffect(() => {
     const fetchOwners = async () => {
@@ -113,7 +131,10 @@ const LaunchpadSection = () => {
                       </div>
                     </div>
 
-                    <button className="w-full btn-cta-orange py-3 rounded-lg font-semibold">
+                    <button 
+                      className="w-full btn-cta-orange py-3 rounded-lg font-semibold"
+                      onClick={handleInvestClick}
+                    >
                       INVESTIR
                     </button>
                   </div>
@@ -166,7 +187,10 @@ const LaunchpadSection = () => {
                       </div>
                     </div>
 
-                    <button className="w-full btn-cta-blue py-3 rounded-lg font-semibold">
+                    <button 
+                      className="w-full btn-cta-blue py-3 rounded-lg font-semibold"
+                      onClick={handleAdhererClick}
+                    >
                       ADHÉRER
                     </button>
                   </div>
@@ -179,6 +203,18 @@ const LaunchpadSection = () => {
           </div>
         </div>
       </div>
+      
+      <MembershipSelectionModal
+        isOpen={isSelectionModalOpen}
+        onClose={() => setIsSelectionModalOpen(false)}
+        onSelectMembership={handleMembershipSelect}
+      />
+
+      <NFTPurchaseModal
+        isOpen={isPurchaseModalOpen}
+        onClose={() => setIsPurchaseModalOpen(false)}
+        membershipType={membershipType}
+      />
     </section>
   );
 };
