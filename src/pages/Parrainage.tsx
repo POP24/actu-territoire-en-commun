@@ -20,8 +20,8 @@ const Parrainage = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Programme Ambassadeur - Association des Communs"
-        description="Faites grandir le réseau, gagnez des commissions. Devenez ambassadeur du réseau des communs."
+        title="Parrainage - Association des Communs"
+        description="Œuvrons ensemble pour faire grandir les communs. Recommandez et soyez récompensé."
       />
       <Header />
       
@@ -55,17 +55,17 @@ const Parrainage = () => {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal animation="fade-up">
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                PROGRAMME AMBASSADEUR
+                PARRAINAGE
               </h1>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={200}>
-              <p className="text-xl md:text-2xl text-white/90 font-medium mb-8">
-                Faites grandir le réseau, gagnez des commissions
+              <p className="text-xl md:text-2xl text-white/90 font-medium mb-4">
+                Œuvrons ensemble pour faire grandir les communs
               </p>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={400}>
               <p className="text-lg text-white/80">
-                Rejoignez notre programme d'ambassadeur et contribuez au développement du réseau
+                Recommandez et soyez récompensé
               </p>
             </ScrollReveal>
           </div>
@@ -87,6 +87,120 @@ const Parrainage = () => {
             </div>
           </ScrollReveal>
 
+          <div className="max-w-4xl mx-auto mb-16">
+            <p className="text-lg text-muted-foreground text-center leading-relaxed">
+              <strong>Le pouvoir du bouche-à-oreille :</strong> Vous êtes force de proposition → Vous parlez de La Suite du Monde → Quelqu'un achète des obligations → Commission de 2,5%
+            </p>
+            <div className="bg-card rounded-2xl p-8 mt-8 border border-border">
+              <h3 className="text-xl font-bold text-card-foreground mb-4">Concrètement :</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                  Vous recommandez les campings disponibles sur lasuitedumonde.com
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                  Votre contact investit dans des obligations (ex: 1000€)
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                  Vous recevez 25€ de commission
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* VOS 3 OPTIONS DE RÉCOMPENSE */}
+      <section className="py-16 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <ScrollReveal animation="fade-up">
+            <div className="text-center mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground mb-6">
+                VOS 3 OPTIONS DE RÉCOMPENSE
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Chaque commission peut servir VOTRE vision :
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Option 1 */}
+            <ScrollReveal animation="fade-left" delay={0}>
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8 h-full">
+                <CardHeader className="text-center">
+                  <div className="text-4xl mb-4">💶</div>
+                  <CardTitle className="text-xl font-bold text-card-foreground">
+                    COMMISSION PERSONNELLE
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4 font-medium">
+                    Gardez votre rétribution
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Pour valoriser votre temps et votre réseau
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
+
+            {/* Option 2 */}
+            <ScrollReveal animation="fade-up" delay={200}>
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8 h-full">
+                <CardHeader className="text-center">
+                  <div className="text-4xl mb-4">🎫</div>
+                  <CardTitle className="text-xl font-bold text-card-foreground">
+                    CRÉDITS D'USAGE
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4 font-medium">
+                    Transformez en nuitées dans le réseau
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    1€ de commission = 1€ utilisable partout
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
+
+            {/* Option 3 */}
+            <ScrollReveal animation="fade-right" delay={400}>
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8 h-full">
+                <CardHeader className="text-center">
+                  <div className="text-4xl mb-4">🌱</div>
+                  <CardTitle className="text-xl font-bold text-card-foreground">
+                    DON À L'ASSOCIATION
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4 font-medium">
+                    Renforcez le mouvement des communs
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Pour soutenir le développement du réseau
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Comment ça marche */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <ScrollReveal animation="fade-up">
+            <div className="text-center mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground mb-6">
+                Rejoignez notre application mobile
+              </h2>
+            </div>
+          </ScrollReveal>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Étape 1 */}
             <ScrollReveal animation="fade-left" delay={0}>
@@ -96,13 +210,10 @@ const Parrainage = () => {
                     1
                   </div>
                   <CardTitle className="text-2xl font-bold text-card-foreground">
-                    Rejoignez notre application mobile
+                    Téléchargez l'Application Ambassadeur
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-between">
-                  <p className="text-muted-foreground text-lg mb-8 font-medium">
-                    Téléchargez l'Application Ambassadeur
-                  </p>
                   
                   {/* App Download Buttons */}
                   <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-auto">
@@ -148,36 +259,6 @@ const Parrainage = () => {
                   <p className="text-muted-foreground text-lg mb-8 font-medium">
                     Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
                   </p>
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button 
-                        variant="default"
-                        size="lg"
-                        className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg mt-auto"
-                      >
-                        INVITER MON RÉSEAU
-                      </Button>
-                    </DialogTrigger>
-                    <DialogContent className="sm:max-w-md">
-                      <DialogHeader>
-                        <DialogTitle>Invitation à votre réseau local</DialogTitle>
-                      </DialogHeader>
-                      <div className="space-y-4">
-                        <p className="text-sm text-muted-foreground">
-                          Contactez-moi, je veux vous mettre en relation avec La Suite du Monde
-                        </p>
-                        <div className="space-y-3">
-                          <Input placeholder="Votre nom" />
-                          <Input placeholder="Email" type="email" />
-                          <Input placeholder="Téléphone" type="tel" />
-                          <Textarea placeholder="Votre message..." />
-                        </div>
-                        <Button className="w-full">
-                          ENVOYER L'INVITATION
-                        </Button>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
                 </CardContent>
               </Card>
             </ScrollReveal>
@@ -197,33 +278,6 @@ const Parrainage = () => {
                   <p className="text-muted-foreground text-lg mb-8 font-medium">
                     Choisissez comment répartir votre commission.
                   </p>
-                  <div className="bg-white rounded-xl p-3 border border-gray-200 max-w-md mx-auto shadow-lg hover:shadow-xl transition-all duration-300 mt-auto">
-                    <div className="flex items-center justify-center space-x-1 bg-gray-100 rounded-lg p-1">
-                      {/* Option Vous */}
-                      <button
-                        onClick={() => setCommissionSplit(2.5)}
-                        className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all duration-300 ${
-                          commissionSplit === 2.5 
-                            ? 'bg-white text-gray-800 shadow-md' 
-                            : 'text-gray-600 hover:text-gray-800'
-                        }`}
-                      >
-                        Vous - 2.5%
-                      </button>
-                      
-                      {/* Option Asso */}
-                      <button
-                        onClick={() => setCommissionSplit(0)}
-                        className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all duration-300 ${
-                          commissionSplit === 0 
-                            ? 'bg-blue-500 text-white shadow-md' 
-                            : 'text-gray-600 hover:text-gray-800'
-                        }`}
-                      >
-                        Asso - 2.5%
-                      </button>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             </ScrollReveal>
