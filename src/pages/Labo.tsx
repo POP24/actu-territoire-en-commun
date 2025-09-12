@@ -136,27 +136,29 @@ const Labo = () => {
               </div>
             </ScrollReveal>
 
-            {/* Tools Grid */}
-            <div className="space-y-12 mb-16">
+            {/* Tools Grid - 2x2 Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              
               {/* Doléances & Intelligence Collective */}
               <ScrollReveal animation="fade-left" delay={200}>
-                <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300">
+                <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300 h-full">
                   <CardHeader>
-                    <CardTitle className="text-2xl font-bold text-card-foreground">
+                    <CardTitle className="text-xl font-bold text-card-foreground">
                       DOLÉANCES & INTELLIGENCE COLLECTIVE
                     </CardTitle>
                     <p className="text-lg font-semibold text-primary">
-                      Démocratie liquide nouvelle génération
+                      La démocratie directe en action
                     </p>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p className="text-card-foreground">
-                      Système de gouvernance horizontale où chaque voix façonne l'avenir du réseau. Propositions dynamiques, consensus émergent, actions auto-organisées.
-                    </p>
-                    <p className="text-sm text-muted-foreground font-medium">
-                      <strong>Stack :</strong> Vote quadratique • Modération par IA • Fusion automatique des doublons
-                    </p>
-                    <div className="flex items-center gap-4">
+                    <ul className="space-y-2 text-card-foreground text-sm">
+                      <li>• Postez vos propositions pour améliorer le réseau</li>
+                      <li>• Votez sur les priorités communes</li>
+                      <li>• Formez des groupes d'action spontanés</li>
+                      <li>• Suivez l'impact de vos idées</li>
+                      <li>• IA anti-doublons + synthèse automatique</li>
+                    </ul>
+                    <div className="flex items-center gap-4 pt-2">
                       <Button 
                         onClick={() => handleInterest('doleances')}
                         variant="outline"
@@ -172,23 +174,24 @@ const Labo = () => {
 
               {/* Calendrier Territorial */}
               <ScrollReveal animation="fade-right" delay={300}>
-                <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300">
+                <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300 h-full">
                   <CardHeader>
-                    <CardTitle className="text-2xl font-bold text-card-foreground">
+                    <CardTitle className="text-xl font-bold text-card-foreground">
                       CALENDRIER TERRITORIAL
                     </CardTitle>
                     <p className="text-lg font-semibold text-primary">
-                      L'agenda vivant des territoires
+                      Tous les événements locaux en un clic
                     </p>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p className="text-card-foreground">
-                      Cartographie temps réel des énergies locales. Chaque événement devient une opportunité de connexion, chaque rencontre un nœud du réseau.
-                    </p>
-                    <p className="text-sm text-muted-foreground font-medium">
-                      <strong>Stack :</strong> Géolocalisation intuitive • Matching par affinités • Sync multi-calendriers
-                    </p>
-                    <div className="flex items-center gap-4">
+                    <ul className="space-y-2 text-card-foreground text-sm">
+                      <li>• Proposez vos ateliers, chantiers, fêtes</li>
+                      <li>• Inscrivez-vous en 2 secondes</li>
+                      <li>• Filtrez par distance et intérêts</li>
+                      <li>• Synchronisez avec votre agenda</li>
+                      <li>• Matching automatique selon vos skills</li>
+                    </ul>
+                    <div className="flex items-center gap-4 pt-2">
                       <Button 
                         onClick={() => handleInterest('calendrier')}
                         variant="outline"
@@ -204,35 +207,30 @@ const Labo = () => {
 
               {/* Place du Marché des Communs */}
               <ScrollReveal animation="fade-left" delay={400}>
-                <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300">
+                <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300 h-full">
                   <CardHeader>
-                    <CardTitle className="text-2xl font-bold text-card-foreground">
+                    <CardTitle className="text-xl font-bold text-card-foreground">
                       PLACE DU MARCHÉ DES COMMUNS
                     </CardTitle>
                     <p className="text-lg font-semibold text-primary">
-                      Économie post-monétaire en action
+                      L'économie circulaire du réseau
                     </p>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p className="text-card-foreground">
-                      Bourse d'échanges multi-dimensionnelle où temps, compétences et ressources circulent librement. Le troc réinventé pour l'ère collaborative.
+                    <p className="text-card-foreground text-sm font-medium mb-3">
+                      Échangez librement :
                     </p>
-                    
-                    <div>
-                      <h4 className="font-semibold text-card-foreground mb-2">Flux disponibles :</h4>
-                      <ul className="space-y-1 text-sm text-card-foreground ml-4">
-                        <li>• Temps & compétences</li>
-                        <li>• Crédits d'usage</li>
-                        <li>• Obligations mutuelles</li>
-                        <li>• Adhésions partagées</li>
-                        <li>• Services & savoirs</li>
-                      </ul>
-                    </div>
-
-                    <p className="text-sm text-muted-foreground font-medium">
-                      <strong>Stack :</strong> Smart contracts sociaux • Réputation décentralisée • Matching instantané
+                    <ul className="space-y-1 text-card-foreground text-sm ml-4">
+                      <li>• Temps contre temps</li>
+                      <li>• Crédits d'usage entre membres</li>
+                      <li>• Obligations de travail</li>
+                      <li>• Adhésions partagées</li>
+                      <li>• Compétences et services</li>
+                    </ul>
+                    <p className="text-xs text-muted-foreground font-medium pt-2">
+                      Système de troc 2.0 + réputation intégrée
                     </p>
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 pt-2">
                       <Button 
                         onClick={() => handleInterest('marche')}
                         variant="outline"
@@ -246,31 +244,31 @@ const Labo = () => {
                 </Card>
               </ScrollReveal>
 
-              {/* Modules Complémentaires */}
-              <ScrollReveal animation="scale" delay={500}>
-                <Card className="bg-card border-border">
+              {/* Aussi en Préparation */}
+              <ScrollReveal animation="fade-right" delay={500}>
+                <Card className="bg-card border-border h-full">
                   <CardHeader>
-                    <CardTitle className="text-2xl font-bold text-card-foreground">
-                      MODULES COMPLÉMENTAIRES
+                    <CardTitle className="text-xl font-bold text-card-foreground">
+                      AUSSI EN PRÉPARATION
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-3 text-sm">
                       <div>
-                        <h4 className="font-semibold text-card-foreground mb-2">Communication décentralisée</h4>
-                        <p className="text-sm text-muted-foreground">Messagerie chiffrée, forums thématiques, visio peer-to-peer</p>
+                        <h4 className="font-semibold text-card-foreground">Outils de communication</h4>
+                        <p className="text-muted-foreground">Messagerie, forums, visio</p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-card-foreground mb-2">Mode résilience</h4>
-                        <p className="text-sm text-muted-foreground">Synchronisation hors-ligne pour zones blanches et chantiers isolés</p>
+                        <h4 className="font-semibold text-card-foreground">Mode hors-ligne</h4>
+                        <p className="text-muted-foreground">Pour les zones blanches</p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-card-foreground mb-2">Cartographie vivante</h4>
-                        <p className="text-sm text-muted-foreground">Visualisation des flux de besoins, offres et énergies en temps réel</p>
+                        <h4 className="font-semibold text-card-foreground">Carte interactive</h4>
+                        <p className="text-muted-foreground">Des besoins/offres</p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-card-foreground mb-2">Notifications contextuelles</h4>
-                        <p className="text-sm text-muted-foreground">Alertes intelligentes basées sur vos centres d'intérêt et localisation</p>
+                        <h4 className="font-semibold text-card-foreground">Notifications intelligentes</h4>
+                        <p className="text-muted-foreground">Alertes contextuelles</p>
                       </div>
                     </div>
                   </CardContent>
