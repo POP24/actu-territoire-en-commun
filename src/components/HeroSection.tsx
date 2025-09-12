@@ -132,7 +132,7 @@ useEffect(() => {
             {/* Left: Interactive Real Map */}
             <ScrollReveal animation="fade-left" delay={200}>
               <div className="relative">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20">
+                <div className="bg-white/25 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20">
                  {/* Bandeau REJOIGNEZ LE MOUVEMENT */}
                  <div className="text-center mb-4 sm:mb-6">
                    <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
