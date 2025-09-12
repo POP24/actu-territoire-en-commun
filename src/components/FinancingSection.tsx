@@ -15,13 +15,19 @@ const FinancingSection = () => {
   };
 
   const handleLocalClick = () => {
+    console.log("Local button clicked!");
+    console.log("Current isPurchaseModalOpen:", isPurchaseModalOpen);
     setMembershipType("local");
     setIsPurchaseModalOpen(true);
+    console.log("Setting isPurchaseModalOpen to true");
   };
 
   const handleArchitectClick = () => {
+    console.log("Architect button clicked!");
+    console.log("Current isPurchaseModalOpen:", isPurchaseModalOpen);
     setMembershipType("architect");
     setIsPurchaseModalOpen(true);
+    console.log("Setting isPurchaseModalOpen to true");
   };
   return (
     <section id="financement" className="py-16 sm:py-20 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden">
