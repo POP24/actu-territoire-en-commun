@@ -45,7 +45,7 @@ const Volontariat = () => {
           <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16 animate-hero-entrance">
+        <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-20 animate-hero-entrance">
           <div className="max-w-4xl mx-auto">
             <ScrollReveal animation="fade-up">
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -53,8 +53,13 @@ const Volontariat = () => {
               </h1>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={200}>
-              <p className="text-xl md:text-2xl text-white/90 font-medium">
+              <p className="text-xl md:text-2xl text-white/90 font-medium mb-8">
                 Échangez votre temps contre des crédits d'usage
+              </p>
+            </ScrollReveal>
+            <ScrollReveal animation="fade-up" delay={400}>
+              <p className="text-lg text-white/80">
+                Participez à la vie du réseau et obtenez des avantages exclusifs
               </p>
             </ScrollReveal>
           </div>

@@ -51,7 +51,7 @@ const Parrainage = () => {
           <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-16">
+        <div className="relative z-10 container mx-auto px-4 text-center pt-40 lg:pt-60 pb-20">
           <div className="max-w-4xl mx-auto">
             <ScrollReveal animation="fade-up">
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -59,8 +59,13 @@ const Parrainage = () => {
               </h1>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={200}>
-              <p className="text-xl md:text-2xl text-white/90 font-medium">
+              <p className="text-xl md:text-2xl text-white/90 font-medium mb-8">
                 Faites grandir le réseau, gagnez des commissions
+              </p>
+            </ScrollReveal>
+            <ScrollReveal animation="fade-up" delay={400}>
+              <p className="text-lg text-white/80">
+                Rejoignez notre programme d'ambassadeur et contribuez au développement du réseau
               </p>
             </ScrollReveal>
           </div>
@@ -81,7 +86,7 @@ const Parrainage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Étape 1 */}
             <ScrollReveal animation="fade-left" delay={0}>
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8">
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8 h-full flex flex-col">
                 <CardHeader className="text-center">
                   <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                     1
@@ -90,13 +95,13 @@ const Parrainage = () => {
                     Rejoignez notre application mobile
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground text-lg mb-8 font-medium">
                     Téléchargez l'Application Ambassadeur
                   </p>
                   
                   {/* App Download Buttons */}
-                  <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                  <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-auto">
                     <a 
                       href="https://apps.apple.com/us/app/la-suite-du-monde/id6751546986" 
                       className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
@@ -126,7 +131,7 @@ const Parrainage = () => {
 
             {/* Étape 2 */}
             <ScrollReveal animation="fade-up" delay={200}>
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8">
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8 h-full flex flex-col">
                 <CardHeader className="text-center">
                   <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                     2
@@ -135,7 +140,7 @@ const Parrainage = () => {
                     Parrainez
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground text-lg mb-8 font-medium">
                     Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
                   </p>
@@ -144,7 +149,7 @@ const Parrainage = () => {
                       <Button 
                         variant="default"
                         size="lg"
-                        className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                        className="rounded-xl px-8 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg mt-auto"
                       >
                         INVITER MON RÉSEAU
                       </Button>
@@ -175,7 +180,7 @@ const Parrainage = () => {
 
             {/* Étape 3 */}
             <ScrollReveal animation="fade-right" delay={400}>
-              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8">
+              <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 text-center p-8 h-full flex flex-col">
                 <CardHeader className="text-center">
                   <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                     3
@@ -184,11 +189,11 @@ const Parrainage = () => {
                     Soyez récompensé !
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground text-lg mb-8 font-medium">
                     Choisissez comment répartir votre commission.
                   </p>
-                  <div className="bg-white rounded-xl p-3 border border-gray-200 max-w-md mx-auto shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="bg-white rounded-xl p-3 border border-gray-200 max-w-md mx-auto shadow-lg hover:shadow-xl transition-all duration-300 mt-auto">
                     <div className="flex items-center justify-center space-x-1 bg-gray-100 rounded-lg p-1">
                       {/* Option Vous */}
                       <button
