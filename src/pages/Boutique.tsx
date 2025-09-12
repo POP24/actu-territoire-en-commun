@@ -95,9 +95,13 @@ const Boutique = () => {
         <div className="container mx-auto px-4">
           <ScrollReveal animation="fade-up">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-                COMMENT ÇA MARCHE
-              </h2>
+              <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground px-4 sm:px-6 md:px-8 text-center">
+                  COMMENT ÇA <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">MARCHE</span>
+                </h2>
+                <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+              </div>
             </div>
           </ScrollReveal>
 
@@ -183,9 +187,13 @@ const Boutique = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 animate-on-scroll">
-              DU DIGITAL AU TERRITORIAL
-            </h2>
+            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+              <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground px-4 sm:px-6 md:px-8 text-center">
+                DU DIGITAL AU <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">TERRITORIAL</span>
+              </h2>
+              <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+            </div>
             <p className="text-xl text-muted-foreground animate-on-scroll">
               Un réseau de boutiques locales pour ancrer l'économie créative
             </p>
@@ -237,9 +245,13 @@ const Boutique = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 animate-on-scroll">
-              PASSEZ À L'ACTION
-            </h2>
+            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+              <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground px-4 sm:px-6 md:px-8 text-center">
+                PASSEZ À <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">L'ACTION</span>
+              </h2>
+              <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">

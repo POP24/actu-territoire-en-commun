@@ -77,9 +77,13 @@ const Parrainage = () => {
         <div className="container mx-auto px-4">
           <ScrollReveal animation="fade-up">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-                VOTRE RÔLE D'AMBASSADEUR
-              </h2>
+              <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground px-4 sm:px-6 md:px-8 text-center">
+                  VOTRE RÔLE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">D'AMBASSADEUR</span>
+                </h2>
+                <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+              </div>
             </div>
           </ScrollReveal>
 
