@@ -1,7 +1,29 @@
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
+import { useState } from "react";
+import MembershipSelectionModal from "@/components/MembershipSelectionModal";
+import NFTPurchaseModal from "@/components/NFTPurchaseModal";
 
 const PathwaysSection = () => {
+  const [isSelectionModalOpen, setIsSelectionModalOpen] = useState(false);
+  const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
+  const [membershipType, setMembershipType] = useState<"local" | "architect">("local");
+
+  const handleLocalClick = () => {
+    setMembershipType("local");
+    setIsPurchaseModalOpen(true);
+  };
+
+  const handleArchitectClick = () => {
+    setMembershipType("architect");
+    setIsPurchaseModalOpen(true);
+  };
+
+  const handleMembershipSelect = (type: "local" | "architect") => {
+    setMembershipType(type);
+    setIsSelectionModalOpen(false);
+    setIsPurchaseModalOpen(true);
+  };
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-blue-500/10 via-blue-600/5 to-background relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
@@ -74,7 +96,11 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button variant="cta-blue" className="w-full mt-auto font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button 
+                onClick={handleLocalClick}
+                variant="cta-blue" 
+                className="w-full mt-auto font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base"
+              >
                 ADHÉSION LOCALE →
               </Button>
               </div>
@@ -137,7 +163,11 @@ const PathwaysSection = () => {
                 </div>
               </div>
               
-              <Button variant="cta-green" className="w-full mt-auto font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base">
+              <Button 
+                onClick={handleArchitectClick}
+                variant="cta-green" 
+                className="w-full mt-auto font-bold py-2 sm:py-3 rounded-xl text-sm sm:text-base"
+              >
                 ADHÉSION ARCHITECTE →
               </Button>
               </div>
@@ -199,6 +229,19 @@ const PathwaysSection = () => {
           </div>
         </div>
       </div>
+      
+      {/* Modals */}
+      <MembershipSelectionModal
+        isOpen={isSelectionModalOpen}
+        onClose={() => setIsSelectionModalOpen(false)}
+        onSelectMembership={handleMembershipSelect}
+      />
+      
+      <NFTPurchaseModal
+        isOpen={isPurchaseModalOpen}
+        onClose={() => setIsPurchaseModalOpen(false)}
+        membershipType={membershipType}
+      />
     </section>
   );
 };

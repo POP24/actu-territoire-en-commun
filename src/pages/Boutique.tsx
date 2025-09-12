@@ -53,9 +53,9 @@ const Boutique = () => {
           <div className="absolute inset-0 bg-gradient-to-tl from-cyan-400/10 via-transparent to-transparent"></div>
           <div className="absolute inset-0">
             <img 
-              src="/lovable-uploads/976879dd-34f7-4896-9f36-09c3131d6526.png" 
-              alt="Effet lumineux" 
-              className="w-full h-full object-cover mix-blend-screen opacity-40"
+              src="/lovable-uploads/8853fc84-be3a-40e6-b3b9-ce168934295e.png" 
+              alt="Background texture bleu" 
+              className="w-full h-full object-cover opacity-80"
             />
           </div>
           <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
