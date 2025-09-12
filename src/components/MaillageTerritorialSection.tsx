@@ -116,7 +116,7 @@ const MaillageTerritorialSection = () => {
             {categories.map((category, index) => {
               const CardWrapper = category.isHot ? 'a' : 'div';
               const cardProps = category.isHot 
-                ? { href: "https://www.lasuitedumonde.com", target: "_blank", rel: "noopener noreferrer" }
+                ? { href: "https://test24.lasuitedumonde.com", target: "_blank", rel: "noopener noreferrer" }
                 : {};
 
               return (

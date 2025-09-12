@@ -68,7 +68,7 @@ const TypologySection = () => {
               
               <div className="text-center">
                 <a 
-                  href="https://lasuitedumonde.com/campings" 
+                  href="https://test24.lasuitedumonde.com/campings" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full font-bold text-sm hover:shadow-lg hover:scale-105 transition-all duration-300"
@@ -77,7 +77,7 @@ const TypologySection = () => {
                 </a>
                 
                 <div className="text-xs text-muted-foreground mt-2">
-                  → lasuitedumonde.com/campings
+                  → test24.lasuitedumonde.com/campings
                 </div>
               </div>
             </div>
