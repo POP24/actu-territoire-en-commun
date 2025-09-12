@@ -154,101 +154,131 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
 
   return (
     <Dialog open={isOpen} onOpenChange={resetAndClose}>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto" aria-describedby="nft-purchase-description">
-        <DialogHeader className="sr-only">
-          <DialogTitle>Achat d'adhésion NFT</DialogTitle>
-          <div id="nft-purchase-description">
+      <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto" aria-describedby="nft-purchase-description">
+        <DialogHeader>
+          <DialogTitle className="text-center mb-6">
+            <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+              <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+              <h2 className="text-2xl sm:text-3xl font-black leading-tight tracking-tight text-foreground px-4 sm:px-6 md:px-8 text-center">
+                FINALISER VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ADHÉSION</span>
+              </h2>
+              <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+            </div>
+          </DialogTitle>
+          <div id="nft-purchase-description" className="sr-only">
             Processus d'achat de votre adhésion NFT pour rejoindre l'association
           </div>
         </DialogHeader>
         {step === 1 && (
           <div className="space-y-6">
             {/* NFT Details */}
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-6">
-              <div className="text-center mb-4">
-                <div className="text-6xl mb-4">
-                  {membershipType === "local" ? "🏠" : "🏗️"}
-                </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">
-                  {currentNft.name}
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  {currentNft.description}
-                </p>
-                <div className="text-4xl font-bold text-green-600">
-                  {currentNft.price}€
-                </div>
+            <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft hover:shadow-elegant overflow-hidden">
+              
+              {/* Futuristic background pattern */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute top-4 right-4 w-32 h-32 border border-primary/20 rounded-full"></div>
+                <div className="absolute bottom-8 left-8 w-16 h-16 border border-primary/20 rounded-full"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-primary/10 rounded-full"></div>
               </div>
 
-              {/* Features */}
-              <div className="space-y-4">
-                {membershipType === "local" ? (
-                  <>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-3 flex items-center">
-                        🗳️ Vos droits de membre
-                      </h4>
-                      <div className="space-y-2">
-                        {(currentNft.features as LocalMembershipFeatures).rights.map((feature: string, index: number) => (
-                          <div key={index} className="flex items-start text-sm text-muted-foreground">
-                            <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                            {feature}
-                          </div>
-                        ))}
+              <div className="relative z-10">
+                <div className="text-center mb-6">
+                  {/* Tech-inspired icon replacement */}
+                  <div className="w-16 h-16 mx-auto mb-4 relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/70 rounded-lg rotate-3 shadow-lg"></div>
+                    <div className="absolute inset-1 bg-background rounded-lg flex items-center justify-center">
+                      <div className="w-8 h-8 border-2 border-primary rounded-sm relative">
+                        <div className="absolute inset-2 bg-primary/20 rounded-sm"></div>
+                        <div className="absolute top-1 right-1 w-1 h-1 bg-primary rounded-full"></div>
                       </div>
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-3 flex items-center">
-                        🏠 Concrètement
-                      </h4>
-                      <div className="space-y-2">
-                        {(currentNft.features as LocalMembershipFeatures).concrete.map((feature: string, index: number) => (
-                          <div key={index} className="flex items-start text-sm text-muted-foreground">
-                            <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                            {feature}
-                          </div>
-                        ))}
+                  </div>
+                  
+                  <h3 className="text-2xl font-black text-foreground mb-3 tracking-tight">
+                    {currentNft.name}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 font-medium">
+                    {currentNft.description}
+                  </p>
+                  <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-full mb-2 border border-green-500/30">
+                    <span className="text-3xl font-black text-green-600">{currentNft.price}€</span>
+                  </div>
+                </div>
+
+                {/* Features */}
+                <div className="space-y-6">
+                  {membershipType === "local" ? (
+                    <>
+                      <div>
+                        <h4 className="font-bold text-foreground text-lg border-b border-border pb-2 mb-4 flex items-center gap-2">
+                          🗳️ Vos droits de membre
+                        </h4>
+                        <div className="space-y-3">
+                          {(currentNft.features as LocalMembershipFeatures).rights.map((feature: string, index: number) => (
+                            <div key={index} className="flex items-start text-sm text-foreground/80">
+                              <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full mt-1"></div>
+                              <span className="font-medium">{feature}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-3 flex items-center">
-                        👑 Adhésion fondatrice
-                      </h4>
-                      <div className="space-y-2">
-                        {(currentNft.features as ArchitectMembershipFeatures).founding.map((feature: string, index: number) => (
-                          <div key={index} className="flex items-start text-sm text-muted-foreground">
-                            <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                            {feature}
-                          </div>
-                        ))}
+                      <div>
+                        <h4 className="font-bold text-foreground text-lg border-b border-border pb-2 mb-4 flex items-center gap-2">
+                          🏠 Concrètement
+                        </h4>
+                        <div className="space-y-3">
+                          {(currentNft.features as LocalMembershipFeatures).concrete.map((feature: string, index: number) => (
+                            <div key={index} className="flex items-start text-sm text-foreground/80">
+                              <div className="w-1 h-6 bg-gradient-to-b from-primary to-primary/50 mr-4 rounded-full mt-1"></div>
+                              <span className="font-medium">{feature}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-3 flex items-center">
-                        🔗 Connexion réseau
-                      </h4>
-                      <div className="space-y-2">
-                        {(currentNft.features as ArchitectMembershipFeatures).network.map((feature: string, index: number) => (
-                          <div key={index} className="flex items-start text-sm text-muted-foreground">
-                            <span className="text-green-500 mr-2 mt-0.5">✓</span>
-                            {feature}
-                          </div>
-                        ))}
+                    </>
+                  ) : (
+                    <>
+                      <div>
+                        <h4 className="font-bold text-foreground text-lg border-b border-border pb-2 mb-4 flex items-center gap-2">
+                          👑 Adhésion fondatrice
+                        </h4>
+                        <div className="space-y-3">
+                          {(currentNft.features as ArchitectMembershipFeatures).founding.map((feature: string, index: number) => (
+                            <div key={index} className="flex items-start text-sm text-foreground/80">
+                              <div className="w-1 h-6 bg-gradient-to-b from-green-brand to-green-brand/50 mr-4 rounded-full mt-1"></div>
+                              <span className="font-medium">{feature}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  </>
-                )}
+                      <div>
+                        <h4 className="font-bold text-foreground text-lg border-b border-border pb-2 mb-4 flex items-center gap-2">
+                          🔗 Connexion réseau
+                        </h4>
+                        <div className="space-y-3">
+                          {(currentNft.features as ArchitectMembershipFeatures).network.map((feature: string, index: number) => (
+                            <div key={index} className="flex items-start text-sm text-foreground/80">
+                              <div className="w-1 h-6 bg-gradient-to-b from-green-brand to-green-brand/50 mr-4 rounded-full mt-1"></div>
+                              <span className="font-medium">{feature}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
               </div>
             </div>
 
             {/* Wallet Connection */}
-            <div className="space-y-3">
-              <h4 className="font-semibold">1. Connectez votre portefeuille</h4>
-              <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur-sm rounded-xl p-4 border border-blue-500/30">
-                <div className="flex flex-col items-center space-y-3">
+            <div className="space-y-4">
+              <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-primary/50"></div>
+                <h4 className="text-lg font-bold text-foreground px-4">ÉTAPE 1 : CONNEXION</h4>
+                <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-primary/50 to-primary/50"></div>
+              </div>
+              <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft">
+                <div className="flex flex-col items-center space-y-4">
                   <div className="connect-button-wrapper flex justify-center">
                     <ConnectButton
                       client={client}
@@ -264,19 +294,19 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                           color: "white",
                           border: "none",
                           borderRadius: "12px",
-                          padding: "10px 20px",
+                          padding: "12px 24px",
                           fontSize: "14px",
                           fontWeight: "600",
                           boxShadow: "0 4px 12px rgba(59, 130, 246, 0.3)",
                           transition: "all 0.3s ease",
-                          minWidth: "180px",
-                          minHeight: "40px"
+                          minWidth: "200px",
+                          minHeight: "44px"
                         }
                       }}
                     />
                   </div>
                   {account && (
-                    <div className="text-center text-sm text-green-600 bg-green-50 px-3 py-1 rounded-lg border border-green-200">
+                    <div className="text-center text-sm text-green-600 bg-green-50 px-4 py-2 rounded-xl border border-green-200 font-medium">
                       ✓ Connecté avec succès
                     </div>
                   )}
@@ -286,70 +316,78 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
 
             {/* Contact Form */}
             <div className="space-y-4">
-              <h4 className="font-semibold">2. Complétez votre profil (recommandé)</h4>
-              
-              {/* Row 1: Email and Name side by side */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email"
-                  className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-                <input
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Nom ou organisation"
-                  required
-                  className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                />
+              <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-secondary/50 to-secondary/50"></div>
+                <h4 className="text-lg font-bold text-foreground px-4">ÉTAPE 2 : PROFIL</h4>
+                <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-secondary/50 to-secondary/50"></div>
               </div>
               
-              {/* Row 2: Location and Phone side by side */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  value={location}
-                  onChange={(e) => setLocation(e.target.value)}
-                  placeholder="Localité"
-                  className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-                <input
-                  type="tel"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  placeholder="Téléphone"
-                  className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-              </div>
-              
-              {/* Checkboxes */}
-              <div className="space-y-3">
-                <label className="flex items-start space-x-3 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={acceptPolicy}
-                    onChange={(e) => setAcceptPolicy(e.target.checked)}
-                    className="mt-1 h-4 w-4 text-primary border-white/30 rounded focus:ring-primary focus:ring-2"
-                  />
-                  <span className="text-sm text-muted-foreground">
-                    J'accepte la politique de confidentialité
-                  </span>
-                </label>
+              <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-6 border border-border/20 hover:border-secondary/30 transition-all duration-500 shadow-soft space-y-4">
+                <p className="text-sm text-muted-foreground text-center mb-4 font-medium">Complétez votre profil (recommandé)</p>
                 
-                <label className="flex items-start space-x-3 cursor-pointer">
+                {/* Row 1: Email and Name side by side */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input
-                    type="checkbox"
-                    checked={acceptNewsletter}
-                    onChange={(e) => setAcceptNewsletter(e.target.checked)}
-                    className="mt-1 h-4 w-4 text-primary border-white/30 rounded focus:ring-primary focus:ring-2"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                   />
-                  <span className="text-sm text-muted-foreground">
-                    Je souhaite m'inscrire à la newsletter pour recevoir les actualités
-                  </span>
-                </label>
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Nom ou organisation"
+                    required
+                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                  />
+                </div>
+                
+                {/* Row 2: Location and Phone side by side */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                    placeholder="Localité"
+                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                  />
+                  <input
+                    type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder="Téléphone"
+                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                  />
+                </div>
+                
+                {/* Checkboxes */}
+                <div className="space-y-3 pt-2">
+                  <label className="flex items-start space-x-3 cursor-pointer group">
+                    <input
+                      type="checkbox"
+                      checked={acceptPolicy}
+                      onChange={(e) => setAcceptPolicy(e.target.checked)}
+                      className="mt-1 h-4 w-4 text-primary border-border rounded focus:ring-primary focus:ring-2 bg-background"
+                    />
+                    <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                      J'accepte la politique de confidentialité
+                    </span>
+                  </label>
+                  
+                  <label className="flex items-start space-x-3 cursor-pointer group">
+                    <input
+                      type="checkbox"
+                      checked={acceptNewsletter}
+                      onChange={(e) => setAcceptNewsletter(e.target.checked)}
+                      className="mt-1 h-4 w-4 text-primary border-border rounded focus:ring-primary focus:ring-2 bg-background"
+                    />
+                    <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                      Je souhaite m'inscrire à la newsletter pour recevoir les actualités
+                    </span>
+                  </label>
+                </div>
               </div>
             </div>
 
@@ -357,10 +395,10 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             <Button
               onClick={() => setStep(2)}
               disabled={!account}
-              className="w-full py-4 text-lg font-semibold"
+              className="w-full py-4 text-lg font-bold rounded-xl bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300"
               size="lg"
             >
-              {!account ? "Connectez votre portefeuille d'abord" : "Continuer"}
+              {!account ? "Connectez votre portefeuille d'abord" : "CONTINUER L'ACHAT →"}
             </Button>
           </div>
         )}
@@ -368,21 +406,34 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
         {step === 2 && (
           <div className="space-y-6">
             {/* Order Summary */}
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-6">
-              <h3 className="text-xl font-bold mb-4">Résumé de votre commande</h3>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span>Adhésion {currentNft.name}</span>
-                  <span className="font-bold">{currentNft.price}€</span>
+            <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft hover:shadow-elegant overflow-hidden">
+              
+              {/* Background pattern */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute top-4 right-4 w-32 h-32 border border-green-500/20 rounded-full"></div>
+                <div className="absolute bottom-8 left-8 w-16 h-16 border border-green-500/20 rounded-full"></div>
+              </div>
+
+              <div className="relative z-10">
+                <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-6">
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-green-500/50 to-green-500/50"></div>
+                  <h3 className="text-xl font-bold text-foreground px-4">RÉSUMÉ DE COMMANDE</h3>
+                  <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-green-500/50 to-green-500/50"></div>
                 </div>
-                <div className="flex justify-between">
-                  <span>Frais réseau</span>
-                  <span>~2-5€</span>
-                </div>
-                <div className="border-t pt-3">
-                  <div className="flex justify-between font-bold text-lg">
-                    <span>Total</span>
-                    <span className="text-green-600">{currentNft.price} USDC</span>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-border">
+                    <span className="font-medium text-foreground">Adhésion {currentNft.name}</span>
+                    <span className="font-bold text-lg text-green-600">{currentNft.price}€</span>
+                  </div>
+                  <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-border">
+                    <span className="font-medium text-foreground">Frais réseau</span>
+                    <span className="text-muted-foreground">~2-5€</span>
+                  </div>
+                  <div className="border-t border-border pt-4">
+                    <div className="flex justify-between items-center p-4 bg-gradient-to-r from-green-500/10 to-green-600/10 rounded-xl border border-green-500/30">
+                      <span className="font-bold text-lg text-foreground">Total</span>
+                      <span className="font-black text-2xl text-green-600">{currentNft.price} USDC</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -390,13 +441,19 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
 
             {/* Buy Widget for insufficient balance */}
             <div className="space-y-4">
-              <h4 className="font-semibold">Ajoutez des fonds si nécessaire</h4>
-              <BuyWidget
-                client={client}
-                chain={arbitrum}
-                amount={String(currentNft.price)}
-                tokenAddress="0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
-              />
+              <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-primary/50"></div>
+                <h4 className="text-lg font-bold text-foreground px-4">AJOUTER DES FONDS</h4>
+                <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-primary/50 to-primary/50"></div>
+              </div>
+              <div className="bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-6 border border-border/20">
+                <BuyWidget
+                  client={client}
+                  chain={arbitrum}
+                  amount={String(currentNft.price)}
+                  tokenAddress="0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+                />
+              </div>
             </div>
 
             {/* Action Buttons */}
@@ -404,44 +461,77 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
               <Button
                 onClick={() => setStep(1)}
                 variant="outline"
-                className="flex-1"
+                className="flex-1 py-3 font-bold rounded-xl border-2 hover:bg-background/50 transition-all duration-300"
               >
-                Retour
+                ← Retour
               </Button>
               <Button
                 onClick={handlePurchase}
                 disabled={isProcessing}
-                className="flex-1 bg-green-600 hover:bg-green-700"
+                className="flex-1 py-3 font-bold rounded-xl bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                {isProcessing ? "Traitement..." : "Confirmer l'achat"}
+                {isProcessing ? "Traitement..." : "CONFIRMER L'ACHAT ✓"}
               </Button>
             </div>
           </div>
         )}
 
         {step === 3 && (
-          <div className="text-center space-y-6">
-            <div className="text-8xl mb-4">🎉</div>
-            <h3 className="text-2xl font-bold text-green-600">
-              Félicitations !
-            </h3>
-            <p className="text-muted-foreground">
-              Votre adhésion "{currentNft.name}" a été confirmée avec succès.
-              Bienvenue dans le réseau des communes !
-            </p>
-            <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-              <p className="text-green-800 text-sm">
-                ✓ NFT transféré vers votre portefeuille<br/>
-                ✓ Accès aux lieux communs activé<br/>
-                {email && "✓ Email de confirmation envoyé"}
-              </p>
+          <div className="text-center space-y-8">
+            <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-8 border border-border/20 shadow-soft overflow-hidden">
+              
+              {/* Success background pattern */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-4 right-4 w-32 h-32 border border-green-500/30 rounded-full"></div>
+                <div className="absolute bottom-8 left-8 w-16 h-16 border border-green-500/30 rounded-full"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-green-500/20 rounded-full"></div>
+              </div>
+
+              <div className="relative z-10">
+                <div className="text-8xl mb-6 animate-bounce">🎉</div>
+                <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-6">
+                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-green-500 to-green-500"></div>
+                  <h3 className="text-2xl font-black text-green-600 px-4">FÉLICITATIONS !</h3>
+                  <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-green-500 to-green-500"></div>
+                </div>
+                <p className="text-lg text-muted-foreground mb-6 font-medium">
+                  Votre adhésion "{currentNft.name}" a été confirmée avec succès.<br/>
+                  Bienvenue dans le réseau des communes !
+                </p>
+                <div className="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-6 shadow-soft">
+                  <div className="space-y-2">
+                    <p className="text-green-800 text-sm font-medium flex items-center justify-center gap-2">
+                      <span className="text-green-600">✓</span> NFT transféré vers votre portefeuille
+                    </p>
+                    <p className="text-green-800 text-sm font-medium flex items-center justify-center gap-2">
+                      <span className="text-green-600">✓</span> Accès aux lieux communs activé
+                    </p>
+                    {email && (
+                      <p className="text-green-800 text-sm font-medium flex items-center justify-center gap-2">
+                        <span className="text-green-600">✓</span> Email de confirmation envoyé
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
-            <Button
-              onClick={resetAndClose}
-              className="w-full"
-            >
-              Continuer
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                onClick={resetAndClose}
+                className="px-8 py-3 font-bold rounded-xl bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                size="lg"
+              >
+                EXPLORER LE RÉSEAU →
+              </Button>
+              <Button
+                onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
+                variant="outline"
+                className="px-8 py-3 font-bold rounded-xl border-2 hover:bg-background/50 transition-all duration-300"
+                size="lg"
+              >
+                DÉCOUVRIR LA BOUTIQUE
+              </Button>
+            </div>
           </div>
         )}
       </DialogContent>
