@@ -61,7 +61,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
   // NFT configuration based on membership type
   const nftConfig = {
     local: {
-      name: "USAGER LOCAL",
+      name: "ADHÉSION LOCALE",
       price: 10,
       description: "Ancrez-vous dans votre territoire",
       contractAddress: "0x0b27EB1A9922c4Cd7327B9DbeA7F250622Ebbea9", // Replace with actual contract
@@ -73,8 +73,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
         ],
         concrete: [
           "Participez au Trésor collectif local (prix libre)",
-          "Occupez les lieux (tarifs membres, crédits d'usage)",
-          "Accès prioritaire aux espaces et activités"
+          "Occupez les lieux (tarifs membres, crédits d'usage)"
         ]
       }
     },
