@@ -20,12 +20,12 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl" aria-describedby="membership-selection-description">
+      <DialogContent className="max-w-[95vw] sm:max-w-2xl lg:max-w-4xl max-h-[95vh] overflow-y-auto" aria-describedby="membership-selection-description">
         <DialogHeader>
           <DialogTitle className="text-center mb-6">
             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
               <div className="flex-1 h-1 bg-gradient-to-r from-transparent via-gray-700 to-gray-700 rounded-full shadow-md"></div>
-              <h2 className="text-2xl sm:text-3xl font-black leading-tight tracking-wide whitespace-nowrap text-foreground px-8 sm:px-12 drop-shadow-sm">
+              <h2 className="text-lg sm:text-2xl lg:text-3xl font-black leading-tight tracking-wide text-center text-foreground px-2 sm:px-8 lg:px-12 drop-shadow-sm">
                 CHOISISSEZ VOTRE <span className="text-gray-900 font-black">ADHÉSION</span>
               </h2>
               <div className="flex-1 h-1 bg-gradient-to-l from-transparent via-gray-700 to-gray-700 rounded-full shadow-md"></div>
@@ -36,9 +36,9 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
           </div>
         </DialogHeader>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {/* Usager Local */}
-          <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-8 border border-border/20 hover:border-primary/30 transition-all duration-500 cursor-pointer group overflow-hidden shadow-soft hover:shadow-elegant"
+          <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-4 sm:p-6 lg:p-8 border border-border/20 hover:border-primary/30 transition-all duration-500 cursor-pointer group overflow-hidden shadow-soft hover:shadow-elegant"
                onClick={handleSelectLocal}>
             
             {/* Futuristic background pattern */}
@@ -66,9 +66,9 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-black text-foreground mb-3 tracking-tight">USAGER LOCAL</h3>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-foreground mb-3 tracking-tight">USAGER LOCAL</h3>
                 <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-2">
-                  <span className="text-3xl font-black text-primary">A PARTIR DE 10€</span>
+                  <span className="text-xl sm:text-2xl lg:text-3xl font-black text-primary">A PARTIR DE 10€</span>
                 </div>
               </div>
 
@@ -108,7 +108,7 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
           </div>
 
           {/* Architecte Réseau */}
-          <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-8 border border-border/20 hover:border-green-brand/30 transition-all duration-500 cursor-pointer group overflow-hidden shadow-soft hover:shadow-elegant"
+          <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-4 sm:p-6 lg:p-8 border border-border/20 hover:border-green-brand/30 transition-all duration-500 cursor-pointer group overflow-hidden shadow-soft hover:shadow-elegant"
                onClick={handleSelectArchitect}>
             
             {/* Futuristic background pattern */}
@@ -142,9 +142,9 @@ const MembershipSelectionModal = ({ isOpen, onClose, onSelectMembership }: Membe
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-black text-foreground mb-3 tracking-tight">ARCHITECTE RÉSEAU</h3>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-foreground mb-3 tracking-tight">ARCHITECTE RÉSEAU</h3>
                 <div className="inline-flex items-center px-4 py-2 bg-green-brand/10 rounded-full mb-2">
-                  <span className="text-3xl font-black text-green-brand">100€</span>
+                  <span className="text-xl sm:text-2xl lg:text-3xl font-black text-green-brand">100€</span>
                 </div>
                 <div className="text-base text-muted-foreground font-medium">10 000 accès disponibles</div>
               </div>

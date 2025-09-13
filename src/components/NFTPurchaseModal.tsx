@@ -154,12 +154,12 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
 
   return (
     <Dialog open={isOpen} onOpenChange={resetAndClose}>
-      <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto" aria-describedby="nft-purchase-description">
+      <DialogContent className="max-w-[95vw] sm:max-w-xl lg:max-w-3xl max-h-[95vh] overflow-y-auto" aria-describedby="nft-purchase-description">
         <DialogHeader>
           <DialogTitle className="text-center mb-6">
             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
               <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-              <h2 className="text-2xl sm:text-3xl font-black leading-tight tracking-tight text-foreground px-4 sm:px-6 md:px-8 text-center">
+              <h2 className="text-lg sm:text-xl lg:text-3xl font-black leading-tight tracking-tight text-foreground px-2 sm:px-4 lg:px-8 text-center">
                 FINALISER VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ADHÉSION</span>
               </h2>
               <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
@@ -172,7 +172,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
         {step === 1 && (
           <div className="space-y-6">
             {/* NFT Details */}
-            <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft hover:shadow-elegant overflow-hidden">
+            <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-4 sm:p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft hover:shadow-elegant overflow-hidden">
               
               {/* Futuristic background pattern */}
               <div className="absolute inset-0 opacity-5">
@@ -194,14 +194,14 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                     </div>
                   </div>
                   
-                  <h3 className="text-2xl font-black text-foreground mb-3 tracking-tight">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-foreground mb-3 tracking-tight">
                     {currentNft.name}
                   </h3>
                   <p className="text-muted-foreground mb-4 font-medium">
                     {currentNft.description}
                   </p>
                   <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-full mb-2 border border-green-500/30">
-                    <span className="text-3xl font-black text-green-600">{currentNft.price}€</span>
+                    <span className="text-xl sm:text-2xl lg:text-3xl font-black text-green-600">{currentNft.price}€</span>
                   </div>
                 </div>
 
@@ -277,7 +277,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                 <h4 className="text-lg font-bold text-foreground px-4">ÉTAPE 1 : CONNEXION</h4>
                 <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-primary/50 to-primary/50"></div>
               </div>
-              <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft">
+              <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-4 sm:p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft">
                 <div className="flex flex-col items-center space-y-4">
                   <div className="connect-button-wrapper flex justify-center">
                     <ConnectButton
@@ -322,11 +322,11 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                 <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-secondary/50 to-secondary/50"></div>
               </div>
               
-              <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-6 border border-border/20 hover:border-secondary/30 transition-all duration-500 shadow-soft space-y-4">
+              <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-4 sm:p-6 border border-border/20 hover:border-secondary/30 transition-all duration-500 shadow-soft space-y-4">
                 <p className="text-sm text-muted-foreground text-center mb-4 font-medium">Complétez votre profil (recommandé)</p>
                 
                 {/* Row 1: Email and Name side by side */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <input
                     type="email"
                     value={email}
@@ -345,7 +345,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                 </div>
                 
                 {/* Row 2: Location and Phone side by side */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <input
                     type="text"
                     value={location}
