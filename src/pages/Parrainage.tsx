@@ -93,7 +93,7 @@ const Parrainage = () => {
       </section>
 
       {/* Comment ça marche - Application mobile */}
-      <section className="py-16 bg-muted/50">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <ScrollReveal animation="fade-up">
             <div className="text-center mb-16">
@@ -115,30 +115,29 @@ const Parrainage = () => {
                     Téléchargez l'Application Ambassadeur
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="flex-1 flex flex-col justify-between">
-                  
+                <CardContent className="flex-1 flex flex-col justify-center">
                   {/* App Download Buttons */}
-                  <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-auto">
+                  <div className="flex flex-col gap-4 items-center justify-center mt-auto">
                     <a 
                       href="https://apps.apple.com/us/app/la-suite-du-monde/id6751546986" 
-                      className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
+                      className="block transition-all duration-300 hover:scale-105 hover:shadow-lg"
                       aria-label="Télécharger sur l'App Store"
                     >
                       <img 
                         src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
                         alt="Télécharger dans l'App Store" 
-                        className="h-16 w-auto"
+                        className="h-14 w-auto max-w-[200px] object-contain"
                       />
                     </a>
                     <a 
                       href="https://play.google.com/store/apps/details?id=com.wimmov.lasuitedumonde" 
-                      className="block transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden"
+                      className="block transition-all duration-300 hover:scale-105 hover:shadow-lg"
                       aria-label="L'obtenir sur Google Play"
                     >
                       <img 
                         src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
                         alt="L'obtenir sur Google Play" 
-                        className="h-16 w-auto"
+                        className="h-14 w-auto max-w-[200px] object-contain"
                       />
                     </a>
                   </div>
@@ -157,8 +156,8 @@ const Parrainage = () => {
                     Parrainez
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="flex-1 flex flex-col justify-between">
-                  <p className="text-muted-foreground text-lg mb-8 font-medium">
+                <CardContent className="flex-1 flex flex-col justify-center">
+                  <p className="text-muted-foreground text-lg font-medium">
                     Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
                   </p>
                 </CardContent>
@@ -176,8 +175,8 @@ const Parrainage = () => {
                     Soyez récompensé !
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="flex-1 flex flex-col justify-between">
-                  <p className="text-muted-foreground text-lg mb-8 font-medium">
+                <CardContent className="flex-1 flex flex-col justify-center">
+                  <p className="text-muted-foreground text-lg font-medium">
                     Choisissez comment répartir votre commission.
                   </p>
                 </CardContent>
@@ -188,7 +187,7 @@ const Parrainage = () => {
       </section>
 
       {/* Le pouvoir du bouche-à-oreille & Options de récompense */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             {/* Le pouvoir du bouche-à-oreille - Full width */}
@@ -198,62 +197,33 @@ const Parrainage = () => {
                 <div className="relative z-10">
                   <div className="text-center mb-8">
                     <h3 className="text-2xl sm:text-3xl font-black text-foreground mb-4">
-                      🗣️ LE POUVOIR DU BOUCHE-À-OREILLE
+                      LE POUVOIR DU BOUCHE-À-OREILLE
                     </h3>
                     <p className="text-lg text-blue-700 dark:text-blue-300 font-medium">
                       Votre réseau au service de l'économie collaborative
                     </p>
                   </div>
 
-                  {/* Processus en étapes visuelles */}
-                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center mb-8">
-                    <div className="text-center">
-                      <div className="bg-white dark:bg-gray-900/50 rounded-2xl p-6 border border-blue-200 dark:border-blue-800 mb-4">
-                        <div className="text-3xl mb-2">💡</div>
-                        <h4 className="font-bold text-foreground text-sm">VOUS PROPOSEZ</h4>
-                      </div>
-                      <p className="text-xs text-muted-foreground">Vous êtes force de proposition</p>
-                    </div>
-
-                    <div className="hidden md:flex justify-center items-center">
-                      <div className="w-8 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full"></div>
-                    </div>
-
-                    <div className="text-center">
-                      <div className="bg-white dark:bg-gray-900/50 rounded-2xl p-6 border border-blue-200 dark:border-blue-800 mb-4">
-                        <div className="text-3xl mb-2">🎯</div>
-                        <h4 className="font-bold text-foreground text-sm">VOUS PARLEZ</h4>
-                      </div>
-                      <p className="text-xs text-muted-foreground">De La Suite du Monde</p>
-                    </div>
-
-                    <div className="hidden md:flex justify-center items-center">
-                      <div className="w-8 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full"></div>
-                    </div>
-
-                    <div className="text-center">
-                      <div className="bg-white dark:bg-gray-900/50 rounded-2xl p-6 border border-blue-200 dark:border-blue-800 mb-4">
-                        <div className="text-3xl mb-2">💰</div>
-                        <h4 className="font-bold text-foreground text-sm">COMMISSION</h4>
-                      </div>
-                      <p className="text-xs text-muted-foreground">2,5% sur chaque achat</p>
-                    </div>
-                  </div>
-
                   {/* Exemple concret */}
                   <div className="bg-white/70 dark:bg-gray-900/30 rounded-2xl p-6">
-                    <h4 className="font-bold text-foreground mb-4 text-center">📋 CONCRÈTEMENT</h4>
+                    <h4 className="font-bold text-foreground mb-4 text-center">CONCRÈTEMENT</h4>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       <div className="text-center p-4 bg-blue-50 dark:bg-blue-950/30 rounded-xl">
-                        <div className="text-2xl mb-2">🏕️</div>
+                        <div className="w-12 h-12 bg-blue-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                          <span className="text-white font-bold">1</span>
+                        </div>
                         <p className="text-sm font-medium text-foreground">Vous recommandez les campings sur lasuitedumonde.com</p>
                       </div>
                       <div className="text-center p-4 bg-cyan-50 dark:bg-cyan-950/30 rounded-xl">
-                        <div className="text-2xl mb-2">🎯</div>
+                        <div className="w-12 h-12 bg-cyan-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                          <span className="text-white font-bold">2</span>
+                        </div>
                         <p className="text-sm font-medium text-foreground">Votre contact investit dans des obligations<br/><span className="text-xs text-muted-foreground">(ex: 1000€)</span></p>
                       </div>
                       <div className="text-center p-4 bg-green-50 dark:bg-green-950/30 rounded-xl">
-                        <div className="text-2xl mb-2">💵</div>
+                        <div className="w-12 h-12 bg-green-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                          <span className="text-white font-bold">2.5%</span>
+                        </div>
                         <p className="text-sm font-medium text-foreground">Vous recevez 25€ de commission</p>
                       </div>
                     </div>
@@ -280,7 +250,9 @@ const Parrainage = () => {
                     {/* Option 1 */}
                     <div className="bg-white/70 dark:bg-gray-900/30 rounded-2xl p-6 transition-all duration-300 hover:bg-white dark:hover:bg-gray-900/50 hover:scale-105">
                       <div className="text-center mb-4">
-                        <span className="text-4xl">💶</span>
+                        <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full mx-auto flex items-center justify-center mb-3">
+                          <span className="text-white text-2xl font-bold">€</span>
+                        </div>
                       </div>
                       <h4 className="font-bold text-foreground text-lg mb-2 text-center">COMMISSION PERSONNELLE</h4>
                       <p className="text-sm text-muted-foreground mb-2 text-center font-medium">Gardez votre rétribution</p>
@@ -290,7 +262,9 @@ const Parrainage = () => {
                     {/* Option 2 */}
                     <div className="bg-white/70 dark:bg-gray-900/30 rounded-2xl p-6 transition-all duration-300 hover:bg-white dark:hover:bg-gray-900/50 hover:scale-105">
                       <div className="text-center mb-4">
-                        <span className="text-4xl">🎫</span>
+                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mx-auto flex items-center justify-center mb-3">
+                          <span className="text-white text-2xl font-bold">+</span>
+                        </div>
                       </div>
                       <h4 className="font-bold text-foreground text-lg mb-2 text-center">CRÉDITS D'USAGE</h4>
                       <p className="text-sm text-muted-foreground mb-2 text-center font-medium">Transformez en nuitées dans le réseau</p>
@@ -300,7 +274,9 @@ const Parrainage = () => {
                     {/* Option 3 */}
                     <div className="bg-white/70 dark:bg-gray-900/30 rounded-2xl p-6 transition-all duration-300 hover:bg-white dark:hover:bg-gray-900/50 hover:scale-105">
                       <div className="text-center mb-4">
-                        <span className="text-4xl">🌱</span>
+                        <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full mx-auto flex items-center justify-center mb-3">
+                          <span className="text-white text-2xl font-bold">♥</span>
+                        </div>
                       </div>
                       <h4 className="font-bold text-foreground text-lg mb-2 text-center">DON À L'ASSOCIATION</h4>
                       <p className="text-sm text-muted-foreground mb-2 text-center font-medium">Renforcez le mouvement des communs</p>
