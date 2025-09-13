@@ -72,10 +72,10 @@ const Parrainage = () => {
       </section>
 
       {/* VOTRE RÔLE D'AMBASSADEUR */}
-      <section className="py-16 bg-background">
+      <section className="py-8 bg-background">
         <div className="container mx-auto px-4">
           <ScrollReveal animation="fade-up">
-            <div className="text-center mb-8">
+            <div className="text-center mb-4">
               <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
                 <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground px-4 sm:px-6 md:px-8 text-center">
@@ -89,7 +89,7 @@ const Parrainage = () => {
       </section>
 
       {/* Comment ça marche - Application mobile */}
-      <section className="py-16 bg-background">
+      <section className="py-8 bg-background">
         <div className="container mx-auto px-4">
           <ScrollReveal animation="fade-up">
             <div className="text-center mb-16">
@@ -113,7 +113,7 @@ const Parrainage = () => {
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-center">
                   {/* App Download Buttons */}
-                  <div className="flex flex-col gap-4 items-center justify-center mt-auto">
+                  <div className="flex flex-row gap-3 items-center justify-center mt-auto">
                     <a 
                       href="https://apps.apple.com/us/app/la-suite-du-monde/id6751546986" 
                       className="block transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -122,7 +122,7 @@ const Parrainage = () => {
                       <img 
                         src="/lovable-uploads/d22b44de-59ec-4ff2-9095-88097346d30e.png" 
                         alt="Télécharger dans l'App Store" 
-                        className="h-14 w-auto max-w-[200px] object-contain"
+                        className="h-10 w-auto max-w-[140px] object-contain"
                       />
                     </a>
                     <a 
@@ -133,7 +133,7 @@ const Parrainage = () => {
                       <img 
                         src="/lovable-uploads/480cae2c-06d8-4554-b9aa-546bd3a59cf0.png" 
                         alt="L'obtenir sur Google Play" 
-                        className="h-14 w-auto max-w-[200px] object-contain"
+                        className="h-10 w-auto max-w-[140px] object-contain"
                       />
                     </a>
                   </div>
@@ -153,9 +153,20 @@ const Parrainage = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-center">
-                  <p className="text-muted-foreground text-lg font-medium">
+                  <p className="text-muted-foreground text-lg font-medium mb-6">
                     Invitez votre réseau à contribuer au projet, et suivez vos parrainages en temps réel
                   </p>
+                  <a 
+                    href="mailto:?subject=Découvrez La Suite du Monde - Réseau collaboratif&body=Salut !%0A%0AJe voulais te parler d'un projet génial que j'ai découvert : La Suite du Monde.%0A%0AC'est un réseau collaboratif qui permet de créer des territoires autonomes et de soutenir l'économie locale. L'idée, c'est de construire ensemble des communs durables : campings écologiques, espaces de co-création, lieux de vie partagés...%0A%0ACe qui m'a séduit :%0A- Une approche concrète de l'écologie sociale%0A- Des investissements transparents dès 100€%0A- Une gouvernance partagée entre tous les membres%0A- Des projets qui ont du sens pour nos territoires%0A%0ASi ça t'intéresse de découvrir cette alternative, voici le lien : https://lasuitedumonde.com%0A%0AOn pourrait en discuter autour d'un café si tu veux !%0A%0ABelle journée 🌱"
+                    className="inline-block"
+                  >
+                    <Button 
+                      variant="outline"
+                      className="rounded-xl px-6 py-2 text-sm font-bold transition-all duration-300 hover:scale-105"
+                    >
+                      📧 ENVOYER UNE INVITATION
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             </ScrollReveal>
@@ -172,9 +183,36 @@ const Parrainage = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-center">
-                  <p className="text-muted-foreground text-lg font-medium">
+                  <p className="text-muted-foreground text-lg mb-6 font-medium">
                     Choisissez comment répartir votre commission.
                   </p>
+                  <div className="bg-white rounded-xl p-3 border border-gray-200 max-w-md mx-auto shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div className="flex items-center justify-center space-x-1 bg-gray-100 rounded-lg p-1">
+                      {/* Option Vous */}
+                      <button
+                        onClick={() => setCommissionSplit(2.5)}
+                        className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all duration-300 ${
+                          commissionSplit === 2.5 
+                            ? 'bg-white text-gray-800 shadow-md' 
+                            : 'text-gray-600 hover:text-gray-800'
+                        }`}
+                      >
+                        Vous - 2.5%
+                      </button>
+                      
+                      {/* Option Asso */}
+                      <button
+                        onClick={() => setCommissionSplit(0)}
+                        className={`flex-1 py-2 px-4 rounded-md text-sm font-semibold transition-all duration-300 ${
+                          commissionSplit === 0 
+                            ? 'bg-blue-500 text-white shadow-md' 
+                            : 'text-gray-600 hover:text-gray-800'
+                        }`}
+                      >
+                        Asso - 2.5%
+                      </button>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </ScrollReveal>
