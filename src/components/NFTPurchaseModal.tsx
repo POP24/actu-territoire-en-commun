@@ -154,15 +154,15 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
 
   return (
     <Dialog open={isOpen} onOpenChange={resetAndClose}>
-      <DialogContent className="max-w-[95vw] sm:max-w-xl lg:max-w-3xl max-h-[95vh] overflow-y-auto" aria-describedby="nft-purchase-description">
+      <DialogContent className="max-w-[92vw] sm:max-w-lg lg:max-w-2xl max-h-[90vh] overflow-y-auto p-2 sm:p-6" aria-describedby="nft-purchase-description">
         <DialogHeader>
           <DialogTitle className="text-center mb-6">
             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
-              <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-              <h2 className="text-lg sm:text-xl lg:text-3xl font-black leading-tight tracking-tight text-foreground px-2 sm:px-4 lg:px-8 text-center">
+              <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+              <h2 className="text-base sm:text-xl lg:text-2xl font-black leading-tight tracking-tight text-foreground px-2 sm:px-4 lg:px-8 text-center">
                 FINALISER VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ADHÉSION</span>
               </h2>
-              <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+              <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
             </div>
           </DialogTitle>
           <div id="nft-purchase-description" className="sr-only">
@@ -175,7 +175,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-4 sm:p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft hover:shadow-elegant overflow-hidden">
               
               {/* Futuristic background pattern */}
-              <div className="absolute inset-0 opacity-5">
+              <div className="hidden sm:block absolute inset-0 opacity-5">
                 <div className="absolute top-4 right-4 w-32 h-32 border border-primary/20 rounded-full"></div>
                 <div className="absolute bottom-8 left-8 w-16 h-16 border border-primary/20 rounded-full"></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-primary/10 rounded-full"></div>
@@ -184,24 +184,24 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
               <div className="relative z-10">
                 <div className="text-center mb-6">
                   {/* Tech-inspired icon replacement */}
-                  <div className="w-16 h-16 mx-auto mb-4 relative">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/70 rounded-lg rotate-3 shadow-lg"></div>
                     <div className="absolute inset-1 bg-background rounded-lg flex items-center justify-center">
-                      <div className="w-8 h-8 border-2 border-primary rounded-sm relative">
+                      <div className="w-6 h-6 sm:w-8 sm:h-8 border-2 border-primary rounded-sm relative">
                         <div className="absolute inset-2 bg-primary/20 rounded-sm"></div>
                         <div className="absolute top-1 right-1 w-1 h-1 bg-primary rounded-full"></div>
                       </div>
                     </div>
                   </div>
                   
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-foreground mb-3 tracking-tight">
+                  <h3 className="text-base sm:text-lg lg:text-xl font-black text-foreground mb-3 tracking-tight">
                     {currentNft.name}
                   </h3>
                   <p className="text-muted-foreground mb-4 font-medium">
                     {currentNft.description}
                   </p>
-                  <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-full mb-2 border border-green-500/30">
-                    <span className="text-xl sm:text-2xl lg:text-3xl font-black text-green-600">{currentNft.price}€</span>
+                  <div className="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-full mb-2 border border-green-500/30">
+                    <span className="text-lg sm:text-xl lg:text-2xl font-black text-green-600">{currentNft.price}€</span>
                   </div>
                 </div>
 
@@ -210,7 +210,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                   {membershipType === "local" ? (
                     <>
                       <div>
-                        <h4 className="font-bold text-foreground text-lg border-b border-border pb-2 mb-4 flex items-center gap-2">
+                        <h4 className="font-bold text-foreground text-base border-b border-border pb-2 mb-4 flex items-center gap-2">
                           🗳️ Vos droits de membre
                         </h4>
                         <div className="space-y-3">
@@ -223,7 +223,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                         </div>
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground text-lg border-b border-border pb-2 mb-4 flex items-center gap-2">
+                        <h4 className="font-bold text-foreground text-base border-b border-border pb-2 mb-4 flex items-center gap-2">
                           🏠 Concrètement
                         </h4>
                         <div className="space-y-3">
@@ -239,7 +239,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                   ) : (
                     <>
                       <div>
-                        <h4 className="font-bold text-foreground text-lg border-b border-border pb-2 mb-4 flex items-center gap-2">
+                        <h4 className="font-bold text-foreground text-base border-b border-border pb-2 mb-4 flex items-center gap-2">
                           👑 Adhésion fondatrice
                         </h4>
                         <div className="space-y-3">
@@ -252,7 +252,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                         </div>
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground text-lg border-b border-border pb-2 mb-4 flex items-center gap-2">
+                        <h4 className="font-bold text-foreground text-base border-b border-border pb-2 mb-4 flex items-center gap-2">
                           🔗 Connexion réseau
                         </h4>
                         <div className="space-y-3">
@@ -273,9 +273,9 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             {/* Wallet Connection */}
             <div className="space-y-4">
               <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
-                <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-primary/50"></div>
-                <h4 className="text-lg font-bold text-foreground px-4">ÉTAPE 1 : CONNEXION</h4>
-                <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-primary/50 to-primary/50"></div>
+                <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-primary/50"></div>
+                <h4 className="text-base sm:text-lg font-bold text-foreground px-4">ÉTAPE 1 : CONNEXION</h4>
+                <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-l from-transparent via-primary/50 to-primary/50"></div>
               </div>
               <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-4 sm:p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft">
                 <div className="flex flex-col items-center space-y-4">
@@ -332,7 +332,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email"
-                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    className="w-full px-4 py-2 sm:py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                   />
                   <input
                     type="text"
@@ -340,7 +340,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Nom ou organisation"
                     required
-                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    className="w-full px-4 py-2 sm:py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                   />
                 </div>
                 
@@ -351,14 +351,14 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                     placeholder="Localité"
-                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    className="w-full px-4 py-2 sm:py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                   />
                   <input
                     type="tel"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="Téléphone"
-                    className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    className="w-full px-4 py-2 sm:py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                   />
                 </div>
                 
@@ -395,7 +395,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             <Button
               onClick={() => setStep(2)}
               disabled={!account}
-              className="w-full py-4 text-lg font-bold rounded-xl bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="w-full py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300"
               size="lg"
             >
               {!account ? "Connectez votre portefeuille d'abord" : "CONTINUER L'ACHAT →"}
@@ -406,24 +406,24 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
         {step === 2 && (
           <div className="space-y-6">
             {/* Order Summary */}
-            <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft hover:shadow-elegant overflow-hidden">
+            <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-4 sm:p-6 border border-border/20 hover:border-primary/30 transition-all duration-500 shadow-soft hover:shadow-elegant overflow-hidden">
               
               {/* Background pattern */}
-              <div className="absolute inset-0 opacity-5">
+              <div className="hidden sm:block absolute inset-0 opacity-5">
                 <div className="absolute top-4 right-4 w-32 h-32 border border-green-500/20 rounded-full"></div>
                 <div className="absolute bottom-8 left-8 w-16 h-16 border border-green-500/20 rounded-full"></div>
               </div>
 
               <div className="relative z-10">
                 <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-6">
-                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-green-500/50 to-green-500/50"></div>
-                  <h3 className="text-xl font-bold text-foreground px-4">RÉSUMÉ DE COMMANDE</h3>
-                  <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-green-500/50 to-green-500/50"></div>
+                  <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-r from-transparent via-green-500/50 to-green-500/50"></div>
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground px-4">RÉSUMÉ DE COMMANDE</h3>
+                  <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-l from-transparent via-green-500/50 to-green-500/50"></div>
                 </div>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-border">
                     <span className="font-medium text-foreground">Adhésion {currentNft.name}</span>
-                    <span className="font-bold text-lg text-green-600">{currentNft.price}€</span>
+                    <span className="font-bold text-base sm:text-lg text-green-600">{currentNft.price}€</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-border">
                     <span className="font-medium text-foreground">Frais réseau</span>
@@ -432,7 +432,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                   <div className="border-t border-border pt-4">
                     <div className="flex justify-between items-center p-4 bg-gradient-to-r from-green-500/10 to-green-600/10 rounded-xl border border-green-500/30">
                       <span className="font-bold text-lg text-foreground">Total</span>
-                      <span className="font-black text-2xl text-green-600">{currentNft.price} USDC</span>
+                      <span className="font-black text-xl sm:text-2xl text-green-600">{currentNft.price} USDC</span>
                     </div>
                   </div>
                 </div>
@@ -442,11 +442,11 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             {/* Buy Widget for insufficient balance */}
             <div className="space-y-4">
               <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
-                <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-primary/50"></div>
-                <h4 className="text-lg font-bold text-foreground px-4">AJOUTER DES FONDS</h4>
-                <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-primary/50 to-primary/50"></div>
+                <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-primary/50"></div>
+                <h4 className="text-base sm:text-lg font-bold text-foreground px-4">AJOUTER DES FONDS</h4>
+                <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-l from-transparent via-primary/50 to-primary/50"></div>
               </div>
-              <div className="bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-6 border border-border/20">
+              <div className="bg-gradient-to-br from-card via-background to-muted/50 rounded-xl p-4 sm:p-6 border border-border/20">
                 <BuyWidget
                   client={client}
                   chain={arbitrum}
@@ -457,7 +457,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             </div>
 
             {/* Action Buttons */}
-            <div className="flex space-x-4">
+            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0">
               <Button
                 onClick={() => setStep(1)}
                 variant="outline"
@@ -478,27 +478,27 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
 
         {step === 3 && (
           <div className="text-center space-y-8">
-            <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-8 border border-border/20 shadow-soft overflow-hidden">
+            <div className="relative bg-gradient-to-br from-card via-background to-muted/50 rounded-2xl p-4 sm:p-8 border border-border/20 shadow-soft overflow-hidden">
               
               {/* Success background pattern */}
-              <div className="absolute inset-0 opacity-10">
+              <div className="hidden sm:block absolute inset-0 opacity-10">
                 <div className="absolute top-4 right-4 w-32 h-32 border border-green-500/30 rounded-full"></div>
                 <div className="absolute bottom-8 left-8 w-16 h-16 border border-green-500/30 rounded-full"></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-green-500/20 rounded-full"></div>
               </div>
 
               <div className="relative z-10">
-                <div className="text-8xl mb-6 animate-bounce">🎉</div>
+                <div className="text-6xl sm:text-8xl mb-6 animate-bounce">🎉</div>
                 <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-6">
-                  <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-green-500 to-green-500"></div>
-                  <h3 className="text-2xl font-black text-green-600 px-4">FÉLICITATIONS !</h3>
-                  <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-green-500 to-green-500"></div>
+                  <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-r from-transparent via-green-500 to-green-500"></div>
+                  <h3 className="text-xl sm:text-2xl font-black text-green-600 px-4">FÉLICITATIONS !</h3>
+                  <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-l from-transparent via-green-500 to-green-500"></div>
                 </div>
-                <p className="text-lg text-muted-foreground mb-6 font-medium">
+                <p className="text-base sm:text-lg text-muted-foreground mb-6 font-medium">
                   Votre adhésion "{currentNft.name}" a été confirmée avec succès.<br/>
                   Bienvenue dans le réseau des communes !
                 </p>
-                <div className="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-6 shadow-soft">
+                <div className="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-4 sm:p-6 shadow-soft">
                   <div className="space-y-2">
                     <p className="text-green-800 text-sm font-medium flex items-center justify-center gap-2">
                       <span className="text-green-600">✓</span> NFT transféré vers votre portefeuille
@@ -518,7 +518,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={resetAndClose}
-                className="px-8 py-3 font-bold rounded-xl bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                className="px-6 py-2 sm:px-8 sm:py-3 font-bold rounded-xl bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 size="lg"
               >
                 EXPLORER LE RÉSEAU →
@@ -526,7 +526,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
               <Button
                 onClick={() => window.open('https://boutique.lasuitedumonde.com', '_blank')}
                 variant="outline"
-                className="px-8 py-3 font-bold rounded-xl border-2 hover:bg-background/50 transition-all duration-300"
+                className="px-6 py-2 sm:px-8 sm:py-3 font-bold rounded-xl border-2 hover:bg-background/50 transition-all duration-300"
                 size="lg"
               >
                 DÉCOUVRIR LA BOUTIQUE
