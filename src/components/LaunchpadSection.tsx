@@ -28,10 +28,24 @@ const LaunchpadSection = () => {
   };
 
   const handleAdhererClick = () => {
+    console.log("handleAdhererClick called");
     setIsSelectionModalOpen(true);
   };
 
+  const handleLocalMembershipClick = () => {
+    console.log("Local membership clicked");
+    setMembershipType("local");
+    setIsPurchaseModalOpen(true);
+  };
+
+  const handleArchitectMembershipClick = () => {
+    console.log("Architect membership clicked");
+    setMembershipType("architect");
+    setIsPurchaseModalOpen(true);
+  };
+
   const handleMembershipSelect = (type: "local" | "architect") => {
+    console.log("handleMembershipSelect called with type:", type);
     setMembershipType(type);
     setIsPurchaseModalOpen(true);
   };
@@ -162,13 +176,13 @@ const LaunchpadSection = () => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
-                      <div className="hover-scale cursor-pointer">
+                      <div className="hover-scale cursor-pointer" onClick={handleLocalMembershipClick}>
                         <div className="bg-gradient-to-br from-blue-600 to-blue-700 h-28 rounded-lg mb-2 flex flex-col items-center justify-center">
                           <div className="text-white font-bold text-base mb-1">LOCALE</div>
                           <div className="text-white font-bold text-sm">À PARTIR DE 10€</div>
                         </div>
                       </div>
-                      <div className="hover-scale cursor-pointer">
+                      <div className="hover-scale cursor-pointer" onClick={handleArchitectMembershipClick}>
                         <div className="bg-gradient-to-br from-green-600 to-green-700 h-28 rounded-lg mb-2 flex flex-col items-center justify-center">
                           <div className="text-white font-bold text-base mb-1">ARCHITECTE</div>
                           <div className="text-white font-bold text-sm">100€</div>
