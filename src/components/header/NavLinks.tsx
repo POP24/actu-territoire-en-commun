@@ -19,8 +19,7 @@ const navItems = [
   { to: "/volontariat", label: "Volontariat" },
   { to: "/parrainage", label: "Parrainage" },
   { to: "/boutique", label: "Boutique des Communs" },
-  { to: "/labo", label: "Labo" },
-  { to: "#faq", label: "FAQ" }
+  { to: "/labo", label: "Labo" }
 ];
 
 const NavLinks = ({ onLinkClick, isMobile = false }: NavLinksProps) => {

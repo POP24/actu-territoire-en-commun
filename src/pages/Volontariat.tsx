@@ -67,15 +67,15 @@ const Volontariat = () => {
           <div className="container mx-auto px-4">
             <ScrollReveal animation="fade-up" delay={100}>
               <div className="mb-16">
-                <div className="text-center mb-6">
-                  <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
-                    <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground px-4 sm:px-6 md:px-8 text-center">
-                      TRANSFORMEZ VOTRE TEMPS EN <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">EXPÉRIENCES</span>
-                    </h2>
-                    <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
-                  </div>
-                </div>
+                 <div className="text-center mb-6">
+                   <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-4">
+                     <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-foreground px-2 sm:px-4 md:px-6 lg:px-8 text-center">
+                       TRANSFORMEZ VOTRE TEMPS EN <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">EXPÉRIENCES</span>
+                     </h2>
+                     <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+                   </div>
+                 </div>
                 <p className="text-xl text-center text-muted-foreground">
                   Participez à la vie du réseau
                 </p>
@@ -83,7 +83,7 @@ const Volontariat = () => {
             </ScrollReveal>
 
             {/* Three Columns */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
               {/* Chantiers Participatifs */}
               <ScrollReveal animation="fade-left" delay={200}>
                 <Card className="bg-card border-border hover:shadow-elegant hover:scale-105 transition-all duration-300">

@@ -42,7 +42,7 @@ const FAQSection = () => {
                     C'est légal ?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pt-2 text-sm sm:text-base">
-                    → 100% légal. Association loi 1901 + défiscalisation.
+                    → 100% légal. Association loi 1901.
                   </AccordionContent>
                 </AccordionItem>
 

@@ -192,7 +192,7 @@ const Boutique = () => {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Créateur */}
             <ScrollReveal animation="fade-left" delay={0}>
               <Card className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
@@ -287,7 +287,7 @@ const Boutique = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
             <Card className="bg-card border-border animate-on-scroll-left hover-lift">
               <CardHeader className="text-center">
                 <div className="text-6xl mb-4">📱</div>
@@ -372,7 +372,7 @@ const Boutique = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             <div className="text-center bg-card rounded-2xl p-8 border border-border animate-on-scroll-left hover-lift h-full flex flex-col">
               <h3 className="text-xl font-bold text-card-foreground mb-4">JE SUIS CRÉATEUR</h3>
               <p className="text-muted-foreground mb-6 flex-1">Vendez en boutique physique et en ligne</p>

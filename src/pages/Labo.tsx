@@ -172,7 +172,7 @@ const Labo = () => {
             </ScrollReveal>
 
             {/* Tools Grid - 2x2 Layout */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-16">
               
               {/* Doléances & Intelligence Collective */}
               <ScrollReveal animation="fade-left" delay={200}>
