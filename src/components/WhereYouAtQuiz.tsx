@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Dialog, DialogContent } from './ui/dialog';
 import { Button } from './ui/button';
-import { ScrollArea } from './ui/scroll-area';
 
 interface WhereYouAtQuizProps {
   isOpen: boolean;
@@ -360,13 +359,13 @@ const WhereYouAtQuiz: React.FC<WhereYouAtQuizProps> = ({ isOpen, onClose }) => {
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
       <DialogContent className="max-w-[95vw] sm:max-w-4xl max-h-[95vh] sm:max-h-[90vh] bg-black/90 border-cyan-400/20 text-cyan-100 p-0">
-        <ScrollArea className="max-h-[90vh] sm:max-h-[80vh]">
+        <div className="max-h-[90vh] sm:max-h-[80vh] overflow-auto">
           {!selectedQuiz && renderQuizChoice()}
           {selectedQuiz === 'where' && !showResults && renderWhereQuizQuestion()}
           {selectedQuiz === 'how' && !showResults && renderHowQuizQuestion()}
           {selectedQuiz === 'where' && showResults && renderWhereResults()}
           {selectedQuiz === 'how' && showResults && renderHowResults()}
-        </ScrollArea>
+        </div>
       </DialogContent>
     </Dialog>
   );

@@ -23,4 +23,16 @@ export default defineConfig(({ mode }) => ({
     global: 'globalThis',
     'process.env': {},
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+          thirdweb: ['thirdweb'],
+          ui: ['lucide-react', '@radix-ui/react-slot']
+        }
+      }
+    }
+  },
 }));

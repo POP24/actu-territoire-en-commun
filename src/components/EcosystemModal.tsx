@@ -1,7 +1,6 @@
 import React from 'react';
 import { Dialog, DialogContent } from './ui/dialog';
 import { Button } from './ui/button';
-import { ScrollArea } from './ui/scroll-area';
 
 interface EcosystemModalProps {
   isOpen: boolean;
@@ -12,8 +11,8 @@ const EcosystemModal: React.FC<EcosystemModalProps> = ({ isOpen, onClose }) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-[95vw] sm:max-w-4xl max-h-[95vh] sm:max-h-[90vh] bg-black/90 border-cyan-400/20 text-cyan-100 p-0">
-        <ScrollArea className="max-h-[90vh] sm:max-h-[80vh]">
-          <div className="p-4 sm:p-6">
+        <div className="max-h-[90vh] sm:max-h-[80vh] overflow-auto">
+          <div className="p-4 sm:p-6">{/* ... keep existing code (modal content) */}
             <h2 className="text-lg sm:text-xl font-bold text-cyan-300 mb-4 sm:mb-6 text-center">ÉCOSYSTÈME DES COMMUNS</h2>
             <p className="text-center text-cyan-200 mb-6 sm:mb-8 text-sm">Les réseaux qui tissent l'autonomie territoriale</p>
             
@@ -70,7 +69,7 @@ const EcosystemModal: React.FC<EcosystemModalProps> = ({ isOpen, onClose }) => {
               </Button>
             </div>
           </div>
-        </ScrollArea>
+        </div>
       </DialogContent>
     </Dialog>
   );
