@@ -153,21 +153,26 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
 
   return (
     <Dialog open={isOpen} onOpenChange={resetAndClose}>
-      <DialogContent className="max-w-[95vw] sm:max-w-lg lg:max-w-2xl max-h-[95vh] overflow-y-auto p-2 sm:p-6" aria-describedby="nft-purchase-description">
-        <DialogHeader>
-          <DialogTitle className="text-center mb-2 sm:mb-6">
-            <div className="flex items-center justify-center gap-2 sm:gap-6 md:gap-8 mb-2 sm:mb-4">
-              <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-              <h2 className="text-base sm:text-xl lg:text-2xl font-black leading-tight tracking-tight text-foreground px-1 sm:px-4 lg:px-8 text-center">
-                FINALISER VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ADHÉSION</span>
-              </h2>
-              <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+      <DialogContent className="max-w-[95vw] sm:max-w-lg lg:max-w-2xl max-h-[95vh] p-0 sm:p-0 overflow-hidden" aria-describedby="nft-purchase-description">
+        {/* Scroll indicator - Top */}
+        <div className="hidden sm:block absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-background via-background/80 to-transparent z-50 pointer-events-none"></div>
+        
+        {/* Scrollable content */}
+        <div className="overflow-y-auto max-h-[95vh] p-2 sm:p-6">
+          <DialogHeader>
+            <DialogTitle className="text-center mb-2 sm:mb-6">
+              <div className="flex items-center justify-center gap-2 sm:gap-6 md:gap-8 mb-2 sm:mb-4">
+                <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
+                <h2 className="text-base sm:text-xl lg:text-2xl font-black leading-tight tracking-tight text-foreground px-1 sm:px-4 lg:px-8 text-center">
+                  FINALISER VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ADHÉSION</span>
+                </h2>
+                <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
+              </div>
+            </DialogTitle>
+            <div id="nft-purchase-description" className="sr-only">
+              Processus d'achat de votre adhésion NFT pour rejoindre l'association
             </div>
-          </DialogTitle>
-          <div id="nft-purchase-description" className="sr-only">
-            Processus d'achat de votre adhésion NFT pour rejoindre l'association
-          </div>
-        </DialogHeader>
+          </DialogHeader>
         {step === 1 && (
           <div className="space-y-3 sm:space-y-6">
             {/* NFT Details */}
@@ -551,6 +556,11 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             </div>
           </div>
         )}
+        
+        </div>
+        
+        {/* Scroll indicator - Bottom */}
+        <div className="hidden sm:block absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-background via-background/80 to-transparent z-50 pointer-events-none"></div>
       </DialogContent>
     </Dialog>
   );
