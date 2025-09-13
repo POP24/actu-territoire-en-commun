@@ -39,8 +39,8 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/territoires" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Les Territoires
+                  <a href="/vision3" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
+                    Vision 3.0
                   </a>
                 </li>
                 <li>
@@ -49,8 +49,8 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/gouvernance" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Gouvernance
+                  <a href="/labo" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
+                    Laboratoire
                   </a>
                 </li>
               </ul>
@@ -90,22 +90,22 @@ const Footer = () => {
               <ul className="space-y-2 sm:space-y-3">
                 <li>
                   <a href="/opportunites" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Participer maintenant
+                    Opportunités
                   </a>
                 </li>
                 <li>
-                  <a href="/proposer-territoire" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Proposer un territoire
+                  <a href="/volontariat" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
+                    Volontariat
+                  </a>
+                </li>
+                <li>
+                  <a href="/parrainage" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
+                    Parrainage
                   </a>
                 </li>
                 <li>
                   <a href="/boutique" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     La boutique
-                  </a>
-                </li>
-                <li>
-                  <a href="/newsletter" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Newsletter
                   </a>
                 </li>
               </ul>
