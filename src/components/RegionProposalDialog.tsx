@@ -43,14 +43,14 @@ const RegionProposalDialog = ({ children }: RegionProposalDialogProps) => {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px]" aria-describedby="region-proposal-description">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-xl">
             <MapPin className="w-5 h-5 text-orange-500" />
             Proposer une région
           </DialogTitle>
         </DialogHeader>
-        
+        <div id="region-proposal-description" className="sr-only">Formulaire pour proposer une région au réseau</div>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <div className="space-y-2">
             <Label htmlFor="region">Région / Territoire</Label>

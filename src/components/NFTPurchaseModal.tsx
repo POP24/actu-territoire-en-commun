@@ -154,12 +154,12 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
 
   return (
     <Dialog open={isOpen} onOpenChange={resetAndClose}>
-      <DialogContent className="max-w-[95vw] sm:max-w-lg lg:max-w-2xl max-h-[95vh] overflow-y-auto p-3 sm:p-6" aria-describedby="nft-purchase-description">
+      <DialogContent className="max-w-[95vw] sm:max-w-lg lg:max-w-2xl max-h-[95vh] overflow-y-auto p-2 sm:p-6" aria-describedby="nft-purchase-description">
         <DialogHeader>
           <DialogTitle className="text-center mb-2 sm:mb-6">
             <div className="flex items-center justify-center gap-2 sm:gap-6 md:gap-8 mb-2 sm:mb-4">
               <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-cyan-400"></div>
-              <h2 className="text-sm sm:text-xl lg:text-2xl font-black leading-tight tracking-tight text-foreground px-1 sm:px-4 lg:px-8 text-center">
+              <h2 className="text-base sm:text-xl lg:text-2xl font-black leading-tight tracking-tight text-foreground px-1 sm:px-4 lg:px-8 text-center">
                 FINALISER VOTRE <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">ADHÉSION</span>
               </h2>
               <div className="hidden sm:block flex-1 h-0.5 bg-gradient-to-l from-transparent via-cyan-400 to-cyan-400"></div>
@@ -326,13 +326,13 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                 <p className="text-xs sm:text-sm text-muted-foreground text-center mb-2 sm:mb-4 font-medium">Complétez votre profil (recommandé)</p>
                 
                 {/* Row 1: Email and Name side by side */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email"
-                    className="w-full px-4 py-2 sm:py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    className="w-full px-3 py-1.5 sm:px-4 sm:py-3 bg-background/50 border border-border rounded-lg text-foreground text-xs sm:text-sm placeholder:text-xs sm:placeholder:text-sm placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                   />
                   <input
                     type="text"
@@ -340,25 +340,25 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Nom ou organisation"
                     required
-                    className="w-full px-4 py-2 sm:py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    className="w-full px-3 py-1.5 sm:px-4 sm:py-3 bg-background/50 border border-border rounded-lg text-foreground text-xs sm:text-sm placeholder:text-xs sm:placeholder:text-sm placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                   />
                 </div>
                 
                 {/* Row 2: Location and Phone side by side */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                   <input
                     type="text"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                     placeholder="Localité"
-                    className="w-full px-4 py-2 sm:py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    className="w-full px-3 py-1.5 sm:px-4 sm:py-3 bg-background/50 border border-border rounded-lg text-foreground text-xs sm:text-sm placeholder:text-xs sm:placeholder:text-sm placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                   />
                   <input
                     type="tel"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="Téléphone"
-                    className="w-full px-4 py-2 sm:py-3 bg-background/50 border border-border rounded-xl text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+                    className="w-full px-3 py-1.5 sm:px-4 sm:py-3 bg-background/50 border border-border rounded-lg text-foreground text-xs sm:text-sm placeholder:text-xs sm:placeholder:text-sm placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                   />
                 </div>
                 
@@ -369,9 +369,9 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                       type="checkbox"
                       checked={acceptPolicy}
                       onChange={(e) => setAcceptPolicy(e.target.checked)}
-                      className="mt-1 h-4 w-4 text-primary border-border rounded focus:ring-primary focus:ring-2 bg-background"
+                      className="mt-0.5 h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary border-border rounded focus:ring-primary focus:ring-2 bg-background"
                     />
-                    <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span className="text-xs sm:text-sm text-muted-foreground group-hover:text-foreground transition-colors">
                       J'accepte la politique de confidentialité
                     </span>
                   </label>
@@ -381,9 +381,9 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                       type="checkbox"
                       checked={acceptNewsletter}
                       onChange={(e) => setAcceptNewsletter(e.target.checked)}
-                      className="mt-1 h-4 w-4 text-primary border-border rounded focus:ring-primary focus:ring-2 bg-background"
+                      className="mt-0.5 h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary border-border rounded focus:ring-primary focus:ring-2 bg-background"
                     />
-                    <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span className="text-xs sm:text-sm text-muted-foreground group-hover:text-foreground transition-colors">
                       Je souhaite m'inscrire à la newsletter pour recevoir les actualités
                     </span>
                   </label>
@@ -395,7 +395,7 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
             <Button
               onClick={() => setStep(2)}
               disabled={!account}
-              className="w-full py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              className="w-full py-2.5 sm:py-4 text-sm sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300"
               size="lg"
             >
               {!account ? "Connectez votre portefeuille d'abord" : "CONTINUER L'ACHAT →"}

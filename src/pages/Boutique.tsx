@@ -436,13 +436,13 @@ const Boutique = () => {
 
       {/* Modal Intérêt Boutique */}
       <Dialog open={isInterestModalOpen} onOpenChange={setIsInterestModalOpen}>
-        <DialogContent className="max-w-md">
+        <DialogContent className="max-w-md" aria-describedby="boutique-interest-description">
           <DialogHeader>
             <DialogTitle className="text-xl font-bold text-center">
               BOUTIQUE PHYSIQUE - VOTRE INTÉRÊT
             </DialogTitle>
           </DialogHeader>
-          
+          <div id="boutique-interest-description" className="sr-only">Formulaire d'intérêt pour la boutique physique</div>
           <form onSubmit={handleFormSubmit} className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">Je suis...</label>
