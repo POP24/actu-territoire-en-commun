@@ -89,8 +89,8 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
           "Accédez à toutes les opportunités du réseau"
         ],
         network: [
-          "Rejoignez les cercles thématiques (Discord)",
-          "Accès prioritaire aux séjours et rencontres du réseau"
+          "✓Rejoignez Discord",
+          "✓Seulement 10 000 tickets"
         ]
       }
     }
