@@ -89,90 +89,6 @@ const Parrainage = () => {
               </p>
             </div>
           </ScrollReveal>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-            {/* Le pouvoir du bouche-à-oreille */}
-            <ScrollReveal animation="fade-right">
-              <div className="bg-card rounded-2xl p-6 border border-border h-full">
-                <div className="mb-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                    <strong className="text-foreground">Le pouvoir du bouche-à-oreille :</strong><br />
-                    Vous êtes force de proposition → Vous parlez de La Suite du Monde → Quelqu'un achète des obligations → Commission de 2,5%
-                  </p>
-                </div>
-                
-                <div className="bg-muted/50 rounded-xl p-4">
-                  <h3 className="text-lg font-bold text-foreground mb-3">Concrètement :</h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      Vous recommandez les campings disponibles sur lasuitedumonde.com
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      Votre contact investit dans des obligations (ex: 1000€)
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      Vous recevez 25€ de commission
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* VOS 3 OPTIONS DE RÉCOMPENSE */}
-            <ScrollReveal animation="fade-left">
-              <div className="bg-card rounded-2xl p-6 border border-border h-full">
-                <div className="mb-6">
-                  <h3 className="text-xl font-bold text-foreground mb-2">
-                    VOS 3 OPTIONS DE RÉCOMPENSE
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Chaque commission peut servir VOTRE vision :
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  {/* Option 1 */}
-                  <div className="bg-muted/50 rounded-xl p-4 transition-all duration-300 hover:bg-muted/70">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">💶</span>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-foreground text-sm mb-1">COMMISSION PERSONNELLE</h4>
-                        <p className="text-xs text-muted-foreground mb-1">Gardez votre rétribution</p>
-                        <p className="text-xs text-muted-foreground/80">Pour valoriser votre temps et votre réseau</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Option 2 */}
-                  <div className="bg-muted/50 rounded-xl p-4 transition-all duration-300 hover:bg-muted/70">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">🎫</span>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-foreground text-sm mb-1">CRÉDITS D'USAGE</h4>
-                        <p className="text-xs text-muted-foreground mb-1">Transformez en nuitées dans le réseau</p>
-                        <p className="text-xs text-muted-foreground/80">1€ de commission = 1€ utilisable partout</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Option 3 */}
-                  <div className="bg-muted/50 rounded-xl p-4 transition-all duration-300 hover:bg-muted/70">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">🌱</span>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-foreground text-sm mb-1">DON À L'ASSOCIATION</h4>
-                        <p className="text-xs text-muted-foreground mb-1">Renforcez le mouvement des communs</p>
-                        <p className="text-xs text-muted-foreground/80">Pour soutenir le développement du réseau</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
         </div>
       </section>
 
@@ -266,6 +182,133 @@ const Parrainage = () => {
                   </p>
                 </CardContent>
               </Card>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Le pouvoir du bouche-à-oreille & Options de récompense */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            {/* Le pouvoir du bouche-à-oreille - Full width */}
+            <ScrollReveal animation="fade-up">
+              <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-3xl p-8 border border-blue-200/50 dark:border-blue-800/30 mb-12 overflow-hidden relative">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-blue-200/30 to-transparent rounded-full -mr-16 -mt-16"></div>
+                <div className="relative z-10">
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl sm:text-3xl font-black text-foreground mb-4">
+                      🗣️ LE POUVOIR DU BOUCHE-À-OREILLE
+                    </h3>
+                    <p className="text-lg text-blue-700 dark:text-blue-300 font-medium">
+                      Votre réseau au service de l'économie collaborative
+                    </p>
+                  </div>
+
+                  {/* Processus en étapes visuelles */}
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center mb-8">
+                    <div className="text-center">
+                      <div className="bg-white dark:bg-gray-900/50 rounded-2xl p-6 border border-blue-200 dark:border-blue-800 mb-4">
+                        <div className="text-3xl mb-2">💡</div>
+                        <h4 className="font-bold text-foreground text-sm">VOUS PROPOSEZ</h4>
+                      </div>
+                      <p className="text-xs text-muted-foreground">Vous êtes force de proposition</p>
+                    </div>
+
+                    <div className="hidden md:flex justify-center items-center">
+                      <div className="w-8 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full"></div>
+                    </div>
+
+                    <div className="text-center">
+                      <div className="bg-white dark:bg-gray-900/50 rounded-2xl p-6 border border-blue-200 dark:border-blue-800 mb-4">
+                        <div className="text-3xl mb-2">🎯</div>
+                        <h4 className="font-bold text-foreground text-sm">VOUS PARLEZ</h4>
+                      </div>
+                      <p className="text-xs text-muted-foreground">De La Suite du Monde</p>
+                    </div>
+
+                    <div className="hidden md:flex justify-center items-center">
+                      <div className="w-8 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full"></div>
+                    </div>
+
+                    <div className="text-center">
+                      <div className="bg-white dark:bg-gray-900/50 rounded-2xl p-6 border border-blue-200 dark:border-blue-800 mb-4">
+                        <div className="text-3xl mb-2">💰</div>
+                        <h4 className="font-bold text-foreground text-sm">COMMISSION</h4>
+                      </div>
+                      <p className="text-xs text-muted-foreground">2,5% sur chaque achat</p>
+                    </div>
+                  </div>
+
+                  {/* Exemple concret */}
+                  <div className="bg-white/70 dark:bg-gray-900/30 rounded-2xl p-6">
+                    <h4 className="font-bold text-foreground mb-4 text-center">📋 CONCRÈTEMENT</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="text-center p-4 bg-blue-50 dark:bg-blue-950/30 rounded-xl">
+                        <div className="text-2xl mb-2">🏕️</div>
+                        <p className="text-sm font-medium text-foreground">Vous recommandez les campings sur lasuitedumonde.com</p>
+                      </div>
+                      <div className="text-center p-4 bg-cyan-50 dark:bg-cyan-950/30 rounded-xl">
+                        <div className="text-2xl mb-2">🎯</div>
+                        <p className="text-sm font-medium text-foreground">Votre contact investit dans des obligations<br/><span className="text-xs text-muted-foreground">(ex: 1000€)</span></p>
+                      </div>
+                      <div className="text-center p-4 bg-green-50 dark:bg-green-950/30 rounded-xl">
+                        <div className="text-2xl mb-2">💵</div>
+                        <p className="text-sm font-medium text-foreground">Vous recevez 25€ de commission</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* VOS 3 OPTIONS DE RÉCOMPENSE */}
+            <ScrollReveal animation="fade-up">
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 rounded-3xl p-8 border border-purple-200/50 dark:border-purple-800/30 overflow-hidden relative">
+                <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-purple-200/30 to-transparent rounded-full -ml-16 -mt-16"></div>
+                <div className="relative z-10">
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl sm:text-3xl font-black text-foreground mb-2">
+                      VOS 3 OPTIONS DE RÉCOMPENSE
+                    </h3>
+                    <p className="text-lg text-purple-700 dark:text-purple-300 font-medium">
+                      Chaque commission peut servir VOTRE vision
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Option 1 */}
+                    <div className="bg-white/70 dark:bg-gray-900/30 rounded-2xl p-6 transition-all duration-300 hover:bg-white dark:hover:bg-gray-900/50 hover:scale-105">
+                      <div className="text-center mb-4">
+                        <span className="text-4xl">💶</span>
+                      </div>
+                      <h4 className="font-bold text-foreground text-lg mb-2 text-center">COMMISSION PERSONNELLE</h4>
+                      <p className="text-sm text-muted-foreground mb-2 text-center font-medium">Gardez votre rétribution</p>
+                      <p className="text-xs text-muted-foreground/80 text-center">Pour valoriser votre temps et votre réseau</p>
+                    </div>
+
+                    {/* Option 2 */}
+                    <div className="bg-white/70 dark:bg-gray-900/30 rounded-2xl p-6 transition-all duration-300 hover:bg-white dark:hover:bg-gray-900/50 hover:scale-105">
+                      <div className="text-center mb-4">
+                        <span className="text-4xl">🎫</span>
+                      </div>
+                      <h4 className="font-bold text-foreground text-lg mb-2 text-center">CRÉDITS D'USAGE</h4>
+                      <p className="text-sm text-muted-foreground mb-2 text-center font-medium">Transformez en nuitées dans le réseau</p>
+                      <p className="text-xs text-muted-foreground/80 text-center">1€ de commission = 1€ utilisable partout</p>
+                    </div>
+
+                    {/* Option 3 */}
+                    <div className="bg-white/70 dark:bg-gray-900/30 rounded-2xl p-6 transition-all duration-300 hover:bg-white dark:hover:bg-gray-900/50 hover:scale-105">
+                      <div className="text-center mb-4">
+                        <span className="text-4xl">🌱</span>
+                      </div>
+                      <h4 className="font-bold text-foreground text-lg mb-2 text-center">DON À L'ASSOCIATION</h4>
+                      <p className="text-sm text-muted-foreground mb-2 text-center font-medium">Renforcez le mouvement des communs</p>
+                      <p className="text-xs text-muted-foreground/80 text-center">Pour soutenir le développement du réseau</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </ScrollReveal>
           </div>
         </div>
