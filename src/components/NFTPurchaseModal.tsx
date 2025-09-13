@@ -199,8 +199,14 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                   <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-4 font-medium">
                     {currentNft.description}
                   </p>
-                  <div className="inline-flex items-center px-2 py-1 sm:px-6 sm:py-3 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-full mb-1 sm:mb-2 border border-blue-500/30">
-                    <span className="text-sm sm:text-xl lg:text-2xl font-black text-blue-600">
+                  <div className={`inline-flex items-center px-2 py-1 sm:px-6 sm:py-3 rounded-full mb-1 sm:mb-2 ${
+                    membershipType === 'local' 
+                      ? 'bg-gradient-to-r from-blue-500/20 to-blue-600/20 border border-blue-500/30' 
+                      : 'bg-gradient-to-r from-green-500/20 to-green-600/20 border border-green-500/30'
+                  }`}>
+                    <span className={`text-sm sm:text-xl lg:text-2xl font-black ${
+                      membershipType === 'local' ? 'text-blue-600' : 'text-green-600'
+                    }`}>
                       {membershipType === 'local' ? 'À PARTIR DE 10€' : `${currentNft.price}€`}
                     </span>
                   </div>
@@ -424,7 +430,9 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-background/50 rounded-xl border border-border">
                     <span className="font-medium text-foreground">Adhésion {currentNft.name}</span>
-                    <span className="font-bold text-base sm:text-lg text-blue-600">
+                    <span className={`font-bold text-base sm:text-lg ${
+                      membershipType === 'local' ? 'text-blue-600' : 'text-green-600'
+                    }`}>
                       {membershipType === 'local' ? 'À PARTIR DE 10€' : `${currentNft.price}€`}
                     </span>
                   </div>
@@ -433,9 +441,15 @@ const NFTPurchaseModal = ({ isOpen, onClose, membershipType }: NFTPurchaseModalP
                     <span className="text-muted-foreground">~2-5€</span>
                   </div>
                   <div className="border-t border-border pt-4">
-                    <div className="flex justify-between items-center p-4 bg-gradient-to-r from-blue-500/10 to-blue-600/10 rounded-xl border border-blue-500/30">
+                    <div className={`flex justify-between items-center p-4 rounded-xl border ${
+                      membershipType === 'local' 
+                        ? 'bg-gradient-to-r from-blue-500/10 to-blue-600/10 border-blue-500/30' 
+                        : 'bg-gradient-to-r from-green-500/10 to-green-600/10 border-green-500/30'
+                    }`}>
                       <span className="font-bold text-lg text-foreground">Total</span>
-                      <span className="font-black text-xl sm:text-2xl text-blue-600">{currentNft.price} USDC</span>
+                      <span className={`font-black text-xl sm:text-2xl ${
+                        membershipType === 'local' ? 'text-blue-600' : 'text-green-600'
+                      }`}>{currentNft.price} USDC</span>
                     </div>
                   </div>
                 </div>
