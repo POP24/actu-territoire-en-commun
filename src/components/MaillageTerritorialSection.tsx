@@ -104,8 +104,9 @@ const MaillageTerritorialSection = () => {
         <div className="max-w-5xl mx-auto">
           {/* Main Title */}
           <div className="text-center mb-12">
-            <h2 className="title-with-underline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 whitespace-nowrap">
-              Maillage des <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Communs Essentiels</span>
+            <h2 className="title-with-underline text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 text-center">
+              <span className="block sm:inline">Maillage des</span>{' '}
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent block sm:inline">Communs Essentiels</span>
             </h2>
             <p className="text-gray-300 text-sm sm:text-lg mb-2">Acquérir ensemble, mailler le territoire,</p>
             <p className="text-gray-400 text-sm sm:text-base">créer l'autonomie par l'entraide</p>

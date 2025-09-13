@@ -18,7 +18,7 @@ const navItems = [
   },
   { to: "/volontariat", label: "Volontariat" },
   { to: "/parrainage", label: "Parrainage" },
-  { to: "/boutique", label: "Boutique des Communs" },
+  { to: "/boutique", label: "Boutique" },
   { to: "/labo", label: "Labo" }
 ];
 

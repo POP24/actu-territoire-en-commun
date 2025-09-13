@@ -34,18 +34,13 @@ const Footer = () => {
               <h3 className="text-sm sm:text-base md:text-lg font-bold mb-3 sm:mb-4">Projet</h3>
               <ul className="space-y-2 sm:space-y-3">
                 <li>
-                  <a href="/vision" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Vision
+                  <a href="/" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
+                    L'association
                   </a>
                 </li>
                 <li>
-                  <a href="/vision3" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Vision 3.0
-                  </a>
-                </li>
-                <li>
-                  <a href="/investir" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Investir
+                  <a href="/#gouvernance" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
+                    Gouvernance
                   </a>
                 </li>
                 <li>
@@ -61,16 +56,6 @@ const Footer = () => {
               <h3 className="text-sm sm:text-base md:text-lg font-bold mb-3 sm:mb-4">Communauté</h3>
               <ul className="space-y-2 sm:space-y-3">
                 <li>
-                  <a href="/equipe" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    L'Équipe
-                  </a>
-                </li>
-                <li>
-                  <a href="/rejoindre" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Nous rejoindre
-                  </a>
-                </li>
-                <li>
                   <a href="mailto:reseau@lescommunes.org" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors flex items-center gap-2">
                     <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
                     Contact
@@ -81,6 +66,11 @@ const Footer = () => {
                     FAQ
                   </a>
                 </li>
+                <li>
+                  <p className="text-xs sm:text-sm text-background/80 font-medium">
+                    Rejoignez notre application mobile
+                  </p>
+                </li>
               </ul>
             </div>
 
@@ -88,11 +78,6 @@ const Footer = () => {
             <div>
               <h3 className="text-sm sm:text-base md:text-lg font-bold mb-3 sm:mb-4">Participer</h3>
               <ul className="space-y-2 sm:space-y-3">
-                <li>
-                  <a href="/opportunites" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    Opportunités
-                  </a>
-                </li>
                 <li>
                   <a href="/volontariat" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
                     Volontariat
@@ -105,7 +90,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="/boutique" className="text-xs sm:text-sm text-background/80 hover:text-background transition-colors">
-                    La boutique
+                    Boutique
                   </a>
                 </li>
               </ul>

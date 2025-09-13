@@ -306,6 +306,15 @@ const Labo = () => {
                         <p className="text-muted-foreground">Alertes contextuelles</p>
                       </div>
                     </div>
+                    <div className="flex items-center gap-4 pt-2">
+                      <Button 
+                        onClick={() => alert('Nous prenons bonne note de votre intérêt !')}
+                        variant="outline"
+                        className="rounded-xl"
+                      >
+                        👍 Ça m'intéresse →
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               </ScrollReveal>
@@ -321,14 +330,24 @@ const Labo = () => {
                   Les meilleurs outils naissent de l'intelligence collective.<br />
                   Votez pour prioriser les développements.
                 </p>
-                <Button 
-                  onClick={() => setIsMembershipModalOpen(true)}
-                  variant="cta-orange"
-                  size="lg"
-                  className="rounded-xl px-8 py-4 text-lg font-bold"
-                >
-                  DEVENIR CO-CRÉATEUR : ADHÉRER
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button 
+                    onClick={() => alert('Fonctionnalité à venir - Merci pour votre intérêt !')}
+                    variant="outline"
+                    size="lg"
+                    className="rounded-xl px-6 py-3 text-base font-bold"
+                  >
+                    PROPOSER UNE IDÉE
+                  </Button>
+                  <Button 
+                    onClick={() => setIsMembershipModalOpen(true)}
+                    variant="cta-orange"
+                    size="lg"
+                    className="rounded-xl px-6 py-3 text-base font-bold"
+                  >
+                    ADHÉRER
+                  </Button>
+                </div>
               </div>
             </ScrollReveal>
           </div>
